@@ -54,7 +54,7 @@ You should see `Python 3.9.x` or higher.
 
 ```
 git clone https://github.com/stazerwee-ui/CP-004-AIPD-24-7-Conversational-AI-Sales-Assistant-Automated-Quotation-Engine.git
-cd CP-004-AIPD-24-7-Conversational-AI-Sales-Assistant-Automated-Quotation-Engine\codes25aug2026
+cd CP-004-AIPD-24-7-Conversational-AI-Sales-Assistant-Automated-Quotation-Engine
 ```
 
 
