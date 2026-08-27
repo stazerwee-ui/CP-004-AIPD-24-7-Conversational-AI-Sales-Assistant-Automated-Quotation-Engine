@@ -53,11 +53,11 @@ You should see `Python 3.9.x` or higher.
 ### Step 1 — Clone the repository
 
 ```
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
-cd YOUR-REPO-NAME\codes25aug2026
+git clone https://github.com/stazerwee-ui/CP-004-AIPD-24-7-Conversational-AI-Sales-Assistant-Automated-Quotation-Engine.git
+cd CP-004-AIPD-24-7-Conversational-AI-Sales-Assistant-Automated-Quotation-Engine\codes25aug2026
 ```
 
-> Replace the URL with the actual repository address.
+
 
 ### Step 2 — Create a virtual environment
 
