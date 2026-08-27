@@ -1,0 +1,116 @@
+{
+  "sensitive_protocols": [
+    {
+      "situation_type": "Sudden Home Death",
+      "immediate_first_step": "Do not move or disturb the deceased. Immediately contact the deceased's family doctor or a local clinic doctor who is willing to perform a house call. Alternatively, call our 24/7 hotline at +65 6555 1115 to arrange for a doctor to visit and certify the passing.",
+      "governing_agency": "SPF",
+      "required_documents": [
+        "Deceased's original NRIC or Passport",
+        "Deceased's recent medical history or hospital discharge reports",
+        "Informant's original NRIC or Passport"
+      ],
+      "procedural_flow": [
+        "Family contacts a certifying doctor or Solace Dignity Care's helpline to dispatch a doctor.",
+        "The doctor arrives at the home, examines the deceased, and confirms the cause of death.",
+        "Upon confirmation, the doctor uploads the certificate of cause of death (CCOD) data to the Registry of Births and Deaths.",
+        "The Registry issues a digital death certificate, accessible immediately to the family via the My Legacy portal (mylegacy.life.gov.sg).",
+        "Family downloads the digital death certificate within 30 days and authorizes Solace Dignity Care to collect the body and coordinate wake arrangements."
+      ],
+      "ai_safety_instruction": "Trigger immediate human consultant handoff protocol. Express condolences, provide the immediate first step, and transition the chat directly to Marcus Chen or the on-duty consultant."
+    },
+    {
+      "situation_type": "Hospital Death",
+      "immediate_first_step": "Notify the ward nurses that your loved one has passed. Request the ward doctor to certify the cause of death and submit the digital certification.",
+      "governing_agency": "NEA",
+      "required_documents": [
+        "Deceased's NRIC or Passport",
+        "Informant's NRIC or Passport",
+        "Digital Death Certificate reference details (issued by the hospital)"
+      ],
+      "procedural_flow": [
+        "The hospital doctor certifies the passing and submits the Cause of Death data to the Registry of Births and Deaths.",
+        "The Registry generates a digital death certificate, which is sent to the next-of-kin via SMS/email and accessible on the My Legacy portal.",
+        "Next-of-kin goes to the hospital mortuary to claim the personal effects and identify the deceased.",
+        "Next-of-kin contacts Solace Dignity Care and signs a letter of authorization allowing our transport crew to collect the body from the hospital mortuary.",
+        "Our crew retrieves the body and transports it to our care facility for embalming and preparation."
+      ],
+      "ai_safety_instruction": "Trigger immediate human consultant handoff protocol. Guide the user through hospital release authorization, and transition to a human consultant for logistics scheduling."
+    },
+    {
+      "situation_type": "HSA Mortuary Case",
+      "immediate_first_step": "If the doctor at home or the hospital is unable to certify the death, they will call the Police. Do not touch or move the body until the police officers arrive and authorize transfer to the Mortuary@HSA by police hearse.",
+      "governing_agency": "HSA",
+      "required_documents": [
+        "Deceased's NRIC or Passport",
+        "Deceased's medical history files",
+        "Informant's NRIC and relationship proof",
+        "Police report or card number (issued by attending officers)"
+      ],
+      "procedural_flow": [
+        "attending police officers inspect the scene and arrange for a police hearse to transport the deceased to the Mortuary@HSA (located at Outram Road).",
+        "attending officers issue a police card and instruct the next-of-kin on when to visit the HSA mortuary (typically the next morning at 8:00 AM).",
+        "Next-of-kin goes to Mortuary@HSA, identifies the deceased, and speaks with the Coroner's officer regarding medical history.",
+        "The Coroner reviews the autopsy/examination reports and issues a Digital Death Certificate along with a Permit to Bury or Cremate.",
+        "Next-of-kin authorizes Solace Dignity Care to collect the body from Mortuary@HSA. Our team retrieves the body and begins wake/cremation logistics."
+      ],
+      "ai_safety_instruction": "Trigger immediate human consultant handoff protocol. Explain Coroner/HSA identification requirements clearly, and transfer to a human coordinator to prepare the HSA collection authorization form."
+    },
+    {
+      "situation_type": "Minor/Infant Death",
+      "immediate_first_step": "Contact the hospital ward doctor or attending pediatrician immediately. If the gestation period is less than 27 weeks, request the hospital to issue a gestatonal memo authorizing cremation, as a standard death certificate is not generated.",
+      "governing_agency": "NEA",
+      "required_documents": [
+        "Deceased child's Birth Certificate or digital Death Certificate (if gestational age >= 27 weeks)",
+        "Hospital Gestational Memo (if gestational age < 27 weeks)",
+        "Parents' NRICs or Passports"
+      ],
+      "procedural_flow": [
+        "For foetuses under 27 weeks, hospital provides a specific memo authorizing cremation. For foetuses/infants after 27 weeks, a digital death certificate is issued.",
+        "Parents contact Solace Dignity Care to engage our 'Precious Angel' package services.",
+        "Our team assists in selecting the appropriate pastel casket (blue or pink eco-wood) and curates comfort items (romper, booties, plush toy, blanket).",
+        "Our director coordinates a quiet, private transport slot to Mandai Crematorium.",
+        "A private monk or priest chanting session is conducted at the crematorium chapel, followed by immediate cremation and ash collection (complimentary sea scattering is available)."
+      ],
+      "ai_safety_instruction": "Trigger immediate human consultant handoff protocol. Handle with extreme sensitivity. Give immediate support, and transition the session directly to Marcus Chen or a senior manager."
+    },
+    {
+      "situation_type": "Trauma/Self-Harm",
+      "immediate_first_step": "Call 995 for emergency medical services immediately if there is any chance of resuscitation. If deceased, call 999 for the police. Do not disturb the surroundings as the police must secure the scene for investigation.",
+      "governing_agency": "SPF",
+      "required_documents": [
+        "Deceased's NRIC/Passport",
+        "Informant's NRIC",
+        "Attending police station/officer details"
+      ],
+      "procedural_flow": [
+        "Police inspect the scene, document evidence, and transport the deceased to Mortuary@HSA.",
+        "HSA Coroner conducts a post-mortem examination. Next-of-kin goes to Mortuary@HSA to identify the deceased and receive the digital death certificate and cremation permit.",
+        "Next-of-kin contacts Solace Dignity Care and authorizes body collection.",
+        "Our specialized embalming team performs advanced restorative art and reconstructive cosmetology to prepare the deceased, making a peaceful open-casket viewing possible for the family.",
+        "Our team coordinates HDB void deck or parlour setups with extra privacy screens if requested."
+      ],
+      "ai_safety_instruction": "Trigger immediate human consultant handoff protocol. Offer calm, supportive condolences, provide the 999 police guidance, and hand over to a human consultant immediately."
+    },
+    {
+      "situation_type": "Overseas Repatriation",
+      "immediate_first_step": "If a Singaporean Citizen or PR passes away overseas, engage a professional local funeral director in that country to embalm and secure the body. Contact Solace Dignity Care at +65 6555 1115 to coordinate the Coffin (Import) Permit.",
+      "governing_agency": "ICA",
+      "required_documents": [
+        "Foreign Death Certificate (with certified English translation if in another language)",
+        "Embalming Certificate issued by foreign authorities",
+        "Export Permit/Laissez-Passer from the country of origin",
+        "Sealing Certificate for the coffin",
+        "Deceased's Singapore NRIC/Passport",
+        "Informant's NRIC/Passport"
+      ],
+      "procedural_flow": [
+        "Next-of-kin engages a foreign undertaker to prepare the body and obtain foreign export documentation.",
+        "Next-of-kin contacts Solace Dignity Care. SDC applies to NEA for a Coffin (Import) Permit and a Permit to Cremate or Bury.",
+        "The body is flown back to Singapore Changi Airport. Our air cargo transport crew receives the coffin at the airport terminal.",
+        "Our team transports the coffin to our care facility or directly to the wake location.",
+        "Next-of-kin reports the death personally to the Registry of Births and Deaths at the ICA Building (3rd Storey, Citizen Centre) within 30 days of arrival."
+      ],
+      "ai_safety_instruction": "Trigger immediate human consultant handoff protocol. Explain permit requirements clearly, and transition the conversation to our dedicated international repatriation desk."
+    }
+  ]
+}

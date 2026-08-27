@@ -1,0 +1,47 @@
+STEP 5 — Pydantic validation
+
+(the decorator + signature)
+
+"These two lines connect Step 4 to Step 5."
+
+(walk the table)
+"@app.post is a decorator — a label attached to the function below it. The path is what FastAPI matched. response_model declares the shape of the answer we'll send back.
+
+Then the function itself, and the parameter — request: PricingRequest. That type annotation is what triggers validation.
+we need to validate to not let wrong data reach the calculation, to avoid crash halfway running.
+without this we also have to do a if per field per request, which is very annoying, so we use this all in one declaration.
+
+Because the parameter is declared as a PricingRequest, FastAPI automatically reads the incoming JSON, validates it against that class, converts it into a Python object, and passes it in.
+if validation fails. the request will be rejected and the function calculated_price will never be executed.
+
+
+
+
+
+(the contract + table)
+
+"And this is what gets checked — every field has to exist and be the right type. If validation fails, the request is rejected and calculate_price() never executes."
+
+
+
+
+
+STEP 7 — GST and rounding
+
+"So once the rules engine has totalled everything up, 9% GST is applied."
+
+Python's built-in round() rounds halves to the nearest even number — so 2.5 becomes 2 instead of 3,  and 4.5 becomes 4 instead of 5. That's not how you'd round money.
+
+And this isn't a rare edge case for us — every price in our catalog is a round hundred, so multiplying by 0.09 often lands exactly on a half.
+
+So we wrote a small function that rounds the normal way. It's ordinary Python and runs on the server, so the browser receives an already-rounded figure."
+
+STEP 8 — The answer travels back
+
+"Okay, so at this point the calculation's done — we've got the subtotal, the tax, and the total, plus the list of line items.
+
+Now we need to send all that back to the browser. These two classes describe what the response looks like. The first one, BreakdownItem, is just one line — a name, a price, and a type. The second one, PricingResponse, is the whole reply: the three numbers plus a list of those items.
+
+So the return line packs everything into one object, and FastAPI converts it back into text and sends it over port 8000.
+
+And the thing worth pointing out — we're not just sending back one number. Every line comes back with its name and price. That's what lets the planner show the full itemised breakdown instead of just a total."

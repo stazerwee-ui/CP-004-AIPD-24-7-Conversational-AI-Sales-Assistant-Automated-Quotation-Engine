@@ -1,0 +1,2472 @@
+{
+  "post_funeral_tasks": [
+    {
+      "task_id": "PF-001",
+      "category": "Death Certificate Management",
+      "title": "Digital Death Certificate Retrieval & Verification (My Legacy / LifeSG)",
+      "summary": "Mandatory post-death retrieval and verification of the official government Digital Death Certificate via GovTech's My Legacy portal following electronic certification by an attending medical doctor.",
+      "responsible_agency_or_entity": [
+        "Immigration & Checkpoints Authority (ICA)",
+        "GovTech (My Legacy / LifeSG Portal)",
+        "Ministry of Health (MOH)"
+      ],
+      "eligibility_or_triggers": "Triggered immediately once a certified registered medical practitioner submits the electronic Cause of Death Certificate (CCOD) into the national death registry.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Receive SMS / Email Notification",
+          "details": "Upon the doctor's electronic CCOD submission, an automated system notification is sent to the registered Next-of-Kin (NOK) with the death registration reference and a secure access link.",
+          "platform_or_portal": "My Legacy LifeSG System Notification"
+        },
+        {
+          "step_number": 2,
+          "action": "Log into My Legacy Portal with Singpass",
+          "details": "The Next-of-Kin navigates to mylegacy.life.gov.sg and authenticates using their personal Singpass credentials.",
+          "platform_or_portal": "My Legacy Portal (mylegacy.life.gov.sg)"
+        },
+        {
+          "step_number": 3,
+          "action": "Download and Secure Digital Certificate",
+          "details": "Download the official PDF Digital Death Certificate within 30 days of issuance and store multiple secure digital copies (cloud and encrypted drive).",
+          "platform_or_portal": "My Legacy Portal"
+        },
+        {
+          "step_number": 4,
+          "action": "Verify Authenticity & Watermark",
+          "details": "Verify the digital signature, QR verification code, and official ICA watermark on the downloaded certificate.",
+          "platform_or_portal": "ICA Document Verification Portal"
+        }
+      ],
+      "required_documents": [
+        "Deceased NRIC / FIN / Passport Number",
+        "Next-of-Kin (NOK) Singpass Login Credentials",
+        "Doctor's electronic CCOD submission reference"
+      ],
+      "estimated_timeline": "Immediate (within 1-2 hours of doctor's CCOD submission)",
+      "estimated_costs_or_fees": {
+        "is_free": true,
+        "fee_details": "S$0 (Free digital download within 30 days of registration)"
+      },
+      "common_pitfalls_or_notes": [
+        "Since 29 May 2022, physical death certificates are no longer issued at police stations or ICA counters.",
+        "Download must be performed within 30 days of death registration; after 30 days, an extract fee applies via ICA e-Service.",
+        "Ensure the spelling of deceased's name and NRIC strictly matches their official identity card before circulating to banks and insurers."
+      ],
+      "bot_intent_triggers": [
+        "How do I download the digital death certificate in Singapore?",
+        "Where to get digital death cert on My Legacy portal?",
+        "LifeSG death cert download link",
+        "How long do I have to download death certificate for free?",
+        "Can I get a physical death certificate from police station?"
+      ]
+    },
+    {
+      "task_id": "PF-002",
+      "category": "Death Certificate Management",
+      "title": "Certified True Copy (CTC) & Death Certificate Extract Application",
+      "summary": "Application for an official Extract of Death Certificate or Certified True Copy (CTC) via ICA e-Services when the initial 30-day free download window has lapsed or when physical certified hardcopies are legally required.",
+      "responsible_agency_or_entity": [
+        "Immigration & Checkpoints Authority (ICA) - Registry of Births & Deaths"
+      ],
+      "eligibility_or_triggers": "Required if 30 days have elapsed since death registration, or if foreign embassies, overseas probate courts, or financial institutions demand an ICA-certified official extract.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Access ICA e-Service for Death Extract",
+          "details": "Navigate to the ICA official portal (ica.gov.sg) under 'Apply for Extract of Death Certificate'.",
+          "platform_or_portal": "ICA e-Services (eservices.ica.gov.sg)"
+        },
+        {
+          "step_number": 2,
+          "action": "Submit Application Details & Justification",
+          "details": "Input deceased's NRIC/death registration number, date of death, relationship proof, and purpose of extract.",
+          "platform_or_portal": "ICA Portal"
+        },
+        {
+          "step_number": 3,
+          "action": "Pay Statutory Search & Extract Fee",
+          "details": "Make online electronic payment via PayNow, credit card, or eNETS.",
+          "platform_or_portal": "ICA Payment Gateway"
+        },
+        {
+          "step_number": 4,
+          "action": "Collection or Digital Delivery",
+          "details": "Receive the certified electronic extract via email or collect the physical embossed extract at ICA Building Level 3 if requested.",
+          "platform_or_portal": "ICA Building / Registered Post"
+        }
+      ],
+      "required_documents": [
+        "Applicant's NRIC / Singpass",
+        "Proof of relationship (Birth Certificate, Marriage Certificate, or Legal Authority)",
+        "Deceased's NRIC / Death Registration Number"
+      ],
+      "estimated_timeline": "2 to 4 working days",
+      "estimated_costs_or_fees": {
+        "is_free": false,
+        "fee_details": "S$40 search fee + S$40 extract fee per certified copy (inclusive of 9% GST where applicable)"
+      },
+      "common_pitfalls_or_notes": [
+        "Non-immediate family members must provide legal authorization or letters of administration to obtain certified extracts.",
+        "Overseas entities may require apostille legalization by the Singapore Academy of Law (SAL) following ICA extract issuance."
+      ],
+      "bot_intent_triggers": [
+        "How to get death certificate extract after 30 days?",
+        "Apply for replacement death certificate Singapore ICA",
+        "Certified true copy death cert ICA cost",
+        "Lost digital death certificate how to retrieve",
+        "Official death extract for overseas probate application"
+      ]
+    },
+    {
+      "task_id": "PF-003",
+      "category": "Death Certificate Management",
+      "title": "Correction of Errors on Digital Death Registration Records",
+      "summary": "Formal administrative petition to the Registry of Births & Deaths to correct typographical errors, misspelled names, incorrect identification numbers, or inaccurate particulars on an issued death certificate.",
+      "responsible_agency_or_entity": [
+        "Immigration & Checkpoints Authority (ICA)",
+        "Ministry of Health (MOH) / Certifying Medical Doctor"
+      ],
+      "eligibility_or_triggers": "Discrepancy detected between the deceased's legal identity documents and the issued digital death certificate particulars (e.g. wrong alias, misspelled surname, mismatched birth date).",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Identify Type of Error",
+          "details": "Determine if the error is clerical (ICA registry data entry) or medical (doctor's CCOD entry).",
+          "platform_or_portal": "ICA / Medical Institution"
+        },
+        {
+          "step_number": 2,
+          "action": "Obtain Doctor's Rectification Letter (if medical error)",
+          "details": "If the cause of death or medical particulars are erroneous, the certifying doctor must issue a formal memorandum of correction to ICA.",
+          "platform_or_portal": "Certifying Hospital / Clinic"
+        },
+        {
+          "step_number": 3,
+          "action": "Submit Amendment Request to ICA",
+          "details": "Submit formal statutory declaration with supporting documents (NRIC, Passport, Birth Cert) to ICA Registry of Births & Deaths.",
+          "platform_or_portal": "ICA Building / Email: ICA_Birth_Death@ica.gov.sg"
+        },
+        {
+          "step_number": 4,
+          "action": "Issuance of Corrected Digital Certificate",
+          "details": "ICA updates the national database and issues a corrected digital certificate for download.",
+          "platform_or_portal": "My Legacy Portal"
+        }
+      ],
+      "required_documents": [
+        "Original and erroneous death certificate PDF",
+        "Deceased's original NRIC / Passport / Birth Certificate",
+        "Certifying Doctor's Official Amendment Memorandum (if medical details)",
+        "Applicant's NRIC and relationship proof"
+      ],
+      "estimated_timeline": "5 to 10 working days",
+      "estimated_costs_or_fees": {
+        "is_free": false,
+        "fee_details": "S$0 for administrative/doctor errors; S$40 administrative amendment fee if correction is due to applicant's initial error"
+      },
+      "common_pitfalls_or_notes": [
+        "Uncorrected errors will stall bank account closures, CPF payouts, and High Court probate proceedings.",
+        "Always rectify errors immediately prior to initiating insurance claims or HDB transmission."
+      ],
+      "bot_intent_triggers": [
+        "Wrong name on death certificate Singapore how to change?",
+        "How to fix typo in digital death cert ICA",
+        "Correct spelling mistake on death certificate",
+        "Amend cause of death certificate Singapore",
+        "Death cert NRIC does not match IC what to do"
+      ]
+    },
+    {
+      "task_id": "PF-004",
+      "category": "CPF Account & Funds Settlement",
+      "title": "CPF Nominated Funds Distribution & Payout Processing",
+      "summary": "Settlement and automated disbursement of the deceased's CPF Ordinary, Special, MediSave, and Retirement Account savings, along with unused CPF LIFE annuity premiums, to designated nominees under a valid CPF Nomination.",
+      "responsible_agency_or_entity": [
+        "Central Provident Fund Board (CPFB)"
+      ],
+      "eligibility_or_triggers": "The deceased member had executed a valid CPF Nomination prior to passing. CPF savings do NOT form part of the estate and bypass wills and probate.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Automated Notification to CPF Board",
+          "details": "CPF Board is automatically notified of the member's passing via the ICA electronic death registry integration.",
+          "platform_or_portal": "Government Inter-Agency Data Exchange"
+        },
+        {
+          "step_number": 2,
+          "action": "CPF Board Notifies Nominees",
+          "details": "CPF Board reaches out to designated nominees via postal letter, email, or SMS within 2 to 3 weeks.",
+          "platform_or_portal": "CPF Communications"
+        },
+        {
+          "step_number": 3,
+          "action": "Nominee Payout Application Submission",
+          "details": "Nominees log into the CPF Portal using Singpass to provide bank account details (PayNow-NRIC preferred) for direct disbursement.",
+          "platform_or_portal": "CPF Board Online Services (cpf.gov.sg)"
+        },
+        {
+          "step_number": 4,
+          "action": "Fund Disbursement into Nominee Accounts",
+          "details": "CPF transfers the designated percentage share directly to nominee bank accounts (cash nomination) or nominee CPF accounts (CPF-to-CPF nomination).",
+          "platform_or_portal": "Direct Bank Giro / PayNow"
+        }
+      ],
+      "required_documents": [
+        "Nominee's Singpass Login Credentials",
+        "Nominee's Active Singapore Bank Account (linked to PayNow-NRIC)",
+        "Digital Death Certificate reference number",
+        "Nominee NRIC"
+      ],
+      "estimated_timeline": "3 to 5 weeks from date of death registration",
+      "estimated_costs_or_fees": {
+        "is_free": true,
+        "fee_details": "S$0 (Free automated government service)"
+      },
+      "common_pitfalls_or_notes": [
+        "CPF monies do NOT follow the instructions of a Will; a Will cannot override a CPF nomination.",
+        "Marriage automatically revokes any previous CPF nomination made before marriage; divorce does NOT revoke an existing nomination.",
+        "CPF LIFE unused annuity balance is included in the payout distribution."
+      ],
+      "bot_intent_triggers": [
+        "How long does CPF payout take after death with nomination?",
+        "Claim deceased CPF money with nomination",
+        "Does a will cover CPF savings in Singapore?",
+        "CPF Life refund after death payout process",
+        "How to check if deceased made a CPF nomination"
+      ]
+    },
+    {
+      "task_id": "PF-005",
+      "category": "CPF Account & Funds Settlement",
+      "title": "Un-nominated CPF Savings Administration (Public Trustee's Office - PTO)",
+      "summary": "Administration, statutory verification, and distribution of un-nominated CPF savings by the Public Trustee's Office (PTO) in accordance with the Intestate Succession Act or Muslim Faraid rules.",
+      "responsible_agency_or_entity": [
+        "Public Trustee's Office (PTO) - Ministry of Law",
+        "Central Provident Fund Board (CPFB)"
+      ],
+      "eligibility_or_triggers": "Deceased member did NOT make a CPF nomination, or all nominated beneficiaries predeceased the member.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "CPF Transfers Monies to Public Trustee",
+          "details": "CPFB automatically transfers un-nominated balances to the Public Trustee within 4 weeks of death notification.",
+          "platform_or_portal": "CPFB to PTO Internal Settlement"
+        },
+        {
+          "step_number": 2,
+          "action": "Next-of-Kin Submits Online Application to PTO",
+          "details": "Next-of-kin logs into the MinLaw PTO portal via Singpass to file a claim for un-nominated CPF monies.",
+          "platform_or_portal": "MinLaw PTO Portal (pto.mlaw.gov.sg)"
+        },
+        {
+          "step_number": 3,
+          "action": "Upload Family Tree & Supporting Certificates",
+          "details": "Submit marriage certificate, birth certificates of all legal beneficiaries, and death certs of deceased family members.",
+          "platform_or_portal": "MinLaw PTO Portal"
+        },
+        {
+          "step_number": 4,
+          "action": "Statutory Review & PTO Fee Deduction",
+          "details": "PTO verifies lawful heirs under the Intestate Succession Act (or Syariah Court Inheritance Certificate) and deducts statutory administration fees.",
+          "platform_or_portal": "PTO Case Management"
+        },
+        {
+          "step_number": 5,
+          "action": "Disbursement to Lawful Beneficiaries",
+          "details": "PTO issues payments directly to each lawful beneficiary according to statutory share ratios.",
+          "platform_or_portal": "Direct Bank Giro / PayNow"
+        }
+      ],
+      "required_documents": [
+        "Deceased Digital Death Certificate",
+        "Applicant and Beneficiaries' NRICs",
+        "Marriage Certificate (if spouse claims)",
+        "Birth Certificates of all children / siblings / parents",
+        "Faraid Certificate from Syariah Court (for Muslim deceased)"
+      ],
+      "estimated_timeline": "4 to 8 weeks after complete document submission",
+      "estimated_costs_or_fees": {
+        "is_free": false,
+        "fee_details": "Tiered statutory PTO administration fee: 6.25% for first S$1,000; 3.75% for next S$9,000; 2.5% for next S$15,000; 1.5% for next S$25,000; 0.75% for balance exceeding S$50,000 (minimum S$15)"
+      },
+      "common_pitfalls_or_notes": [
+        "PTO charges statutory fees which reduce total inheritance; making a CPF nomination in advance avoids these fees completely.",
+        "All legal beneficiaries must be identified; if one heir cannot be traced, payout to others may be delayed."
+      ],
+      "bot_intent_triggers": [
+        "Deceased had no CPF nomination how to claim?",
+        "Public Trustee PTO CPF payout timeline and fees",
+        "Unnominated CPF savings distribution Singapore",
+        "How much does Public Trustee charge for CPF money?",
+        "Claim CPF without nomination Intestate Succession Act"
+      ]
+    },
+    {
+      "task_id": "PF-006",
+      "category": "CPF Account & Funds Settlement",
+      "title": "Deceased MediSave Balance Settlement & Medical Expense Reimbursement",
+      "summary": "Reimbursement of outstanding or out-of-pocket last hospital bills and palliative care fees from the deceased's MediSave account before final CPF closure.",
+      "responsible_agency_or_entity": [
+        "Central Provident Fund Board (CPFB)",
+        "Ministry of Health (MOH)",
+        "Restructured / Private Hospitals & Hospices"
+      ],
+      "eligibility_or_triggers": "Deceased incurred medical/hospitalization bills at approved medical institutions prior to passing that remain unpaid or were settled out-of-pocket by NOK.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Hospital Submits MediSave Claim to CPF",
+          "details": "Hospital business office files final hospitalization and ICU expenses against deceased's MediSave up to prevailing withdrawal limits.",
+          "platform_or_portal": "MOH MediClaim System"
+        },
+        {
+          "step_number": 2,
+          "action": "Next-of-Kin Files for Bill Reimbursement (if applicable)",
+          "details": "If NOK paid upfront with cash, submit hospital tax invoices and official discharge summaries to CPF Board for medical reimbursement.",
+          "platform_or_portal": "CPF Member Services Portal"
+        },
+        {
+          "step_number": 3,
+          "action": "MediSave Residual Balance Consolidation",
+          "details": "Any remaining MediSave balance after medical settlements is swept into the overall CPF funds for nominee/PTO distribution.",
+          "platform_or_portal": "CPFB Internal Reconciliation"
+        }
+      ],
+      "required_documents": [
+        "Final Hospital Tax Invoices and Itemized Bills",
+        "Discharge Summary and Medical Memoranda",
+        "Official Receipts showing payment by applicant",
+        "Digital Death Certificate and proof of relationship"
+      ],
+      "estimated_timeline": "2 to 4 weeks",
+      "estimated_costs_or_fees": {
+        "is_free": true,
+        "fee_details": "S$0 (Administrative service)"
+      },
+      "common_pitfalls_or_notes": [
+        "MediSave withdrawal limits apply strictly according to prevailing MOH surgical and daily ward caps.",
+        "Ensure hospital finance teams are informed of death so they finalize MediSave deductions before CPF account is sealed."
+      ],
+      "bot_intent_triggers": [
+        "Can I use deceased MediSave to pay hospital bill?",
+        "Reimburse medical fees from deceased Medisave Singapore",
+        "What happens to Medisave account after death?",
+        "Hospital bill deduction from Medisave upon passing",
+        "Deceased CPF Medisave balance payout"
+      ]
+    },
+    {
+      "task_id": "PF-007",
+      "category": "Insurance Claims Processing",
+      "title": "Private Life & Personal Accident Insurance Death Benefit Claim",
+      "summary": "Filing death benefit claims on private life insurance policies, whole life plans, term life policies, and accident riders across Singapore insurers (e.g. AIA, Great Eastern, Prudential, Singlife, Manulife, Income).",
+      "responsible_agency_or_entity": [
+        "Private Life Insurance Companies in Singapore",
+        "Life Insurance Association Singapore (LIA)"
+      ],
+      "eligibility_or_triggers": "Deceased held active in-force private life, endowment, investment-linked (ILP), or personal accident policies at the time of death.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Locate Policy Contracts & Policy Numbers",
+          "details": "Search physical documents, email records, or contact the family's financial advisor to gather policy numbers.",
+          "platform_or_portal": "Insurer Client Portals"
+        },
+        {
+          "step_number": 2,
+          "action": "Request Insurer's Death Claim Form",
+          "details": "Download official death claim application packet from the respective insurer's portal.",
+          "platform_or_portal": "Insurer Website (AIA, GE, Prudential, Income, Singlife, Manulife)"
+        },
+        {
+          "step_number": 3,
+          "action": "Obtain Attending Physician's Statement (APS)",
+          "details": "Have the doctor who certified death or managed the terminal condition complete the insurer's medical death report.",
+          "platform_or_portal": "Hospital Medical Records Department"
+        },
+        {
+          "step_number": 4,
+          "action": "Submit Full Claim Dossier",
+          "details": "Submit completed claim form, certified death cert, NRICs of claimants/nominees, and bank details for PayNow transfer.",
+          "platform_or_portal": "Insurer Claims Portal / Service Centre"
+        },
+        {
+          "step_number": 5,
+          "action": "Underwriting Assessment & Benefit Disbursement",
+          "details": "Insurer assesses claim against contestability/suicide clauses and disburses death benefit proceeds directly to designated beneficiaries or estate.",
+          "platform_or_portal": "Direct Bank Transfer"
+        }
+      ],
+      "required_documents": [
+        "Original or Certified Copy of Digital Death Certificate",
+        "Deceased NRIC copy and Claimant/Beneficiary NRIC copy",
+        "Policy contracts or Policy schedules",
+        "Completed Insurer Death Claim Form",
+        "Attending Physician's Statement (APS) / Medical Report",
+        "Grant of Probate or Letters of Administration (if no insurance nomination / Section 49L/49M Insurance Act)"
+      ],
+      "estimated_timeline": "2 to 6 weeks (longer if coroner investigation or overseas death)",
+      "estimated_costs_or_fees": {
+        "is_free": false,
+        "fee_details": "Hospital Medical Report / Attending Physician Statement fee ranges from S$100 to S$450 depending on hospital/specialist"
+      },
+      "common_pitfalls_or_notes": [
+        "Check if trust nomination (Section 49L) or revocable nomination (Section 49M) exists. Trust nominations bypass estate and probate.",
+        "Policies under 1-2 years from inception are subject to contestability review for non-disclosure.",
+        "Unnatural or accidental deaths require the police investigation report and coroner's certificate."
+      ],
+      "bot_intent_triggers": [
+        "How to claim life insurance after death Singapore?",
+        "AIA Great Eastern Prudential death claim process",
+        "Documents needed for insurance death claim",
+        "Attending physician statement fee for death claim",
+        "How long do insurance companies take to pay out death claim?"
+      ]
+    },
+    {
+      "task_id": "PF-008",
+      "category": "Insurance Claims Processing",
+      "title": "Dependants' Protection Scheme (DPS) Claim Filing",
+      "summary": "Filing a claim for the statutory term life Dependants' Protection Scheme (DPS) covering CPF members up to S$70,000 sum assured for members aged up to 60 (S$55,000 for age 60-65).",
+      "responsible_agency_or_entity": [
+        "Great Eastern Life (Sole DPS Administrator since April 2021)",
+        "Central Provident Fund Board (CPFB)"
+      ],
+      "eligibility_or_triggers": "Deceased was a Singapore Citizen or Permanent Resident aged between 21 and 65 with an active DPS policy covered via CPF Ordinary / Special Account deductions.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Verify DPS Coverage Status",
+          "details": "Check deceased's CPF statements or contact Great Eastern Life to confirm active DPS coverage.",
+          "platform_or_portal": "CPF Online / Great Eastern Portal"
+        },
+        {
+          "step_number": 2,
+          "action": "Download Great Eastern DPS Death Claim Form",
+          "details": "Obtain the official DPS Death Claim Form from Great Eastern's website.",
+          "platform_or_portal": "Great Eastern Life DPS Portal (greateasternlife.com)"
+        },
+        {
+          "step_number": 3,
+          "action": "Complete Claimant Statement & Doctor's Certification",
+          "details": "Fill in claimant personal details and have certifying doctor complete medical section if required.",
+          "platform_or_portal": "Great Eastern Claims"
+        },
+        {
+          "step_number": 4,
+          "action": "Submit Claim Packet to Great Eastern",
+          "details": "Submit documents online or mail to Great Eastern DPS Department.",
+          "platform_or_portal": "Great Eastern Life Customer Centre / Post"
+        },
+        {
+          "step_number": 5,
+          "action": "Claim Payment Disbursement",
+          "details": "Great Eastern pays sum assured to valid DPS nominees, or to estate executors/administrators under probate rules.",
+          "platform_or_portal": "Direct Bank Giro / PayNow"
+        }
+      ],
+      "required_documents": [
+        "Completed DPS Death Claim Form",
+        "Digital Death Certificate copy",
+        "Deceased and Claimant NRICs",
+        "Claimant's Bank Book/Statement for direct credit",
+        "Grant of Probate / Letters of Administration (if payout exceeds S$150,000 estate threshold or disputes exist)"
+      ],
+      "estimated_timeline": "2 to 3 weeks upon receipt of full documentation",
+      "estimated_costs_or_fees": {
+        "is_free": true,
+        "fee_details": "S$0 for claim filing (Medical report fees S$50-S$200 if requested by insurer)"
+      },
+      "common_pitfalls_or_notes": [
+        "DPS nominations are separate from CPF nominations; a CPF nomination does NOT automatically govern DPS payouts unless a specific DPS nomination was made.",
+        "If no DPS nomination exists, Great Eastern can pay up to S$150,000 to proper claimants (spouse, child, parent) under Insurance Act Section 61 without probate."
+      ],
+      "bot_intent_triggers": [
+        "How to claim Dependants Protection Scheme DPS after death?",
+        "Great Eastern DPS death claim form and payout",
+        "How much is DPS payout Singapore?",
+        "Is DPS covered under CPF nomination?",
+        "Who can claim DPS payout if no nomination?"
+      ]
+    },
+    {
+      "task_id": "PF-009",
+      "category": "Insurance Claims Processing",
+      "title": "CareShield Life / ElderShield Termination & Final Benefits Claim",
+      "summary": "Notification of death to terminate monthly long-term care premium deductions, settle pending severe disability claims, and close CareShield Life / ElderShield accounts.",
+      "responsible_agency_or_entity": [
+        "Central Provident Fund Board (CPFB)",
+        "Ministry of Health (MOH)",
+        "Appointed Insurers (Great Eastern, Singlife, Income Insurance)"
+      ],
+      "eligibility_or_triggers": "Deceased was enrolled in CareShield Life, ElderShield 300/400, or private CareShield Supplements at the time of passing.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Automated Coverage Termination",
+          "details": "CareShield Life / ElderShield coverage automatically ceases upon death registration via national birth/death sync.",
+          "platform_or_portal": "Government Inter-Agency Sync"
+        },
+        {
+          "step_number": 2,
+          "action": "Claim Outstanding Monthly Disability Payouts (if applicable)",
+          "details": "If deceased was eligible for disability payouts that were pending or incurred before death, NOK submits a final arrears claim.",
+          "platform_or_portal": "AIC / CPF / Insurer Portal"
+        },
+        {
+          "step_number": 3,
+          "action": "Premium Proration & Refund",
+          "details": "Unused unearned annual premiums paid from MediSave are prorated and refunded back to the deceased's MediSave account.",
+          "platform_or_portal": "CPFB MediSave System"
+        }
+      ],
+      "required_documents": [
+        "Digital Death Certificate",
+        "Doctor's Functional Assessment Report (if claiming pending disability arrears)",
+        "Claimant NRIC and Relationship Proof"
+      ],
+      "estimated_timeline": "2 to 4 weeks",
+      "estimated_costs_or_fees": {
+        "is_free": true,
+        "fee_details": "S$0 (Government administrative settlement)"
+      },
+      "common_pitfalls_or_notes": [
+        "CareShield Life and ElderShield do not pay a death benefit; they are disability insurance schemes. Payouts cease upon date of death.",
+        "Private CareShield Supplement policies with death benefit riders must be claimed separately with the private insurer."
+      ],
+      "bot_intent_triggers": [
+        "Does CareShield Life pay death benefit?",
+        "What happens to ElderShield after policyholder dies?",
+        "CareShield Life premium refund after death",
+        "Claim pending ElderShield monthly payout after passing",
+        "Stop CareShield deductions after death"
+      ]
+    },
+    {
+      "task_id": "PF-010",
+      "category": "Insurance Claims Processing",
+      "title": "NTUC Gift Group Insurance & Co-operative Death Benefit Claims",
+      "summary": "Filing claims for the NTUC Gift group insurance scheme provided automatically to eligible union members, along with co-operative society death welfare grants.",
+      "responsible_agency_or_entity": [
+        "National Trades Union Congress (NTUC)",
+        "Singapore Labour Foundation (SLF)",
+        "Affiliated Trade Unions & Co-operatives (e.g. Police Co-op, Teachers' Co-op, AUPE)"
+      ],
+      "eligibility_or_triggers": "Deceased was an active member of an NTUC-affiliated union or co-operative society with continuous membership standing.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Verify Union / Co-op Membership",
+          "details": "Confirm deceased's membership status and continuous union fee payment with NTUC or respective union branch.",
+          "platform_or_portal": "NTUC Union Portal / MyNTUC App"
+        },
+        {
+          "step_number": 2,
+          "action": "Obtain NTUC Gift Claim Dossier",
+          "details": "Request the NTUC Gift Death Claim form from the deceased's branch union secretariat.",
+          "platform_or_portal": "NTUC Member Services Centre (One Marina Boulevard / Union HQ)"
+        },
+        {
+          "step_number": 3,
+          "action": "Submit Claim with Supporting Documents",
+          "details": "Submit completed form, digital death certificate, claimant NRIC, and marriage/birth certs proving relationship.",
+          "platform_or_portal": "Union Secretariat Office"
+        },
+        {
+          "step_number": 4,
+          "action": "Disbursement of Death Benefit",
+          "details": "NTUC Gift pays up to S$40,000 (depending on membership tenure and cause of death - natural vs accidental).",
+          "platform_or_portal": "Bank Cheque / Direct Giro"
+        }
+      ],
+      "required_documents": [
+        "Completed NTUC Gift Claim Form",
+        "Digital Death Certificate copy",
+        "Deceased and Claimant NRICs",
+        "Proof of relationship (Marriage / Birth Certificate)",
+        "Union Membership Card / Payslip showing union fee deduction"
+      ],
+      "estimated_timeline": "3 to 6 weeks",
+      "estimated_costs_or_fees": {
+        "is_free": true,
+        "fee_details": "S$0 (Free welfare benefit for union members)"
+      },
+      "common_pitfalls_or_notes": [
+        "Claims must be submitted within the statutory limit (usually 90 to 180 days from date of death).",
+        "Membership dues must have been in good standing at the time of death without arrears."
+      ],
+      "bot_intent_triggers": [
+        "How to claim NTUC Gift death insurance?",
+        "Union member death benefit Singapore",
+        "NTUC insurance claim after member passed away",
+        "Police Co-op death grant application",
+        "NTUC Gift payout amount and documents required"
+      ]
+    },
+    {
+      "task_id": "PF-011",
+      "category": "Bank Account & Asset Handling",
+      "title": "Bank Account Notification, Freezing & Small Balance Estate Closure",
+      "summary": "Notification to retail banks (DBS/POSB, OCBC, UOB, Standard Chartered, HSBC, Citibank) to freeze sole accounts, handle joint accounts, and execute simplified small-estate balance withdrawals without formal probate.",
+      "responsible_agency_or_entity": [
+        "The Association of Banks in Singapore (ABS)",
+        "Retail Banks (DBS/POSB, OCBC, UOB, Maybank, HSBC, StanChart, Citi)",
+        "Public Trustee's Office (PTO)"
+      ],
+      "eligibility_or_triggers": "Deceased held bank accounts in Singapore. Triggered immediately upon notifying the bank or when banks receive inter-agency death registries.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Formally Notify Banks of Passing",
+          "details": "Submit deceased's digital death certificate to branch customer service desks or dedicated deceased estate hotlines.",
+          "platform_or_portal": "Bank Deceased Estate Units (DBS, OCBC, UOB portals)"
+        },
+        {
+          "step_number": 2,
+          "action": "Handling Joint Accounts with Survivorship",
+          "details": "For joint-alternate ('either to sign') accounts, surviving account holder provides death cert to transfer balance or convert account to sole name under right of survivorship.",
+          "platform_or_portal": "Bank Branch Counter"
+        },
+        {
+          "step_number": 3,
+          "action": "Handling Sole Accounts (Small Estate Exemption)",
+          "details": "If total sole balance across bank is under the bank's small estate threshold (DBS: S$50k, OCBC: S$50k, UOB: S$50k), next-of-kin signs an Indemnity Form for immediate closure without Grant of Probate.",
+          "platform_or_portal": "Bank Branch Estate Desk"
+        },
+        {
+          "step_number": 4,
+          "action": "Handling Sole Accounts Exceeding Threshold",
+          "details": "If balance exceeds S$50,000, bank freezes funds until the executor/administrator presents an extracted Grant of Probate or Letters of Administration.",
+          "platform_or_portal": "Bank Legal & Estate Admin Dept"
+        }
+      ],
+      "required_documents": [
+        "Certified Digital Death Certificate",
+        "Deceased NRIC / Passport",
+        "Claimant's / Next-of-Kin's NRIC",
+        "Proof of relationship (Birth / Marriage Cert)",
+        "Bank Passbook / ATM Card / Bank Statements (if available)",
+        "Signed Bank Letter of Indemnity (for small estates under S$50,000)",
+        "Extracted Grant of Probate / Letters of Administration (if over S$50,000)"
+      ],
+      "estimated_timeline": "Small estates: 1 to 3 weeks; Large estates with probate: 2 to 4 weeks post-probate extraction",
+      "estimated_costs_or_fees": {
+        "is_free": true,
+        "fee_details": "S$0 (Standard bank estate service)"
+      },
+      "common_pitfalls_or_notes": [
+        "Do NOT use deceased's ATM card or online banking after death; withdrawing money post-passing without authorization constitutes criminal breach of trust under Singapore law.",
+        "Automated GIRO deductions for utilities/mortgages will bounce once accounts are frozen; immediately set up alternative payment arrangements."
+      ],
+      "bot_intent_triggers": [
+        "How to close deceased bank account DBS POSB OCBC UOB?",
+        "Can I withdraw money from deceased parent bank account?",
+        "What happens to joint bank account when one person dies Singapore?",
+        "Small estate bank closure limit Singapore 50000",
+        "Bank account frozen after death what to do"
+      ]
+    },
+    {
+      "task_id": "PF-012",
+      "category": "Bank Account & Asset Handling",
+      "title": "Safe Deposit Box Inspection & Joint Inventory Listing",
+      "summary": "Formal procedure for inspecting and inventorying the contents of a deceased person's safe deposit box located at commercial bank vaults in Singapore.",
+      "responsible_agency_or_entity": [
+        "Commercial Retail Banks (DBS, OCBC, UOB, Certis Cisco)",
+        "Estate Legal Representatives / Next-of-Kin",
+        "Inland Revenue Authority of Singapore (IRAS) / Witnessing Officers"
+      ],
+      "eligibility_or_triggers": "Deceased rented a safe deposit box individually or jointly with other parties.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Notify Bank Safe Deposit Box Custody",
+          "details": "Inform the bank vault department of the box holder's death to seal the box against unauthorized entry.",
+          "platform_or_portal": "Bank Safe Deposit Box Department"
+        },
+        {
+          "step_number": 2,
+          "action": "Schedule Joint Inspection Appointment",
+          "details": "Book a formal inspection appointment with bank custody officers. All surviving joint hirers and legal executors must attend.",
+          "platform_or_portal": "Bank Vault Branch"
+        },
+        {
+          "step_number": 3,
+          "action": "Conduct Box Opening & Inventory Listing",
+          "details": "Open the box using the deceased's physical keys (or arrange locksmith drill-open if keys lost). Bank officers prepare a formal signed Inventory List.",
+          "platform_or_portal": "Bank Vault"
+        },
+        {
+          "step_number": 4,
+          "action": "Retrieval of Will (if found)",
+          "details": "If the original Will is found inside, the bank may release the Will directly to the named executor or appointed lawyer for probate filing while re-sealing all other items.",
+          "platform_or_portal": "Bank Legal Custody"
+        },
+        {
+          "step_number": 5,
+          "action": "Final Asset Release post-Probate",
+          "details": "All other contents (jewelry, cash, titles, bullion) remain locked until the extracted Grant of Probate is produced.",
+          "platform_or_portal": "Bank Vault"
+        }
+      ],
+      "required_documents": [
+        "Digital Death Certificate",
+        "Deceased Safe Deposit Box Contract / Key",
+        "NRIC of all attendees and legal representatives",
+        "Copy of Will / Court order (if seeking Will retrieval)"
+      ],
+      "estimated_timeline": "1 to 2 weeks to schedule appointment; 1 hour for inspection",
+      "estimated_costs_or_fees": {
+        "is_free": false,
+        "fee_details": "S$0 for inspection; Locksmith drilling fee S$150 - S$350 if keys are missing"
+      },
+      "common_pitfalls_or_notes": [
+        "No assets other than the original Will can be removed during the initial inspection prior to Grant of Probate.",
+        "If the safe deposit box was rented under joint names, terms of the box agreement dictate whether the survivor has access or if both signatures/probate are required."
+      ],
+      "bot_intent_triggers": [
+        "How to open safe deposit box after death Singapore?",
+        "Will is locked in deceased safe deposit box how to get it?",
+        "Safe deposit box inspection procedure DBS OCBC UOB",
+        "Lost safe deposit box key deceased estate",
+        "Certis Cisco safe deposit box deceased owner"
+      ]
+    },
+    {
+      "task_id": "PF-013",
+      "category": "Bank Account & Asset Handling",
+      "title": "Securities, CDP Direct Account, SRS & Investment Portfolio Transmission",
+      "summary": "Transfer and liquidation of Singapore stock holdings held in Central Depository (CDP), Supplementary Retirement Scheme (SRS) accounts, custodian brokerage accounts, and unit trusts.",
+      "responsible_agency_or_entity": [
+        "The Central Depository (Pte) Limited (CDP) / Singapore Exchange (SGX)",
+        "SRS Operator Banks (DBS, OCBC, UOB)",
+        "Securities Brokerages (Tiger, Moomoo, FSMOne, Phillip, Saxo)"
+      ],
+      "eligibility_or_triggers": "Deceased owned Singapore equities, SGX bonds, Treasury bills, SRS balances, or mutual funds.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Notify CDP of Member Passing",
+          "details": "Submit death certificate to CDP to freeze individual trading and direct dividend credits.",
+          "platform_or_portal": "SGX CDP Customer Service (investors.sgx.com)"
+        },
+        {
+          "step_number": 2,
+          "action": "Obtain Probate / Letters of Administration",
+          "details": "CDP and brokerages require an extracted Grant of Probate or Letters of Administration before executing any stock transfer.",
+          "platform_or_portal": "Family Justice Courts eLitigation"
+        },
+        {
+          "step_number": 3,
+          "action": "Submit CDP Transfer Application Form",
+          "details": "Executor submits CDP Transmission Form to transfer shares to the estate account or directly into beneficiaries' individual CDP accounts.",
+          "platform_or_portal": "SGX CDP Services Counter (Buona Vista / Digital Submission)"
+        },
+        {
+          "step_number": 4,
+          "action": "SRS Account Closure & Tax Assessment",
+          "details": "SRS funds are liquidated. 50% of the deceased's SRS withdrawal balance is subject to income tax under IRAS rules, unless specific exemption conditions apply.",
+          "platform_or_portal": "SRS Operator Bank & IRAS"
+        }
+      ],
+      "required_documents": [
+        "Certified Copy of Grant of Probate or Letters of Administration",
+        "Deceased CDP Account Number and Securities Schedule",
+        "Beneficiary's CDP Account Number",
+        "Digital Death Certificate",
+        "Executor and Beneficiary NRIC copies"
+      ],
+      "estimated_timeline": "3 to 6 weeks post-probate extraction",
+      "estimated_costs_or_fees": {
+        "is_free": false,
+        "fee_details": "CDP transmission fee of S$10.90 (incl. GST) per counter transferred; Brokerage transfer/dematerialization fees may apply"
+      },
+      "common_pitfalls_or_notes": [
+        "SRS accounts are deemed withdrawn upon death. 50% of the SRS withdrawal is taxable at the deceased's progressive income tax rate in the year of death.",
+        "US stock shares held via custodian brokers may trigger US Federal Estate Tax (up to 40% on US-situs assets over US$60,000) for non-US citizens."
+      ],
+      "bot_intent_triggers": [
+        "How to transfer deceased CDP shares SGX Singapore?",
+        "What happens to SRS account upon death tax rules",
+        "Inherit stocks and shares in Singapore after death",
+        "CDP transmission form for deceased estate",
+        "Transfer deceased Moomoo Tiger brokerage shares"
+      ]
+    },
+    {
+      "task_id": "PF-014",
+      "category": "Probate & Estate Legal Administration",
+      "title": "Application for Grant of Probate (Estate with a Valid Will)",
+      "summary": "High Court / Family Justice Courts judicial application by named executors to obtain the legal Grant of Probate empowering them to collect, liquidate, and distribute the deceased's estate assets in accordance with their written Will.",
+      "responsible_agency_or_entity": [
+        "Family Justice Courts (FJC) / Supreme Court of Singapore",
+        "Probate Registry / Singapore Courts eLitigation",
+        "Law Society of Singapore / Appointed Probate Lawyer"
+      ],
+      "eligibility_or_triggers": "The deceased left behind a validly executed Will governed by the Wills Act (Cap. 352) appointing one or more living executors.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Locate Original Will & Verify Validity",
+          "details": "Retrieve the original physical Will, verify signatures of two independent non-beneficiary witnesses, and check the Wills Registry (Insolvency & Public Trustee's Office).",
+          "platform_or_portal": "Wills Registry / Law Firm Vault"
+        },
+        {
+          "step_number": 2,
+          "action": "Engage Probate Lawyer or File DIY via eLitigation",
+          "details": "Engage a Singapore probate lawyer or access the Service Bureau at CrimsonLogic / Family Justice Courts for self-represented filing (if estate < S$5m and straightforward).",
+          "platform_or_portal": "SG Courts Service Bureau / eLitigation (elitigation.sg)"
+        },
+        {
+          "step_number": 3,
+          "action": "File Originating Application & Supporting Affidavit",
+          "details": "File the statement of probate, originating application, certified copy of death cert, and original Will.",
+          "platform_or_portal": "eLitigation Portal"
+        },
+        {
+          "step_number": 4,
+          "action": "Submit Schedule of Assets & Liabilities",
+          "details": "Conduct asset searches across banks, CDP, property registry, insurance, and declare full schedule of assets in the executor's affidavit.",
+          "platform_or_portal": "Family Justice Courts"
+        },
+        {
+          "step_number": 5,
+          "action": "Court Order & Extraction of Grant of Probate",
+          "details": "Upon court approval, pay court extraction fees and obtain the official digital Grant of Probate bearing the Court seal.",
+          "platform_or_portal": "Family Justice Courts Portal"
+        }
+      ],
+      "required_documents": [
+        "Original Valid Last Will & Testament",
+        "Certified Copy of Digital Death Certificate",
+        "Executor(s) and Beneficiaries' NRIC / Passport copies",
+        "Comprehensive Schedule of Assets (Bank balances, Property title deeds, CDP statements, Vehicle log cards)",
+        "Wills Registry Search Certificate"
+      ],
+      "estimated_timeline": "2 to 4 months for straightforward non-contentious estates",
+      "estimated_costs_or_fees": {
+        "is_free": false,
+        "fee_details": "Lawyer legal fees typically S$1,500 to S$4,500 for non-contentious probate; Court filing disbursements approx S$400 to S$800"
+      },
+      "common_pitfalls_or_notes": [
+        "Always submit the ORIGINAL physical Will to the court registry; photocopies require a specialized court hearing to prove validity.",
+        "Wills do NOT cover CPF savings, joint tenancy properties, or insurance policies with valid Section 49L trust nominations."
+      ],
+      "bot_intent_triggers": [
+        "How to apply for Grant of Probate in Singapore?",
+        "Cost of probate lawyer Singapore for will",
+        "How long does Grant of Probate take Family Justice Courts?",
+        "DIY Grant of Probate Singapore eLitigation",
+        "Schedule of assets probate application checklist"
+      ]
+    },
+    {
+      "task_id": "PF-015",
+      "category": "Probate & Estate Legal Administration",
+      "title": "Application for Letters of Administration (Intestate Estate without a Will)",
+      "summary": "Court proceeding under the Probate and Administration Act (Cap. 251) where next-of-kin petition the Family Justice Courts to be appointed as legal Administrators to distribute an intestate estate following statutory rules under the Intestate Succession Act (Cap. 146).",
+      "responsible_agency_or_entity": [
+        "Family Justice Courts (FJC) / Supreme Court of Singapore",
+        "Singapore Courts eLitigation",
+        "Appointed Probate / Estate Litigation Lawyers"
+      ],
+      "eligibility_or_triggers": "Deceased passed away without leaving a valid Will (intestate), or all named executors in the Will have passed away or renounced their right to probate.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Determine Legal Priority of Administrators",
+          "details": "Identify eligible administrators in order of statutory priority: 1) Surviving Spouse, 2) Lawful Children, 3) Parents, 4) Siblings, 5) Nephews/Nieces.",
+          "platform_or_portal": "Family Justice Courts Legal Framework"
+        },
+        {
+          "step_number": 2,
+          "action": "Obtain Consents and Renunciations",
+          "details": "Obtain formal signed Renunciation of Administration from all family members who hold equal or higher priority to administer the estate.",
+          "platform_or_portal": "Probate Legal Practice"
+        },
+        {
+          "step_number": 3,
+          "action": "File Originating Application via eLitigation",
+          "details": "Lawyer files the court petition, probate search certificates, death cert, and relationship proof.",
+          "platform_or_portal": "SG Courts eLitigation (elitigation.sg)"
+        },
+        {
+          "step_number": 4,
+          "action": "Furnish Sureties / Administration Bond (if minor beneficiaries)",
+          "details": "If any beneficiary is under 21 years old or estate is large, the court requires 2 administrators and 2 guarantors (sureties) or an application to dispense with sureties.",
+          "platform_or_portal": "Family Justice Courts"
+        },
+        {
+          "step_number": 5,
+          "action": "Extract Letters of Administration & Asset Distribution",
+          "details": "Upon court order, extract Grant and distribute assets strictly according to Section 7 of Intestate Succession Act.",
+          "platform_or_portal": "Family Justice Courts Registry"
+        }
+      ],
+      "required_documents": [
+        "Certified Copy of Digital Death Certificate",
+        "Administrator(s) and Beneficiaries' NRICs",
+        "Proof of kinship (Marriage Certificate, Birth Certificates of all children)",
+        "Signed Deeds of Renunciation from non-applicant next-of-kin",
+        "Wills Registry Search Result confirming no will registered",
+        "Comprehensive Schedule of Assets and Liabilities"
+      ],
+      "estimated_timeline": "3 to 6 months (longer if sureties or minor beneficiaries are involved)",
+      "estimated_costs_or_fees": {
+        "is_free": false,
+        "fee_details": "Legal fees typically S$2,500 to S$6,500 + Court filing fees S$500 to S$1,200"
+      },
+      "common_pitfalls_or_notes": [
+        "Under Intestate Succession Act rules: If spouse + children survive: Spouse gets 50%, children divide 50% equally. If spouse only (no children/parents): Spouse gets 100%. If children only: Children divide 100% equally. If spouse + parents (no children): Spouse 50%, parents 50%.",
+        "Muslim estates do NOT fall under Intestate Succession Act; they must follow Syariah Court Faraid rules."
+      ],
+      "bot_intent_triggers": [
+        "How to apply for Letters of Administration Singapore?",
+        "Distribution rules Intestate Succession Act Singapore",
+        "Who inherits when there is no will in Singapore?",
+        "Letters of administration cost and timeline Family Court",
+        "Dispensation of sureties letters of administration minor child"
+      ]
+    },
+    {
+      "task_id": "PF-016",
+      "category": "Probate & Estate Legal Administration",
+      "title": "Muslim Estate Administration & Syariah Court Inheritance Certificate (Faraid)",
+      "summary": "Obtaining an Inheritance Certificate from the Syariah Court under the Administration of Muslim Law Act (AMLA) declaring the lawful beneficiaries and their predetermined fractional Quranic shares under Faraid.",
+      "responsible_agency_or_entity": [
+        "Syariah Court Singapore",
+        "Islamic Religious Council of Singapore (MUIS)",
+        "Family Justice Courts (Probate Registry)"
+      ],
+      "eligibility_or_triggers": "Deceased was a Muslim domiciled in Singapore. Mandatory for the administration of Muslim deceased estates.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Submit Online Inheritance Certificate Application",
+          "details": "Next-of-kin submits application via the Syariah Court online portal (SYC Portal) listing all surviving waris (legal heirs).",
+          "platform_or_portal": "Syariah Court Online Portal (syariahsystems.gov.sg)"
+        },
+        {
+          "step_number": 2,
+          "action": "Upload Supporting Vital Documents",
+          "details": "Upload digital death cert, deceased's birth/marriage certs, waris NRICs, and declaration of Muslim religion.",
+          "platform_or_portal": "SYC Portal"
+        },
+        {
+          "step_number": 3,
+          "action": "Syariah Court Assessment & Verification",
+          "details": "Syariah Court officers compute the lawful Faraid shares (e.g., Ashabul Furud and Asabah shares).",
+          "platform_or_portal": "Syariah Court Registry"
+        },
+        {
+          "step_number": 4,
+          "action": "Issuance of Inheritance Certificate",
+          "details": "Receive the official electronic Inheritance Certificate specifying exact fractional entitlements for every legal heir.",
+          "platform_or_portal": "Syariah Court Portal"
+        },
+        {
+          "step_number": 5,
+          "action": "File for Probate / Grant of Letters of Administration",
+          "details": "Produce the Inheritance Certificate to the Family Justice Courts / Public Trustee / HDB / Banks to execute estate distribution.",
+          "platform_or_portal": "Family Justice Courts / HDB / Banks"
+        }
+      ],
+      "required_documents": [
+        "Digital Death Certificate",
+        "Deceased and all Waris (Heirs) NRIC / Birth Certificates",
+        "Deceased Marriage Certificate / ROMM Certificate",
+        "Divorce Certificates / Death Certificates of predeceased family members",
+        "Faraid Calculation Worksheet"
+      ],
+      "estimated_timeline": "2 to 4 weeks for Syariah Court Inheritance Certificate",
+      "estimated_costs_or_fees": {
+        "is_free": false,
+        "fee_details": "Syariah Court application fee approx S$34 to S$50"
+      },
+      "common_pitfalls_or_notes": [
+        "Under AMLA, a Muslim can only bequeath up to 1/3 of their estate via a Wasiyyah (will) to non-heirs; the remaining 2/3 must follow Faraid.",
+        "Joint tenancy HDB flats for Muslims: MUIS fatwa recognizes joint tenancy with right of survivorship as a valid gift (Nuzriah/Hibah Ruqba) provided appropriate declarations exist."
+      ],
+      "bot_intent_triggers": [
+        "How to get Faraid inheritance certificate Syariah Court Singapore?",
+        "Muslim estate distribution rules Singapore AMLA",
+        "Apply for Syariah Court inheritance certificate online",
+        "Faraid shares for wife children parents Singapore",
+        "Muslim will wasiyyah 1/3 rule Singapore"
+      ]
+    },
+    {
+      "task_id": "PF-017",
+      "category": "Property & HDB Transfer/Inheritance",
+      "title": "HDB Flat Transmission under Joint Tenancy (Notice of Death Lodgement)",
+      "summary": "Transferring full ownership of an HDB flat to the surviving joint tenant(s) by lodging a Notice of Death with the Housing & Development Board (HDB) and Singapore Land Authority (SLA) under the right of survivorship.",
+      "responsible_agency_or_entity": [
+        "Housing & Development Board (HDB)",
+        "Singapore Land Authority (SLA)"
+      ],
+      "eligibility_or_triggers": "Deceased co-owned an HDB flat under Joint Tenancy with one or more surviving owners.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Submit Online Notice of Death Application to HDB",
+          "details": "Surviving joint tenant logs into My HDBPage via Singpass and submits the 'Notice of Death' e-Service.",
+          "platform_or_portal": "My HDBPage (hdb.gov.sg)"
+        },
+        {
+          "step_number": 2,
+          "action": "Upload Identity and Death Records",
+          "details": "Upload digital death certificate and NRIC of surviving owner(s).",
+          "platform_or_portal": "HDB Flat Portal"
+        },
+        {
+          "step_number": 3,
+          "action": "Legal Identity Verification & Endorsement",
+          "details": "Surviving owner endorses documents online or attends an appointment at the HDB Branch Office if legal representation is handled via HDB legal officers.",
+          "platform_or_portal": "HDB Branch Office"
+        },
+        {
+          "step_number": 4,
+          "action": "SLA Land Title Registration",
+          "details": "HDB registers the Notice of Death with the Singapore Land Authority Land Titles Registry, updating the title to the surviving owner(s).",
+          "platform_or_portal": "SLA STARS System"
+        }
+      ],
+      "required_documents": [
+        "Digital Death Certificate",
+        "NRIC of Surviving Joint Owner(s)",
+        "Deceased NRIC / Death Registration Number",
+        "Marriage Certificate (if applicable)"
+      ],
+      "estimated_timeline": "2 to 4 weeks",
+      "estimated_costs_or_fees": {
+        "is_free": false,
+        "fee_details": "HDB administrative and legal/registration fees approx S$60 to S$150 + SLA registration fee approx S$68.30"
+      },
+      "common_pitfalls_or_notes": [
+        "Joint tenancy transfers do NOT require a Grant of Probate or Letters of Administration because ownership passes automatically by law.",
+        "Surviving sole owner must ensure they still meet HDB basic citizenship and eligibility criteria to hold the flat."
+      ],
+      "bot_intent_triggers": [
+        "How to transfer HDB joint tenancy after death of spouse?",
+        "Lodge Notice of Death HDB flat Singapore",
+        "Cost to transfer HDB flat to surviving joint owner",
+        "Documents needed for HDB Notice of Death",
+        "Does HDB joint tenancy need Grant of Probate?"
+      ]
+    },
+    {
+      "task_id": "PF-018",
+      "category": "Property & HDB Transfer/Inheritance",
+      "title": "HDB Flat Inheritance under Tenancy-in-Common or Sole Ownership",
+      "summary": "Transferring or liquidating an HDB flat owned solely by the deceased or held under Tenancy-in-Common, requiring Grant of Probate / Letters of Administration and compliance with HDB eligibility schemes.",
+      "responsible_agency_or_entity": [
+        "Housing & Development Board (HDB)",
+        "Singapore Land Authority (SLA)",
+        "Family Justice Courts"
+      ],
+      "eligibility_or_triggers": "Deceased was the sole owner of an HDB flat, or owned a distinct percentage share under Tenancy-in-Common.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Obtain Extracted Grant of Probate / Letters of Admin",
+          "details": "Executor/administrator must obtain formal court extraction before HDB can process the transmission.",
+          "platform_or_portal": "Family Justice Courts"
+        },
+        {
+          "step_number": 2,
+          "action": "Assess Beneficiary HDB Eligibility",
+          "details": "Beneficiaries must determine whether they qualify to retain the flat (e.g. Singapore Citizen aged 21+, Single Scheme age 35+, Public Scheme, and no other concurrent private/HDB property ownership).",
+          "platform_or_portal": "HDB Eligibility Evaluation"
+        },
+        {
+          "step_number": 3,
+          "action": "Apply for Change of Flat Ownership / Retention",
+          "details": "Submit application to HDB Branch for transmission of deceased's share to eligible beneficiaries.",
+          "platform_or_portal": "My HDBPage / HDB Branch"
+        },
+        {
+          "step_number": 4,
+          "action": "Compulsory Divestment / Open Market Sale (if ineligible)",
+          "details": "If beneficiaries already own private residential property or do not qualify under HDB schemes, HDB grants a grace period (typically 6-12 months) to sell the flat on the open market and distribute proceeds.",
+          "platform_or_portal": "HDB Resale Portal"
+        }
+      ],
+      "required_documents": [
+        "Certified Copy of Grant of Probate or Letters of Administration",
+        "Certified Copy of Last Will (if applicable)",
+        "Digital Death Certificate",
+        "NRIC and Income/CPF records of all inheriting beneficiaries",
+        "Marriage / Birth certificates proving family nuclear structure"
+      ],
+      "estimated_timeline": "6 to 12 weeks post-court probate extraction",
+      "estimated_costs_or_fees": {
+        "is_free": false,
+        "fee_details": "HDB legal/conveyancing fees, stamp duties (remission may apply for inheritance), and SLA registration fees (approx S$300 to S$1,200)"
+      },
+      "common_pitfalls_or_notes": [
+        "Under Singapore property regulations, an individual cannot own more than one HDB flat simultaneously. If an inheriting beneficiary already owns an HDB flat, they cannot retain the inherited flat.",
+        "If an inheriting beneficiary owns private property, they may be required to dispose of the HDB flat within 6 months, or sell their private property if they wish to keep the HDB flat."
+      ],
+      "bot_intent_triggers": [
+        "Inherited HDB flat but I already own private property what to do?",
+        "Can I inherit my parents HDB flat if I already have a BTO?",
+        "Tenancy in common HDB transfer after death of parent",
+        "Rules for retaining inherited HDB flat Singapore",
+        "Timeline to sell inherited HDB flat on open market"
+      ]
+    },
+    {
+      "task_id": "PF-019",
+      "category": "Property & HDB Transfer/Inheritance",
+      "title": "HDB Home Protection Scheme (HPS) Mortgage Insurance Claim",
+      "summary": "Filing a mortgage insurance claim under the statutory Home Protection Scheme (HPS) to pay off the deceased's outstanding HDB housing loan balance directly to HDB/bank.",
+      "responsible_agency_or_entity": [
+        "Central Provident Fund Board (CPFB) - Home Protection Scheme Dept",
+        "Housing & Development Board (HDB)"
+      ],
+      "eligibility_or_triggers": "Deceased was insured under HPS for their share of the HDB housing loan at the time of death.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Verify HPS Coverage Percentage",
+          "details": "Check the deceased's CPF Home Protection Scheme certificate to confirm their insured percentage of the loan (e.g. 50% or 100%).",
+          "platform_or_portal": "CPF Online Portal (cpf.gov.sg)"
+        },
+        {
+          "step_number": 2,
+          "action": "Submit HPS Death Claim Online",
+          "details": "Next-of-kin submits an HPS claim online via Singpass on the CPF portal.",
+          "platform_or_portal": "CPF Housing Schemes Portal"
+        },
+        {
+          "step_number": 3,
+          "action": "Submit Medical Records and Death Certificate",
+          "details": "Provide digital death certificate and hospital medical records detailing cause of death and medical history.",
+          "platform_or_portal": "CPF Online Services"
+        },
+        {
+          "step_number": 4,
+          "action": "HPS Payout Directly Clears Loan",
+          "details": "CPF Board settles the insured portion of the outstanding mortgage principal and accrued interest directly with HDB or the financing commercial bank.",
+          "platform_or_portal": "CPFB to HDB/Financier Settlement"
+        }
+      ],
+      "required_documents": [
+        "Digital Death Certificate",
+        "Deceased and Claimant NRICs",
+        "Hospital Medical Reports / Clinical Summaries (if requested by CPF Board)",
+        "Outstanding HDB Housing Loan Statement"
+      ],
+      "estimated_timeline": "3 to 6 weeks",
+      "estimated_costs_or_fees": {
+        "is_free": true,
+        "fee_details": "S$0 (Government insurance claim; Medical report fees S$100-S$300 if requested by CPF)"
+      },
+      "common_pitfalls_or_notes": [
+        "HPS claims are subject to pre-existing condition exclusions if the condition was contracted prior to HPS policy commencement and not declared.",
+        "If the deceased was only insured for 50% of the loan, the surviving co-owner remains responsible for servicing the remaining 50%."
+      ],
+      "bot_intent_triggers": [
+        "How to claim Home Protection Scheme HPS after death?",
+        "Does HPS pay off full HDB loan when spouse dies?",
+        "CPF HPS death claim form and timeline",
+        "HPS claim rejected pre-existing condition appeal",
+        "What happens to HDB loan when owner passes away?"
+      ]
+    },
+    {
+      "task_id": "PF-020",
+      "category": "Property & HDB Transfer/Inheritance",
+      "title": "Private Real Estate Property Transmission (SLA Notice of Death & STARS)",
+      "summary": "Transferring private residential, commercial, or industrial property titles through the Singapore Land Authority (SLA) via Notice of Death (for joint tenants) or Transmission Application (for sole owners / tenants-in-common post-probate).",
+      "responsible_agency_or_entity": [
+        "Singapore Land Authority (SLA)",
+        "Conveyancing Law Firms / Singapore Academy of Law (SAL)"
+      ],
+      "eligibility_or_triggers": "Deceased owned private landed property, private condominium, commercial unit, or industrial real estate in Singapore.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Conduct Title Search via INLIS",
+          "details": "Conveyancing lawyer conducts an electronic land title search on SLA's Integrated Land Information Service (INLIS) to verify exact holding structure.",
+          "platform_or_portal": "SLA INLIS Portal (inlis.gov.sg)"
+        },
+        {
+          "step_number": 2,
+          "action": "Prepare and Lodge Application with SLA",
+          "details": "For Joint Tenancy: Lodge 'Application to Notify Death of Joint Tenant' under the Land Titles Act. For Sole/Tenancy-in-Common: Lodge 'Application for Transmission to Personal Representatives' attaching extracted Grant of Probate.",
+          "platform_or_portal": "SLA STARS System via Lawyer"
+        },
+        {
+          "step_number": 3,
+          "action": "Discharge Outstanding Mortgage (if insured)",
+          "details": "Coordinate with mortgage bank and private mortgage insurer (e.g. MRTA policy) to clear existing encumbrances.",
+          "platform_or_portal": "Financing Bank / Conveyancing Desk"
+        },
+        {
+          "step_number": 4,
+          "action": "Issuance of Updated Certificate of Title",
+          "details": "SLA registers the new ownership on the digital land register and issues the updated Title Document.",
+          "platform_or_portal": "SLA Land Titles Registry"
+        }
+      ],
+      "required_documents": [
+        "Certified Copy of Digital Death Certificate",
+        "Extracted Grant of Probate / Letters of Administration (for sole / tenancy-in-common)",
+        "Original or Digital Certificate of Title (CT / SSCT)",
+        "Surviving Owners / Personal Representatives' NRICs",
+        "Mortgage Discharge Documents (if applicable)"
+      ],
+      "estimated_timeline": "3 to 6 weeks",
+      "estimated_costs_or_fees": {
+        "is_free": false,
+        "fee_details": "Conveyancing legal fees approx S$1,000 to S$2,500; SLA statutory registration fee approx S$68.30 to S$136.60"
+      },
+      "common_pitfalls_or_notes": [
+        "Buyer's Stamp Duty (BSD) and Additional Buyer's Stamp Duty (ABSD) are generally exempt for transfers pursuant to a valid Will or Intestate Succession Act, but transfers involving sales or buyouts between beneficiaries require tax assessment.",
+        "Ensure property tax records are updated with IRAS under the new owner's name."
+      ],
+      "bot_intent_triggers": [
+        "How to transfer private condo after owner dies Singapore?",
+        "SLA Notice of Death private property lawyer cost",
+        "Inherit private property stamp duty ABSD Singapore",
+        "Transmission of private landed property to executor",
+        "Remove deceased name from private property title deed"
+      ]
+    },
+    {
+      "task_id": "PF-021",
+      "category": "Digital & Social Media Assets",
+      "title": "Major Tech Account Memorialization & Legacy Contact Activation (Google, Apple, Meta)",
+      "summary": "Activating designated Legacy Contacts, memorializing public profiles, or securely terminating accounts across Google, Apple ID, Facebook, Instagram, and LinkedIn.",
+      "responsible_agency_or_entity": [
+        "Google LLC (Inactive Account Manager)",
+        "Apple Inc. (Digital Legacy Program)",
+        "Meta Platforms Inc. (Facebook / Instagram Memorialization)",
+        "Microsoft Corporation",
+        "LinkedIn Corporation"
+      ],
+      "eligibility_or_triggers": "Deceased maintained active online accounts with primary tech ecosystems.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Apple Digital Legacy Retrieval",
+          "details": "Legacy Contact enters the unique Apple Legacy Access Key and uploads the digital death certificate to access iCloud photos, notes, and device backups.",
+          "platform_or_portal": "Apple Digital Legacy Portal (digital-legacy.apple.com)"
+        },
+        {
+          "step_number": 2,
+          "action": "Google Inactive Account Activation / Family Request",
+          "details": "Trigger automated access via Inactive Account Manager or submit a formal deceased user data request to Google Legal Support.",
+          "platform_or_portal": "Google Support (support.google.com/accounts/troubleshooter/6357590)"
+        },
+        {
+          "step_number": 3,
+          "action": "Meta (Facebook / Instagram) Memorialization",
+          "details": "Submit proof of death to add 'Remembering' banner to profiles, or request full account deletion.",
+          "platform_or_portal": "Meta Memorialization Request Desk"
+        },
+        {
+          "step_number": 4,
+          "action": "LinkedIn Profile Closure",
+          "details": "Submit deceased member removal form with death certificate and obituary URL.",
+          "platform_or_portal": "LinkedIn Help Center"
+        }
+      ],
+      "required_documents": [
+        "Digital Death Certificate PDF",
+        "Applicant's Government ID (NRIC / Passport)",
+        "Apple Legacy Access Key (for Apple accounts)",
+        "Proof of authority (Grant of Probate or proof of immediate next-of-kin status)",
+        "Deceased's registered email addresses and profile URLs"
+      ],
+      "estimated_timeline": "1 to 3 weeks per tech platform",
+      "estimated_costs_or_fees": {
+        "is_free": true,
+        "fee_details": "S$0 (Free platform services)"
+      },
+      "common_pitfalls_or_notes": [
+        "Tech giants operate under strict US privacy legislation (ECPA); they will NOT release passwords or email contents without explicit pre-set legacy authorization or a specific court order.",
+        "Never attempt to guess passwords repeatedly as security lockouts may permanently wipe the device (e.g. iOS 10-attempt erase)."
+      ],
+      "bot_intent_triggers": [
+        "How to memorialize or delete Facebook account after death?",
+        "Apple ID legacy contact access key death cert",
+        "How to access deceased Google Gmail and photos?",
+        "Delete deceased LinkedIn account Singapore",
+        "What to do with deceased social media accounts?"
+      ]
+    },
+    {
+      "task_id": "PF-022",
+      "category": "Digital & Social Media Assets",
+      "title": "Local FinTech E-Wallets (GrabPay, Singtel Dash) & Crypto Asset Recovery",
+      "summary": "Retrieval and liquidation of stored monetary value in local digital payment wallets (GrabPay, Singtel Dash, Revolut, Wise) and regulated cryptocurrency exchange holdings (Coinhako, Coinbase, Binance).",
+      "responsible_agency_or_entity": [
+        "Local Payment Operators (Grab, Singtel Dash, Liquid Group)",
+        "Regulated MAS Digital Payment Token Licensees (Coinhako, Coinbase SG, Independent Reserve)",
+        "Estate Legal Representatives"
+      ],
+      "eligibility_or_triggers": "Deceased had remaining balances in mobile e-wallets, transport cards, or centralized crypto exchanges.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Notify E-Wallet Customer Support",
+          "details": "Contact Grab / Singtel Dash / Revolut support with death certificate to freeze wallet and request balance refund.",
+          "platform_or_portal": "Grab Help Centre / Singtel Dash Support / Revolut In-App"
+        },
+        {
+          "step_number": 2,
+          "action": "Provide Direct Bank Transfer Details",
+          "details": "Submit next-of-kin indemnity form and bank account details for balance refund.",
+          "platform_or_portal": "E-Wallet Compliance Desk"
+        },
+        {
+          "step_number": 3,
+          "action": "Centralized Crypto Exchange Recovery",
+          "details": "For MAS-regulated crypto platforms (e.g., Coinhako, Independent Reserve), submit extracted Grant of Probate, KYC documents, and request fiat liquidation or on-chain transfer to estate wallet.",
+          "platform_or_portal": "Coinhako Estate Support Desk"
+        },
+        {
+          "step_number": 4,
+          "action": "EZ-Link / SimplyGo Card Refund",
+          "details": "Present deceased's physical SimplyGo / EZ-Link cards and death cert at TransitLink SimplyGo Ticket Offices to receive cash refund.",
+          "platform_or_portal": "TransitLink Ticket Office (MRT Stations)"
+        }
+      ],
+      "required_documents": [
+        "Digital Death Certificate",
+        "Applicant NRIC and Proof of Relationship",
+        "Grant of Probate / Letters of Administration (mandatory for crypto balances > S$5,000)",
+        "Bank Account Statement for refund disbursement",
+        "Registered mobile number and email of deceased"
+      ],
+      "estimated_timeline": "E-wallets: 2 to 3 weeks; Crypto exchanges: 4 to 8 weeks",
+      "estimated_costs_or_fees": {
+        "is_free": true,
+        "fee_details": "S$0 for e-wallets; Standard network gas fees and exchange liquidation commissions apply for crypto"
+      },
+      "common_pitfalls_or_notes": [
+        "Self-custody hardware wallets (Ledger, Trezor) or private seed phrases cannot be recovered by any third party or court order if the recovery phrase is lost.",
+        "Do not close the deceased's mobile phone line prematurely, as SMS 2-Factor Authentication (2FA) is vital for account access during estate administration."
+      ],
+      "bot_intent_triggers": [
+        "How to withdraw money from deceased GrabPay account?",
+        "Claim deceased Bitcoin crypto assets Singapore Coinhako",
+        "Refund SimplyGo EZ Link balance after death",
+        "Deceased Singtel Dash wallet money refund",
+        "What happens to cryptocurrency when someone dies without seed phrase?"
+      ]
+    },
+    {
+      "task_id": "PF-023",
+      "category": "Ash Collection & Columbarium Management",
+      "title": "Cremated Remains (Ash) Collection from Mandai / Private Crematoria",
+      "summary": "Procedures for booking an appointment, collecting pulverised cremated ashes, and conducting bone-picking rituals at Mandai Crematorium or private crematoria.",
+      "responsible_agency_or_entity": [
+        "National Environment Agency (NEA) - Mandai Crematorium Complex",
+        "Private Crematoria (Kong Meng San Phor Kark See Monastery, Tse Tho Aum Temple)",
+        "Appointed Funeral Director (e.g. Solace Dignity Care)"
+      ],
+      "eligibility_or_triggers": "Triggered within 24 to 48 hours following the completion of cremation service.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Schedule Ash Collection Slot",
+          "details": "Funeral director or NOK books an official ash collection timeslot via the NEA e-Portal or private crematorium office.",
+          "platform_or_portal": "NEA Crematorium Booking Portal (e-services.nea.gov.sg)"
+        },
+        {
+          "step_number": 2,
+          "action": "Family Attendance at Ash Collection Centre",
+          "details": "Family members arrive at Mandai Ash Collection Centre (Hall 1, 2, or 3) with identity documents and the selected ash urn.",
+          "platform_or_portal": "Mandai Crematorium (300 Mandai Road)"
+        },
+        {
+          "step_number": 3,
+          "action": "Bone Picking Ritual (Optional / Religious)",
+          "details": "Family performs the traditional bone-picking ceremony using chopsticks, placing skeletal fragments into the urn, followed by pulverisation and sealing.",
+          "platform_or_portal": "Mandai Ash Collection Viewing Room"
+        },
+        {
+          "step_number": 4,
+          "action": "Urn Sealing and Transport",
+          "details": "Crematorium staff securely seal the marble/granite/wood urn with silicone sealant, attach the name plate, and hand over to the family/funeral director.",
+          "platform_or_portal": "Ash Collection Counter"
+        }
+      ],
+      "required_documents": [
+        "Digital Cremation Permit / Receipt",
+        "Collector's NRIC / Passport",
+        "Letter of Authorization (if funeral director collects on family's behalf)",
+        "Deceased Digital Death Certificate"
+      ],
+      "estimated_timeline": "Available next day after cremation; collection process takes 30-45 minutes",
+      "estimated_costs_or_fees": {
+        "is_free": true,
+        "fee_details": "Collection included in cremation booking fee (Urn cost ranges from S$200 to S$1,800 depending on material)"
+      },
+      "common_pitfalls_or_notes": [
+        "NEA provides free temporary ash storage for up to 30 days post-cremation at Mandai; subsequent storage is subject to monthly rental fees.",
+        "Ensure the urn dimensions comply strictly with columbarium niche specifications (standard NEA niche: max 25cm H x 20cm W x 20cm D)."
+      ],
+      "bot_intent_triggers": [
+        "How to collect ashes from Mandai Crematorium?",
+        "Mandai ash collection timing and bone picking ceremony",
+        "Can funeral director collect ashes on my behalf?",
+        "Temporary ash storage at Mandai Crematorium NEA",
+        "Urn size limit for Mandai columbarium niche"
+      ]
+    },
+    {
+      "task_id": "PF-024",
+      "category": "Ash Collection & Columbarium Management",
+      "title": "Government Columbarium Niche Booking & Plaque Installation (Mandai / CCK)",
+      "summary": "Booking, selection, payment, and plaque engraving for columbarium niches at government-managed facilities (Mandai Columbarium and Choa Chu Kang Columbarium).",
+      "responsible_agency_or_entity": [
+        "National Environment Agency (NEA) - Memorial Facilities Section"
+      ],
+      "eligibility_or_triggers": "Family decides to inter cremated remains in a government columbarium niche.",
+      "step_by_step_process": [
+        {
+          "step_number": 2,
+          "action": "Book Niche via NEA e-Portal",
+          "details": "Log into the NEA booking portal using Singpass to select columbarium location (Mandai, Choa Chu Kang, or Yishun).",
+          "platform_or_portal": "NEA Portal (e-services.nea.gov.sg)"
+        },
+        {
+          "step_number": 2,
+          "action": "Choose Niche Type & Selection Option",
+          "details": "Select Single Niche (1 urn) or Double Niche (2 urns). Choose standard sequential allocation or pay selection fee to handpick niche location/level.",
+          "platform_or_portal": "NEA Columbarium Portal"
+        },
+        {
+          "step_number": 3,
+          "action": "Make Statutory Payment",
+          "details": "Pay official NEA niche lease fee via online payment gateway.",
+          "platform_or_portal": "NEA Payment Gateway"
+        },
+        {
+          "step_number": 4,
+          "action": "Appoint Approved Plaque Contractor",
+          "details": "Engage an NEA-licensed plaque maker to craft the marble/granite face plaque with inscribed gold lettering and porcelain photo medallion.",
+          "platform_or_portal": "NEA Approved Contractor List"
+        },
+        {
+          "step_number": 5,
+          "action": "Urn Placement & Plaque Sealing Ceremony",
+          "details": "Conduct the niche installation and religious blessing ceremony, placing the urn into the niche and sealing the face plaque.",
+          "platform_or_portal": "Columbarium Block"
+        }
+      ],
+      "required_documents": [
+        "Digital Death Certificate",
+        "Digital Cremation Permit / Certificate of Cremation",
+        "Applicant NRIC / Singpass",
+        "Proof of relationship (if booking double niche for future spouse/parent placement)"
+      ],
+      "estimated_timeline": "Niche booking is instantaneous online; plaque production takes 7 to 14 working days",
+      "estimated_costs_or_fees": {
+        "is_free": false,
+        "fee_details": "NEA Single Niche: S$500 (standard allocation) / S$750 (with selection fee); Double Niche: S$900 (standard) / S$1,150 (with selection); Plaque fabrication: S$1,000 to S$1,600"
+      },
+      "common_pitfalls_or_notes": [
+        "Government columbarium niches are granted on a fixed tenure tied to the columbarium complex land lease.",
+        "Only approved registered contractors are permitted to mount plaques in NEA columbaria to maintain structural consistency and safety."
+      ],
+      "bot_intent_triggers": [
+        "How to book Mandai columbarium niche online NEA?",
+        "Cost of government columbarium niche Singapore",
+        "Choa Chu Kang columbarium niche selection fee",
+        "How much does columbarium plaque and photo cost?",
+        "Rules for double niche booking Mandai columbarium"
+      ]
+    },
+    {
+      "task_id": "PF-025",
+      "category": "Ash Collection & Columbarium Management",
+      "title": "Private Columbarium Niche Assignment & Placement (Nirvana / Kong Meng San)",
+      "summary": "Selecting, purchasing, and interring ashes within private columbarium facilities and Buddhist monasteries (e.g., Nirvana Memorial Garden, Kong Meng San Phor Kark See Monastery, The Garden of Remembrance, San Teck Soon Tong).",
+      "responsible_agency_or_entity": [
+        "Private Columbarium Operators (Nirvana Memorial Garden, Garden of Remembrance, Xiao En)",
+        "Religious Monasteries & Temples (Kong Meng San, Tse Tho Aum, Catholic Church Columbaria)",
+        "Funeral Service Provider"
+      ],
+      "eligibility_or_triggers": "Family seeks air-conditioned environments, feng shui-aligned placements, specialized religious chanting maintenance, or ancestral tablet (Shen Wei) installations.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Site Visit & Feng Shui Orientation Selection",
+          "details": "Tour private suites to choose tier height (eye level/golden level), suite theme (Buddhist, Christian, Secular), and orientation.",
+          "platform_or_portal": "Columbarium Site Visit (e.g. Nirvana Old Choa Chu Kang Rd)"
+        },
+        {
+          "step_number": 2,
+          "action": "Select Leasehold or Freehold Contract",
+          "details": "Review contract tenure (e.g. until 2098 or perpetual institutional lease) and maintenance trust funds.",
+          "platform_or_portal": "Private Operator Sales Desk"
+        },
+        {
+          "step_number": 3,
+          "action": "Execute Purchase Agreement & Maintenance Trust",
+          "details": "Sign agreement, pay lump sum or interest-free installment plan, and settle one-off lifetime maintenance fee.",
+          "platform_or_portal": "Operator Administration"
+        },
+        {
+          "step_number": 4,
+          "action": "Niche Opening & An Zuo (Enshrinement) Ceremony",
+          "details": "Conduct religious enshrinement prayers (An Zuo), positioning the urn, memorial plaque, crystal urn holder, and accompanying ritual relics.",
+          "platform_or_portal": "Private Suite Columbarium"
+        }
+      ],
+      "required_documents": [
+        "Digital Death Certificate",
+        "Cremation Certificate",
+        "Purchaser NRIC",
+        "Signed Columbarium Purchase Agreement"
+      ],
+      "estimated_timeline": "1 to 5 days for niche preparation",
+      "estimated_costs_or_fees": {
+        "is_free": false,
+        "fee_details": "Niches range from S$3,888 (entry-level low/high tiers) to S$38,888+ (premium eye-level suite / VIP double niche); One-off maintenance fee typically S$500 to S$2,500"
+      },
+      "common_pitfalls_or_notes": [
+        "Verify the remaining land lease of the private columbarium complex; ensure the operator maintains an audited maintenance trust fund.",
+        "Private columbaria often allow installment payment plans spanning 12 to 48 months for pre-need purchases."
+      ],
+      "bot_intent_triggers": [
+        "Cost of Nirvana columbarium niche Singapore",
+        "Kong Meng San columbarium price and waiting list",
+        "Difference between NEA and private columbarium Singapore",
+        "Garden of Remembrance Christian columbarium price",
+        "Ancestral tablet installation cost Singapore"
+      ]
+    },
+    {
+      "task_id": "PF-026",
+      "category": "Ash Collection & Columbarium Management",
+      "title": "Inland Ash Scattering (Garden of Peace @ CCK & Garden of Serenity @ Mandai)",
+      "summary": "Conducting eco-friendly, non-denominational Inland Ash Scattering (IBS) at NEA-managed memorial gardens at Choa Chu Kang (Garden of Peace) and Mandai (Garden of Serenity).",
+      "responsible_agency_or_entity": [
+        "National Environment Agency (NEA) - Memorial Facilities"
+      ],
+      "eligibility_or_triggers": "The deceased or family preferred an eco-friendly green burial without keeping ashes in an urn or columbarium niche.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Book Inland Ash Scattering Slot via NEA",
+          "details": "Log into the NEA memorial booking portal using Singpass to reserve a 2-hour session at Garden of Peace (CCK) or Garden of Serenity (Mandai).",
+          "platform_or_portal": "NEA e-Services Portal (e-services.nea.gov.sg)"
+        },
+        {
+          "step_number": 2,
+          "action": "Collect and Prepare Fine Ashes",
+          "details": "Ensure ashes from crematorium have undergone pulverisation into fine powder suitable for dispersal lanes.",
+          "platform_or_portal": "Mandai Crematorium"
+        },
+        {
+          "step_number": 3,
+          "action": "Conduct Dispersal Ceremony",
+          "details": "Family gathers at designated landscaped dispersal lane. Ashes are gently poured into the soil bed and washed into the earth with fresh watering cans.",
+          "platform_or_portal": "Garden of Peace / Garden of Serenity"
+        },
+        {
+          "step_number": 4,
+          "action": "Quiet Reflection & Departure",
+          "details": "Family spends moments in quiet reflection at the seating pavilions. No physical plaques, burning of joss paper, or religious food offerings are permitted on-site.",
+          "platform_or_portal": "Memorial Garden Pavilion"
+        }
+      ],
+      "required_documents": [
+        "Digital Death Certificate",
+        "Certificate of Cremation / Cremation Permit",
+        "Applicant NRIC / Singpass booking confirmation"
+      ],
+      "estimated_timeline": "Booking can be scheduled within 2 to 7 days post-cremation",
+      "estimated_costs_or_fees": {
+        "is_free": false,
+        "fee_details": "S$320 NEA statutory fee per scattering session (inclusive of 9% GST)"
+      },
+      "common_pitfalls_or_notes": [
+        "Garden of Peace and Garden of Serenity are secular, quiet reflection spaces; burning of joss papers, incense, candles, or loud chanting/instruments are strictly prohibited.",
+        "Once scattered into the soil, ashes cannot be retrieved or exhumed."
+      ],
+      "bot_intent_triggers": [
+        "How to book Garden of Peace inland ash scattering CCK?",
+        "Garden of Serenity Mandai booking fee and rules",
+        "Inland ash scattering cost Singapore NEA",
+        "Rules for scattering ashes in garden Singapore",
+        "Can we burn joss paper at Garden of Peace?"
+      ]
+    },
+    {
+      "task_id": "PF-027",
+      "category": "Ash Collection & Columbarium Management",
+      "title": "Sea Burial & Maritime Ash Scattering (Marina South Pier)",
+      "summary": "Arranging maritime ash scattering by chartering a specialized sea burial vessel from Marina South Pier to designated scattering coordinates off Pulau Semakau.",
+      "responsible_agency_or_entity": [
+        "Maritime and Port Authority of Singapore (MPA)",
+        "National Environment Agency (NEA)",
+        "Licensed Sea Burial Boat Operators / Funeral Directors"
+      ],
+      "eligibility_or_triggers": "Deceased or next-of-kin selected sea burial as the final method of ash dispersal.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Charter Licensed Sea Burial Vessel",
+          "details": "Engage a licensed boat operator or funeral director (e.g. Solace Dignity Care) to charter a twin-engine passenger launch from Marina South Pier.",
+          "platform_or_portal": "Marina South Pier Booking Desk"
+        },
+        {
+          "step_number": 2,
+          "action": "Prepare Dissolvable Sea Urn or Scattering Funnel",
+          "details": "Place ashes into a 100% biodegradable dissolvable salt/sand urn, or prepare a sea scattering funnel with loose flower petals.",
+          "platform_or_portal": "Funeral Provider Preparation"
+        },
+        {
+          "step_number": 3,
+          "action": "Embark from Marina South Pier",
+          "details": "Family boards vessel (typically up to 12-15 passengers) and cruises 2.8 nautical miles south of Pulau Semakau (designated MPA scattering zone).",
+          "platform_or_portal": "Marina South Pier Berth"
+        },
+        {
+          "step_number": 4,
+          "action": "Conduct Sea Scattering Ceremony",
+          "details": "Conduct prayers, lower the biodegradable urn or scatter ashes with flower petals across the water, followed by maritime horn tribute.",
+          "platform_or_portal": "Designated MPA Sea Scattering Coordinates"
+        }
+      ],
+      "required_documents": [
+        "Certificate of Cremation",
+        "Digital Death Certificate",
+        "Port Clearance / MPA Passenger Manifest",
+        "Charter Booking Confirmation"
+      ],
+      "estimated_timeline": "1 to 3 days to schedule boat charter; vessel voyage duration is approx 1.5 to 2 hours",
+      "estimated_costs_or_fees": {
+        "is_free": false,
+        "fee_details": "Boat charter package ranges from S$350 (standard charter) to S$1,200 (premium yacht / evening cruise with flower petals and celebrant)"
+      },
+      "common_pitfalls_or_notes": [
+        "Scattering must only occur within the MPA-designated sea zone south of Pulau Semakau; scattering near beaches, reservoirs, or busy shipping lanes is illegal.",
+        "Only 100% biodegradable materials (organic flowers, dissolvable paper/salt urns) are permitted in the sea; plastic bags and non-degradable containers are strictly barred."
+      ],
+      "bot_intent_triggers": [
+        "How to arrange sea burial in Singapore Marina South Pier?",
+        "Cost of sea burial boat charter Singapore",
+        "Where is the approved sea scattering zone Singapore MPA?",
+        "Biodegradable urn for sea burial Singapore",
+        "Can we throw ashes into the sea from beach or reservoir?"
+      ]
+    },
+    {
+      "task_id": "PF-028",
+      "category": "Exhumation & Grave Relocation",
+      "title": "Choa Chu Kang Cemetery 15-Year Burial Lease Expiration & NEA Exhumation",
+      "summary": "Mandatory management of the 15-year statutory burial lease limit under Singapore's Environmental Public Health Act, including government mass exhumation exercises and next-of-kin claims.",
+      "responsible_agency_or_entity": [
+        "National Environment Agency (NEA) - Cemeteries & Crematoria Branch"
+      ],
+      "eligibility_or_triggers": "Graves at Choa Chu Kang Cemetery reaching the statutory 15-year burial lease limit, or affected by government land reclamation/redevelopment notices.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Monitor NEA Exhumation Gazette Notices",
+          "details": "Check NEA exhumation schedules published in government gazettes, national newspapers, and the online NEA grave inquiry portal.",
+          "platform_or_portal": "NEA Grave Search Portal (e-services.nea.gov.sg)"
+        },
+        {
+          "step_number": 2,
+          "action": "Register as Next-of-Kin Claimant",
+          "details": "Submit claimant registration online via Singpass or at the Choa Chu Kang Cemetery Office (Administration Block) to declare decision for the remains.",
+          "platform_or_portal": "NEA CCK Cemetery Administration Office"
+        },
+        {
+          "step_number": 3,
+          "action": "Select Disposal Method for Exhumed Remains",
+          "details": "Option A: Government-subsidized secondary cremation and columbarium placement at Mandai; Option B: Private exhumation contractor engagement for personalized rituals.",
+          "platform_or_portal": "NEA Claimant Registration Form"
+        },
+        {
+          "step_number": 4,
+          "action": "Witness Exhumation and Secondary Cremation",
+          "details": "Family witnesses the physical grave opening, bone retrieval ritual, transfer to exhumation coffin, and subsequent secondary cremation at Mandai.",
+          "platform_or_portal": "Choa Chu Kang Cemetery Grave Plot"
+        }
+      ],
+      "required_documents": [
+        "Original Burial Permit / Order for Burial",
+        "Digital Death Certificate of deceased",
+        "Claimant NRIC and proof of relationship (Birth / Marriage Cert)",
+        "Grave Plot Number Reference"
+      ],
+      "estimated_timeline": "Registration open for 6 to 12 months; exhumation operation executed within scheduled phase",
+      "estimated_costs_or_fees": {
+        "is_free": false,
+        "fee_details": "Government mass exhumation package: approx S$250 to S$350 for government cremation and niche; Private exhumation contractor fees range from S$1,500 to S$3,500"
+      },
+      "common_pitfalls_or_notes": [
+        "Burial in Singapore is strictly limited to a 15-year lease under the Environmental Public Health Act; indefinite ground burial is not available.",
+        "Unclaimed graves after the notice expiry will be exhumed by NEA, mass-cremated, and have ashes scattered at sea after a holding period."
+      ],
+      "bot_intent_triggers": [
+        "Singapore 15 year burial lease policy Choa Chu Kang",
+        "How to register for NEA grave exhumation Choa Chu Kang",
+        "What happens after 15 years in CCK cemetery?",
+        "Cost of private grave exhumation contractor Singapore",
+        "Check if my relative grave is affected by exhumation"
+      ]
+    },
+    {
+      "task_id": "PF-029",
+      "category": "Exhumation & Grave Relocation",
+      "title": "Private Grave Exhumation, Bone Purification & Secondary Columbarium Relocation",
+      "summary": "Engaging licensed private grave diggers, Taoist/Buddhist masters, and funeral undertakers to perform private grave exhumation (Po Tu 破土), ritual bone cleaning (Jian Gu 捡骨), gold urn placement, and columbarium enshrinement.",
+      "responsible_agency_or_entity": [
+        "National Environment Agency (NEA) - Cemeteries Section",
+        "Private Exhumation Contractors & Taoist/Buddhist Masters",
+        "Private / Government Columbaria"
+      ],
+      "eligibility_or_triggers": "Family wishes to proactively exhume ancestral remains from Choa Chu Kang or private clan/church cemeteries before government compulsory acquisition.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Apply for Private Exhumation Permit from NEA",
+          "details": "Licensed contractor applies to NEA Cemeteries Branch for an official Private Exhumation Permit.",
+          "platform_or_portal": "NEA Cemeteries Section (Choa Chu Kang)"
+        },
+        {
+          "step_number": 2,
+          "action": "Auspicious Date Selection & Ground Breaking (Po Tu)",
+          "details": "Feng Shui master or religious priest selects an auspicious date/time and conducts prayers to inform earth deities.",
+          "platform_or_portal": "Cemetery Grave Site"
+        },
+        {
+          "step_number": 3,
+          "action": "Manual Excavation & Bone Retrieval (Jian Gu)",
+          "details": "Experienced grave diggers manually excavate the plot, extract skeletal remains in anatomical order, clean and sun-dry/purify the bones.",
+          "platform_or_portal": "Grave Site"
+        },
+        {
+          "step_number": 4,
+          "action": "Secondary Cremation or Golden Urn (Jin Dou) Placement",
+          "details": "Bones are either sent for secondary cremation at Mandai or arranged ritually into a traditional ceramic Golden Urn (Jin Dou).",
+          "platform_or_portal": "Mandai Crematorium / Temple"
+        },
+        {
+          "step_number": 5,
+          "action": "Final Enshrinement in Columbarium Niche",
+          "details": "Urn is transported with red umbrella and religious escort to the appointed columbarium for permanent placement.",
+          "platform_or_portal": "Columbarium Suite"
+        }
+      ],
+      "required_documents": [
+        "NEA Private Exhumation Permit",
+        "Original Burial Permit and Death Certificate",
+        "Next-of-Kin Authorization Letter & NRIC",
+        "Proof of Grave Ownership / Plot Number"
+      ],
+      "estimated_timeline": "1 to 3 weeks for permit approval; exhumation ritual takes 3 to 5 hours",
+      "estimated_costs_or_fees": {
+        "is_free": false,
+        "fee_details": "Complete private exhumation package: S$2,200 to S$4,800 (includes NEA permit, grave diggers, religious master, bone purification, and secondary cremation)"
+      },
+      "common_pitfalls_or_notes": [
+        "Exhumations must be completed between designated morning hours (typically before 12:00 PM) as dictated by NEA and Chinese cultural customs.",
+        "If remains are not fully decomposed, secondary cremation is legally required by NEA before columbarium placement."
+      ],
+      "bot_intent_triggers": [
+        "How to arrange private grave exhumation Singapore?",
+        "Jian Gu bone picking exhumation cost Taoist",
+        "Cost of exhume grave and move to Mandai columbarium",
+        "Feng shui master grave relocation ritual Singapore",
+        "Private exhumation permit application NEA"
+      ]
+    },
+    {
+      "task_id": "PF-030",
+      "category": "Memorial Services & Death Anniversaries",
+      "title": "Chinese Buddhist & Taoist Milestone Rituals (7th-Day, 49th-Day, 100th-Day, 1st-Year Dui Nian)",
+      "summary": "Coordination and execution of traditional Chinese post-funeral memorial ceremonies: 7th-Day Cycles (Tou Qi 头七), 49th-Day Soul Transition (Si Shi Jiu Ri 四十九日), 100th-Day (Bai Ri 百日), 1st-Year Death Anniversary (Dui Nian 对年), and 3rd-Year Full Mourning Exit (San Nian 三年).",
+      "responsible_agency_or_entity": [
+        "Buddhist Monasteries / Taoist Priests (Taoist Federation Singapore)",
+        "Funeral Service Companies (e.g. Solace Dignity Care / Direct Funeral / Casket Fairprice)",
+        "Memorial Halls & Columbaria"
+      ],
+      "eligibility_or_triggers": "Family observing traditional Chinese Mahayana Buddhist or Taoist dialect (Hokkien, Teochew, Cantonese, Hakka, Hainanese) filial mourning customs.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Calculate Milestone Dates",
+          "details": "Funeral director or Taoist/Buddhist master calculates exact calendar dates based on the lunar calendar (e.g. 7th day from passing, 49th day completion of bardo passage).",
+          "platform_or_portal": "Lunar Calendar Calculation Desk"
+        },
+        {
+          "step_number": 2,
+          "action": "Book Chanting Venue & Monks/Priests",
+          "details": "Reserve a chanting hall at a temple, columbarium prayer hall, memorial parlour, or arrange home prayers.",
+          "platform_or_portal": "Temple / Memorial Hall Booking"
+        },
+        {
+          "step_number": 3,
+          "action": "Prepare Offerings and Paper Effigies",
+          "details": "Order vegetarian food offerings, five fruits, fresh flowers, and paper effigies (gold/silver joss paper, hell bank notes, paper houses, modern paper luxury goods).",
+          "platform_or_portal": "Religious Supply Logistics"
+        },
+        {
+          "step_number": 4,
+          "action": "Perform Chanting & Merit Transfer Ceremony (Gong De / Chaodu)",
+          "details": "Monks or priests chant sutras (e.g. Ksitigarbha Sutra, Diamond Sutra) for merit dedication (Gong De 功德) to ensure swift spiritual rebirth into the Pure Land.",
+          "platform_or_portal": "Chanting Hall / Columbarium"
+        },
+        {
+          "step_number": 5,
+          "action": "Dui Nian & San Nian Mourning Transition",
+          "details": "At the 1st year (Dui Nian) and 3rd year (San Nian), perform the ritual shedding of mourning clothes (Chuo Fu 绰服) and enshrine the permanent ancestral tablet.",
+          "platform_or_portal": "Ancestral Altar / Temple"
+        }
+      ],
+      "required_documents": [
+        "Deceased Lunar Date and Time of Death",
+        "Ancestral Tablet Reference / Niche Location",
+        "Family Members' Birth Lunar Dates (Ba Zi) for harmony checks"
+      ],
+      "estimated_timeline": "Performed on specific milestone days (Day 7, Day 49, Day 100, Year 1, Year 3); chanting session lasts 2 to 4 hours",
+      "estimated_costs_or_fees": {
+        "is_free": false,
+        "fee_details": "Temple/Priest chanting packages range from S$688 to S$2,888 per milestone session (includes monk honorarium, vegetarian offerings, and paper merchandise)"
+      },
+      "common_pitfalls_or_notes": [
+        "In Chinese tradition, the 49th day is considered the pivotal final day of the Bardo (intermediate state), marking the soul's reincarnation.",
+        "Ensure burning of paper offerings complies with Town Council / NEA burn-bin regulations and does not cause environmental hazards."
+      ],
+      "bot_intent_triggers": [
+        "How to calculate 49th day death ritual date Chinese?",
+        "Cost of Tou Qi 7th day chanting Buddhist priest",
+        "What to prepare for 100th day death anniversary Bai Ri?",
+        "Dui Nian 1st year death anniversary ritual Singapore",
+        "Taoist merit chanting Gong De ceremony cost"
+      ]
+    },
+    {
+      "task_id": "PF-031",
+      "category": "Memorial Services & Death Anniversaries",
+      "title": "Christian & Catholic Memorial Services, Requiem Masses & All Souls' Day Commemorations",
+      "summary": "Organizing Christian memorial thanksgiving services, Catholic 1st-year Requiem Masses, and annual All Souls' Day (2 November) cemetery and columbarium blessing services.",
+      "responsible_agency_or_entity": [
+        "Roman Catholic Archdiocese of Singapore (Churches & Columbaria)",
+        "Protestant / Methodist / Anglican / Presbyterian Churches",
+        "Memorial Service Venues"
+      ],
+      "eligibility_or_triggers": "Deceased and family are baptized Christian or Catholic members.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Contact Parish Priest or Church Pastor",
+          "details": "Liaise with church pastoral care office to schedule a memorial thanksgiving service or anniversary Mass.",
+          "platform_or_portal": "Church Parish Office"
+        },
+        {
+          "step_number": 2,
+          "action": "Select Liturgy, Hymns & Order of Service",
+          "details": "Prepare order of worship, selected scripture readings, family eulogies, musical worship, and photo tribute slideshow.",
+          "platform_or_portal": "Pastoral Care Team"
+        },
+        {
+          "step_number": 3,
+          "action": "Conduct Memorial Service / Requiem Mass",
+          "details": "Hold the service at the church sanctuary, chapel, columbarium prayer pavilion, or private home.",
+          "platform_or_portal": "Church Sanctuary / Memorial Chapel"
+        },
+        {
+          "step_number": 4,
+          "action": "All Souls' Day Blessing (Catholic Tradition)",
+          "details": "Participate in annual November 2nd blessing of niches at Catholic Church columbaria (e.g., Church of St. Teresa, Church of the Holy Spirit, Novena Church).",
+          "platform_or_portal": "Parish Columbarium"
+        }
+      ],
+      "required_documents": [
+        "Deceased Baptism / Confirmation Certificate (Catholic records)",
+        "Digital Death Certificate copy",
+        "Order of Service / Hymn Sheet"
+      ],
+      "estimated_timeline": "1 to 2 weeks advance notice to church pastoral desk; service duration 1 to 1.5 hours",
+      "estimated_costs_or_fees": {
+        "is_free": true,
+        "fee_details": "Church services are free of mandatory charges; customary love gifts/stipends to church or priest typically range from S$100 to S$500"
+      },
+      "common_pitfalls_or_notes": [
+        "Check parish guidelines regarding photography, live-streaming, and musical selections during formal Catholic Masses.",
+        "Columbarium niches in Catholic churches are strictly reserved for baptized Catholics and their immediate spouses."
+      ],
+      "bot_intent_triggers": [
+        "How to book Catholic memorial mass 1st death anniversary?",
+        "All Souls Day columbarium blessing Singapore",
+        "Christian death anniversary memorial service order of worship",
+        "Honorarium for pastor funeral memorial service Singapore",
+        "Church of St Teresa columbarium niche blessing"
+      ]
+    },
+    {
+      "task_id": "PF-032",
+      "category": "Memorial Services & Death Anniversaries",
+      "title": "Secular / Modern 'Celebration of Life' & Custom Annual Memorial Gatherings",
+      "summary": "Planning personalized secular memorial gatherings, Celebration of Life banquets, storytelling evenings, and annual legacy tributes for freethinkers and non-religious families.",
+      "responsible_agency_or_entity": [
+        "Private Event Venues / Boutique Memorial Parlours",
+        "Professional Celebrants / Emcees",
+        "Funeral Service Event Coordinators"
+      ],
+      "eligibility_or_triggers": "Family seeks a non-religious, uplifting celebration of the deceased's life, passions, and achievements.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Define Event Concept & Venue",
+          "details": "Select a comfortable venue (private gallery, outdoor garden, hotel function room, or bespoke memorial parlour).",
+          "platform_or_portal": "Event Venue Booking"
+        },
+        {
+          "step_number": 2,
+          "action": "Curate Multimedia & Memorabilia Exhibition",
+          "details": "Assemble a retrospective photo gallery, favorite vinyl records/playlist, artwork, hobbies, and digital video tribute.",
+          "platform_or_portal": "Creative Design Desk"
+        },
+        {
+          "step_number": 3,
+          "action": "Appoint Modern Celebrant & Storytellers",
+          "details": "Engage a certified humanist celebrant to anchor the storytelling narrative and invite close friends and colleagues to share reflections.",
+          "platform_or_portal": "Celebrant Network"
+        },
+        {
+          "step_number": 4,
+          "action": "Charity / Legacy Initiative Launch (Optional)",
+          "details": "Announce a tribute endowment, scholarship fund, or tree-planting donation in honor of the deceased.",
+          "platform_or_portal": "Charity / Community Desk"
+        }
+      ],
+      "required_documents": [
+        "Event Concept Plan",
+        "Digital Photo / Video Media Files"
+      ],
+      "estimated_timeline": "1 to 3 weeks planning time; event duration 2 to 3 hours",
+      "estimated_costs_or_fees": {
+        "is_free": false,
+        "fee_details": "Venue rental and catering S$1,500 to S$6,000 depending on guest count; Celebrant fee S$500 to S$1,200"
+      },
+      "common_pitfalls_or_notes": [
+        "Ensure the tone aligns with the deceased's personality and family comfort levels, balancing joy and reflection without rigid religious formalities.",
+        "Check venue licensing for live music, video projection, and catering."
+      ],
+      "bot_intent_triggers": [
+        "How to organize Celebration of Life memorial Singapore?",
+        "Freethinker non religious memorial service ideas",
+        "Hire secular funeral celebrant Singapore",
+        "Modern death anniversary gathering venue rental",
+        "Life tribute party instead of traditional memorial"
+      ]
+    },
+    {
+      "task_id": "PF-033",
+      "category": "Tax & Government Agency Settlement",
+      "title": "IRAS Deceased Individual Final Income Tax Filing & Estate Tax Clearance",
+      "summary": "Filing the final individual income tax return (Year of Assessment) for income earned by the deceased up to the date of passing, and establishing an Estate Trust Tax Account with the Inland Revenue Authority of Singapore (IRAS) for post-death income.",
+      "responsible_agency_or_entity": [
+        "Inland Revenue Authority of Singapore (IRAS)"
+      ],
+      "eligibility_or_triggers": "Mandatory for all deceased individuals who earned taxable employment, trade, rental, or investment income in Singapore during the year of death.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "IRAS Automated Deceased Flagging",
+          "details": "IRAS receives electronic death registration data from ICA and marks the deceased's tax record.",
+          "platform_or_portal": "Government Inter-Agency Link"
+        },
+        {
+          "step_number": 2,
+          "action": "Executor / Administrator Registers as Tax Agent",
+          "details": "Legal personal representative logs into IRAS myTax Portal using Singpass to register as the authorized legal representative for the deceased taxpayer.",
+          "platform_or_portal": "IRAS myTax Portal (mytax.iras.gov.sg)"
+        },
+        {
+          "step_number": 3,
+          "action": "File Final Individual Income Tax Return (Form B/B1)",
+          "details": "Declare income earned from 1 January of the year of death up to the exact date of passing, claiming eligible personal reliefs.",
+          "platform_or_portal": "IRAS myTax Portal"
+        },
+        {
+          "step_number": 4,
+          "action": "File Estate Income Tax Return (Form T) for Post-Death Income",
+          "details": "If the estate generates rental, dividend, or business income between the date of death and final distribution, file Form T for the estate.",
+          "platform_or_portal": "IRAS Trust Tax Desk"
+        },
+        {
+          "step_number": 5,
+          "action": "Receive Notice of Assessment & Tax Clearance",
+          "details": "Settle outstanding income tax from estate funds and obtain formal tax clearance from IRAS before final asset distribution to beneficiaries.",
+          "platform_or_portal": "IRAS Portal"
+        }
+      ],
+      "required_documents": [
+        "Extracted Grant of Probate or Letters of Administration",
+        "Digital Death Certificate",
+        "Executor / Administrator NRIC and Singpass",
+        "Deceased's Employment Income Statements (IR8A), Rental Agreements, Business Accounts for the final year",
+        "Bank statements showing dividend/interest income"
+      ],
+      "estimated_timeline": "4 to 8 weeks after tax return submission",
+      "estimated_costs_or_fees": {
+        "is_free": true,
+        "fee_details": "S$0 (Government tax service; Tax liabilities must be paid from estate assets)"
+      },
+      "common_pitfalls_or_notes": [
+        "Estate Duty was completely abolished in Singapore for deaths occurring on or after 15 February 2008; however, Income Tax on earned income up to date of death remains legally payable.",
+        "Executors are personally liable under Section 58 of the Singapore Income Tax Act if they distribute estate funds to beneficiaries without first paying IRAS outstanding tax liabilities."
+      ],
+      "bot_intent_triggers": [
+        "How to file income tax for deceased person Singapore IRAS?",
+        "Is there estate duty inheritance tax in Singapore?",
+        "Executor tax clearance letter IRAS myTax portal",
+        "Deceased income tax form B1 filing deadline",
+        "Estate income tax Form T Singapore"
+      ]
+    },
+    {
+      "task_id": "PF-034",
+      "category": "Tax & Government Agency Settlement",
+      "title": "Singpass Deactivation & Government Digital Identity Sunset",
+      "summary": "Automated security deactivation of the deceased's Singpass credentials and management of linked government portal profiles (LifeSG, HealthHub, CPF, IRAS, ActiveSG).",
+      "responsible_agency_or_entity": [
+        "GovTech Singapore (Singapore Government Digital Identity / Singpass)",
+        "Smart Nation and Digital Government Office (SNDGO)"
+      ],
+      "eligibility_or_triggers": "Triggered automatically upon electronic death registration with ICA.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Automated Singpass Deactivation",
+          "details": "Within 24 to 48 hours of death registration, GovTech's identity management system automatically revokes the deceased's Singpass authentication tokens, biometric login, and 2FA.",
+          "platform_or_portal": "GovTech Singpass Security Engine"
+        },
+        {
+          "step_number": 2,
+          "action": "Download LifeSG / HealthHub Records Prior to Sunset",
+          "details": "Next-of-Kin should retrieve necessary medical records or health summaries from HealthHub if proxy access was configured prior to passing.",
+          "platform_or_portal": "HealthHub Portal"
+        },
+        {
+          "step_number": 3,
+          "action": "Cancel Singpass Mobile App on Deceased's Phone",
+          "details": "Uninstall the Singpass app from the deceased's physical mobile device to prevent unauthorized biometric login attempts.",
+          "platform_or_portal": "Personal Device"
+        }
+      ],
+      "required_documents": [
+        "Digital Death Certificate (for manual escalation if automatic deactivation fails)"
+      ],
+      "estimated_timeline": "Automated within 24 to 48 hours",
+      "estimated_costs_or_fees": {
+        "is_free": true,
+        "fee_details": "S$0 (Automated government service)"
+      },
+      "common_pitfalls_or_notes": [
+        "Once Singpass is deactivated, nobody can log in using the deceased's credentials. All future estate transactions must be filed under the executor's own Singpass.",
+        "Do not attempt to use the deceased's Singpass credentials post-death, as unauthorized computer access violates the Computer Misuse Act."
+      ],
+      "bot_intent_triggers": [
+        "What happens to Singpass account after death?",
+        "How long before Singpass is deactivated after death?",
+        "Can I log into deceased parent Singpass to check CPF?",
+        "GovTech Singpass deactivation procedure",
+        "Access deceased HealthHub medical records"
+      ]
+    },
+    {
+      "task_id": "PF-035",
+      "category": "Tax & Government Agency Settlement",
+      "title": "SP Services Residential Utilities Account Closure & Security Deposit Refund",
+      "summary": "Transferring or closing the residential electricity, water, and gas utilities account with SP Group (SP Services) and processing the refund of accumulated security deposits.",
+      "responsible_agency_or_entity": [
+        "SP Group (SP Services Ltd)",
+        "Public Utilities Board (PUB)",
+        "Energy Market Authority (EMA)"
+      ],
+      "eligibility_or_triggers": "Deceased was the registered account holder for residential utilities at their property.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Submit Account Transfer or Termination Request",
+          "details": "New occupant or executor submits request via the SP Utilities App or SP Group website.",
+          "platform_or_portal": "SP Utilities App / SP Group Portal (spgroup.com.sg)"
+        },
+        {
+          "step_number": 2,
+          "action": "Provide Final Meter Readings",
+          "details": "Submit photograph of electricity, gas, and water meters or schedule smart meter final automated reading.",
+          "platform_or_portal": "SP App Meter Submission"
+        },
+        {
+          "step_number": 3,
+          "action": "Final Bill Reconciliation & Deposit Offset",
+          "details": "SP Services issues final bill, offsetting outstanding charges against the initial security deposit (typically S$40 to S$250 depending on housing type).",
+          "platform_or_portal": "SP Group Billing Desk"
+        },
+        {
+          "step_number": 4,
+          "action": "Refund Excess Deposit Balance",
+          "details": "Any excess credit balance is refunded via PayNow (linked to deceased or executor) or by cheque payable to the Estate of the deceased.",
+          "platform_or_portal": "Direct Bank Refund"
+        }
+      ],
+      "required_documents": [
+        "Digital Death Certificate copy",
+        "Applicant / Surviving Resident NRIC",
+        "SP Utilities Account Number",
+        "Proof of ownership / Tenancy agreement (for new applicant taking over utilities)"
+      ],
+      "estimated_timeline": "3 to 7 working days",
+      "estimated_costs_or_fees": {
+        "is_free": true,
+        "fee_details": "S$0 for account closure; New account opening requires standard refundable security deposit"
+      },
+      "common_pitfalls_or_notes": [
+        "If family members remain living in the property, choose 'Account Transfer / Change of Account Holder' rather than 'Account Termination' to prevent sudden utility disconnection.",
+        "Ensure open market electricity retailer accounts (e.g. Geneco, Senoko, Tuas Power) are transferred concurrently without incurring early contract termination penalties."
+      ],
+      "bot_intent_triggers": [
+        "How to close or transfer SP Services account after death?",
+        "SP Group utilities deposit refund deceased account",
+        "Change account holder electricity water SP bill death of owner",
+        "Stop SP utilities bill after death of parent",
+        "Transfer electricity retailer account deceased family member"
+      ]
+    },
+    {
+      "task_id": "PF-036",
+      "category": "Tax & Government Agency Settlement",
+      "title": "Telecommunications (Singtel, StarHub, M1, SIMBA) Post-Paid Plan Cancellation",
+      "summary": "Terminating post-paid mobile subscriptions, broadband fiber contracts, TV packages, and landline services with local telcos with complete waiver of early contract termination fees on compassionate grounds.",
+      "responsible_agency_or_entity": [
+        "Singtel (Singapore Telecommunications Ltd)",
+        "StarHub Ltd",
+        "M1 Limited",
+        "SIMBA Telecom (formerly TPG)",
+        "MyRepublic / Circles.Life"
+      ],
+      "eligibility_or_triggers": "Deceased held active post-paid mobile, broadband, or pay-TV contracts in their name.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Visit Telco Customer Service Centre or Submit Online",
+          "details": "Next-of-kin visits a major retail branch or submits a termination request via the telco's dedicated bereavement support channel.",
+          "platform_or_portal": "Telco Retail Branches (Singtel Comcentre/Hello Shops, StarHub Shops, M1 Shops) or Online Support"
+        },
+        {
+          "step_number": 2,
+          "action": "Present Death Certificate for Fee Waiver",
+          "details": "Present digital death certificate and proof of relationship. Telcos unconditionally waive all early termination charges and remaining contract penalty fees.",
+          "platform_or_portal": "Telco Bereavement Desk"
+        },
+        {
+          "step_number": 3,
+          "action": "Return Leased Equipment (ONT / Routers / Set-Top Boxes)",
+          "details": "Return rented Optical Network Terminals (ONT), set-top boxes, smart routers, and power adapters to avoid unreturned equipment charges.",
+          "platform_or_portal": "Telco Equipment Return Counter"
+        },
+        {
+          "step_number": 4,
+          "action": "Transfer Mobile Number to Family Member (Optional)",
+          "details": "If family wishes to retain the deceased's telephone number (to continue receiving 2FA security OTPs or for sentimental reasons), request a Transfer of Line Ownership.",
+          "platform_or_portal": "Telco Counter"
+        }
+      ],
+      "required_documents": [
+        "Digital Death Certificate",
+        "Deceased NRIC number",
+        "Applicant NRIC and proof of relationship",
+        "Physical equipment (ONT modem, Set-Top Box, Power cables) for broadband lines"
+      ],
+      "estimated_timeline": "Immediate at branch counter; 2 to 5 working days via online bereavement forms",
+      "estimated_costs_or_fees": {
+        "is_free": true,
+        "fee_details": "S$0 (All Singapore telcos strictly waive early contract cancellation penalties upon presentation of death certificate)"
+      },
+      "common_pitfalls_or_notes": [
+        "Do NOT terminate the deceased's mobile line immediately if bank accounts, Singpass, or crypto wallets still require SMS OTPs for estate verification. Consider transferring the line to a low-cost zero-contract SIM plan first.",
+        "Failure to return broadband modems / TV boxes within 14 days will generate automated unreturned equipment penalty bills."
+      ],
+      "bot_intent_triggers": [
+        "How to cancel Singtel Starhub M1 broadband phone line after death?",
+        "Telco early termination fee waiver death certificate Singapore",
+        "Transfer deceased phone number to child Singtel",
+        "Return Starhub TV box router after death of subscriber",
+        "SIMBA MyRepublic mobile plan cancellation deceased family"
+      ]
+    },
+    {
+      "task_id": "PF-037",
+      "category": "Vehicle & Miscellaneous Asset Transfer",
+      "title": "LTA Vehicle Ownership Transfer & Road Tax / COE Rebate Settlement (OneMotoring)",
+      "summary": "Transferring vehicle ownership (cars, motorcycles, commercial vehicles) from the deceased's name to an inheriting beneficiary or motor dealer through the Land Transport Authority (LTA) via OneMotoring.",
+      "responsible_agency_or_entity": [
+        "Land Transport Authority (LTA) - OneMotoring",
+        "General Insurance Association of Singapore (GIA) - Motor Insurers",
+        "Financing Banks / Hire Purchase Financiers"
+      ],
+      "eligibility_or_triggers": "Deceased was the registered owner of an LTA-registered motor vehicle in Singapore.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Obtain Court Authorization or Bank Consent",
+          "details": "If the vehicle is fully paid: Obtain extracted Grant of Probate or Letters of Administration. If under hire purchase: Settle outstanding financing loan with the bank.",
+          "platform_or_portal": "Family Justice Courts / Financing Bank"
+        },
+        {
+          "step_number": 2,
+          "action": "Procure New Motor Insurance & Road Tax",
+          "details": "The inheriting recipient or buyer must secure a valid motor insurance policy covering the vehicle under their own name.",
+          "platform_or_portal": "Motor Insurance Provider"
+        },
+        {
+          "step_number": 3,
+          "action": "Submit LTA Transfer of Vehicle Ownership Form",
+          "details": "Executor submits LTA Transfer Application Form (Form M01 / e-Transfer via OneMotoring) along with probate grant, death cert, and identity documents.",
+          "platform_or_portal": "OneMotoring Portal (onemotoring.lta.gov.sg) / LTA Customer Service Centre (Sin Ming Drive)"
+        },
+        {
+          "step_number": 4,
+          "action": "Vehicle Deregistration & COE / PARF Rebate (Alternative)",
+          "details": "If selling for scrap or export, deregister vehicle on OneMotoring to encash the remaining Certificate of Entitlement (COE) and PARF rebates paid to the estate.",
+          "platform_or_portal": "OneMotoring / LTA Approved Scrap Yard"
+        }
+      ],
+      "required_documents": [
+        "Certified Copy of Grant of Probate or Letters of Administration",
+        "Digital Death Certificate",
+        "Vehicle Registration Log Card (from OneMotoring)",
+        "New Owner's NRIC and Valid Motor Insurance Certificate",
+        "Vehicle Inspection Certificate (if road tax renewal required)",
+        "Hire Purchase Full Settlement Discharge Letter (if previously financed)"
+      ],
+      "estimated_timeline": "1 to 2 weeks post-probate extraction",
+      "estimated_costs_or_fees": {
+        "is_free": false,
+        "fee_details": "LTA vehicle transfer fee of S$25 (inclusive of GST); Motor insurance and road tax payable separately by new owner"
+      },
+      "common_pitfalls_or_notes": [
+        "Motor insurance policies become void upon the death of the policyholder. Driving the deceased's car without transferring ownership and securing fresh insurance is a serious criminal offense under the Road Traffic Act.",
+        "If the vehicle has outstanding hire purchase installments, the financier must be paid in full before LTA will permit ownership transfer."
+      ],
+      "bot_intent_triggers": [
+        "How to transfer car ownership after death of owner Singapore?",
+        "LTA vehicle transfer form deceased estate OneMotoring",
+        "Can I drive deceased parent car before probate?",
+        "Deregister deceased car and claim COE PARF rebate",
+        "Transfer motorcycle ownership deceased father LTA Sin Ming"
+      ]
+    },
+    {
+      "task_id": "PF-038",
+      "category": "Vehicle & Miscellaneous Asset Transfer",
+      "title": "HDB / URA Season Parking Termination, Club Memberships & Transit Pass Refunds",
+      "summary": "Terminating and obtaining prorated refunds for HDB and URA season parking tickets, country club / golf memberships, fitness memberships, and professional association subscriptions.",
+      "responsible_agency_or_entity": [
+        "Housing & Development Board (HDB) - Car Parks Dept",
+        "Urban Redevelopment Authority (URA)",
+        "Private Social & Country Clubs (e.g. Singapore Island Country Club, Orchid CC, Raffles Marina)",
+        "Commercial Gyms & Fitness Clubs"
+      ],
+      "eligibility_or_triggers": "Deceased had ongoing monthly or annual season parking, club memberships, or institutional subscriptions.",
+      "step_by_step_process": [
+        {
+          "step_number": 1,
+          "action": "Terminate HDB / URA Season Parking",
+          "details": "Submit online termination via My HDBPage or URA parking portal with digital death cert to receive immediate prorated refund into the applicant/estate account.",
+          "platform_or_portal": "HDB Season Parking e-Service / URA Portal"
+        },
+        {
+          "step_number": 2,
+          "action": "Review Country Club Membership By-Laws",
+          "details": "Contact club membership secretariat to ascertain transferability (e.g. transfer to surviving spouse vs open market sale through licensed club broker).",
+          "platform_or_portal": "Club Membership Secretariat"
+        },
+        {
+          "step_number": 3,
+          "action": "Transfer or Sell Club Membership (Post-Probate)",
+          "details": "Execute transfer agreement, pay club transfer fee, and transfer membership rights to inheriting family member or third-party buyer.",
+          "platform_or_portal": "Club Administration / Broker"
+        },
+        {
+          "step_number": 4,
+          "action": "Cancel Gym & Subscription Services",
+          "details": "Submit death certificate to commercial gyms (Fitness First, True Fitness, Anytime Fitness) for full contract cancellation and waiver of remaining term fees.",
+          "platform_or_portal": "Club Customer Service"
+        }
+      ],
+      "required_documents": [
+        "Digital Death Certificate",
+        "Applicant NRIC",
+        "Vehicle Registration Number (for season parking)",
+        "Club Membership Card and Account Number",
+        "Extracted Grant of Probate (mandatory for valuable country club transfer)"
+      ],
+      "estimated_timeline": "Season parking refund: 3 to 5 working days; Club membership transfer: 4 to 8 weeks",
+      "estimated_costs_or_fees": {
+        "is_free": false,
+        "fee_details": "Season parking cancellation: S$0 (prorated refund issued); Country club transfer fees vary by club (S$2,000 to S$25,000 + GST)"
+      },
+      "common_pitfalls_or_notes": [
+        "Prorated season parking refunds are calculated from the day following cancellation, so submit immediately upon passing.",
+        "Transferable country club memberships form part of the deceased's legal estate and require court probate extraction to execute transfer or sale."
+      ],
+      "bot_intent_triggers": [
+        "How to cancel HDB season parking for deceased person?",
+        "Transfer country club membership after death Singapore",
+        "Refund URA season parking deceased car",
+        "Cancel gym membership deceased contract fee waiver",
+        "SICC country club membership transfer rules death of member"
+      ]
+    }
+  ],
+  "grief_support_directory": [
+    {
+      "provider_id": "GS-001",
+      "organization": "Samaritans of Singapore (SOS)",
+      "type": "Free 24/7 Crisis Hotline & Bereavement Support",
+      "contact_number": "1767 (24-Hour Hotline) / 9151 1767 (24-Hour WhatsApp CareText)",
+      "website": "https://www.sos.org.sg",
+      "operating_hours": "24 hours daily, 7 days a week (including Public Holidays)",
+      "services_offered": [
+        "24/7 Toll-Free Crisis & Emotional Support Helpline (1767)",
+        "24/7 WhatsApp CareText Chat Support",
+        "Specialized Grief Support for Suicide Bereavement (Healing Bridge)",
+        "Individual Grief Counselling & Support Groups"
+      ]
+    },
+    {
+      "provider_id": "GS-002",
+      "organization": "Care Corner Singapore (Counselling & Mental Health)",
+      "type": "Non-Profit Community Counselling Centre",
+      "contact_number": "+65 6250 6813 (Care Corner Toll-Free Helpline: 1800-222-0000)",
+      "website": "https://www.carecorner.org.sg",
+      "operating_hours": "Monday to Friday: 09:00 - 18:00; Selected evenings by appointment",
+      "services_offered": [
+        "Individual and Family Bereavement Counselling",
+        "Trauma and Complicated Grief Therapy",
+        "Community Support Groups for Grieving Spouses and Children",
+        "Subsidized sliding-scale therapy sessions for low-income families"
+      ]
+    },
+    {
+      "provider_id": "GS-003",
+      "organization": "Casket Fairprice Care / Bereavement Support Services",
+      "type": "Funeral Industry-Affiliated Bereavement Support & Community Care",
+      "contact_number": "+65 6455 9909",
+      "website": "https://casketfairprice.com",
+      "operating_hours": "24 Hours Daily Assistance Desk",
+      "services_offered": [
+        "Post-Funeral Family Follow-Up & Emotional Check-in",
+        "Grief Resource Guides and Educational Booklets",
+        "Referral Partnerships with Registered Psychologists and Counsellors",
+        "Community Memorial Gatherings"
+      ]
+    },
+    {
+      "provider_id": "GS-004",
+      "organization": "Shan You Counselling Centre",
+      "type": "Non-Profit Mindfulness & Bereavement Therapy Centre",
+      "contact_number": "+65 6741 0078",
+      "website": "https://www.shanyou.org.sg",
+      "operating_hours": "Monday to Friday: 09:00 - 18:00; Saturday: 09:00 - 13:00",
+      "services_offered": [
+        "Mindfulness-Based Grief Counselling (MBGC)",
+        "Support for Loss of Elderly Parents and Spouses",
+        "Affordable Sliding-Scale Professional Therapy",
+        "Mandarin and English Language Counselling Services"
+      ]
+    },
+    {
+      "provider_id": "GS-005",
+      "organization": "Whispering Hope Singapore",
+      "type": "Specialist Grief Recovery Institute & Certified Practice",
+      "contact_number": "+65 9180 8472",
+      "website": "https://www.whisperinghope.sg",
+      "operating_hours": "Monday to Saturday: 09:00 - 19:00 (By Appointment)",
+      "services_offered": [
+        "Evidence-Based Grief Recovery Method (GRM) Programs",
+        "One-on-One Action Program for Moving Beyond Loss",
+        "Helping Children with Loss Specialist Workshops",
+        "Corporate and Family Bereavement Group Programs"
+      ]
+    },
+    {
+      "provider_id": "GS-006",
+      "organization": "Child Bereavement Support Singapore (CBSS)",
+      "type": "Volunteer Peer Support Group for Grieving Parents",
+      "contact_number": "support@cbss.sg",
+      "website": "https://www.cbss.sg",
+      "operating_hours": "Monthly Support Meetings & Online Community Support",
+      "services_offered": [
+        "Peer-Led Support Groups for Parents Grieving the Loss of a Child (any age)",
+        "Miscarriage, Stillbirth, and Neonatal Loss Bereavement Sharing",
+        "Annual Worldwide Candle Lighting Memorial Service in Singapore",
+        "Parent-to-Parent Compassionate Buddy System"
+      ]
+    },
+    {
+      "provider_id": "GS-007",
+      "organization": "Singapore Association for Mental Health (SAMH)",
+      "type": "National Mental Health Non-Governmental Organization (NGO)",
+      "contact_number": "1800-283-7019 (SAMH Toll-Free Helpline)",
+      "website": "https://www.samh.org.sg",
+      "operating_hours": "Monday to Friday: 09:00 - 18:00 (Excluding Public Holidays)",
+      "services_offered": [
+        "Community Mental Health & Grief Support",
+        "Creative Expressive Arts Therapy for Bereavement (SAMH Creative Services)",
+        "Youth & Adolescent Grief and Loss Support",
+        "Caregiver Support Services and Psychoeducation"
+      ]
+    },
+    {
+      "provider_id": "GS-008",
+      "organization": "Fei Yue Community Services / Family Central",
+      "type": "Social Service Agency & Professional Counselling",
+      "contact_number": "+65 6563 1106 / +65 6743 7900",
+      "website": "https://www.fycs.org",
+      "operating_hours": "Monday to Friday: 09:00 - 18:00; Selected Saturdays: 09:00 - 13:00",
+      "services_offered": [
+        "Elderly Bereavement Support and Social Worker Outreach",
+        "Family-Centric Grief & Loss Therapy",
+        "Online Counselling Platform (eCounselling.sg)",
+        "Community Support for Vulnerable and Low-Income Families"
+      ]
+    },
+    {
+      "provider_id": "GS-009",
+      "organization": "SACAC Counselling Singapore",
+      "type": "Multi-Disciplinary Professional Psychological Clinic",
+      "contact_number": "+65 6733 9249",
+      "website": "https://www.sacac.sg",
+      "operating_hours": "Monday to Saturday: 08:30 - 19:30",
+      "services_offered": [
+        "Clinical Psychological Assessment and Prolonged Grief Disorder Therapy",
+        "Multilingual Therapy (English, Mandarin, French, Hindi, Spanish, Bahasa)",
+        "EMDR (Eye Movement Desensitization and Reprocessing) for Traumatic Loss",
+        "Adolescent, Expatriate, and Child Bereavement Therapy"
+      ]
+    },
+    {
+      "provider_id": "GS-010",
+      "organization": "Club Rainbow Singapore",
+      "type": "Pediatric Chronic Illness & Family Bereavement Support",
+      "contact_number": "+65 6377 1789",
+      "website": "https://www.clubrainbow.org",
+      "operating_hours": "Monday to Friday: 09:00 - 17:30",
+      "services_offered": [
+        "Compassionate Bereavement Support for Families of Children with Chronic Illnesses",
+        "Sibling Grief and Emotional Resilience Programs",
+        "Social Work Casework and Financial Assistance for Memorial Care",
+        "Annual Family Memorial Gatherings and Remembrance Days"
+      ]
+    }
+  ]
+}

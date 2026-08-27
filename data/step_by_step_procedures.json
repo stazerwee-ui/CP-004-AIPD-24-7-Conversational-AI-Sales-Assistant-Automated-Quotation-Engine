@@ -1,0 +1,355 @@
+{
+  "step_intake_procedures": [
+    {
+      "step_number": 1,
+      "field": "deceasedName",
+      "step_title": "Departed Loved One's Legal Name",
+      "canonical_question": "May I know the name of your departed loved one?",
+      "what": "The full legal name or preferred name of the departed loved one as stated on their Singapore NRIC or Passport.",
+      "why": "Required by Singapore NEA, Singapore Police Force, and hospital mortuaries to issue body transport permits, register the death record, secure Mandai Crematorium or CCK cemetery booking slots, and personalize memorial tribute materials.",
+      "how": "The family can provide the name in English or Chinese as it appears on their identity card. Dialect names, nicknames, or preferred titles (e.g. 'Uncle Tan', 'my mother Madam Lee') are acceptable for initial coordination.",
+      "when": "Required at the start of intake so our care team can legally apply for mortuary collection and transport permits immediately.",
+      "where": "Used across hospital mortuary release documentation, NEA booking portal, digital memorial obituaries, and the service agreement.",
+      "common_questions_and_answers": [
+        {
+          "question": "What if I only know their preferred or English name right now?",
+          "answer": "A preferred name or nickname is fine to begin planning. Our funeral director will confirm the exact legal NRIC spelling during in-person document review."
+        },
+        {
+          "question": "Does the Chinese character name matter?",
+          "answer": "If your family is arranging traditional Buddhist, Taoist, or Christian memorial screens, our director can transcribe the Chinese characters from the NRIC for the photo frame surround and altar tablet."
+        }
+      ],
+      "uncertainty_guidance": "If the family is emotionally overwhelmed, reassure them that a nickname or relationship (e.g. 'my father') is fine for now.",
+      "step_rule_for_ollama": "This is Step 1. If the family mentions a package or side question, answer their question directly, acknowledge any choice made, and prompt for the deceased loved one's name. Do NOT ask for Date of Birth or jump ahead."
+    },
+    {
+      "step_number": 2,
+      "field": "dateOfBirth",
+      "step_title": "Departed Loved One's Date of Birth (DOB)",
+      "canonical_question": "May I know your departed loved one's Date of Birth (DOB)?",
+      "what": "The date, month, and year of birth of the departed loved one (DD/MM/YYYY).",
+      "why": "Used to compute age for official death registration, verify senior citizen longevity funeral eligibility (departed loved ones aged 80+ or 90+ may observe red/pink longevity traditions), and print memorial tribute cards.",
+      "how": "Provided as DD/MM/YYYY or simply the birth year (e.g. '1950', '15 May 1950', '15/05/1950').",
+      "when": "Collected during intake to prepare official registration forms and longevity styling.",
+      "where": "Applied on death registry submission, obituary tribute text, and cemetery/crematorium registers.",
+      "common_questions_and_answers": [
+        {
+          "question": "What if I only know their lunar birth date or approximate year?",
+          "answer": "An approximate year or lunar birth date is completely fine. Our care consultant will verify the exact Gregorian date from their NRIC or birth certificate."
+        }
+      ],
+      "uncertainty_guidance": "Even just the approximate year of birth (e.g. 'around 1948') is sufficient for now.",
+      "step_rule_for_ollama": "This is Step 2. Prompt for Date of Birth (DOB). Do not skip to passing date or tier selection."
+    },
+    {
+      "step_number": 3,
+      "field": "dateOfPassing",
+      "step_title": "Date of Passing",
+      "canonical_question": "When did your loved one pass away, so we can coordinate timing with the crematorium or cemetery?",
+      "what": "The calendar date on which the loved one passed away (DD/MM/YYYY).",
+      "why": "Singapore NEA regulations require cremation or burial booking slots to align strictly with the date of death and CCOD timing. Wake duration calculations and crematorium time-slot availability also depend on this date.",
+      "how": "Provided as a specific date (e.g. 'Today', 'Yesterday', '18/08/2026').",
+      "when": "Required immediately to calculate embalming scheduling and crematorium booking deadlines.",
+      "where": "Used for NEA booking portal, estate Town Council wake permits, and embalming schedules.",
+      "common_questions_and_answers": [
+        {
+          "question": "They passed away earlier today, how fast can wake setup begin?",
+          "answer": "Once the CCOD is issued and hospital release is complete, our operations team can collect your loved one, complete embalming within 3 to 4 hours, and set up the wake venue on the same day."
+        }
+      ],
+      "uncertainty_guidance": "If the passing occurred today or yesterday, simple relative terms like 'today' or 'last night' are completely fine.",
+      "step_rule_for_ollama": "This is Step 3. Focus on confirming the date of passing to establish the timeline."
+    },
+    {
+      "step_number": 4,
+      "field": "locationOfDeceased",
+      "step_title": "Current Resting Location of Deceased",
+      "canonical_question": "Where is your loved one resting at the moment (for example, a hospital, hospice, or at home)?",
+      "what": "The physical location where the departed loved one's body currently rests (e.g. Singapore General Hospital, National University Hospital, Tan Tock Seng Hospital, Assisi Hospice, Dover Park Hospice, family home).",
+      "why": "Determines which transport team and dispatch protocol is mobilized. Hospital mortuaries have specific collection paperwork hours, hospices require doctor sign-off, and home deaths require an attending doctor to certify death before transport.",
+      "how": "Name the hospital, hospice, nursing home, or residential address.",
+      "when": "Needed immediately for dispatching our 24/7 care collection vehicle.",
+      "where": "Dictates collection route and mortuary handover logistics across Singapore.",
+      "common_questions_and_answers": [
+        {
+          "question": "Can your team collect from a private residence or nursing home?",
+          "answer": "Yes, our 24/7 operations transport team collects from all public hospitals, private hospitals, hospices, nursing homes, and private residences across Singapore."
+        }
+      ],
+      "uncertainty_guidance": "Naming the hospital or general facility name is sufficient.",
+      "step_rule_for_ollama": "This is Step 4. Identify the resting location to coordinate body transfer."
+    },
+    {
+      "step_number": 5,
+      "field": "documentationStatus",
+      "step_title": "Death Certificate / CCOD Status",
+      "canonical_question": "Do you already have the Doctor's Death Certificate or Certificate of Cause of Death collected?",
+      "what": "The status of the official Digital Certificate of Cause of Death (CCOD) issued by an attending doctor or the Coroner.",
+      "why": "Under Singapore law, no funeral parlour or director can transport, embalm, or schedule cremation without a valid registered CCOD.",
+      "how": "Answer whether the CCOD has been downloaded/issued ('Yes', 'Have CCOD', 'Pending doctor', 'At home waiting for doctor').",
+      "when": "Required before body movement can legally take place.",
+      "where": "Submitted digitally to the My Legacy / ICA portal.",
+      "common_questions_and_answers": [
+        {
+          "question": "What if the hospital doctor hasn't signed the CCOD yet?",
+          "answer": "That is completely normal. We can proceed with planning all wake arrangements, and our director will liaise directly with the hospital ward once the CCOD is ready."
+        },
+        {
+          "question": "What if the passing occurred at home without a doctor?",
+          "answer": "We can connect you with a 24/7 certifying house-call doctor to certify the death at home and issue the digital CCOD promptly."
+        }
+      ],
+      "uncertainty_guidance": "Reassure the family that having CCOD pending is normal and we will guide them through obtaining it.",
+      "step_rule_for_ollama": "This is Step 5. Clarify documentation status politely without making it stressful."
+    },
+    {
+      "step_number": 6,
+      "field": "nextOfKin",
+      "step_title": "Next-of-Kin (NOK) Authorization",
+      "canonical_question": "And are you the next of kin, or authorised by the family to make these arrangements?",
+      "what": "Confirmation that the person chatting is an immediate Next-of-Kin (spouse, child, parent, sibling) or an authorised family representative.",
+      "why": "Singapore crematorium and cemetery authorities require Next-of-Kin authorization to book cremation slots, execute permits, and collect ashes.",
+      "how": "State your relationship to the departed (e.g. 'I am the son', 'Daughter', 'Spouse', 'Authorised family representative').",
+      "when": "Required prior to contract signing and crematorium slot registration.",
+      "where": "Appears on the official permit authorizations and service contract.",
+      "common_questions_and_answers": [
+        {
+          "question": "Can I arrange on behalf of my family if the direct next-of-kin is elderly?",
+          "answer": "Yes, you can coordinate on their behalf as the authorised family representative. Our director will obtain official endorsement from the direct NOK when reviewing the final documents."
+        }
+      ],
+      "uncertainty_guidance": "Confirming family relationship (e.g. son, daughter, sibling) is sufficient.",
+      "step_rule_for_ollama": "This is Step 6. Confirm authority respectfully."
+    },
+    {
+      "step_number": 7,
+      "field": "religion",
+      "step_title": "Religious / Cultural Funeral Tradition",
+      "canonical_question": "Do you prefer a Christian, Buddhist, Taoist, Soka Gakkai, Catholic, Free Thinker, Hindu, or Secular service?",
+      "what": "The religious or cultural tradition guiding the funeral rites (Christian, Buddhist, Taoist, Soka Gakkai, Catholic, Free Thinker, Hindu, Secular).",
+      "why": "Dictates ritual items, religious leader coordination (monks, pastors, priests, Taoist masters), prayer schedules, altar styling, paper offerings, and food catering rules (e.g. Buddhist vegetarian).",
+      "how": "Choose one tradition: Buddhist ($600 rites), Christian ($500), Taoist ($800), Catholic ($500), Soka Gakkai ($400), Hindu ($650), or Secular ($300).",
+      "when": "Required before wake styling and master/monk scheduling.",
+      "where": "Applied at the wake altar setup and crematorium prayer hall.",
+      "common_questions_and_answers": [
+        {
+          "question": "What is a Secular funeral?",
+          "answer": "A Secular service is non-religious, focusing on a personal celebration of life, family eulogies, memory photo displays, and peaceful ambient music without religious chanting or ritual paraphernalia."
+        },
+        {
+          "question": "What is the difference between Buddhist and Taoist rites?",
+          "answer": "Buddhist rites emphasize peaceful chanting by Buddhist monks for merit and rebirth in the Pure Land, with vegetarian offerings and no paper burning. Taoist rites feature traditional dialect rituals (Hokkien, Teochew, Cantonese, Hakka) with Taoist priests, gong/drum rituals, and paper house offerings."
+        }
+      ],
+      "uncertainty_guidance": "A Secular service keeps things simple and flexible if the family has mixed faiths or is undecided.",
+      "step_rule_for_ollama": "This is Step 7. Provide balanced, respectful faith guidance when asked."
+    },
+    {
+      "step_number": 8,
+      "field": "tier",
+      "step_title": "Service Package Tier Selection",
+      "canonical_question": "Which service tier fits your family best: Direct Cremation ($1,500), Standard ($3,200), Deluxe ($4,500), or Premium ($6,800)?",
+      "what": "The core service package defining the level of coordination, transport, hearse type, floral backdrop, and on-site staff.",
+      "why": "Forms the foundational price tier and determines the equipment, hearse, and staffing allocated to the funeral.",
+      "how": "Choose from 4 transparent tiers: Direct Cremation ($1,500), Standard ($3,200), Deluxe ($4,500), or Premium Heritage ($6,800).",
+      "when": "Selected during intake to calculate package pricing and reserve logistics equipment.",
+      "where": "Applied across the entire wake setup, procession hearse, and quotation breakdown.",
+      "common_questions_and_answers": [
+        {
+          "question": "What is the difference between Standard ($3,200) and Deluxe ($4,500)?",
+          "answer": "Standard ($3,200) covers essential coordination with an eco-wood casket and standard hearse. Deluxe ($4,500) upgrades to a full floral backdrop, custom photo frame, Mercedes-Benz hearse, premium embalming/styling, and 2 on-site operations staff."
+        },
+        {
+          "question": "What is Direct Cremation ($1,500)?",
+          "answer": "Direct Cremation is our dignified essential service with no wake. It includes professional body preparation, an eco-wood casket, transport directly to Mandai Crematorium, and crematorium slot booking."
+        }
+      ],
+      "uncertainty_guidance": "Most families seeking a complete, dignified wake choose the Standard ($3,200) or Deluxe ($4,500) tier.",
+      "step_rule_for_ollama": "This is Step 8. Summarize tier differences logically with exact prices and inclusions."
+    },
+    {
+      "step_number": 9,
+      "field": "casket",
+      "step_title": "Casket Selection",
+      "canonical_question": "Would you prefer the Eco-Wood, Oak, or Teak casket?",
+      "what": "The casket/coffin selected for cremation or burial.",
+      "why": "Provides dignified housing for the departed loved one. Caskets vary in wood craftsmanship, interior satin lining, exterior finish, and pricing.",
+      "how": "Choose: Eco-Wood (Included at $0 upgrade), Polished Oak (+$1,200 upgrade), or Elegant Teak (+$2,800 upgrade).",
+      "when": "Required before embalming dressing and encoffinment.",
+      "where": "Centerpiece of the wake altar and procession ceremony.",
+      "common_questions_and_answers": [
+        {
+          "question": "Is the Eco-Wood casket suitable for cremation?",
+          "answer": "Yes, our Eco-Wood casket is fully NEA-compliant, clean-burning, dignified, and included in all package tiers at no extra charge."
+        },
+        {
+          "question": "What is the difference between Oak and Teak?",
+          "answer": "Polished Oak (+$1,200) features rich American oak grain with high-gloss lacquer and champagne satin interior. Elegant Teak (+$2,800) is hand-crafted from solid Southeast Asian golden teakwood with velvet interior and brass handles."
+        }
+      ],
+      "uncertainty_guidance": "The Eco-Wood casket is included with your tier at no extra cost.",
+      "step_rule_for_ollama": "This is Step 9. Present casket options clearly with accurate upgrade figures."
+    },
+    {
+      "step_number": 10,
+      "field": "finalDisposition",
+      "step_title": "Final Disposition (Cremation vs Burial)",
+      "canonical_question": "For final disposition, does your family prefer Cremation at Mandai Crematorium or Burial at Choa Chu Kang Cemetery?",
+      "what": "The final method of disposition: Cremation at Mandai Crematorium (Government fee $100) or Burial at Choa Chu Kang Cemetery ($315 land lease / $940 Christian).",
+      "why": "Requires booking specific NEA government facilities and determining casket construction compatibility.",
+      "how": "Select 'Cremation' or 'Burial'.",
+      "when": "Booked on Day 1 to secure desired cremation slot times.",
+      "where": "Mandai Crematorium (300 Mandai Road) or Choa Chu Kang Cemetery (910 Old Choa Chu Kang Road).",
+      "common_questions_and_answers": [
+        {
+          "question": "What is Singapore's 15-year burial policy?",
+          "answer": "Under Singapore NEA regulations, all graves at Choa Chu Kang Cemetery are subject to a 15-year lease period. After 15 years, graves are exhumed, and remains are cremated or placed in a columbarium niche."
+        },
+        {
+          "question": "What percentage of families choose cremation in Singapore?",
+          "answer": "Over 85% of families in Singapore choose cremation at Mandai Crematorium due to land scarcity and environmental considerations."
+        }
+      ],
+      "uncertainty_guidance": "Cremation at Mandai is the standard choice chosen by most families.",
+      "step_rule_for_ollama": "This is Step 10. Clarify cremation vs burial procedures."
+    },
+    {
+      "step_number": 11,
+      "field": "ashManagement",
+      "step_title": "Ash Management & Post-Cremation Options",
+      "canonical_question": "For ash management, do you prefer Mandai Crematorium placement, Inland Ash Scattering ($350), Sea Scattering ($380), Columbarium Niche Placement ($1,200), or Keepsake Urn Jewellery ($250)?",
+      "what": "The resting place or scattering method for the cremated remains (ashes).",
+      "why": "Determines booking of ash scattering permits, charter boats, or columbarium niche purchase.",
+      "how": "Options: Mandai Placement ($0), Inland Scattering at Garden of Peace ($350), Sea Scattering at Changi/Marina ($380), Columbarium Niche Placement ($1,200), Keepsake Jewellery ($250).",
+      "when": "Decided during intake or anytime before the cremation day.",
+      "where": "Garden of Peace (CCK), Changi Sea Scattering Point, or government/private columbaria.",
+      "common_questions_and_answers": [
+        {
+          "question": "What is Inland Ash Scattering at Garden of Peace?",
+          "answer": "Garden of Peace at Choa Chu Kang is Singapore's peaceful, landscaped inland scattering garden. Ashes are reverently dispersed into designated pebble stream beds amidst trees and flowering shrubs ($350 including logistics coordination)."
+        },
+        {
+          "question": "Can we decide ash management after the wake?",
+          "answer": "Yes, families can store ashes temporarily at Mandai Crematorium or our secure parlour for up to 30 days while deciding."
+        }
+      ],
+      "uncertainty_guidance": "Many families decide ash arrangements closer to cremation day; pencil in Mandai or Inland Scattering for now.",
+      "step_rule_for_ollama": "This is Step 11. Detail ash management choices clearly."
+    },
+    {
+      "step_number": 12,
+      "field": "wakeDuration",
+      "step_title": "Wake Duration",
+      "canonical_question": "Would a 3-Day, 5-Day, or 7-Day wake coordination suit your family?",
+      "what": "The total number of days the memorial wake is held before the final cortege procession and cremation/burial.",
+      "why": "Determines tentage rental length, daily lighting/utility permits, table/chair hire, and scheduling of the funeral procession.",
+      "how": "Select 3-Day (Included in tier at $0), 5-Day (+$800 extension), or 7-Day (+$1,500 extension).",
+      "when": "Determined on Day 1 to reserve Town Council void deck permits and cremation timing.",
+      "where": "Applies at the wake location throughout the duration.",
+      "common_questions_and_answers": [
+        {
+          "question": "What is the standard wake length in Singapore?",
+          "answer": "A 3-Day wake is the standard choice for most families in Singapore. Families with relatives traveling from overseas or holding traditional Buddhist/Taoist ceremonies often choose a 5-Day wake."
+        }
+      ],
+      "uncertainty_guidance": "The 3-Day wake is our most common option and is included with your package.",
+      "step_rule_for_ollama": "This is Step 12. Explain wake length options and extension fees."
+    },
+    {
+      "step_number": 13,
+      "field": "addons",
+      "step_title": "Optional Logistics & Add-on Services",
+      "canonical_question": "Do you need additions like Catering ($450/day), an A/C Tentage ($900), Memory Video ($350), Mitsuoka Hearse Upgrade ($600), Floral Wreaths ($250), or Will Planning ($350)?",
+      "what": "Optional supplementary services to enhance the wake experience and support the family.",
+      "why": "Allows customized hospitality, climate comfort, digital tributes, and legal estate planning.",
+      "how": "Choose any combination or choose none: Catering ($450/day), Air-Con Tent ($900), Memory Video ($350), Mitsuoka Hearse ($600), Floral Wreaths ($250), Will Planning ($350).",
+      "when": "Can be added during intake or updated during the wake.",
+      "where": "Delivered on-site at the wake venue.",
+      "common_questions_and_answers": [
+        {
+          "question": "Are add-ons compulsory?",
+          "answer": "No, all add-ons are completely optional. You can select only what your family needs or skip add-ons entirely."
+        }
+      ],
+      "uncertainty_guidance": "Add-ons can be skipped now and added later if needed.",
+      "step_rule_for_ollama": "This is Step 13. Clarify that add-ons are optional and explain individual items if asked."
+    },
+    {
+      "step_number": 14,
+      "field": "wakeLocation",
+      "step_title": "Wake Location & Venue",
+      "canonical_question": "Would you prefer the wake at our Main Office in Woodlands, an HDB void deck, or a private residence?",
+      "what": "The venue where the wake and prayer services will be held.",
+      "why": "Determines permit applications (Town Council vs private booking), tentage setup requirements, power hookups, and guest parking logistics.",
+      "how": "Select: Woodlands Main Office Parlour ($650/day), HDB Void Deck ($0 coordination, standard town council fee billed at cost), or Private Residence ($0 coordination).",
+      "when": "Required on Day 1 for site inspection and tentage crew dispatch.",
+      "where": "HDB estate void deck, funeral parlour hall, or landed home compound.",
+      "common_questions_and_answers": [
+        {
+          "question": "Do you help apply for the HDB void deck Town Council permit?",
+          "answer": "Yes, our operations team handles the entire Town Council permit application, utility water/electricity tapping, and conservancy booking on your behalf."
+        }
+      ],
+      "uncertainty_guidance": "HDB void decks and our air-conditioned Woodlands suites are both popular choices.",
+      "step_rule_for_ollama": "This is Step 14. Detail venue differences and permit handling."
+    },
+    {
+      "step_number": 15,
+      "field": "guestCount",
+      "step_title": "Estimated Guest Attendance",
+      "canonical_question": "Roughly how many guests are you expecting, so we can plan seating and catering portions?",
+      "what": "An approximate estimate of the number of visitors and guests attending each evening of the wake.",
+      "why": "Helps our logistics team provide sufficient round tables, square tables, plastic chairs, mobile fans, and beverage carton quantities.",
+      "how": "Provide an estimate (e.g. 'around 30 to 50', '50 people', '100+').",
+      "when": "Used during wake setup to lay out tables and seating.",
+      "where": "Configured at the wake hall or void deck enclosure.",
+      "common_questions_and_answers": [
+        {
+          "question": "What if attendance is higher than expected?",
+          "answer": "Our operations coordinator brings backup chairs and extra beverage cartons on-site, which can be deployed immediately if visitor turnout increases."
+        }
+      ],
+      "uncertainty_guidance": "A rough estimate like 'around 50' is completely fine.",
+      "step_rule_for_ollama": "This is Step 15. Note attendance numbers politely."
+    },
+    {
+      "step_number": 16,
+      "field": "paymentPreference",
+      "step_title": "Payment & Installment Preference",
+      "canonical_question": "Would you like to pay in full, or set up one of our interest-free installment plans?",
+      "what": "The preferred billing structure for the funeral quotation.",
+      "why": "Ensures transparent budgeting without financial strain during bereavement.",
+      "how": "Options: Pay in full via PayNow / Credit Card / Bank Transfer, or 0% interest-free 6 to 12-month installment plan.",
+      "when": "Set during intake, with final billing settled after cortege day.",
+      "where": "Detailed in the transparent itemised invoice and e-Signature contract.",
+      "common_questions_and_answers": [
+        {
+          "question": "Are there interest charges or hidden fees on installments?",
+          "answer": "No. Our 6-month and 12-month installment plans carry 0% interest with zero processing markups."
+        }
+      ],
+      "uncertainty_guidance": "Our 0% installment plan is very popular and flexible.",
+      "step_rule_for_ollama": "This is Step 16. Explain payment flexibility and zero-interest terms."
+    },
+    {
+      "step_number": 17,
+      "field": "contactNumber",
+      "step_title": "Family Contact Phone Number",
+      "canonical_question": "What's the best number to reach you or your family at, in case our director needs to call directly?",
+      "what": "The primary mobile phone number of the family coordinator.",
+      "why": "Allows our 24/7 on-call Funeral Director to contact the family immediately to verify collection timing and coordinate on-site arrival.",
+      "how": "Provide an 8-digit Singapore mobile number (e.g. '9123 4567', '8765 4321').",
+      "when": "Final detail collected to trigger director dispatch and save the lead.",
+      "where": "Saved securely in the portal dispatch system.",
+      "common_questions_and_answers": [
+        {
+          "question": "How quickly will the director contact me after I submit this?",
+          "answer": "Our Senior Funeral Director will call you within 15 minutes of receiving your contact number."
+        }
+      ],
+      "uncertainty_guidance": "Whichever mobile number is easiest to reach right now is fine.",
+      "step_rule_for_ollama": "This is Step 17. Collect the phone number and confirm completion."
+    }
+  ]
+}

@@ -1,0 +1,1118 @@
+{
+  "government_legal_procedures": [
+    {
+      "procedure_id": "GOV_ICA_001",
+      "category": "Death Registration & Certification",
+      "title": "Digital Death Certificate Issuance & Automatic Registration (ICA / My Legacy)",
+      "governing_body": "Immigration & Checkpoints Authority (ICA) / Registry of Births and Deaths",
+      "legislative_reference": "Births and Deaths Registration Act 2021 (Effective 29 May 2022)",
+      "trigger_condition": "Immediate post-death, following online certification of Cause of Death Certificate (CCOD) by an attending registered medical practitioner.",
+      "summary": "Mandatory statutory process for registering a death in Singapore. Since 29 May 2022, physical registration at police stations or ICA building is decommissioned. Registration is fully automated once the doctor enters the death into the national portal. Next-of-kin downloads the official Digital Death Certificate via the My Legacy portal using Singpass.",
+      "required_documents": [
+        "Deceased's NRIC, FIN, or Passport number",
+        "Informant / Next-of-Kin (NOK) Singpass login credentials",
+        "Doctor-issued digital CCOD submission reference or notification SMS"
+      ],
+      "step_by_step_workflow": [
+        {
+          "step_number": 1,
+          "action": "Attending medical practitioner (hospital doctor or house-call physician) confirms passing and submits the electronic Cause of Death Certificate (CCOD) into the national death registry.",
+          "responsible_party": "Registered Medical Practitioner / Hospital Administration"
+        },
+        {
+          "step_number": 2,
+          "action": "The Registry of Births and Deaths automatically registers the death within seconds of CCOD submission and generates the official Digital Death Certificate.",
+          "responsible_party": "Immigration & Checkpoints Authority (ICA)"
+        },
+        {
+          "step_number": 3,
+          "action": "System sends an automated SMS/email notification to the next-of-kin containing the download link and digital death certificate reference.",
+          "responsible_party": "My Legacy LifeSG System Notification"
+        },
+        {
+          "step_number": 4,
+          "action": "Next-of-Kin logs into the My Legacy portal (mylegacy.life.gov.sg) using Singpass to download the PDF Digital Death Certificate.",
+          "responsible_party": "Informant / Next-of-Kin"
+        },
+        {
+          "step_number": 5,
+          "action": "Family shares the downloaded Digital Death Certificate PDF with Solace Dignity Care to initiate permit bookings, body collection, and wake coordination.",
+          "responsible_party": "Next-of-Kin / Solace Dignity Care Funeral Director"
+        }
+      ],
+      "processing_time": "Instantaneous to 1 hour upon doctor's CCOD submission",
+      "statutory_fees_sgd": 0.0,
+      "official_portal_url": "https://mylegacy.life.gov.sg",
+      "penalties_or_deadlines": "By law under the Births and Deaths Registration Act, deaths must be certified and reported within 24 hours. The Digital Death Certificate should be downloaded and stored securely within 30 days of issuance.",
+      "related_procedure_ids": [
+        "GOV_CCOD_002",
+        "GOV_NEA_001",
+        "GOV_EST_003"
+      ],
+      "sdc_operational_support": "Our funeral coordinators guide families step-by-step through Singpass retrieval, verify watermark authenticity, and instantly store encrypted copies to expedite municipal permit filings."
+    },
+    {
+      "procedure_id": "GOV_CCOD_002",
+      "category": "Death Registration & Certification",
+      "title": "Cause of Death Certificate (CCOD) Certification (Hospital vs. Sudden Home Death)",
+      "governing_body": "Ministry of Health (MOH) / Singapore Medical Council (SMC)",
+      "legislative_reference": "Medical Registration Act & Births and Deaths Registration Act 2021",
+      "trigger_condition": "Death occurs in a hospital ward, hospice, care facility, or at a private residential home where a doctor is called to certify the passing.",
+      "summary": "Medical certification workflow required to establish natural cause of death. For hospital deaths, ward physicians issue the CCOD immediately. For home deaths with known terminal or chronic illness, a certifying doctor conducts an on-site house-call examination. If the doctor cannot determine the cause or suspects unnatural circumstances, the case must be escalated to the Police and HSA Mortuary.",
+      "required_documents": [
+        "Deceased's original physical NRIC / FIN card or Passport",
+        "Deceased's recent hospital discharge summaries, medical history files, and prescription lists",
+        "Informant's original NRIC or Passport"
+      ],
+      "step_by_step_workflow": [
+        {
+          "step_number": 1,
+          "action": "For hospital deaths: Ward doctor examines patient, confirms cessation of vital signs, reviews clinical notes, and prepares CCOD. For home deaths: Family contacts family doctor or SDC 24/7 hotline (+65 6555 1115) to dispatch a certified doctor for home examination.",
+          "responsible_party": "Attending Doctor / Hospital Medical Team / SDC House-Call Doctor"
+        },
+        {
+          "step_number": 2,
+          "action": "Doctor verifies deceased identity against physical NRIC/passport and reviews medical records to rule out trauma, foul play, or acute poisoning.",
+          "responsible_party": "Certifying Medical Doctor"
+        },
+        {
+          "step_number": 3,
+          "action": "Doctor inputs clinical cause of death (primary and underlying conditions using ICD-10 medical standards) and submits CCOD electronically to ICA registry.",
+          "responsible_party": "Certifying Medical Doctor"
+        },
+        {
+          "step_number": 4,
+          "action": "If doctor is unable to certify natural death, doctor halts certification and instructs family to dial 999 for Singapore Police Force coroner escalation.",
+          "responsible_party": "Certifying Medical Doctor / SPF"
+        }
+      ],
+      "processing_time": "Hospital: 1-3 hours. Home house-call: 45-90 minutes from doctor arrival.",
+      "statutory_fees_sgd": 0.0,
+      "official_portal_url": "https://www.moh.gov.sg",
+      "penalties_or_deadlines": "Doctor must certify death within 24 hours of occurrence. False medical declarations carry criminal liability under the Penal Code.",
+      "related_procedure_ids": [
+        "GOV_ICA_001",
+        "GOV_HSA_001"
+      ],
+      "sdc_operational_support": "SDC maintains an on-call network of mobile certifying doctors available 24/7 across Singapore to perform home death examinations within 45 to 60 minutes."
+    },
+    {
+      "procedure_id": "GOV_ICA_003",
+      "category": "Death Registration & Certification",
+      "title": "Extraction of Historical Death Records & Certified True Extracts",
+      "governing_body": "Immigration & Checkpoints Authority (ICA) - Registry of Births & Deaths",
+      "legislative_reference": "Births and Deaths Registration Act 2021",
+      "trigger_condition": "Loss of legacy paper death certificates, historical genealogical searches, or estate probate requirements requiring official ICA-certified extracts.",
+      "summary": "Administrative process for obtaining certified true extracts of historical death records registered in Singapore. Useful for legal estate administration, cross-border inheritance disputes, or replacing misplaced physical death certificates issued prior to the May 2022 digital system.",
+      "required_documents": [
+        "Applicant's NRIC / Passport",
+        "Proof of relationship to the deceased (e.g. Birth Certificate, Marriage Certificate, Letters of Administration)",
+        "Deceased's full name, NRIC number, and exact or estimated date of death",
+        "Letter of authorization if applied by an appointed legal counsel or estate administrator"
+      ],
+      "step_by_step_workflow": [
+        {
+          "step_number": 1,
+          "action": "Applicant submits an online application via the ICA e-Service portal (e-Extract of Death Record).",
+          "responsible_party": "Applicant / Appointed Law Firm"
+        },
+        {
+          "step_number": 2,
+          "action": "Upload required relationship proof documents and specify purpose of extraction.",
+          "responsible_party": "Applicant"
+        },
+        {
+          "step_number": 3,
+          "action": "Pay non-refundable statutory search and extraction fee online via Credit Card / PayNow.",
+          "responsible_party": "Applicant"
+        },
+        {
+          "step_number": 4,
+          "action": "ICA verifies registry archives and issues an official Certified Digital Death Extract with cryptographic QR verification.",
+          "responsible_party": "Immigration & Checkpoints Authority (ICA)"
+        }
+      ],
+      "processing_time": "3 to 7 working days (search for pre-1970 archival records may take up to 14 working days)",
+      "statutory_fees_sgd": 40.0,
+      "official_portal_url": "https://eservices.ica.gov.sg/icaeci/",
+      "penalties_or_deadlines": "No statutory deadline; required prior to probate filing if death certificate is lost.",
+      "related_procedure_ids": [
+        "GOV_ICA_001",
+        "GOV_EST_002"
+      ],
+      "sdc_operational_support": "SDC provides administrative guidance for families requiring historical death extracts for overseas repatriation or complex multi-jurisdiction probate."
+    },
+    {
+      "procedure_id": "GOV_HSA_001",
+      "category": "Post-Mortem & Mortuary Procedures",
+      "title": "Coroner's Cases, Unnatural Deaths & Mortuary@HSA Intake",
+      "governing_body": "Health Sciences Authority (HSA) - Forensic Medicine Division / Singapore Police Force (SPF) / State Courts (Coroner's Court)",
+      "legislative_reference": "Coroners Act 2010 (Cap. 63A)",
+      "trigger_condition": "Death is unnatural, violent, unexplained, sudden with unknown medical history, resulting from trauma/fall/suicide, or when attending medical practitioner refuses to issue CCOD.",
+      "summary": "Statutory protocol for reporting and handling coroner cases. SPF officers secure the scene, document evidence, and dispatch the Government Police Hearse to transfer the deceased to Mortuary@HSA (located at Block 9, Outram Road / SGH Campus). The Duty Coroner assumes legal custody of the body to determine the exact cause of death.",
+      "required_documents": [
+        "Deceased's original NRIC / FIN card or Passport",
+        "SPF Police Card / Police Incident Report slip (issued by attending IO)",
+        "Deceased's past hospital discharge summaries, medical appointment cards, and prescription slips",
+        "Primary Informant's original NRIC / Passport and proof of relationship"
+      ],
+      "step_by_step_workflow": [
+        {
+          "step_number": 1,
+          "action": "Attending physician, paramedic, or family calls 999. SPF Investigating Officers (IO) arrive at scene to inspect the surroundings, record witness statements, and confirm case status.",
+          "responsible_party": "Singapore Police Force (SPF)"
+        },
+        {
+          "step_number": 2,
+          "action": "SPF contacts the Government Appointed Police Hearse contractor to transfer the deceased to Mortuary@HSA. Police issue an official Police Reference Card to next-of-kin.",
+          "responsible_party": "SPF / Police Hearse Team"
+        },
+        {
+          "step_number": 3,
+          "action": "Next morning (typically 8:00 AM), Next-of-Kin (informant) reports to Mortuary@HSA (Forensic Medicine Division, Outram Road) with original NRIC and medical history documents.",
+          "responsible_party": "Next-of-Kin (NOK) / SDC Funeral Director"
+        },
+        {
+          "step_number": 4,
+          "action": "NOK conducts formal visual identification of the deceased through the mortuary viewing glass / digital viewing screen and is interviewed by the Coroner's Officer.",
+          "responsible_party": "Next-of-Kin / Coroner's Investigation Officer"
+        },
+        {
+          "step_number": 5,
+          "action": "Coroner evaluates medical reports, police findings, and preliminary forensic review to decide whether an autopsy is mandatory or if a waiver can be granted.",
+          "responsible_party": "State Courts Duty Coroner"
+        }
+      ],
+      "processing_time": "12 to 36 hours from intake to body release (extended if toxicology/specialized forensic analysis is mandated)",
+      "statutory_fees_sgd": 0.0,
+      "official_portal_url": "https://www.hsa.gov.sg/forensic-medicine",
+      "penalties_or_deadlines": "Tampering with a death scene or failing to report an unnatural death is an offense under the Penal Code and Coroners Act.",
+      "related_procedure_ids": [
+        "GOV_HSA_002",
+        "GOV_HSA_003",
+        "GOV_NEA_001"
+      ],
+      "sdc_operational_support": "SDC Funeral Directors accompany family members directly to Mortuary@HSA at 8:00 AM, assist with identification documentation, coordinate mortuary counters, and prepare for smooth handover."
+    },
+    {
+      "procedure_id": "GOV_HSA_002",
+      "category": "Post-Mortem & Mortuary Procedures",
+      "title": "Post-Mortem Autopsy Procedure & Formal Autopsy Waiver Application",
+      "governing_body": "State Courts (Coroner's Court) / HSA Forensic Medicine Division",
+      "legislative_reference": "Coroners Act 2010 - Section 12 to 16",
+      "trigger_condition": "Body is under Coroner's custody at Mortuary@HSA, and family requests to dispense with an invasive autopsy due to religious convictions or known medical frailty.",
+      "summary": "Legal mechanism for requesting an Autopsy Waiver. In Singapore, the State Coroner possesses sole legal authority to order or dispense with post-mortem examination. If the deceased had extensive treated medical conditions and police rule out foul play, the family can submit an Autopsy Waiver Request on religious or compassionate grounds (e.g. Muslim, Orthodox Jewish, or traditional Taoist rites requiring an intact body).",
+      "required_documents": [
+        "Deceased's comprehensive medical specialist reports from private or restructured hospitals (e.g., cardiology, oncology)",
+        "Signed Formal Autopsy Waiver Request Form (provided at Mortuary@HSA)",
+        "Informant NRIC and written consensus from all immediate next-of-kin"
+      ],
+      "step_by_step_workflow": [
+        {
+          "step_number": 1,
+          "action": "During the morning interview at Mortuary@HSA, next-of-kin formally informs the Coroner's Officer of their intention to request an autopsy waiver.",
+          "responsible_party": "Next-of-Kin"
+        },
+        {
+          "step_number": 2,
+          "action": "HSA Forensic Pathologists conduct a non-invasive preliminary external examination, CT post-mortem scan, and review retrieved clinical records.",
+          "responsible_party": "HSA Forensic Pathologist"
+        },
+        {
+          "step_number": 3,
+          "action": "Duty State Coroner reviews the waiver application alongside the Pathologist's preliminary opinion and Investigating Officer's initial report.",
+          "responsible_party": "State Courts Duty Coroner"
+        },
+        {
+          "step_number": 4,
+          "action": "If waiver is granted: Coroner certifies cause of death based on external review/clinical records and signs release order. If waiver is rejected: Pathologist proceeds with standard autopsy to determine legal cause of death.",
+          "responsible_party": "State Courts Duty Coroner / Forensic Pathologist"
+        }
+      ],
+      "processing_time": "4 to 8 hours for waiver deliberation; 12 to 24 hours if full autopsy is performed",
+      "statutory_fees_sgd": 0.0,
+      "official_portal_url": "https://www.statecourts.gov.sg",
+      "penalties_or_deadlines": "Waiver request must be submitted during initial mortuary identification (before 10:00 AM on the day of intake).",
+      "related_procedure_ids": [
+        "GOV_HSA_001",
+        "GOV_HSA_003"
+      ],
+      "sdc_operational_support": "SDC coordinators assist families in urgently liaising with hospital specialists to fax or email medical records directly to the Mortuary Officer to bolster waiver applications."
+    },
+    {
+      "procedure_id": "GOV_HSA_003",
+      "category": "Post-Mortem & Mortuary Procedures",
+      "title": "HSA Mortuary Body Release & Coroner's Permit to Cremate/Bury",
+      "governing_body": "Health Sciences Authority (HSA) / State Courts Coroner's Court",
+      "legislative_reference": "Coroners Act 2010 & Environmental Public Health Act 1987",
+      "trigger_condition": "Completion of post-mortem examination or granting of waiver, and authorization of body release to licensed funeral director.",
+      "summary": "Final mortuary clearance process whereby the Coroner issues the Certificate of Cause of Death, Digital Death Certificate, and the Coroner's Order for Burial / Certificate for Cremation (Coroner's Permit). The family signs a Letter of Authorisation permitting Solace Dignity Care to collect the deceased for embalming and wake preparation.",
+      "required_documents": [
+        "Signed Mortuary Body Claim Letter of Authorisation Form",
+        "Original NRIC of the authorizing Next-of-Kin",
+        "Deceased's clothing, personal attire, and cosmetics for preparation",
+        "Funeral Director's Staff Identification & Company Accreditation Card"
+      ],
+      "step_by_step_workflow": [
+        {
+          "step_number": 1,
+          "action": "Coroner's Court issues electronic clearance, generating the Digital Death Certificate and Coroner's Permit to Cremate or Bury.",
+          "responsible_party": "State Courts Coroner's Registry"
+        },
+        {
+          "step_number": 2,
+          "action": "Next-of-kin executes the Mortuary Collection Authorization Form naming Solace Dignity Care as the designated funeral undertaker.",
+          "responsible_party": "Next-of-Kin"
+        },
+        {
+          "step_number": 3,
+          "action": "Solace Dignity Care transfer team arrives at Mortuary@HSA loading bay with specialized removal vehicle, transfers deceased's attire to mortuary dressing staff.",
+          "responsible_party": "Solace Dignity Care Transport Team"
+        },
+        {
+          "step_number": 4,
+          "action": "Mortuary technicians verify body tag numbers and transfer the deceased into SDC's sanitary removal case.",
+          "responsible_party": "HSA Mortuary Technicians / SDC Transport Team"
+        },
+        {
+          "step_number": 5,
+          "action": "SDC transports deceased directly to our licensed care and embalming facility for professional washing, embalming, dressing, and cosmetological restoration.",
+          "responsible_party": "Solace Dignity Care Embalming Facility"
+        }
+      ],
+      "processing_time": "1 to 2 hours upon issuance of Coroner's clearance",
+      "statutory_fees_sgd": 0.0,
+      "official_portal_url": "https://www.hsa.gov.sg",
+      "penalties_or_deadlines": "Mortuary storage fees may apply if the body is uncollected after 7 calendar days from clearance.",
+      "related_procedure_ids": [
+        "GOV_HSA_001",
+        "GOV_NEA_001"
+      ],
+      "sdc_operational_support": "SDC deploys customized transfer hearses equipped with hydraulic lift stretchers and temperature-controlled compartments to ensure dignified transfer from Outram to our care centre."
+    },
+    {
+      "procedure_id": "GOV_NEA_001",
+      "category": "Disposal & Environmental Permits",
+      "title": "Mandatory Cremation & Burial Permit Application (NEA Port Health Booking System)",
+      "governing_body": "National Environment Agency (NEA) - Environmental Health Operations Division",
+      "legislative_reference": "Environmental Public Health (Cemeteries and Crematoria) Regulations",
+      "trigger_condition": "Final disposition planning following death certification (for cremation at Mandai Crematorium, Tse Tho Aum, Kong Meng San Phor Kark See, or burial at Choa Chu Kang Cemetery).",
+      "summary": "Statutory booking and permit issuance workflow for cremation or burial in Singapore. All cremations and burials require an official NEA Permit to Cremate or Permit to Bury. Applications are submitted via the NEA Mortuary / E-Services booking system by an authorized funeral director or next-of-kin using Singpass/Corppass.",
+      "required_documents": [
+        "Digital Death Certificate number and deceased's NRIC/Passport",
+        "Applicant's NRIC and contact details",
+        "Permit to Cremate / Permit to Bury application details",
+        "Funeral Hearse vehicle registration number and scheduled arrival window"
+      ],
+      "step_by_step_workflow": [
+        {
+          "step_number": 1,
+          "action": "Solace Dignity Care coordinator logs into NEA E-Portal to select cremation slot at Mandai Crematorium (Service Hall and Cremator) or Choa Chu Kang Cemetery burial plot.",
+          "responsible_party": "SDC Funeral Director / Next-of-Kin"
+        },
+        {
+          "step_number": 2,
+          "action": "Input Digital Death Certificate reference, confirm deceased particulars, and upload CCOD / Coroner's permit data.",
+          "responsible_party": "SDC Funeral Director"
+        },
+        {
+          "step_number": 3,
+          "action": "Pay statutory NEA disbursement fee online (Government fee passed through with zero markup).",
+          "responsible_party": "SDC Funeral Director / Next-of-Kin"
+        },
+        {
+          "step_number": 4,
+          "action": "NEA system generates official electronic Permit to Cremate / Bury with QR barcode.",
+          "responsible_party": "National Environment Agency (NEA)"
+        },
+        {
+          "step_number": 5,
+          "action": "On cortege day, SDC cortege driver presents digital permit barcode at Mandai / CCK security gantry for gate clearance and chapel entry.",
+          "responsible_party": "SDC Cortege Marshal / Mandai Crematorium Operations"
+        }
+      ],
+      "processing_time": "Instantaneous online booking confirmation",
+      "statutory_fees_sgd": 315.0,
+      "official_portal_url": "https://www.nea.gov.sg/our-services/after-death-services/cremations",
+      "penalties_or_deadlines": "Mandai standard cremation fee is S$315 (Standard Cremator). Large cremator surcharge is S$500. CCK burial fees: S$315 (Muslim/Jewish/Parsi) or S$940 (Christian/Chinese/Other). Unauthorized cremation/burial without an NEA permit is a criminal offense under the EPHA.",
+      "related_procedure_ids": [
+        "GOV_ICA_001",
+        "GOV_NEA_002",
+        "GOV_NEA_003"
+      ],
+      "sdc_operational_support": "SDC handles 100% of NEA slot booking logistics, chapel assignments (Hall 1, 2, 3, or 4 at Mandai), and passes all statutory receipts to the family without markup."
+    },
+    {
+      "procedure_id": "GOV_NEA_002",
+      "category": "Disposal & Environmental Permits",
+      "title": "Choa Chu Kang Cemetery 15-Year Burial Lease Policy & Post-15-Year Exhumation",
+      "governing_body": "National Environment Agency (NEA) - Memorial Services Section",
+      "legislative_reference": "Environmental Public Health Act 1987 (15-Year Burial Policy effective 1 Nov 1998)",
+      "trigger_condition": "Deceased is buried at Choa Chu Kang Cemetery; or grave reaches 15-year lease expiration requiring exhumation and subsequent management.",
+      "summary": "Singapore statutory policy governing land burial. Due to severe national land scarcity, all burials at Choa Chu Kang Cemetery since 1 November 1998 are subject to a strict 15-year leasehold. At the end of 15 years, graves are exhumed by NEA. The remains are either cremated and placed in columbaria or scattered, or for religions prohibiting cremation (e.g. Islam, Judaism, Parsi), re-interred into consolidated individual crypts.",
+      "required_documents": [
+        "Original Burial Permit / Grave Registration Receipt",
+        "Registered Next-of-Kin's NRIC and relationship proof",
+        "Exhumation Option Declaration Form (indicating cremation or re-interment preference)"
+      ],
+      "step_by_step_workflow": [
+        {
+          "step_number": 1,
+          "action": "Upon burial at Choa Chu Kang Cemetery, NEA issues 15-year lease registration to registered next-of-kin.",
+          "responsible_party": "NEA Memorial Services Section"
+        },
+        {
+          "step_number": 2,
+          "action": "At year 14 to 15, NEA gazettes grave blocks and sends formal written exhumation notification letters to registered next-of-kin.",
+          "responsible_party": "National Environment Agency (NEA)"
+        },
+        {
+          "step_number": 3,
+          "action": "Next-of-kin registers for the exhumation scheme and chooses post-exhumation option: (A) Cremation and niche placement / ash scattering, (B) Re-interment in consolidated burial crypt (for permitted religions), or (C) Private exhumation via licensed undertaker.",
+          "responsible_party": "Next-of-Kin / SDC Funeral Director"
+        },
+        {
+          "step_number": 4,
+          "action": "NEA / appointed contractor conducts respectful exhumation. Skeletal remains are placed in specialized ossuary containers.",
+          "responsible_party": "NEA Exhumation Contractors / SDC Exhumation Specialists"
+        },
+        {
+          "step_number": 5,
+          "action": "Remains are cremated at Mandai or re-interred in designated consolidated cemetery plots.",
+          "responsible_party": "NEA / Solace Dignity Care"
+        }
+      ],
+      "processing_time": "15-year statutory tenure; exhumation execution takes 1 to 3 months following notice registration",
+      "statutory_fees_sgd": 315.0,
+      "official_portal_url": "https://www.nea.gov.sg/our-services/after-death-services/burials",
+      "penalties_or_deadlines": "If next-of-kin fails to register within the gazetted notice period, NEA will exhume unclaimed graves and cremate/re-inter remains in communal plots.",
+      "related_procedure_ids": [
+        "GOV_NEA_001",
+        "GOV_NEA_003"
+      ],
+      "sdc_operational_support": "SDC provides comprehensive private exhumation management, including master exhumation rituals, religious master prayers, bone cleaning/purification, ossuary urn selection, and columbarium transfer."
+    },
+    {
+      "procedure_id": "GOV_NEA_003",
+      "category": "Disposal & Environmental Permits",
+      "title": "Inland Ash Scattering (Garden of Peace @ CCK & Garden of Serenity @ Mandai)",
+      "governing_body": "National Environment Agency (NEA)",
+      "legislative_reference": "Environmental Public Health (Cemeteries and Crematoria) Regulations - Inland Ash Scattering Code",
+      "trigger_condition": "Family selects eco-friendly land-based ash scattering as the post-cremation disposition method instead of columbarium niche entombment.",
+      "summary": "Statutory framework and booking workflow for Singapore's Inland Ash Scattering (IAS) facilities: 'Garden of Peace' at Choa Chu Kang Cemetery and 'Garden of Serenity' at Mandai Crematorium Complex. The gardens offer serene, non-denominational landscaped green spaces with dedicated pebble lanes for families to gently pour pulverised cremated ashes into the soil.",
+      "required_documents": [
+        "Deceased's Digital Death Certificate and Cremation Certificate",
+        "Applicant's NRIC and booking confirmation slip",
+        "Authorisation Letter if accompanied by Solace Dignity Care coordinator"
+      ],
+      "step_by_step_workflow": [
+        {
+          "step_number": 1,
+          "action": "Family or SDC coordinator books an Inland Ash Scattering 2-hour session online via the NEA e-Portal.",
+          "responsible_party": "Next-of-Kin / SDC Funeral Director"
+        },
+        {
+          "step_number": 2,
+          "action": "Select preferred venue: Garden of Peace (Choa Chu Kang) or Garden of Serenity (Mandai) and confirm scattering date and time slot.",
+          "responsible_party": "Next-of-Kin"
+        },
+        {
+          "step_number": 3,
+          "action": "Pay statutory NEA fee of S$350 online (includes facility usage and ash preparation).",
+          "responsible_party": "Next-of-Kin / SDC"
+        },
+        {
+          "step_number": 4,
+          "action": "Crematorium processes ashes into fine powder and places them into an NEA-approved scattering canister.",
+          "responsible_party": "Mandai Crematorium Ash Processing Division"
+        },
+        {
+          "step_number": 5,
+          "action": "Family gathers at the garden's private prayer pavilion for final secular/religious prayers, proceeds to designated pebble bed, pours ashes onto the pebbles, and uses provided watering cans to wash the ash into the underlying soil.",
+          "responsible_party": "Next-of-Kin / SDC Funeral Butler"
+        }
+      ],
+      "processing_time": "Booking available within 3 to 14 days post-cremation (sessions operate daily 9:00 AM to 5:00 PM in 2-hour slots)",
+      "statutory_fees_sgd": 350.0,
+      "official_portal_url": "https://www.nea.gov.sg/our-services/after-death-services/inland-ash-scattering",
+      "penalties_or_deadlines": "STRICT NEA GARDEN CODE: No burning of joss paper or incense sticks; no food/drink offerings; no scattering of coins, talismans, or physical items; no planting of trees or laying of permanent plaques. Violators face fines under EPHA.",
+      "related_procedure_ids": [
+        "GOV_NEA_001",
+        "GOV_MPA_004"
+      ],
+      "sdc_operational_support": "SDC provides full on-site butler coordination at the Garden of Peace/Serenity, arranging quiet transport, umbrellas, gentle floral petals (where permitted), and post-scattering reflection moments."
+    },
+    {
+      "procedure_id": "GOV_MPA_004",
+      "category": "Disposal & Environmental Permits",
+      "title": "Sea Ash Scattering & Port Limit Environmental Safety Regulations",
+      "governing_body": "Maritime and Port Authority of Singapore (MPA) / Port Marine Safety",
+      "legislative_reference": "Maritime and Port Authority of Singapore Act 1996 & Prevention of Pollution of the Sea Act 1990",
+      "trigger_condition": "Family selects traditional or secular sea burial (maritime ash scattering) following cremation.",
+      "summary": "Maritime regulations and operational workflow for scattering cremated ashes at sea in Singapore waters. To safeguard maritime navigation fairways and marine ecology, MPA mandates that all sea scatterings take place strictly within the designated maritime site situated approximately 2.8 km (1.5 nautical miles) south of Pulau Semakau (Coordinates: 01°11.0'N, 103°46.0'E), using licensed passenger vessels departing from approved piers.",
+      "required_documents": [
+        "Deceased's Cremation Certificate (issued by Mandai Crematorium or private crematoria)",
+        "Digital Death Certificate copy",
+        "Chartered vessel passenger manifest (names and NRICs/passports of all attendees onboard)",
+        "MPA Port Clearance and Vessel Licence documentation (maintained by SDC charter captains)"
+      ],
+      "step_by_step_workflow": [
+        {
+          "step_number": 1,
+          "action": "Family selects Sea Scattering date; SDC coordinates a licensed passenger ferry/launch at Changi Point Ferry Terminal, Marina South Pier, or Keppel Bay.",
+          "responsible_party": "SDC Maritime Logistics Coordinator"
+        },
+        {
+          "step_number": 2,
+          "action": "Collect cremated ashes from Mandai Crematorium; transfer into a 100% biodegradable sea burial urn or custom satin scattering pouch.",
+          "responsible_party": "SDC Funeral Director"
+        },
+        {
+          "step_number": 3,
+          "action": "Vessel captain submits electronic passenger manifest and logs voyage clearance with MPA Port Marine Operations Centre (PMOC).",
+          "responsible_party": "Chartered Boat Captain / MPA PMOC"
+        },
+        {
+          "step_number": 4,
+          "action": "Vessel navigates outside shipping lanes to the MPA Designated Sea Burial Ground south of Pulau Semakau (or eastern waters off Changi).",
+          "responsible_party": "Vessel Captain"
+        },
+        {
+          "step_number": 5,
+          "action": "Officiant/Family conducts prayers, releases biodegradable urn or gently scatters ashes with natural flower petals into the ocean currents.",
+          "responsible_party": "Next-of-Kin / Officiating Priest / SDC Staff"
+        }
+      ],
+      "processing_time": "2 to 3 hours total boat voyage (typically booked in morning or sunset hours)",
+      "statutory_fees_sgd": 0.0,
+      "official_portal_url": "https://www.mpa.gov.sg",
+      "penalties_or_deadlines": "STRICT MPA POLLUTION RESTRICTIONS: Under the Prevention of Pollution of the Sea Act, casting plastic bags, non-biodegradable urns, styrofoam, metal cages, or synthetic ribbons into the sea is strictly prohibited and subject to severe fines up to S$10,000.",
+      "related_procedure_ids": [
+        "GOV_NEA_001",
+        "GOV_NEA_003"
+      ],
+      "sdc_operational_support": "SDC provides complimentary sea scattering coordination in our Direct Cremation packages, utilizing twin-engine vessels equipped with life vests, sheltered seating, floral petals, and sea-sickness amenities."
+    },
+    {
+      "procedure_id": "GOV_HDB_001",
+      "category": "Wake & Land Permits",
+      "title": "HDB Void Deck & Multi-Purpose Hall / Pavilion Wake Permit",
+      "governing_body": "Town Councils (Respective Local Town Council) / Housing & Development Board (HDB)",
+      "legislative_reference": "Town Councils Act 1988 & Town Councils (Common Property and Open Spaces) By-laws",
+      "trigger_condition": "Holding a 3, 5, or 7-day funeral wake at a public HDB block void deck or communal multi-purpose pavilion.",
+      "summary": "Municipal permit process for securing common property space for a residential funeral wake. The appointed funeral director or next-of-kin must apply to the local Town Council office managing the deceased's or family's residential precinct. Town Council authorizes use of space, unlocks the communal electricity distribution board (DB box) and water tapping pipes, and conducts pre/post-wake site inspections.",
+      "required_documents": [
+        "Deceased's Digital Death Certificate",
+        "Applicant's original NRIC (applicant must be an HDB flat owner/resident in the precinct or immediate next-of-kin)",
+        "Funeral Director's Town Council Registration Accreditation & Public Liability Insurance proof",
+        "Tentage setup floor plan (ensuring 1.5m barrier-free access corridors and unobstructed fire safety exits)"
+      ],
+      "step_by_step_workflow": [
+        {
+          "step_number": 1,
+          "action": "SDC coordinator submits online/counter application to the relevant Town Council office (e.g. Ang Mo Kio, Tanjong Pagar, Pasir Ris-Punggol, Jurong-Clementi Town Council) immediately upon death certification.",
+          "responsible_party": "SDC Funeral Director / Next-of-Kin"
+        },
+        {
+          "step_number": 2,
+          "action": "Town Council cross-checks void deck booking calendar to ensure no conflicting events (e.g. weddings, residents' committee activities) and approves permit.",
+          "responsible_party": "Town Council Property Officer"
+        },
+        {
+          "step_number": 3,
+          "action": "Town Council property officer meets SDC logistics crew on-site to unlock utility meters, record baseline water/electricity meter readings, and inspect common property.",
+          "responsible_party": "Town Council Officer / SDC Logistics Foreman"
+        },
+        {
+          "step_number": 4,
+          "action": "SDC erects canvas tentage, curtains, lighting, sound baffles, and mobile air-coolers in strict compliance with SCDF fire safety guidelines.",
+          "responsible_party": "SDC Tentage & Logistics Team"
+        },
+        {
+          "step_number": 5,
+          "action": "Upon wake completion and cortege departure, Town Council conducts post-event inspection, verifies zero property damage, reads final utility meters, and closes permit.",
+          "responsible_party": "Town Council Officer / SDC Funeral Butler"
+        }
+      ],
+      "processing_time": "1 to 3 hours for emergency municipal approval",
+      "statutory_fees_sgd": 50.0,
+      "official_portal_url": "https://www.hdb.gov.sg",
+      "penalties_or_deadlines": "MANDATORY NOISE & CURFEW RULES: Strict statutory noise curfew applies from 10:30 PM to 7:00 AM under Town Council By-laws. Microphones, electronic sound amplifiers, gongs, drums, and brass bands must cease completely at 10:30 PM. Daily space rental varies from S$30 to S$150/day depending on town council and pavilion type; utility consumption is billed at metered cost.",
+      "related_procedure_ids": [
+        "GOV_SLA_002",
+        "GOV_SPF_003",
+        "GOV_URA_004"
+      ],
+      "sdc_operational_support": "SDC provides S$0 setup coordination fees for HDB void decks, directly liaises with all 17 Singapore Town Councils, manages utility meter handovers, and installs sound dampening curtains to prevent neighbor complaints."
+    },
+    {
+      "procedure_id": "GOV_SLA_002",
+      "category": "Wake & Land Permits",
+      "title": "SLA Temporary Occupation Licence (TOL) for State Land & Private Roadside Wakes",
+      "governing_body": "Singapore Land Authority (SLA) - Land Operations Division",
+      "legislative_reference": "State Lands Act 1966 - Section 24 (Temporary Occupation Licences)",
+      "trigger_condition": "Holding a funeral wake at a private landed property where tentage, catering tables, or guest seating extends onto state land, public road verges, pavements, or vacant state plots.",
+      "summary": "Statutory land authorization required when private residential property lacks sufficient internal compound space and must utilize surrounding State Land or public road reserve. SLA issues a short-term emergency Temporary Occupation Licence (TOL) granting legal occupation rights for the duration of the wake.",
+      "required_documents": [
+        "Deceased's Digital Death Certificate",
+        "Applicant's NRIC and Landed Property Title / Tenancy verification",
+        "Site layout sketch indicating proposed tentage dimensions (sqm), pedestrian walkways, drainage lines, and distance from road curb",
+        "Public Liability Insurance policy copy (minimum S$1,000,000 coverage)"
+      ],
+      "step_by_step_workflow": [
+        {
+          "step_number": 1,
+          "action": "SDC land liaison officer prepares dimensioned site layout map and submits urgent TOL application via SLA State Land Information System (SLIS) / e-Services.",
+          "responsible_party": "SDC Land Liaison Officer"
+        },
+        {
+          "step_number": 2,
+          "action": "SLA Land Operations Officer reviews boundary lines and assesses public access safety, underground utility conduits, and tree protection.",
+          "responsible_party": "Singapore Land Authority (SLA)"
+        },
+        {
+          "step_number": 3,
+          "action": "SLA issues emergency Temporary Occupation Licence (TOL) letter and assesses daily land rental fee based on square meterage.",
+          "responsible_party": "SLA"
+        },
+        {
+          "step_number": 4,
+          "action": "SDC tentage crew installs protective rubber ground mats and perimeter warning lights to prevent turf damage and public tripping hazards.",
+          "responsible_party": "SDC Tentage Logistics Team"
+        }
+      ],
+      "processing_time": "4 to 12 hours for urgent funeral TOL approvals",
+      "statutory_fees_sgd": 120.0,
+      "official_portal_url": "https://www.sla.gov.sg",
+      "penalties_or_deadlines": "Unlawful occupation of State Land without a valid TOL is an offense under the State Lands Encroachments Act, carrying fines up to S$5,000.",
+      "related_procedure_ids": [
+        "GOV_HDB_001",
+        "GOV_SPF_003",
+        "GOV_URA_004"
+      ],
+      "sdc_operational_support": "SDC coordinates directly with SLA land officers, manages surveyor mapping, covers mandatory contractor public liability insurance, and guarantees full turf/pavement reinstatement upon wake tear-down."
+    },
+    {
+      "procedure_id": "GOV_SPF_003",
+      "category": "Wake & Land Permits",
+      "title": "Traffic Police Road Closure Permit & Auxiliary Police Traffic Marshalling",
+      "governing_body": "Singapore Police Force (SPF) - Traffic Police Department / Land Transport Authority (LTA)",
+      "legislative_reference": "Road Traffic Act 1961 & Public Order Act",
+      "trigger_condition": "Funeral wake requires partial/full residential road closure, lane occupation in private landed estates, or a moving funeral marching procession along public roads.",
+      "summary": "Mandatory police permit workflow for occupying public carriageways or conducting walking funeral processions. When a wake tentage occupies part of a narrow residential road, or when a traditional dialect marching band escorts the hearse, Traffic Police approval and certified Auxiliary Police Officers (APO from Certis CISCO or Aetos) must be deployed to manage vehicular traffic.",
+      "required_documents": [
+        "Digital Death Certificate copy",
+        "Traffic Management Plan (TMP) prepared by certified traffic control personnel",
+        "Road Closure Route Map showing vehicular diversion routes, signage placements, and emergency vehicle access lane",
+        "Auxiliary Police Engagement Contract confirmation (Certis CISCO or Aetos)"
+      ],
+      "step_by_step_workflow": [
+        {
+          "step_number": 1,
+          "action": "SDC logistics coordinator files electronic Road Closure Application via Police e-Services (SPF E-Services portal) at least 24 hours prior to setup.",
+          "responsible_party": "SDC Logistics Coordinator"
+        },
+        {
+          "step_number": 2,
+          "action": "Submit Traffic Management Plan detailing placement of traffic cones, directional arrows, flashing blinker lights, and emergency vehicle clearance corridors.",
+          "responsible_party": "SDC Logistics Team"
+        },
+        {
+          "step_number": 3,
+          "action": "Contract certified Auxiliary Police Officers (APOs) to execute on-site traffic marshaling during peak hours and the final cortege departure.",
+          "responsible_party": "SDC Operations / Aetos / Certis CISCO"
+        },
+        {
+          "step_number": 4,
+          "action": "Traffic Police inspects site plan and issues the formal Permit for Road Closure and Procession.",
+          "responsible_party": "SPF Traffic Police Department"
+        },
+        {
+          "step_number": 5,
+          "action": "SDC distributes polite advance advisory notices to neighboring landed homes informing them of the temporary traffic diversion.",
+          "responsible_party": "SDC Funeral Butler Team"
+        }
+      ],
+      "processing_time": "12 to 24 hours for emergency funeral processing",
+      "statutory_fees_sgd": 0.0,
+      "official_portal_url": "https://www.police.gov.sg/e-services",
+      "penalties_or_deadlines": "Obstructing a public roadway without a Traffic Police permit is an offense under the Road Traffic Act. Commercial auxiliary police deployment fees are charged based on officer hourly rates (approx. S$60-S$90/hr per officer).",
+      "related_procedure_ids": [
+        "GOV_SLA_002",
+        "GOV_URA_004"
+      ],
+      "sdc_operational_support": "SDC drafts compliant Traffic Management Plans in-house, engages accredited APO marshals, and installs reflective cones and LED blinker boards to ensure maximum neighborhood safety."
+    },
+    {
+      "procedure_id": "GOV_URA_004",
+      "category": "Wake & Land Permits",
+      "title": "URA / HDB Public Car Park Bay Reservation & Hearse Obstruction Permits",
+      "governing_body": "Urban Redevelopment Authority (URA) / Housing & Development Board (HDB) Parking Administration",
+      "legislative_reference": "Parking Places Act 1974 & Parking Places (Coupon/Electronic Parking) Rules",
+      "trigger_condition": "Reserving public street parking lots, multi-storey car park loading bays, or surface car park lots for funeral hearses, charter buses, or tentage clearance.",
+      "summary": "Administrative process for temporarily reserving or hooding public parking spaces managed by URA or HDB. Funeral corteges require dedicated space for large funeral coaches, passenger buses, mobile toilets, and catering supply vans. SDC secures official authorization to cordon off parking bays, preventing parking enforcement summons and disputes with residents.",
+      "required_documents": [
+        "Deceased's Digital Death Certificate",
+        "Town Council / SLA Wake Permit approval document",
+        "Car park location code, specific lot numbers, and required reservation dates",
+        "Vehicle registration numbers of designated funeral coaches and transport buses"
+      ],
+      "step_by_step_workflow": [
+        {
+          "step_number": 1,
+          "action": "SDC logistics coordinator submits Car Park Lot Reservation request online via HDB / URA Parking e-Services portal.",
+          "responsible_party": "SDC Logistics Coordinator"
+        },
+        {
+          "step_number": 2,
+          "action": "Specify number of lots (typically 2 to 4 bays adjacent to the void deck / house) and exact dates.",
+          "responsible_party": "SDC Logistics Coordinator"
+        },
+        {
+          "step_number": 3,
+          "action": "Pay daily lot occupation fee per bay online.",
+          "responsible_party": "SDC / Next-of-Kin"
+        },
+        {
+          "step_number": 4,
+          "action": "HDB/URA parking enforcement logs system exemption and issues official reservation clearance slips.",
+          "responsible_party": "HDB / URA Parking Operations"
+        },
+        {
+          "step_number": 5,
+          "action": "SDC places authorized heavy-duty orange traffic cones and official HDB/URA reservation notices across the reserved bays.",
+          "responsible_party": "SDC Setup Crew"
+        }
+      ],
+      "processing_time": "2 to 4 hours online turnaround",
+      "statutory_fees_sgd": 18.0,
+      "official_portal_url": "https://www.ura.gov.sg / https://www.hdb.gov.sg/car-parks",
+      "penalties_or_deadlines": "Statutory lot charges range from S$12.00 to S$22.00 per lot per day depending on zone (Central Area vs. Outside Central Area). Unauthorized reservation of lots using personal chairs/bins without permit is an offense under the Parking Places Act.",
+      "related_procedure_ids": [
+        "GOV_HDB_001",
+        "GOV_SPF_003"
+      ],
+      "sdc_operational_support": "SDC manages all parking bay reservations automatically, covering reservation fees in our premium tiers and ensuring ample dedicated parking for mourning relatives."
+    },
+    {
+      "procedure_id": "GOV_REP_001",
+      "category": "Cross-Border & Repatriation",
+      "title": "Repatriation Outbound: Death of a Foreign National in Singapore (Export of Remains)",
+      "governing_body": "Ministry of Foreign Affairs (MFA) / NEA Port Health Office / Respective Foreign Embassies / ICA Checkpoints",
+      "legislative_reference": "Environmental Public Health (Export and Import of Human Remains) Regulations & Customs Act",
+      "trigger_condition": "Foreign national, tourist, expatriate, or migrant worker passes away in Singapore, and the family requests to repatriate the body or ashes back to their home country.",
+      "summary": "Complex international repatriation protocol governing the preparation, documentation, consular sealing, and air-freight transport of human remains out of Singapore. Requires close coordination across the hospital/mortuary, NEA Port Health Office, the deceased's national Embassy/High Commission, IATA-certified airlines, and customs border authorities.",
+      "required_documents": [
+        "Official Singapore Digital Death Certificate and CCOD",
+        "Deceased's original Foreign Passport and Singapore Visa/Employment Pass/Work Permit",
+        "NEA Port Health Coffin (Export) Permit",
+        "Professional Embalming & Sanitization Certificate issued by licensed embalmer",
+        "Certificate of Freedom from Contagious / Infectious Diseases (MOH / HSA)",
+        "Embassy 'No Objection Certificate' (NOC) and Consular Mortuary Passport",
+        "IATA Air Waybill (AWB) Human Remains Cargo Manifest"
+      ],
+      "step_by_step_workflow": [
+        {
+          "step_number": 1,
+          "action": "Obtain Digital Death Certificate from ICA/hospital. Notify deceased's national Embassy/High Commission in Singapore to obtain consular death registration and NOC.",
+          "responsible_party": "SDC International Repatriation Desk / Next-of-Kin"
+        },
+        {
+          "step_number": 2,
+          "action": "SDC embalmers perform specialized arterial embalming and cavity sanitization, placing the deceased in an airtight zinc-lined airtight wooden casket hermetically soldered shut.",
+          "responsible_party": "SDC Licensed Embalming Facility"
+        },
+        {
+          "step_number": 3,
+          "action": "Apply online for the NEA Coffin (Export) Permit via NEA Port Health portal (fee: S$17.50).",
+          "responsible_party": "SDC Repatriation Coordinator"
+        },
+        {
+          "step_number": 4,
+          "action": "Embassy Consular Officer inspects the casket, verifies documents, and applies the official Consular Wax / Lead Seal to the coffin exterior.",
+          "responsible_party": "Foreign Embassy Consular Attaché / SDC"
+        },
+        {
+          "step_number": 5,
+          "action": "Book IATA Human Remains (HUM) air-cargo space on international airline. Transport casket to Changi Airport Airfreight Centre for Singapore Customs clearance and airline palletizing.",
+          "responsible_party": "SDC Air Cargo Dispatch / Singapore Customs / Airline Ground Handling"
+        }
+      ],
+      "processing_time": "24 to 72 hours (subject to embassy operating hours and flight availability)",
+      "statutory_fees_sgd": 17.5,
+      "official_portal_url": "https://www.nea.gov.sg/our-services/after-death-services/exporting-a-body",
+      "penalties_or_deadlines": "Statutory NEA Coffin Export Permit fee is S$17.50. Embalming, zinc coffin construction, consular fees, and airline freight charges (approx. S$3,500-S$8,500 depending on destination) are separate. Failure to obtain NEA Export permit violates Singapore Customs and Port Health regulations.",
+      "related_procedure_ids": [
+        "GOV_ICA_001",
+        "GOV_HSA_003",
+        "GOV_REP_003"
+      ],
+      "sdc_operational_support": "SDC operates a dedicated 24/7 Global Repatriation Desk handling embassy communications, multilingual translations, zinc-sealing, airline airfreight bookings, and customs clearances worldwide."
+    },
+    {
+      "procedure_id": "GOV_REP_002",
+      "category": "Cross-Border & Repatriation",
+      "title": "Repatriation Inbound: Death of a Singapore Citizen Overseas (Import of Remains)",
+      "governing_body": "Ministry of Foreign Affairs (MFA) Consular Services / Singapore Overseas Missions / NEA Port Health / ICA",
+      "legislative_reference": "Environmental Public Health (Export and Import of Human Remains) Regulations & Births and Deaths Registration Act",
+      "trigger_condition": "Singapore Citizen or Permanent Resident passes away in a foreign country, and family requests to repatriate the body or ashes back to Singapore for funeral and cremation/burial.",
+      "summary": "Statutory protocol for bringing a deceased Singaporean citizen back home from abroad. The family works with the nearest Singapore Overseas Mission (Embassy/High Commission/Consulate) and an overseas funeral director to secure local export clearance, while Solace Dignity Care secures the mandatory NEA Coffin (Import) Permit in Singapore prior to flight touchdown.",
+      "required_documents": [
+        "Foreign Death Certificate (with certified English translation if issued in a non-English language)",
+        "Deceased's Singapore NRIC and Passport",
+        "Foreign Embalming Certificate and Sealing Certificate",
+        "Foreign Export Permit / Transit Health Clearance",
+        "NEA Coffin (Import) Permit (applied in Singapore by SDC)",
+        "Airline Air Waybill (AWB) consignment note"
+      ],
+      "step_by_step_workflow": [
+        {
+          "step_number": 1,
+          "action": "Family or local overseas director reports death to the nearest Singapore Embassy / MFA Consular Assistance Duty Officer (+65 6379 8000).",
+          "responsible_party": "Next-of-Kin / Singapore Overseas Mission"
+        },
+        {
+          "step_number": 2,
+          "action": "Foreign funeral director embalms remains, places body in zinc-lined hermetically sealed casket, and obtains foreign health export permits.",
+          "responsible_party": "Foreign Funeral Director"
+        },
+        {
+          "step_number": 3,
+          "action": "SDC in Singapore receives copies of foreign documentation and submits the NEA Coffin (Import) Permit application online via NEA Port Health system (fee: S$17.50).",
+          "responsible_party": "SDC Repatriation Coordinator"
+        },
+        {
+          "step_number": 4,
+          "action": "Casket arrives via air cargo at Changi Airport Cargo Complex (or by road at Tuas/Woodlands Checkpoint). NEA Port Health Officer inspects seals and releases body to SDC hearse.",
+          "responsible_party": "NEA Port Health Inspector / SDC Transport Team"
+        },
+        {
+          "step_number": 5,
+          "action": "SDC transfers body to our care centre for viewing preparation, and assists family to record the overseas death in the ICA national database via the My Legacy portal.",
+          "responsible_party": "Solace Dignity Care / Next-of-Kin"
+        }
+      ],
+      "processing_time": "24 to 48 hours for permit processing and cargo retrieval upon flight arrival",
+      "statutory_fees_sgd": 17.5,
+      "official_portal_url": "https://www.mfa.gov.sg / https://www.nea.gov.sg",
+      "penalties_or_deadlines": "NEA Import permit must be granted BEFORE the body arrives in Singapore air/sea territory. Unpermitted import will result in cargo detention at airport quarantine.",
+      "related_procedure_ids": [
+        "GOV_ICA_001",
+        "GOV_NEA_001",
+        "GOV_REP_001"
+      ],
+      "sdc_operational_support": "SDC coordinates directly with MFA consular desks and airport cargo handling agents (SATS/dnata) for expedited runway apron retrieval and customs clearance."
+    },
+    {
+      "procedure_id": "GOV_REP_003",
+      "category": "Cross-Border & Repatriation",
+      "title": "Cross-Border Road Hearse Transport (Singapore - West Malaysia Causeway / Second Link)",
+      "governing_body": "NEA Port Health Office / ICA Checkpoints Division / Ministry of Health Malaysia (KKM) / Royal Malaysian Customs",
+      "legislative_reference": "Bilateral Singapore-Malaysia Cross-Border Health Protocols & Customs Regulations",
+      "trigger_condition": "Transporting human remains by road between Singapore and Peninsular Malaysia (e.g. Johor Bahru, Melaka, Kuala Lumpur, Perak, Penang) via Woodlands Causeway or Tuas Second Link.",
+      "summary": "Specialized overland cross-border hearse transport workflow. Cross-border repatriation between Singapore and Malaysia is heavily utilized for family hometown burials and wakes. Requires dual-nation statutory clearance: Singapore NEA Coffin Export/Import permit + Malaysian KKM International Health Import/Export permit + Johor Police clearance + dual-registered hearse vehicles.",
+      "required_documents": [
+        "Official Digital Death Certificate and CCOD",
+        "NEA Coffin (Export/Import) Permit",
+        "Malaysian Ministry of Health (KKM) Quarantine Clearance Permit",
+        "Licensed Embalming Certificate (confirming airtight sealing and infectious disease freedom)",
+        "Johor / Malaysian Police Burial Permit",
+        "Deceased and Informant's Passports and NRICs",
+        "Cross-border hearse driver cross-border clearance manifest"
+      ],
+      "step_by_step_workflow": [
+        {
+          "step_number": 1,
+          "action": "SDC obtains Singapore Digital Death Certificate and applies for NEA Coffin Export Permit online.",
+          "responsible_party": "SDC Repatriation Coordinator"
+        },
+        {
+          "step_number": 2,
+          "action": "SDC embalmers prepare the deceased, secure inside an airtight casket, and issue certified embalming documentation.",
+          "responsible_party": "SDC Embalming Facility"
+        },
+        {
+          "step_number": 3,
+          "action": "SDC cross-border liaison coordinates with Malaysian partner undertaker to obtain KKM Health Permit and State Police burial permits in Malaysia.",
+          "responsible_party": "SDC Cross-Border Desk / Malaysian Partner"
+        },
+        {
+          "step_number": 4,
+          "action": "SDC specialized cross-border long-distance hearse departs Singapore, clears Woodlands / Tuas ICA Checkpoints via designated heavy clearance lanes.",
+          "responsible_party": "SDC Cross-Border Hearse Driver / ICA Officers"
+        },
+        {
+          "step_number": 5,
+          "action": "Hearse clears Malaysian Customs & Immigration Quarantine Complex (BSI Johor Bahru or KSAB Second Link) with KKM Health Inspector verification and proceeds directly to Malaysian destination.",
+          "responsible_party": "KKM Health Inspector / Malaysian Customs / SDC Hearse"
+        }
+      ],
+      "processing_time": "4 to 8 hours from permit clearance to overland arrival in Johor/Melaka",
+      "statutory_fees_sgd": 17.5,
+      "official_portal_url": "https://www.nea.gov.sg / https://www.moh.gov.my",
+      "penalties_or_deadlines": "NEA statutory export fee is S$17.50; Malaysian KKM quarantine permit is RM50.00. Failure to declare human remains at land border checkpoints is a serious customs offense.",
+      "related_procedure_ids": [
+        "GOV_REP_001",
+        "GOV_REP_002"
+      ],
+      "sdc_operational_support": "SDC operates dedicated cross-border funeral hearses with air-conditioned compartments, handling all bilateral checkpoint clearances smoothly without requiring body transfers at the border."
+    },
+    {
+      "procedure_id": "GOV_EST_001",
+      "category": "Estate & Asset Administration",
+      "title": "Small Estates Administration via Public Trustee's Office (PTO)",
+      "governing_body": "Public Trustee's Office (PTO) - Ministry of Law (MinLaw)",
+      "legislative_reference": "Public Trustee Act 1915 & Intestate Succession Act 1967 (Cap. 146)",
+      "trigger_condition": "Deceased passes away without leaving a valid Will (Intestate), leaving net liquid estate assets not exceeding S$50,000, with no pending litigation, business disputes, or real estate ownership.",
+      "summary": "Simplified, cost-effective government administration process for small estates. Rather than incurring heavy legal fees for a formal court application, eligible next-of-kin can apply directly to the Public Trustee's Office to unfreeze, administer, and distribute the deceased's bank deposits, un-nominated CPF monies, shares, and vehicle assets in accordance with Singapore intestate succession laws.",
+      "required_documents": [
+        "Deceased's Digital Death Certificate",
+        "Deceased's and all Beneficiaries' original NRICs or Passports",
+        "Proof of kinship documents (e.g., Marriage Certificate, Children's Birth Certificates)",
+        "Bank passbooks, account statements, and CDP share statements reflecting asset values",
+        "Outstanding debt and funeral expense receipts (for reimbursement deduction)"
+      ],
+      "step_by_step_workflow": [
+        {
+          "step_number": 1,
+          "action": "Next-of-kin submits an online application via the MinLaw PTO e-Services portal (eservices.mlaw.gov.sg/pto).",
+          "responsible_party": "Applicant (Next-of-Kin)"
+        },
+        {
+          "step_number": 2,
+          "action": "Upload required civil status documents, bank statements, and declare all immediate surviving legal beneficiaries.",
+          "responsible_party": "Applicant"
+        },
+        {
+          "step_number": 3,
+          "action": "PTO reviews eligibility, issues formal asset inquiry notices to commercial banks (DBS, OCBC, UOB), and collects the deceased's funds into the Public Trustee Common Fund.",
+          "responsible_party": "Public Trustee's Office (PTO)"
+        },
+        {
+          "step_number": 4,
+          "action": "PTO reimburses verified funeral expenses to the family payer, deducts statutory PTO administration commission, and disburses remaining funds directly to legal beneficiaries via PayNow / Direct Bank Transfer.",
+          "responsible_party": "Public Trustee's Office (PTO)"
+        }
+      ],
+      "processing_time": "3 to 6 weeks upon submission of complete documents",
+      "statutory_fees_sgd": 0.0,
+      "official_portal_url": "https://eservices.mlaw.gov.sg/pto",
+      "penalties_or_deadlines": "Statutory application is free. PTO deducts a tiered administration fee from the collected estate assets: 6.0% on the first S$1,000, 3.75% on the next S$9,000, 2.25% on the next S$40,000. Ineligible if estate exceeds S$50,000 or contains immovable land property.",
+      "related_procedure_ids": [
+        "GOV_ICA_001",
+        "GOV_EST_002",
+        "GOV_EST_003"
+      ],
+      "sdc_operational_support": "SDC issues fully itemized, audit-compliant funeral invoices and tax receipts required by the Public Trustee to enable rapid reimbursement of funeral costs directly to the family."
+    },
+    {
+      "procedure_id": "GOV_EST_002",
+      "category": "Estate & Asset Administration",
+      "title": "Grant of Probate (with Will) vs. Letters of Administration (without Will)",
+      "governing_body": "Family Justice Courts (FJC) / Supreme Court of Singapore (General Division)",
+      "legislative_reference": "Probate and Administration Act 1934 (Cap. 251) & Family Justice Rules",
+      "trigger_condition": "Deceased's estate value exceeds S$50,000, or includes immovable real estate (private condominium, landed house, commercial property), company shares, overseas assets, or where banks require formal court authority.",
+      "summary": "Formal judicial process to obtain legal authority to administer a deceased's estate. If the deceased left a valid Will, the named Executor applies for a 'Grant of Probate'. If the deceased died without a Will (Intestate), eligible next-of-kin apply for 'Letters of Administration'. Once extracted, the sealed court grant legally empowers executors/administrators to unfreeze bank accounts, sell/transfer real properties, and distribute assets.",
+      "required_documents": [
+        "Deceased's Digital Death Certificate",
+        "Original Last Will and Testament (for Grant of Probate)",
+        "Applicant's and Beneficiaries' NRICs/Passports and proof of relationship",
+        "Complete Schedule of Assets (listing real estate titles, bank accounts, investment portfolios, insurance, vehicles, and liabilities)",
+        "Renunciation of Administration forms from other priority relatives (if applying for Letters of Administration)"
+      ],
+      "step_by_step_workflow": [
+        {
+          "step_number": 1,
+          "action": "Executor/Administrator engages an estate lawyer or files an originating application in the Family Justice Courts via the CrimsonLogic eLitigation portal / Service Bureau.",
+          "responsible_party": "Applicant / Estate Probate Lawyer"
+        },
+        {
+          "step_number": 2,
+          "action": "File Originating Application, Statement of Probate, and Supporting Affidavit verifying the Will's authenticity and listing all known family heirs.",
+          "responsible_party": "Estate Lawyer / Applicant"
+        },
+        {
+          "step_number": 3,
+          "action": "Send formal inquiry letters to all banks and financial institutions to compile and file the definitive Schedule of Assets with the Court.",
+          "responsible_party": "Estate Lawyer / Commercial Banks"
+        },
+        {
+          "step_number": 4,
+          "action": "Court grants probate order. Applicant extracts the official sealed Grant of Probate or Letters of Administration from the Court Registry.",
+          "responsible_party": "Family Justice Courts Registrar"
+        },
+        {
+          "step_number": 5,
+          "action": "Executor/Administrator presents certified true copies of the sealed Grant to banks, Singapore Land Authority (SLA), Central Depository (CDP), and insurance firms to liquidate/transfer assets.",
+          "responsible_party": "Executor / Estate Administrator"
+        }
+      ],
+      "processing_time": "Grant of Probate: 2 to 4 months. Letters of Administration: 3 to 6 months.",
+      "statutory_fees_sgd": 250.0,
+      "official_portal_url": "https://www.familyjusticecourts.gov.sg",
+      "penalties_or_deadlines": "Court filing fees range between S$200 and S$500; private legal fees typically range from S$1,500 to S$4,500 for non-contentious probate. Applying for administration beyond 6 months from death requires filing an affidavit explaining the delay.",
+      "related_procedure_ids": [
+        "GOV_ICA_001",
+        "GOV_EST_001",
+        "GOV_EST_004",
+        "GOV_EST_005"
+      ],
+      "sdc_operational_support": "SDC connects families with vetted estate planning and probate law specialists offering transparent, flat-rate legal fees for uncontested probate extraction."
+    },
+    {
+      "procedure_id": "GOV_EST_003",
+      "category": "Estate & Asset Administration",
+      "title": "Central Provident Fund (CPF) Post-Death Asset Distribution & Nomination Payouts",
+      "governing_body": "Central Provident Fund (CPF) Board",
+      "legislative_reference": "Central Provident Fund Act 1953 - Section 25 (CPF Nominations)",
+      "trigger_condition": "Post-death closure and distribution of deceased member's CPF savings (Ordinary, Special, MediSave, and Retirement Accounts) and CPF LIFE balances.",
+      "summary": "Statutory distribution mechanism for CPF monies. CPF savings do NOT form part of the deceased's estate and CANNOT be distributed via a generic Will. ICA automatically transmits death records to the CPF Board within 24-48 hours. If a valid CPF Nomination was executed, CPF Board pays funds directly to nominees. If no nomination exists, CPF transfers funds to the Public Trustee for intestate distribution.",
+      "required_documents": [
+        "Deceased's Digital Death Certificate",
+        "Nominee's / Beneficiary's NRIC and valid Singapore bank account details (PayNow-NRIC linked)",
+        "CPF Nomination Reference / Confirmation (if available)"
+      ],
+      "step_by_step_workflow": [
+        {
+          "step_number": 1,
+          "action": "Death record is automatically synced from ICA Registry of Births & Deaths to the CPF Board within 24 to 48 hours.",
+          "responsible_party": "ICA-CPF System Integration"
+        },
+        {
+          "step_number": 2,
+          "action": "CPF Board freezes deceased member's accounts to protect funds, reviews nomination database, and determines whether a valid CPF Nomination exists on record.",
+          "responsible_party": "CPF Board Nomination Department"
+        },
+        {
+          "step_number": 3,
+          "action": "IF CPF NOMINATION EXISTS: CPF Board sends claim notification letters/SMS to nominated beneficiaries. Nominees log into CPF portal via Singpass to confirm bank payout details.",
+          "responsible_party": "CPF Board / Nominated Beneficiaries"
+        },
+        {
+          "step_number": 4,
+          "action": "CPF Board disburses monies directly to nominees' bank accounts via PayNow / GIRO within 2 to 4 weeks (protected from deceased's creditors).",
+          "responsible_party": "CPF Board"
+        },
+        {
+          "step_number": 5,
+          "action": "IF NO CPF NOMINATION EXISTS: CPF Board transfers the net balances to the Public Trustee's Office (PTO) within 3 to 4 weeks for distribution under the Intestate Succession Act or Faraid.",
+          "responsible_party": "CPF Board / Public Trustee's Office"
+        }
+      ],
+      "processing_time": "With nomination: 2 to 4 weeks. Without nomination (via PTO): 4 to 8 weeks.",
+      "statutory_fees_sgd": 0.0,
+      "official_portal_url": "https://www.cpf.gov.sg",
+      "penalties_or_deadlines": "No filing fee. If funds are transferred to PTO due to lack of nomination, PTO statutory administration fees (tiered 2.25% to 6.0%) will be deducted before payout.",
+      "related_procedure_ids": [
+        "GOV_ICA_001",
+        "GOV_EST_001"
+      ],
+      "sdc_operational_support": "SDC educates families on the critical legal distinction between Wills and CPF Nominations, offering estate advisory resources during pre-planning consultations."
+    },
+    {
+      "procedure_id": "GOV_EST_004",
+      "category": "Estate & Asset Administration",
+      "title": "HDB Residential Flat Post-Death Ownership Transfer & Notice of Death",
+      "governing_body": "Housing & Development Board (HDB) / Singapore Land Authority (SLA)",
+      "legislative_reference": "Housing and Development Act 1959 & Land Titles Act 1993 (Right of Survivorship)",
+      "trigger_condition": "Deceased was a sole owner, joint tenant, or tenant-in-common of an HDB residential apartment flat.",
+      "summary": "Administrative and legal workflow for transferring ownership of an HDB flat following the death of an owner. Procedures differ fundamentally based on holding structure: (A) Joint Tenancy: The surviving joint tenant inherits the flat under the 'Right of Survivorship' by filing a simple Notice of Death (no probate needed). (B) Tenancy-in-Common / Sole Owner: The deceased's share forms part of the estate and requires a Grant of Probate or Letters of Administration, and all transferees must satisfy HDB's eligibility criteria.",
+      "required_documents": [
+        "Deceased's Digital Death Certificate",
+        "Surviving Owners' and Proposed Transferees' original NRICs",
+        "Copy of HDB Flat Lease / Title Deeds",
+        "Grant of Probate / Letters of Administration (mandatory for Sole Ownership and Tenancy-in-Common)",
+        "Marriage Certificate and Birth Certificates (proof of family nucleus for HDB eligibility)"
+      ],
+      "step_by_step_workflow": [
+        {
+          "step_number": 1,
+          "action": "Determine flat ownership structure (Joint Tenancy vs. Tenancy-in-Common / Sole Owner) via My HDBPage or Singapore Land Authority title search.",
+          "responsible_party": "Next-of-Kin / HDB Branch Officer"
+        },
+        {
+          "step_number": 2,
+          "action": "FOR JOINT TENANCY: Surviving joint owner submits an online 'Notice of Death' (NOD) application via the My HDBPage or SLA LandNet portal, attaching the Digital Death Certificate.",
+          "responsible_party": "Surviving Joint Owner"
+        },
+        {
+          "step_number": 3,
+          "action": "HDB updates the land register, extinguishing the deceased's name and vesting 100% flat ownership in the surviving joint tenant without court probate.",
+          "responsible_party": "HDB Branch Office / Singapore Land Authority"
+        },
+        {
+          "step_number": 4,
+          "action": "FOR TENANCY-IN-COMMON OR SOLE OWNER: Executor extracts Grant of Probate / Letters of Administration and submits an Application for Change of Flat Ownership to HDB.",
+          "responsible_party": "Estate Executor / HDB Branch Office"
+        },
+        {
+          "step_number": 5,
+          "action": "HDB evaluates proposed beneficiaries' eligibility (must be Singapore Citizen or PR, at least 21 years old, meet family nucleus or Single Scheme criteria, and not own other private residential properties). If ineligible, HDB grants a 12-month grace period for the estate to sell the flat on the open market.",
+          "responsible_party": "HDB Resale & Ownership Department"
+        }
+      ],
+      "processing_time": "Notice of Death (Joint Tenancy): 2 to 4 weeks. Estate Ownership Transfer: 4 to 8 weeks upon probate submission.",
+      "statutory_fees_sgd": 68.3,
+      "official_portal_url": "https://www.hdb.gov.sg",
+      "penalties_or_deadlines": "SLA Notice of Death statutory registration fee is S$68.30. Failure to transfer flat within statutory timelines can impede future resale or housing grant eligibility.",
+      "related_procedure_ids": [
+        "GOV_ICA_001",
+        "GOV_EST_001",
+        "GOV_EST_002"
+      ],
+      "sdc_operational_support": "SDC assists bereaved families with HDB Branch appointment preparation, title document checks, and guidance on surviving spouse ownership protections."
+    },
+    {
+      "procedure_id": "GOV_EST_005",
+      "category": "Estate & Asset Administration",
+      "title": "Commercial Bank Account Freezing, Joint Accounts & Safe Deposit Box Protocol",
+      "governing_body": "Association of Banks in Singapore (ABS) / Monetary Authority of Singapore (MAS) / Commercial Banks (DBS, POSB, OCBC, UOB)",
+      "legislative_reference": "Banking Act 1970 & Code of Consumer Banking Practice",
+      "trigger_condition": "Notification of death to commercial retail and private banking institutions holding deceased's deposit accounts, credit facilities, investment funds, or safe deposit boxes.",
+      "summary": "Standard operating protocols across Singapore retail banks upon the death of an account holder. Sole accounts are immediately frozen upon notification to safeguard estate assets. Joint accounts with 'either-one-to-sign' survivorship mandates may allow the surviving account holder to access funds or convert to a sole account. Safe deposit boxes are sealed immediately and can only be opened for inspection in the presence of bank officers and estate administrators.",
+      "required_documents": [
+        "Deceased's Digital Death Certificate",
+        "Surviving joint account holder's / Executor's original NRIC or Passport",
+        "Grant of Probate, Letters of Administration, or PTO Estate Release Certificate (for sole accounts)",
+        "Safe deposit box keys and rental contract agreement"
+      ],
+      "step_by_step_workflow": [
+        {
+          "step_number": 1,
+          "action": "Next-of-kin notifies bank branches (DBS/POSB, OCBC, UOB, Standard Chartered, HSBC, Citibank) of the account holder's death by presenting the Digital Death Certificate.",
+          "responsible_party": "Next-of-Kin / Executor"
+        },
+        {
+          "step_number": 2,
+          "action": "SOLE ACCOUNTS: Bank freezes the account, ceases all automated GIRO deductions and credit cards, and calculates the final balance as of date of death.",
+          "responsible_party": "Commercial Bank Operations"
+        },
+        {
+          "step_number": 3,
+          "action": "JOINT ACCOUNTS: For accounts governed by survivorship clauses, surviving joint holder submits closure or title transfer request with death certificate; funds are transferred to the surviving holder.",
+          "responsible_party": "Surviving Account Holder / Bank"
+        },
+        {
+          "step_number": 4,
+          "action": "SAFE DEPOSIT BOXES: Bank seals box. Executor schedules a formal box inspection appointment with the bank. Box is opened in the presence of two bank officers and executor to create an official certified inventory list (particularly to locate the original Last Will).",
+          "responsible_party": "Bank Branch Manager / Executor / Estate Lawyer"
+        },
+        {
+          "step_number": 5,
+          "action": "Upon presentation of the final sealed Grant of Probate / PTO Release Form, the bank releases the frozen balance via cashier's order payable to the estate account.",
+          "responsible_party": "Commercial Bank Operations / Estate Executor"
+        }
+      ],
+      "processing_time": "Account freezing: Immediate. Joint account transfer: 3 to 7 business days. Estate balance payout upon probate: 5 to 10 business days.",
+      "statutory_fees_sgd": 0.0,
+      "official_portal_url": "https://www.abs.org.sg",
+      "penalties_or_deadlines": "Operating a deceased person's sole ATM card or online banking after death is illegal and constitutes criminal misappropriation under Singapore law.",
+      "related_procedure_ids": [
+        "GOV_ICA_001",
+        "GOV_EST_001",
+        "GOV_EST_002"
+      ],
+      "sdc_operational_support": "SDC advises families on banking protocols, helps request temporary freeze deferments where necessary for funeral GIRO payments, and coordinates urgent safe deposit box Will retrieval."
+    }
+  ]
+}

@@ -1,0 +1,1617 @@
+{
+  "package_price_anchors": [
+    {
+      "package_id": "PKG_DIRECT_CREMATION_BT",
+      "legacy_tier_id": "direct_cremation",
+      "name": "Direct Cremation Package (Buddhist / Taoist)",
+      "tradition": "Buddhist / Taoist",
+      "base_price": 1500,
+      "base_price_with_gst": 1635.0,
+      "venue_type": "NO_WAKE",
+      "included_days": 0,
+      "casket_included": "S03 Eco-Wood Cremation Casket",
+      "hearse_included": "Standard Multi-Purpose Hearse",
+      "target_family_profile": "Small families, estranged relatives, or families facing strict budget constraints requiring immediate, respectful cremation without a public wake.",
+      "description": "Fuss-free direct cremation service covering hospital/home body collection, sanitization, dressing, S03 eco-wood casket, Mandai transfer, and ash collection.",
+      "inclusions": [
+        "24/7 Collection of Deceased from hospital or private residence",
+        "Professional Sanitization, Makeup & Dressing Service (clothes provided by family)",
+        "S03 Eco-Wood Cremation Casket",
+        "Transfer to Mandai Crematorium with funeral pallbearers",
+        "Complimentary ash collection and handover service or direct sea scattering"
+      ],
+      "statutory_mandai_cremation_fee_included": false,
+      "upgrade_triggers": "Upgrade to Standard 3-Day Wake package if the family determines a multi-day public visitation is needed.",
+      "downgrade_triggers": "Coordinate corporate pro bono / CSR assistance for destitute cases."
+    },
+    {
+      "package_id": "PKG_DIRECT_CREMATION_CCF",
+      "legacy_tier_id": "direct_cremation",
+      "name": "Direct Cremation Package (Christian / Catholic / Freethinker)",
+      "tradition": "Christian / Roman Catholic / Freethinker",
+      "base_price": 1500,
+      "base_price_with_gst": 1635.0,
+      "venue_type": "NO_WAKE",
+      "included_days": 0,
+      "casket_included": "S03 Eco-Wood Cremation Casket",
+      "hearse_included": "Standard Multi-Purpose Hearse",
+      "target_family_profile": "Families seeking an understated, quiet direct send-off without a public wake service.",
+      "description": "Streamlined direct send-off with essential professional care, standard eco-wood casket, and scheduled Mandai Crematorium transfer.",
+      "inclusions": [
+        "24/7 Body Collection from hospital mortuary or residence",
+        "Professional body preparation and cosmetological styling",
+        "S03 Eco-Wood Cremation Casket",
+        "Pallbearer crew and hearse transfer to Mandai Crematorium",
+        "Direct ash collection and family handover"
+      ],
+      "statutory_mandai_cremation_fee_included": false,
+      "upgrade_triggers": "Upgrade to Peace 3-Day Wake package for parlour or void deck visitation.",
+      "downgrade_triggers": "N/A (base direct offering)."
+    },
+    {
+      "package_id": "PKG_BUDDHIST_3D_SIMPLICITY",
+      "legacy_tier_id": "standard",
+      "name": "Simplicity 3-Day Buddhist Funeral Package",
+      "tradition": "Buddhist",
+      "base_price": 5888,
+      "base_price_with_gst": 6417.92,
+      "venue_type": "HDB_VOID_DECK",
+      "included_days": 3,
+      "casket_included": "Peace Casket (E04)",
+      "hearse_included": "Di Zang Wang Pu Sa Traditional Hearse",
+      "target_family_profile": "Buddhist families seeking a complete, traditional, and dignified 3-day wake arrangement at an accessible rate.",
+      "description": "Comprehensive 3-day Buddhist funeral with void deck enclosure, monk prayer rites, vegetarian offerings, Peace casket, and Di Zang Wang hearse.",
+      "inclusions": [
+        "Collection of deceased and professional embalming & makeup",
+        "Peace Casket (E04)",
+        "3-day HDB void deck canvas enclosure with curtains, tables, square tables, chairs, fans, and lighting",
+        "Dignified Buddhist Altar setup with Buddhist blanket, incense, candles, and prayer supplies",
+        "1 Large Photo Enlargement with 10”x12” wooden frame & 6 passport-size photos",
+        "Buddhist chanting monk coordination (Encoffinment, Funeral Night, and Cremation Day)",
+        "Daily vegetarian meal offerings & fresh fruit baskets",
+        "Mobile chemical toilet rental",
+        "Di Zang Wang Pu Sa hearse and 45-seater air-conditioned coach for funeral procession",
+        "Condolence donation safe box and guest registration book",
+        "Flower water for guests and guest towel souvenirs"
+      ],
+      "statutory_mandai_cremation_fee_included": false,
+      "upgrade_triggers": "Upgrade to Buddhist Value package for 8-sided Lotus casket, full white drapery styling, Mercedes-Benz hearse, and night attendant.",
+      "downgrade_triggers": "Downgrade to Direct Cremation if budget is constrained or no wake is desired."
+    },
+    {
+      "package_id": "PKG_BUDDHIST_3D_VALUE",
+      "legacy_tier_id": "deluxe",
+      "name": "Value 3-Day Buddhist Funeral Package",
+      "tradition": "Buddhist",
+      "base_price": 10999,
+      "base_price_with_gst": 11988.91,
+      "venue_type": "HDB_VOID_DECK",
+      "included_days": 3,
+      "casket_included": "8-Sided Elegant Lotus Casket (S803)",
+      "hearse_included": "Mercedes-Benz Vito Hearse",
+      "target_family_profile": "Families wanting an upscale, elegant Buddhist memorial setup with full white drapery styling, Mercedes hearse, catering, and night staffing.",
+      "description": "Premium 3-day Buddhist funeral package featuring luxury void deck draping, 8-sided lotus casket, Mercedes hearse, last-night attendant, and chiller drinks.",
+      "inclusions": [
+        "Collection of deceased, executive embalming, and cosmetological restoration",
+        "8-Sided Elegant Lotus Casket (S803)",
+        "Mandai Cremation booking fee & ash collection service included",
+        "HDB void deck enclosure with full luxury white drapery, carpet, lighting, tables, and fans",
+        "Deluxe Buddhist Altar setup, Amitabha backdrop, premium floral arrangement",
+        "Photo enlargement with curated wooden frame & passport photos",
+        "Complete Buddhist monk chanting rituals (Encoffinment, Funeral Night, Funeral Day)",
+        "Daily vegetarian offerings and Buddha altar supplies",
+        "Bottled water, packet drinks, snacks consignment, and beverage chiller",
+        "Buffet style catering setup",
+        "Night service attendant support on the final vigil night",
+        "Mercedes-Benz Vito hearse and 45-seater air-conditioned bus",
+        "Information signage, guest condolence safe box, guest books, crew neck mourning shirts"
+      ],
+      "statutory_mandai_cremation_fee_included": true,
+      "upgrade_triggers": "Upgrade to Supreme/Nirvana custom heritage package for bespoke solid teak casket and 24/7 Butler concierge.",
+      "downgrade_triggers": "Downgrade to Buddhist Simplicity to reduce total commitment."
+    },
+    {
+      "package_id": "PKG_TAOIST_3D_BASIC",
+      "legacy_tier_id": "standard",
+      "name": "Basic 3-Day Taoist Funeral Package",
+      "tradition": "Taoist",
+      "base_price": 8888,
+      "base_price_with_gst": 9687.92,
+      "venue_type": "HDB_VOID_DECK",
+      "included_days": 3,
+      "casket_included": "Peace Casket (E04)",
+      "hearse_included": "Di Zang Wang Pu Sa Traditional Hearse",
+      "target_family_profile": "Families observing traditional Taoist dialect customs (Hokkien, Teochew, Cantonese, Hainanese) with complete priest chanting and paper offerings.",
+      "description": "Traditional 3-day Taoist funeral with priest prayer service, paper house, pre-folded joss paper, lantern bearers, and full void deck tentage.",
+      "inclusions": [
+        "Collection of deceased, professional embalming, and makeup",
+        "Peace Casket (E04)",
+        "Void deck enclosure, tables, chairs, lighting, and heavy-duty fans",
+        "Traditional Taoist Altar setup with Heaven & Earth blanket and dialect-specific sacred items",
+        "Taoist priest chanting rituals (Encoffinment, Funeral Night, and Funeral Day send-off)",
+        "Paper House effigy, pre-folded joss paper bundle, and burning burner tray",
+        "Lanterns & lantern bearer coordination for cortege procession",
+        "Photo enlargement with 10”x12” frame and passport photos",
+        "Di Zang Wang Pu Sa hearse and 45-seater air-conditioned bus",
+        "Mobile chemical toilet rental",
+        "Condolence book, guest safe box, and flower water cleansing supplies"
+      ],
+      "statutory_mandai_cremation_fee_included": false,
+      "upgrade_triggers": "Upgrade to Taoist Value for full white drapery, Hops casket, Mercedes hearse, and chiller catering support.",
+      "downgrade_triggers": "Downgrade to Direct Cremation if ceremonies are simplified."
+    },
+    {
+      "package_id": "PKG_TAOIST_3D_VALUE",
+      "legacy_tier_id": "deluxe",
+      "name": "Value 3-Day Taoist Funeral Package",
+      "tradition": "Taoist",
+      "base_price": 14988,
+      "base_price_with_gst": 16336.92,
+      "venue_type": "HDB_VOID_DECK",
+      "included_days": 3,
+      "casket_included": "Hops Casket (S803)",
+      "hearse_included": "Mercedes-Benz Vito Hearse",
+      "target_family_profile": "Families desiring an elaborate, high-standard Taoist memorial with full fabric drapery, luxury paper effigies, Mercedes hearse, and full catering support.",
+      "description": "Grand 3-day Taoist memorial with luxury white drapery, Hops casket, comprehensive dialect rituals, Mercedes-Benz hearse, and dedicated operations staff.",
+      "inclusions": [
+        "Collection of deceased, executive embalming, and restorative styling",
+        "Hops Casket (S803)",
+        "HDB void deck setup with full white drapery, carpet, ambient spotlights, tables, and fans",
+        "Dignified Taoist Altar setup, Heaven & Earth blanket, dialect scriptures, and incense setups",
+        "Taoist Priest service team for all 3 key ceremony phases",
+        "Large 2-storey paper mansion effigy, gold/silver mountains, and pre-folded joss packages",
+        "Lanterns and lantern bearer team",
+        "Mercedes-Benz Vito hearse and 45-seater air-conditioned coach",
+        "Information stand, safe box, guest books, and mourning garments in S/M/L",
+        "Towel souvenirs for guests and orange souvenirs for cortege drivers",
+        "Mobile toilet, chiller, packet drinks, snacks, and catering buffet area"
+      ],
+      "statutory_mandai_cremation_fee_included": false,
+      "upgrade_triggers": "Upgrade to Nirvana or bespoke Taoist setup for handcrafted solid wood dragon caskets and 5-priest chanting troupe.",
+      "downgrade_triggers": "Downgrade to Taoist Basic."
+    },
+    {
+      "package_id": "PKG_CHRISTIAN_3D_PEACE",
+      "legacy_tier_id": "standard",
+      "name": "Peace 3-Day Christian Funeral Package",
+      "tradition": "Christian",
+      "base_price": 4999,
+      "base_price_with_gst": 5448.91,
+      "venue_type": "HDB_VOID_DECK",
+      "included_days": 3,
+      "casket_included": "Peace Casket (E04)",
+      "hearse_included": "Dignified Hearse",
+      "target_family_profile": "Christian families looking for an elegant, faith-centered 3-day wake with cross stand floral styling and pastor coordination.",
+      "description": "Peaceful 3-day Christian funeral package with void deck tentage, cross floral arrangement, hymn booklets, Peace casket, and air-con bus.",
+      "inclusions": [
+        "Collection of deceased, professional embalming, and makeup",
+        "Peace Casket (E04)",
+        "HDB void deck enclosure, round/square tables, chairs, fans, and lighting",
+        "Dignified Christian altar setup with wooden Cross Stand and candle holders",
+        "Fresh floral arrangement: chrysanthemums, photo wreath, and altar flowers",
+        "1 Large Photo with 10”x12” wooden frame & 6 passport-size photos",
+        "Coordination with Church Pastor and 50 customized hymn booklets",
+        "Mobile chemical toilet rental",
+        "Dignified hearse and 45-seater air-conditioned bus",
+        "Condolence donation book and flower water for guests"
+      ],
+      "statutory_mandai_cremation_fee_included": false,
+      "upgrade_triggers": "Upgrade to Christian Faith package for full white drapery, Faith casket, casket spray, buffet catering, and night attendant.",
+      "downgrade_triggers": "Downgrade to Direct Cremation."
+    },
+    {
+      "package_id": "PKG_CHRISTIAN_3D_FAITH",
+      "legacy_tier_id": "deluxe",
+      "name": "Faith 3-Day Christian Funeral Package",
+      "tradition": "Christian",
+      "base_price": 9333,
+      "base_price_with_gst": 10172.97,
+      "venue_type": "HDB_VOID_DECK",
+      "included_days": 3,
+      "casket_included": "Faith Casket (W30)",
+      "hearse_included": "Dignified Hearse",
+      "target_family_profile": "Families seeking a sophisticated, beautifully styled Christian memorial service with complete floral styling, catering, and night vigil staff.",
+      "description": "Premium 3-day Christian memorial featuring full white fabric drapery, Faith W30 casket, Mandai cremation fee included, casket spray, and night attendant.",
+      "inclusions": [
+        "Collection of deceased, executive embalming, and preparation care",
+        "Faith Casket (W30)",
+        "Mandai Cremation fee & ash collection service included",
+        "Void deck with full white drapery, carpet, spotlights, tables, and fans",
+        "Comprehensive floral styling: photo wreath, cross stand, casket spray, backdrop, and reception flowers",
+        "Fresh Gerberas for family and guest funeral send-off",
+        "Large framed portrait and passport photos",
+        "Drinks & snacks consignment, beverage chiller, and buffet-style catering area",
+        "Night service attendant on the final night of the wake",
+        "Dignified hearse and 45-seater air-conditioned coach",
+        "Information signage, safe box, guest books, and mourning shirts"
+      ],
+      "statutory_mandai_cremation_fee_included": true,
+      "upgrade_triggers": "Upgrade to Love/Eternity tier for parlour hall booking and solid oak/teak caskets.",
+      "downgrade_triggers": "Downgrade to Christian Peace."
+    },
+    {
+      "package_id": "PKG_CATHOLIC_3D_PEACE",
+      "legacy_tier_id": "standard",
+      "name": "Peace 3-Day Roman Catholic Funeral Package",
+      "tradition": "Roman Catholic",
+      "base_price": 4999,
+      "base_price_with_gst": 5448.91,
+      "venue_type": "HDB_VOID_DECK",
+      "included_days": 3,
+      "casket_included": "Peace Casket (E04)",
+      "hearse_included": "Dignified Hearse",
+      "target_family_profile": "Catholic families requiring a reverent 3-day wake with crucifix altar setup, vigil prayers, and church funeral mass coordination.",
+      "description": "Reverent 3-day Catholic wake setup with crucifix, holy water font, church liturgy coordination, Peace casket, and cortege bus.",
+      "inclusions": [
+        "Collection of deceased, professional embalming, and dressing",
+        "Peace Casket (E04)",
+        "HDB void deck enclosure, tables, chairs, lighting, and fans",
+        "Catholic Altar setup with Crucifix, vigil candles, and holy water font",
+        "Fresh floral photo wreath, altar flowers, and cross stand styling",
+        "Photo enlargement with 10”x12” wooden frame & passport photos",
+        "Parish priest coordination for vigil prayers and Funeral Mass",
+        "Dignified hearse and 45-seater air-conditioned coach",
+        "Mobile toilet, condolence book, and flower water"
+      ],
+      "statutory_mandai_cremation_fee_included": false,
+      "upgrade_triggers": "Upgrade to Catholic Faith package for Mandai fee inclusion, full drapery, and casket spray.",
+      "downgrade_triggers": "Downgrade to Direct Cremation."
+    },
+    {
+      "package_id": "PKG_CATHOLIC_3D_FAITH",
+      "legacy_tier_id": "deluxe",
+      "name": "Faith 3-Day Roman Catholic Funeral Package",
+      "tradition": "Roman Catholic",
+      "base_price": 9333,
+      "base_price_with_gst": 10172.97,
+      "venue_type": "HDB_VOID_DECK",
+      "included_days": 3,
+      "casket_included": "Faith Casket (W30)",
+      "hearse_included": "Dignified Hearse",
+      "target_family_profile": "Catholic families wanting an elevated memorial setup with full white drapery, extensive floral styling, buffet catering, and Mandai fees covered.",
+      "description": "Elevated 3-day Roman Catholic funeral with luxury white drapery, Faith W30 casket, Mandai fee included, casket spray, and night attendant.",
+      "inclusions": [
+        "Collection of deceased, premium embalming, and preparation care",
+        "Faith Casket (W30)",
+        "Mandai Cremation fee & ash collection service included",
+        "Void deck enclosure with full white drapery, carpeting, and ambient lighting",
+        "Elaborate Catholic floral package: crucifix stand, casket spray, reception flowers, and send-off gerberas",
+        "Framed portrait and passport photos",
+        "Buffet catering setup, chiller, bottled water, and packet drinks",
+        "Night service attendant on the final night",
+        "Dignified hearse and 45-seater air-conditioned coach",
+        "Signage, safe box, guest books, and mourning attire"
+      ],
+      "statutory_mandai_cremation_fee_included": true,
+      "upgrade_triggers": "Upgrade to Catholic Love/Eternity tier for private parlour chapel and solid wood casket.",
+      "downgrade_triggers": "Downgrade to Catholic Peace."
+    },
+    {
+      "package_id": "PKG_FREETHINKER_3D_PEACE",
+      "legacy_tier_id": "standard",
+      "name": "Peace 3-Day Freethinker / Secular Funeral Package",
+      "tradition": "Freethinker / Secular",
+      "base_price": 4999,
+      "base_price_with_gst": 5448.91,
+      "venue_type": "HDB_VOID_DECK",
+      "included_days": 3,
+      "casket_included": "Peace Casket (E04)",
+      "hearse_included": "Dignified Hearse",
+      "target_family_profile": "Families seeking a non-religious, contemporary, and personalized 3-day celebration of life focused on memory-sharing and family tributes.",
+      "description": "Modern 3-day secular/freethinker wake with void deck tentage, minimalist floral backdrop, Peace casket, sound system, and cortege coach.",
+      "inclusions": [
+        "Collection of deceased, professional embalming, and makeup",
+        "Peace Casket (E04)",
+        "Void deck enclosure, tables, chairs, fans, and lighting",
+        "Contemporary non-religious altar and tribute table setup",
+        "Fresh floral arrangement: chrysanthemums, table arrangements, and photo wreath",
+        "Photo enlargement with 10”x12” wooden frame & passport photos",
+        "Sound system and microphone for family eulogies and acoustic background music",
+        "Mobile chemical toilet rental",
+        "Dignified hearse and 45-seater air-conditioned bus",
+        "Condolence book and flower water"
+      ],
+      "statutory_mandai_cremation_fee_included": false,
+      "upgrade_triggers": "Upgrade to Freethinker Faith package for full white drapery, digital obituary montage, casket spray, and catering.",
+      "downgrade_triggers": "Downgrade to Direct Cremation."
+    },
+    {
+      "package_id": "PKG_FREETHINKER_3D_FAITH",
+      "legacy_tier_id": "deluxe",
+      "name": "Faith 3-Day Freethinker / Secular Funeral Package",
+      "tradition": "Freethinker / Secular",
+      "base_price": 9333,
+      "base_price_with_gst": 10172.97,
+      "venue_type": "HDB_VOID_DECK",
+      "included_days": 3,
+      "casket_included": "Faith Casket (W30)",
+      "hearse_included": "Dignified Hearse",
+      "target_family_profile": "Families desiring an upscale secular celebration of life with full white drapery, premium floral decor, digital memory tribute, and night concierge.",
+      "description": "Deluxe 3-day freethinker memorial with luxury white drapery, Faith W30 casket, Mandai fee included, casket spray, digital montage, and night attendant.",
+      "inclusions": [
+        "Collection of deceased, executive embalming, and styling",
+        "Faith Casket (W30)",
+        "Mandai Cremation fee & ash collection service included",
+        "Void deck with full white drapery, carpeting, light stands, and ambient styling",
+        "Bespoke floral styling: casket spray, photo wreath, backdrop arrangement, and reception blooms",
+        "Send-off Gerberas for memorial tribute",
+        "Enlarged framed portrait and passport photos",
+        "Chiller, drinks, snacks consignment, and buffet catering layout",
+        "Night service attendant on the final night",
+        "Dignified hearse and 45-seater air-conditioned coach",
+        "Information signage, safe box, guest books, and mourning garments"
+      ],
+      "statutory_mandai_cremation_fee_included": true,
+      "upgrade_triggers": "Upgrade to Freethinker Eternity tier with private parlour hall and solid wood casket.",
+      "downgrade_triggers": "Downgrade to Freethinker Peace."
+    },
+    {
+      "package_id": "PKG_SOKA_3D_STANDARD",
+      "legacy_tier_id": "standard",
+      "name": "Standard 3-Day Soka Gakkai Funeral Package",
+      "tradition": "Soka Gakkai",
+      "base_price": 3888,
+      "base_price_with_gst": 4237.92,
+      "venue_type": "HDB_VOID_DECK",
+      "included_days": 3,
+      "casket_included": "Peace Casket (E04)",
+      "hearse_included": "Dignified Hearse",
+      "target_family_profile": "Singapore Soka Association (SSA) members and families conducting Lotus Sutra & Daimoku chanting rituals.",
+      "description": "Standard 3-day Soka Gakkai memorial with pure white altar setup, Gohonzon coordination, Daimoku chanting coordination, and strict no-incense policy.",
+      "inclusions": [
+        "Collection of deceased, professional embalming, and preparation",
+        "Peace Casket (E04)",
+        "HDB void deck enclosure, tables, chairs, lighting, and fans",
+        "Pristine white-themed floral altar setup and Gohonzon table arrangement",
+        "Coordination with SSA Zone leaders and members for Daimoku recitation",
+        "Strict adherence to Soka traditions (no joss paper burning or incense sticks)",
+        "Framed portrait and passport photos",
+        "Dignified hearse and 45-seater air-conditioned bus",
+        "Mobile chemical toilet and condolence book"
+      ],
+      "statutory_mandai_cremation_fee_included": false,
+      "upgrade_triggers": "Upgrade to parlour hall setup at Solace Memorial Hall or add digital montage tributes.",
+      "downgrade_triggers": "Downgrade to Direct Cremation."
+    },
+    {
+      "package_id": "PKG_HINDU_2D_STANDARD",
+      "legacy_tier_id": "standard",
+      "name": "Standard 2-Day Hindu Funeral Package",
+      "tradition": "Hindu",
+      "base_price": 4200,
+      "base_price_with_gst": 4578.0,
+      "venue_type": "HDB_VOID_DECK",
+      "included_days": 2,
+      "casket_included": "Traditional Hindu Cremation Casket",
+      "hearse_included": "Standard Multi-Purpose Hearse",
+      "target_family_profile": "Hindu families conducting traditional 1 to 2-day home or void deck rituals with priest coordination and Mandai cremation.",
+      "description": "Dignified 2-day Hindu funeral with ceremonial body washing, sandalwood paste, priest coordination, deity garlands, and Mandai transport.",
+      "inclusions": [
+        "Collection of deceased from hospital or residence",
+        "Ceremonial body washing assistance, dressing, and sandalwood application",
+        "Traditional open-top or glass cremation casket",
+        "Void deck or landed residence tentage setup with tables, chairs, and fans",
+        "Priest coordination, puja items, clay pots, and ceremonial deity garlands",
+        "Framed portrait with fresh flower garland",
+        "Hearse transfer to Mandai Crematorium Hall 1/2",
+        "45-seater air-conditioned coach for family and relatives"
+      ],
+      "statutory_mandai_cremation_fee_included": false,
+      "upgrade_triggers": "Upgrade to extended 3-day service with private parlour hall.",
+      "downgrade_triggers": "Downgrade to direct cremation."
+    },
+    {
+      "package_id": "PKG_BABY_ANGEL_BUDDHIST_TAOIST",
+      "legacy_tier_id": "precious_angel",
+      "name": "Precious Angel Baby Package (Buddhist / Taoist)",
+      "tradition": "Buddhist / Taoist",
+      "base_price": 1380,
+      "base_price_with_gst": 1504.2,
+      "venue_type": "NO_WAKE",
+      "included_days": 0,
+      "casket_included": "Curated Pastel Angel Baby Casket (Blue/Pink)",
+      "hearse_included": "Specialized Gentle Transfer Hearse",
+      "target_family_profile": "Bereaved parents of stillborns, newborns, infants (0-1 yr), or toddlers (1-4 yrs) seeking a tender, loving final journey.",
+      "description": "Specially tailored baby package with curated keepsake items (romper, storybook, plush toy, blanket, booties), monk chanting at Mandai, and tender care.",
+      "inclusions": [
+        "Tender transfer and gentle preparation care for infant",
+        "Curated Pastel Angel Casket (gentle blue or pink series)",
+        "Keepsake remembrance bundle: baby romper, booties, plush soft toy, storybook, and blanket",
+        "Petit flower bouquet and floral send-off petals",
+        "Mandai Crematorium slot coordination",
+        "Monk chanting and special baby offerings at Mandai Crematorium",
+        "Ashes arrangement handled by Solace Dignity Care (complimentary handover or free sea scattering)"
+      ],
+      "statutory_mandai_cremation_fee_included": false,
+      "upgrade_triggers": "Add Buddhist chartered boat sea scattering ceremony ($480).",
+      "downgrade_triggers": "Pro bono support coordinated via Solace Dignity Care Life Foundation for families in severe distress."
+    },
+    {
+      "package_id": "PKG_BABY_ANGEL_CHRISTIAN_CATHOLIC_FT",
+      "legacy_tier_id": "precious_angel",
+      "name": "Precious Angel Baby Package (Christian / Catholic / Freethinker)",
+      "tradition": "Christian / Roman Catholic / Freethinker",
+      "base_price": 1180,
+      "base_price_with_gst": 1286.2,
+      "venue_type": "NO_WAKE",
+      "included_days": 0,
+      "casket_included": "Curated Pastel Angel Baby Casket (Blue/Pink)",
+      "hearse_included": "Specialized Gentle Transfer Hearse",
+      "target_family_profile": "Bereaved parents seeking a tender, peaceful send-off for their baby with compassionate keepsake care.",
+      "description": "Tender infant send-off with curated pastel casket, comforting baby items, floral bouquet, and Mandai cremation coordination.",
+      "inclusions": [
+        "Tender transfer and gentle preparation care for baby",
+        "Curated Pastel Angel Casket (soft blue or soft pink)",
+        "Keepsake bundle: baby romper, booties, plush toy, storybook, and blanket",
+        "Petit flower bouquet and rose petals",
+        "Professional service fee and Mandai Crematorium coordination",
+        "Complimentary ash collection and handover or direct sea scattering"
+      ],
+      "statutory_mandai_cremation_fee_included": false,
+      "upgrade_triggers": "Add chartered boat sea scattering ceremony at Changi ($380).",
+      "downgrade_triggers": "Pro bono support via Solace Dignity Care Life Foundation."
+    },
+    {
+      "package_id": "PKG_MEMORIAL_SERVICE_STANDARD",
+      "legacy_tier_id": "memorial_service",
+      "name": "Standard Memorial Service Package (Post-Disposition)",
+      "tradition": "Secular / All Traditions",
+      "base_price": 2888,
+      "base_price_with_gst": 3147.92,
+      "venue_type": "PARLOUR_OR_FUNCTION_HALL",
+      "included_days": 1,
+      "casket_included": "N/A (Urn / Portrait Memorial)",
+      "hearse_included": "N/A",
+      "target_family_profile": "Families conducting a memorial tribute after cremation/burial, following overseas repatriation, or for unnatural passing where an open wake was not feasible.",
+      "description": "Stand-alone memorial ceremony designed around the urn or framed portrait, with custom floral tribute stand, audiovisual montage, and emcee coordination.",
+      "inclusions": [
+        "1-day memorial coordination at Solace Memorial Hall, void deck, or hotel function room",
+        "Central urn table and framed portrait memorial pedestal",
+        "Fresh floral tribute centerpiece and side stand blooms",
+        "Audiovisual setup: projector screen, sound system, wireless mics, and digital photo montage",
+        "Master of ceremonies / celebrant coordination for eulogies",
+        "Guest condolence memorial register and memorial cards",
+        "Light refreshment staging area"
+      ],
+      "statutory_mandai_cremation_fee_included": false,
+      "upgrade_triggers": "Extend to 2-day memorial or add full buffet catering.",
+      "downgrade_triggers": "N/A"
+    }
+  ],
+  "itemized_pricing": {
+    "caskets": [
+      {
+        "item_id": "CSK_ECO_WOOD_S03",
+        "name": "S03 Eco-Wood Natural Finish Casket",
+        "category": "Standard Cremation Caskets",
+        "price_sgd": 800,
+        "material": "Biodegradable compressed eco-wood fiber",
+        "finish": "Natural pine matte veneer",
+        "weight_capacity_kg": 100,
+        "cremation_compatible": true,
+        "burial_compatible": false,
+        "included_in_base_packages": [
+          "PKG_DIRECT_CREMATION_BT",
+          "PKG_DIRECT_CREMATION_CCF"
+        ],
+        "description": "Standard eco-friendly casket with simple, natural finish. Designed specifically for clean, efficient cremation."
+      },
+      {
+        "item_id": "CSK_PEACE_E04",
+        "name": "Peace Casket (E04)",
+        "category": "Standard Wake Caskets",
+        "price_sgd": 1200,
+        "material": "Engineered hardwood with satin lacquer",
+        "finish": "Warm walnut satin finish with brass-plated metal handles",
+        "weight_capacity_kg": 120,
+        "cremation_compatible": true,
+        "burial_compatible": true,
+        "included_in_base_packages": [
+          "PKG_BUDDHIST_3D_SIMPLICITY",
+          "PKG_TAOIST_3D_BASIC",
+          "PKG_CHRISTIAN_3D_PEACE",
+          "PKG_CATHOLIC_3D_PEACE",
+          "PKG_FREETHINKER_3D_PEACE",
+          "PKG_SOKA_3D_STANDARD"
+        ],
+        "description": "Popular, dignified casket with clean lines and satin finish, standard in all Peace and Basic tiers."
+      },
+      {
+        "item_id": "CSK_HOPS_S803",
+        "name": "Hops Casket (S803)",
+        "category": "Deluxe Cremation Caskets",
+        "price_sgd": 2200,
+        "material": "Solid layered timber composite",
+        "finish": "Polished high-gloss mahogany finish with golden decorative trim",
+        "weight_capacity_kg": 140,
+        "cremation_compatible": true,
+        "burial_compatible": true,
+        "included_in_base_packages": [
+          "PKG_TAOIST_3D_VALUE"
+        ],
+        "description": "Luxurious high-gloss mahogany finish with refined golden bevels, standard in Taoist Value packages."
+      },
+      {
+        "item_id": "CSK_FAITH_W30",
+        "name": "Faith Casket (W30)",
+        "category": "Deluxe Cremation Caskets",
+        "price_sgd": 2000,
+        "material": "Premium engineered hardwood with white satin lining",
+        "finish": "Pristine white or warm gloss oak finish with swing-bar handles",
+        "weight_capacity_kg": 140,
+        "cremation_compatible": true,
+        "burial_compatible": true,
+        "included_in_base_packages": [
+          "PKG_CHRISTIAN_3D_FAITH",
+          "PKG_CATHOLIC_3D_FAITH",
+          "PKG_FREETHINKER_3D_FAITH"
+        ],
+        "description": "Elegant casket featured in Faith tier packages, offering an immaculate white or rich oak exterior with white velvet lining."
+      },
+      {
+        "item_id": "CSK_GRACE_MINIMAL",
+        "name": "Grace Contemporary Minimalist Casket",
+        "category": "Modern & Contemporary Series",
+        "price_sgd": 1600,
+        "material": "Scandinavian light birch composite",
+        "finish": "Minimalist matte blonde wood with hidden latching mechanism",
+        "weight_capacity_kg": 120,
+        "cremation_compatible": true,
+        "burial_compatible": false,
+        "included_in_base_packages": [],
+        "description": "Contemporary, understated Nordic styling for modern families seeking a clean, minimalist aesthetic."
+      },
+      {
+        "item_id": "CSK_HALF_GLASS_CHENGAI",
+        "name": "Half-Glass Viewing Casket (Chengai Finish)",
+        "category": "Viewing & Glass Caskets",
+        "price_sgd": 1800,
+        "material": "Solid hardwood composite with tempered viewing glass window",
+        "finish": "Traditional Chengai reddish-brown gloss",
+        "weight_capacity_kg": 130,
+        "cremation_compatible": true,
+        "burial_compatible": true,
+        "included_in_base_packages": [],
+        "description": "Features an airtight, clear tempered half-glass viewing panel allowing visitors to view the departed without opening the lid."
+      },
+      {
+        "item_id": "CSK_HALF_GLASS_BROWN",
+        "name": "Half-Glass Viewing Casket (Rich Walnut Brown)",
+        "category": "Viewing & Glass Caskets",
+        "price_sgd": 1800,
+        "material": "Hardwood with tempered viewing glass",
+        "finish": "Rich walnut brown lacquer",
+        "weight_capacity_kg": 130,
+        "cremation_compatible": true,
+        "burial_compatible": true,
+        "included_in_base_packages": [],
+        "description": "Walnut finish half-glass viewing casket with comfortable interior pillow and mattress."
+      },
+      {
+        "item_id": "CSK_HALF_GLASS_ELEGANT_WHITE",
+        "name": "Half-Glass Viewing Casket (Elegant White)",
+        "category": "Viewing & Glass Caskets",
+        "price_sgd": 1800,
+        "material": "Hardwood with tempered viewing glass",
+        "finish": "Pure white high-gloss",
+        "weight_capacity_kg": 130,
+        "cremation_compatible": true,
+        "burial_compatible": true,
+        "included_in_base_packages": [],
+        "description": "Pure white high-gloss finish with half-glass viewing panel, popular for Christian and secular services."
+      },
+      {
+        "item_id": "CSK_HALF_GLASS_CLASSIC_BLACK",
+        "name": "Half-Glass Viewing Casket (Classic Piano Black)",
+        "category": "Viewing & Glass Caskets",
+        "price_sgd": 1800,
+        "material": "Hardwood with tempered viewing glass",
+        "finish": "Mirror-finish piano black",
+        "weight_capacity_kg": 130,
+        "cremation_compatible": true,
+        "burial_compatible": true,
+        "included_in_base_packages": [],
+        "description": "High-gloss piano black exterior with plush white velvet interior."
+      },
+      {
+        "item_id": "CSK_DOUBLE_GLASS_LOTUS",
+        "name": "Double Glass Lotus Viewing Casket",
+        "category": "Viewing & Glass Caskets",
+        "price_sgd": 2400,
+        "material": "Reinforced hardwood with dual-panel tempered glass",
+        "finish": "Lotus engraved mahogany gloss",
+        "weight_capacity_kg": 150,
+        "cremation_compatible": true,
+        "burial_compatible": true,
+        "included_in_base_packages": [],
+        "description": "Dual glass viewing compartments with delicate lotus petal engravings, providing full-body viewing during ceremonies."
+      },
+      {
+        "item_id": "CSK_EIGHT_SIDED_LOTUS",
+        "name": "8-Sided Lotus Spiritual Casket (S803)",
+        "category": "Cultural & Symbolic Designs",
+        "price_sgd": 2600,
+        "material": "Solid selected timber with octagonal profile",
+        "finish": "Deep rosewood lacquer with golden lotus carved mouldings",
+        "weight_capacity_kg": 150,
+        "cremation_compatible": true,
+        "burial_compatible": true,
+        "included_in_base_packages": [
+          "PKG_BUDDHIST_3D_VALUE"
+        ],
+        "description": "Eight-sided octagonal geometry symbolizing the Noble Eightfold Path in Buddhist philosophy."
+      },
+      {
+        "item_id": "CSK_HANDCRAFTED_DRAGON_BAIFU",
+        "name": "Handcrafted Dragon & Bai Fu (Hundred Blessings) Casket",
+        "category": "Cultural & Symbolic Designs",
+        "price_sgd": 3800,
+        "material": "Carved heavy hardwood timber",
+        "finish": "Hand-carved imperial dragon reliefs and Bai Fu (百福) longevity motifs",
+        "weight_capacity_kg": 180,
+        "cremation_compatible": true,
+        "burial_compatible": true,
+        "included_in_base_packages": [],
+        "description": "Exquisite handcrafted traditional Chinese artisan casket featuring deep relief dragon carvings and Chinese blessing calligraphy."
+      },
+      {
+        "item_id": "CSK_SUPREME_TEAK",
+        "name": "Supreme Solid Teak Artisan Casket",
+        "category": "Premium & Solid Wood Caskets",
+        "price_sgd": 4800,
+        "material": "100% Solid Natural Burmese Teak Wood",
+        "finish": "Hand-rubbed oil satin finish showcasing natural teak wood grain",
+        "weight_capacity_kg": 200,
+        "cremation_compatible": true,
+        "burial_compatible": true,
+        "included_in_base_packages": [],
+        "description": "Top-of-the-line solid Burmese teak wood offering unmatched natural beauty, density, and craftsmanship."
+      },
+      {
+        "item_id": "CSK_POLISHED_OAK",
+        "name": "Premium Polished Oak Casket",
+        "category": "Premium & Solid Wood Caskets",
+        "price_sgd": 2800,
+        "material": "Solid American White Oak",
+        "finish": "High-gloss walnut finish with solid brass swing handles",
+        "weight_capacity_kg": 160,
+        "cremation_compatible": true,
+        "burial_compatible": true,
+        "included_in_base_packages": [],
+        "description": "Solid American oak construction with polished walnut finish, high-grade brass hardware, and hand-tufted interior."
+      },
+      {
+        "item_id": "CSK_BATESVILLE_CLASSIC_GOLD",
+        "name": "Batesville Classic Gold 24K Bronze Casket",
+        "category": "Burial Caskets (Ground Burial Exclusive)",
+        "price_sgd": 12800,
+        "material": "Heavy 32oz Solid Bronze with 24K Gold-Plated Accents",
+        "finish": "Polished brushed gold and ebony bronze with hermetically sealed gasket",
+        "weight_capacity_kg": 250,
+        "cremation_compatible": false,
+        "burial_compatible": true,
+        "included_in_base_packages": [],
+        "description": "Imported from the USA. Sealed air-tight bronze construction with 24K gold plating, plush champagne velvet interior, and patented MemorySafe drawer for farewell messages. Strictly for Choa Chu Kang Ground Burial."
+      },
+      {
+        "item_id": "CSK_BATESVILLE_PURITAN_COPPER",
+        "name": "Batesville Puritan Copper Burial Casket",
+        "category": "Burial Caskets (Ground Burial Exclusive)",
+        "price_sgd": 9800,
+        "material": "Solid 32oz Seamless Copper",
+        "finish": "Hand-brushed copper finish with gasketed moisture-resistant seal",
+        "weight_capacity_kg": 230,
+        "cremation_compatible": false,
+        "burial_compatible": true,
+        "included_in_base_packages": [],
+        "description": "Solid copper casket engineered for permanent ground burial protection, offering corrosion resistance and velvet bedding."
+      },
+      {
+        "item_id": "CSK_PASTEL_ANGEL_INFANT",
+        "name": "Curated Pastel Angel Infant Casket",
+        "category": "Infant & Child Series",
+        "price_sgd": 600,
+        "material": "Soft eco-composite wood with padded cotton lining",
+        "finish": "Gentle baby pastel blue or soft pink matte finish",
+        "weight_capacity_kg": 25,
+        "cremation_compatible": true,
+        "burial_compatible": true,
+        "included_in_base_packages": [
+          "PKG_BABY_ANGEL_BUDDHIST_TAOIST",
+          "PKG_BABY_ANGEL_CHRISTIAN_CATHOLIC_FT"
+        ],
+        "description": "Delicately handcrafted pastel casket designed with tender care for little ones."
+      }
+    ],
+    "wake_durations": [
+      {
+        "item_id": "DUR_3DAY",
+        "name": "3-Day Wake Coordination (Standard)",
+        "days": 3,
+        "additional_price_sgd": 0,
+        "notes": "Covers standard 3-day / 2-night wake logistics, setup, utility permits, and operations shifts. Included in base wake packages."
+      },
+      {
+        "item_id": "DUR_5DAY",
+        "name": "5-Day Wake Coordination Package",
+        "days": 5,
+        "additional_price_sgd": 800,
+        "notes": "Extends wake to 5 days / 4 nights. Covers additional tentage rental days, daily toilet cleaning runs, extra coordinator shifts, and refreshment restocking."
+      },
+      {
+        "item_id": "DUR_7DAY",
+        "name": "7-Day Wake Coordination Package",
+        "days": 7,
+        "additional_price_sgd": 1500,
+        "notes": "Extends wake to 7 days / 6 nights for comprehensive traditional or overseas family visitation schedules."
+      },
+      {
+        "item_id": "DUR_PER_DAY_EXTENSION",
+        "name": "Per-Additional-Day Wake Extension Charge",
+        "days": 1,
+        "additional_price_sgd": 350,
+        "notes": "Standard daily surcharge applied for each day added beyond the contracted package duration (e.g. extending from 5 days to 6 days)."
+      },
+      {
+        "item_id": "DUR_DIRECT_NO_WAKE",
+        "name": "Direct Disposition (No Wake)",
+        "days": 0,
+        "additional_price_sgd": 0,
+        "notes": "Direct transfer to crematorium or cemetery without wake holding."
+      }
+    ],
+    "venues": [
+      {
+        "item_id": "VEN_HDB_VOID_DECK",
+        "name": "HDB Void Deck Setup",
+        "venue_type": "HDB_VOID_DECK",
+        "daily_rental_fee_sgd": 0,
+        "setup_fee_sgd": 0,
+        "utilities_billed_at_cost": true,
+        "description": "Standard HDB block ground floor void deck enclosure. Solace Dignity Care provides $0 base setup coordination fee. Town Council space rental and utility tap meter readings (water & electricity) are billed at net municipal cost."
+      },
+      {
+        "item_id": "VEN_HDB_PAVILION_MPH",
+        "name": "HDB Multi-Purpose Hall / Pavilion Setup",
+        "venue_type": "HDB_PAVILION",
+        "daily_rental_fee_sgd": 0,
+        "setup_fee_sgd": 250,
+        "utilities_billed_at_cost": true,
+        "description": "Spacious standalone HDB precinct multi-purpose pavilion. Includes high-ceiling canvas reinforcement and power distribution cabling. Town Council rental fee billed at cost."
+      },
+      {
+        "item_id": "VEN_SOLACE_MEMORIAL_HALL",
+        "name": "Solace Memorial Hall (Air-Conditioned Parlour)",
+        "venue_type": "PRIVATE_PARLOUR",
+        "daily_rental_fee_sgd": 1200,
+        "setup_fee_sgd": 0,
+        "utilities_billed_at_cost": false,
+        "address": "89 Geylang Bahru, Singapore 339697",
+        "amenities": [
+          "Full central air-conditioning",
+          "Private family restroom with hot shower facilities",
+          "High-speed wireless internet access",
+          "24/7 security surveillance",
+          "Built-in professional sound system and flat-screen television",
+          "Spacious parking within immediate vicinity",
+          "5 minutes walk from Geylang Bahru MRT Station (DT24 Exit A)"
+        ],
+        "description": "Modern, fully air-conditioned funeral parlour hall providing utmost comfort and privacy for grieving families."
+      },
+      {
+        "item_id": "VEN_PRIVATE_RESIDENCE_LANDED",
+        "name": "Private Landed Residence Setup",
+        "venue_type": "LANDED_PROPERTY",
+        "daily_rental_fee_sgd": 0,
+        "setup_fee_sgd": 350,
+        "utilities_billed_at_cost": false,
+        "description": "Customized tentage and drapery erection within landed property compound or driveway. Includes protective ground tarpaulins, rubber cable protectors, and SLA Temporary Occupation Licence liaison."
+      },
+      {
+        "item_id": "VEN_CHURCH_OR_TEMPLE_PARLOUR",
+        "name": "Church / Monastery Memorial Parlour Liaison",
+        "venue_type": "RELIGIOUS_PARLOUR",
+        "daily_rental_fee_sgd": 0,
+        "setup_fee_sgd": 300,
+        "utilities_billed_at_cost": false,
+        "description": "Operational coordination and equipment setup at church funeral parlours (e.g. Church of St. Teresa, Novena Church) or monastery halls (e.g. Kong Meng San). Church venue booking fees paid directly to religious institution."
+      }
+    ],
+    "religious_services": [
+      {
+        "item_id": "REL_BUDDHIST_MONK_CHANTING_3SESSIONS",
+        "name": "Buddhist Monk Chanting (3 Full Sessions)",
+        "tradition": "Buddhist",
+        "price_sgd": 1500,
+        "officiant": "3 Buddhist Monks",
+        "description": "Covers 3 essential chanting sessions: (1) Encoffinment / Wake Opening, (2) Final Wake Vigil Night, and (3) Funeral Send-off / Cremation Hall Blessing. Includes monk honorarium."
+      },
+      {
+        "item_id": "REL_BUDDHIST_SINGLE_CHANTING_SESSION",
+        "name": "Additional Buddhist Monk Chanting Session (1 Session)",
+        "tradition": "Buddhist",
+        "price_sgd": 350,
+        "officiant": "1 to 2 Buddhist Monks",
+        "description": "Single chanting session add-on for intermediate wake days or special merit-making dedication."
+      },
+      {
+        "item_id": "REL_BUDDHIST_VEGETARIAN_OFFERINGS_DAILY",
+        "name": "Daily Buddhist Vegetarian Offerings & Fresh Fruit Baskets",
+        "tradition": "Buddhist",
+        "price_sgd": 180,
+        "pricing_unit": "per_day",
+        "description": "Daily freshly prepared 3-dish vegetarian meal offerings, fresh flower vase blooms, and fresh seasonal fruit offerings for Buddha and the departed."
+      },
+      {
+        "item_id": "REL_TAOIST_PRIEST_RITES_HOKKIEN",
+        "name": "Taoist Priest Ritual Team (Hokkien Dialect Rites)",
+        "tradition": "Taoist",
+        "price_sgd": 2500,
+        "officiant": "Taoist Priest Troupe (Hokkien)",
+        "description": "Traditional Hokkien Taoist rites including Encoffinment chanting, 'Breaking Hell' (Poh Tey Gek), 'Crossing the Bridge' (Kua Kio), and Funeral Cortege send-off."
+      },
+      {
+        "item_id": "REL_TAOIST_PRIEST_RITES_TEOCHEW",
+        "name": "Taoist Priest Ritual Team (Teochew Dialect Rites)",
+        "tradition": "Taoist",
+        "price_sgd": 2500,
+        "officiant": "Taoist Priest Troupe (Teochew)",
+        "description": "Traditional Teochew Taoist rituals conducted by ordained Teochew priests according to ancestral customs."
+      },
+      {
+        "item_id": "REL_TAOIST_PRIEST_RITES_CANTONESE",
+        "name": "Taoist Priest Ritual Team (Cantonese Dialect Rites)",
+        "tradition": "Taoist",
+        "price_sgd": 2500,
+        "officiant": "Taoist Priest Troupe (Cantonese)",
+        "description": "Cantonese Taoist scripture chanting and ritual services."
+      },
+      {
+        "item_id": "REL_TAOIST_PRIEST_RITES_HAINANESE",
+        "name": "Taoist Priest Ritual Team (Hainanese Dialect Rites)",
+        "tradition": "Taoist",
+        "price_sgd": 2500,
+        "officiant": "Taoist Priest Troupe (Hainanese)",
+        "description": "Hainanese dialect Taoist liturgy and prayer ceremonies."
+      },
+      {
+        "item_id": "REL_TAOIST_PAPER_HOUSE_MANSION",
+        "name": "Elaborate 2-Storey Paper Mansion Effigy & Ancestral Car",
+        "tradition": "Taoist",
+        "price_sgd": 1200,
+        "description": "Handmade 2-storey paper mansion effigy complete with paper servants, electronic appliances, paper luxury vehicle, and golden bridge."
+      },
+      {
+        "item_id": "REL_TAOIST_PREFOLDED_JOSS_BUNDLE",
+        "name": "Pre-Folded Joss Paper, Gold/Silver Ingots & Burning Tray",
+        "tradition": "Taoist",
+        "price_sgd": 380,
+        "description": "Assorted pre-folded gold and silver joss paper ingots, hell bank notes, incense, candles, and safe combustion burning tray."
+      },
+      {
+        "item_id": "REL_CHRISTIAN_PASTOR_LITURGY",
+        "name": "Christian Pastor Officiation & 50 Custom Hymn Booklets",
+        "tradition": "Christian",
+        "price_sgd": 800,
+        "officiant": "Pastor / Reverend Coordination",
+        "description": "Coordination with parish pastor for nightly memorial services, 50 customized printed hymn booklets, and altar cross setup."
+      },
+      {
+        "item_id": "REL_CATHOLIC_VIGIL_AND_MASS",
+        "name": "Roman Catholic Vigil Prayers & Funeral Mass Liturgy",
+        "tradition": "Roman Catholic",
+        "price_sgd": 1000,
+        "officiant": "Catholic Priest & Ministry Team",
+        "description": "Crucifix backdrop, Holy Water font, vigil rosary prayer coordination, church Funeral Mass liaison, and Rite of Committal."
+      },
+      {
+        "item_id": "REL_SOKA_DAIMOKU_CHANTING",
+        "name": "Soka Gakkai Daimoku Chanting & White Floral Altar",
+        "tradition": "Soka Gakkai",
+        "price_sgd": 1200,
+        "officiant": "SSA Zone Leaders & Members",
+        "description": "SSA zone leader liaison for Lotus Sutra & Daimoku chanting, pristine white floral altar setup, and Gohonzon table arrangement (strictly zero joss paper/incense)."
+      },
+      {
+        "item_id": "REL_HINDU_PRIEST_RITES",
+        "name": "Hindu Traditional Rites, Priest Coordination & Deity Garlands",
+        "tradition": "Hindu",
+        "price_sgd": 1600,
+        "officiant": "Hindu Priest Team",
+        "description": "Complete Hindu funeral rites, holy Ganges water application, sandalwood paste, clay pots, puja supplies, and fresh deity flower garlands."
+      },
+      {
+        "item_id": "REL_SECULAR_CELEBRANT_MC",
+        "name": "Secular Celebrant / Master of Ceremonies & Tribute Cards",
+        "tradition": "Secular",
+        "price_sgd": 500,
+        "officiant": "Professional Celebrant / Emcee",
+        "description": "Professional Master of Ceremonies to host the celebration of life service, guide eulogies, and provide 50 customized memory tribute cards."
+      },
+      {
+        "item_id": "REL_POST_FUNERAL_AN_LING_49DAYS",
+        "name": "An Ling (安灵) 49-Day Home Altar Setup & Calculation",
+        "tradition": "Buddhist / Taoist",
+        "price_sgd": 450,
+        "description": "Home altar setup for the 49 days of mourning following the funeral, including ancestral tablet placement, joss pot, and prayer date calculation chart."
+      },
+      {
+        "item_id": "REL_POST_FUNERAL_JI_LING_TEMPLE",
+        "name": "Ji Ling (寄灵) Temple Placement Coordination",
+        "tradition": "Buddhist / Taoist",
+        "price_sgd": 680,
+        "description": "Coordination for temporary 49-day tablet placement at a Buddhist temple or monastery where monks perform daily food offerings and chanting."
+      }
+    ],
+    "embalming_and_care": [
+      {
+        "item_id": "EMB_STANDARD_CARE",
+        "name": "Professional Embalming, Sanitization & Natural Cosmetology",
+        "price_sgd": 800,
+        "description": "Arterial sanitization, gentle preservation, facial feature setting, body washing, dressing in family-provided attire, and subtle natural makeup. Included in standard wake packages."
+      },
+      {
+        "item_id": "EMB_RESTORATIVE_ART",
+        "name": "Advanced Restorative Art & Trauma Reconstruction",
+        "price_sgd": 600,
+        "description": "Specialized restorative cosmetology, facial trauma reconstruction, post-autopsy cranial restoration, and bespoke hair styling."
+      },
+      {
+        "item_id": "EMB_EXTENDED_COLDROOM_STORAGE",
+        "name": "Extended Cold Room Preservation Storage",
+        "price_sgd": 80,
+        "pricing_unit": "per_day",
+        "description": "Temperature-controlled holding in our private mortuary cold room (per 24-hour day beyond standard 48-hour holding buffer)."
+      },
+      {
+        "item_id": "EMB_BIO_ECO_PREPARATION",
+        "name": "Eco-Gentle Non-Invasive Body Cleansing & Aromatic Oil Dressing",
+        "price_sgd": 500,
+        "description": "Non-chemical organic washing and therapeutic essential oil body dressing for families preferring no arterial chemical embalming."
+      },
+      {
+        "item_id": "EMB_HOUSE_CALL_DOCTOR_DEATH_CERT",
+        "name": "24/7 House-Call Certifying Doctor Dispatch (Home Death CCOD)",
+        "price_sgd": 280,
+        "description": "Dispatch of certified registered house-call doctor to verify home death, issue electronic CCOD, and upload to ICA registry within 60 minutes."
+      }
+    ],
+    "transport_and_hearse": [
+      {
+        "item_id": "TRS_STANDARD_HEARSE",
+        "name": "Standard Multi-Purpose Hearse",
+        "price_sgd": 350,
+        "description": "Dignified standard multi-purpose hearse for cortege procession from wake to Mandai Crematorium or CCK Cemetery. Included in standard packages."
+      },
+      {
+        "item_id": "TRS_DI_ZANG_WANG_HEARSE",
+        "name": "Traditional Di Zang Wang Pu Sa Religious Hearse",
+        "price_sgd": 450,
+        "description": "Specially decorated traditional Buddhist/Taoist hearse featuring Di Zang Wang Pu Sa iconography and ceremonial roof crest."
+      },
+      {
+        "item_id": "TRS_MERCEDES_BENZ_VITO_HEARSE",
+        "name": "Mercedes-Benz Vito Funeral Hearse Upgrade",
+        "price_sgd": 600,
+        "description": "Sleek, modern Mercedes-Benz Vito black hearse equipped with automated casket deck and chrome interior trim."
+      },
+      {
+        "item_id": "TRS_MITSUOKA_GLASS_HEARSE",
+        "name": "Exclusive Mitsuoka VIP Glass Hearse Upgrade",
+        "price_sgd": 900,
+        "description": "Directly imported from Japan. Classy elongated exterior with panoramic illuminated glass viewing panels and hand-stitched leather interior."
+      },
+      {
+        "item_id": "TRS_AIRCON_COACH_45PAX",
+        "name": "45-Seater Air-Conditioned Procession Coach (Return Trip)",
+        "price_sgd": 350,
+        "description": "Air-conditioned 45-passenger bus transferring family and guests from wake to crematorium/cemetery and back. Included in standard packages."
+      },
+      {
+        "item_id": "TRS_AIRCON_MINIBUS_13PAX",
+        "name": "13-Seater VIP Transport Minibus (Return Trip)",
+        "price_sgd": 220,
+        "description": "Air-conditioned 13-seater minibus for close family transport."
+      },
+      {
+        "item_id": "TRS_ADDITIONAL_TRANSFER_TRIP",
+        "name": "Additional Transport Removal / Transfer Trip",
+        "price_sgd": 150,
+        "pricing_unit": "per_trip",
+        "description": "Additional logistics transfer trip (e.g. Mortuary@HSA to care centre, or inter-facility transfer)."
+      },
+      {
+        "item_id": "TRS_LIMOUSINE_FAMILY_ESCORT",
+        "name": "Mercedes-Benz Family Escort Limousine",
+        "price_sgd": 300,
+        "description": "Chauffeured Mercedes-Benz sedan for primary chief mourners during the cortege procession."
+      }
+    ],
+    "ash_management": [
+      {
+        "item_id": "ASH_MANDAI_CREMATION_HANDOVER",
+        "name": "Mandai Standard Ash Handover & Collection Service",
+        "price_sgd": 0,
+        "description": "Professional collection of cremated remains from Mandai Crematorium on the day following cremation and safe handover to family. (Included standard)."
+      },
+      {
+        "item_id": "ASH_SEA_SCATTERING_HANDLED_SOLACE",
+        "name": "Complimentary In-House Sea Scattering Service",
+        "price_sgd": 0,
+        "description": "Ashes handed to Solace Dignity Care crew for dignified, respectful scattering in approved maritime waters south of Pulau Semakau at no extra service charge."
+      },
+      {
+        "item_id": "ASH_SEA_SCATTERING_CHARTERED_BOAT_CHANGI",
+        "name": "Chartered Boat Sea Scattering Ceremony (Changi / Marina)",
+        "price_sgd": 380,
+        "description": "Private chartered passenger launch for up to 12 family members departing Changi Jetty or Marina South Pier. Staff assists throughout the ceremony with fresh flower petals."
+      },
+      {
+        "item_id": "ASH_SEA_SCATTERING_BUDDHIST_CHARTER",
+        "name": "Buddhist Sea Scattering Ceremony with Chanting Monk",
+        "price_sgd": 480,
+        "description": "Chartered boat sea scattering accompanied by an ordained Buddhist monk to conduct last rites on board and during ash release into the ocean."
+      },
+      {
+        "item_id": "ASH_SEA_SCATTERING_YACHT_MARINA",
+        "name": "Premium Luxury Yacht Sea Burial Charter (ONE°15 Marina)",
+        "price_sgd": 850,
+        "description": "Private twin-deck motor yacht charter departing ONE°15 Marina Sentosa Cove for up to 25 family members, with lounge amenities and refreshments."
+      },
+      {
+        "item_id": "ASH_INLAND_SCATTERING_GARDEN_OF_PEACE",
+        "name": "Inland Ash Scattering Coordination @ Garden of Peace (Choa Chu Kang)",
+        "price_sgd": 350,
+        "description": "Coordination for eco-friendly land scattering at Garden of Peace (CCK Cemetery). Staff provides pulverised ash canister, watering can, and on-site guidance."
+      },
+      {
+        "item_id": "ASH_INLAND_SCATTERING_GARDEN_OF_SERENITY",
+        "name": "Inland Ash Scattering Coordination @ Garden of Serenity (Mandai)",
+        "price_sgd": 350,
+        "description": "Inland scattering coordination at the serene Garden of Serenity facility at Mandai Crematorium Complex."
+      },
+      {
+        "item_id": "ASH_COLUMBARIUM_NICHE_GOVT_ASSIST",
+        "name": "Government Columbarium Niche Selection & Placement (Mandai / CCK)",
+        "price_sgd": 300,
+        "description": "Appointment booking, niche marble plaque engraving coordination, and ritual placement service at Mandai or Choa Chu Kang government columbarium."
+      },
+      {
+        "item_id": "ASH_COLUMBARIUM_NICHE_PRIVATE_NIRVANA",
+        "name": "Private Columbarium Suite Coordination (Nirvana / Bright Hill)",
+        "price_sgd": 1200,
+        "description": "Assistance in securing air-conditioned ancestral niche suites at Nirvana Memorial Garden (富贵山庄), Garden of Remembrance, or Kong Meng San Monastery."
+      },
+      {
+        "item_id": "ASH_PULVERIZATION_CANISTER",
+        "name": "Micro-Ash Pulverization & Scattering Canister",
+        "price_sgd": 120,
+        "description": "Fine pulverization of cremated bone fragments into uniform powder, placed into an easy-pour eco-friendly scattering tube."
+      },
+      {
+        "item_id": "ASH_BIODEGRADABLE_LOTUS_URN",
+        "name": "100% Biodegradable Lotus Sea Burial Urn",
+        "price_sgd": 180,
+        "description": "Handcrafted organic clay and plant fiber lotus urn that floats gracefully for 15-20 minutes before gently dissolving into seawater."
+      },
+      {
+        "item_id": "ASH_BIODEGRADABLE_SEASHELL_URN",
+        "name": "100% Biodegradable Seashell Urn",
+        "price_sgd": 180,
+        "description": "Biodegradable seashell urn designed for ocean burial, crafted from natural mineral powders."
+      },
+      {
+        "item_id": "ASH_KEEPSAKE_JEWELLERY_925_PENDANT",
+        "name": "Handcrafted 925 Silver Memorial Ash Keepsake Pendant",
+        "price_sgd": 250,
+        "description": "Handcrafted in Australia. Solid 925 sterling silver pendant with secure hex-sealed chamber containing a token pinch of ashes, paired with an adjustable snake chain."
+      },
+      {
+        "item_id": "ASH_PREMIUM_MARBLE_URN",
+        "name": "Solid Natural White Marble Cremation Urn",
+        "price_sgd": 380,
+        "description": "Hand-carved natural Italian white marble urn with polished finish and airtight brass seal lid."
+      }
+    ],
+    "flowers_and_decor": [
+      {
+        "item_id": "FLR_PHOTO_WREATH_STANDARD",
+        "name": "Fresh Chrysanthemum Floral Photo Wreath",
+        "price_sgd": 180,
+        "description": "Fresh yellow and white chrysanthemums with greenery surrounding the 10”x12” portrait frame. Included in standard packages."
+      },
+      {
+        "item_id": "FLR_PHOTO_WREATH_PREMIUM_ORCHID",
+        "name": "Premium Orchid & Lily Curated Photo Frame Surround",
+        "price_sgd": 320,
+        "description": "Artisanal floral surround crafted with fresh phalaenopsis orchids, casablanca lilies, and imported seasonal blooms."
+      },
+      {
+        "item_id": "FLR_CASKET_SPRAY_FRESH",
+        "name": "Fresh Floral Casket Spray (Coffin Top Arrangement)",
+        "price_sgd": 280,
+        "description": "Elongated fresh floral display placed on top of the casket, featuring lilies, roses, and baby's breath. Included in Faith & Value tiers."
+      },
+      {
+        "item_id": "FLR_CONDOLENCE_STAND_PAIR",
+        "name": "Condolence Flower Stands (Pair)",
+        "price_sgd": 150,
+        "description": "Pair of two-tiered fresh floral condolence stands with customized personalized condolence message banners."
+      },
+      {
+        "item_id": "FLR_CUSTOM_ALTAR_BACKDROP",
+        "name": "Fully Customized Modern Floral Altar Backdrop",
+        "price_sgd": 900,
+        "description": "Bespoke floor-to-ceiling floral wall installation designed by master florists."
+      },
+      {
+        "item_id": "FLR_GERBERA_SENDOFF_PETALS",
+        "name": "Fresh Gerberas & Rose Petals for Send-off",
+        "price_sgd": 80,
+        "description": "Basket of 50 fresh Gerberas and rose petals for family members and friends to place onto the casket during final send-off."
+      },
+      {
+        "item_id": "FLR_TABLE_FLORAL_CENTERPIECE",
+        "name": "Guest Table Fresh Floral Centerpiece",
+        "price_sgd": 45,
+        "pricing_unit": "per_table",
+        "description": "Petite fresh floral arrangement in glass vase for guest seating tables."
+      },
+      {
+        "item_id": "FLR_DIGITAL_OBITUARY_QR_MONTAGE",
+        "name": "AI Digital Tribute Montage & Interactive Guest QR Portal",
+        "price_sgd": 350,
+        "description": "Customized digital tribute page with QR code for guests to upload photos, voice recordings, and memories that stream dynamically on-site."
+      },
+      {
+        "item_id": "FLR_SPH_PRINT_OBITUARY_LIAISON",
+        "name": "Straits Times / Lianhe Zaobao Print Obituary Placement",
+        "price_sgd": 120,
+        "description": "Drafting, proofing, sizing, and publication booking liaison with Singapore Press Holdings (SPH). SPH print space charges billed at cost."
+      }
+    ],
+    "manpower_and_logistics": [
+      {
+        "item_id": "LOG_NIGHT_ATTENDANT_SERVICE",
+        "name": "Night Service Attendant (10:00 PM - 6:00 AM)",
+        "price_sgd": 200,
+        "pricing_unit": "per_night",
+        "description": "Dedicated on-site attendant to keep the wake area tidy, replenish snacks and hot water, attend to late visitors, and maintain security."
+      },
+      {
+        "item_id": "LOG_OVERNIGHT_SECURITY_GUARD",
+        "name": "Licensed Overnight Security Guard (10:00 PM - 6:00 AM)",
+        "price_sgd": 250,
+        "pricing_unit": "per_night",
+        "description": "Licensed security officer to guard the wake perimeter, condolence safe box, and preserve overnight order."
+      },
+      {
+        "item_id": "LOG_AIRCON_TENTAGE_ENCLOSURE",
+        "name": "Air-Conditioned Void Deck Enclosure Upgrade",
+        "price_sgd": 900,
+        "pricing_unit": "flat_rate",
+        "description": "Fully sealed heavy-duty canvas enclosure with insulated wall panels and dual portable air-conditioning units (up to 50,000 BTU)."
+      },
+      {
+        "item_id": "LOG_MOBILE_AIR_COOLER_UNIT",
+        "name": "Industrial Evaporative Mobile Air-Cooler Unit",
+        "price_sgd": 120,
+        "pricing_unit": "per_day",
+        "description": "Heavy-duty industrial mobile evaporative cooler delivering cool airflow for warm outdoor void decks."
+      },
+      {
+        "item_id": "LOG_MOBILE_TOILET_RENTAL",
+        "name": "Luxury Mobile Chemical Restroom Unit",
+        "price_sgd": 280,
+        "pricing_unit": "flat_rate",
+        "description": "Hygienic standalone mobile chemical restroom with foot-pump flushing, mirror, wash basin, hand soap, and daily sanitization runs."
+      },
+      {
+        "item_id": "LOG_BUFFET_CATERING_50PAX",
+        "name": "Daily Hot Buffet Catering (50 Pax - 7 Courses + Drink)",
+        "price_sgd": 450,
+        "pricing_unit": "per_day",
+        "description": "Fresh hot buffet dinner setup for 50 guests (Halal / Vegetarian / Non-Vegetarian options), complete with stainless food warmers, tables, and bio-cutlery."
+      },
+      {
+        "item_id": "LOG_BEVERAGE_CONSIGNMENT_STARTER",
+        "name": "Consignment Beverage & Tidbit Starter Pack",
+        "price_sgd": 150,
+        "pricing_unit": "deposit_billed_on_consumption",
+        "description": "Assorted canned drinks, Yeo's packet drinks, bottled mineral water, peanuts, and biscuits. Only opened and consumed cartons are charged."
+      },
+      {
+        "item_id": "LOG_TABLES_CHAIRS_EXTRA_SET",
+        "name": "Additional 10 Tables & 50 Chairs Extension Set",
+        "price_sgd": 100,
+        "pricing_unit": "per_day",
+        "description": "10 additional round/square tables and 50 stackable plastic chairs for anticipated large visitor turnouts."
+      },
+      {
+        "item_id": "LOG_TRAFFIC_MARSHALLING_SPF_PERMIT",
+        "name": "Traffic Police Road Closure Liaison & Traffic Marshalling",
+        "price_sgd": 180,
+        "pricing_unit": "flat_rate",
+        "description": "Liaison with Singapore Traffic Police (SPF) / LTA for estate lane closure permits and deployment of certified marshals with safety cones."
+      },
+      {
+        "item_id": "LOG_SOUND_SYSTEM_WIRELESS_MIC",
+        "name": "Professional PA Sound System & Wireless Microphones",
+        "price_sgd": 150,
+        "pricing_unit": "flat_rate",
+        "description": "Compact PA amplifier speaker system with 2 wireless microphones and Bluetooth connectivity for eulogies and soft ambient hymns."
+      },
+      {
+        "item_id": "LOG_LIVESTREAMING_HD_SERVICE",
+        "name": "Multi-Camera High-Definition Private Livestreaming",
+        "price_sgd": 400,
+        "pricing_unit": "flat_rate",
+        "description": "Dedicated videographer broadcasting the memorial and cortege service via a private, password-protected HD link for overseas family."
+      },
+      {
+        "item_id": "LOG_DEDICATED_FUNERAL_BUTLER",
+        "name": "24/7 Dedicated On-Site Funeral Butler Service",
+        "price_sgd": 0,
+        "description": "Solace Dignity Care signature complimentary service. A dedicated Butler conducts daily site inspections, coordinates caterers and officiants, and assists family throughout."
+      }
+    ],
+    "government_and_permits": [
+      {
+        "item_id": "GOV_NEA_CREMATION_MANDAI_STANDARD",
+        "name": "NEA Mandai Cremation Fee (Standard Cremator)",
+        "governing_agency": "National Environment Agency (NEA)",
+        "statutory_fee_sgd": 315.0,
+        "gst_applicable": false,
+        "notes": "Mandatory statutory government fee for cremation booking at Mandai Government Crematorium (Standard Cremator). GST exempt / zero markup pass-through."
+      },
+      {
+        "item_id": "GOV_NEA_CREMATION_MANDAI_LARGE",
+        "name": "NEA Mandai Cremation Fee (Large Cremator)",
+        "governing_agency": "National Environment Agency (NEA)",
+        "statutory_fee_sgd": 500.0,
+        "gst_applicable": false,
+        "notes": "Statutory booking fee for oversized or reinforced caskets requiring the Mandai large cremator chamber."
+      },
+      {
+        "item_id": "GOV_NEA_CREMATION_PERMIT_FEE",
+        "name": "NEA Statutory Permit to Cremate Fee",
+        "governing_agency": "National Environment Agency (NEA)",
+        "statutory_fee_sgd": 100.0,
+        "gst_applicable": false,
+        "notes": "Standard NEA Permit to Cremate registration disbursement."
+      },
+      {
+        "item_id": "GOV_NEA_BURIAL_CCK_MUSLIM_PARSI",
+        "name": "NEA Choa Chu Kang Burial Fee (Muslim / Parsi / Jewish)",
+        "governing_agency": "National Environment Agency (NEA)",
+        "statutory_fee_sgd": 315.0,
+        "gst_applicable": false,
+        "notes": "Statutory 15-year lease ground burial fee at Choa Chu Kang Cemetery for religions requiring ground interment."
+      },
+      {
+        "item_id": "GOV_NEA_BURIAL_CCK_CHRISTIAN_CHINESE",
+        "name": "NEA Choa Chu Kang Burial Fee (Christian / Chinese / Other)",
+        "governing_agency": "National Environment Agency (NEA)",
+        "statutory_fee_sgd": 940.0,
+        "gst_applicable": false,
+        "notes": "Statutory 15-year lease ground burial plot fee at Choa Chu Kang Cemetery for Christian, Chinese, and other traditions."
+      },
+      {
+        "item_id": "GOV_NEA_INLAND_ASH_SCATTERING_FEE",
+        "name": "NEA Inland Ash Scattering Facility Fee (Garden of Peace / Serenity)",
+        "governing_agency": "National Environment Agency (NEA)",
+        "statutory_fee_sgd": 350.0,
+        "gst_applicable": false,
+        "notes": "Statutory NEA disbursement covering 2-hour garden session usage and ash processing."
+      },
+      {
+        "item_id": "GOV_MPA_SEA_SCATTERING_PORT_CLEARANCE",
+        "name": "MPA Sea Ash Scattering Port Marine Clearance",
+        "governing_agency": "Maritime and Port Authority of Singapore (MPA)",
+        "statutory_fee_sgd": 0.0,
+        "gst_applicable": false,
+        "notes": "Mandatory voyage clearance submitted to MPA Port Marine Operations Centre for scattering at coordinates south of Pulau Semakau."
+      },
+      {
+        "item_id": "GOV_ICA_DIGITAL_DEATH_CERT_ISSUANCE",
+        "name": "ICA Digital Death Certificate Registration (My Legacy)",
+        "governing_agency": "Immigration & Checkpoints Authority (ICA)",
+        "statutory_fee_sgd": 0.0,
+        "gst_applicable": false,
+        "notes": "Free statutory automatic death registration upon CCOD upload by certifying doctor."
+      },
+      {
+        "item_id": "GOV_ICA_HISTORICAL_DEATH_EXTRACT",
+        "name": "ICA Historical Certified Death Extract Administrative Fee",
+        "governing_agency": "Immigration & Checkpoints Authority (ICA)",
+        "statutory_fee_sgd": 40.0,
+        "gst_applicable": false,
+        "notes": "Statutory extraction fee for certified historical paper records issued prior to May 2022."
+      },
+      {
+        "item_id": "GOV_TOWN_COUNCIL_VOID_DECK_PERMIT",
+        "name": "Town Council Void Deck Wake Space Permit & Utility Security Deposit",
+        "governing_agency": "Local Town Council (Respective HDB GRC/SMC)",
+        "statutory_fee_sgd": 50.0,
+        "gst_applicable": false,
+        "notes": "Estimated municipal permit deposit. Utilities (water/electricity) metered and charged at cost upon wake teardown."
+      },
+      {
+        "item_id": "GOV_SLA_LANDED_TOL_FEE",
+        "name": "SLA Temporary Occupation Licence (TOL) for Landed Estate Road Verge",
+        "governing_agency": "Singapore Land Authority (SLA)",
+        "statutory_fee_sgd": 120.0,
+        "gst_applicable": false,
+        "notes": "Statutory licence fee for erecting temporary tentage on state land or public road verge outside private landed premises."
+      }
+    ]
+  },
+  "quotation_rules": {
+    "deposit_policy": {
+      "percentage_required": 30,
+      "balance_percentage": 70,
+      "terms": "An initial deposit of 30% of the taxable subtotal (including GST) is payable upon contract sign-off and before wake setup or body collection begins. The remaining 70% balance plus any signed interim daily add-ons are due on the final cortege procession day prior to crematorium or cemetery entry.",
+      "accepted_payment_methods": [
+        "PayNow (UEN: 201300000D)",
+        "Bank Transfer (FAST / GIRO)",
+        "Credit Card (Visa, Mastercard, AMEX)",
+        "NETS",
+        "0% Interest Monthly Installment Plan (6 or 12 months via DBS/POSB, OCBC, UOB)"
+      ]
+    },
+    "cancellation_and_refunds": {
+      "cooling_off_period_hours": 24,
+      "cooling_off_rule": "Clients are entitled to a full refund within 24 hours of agreement execution, provided operational dispatch has not commenced.",
+      "tiered_deductions": [
+        {
+          "stage": "Pre-Dispatch / Administrative",
+          "fee_sgd": 150,
+          "description": "Administrative registration, file opening, and permit queuing started."
+        },
+        {
+          "stage": "Post-Dispatch / Body Collected",
+          "fee_sgd": 350,
+          "description": "Transport team dispatched and deceased collected from hospital or residence."
+        },
+        {
+          "stage": "Post-Embalming & Body Care",
+          "fee_sgd": 800,
+          "description": "Embalming, body care, and cosmetological styling completed."
+        },
+        {
+          "stage": "Wake Setup Completed",
+          "fee_calculation": "50% of base package price",
+          "description": "HDB void deck tentage or parlour hall fully erected and utility meters tapped."
+        },
+        {
+          "stage": "Cortege / Procession Day",
+          "fee_calculation": "100% of selected package and scheduled upgrades",
+          "description": "Cancellation on final procession day is non-refundable."
+        }
+      ]
+    },
+    "bundle_discounts": [
+      {
+        "discount_id": "DISC_PREPLANNING_5PCT",
+        "name": "Pre-Planning Advance Contract Discount",
+        "discount_type": "PERCENTAGE",
+        "value": 5,
+        "applies_to": "base_price",
+        "eligibility": "Advance pre-planning contracts signed and deposited prior to acute need."
+      },
+      {
+        "discount_id": "DISC_5DAY_BUNDLE",
+        "name": "5-Day Wake Package Bundle Rebate",
+        "discount_type": "FIXED_AMOUNT",
+        "value_sgd": 200,
+        "applies_to": "subtotal",
+        "eligibility": "Applied when bundling 5-day duration with Faith/Value packages."
+      },
+      {
+        "discount_id": "DISC_CIVIL_SERVANT_REBATE",
+        "name": "Public Service / Healthcare / SAFRA Family Rebate",
+        "discount_type": "FIXED_AMOUNT",
+        "value_sgd": 300,
+        "applies_to": "subtotal",
+        "eligibility": "Direct family members of civil servants, healthcare workers, or SAFRA members."
+      },
+      {
+        "discount_id": "DISC_DIRECT_CREMATION_ALL_IN",
+        "name": "Direct Cremation Full Settlement Rebate",
+        "discount_type": "FIXED_AMOUNT",
+        "value_sgd": 100,
+        "applies_to": "subtotal",
+        "eligibility": "Immediate upfront full PayNow settlement for Direct Cremation packages."
+      }
+    ],
+    "incompatible_services": [
+      {
+        "rule_id": "INCOMPAT_001",
+        "rule_name": "Metal & Bronze Casket Cremation Prohibition",
+        "conflicting_items": [
+          "CSK_BATESVILLE_CLASSIC_GOLD",
+          "CSK_BATESVILLE_PURITAN_COPPER"
+        ],
+        "incompatible_with": [
+          "PKG_DIRECT_CREMATION_BT",
+          "PKG_DIRECT_CREMATION_CCF",
+          "PKG_BUDDHIST_3D_SIMPLICITY",
+          "PKG_BUDDHIST_3D_VALUE",
+          "PKG_TAOIST_3D_BASIC",
+          "PKG_TAOIST_3D_VALUE",
+          "PKG_CHRISTIAN_3D_PEACE",
+          "PKG_CHRISTIAN_3D_FAITH",
+          "PKG_CATHOLIC_3D_PEACE",
+          "PKG_CATHOLIC_3D_FAITH",
+          "PKG_FREETHINKER_3D_PEACE",
+          "PKG_FREETHINKER_3D_FAITH",
+          "PKG_SOKA_3D_STANDARD",
+          "ASH_MANDAI_CREMATION_HANDOVER"
+        ],
+        "explanation": "NEA crematorium safety regulations strictly prohibit metal, copper, and bronze caskets in cremator chambers. Batesville bronze and copper models are exclusive to Choa Chu Kang Ground Burial."
+      },
+      {
+        "rule_id": "INCOMPAT_002",
+        "rule_name": "Soka Gakkai and Christian/Catholic Incense & Joss Paper Restriction",
+        "conflicting_items": [
+          "REL_TAOIST_PAPER_HOUSE_MANSION",
+          "REL_TAOIST_PREFOLDED_JOSS_BUNDLE"
+        ],
+        "incompatible_with": [
+          "PKG_SOKA_3D_STANDARD",
+          "PKG_CHRISTIAN_3D_PEACE",
+          "PKG_CHRISTIAN_3D_FAITH",
+          "PKG_CATHOLIC_3D_PEACE",
+          "PKG_CATHOLIC_3D_FAITH"
+        ],
+        "explanation": "Soka Gakkai, Christian, and Roman Catholic traditions maintain a strict prohibition against joss paper effigies and burning rituals."
+      },
+      {
+        "rule_id": "INCOMPAT_003",
+        "rule_name": "Direct Cremation Wake Add-ons Incompatibility",
+        "conflicting_items": [
+          "VEN_SOLACE_MEMORIAL_HALL",
+          "LOG_BUFFET_CATERING_50PAX",
+          "LOG_AIRCON_TENTAGE_ENCLOSURE",
+          "LOG_NIGHT_ATTENDANT_SERVICE",
+          "DUR_3DAY",
+          "DUR_5DAY",
+          "DUR_7DAY"
+        ],
+        "incompatible_with": [
+          "PKG_DIRECT_CREMATION_BT",
+          "PKG_DIRECT_CREMATION_CCF"
+        ],
+        "explanation": "Direct Cremation packages do not include wake visitation. Selecting multi-day wake logistics requires upgrading to a standard wake package."
+      }
+    ],
+    "upgrade_downgrade_rules": [
+      {
+        "from_tier": "direct_cremation",
+        "to_tier": "standard",
+        "trigger": "Family requests 3-day public wake visitation with void deck setup and coordinator.",
+        "cost_differential_estimate": "Base price increases from S$1,500 to S$3,200 - S$5,888 depending on tradition."
+      },
+      {
+        "from_tier": "standard",
+        "to_tier": "deluxe",
+        "trigger": "Family requests full white fabric drapery, Mercedes-Benz hearse, enlarged portrait styling, night staff, and beverage chiller.",
+        "cost_differential_estimate": "Base price increases from ~S$4,999 to S$9,333 - S$14,988."
+      },
+      {
+        "from_tier": "deluxe",
+        "to_tier": "premium",
+        "trigger": "Family requests solid Burmese teak casket, bespoke floral wall, VIP limousine escort, and 24/7 Butler concierge.",
+        "cost_differential_estimate": "Base price increases to S$18,000+."
+      }
+    ],
+    "deferred_payment_and_assistance": {
+      "comcare_msf_eligible": true,
+      "comcare_scheme_details": "Eligible low-income Singaporean families can receive up to S$1,800 under the MSF ComCare Funeral Assistance Scheme. Our coordinators assist in filing direct claims.",
+      "cpf_medisave_and_dps_support": "Guidance provided for next-of-kin utilizing deceased's CPF Dependants' Protection Scheme (DPS) payouts or bank account disbursements.",
+      "installment_plans_available": [
+        {
+          "bank": "DBS / POSB",
+          "tenure_months": 6,
+          "interest_rate_percent": 0.0
+        },
+        {
+          "bank": "DBS / POSB",
+          "tenure_months": 12,
+          "interest_rate_percent": 0.0
+        },
+        {
+          "bank": "OCBC",
+          "tenure_months": 6,
+          "interest_rate_percent": 0.0
+        },
+        {
+          "bank": "OCBC",
+          "tenure_months": 12,
+          "interest_rate_percent": 0.0
+        },
+        {
+          "bank": "UOB",
+          "tenure_months": 12,
+          "interest_rate_percent": 0.0
+        }
+      ]
+    }
+  },
+  "calculation_formulas": {
+    "subtotal_formula": "base_price + wake_extension_total + venue_total + addons_total - discounts_total",
+    "gst_applicable": true,
+    "gst_rate": 0.09,
+    "gst_formula": "taxable_subtotal * gst_rate",
+    "statutory_fees_gst_exempt": true,
+    "grand_total_formula": "taxable_subtotal + gst_amount + statutory_permits_total",
+    "deposit_formula": "(taxable_subtotal + gst_amount) * (deposit_percentage / 100)",
+    "balance_formula": "grand_total - deposit_amount",
+    "variable_definitions": {
+      "base_price": "Numerical integer price of the selected base package (e.g. 4999).",
+      "wake_extension_total": "MAX(0, selected_duration_days - package_included_days) * daily_extension_rate.",
+      "venue_total": "(venue_daily_rate * selected_duration_days) + venue_setup_fee.",
+      "addons_total": "SUM(itemized_add_ons.price_sgd * itemized_add_ons.quantity).",
+      "discounts_total": "SUM(applied_discounts.value_sgd).",
+      "taxable_subtotal": "The net pre-tax total for all commercial goods and services provided by the funeral director.",
+      "gst_amount": "Singapore 9% Goods and Services Tax applied to taxable_subtotal (rounded to 2 decimal places).",
+      "statutory_permits_total": "SUM(selected_government_and_permits.statutory_fee_sgd) - passed through at cost with 0% GST markup.",
+      "grand_total": "Total invoice commitment payable by the client.",
+      "deposit_amount": "Upfront 30% commitment required before operations commencement.",
+      "balance_amount": "Final 70% balance payable on cortege departure day."
+    },
+    "calculation_example": {
+      "selected_package": "PKG_CHRISTIAN_3D_PEACE (Base: S$4,999, 3 Days included)",
+      "wake_duration_choice": "5 Days (2 extra days @ S$350/day = S$700)",
+      "selected_venue": "VEN_HDB_VOID_DECK (Setup: S$0, Daily: S$0)",
+      "selected_addons": [
+        {
+          "item_id": "TRS_MERCEDES_BENZ_VITO_HEARSE",
+          "name": "Mercedes Vito Hearse Upgrade",
+          "price_sgd": 600
+        },
+        {
+          "item_id": "LOG_NIGHT_ATTENDANT_SERVICE",
+          "name": "Night Attendant (2 nights @ S$200)",
+          "price_sgd": 400
+        },
+        {
+          "item_id": "FLR_CASKET_SPRAY_FRESH",
+          "name": "Fresh Floral Casket Spray",
+          "price_sgd": 280
+        }
+      ],
+      "addons_total_sgd": 1280,
+      "discounts_applied": [
+        {
+          "discount_id": "DISC_5DAY_BUNDLE",
+          "value_sgd": 200
+        }
+      ],
+      "discounts_total_sgd": 200,
+      "taxable_subtotal_calculation": "4999 (base) + 700 (extension) + 0 (venue) + 1280 (addons) - 200 (discount) = S$6,779.00",
+      "taxable_subtotal_sgd": 6779.0,
+      "gst_calculation": "6779.00 * 0.09 = S$610.11",
+      "gst_amount_sgd": 610.11,
+      "taxable_subtotal_with_gst_sgd": 7389.11,
+      "selected_statutory_permits": [
+        {
+          "item_id": "GOV_NEA_CREMATION_MANDAI_STANDARD",
+          "fee_sgd": 315.0,
+          "gst": 0.0
+        },
+        {
+          "item_id": "GOV_TOWN_COUNCIL_VOID_DECK_PERMIT",
+          "fee_sgd": 50.0,
+          "gst": 0.0
+        }
+      ],
+      "statutory_permits_total_sgd": 365.0,
+      "grand_total_calculation": "6779.00 (subtotal) + 610.11 (GST) + 365.00 (statutory pass-through) = S$7,754.11",
+      "grand_total_sgd": 7754.11,
+      "deposit_calculation": "7389.11 * 0.30 = S$2,216.73",
+      "deposit_amount_sgd": 2216.73,
+      "balance_due_cortege_day_sgd": 5537.38
+    }
+  }
+}

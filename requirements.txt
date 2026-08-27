@@ -1,0 +1,26 @@
+# Solace Dignity Care — Python dependencies
+# Install with:  pip install -r requirements.txt
+
+# --- Web framework & server ---
+fastapi>=0.110.0
+uvicorn>=0.27.0
+pydantic>=2.6.0
+python-multipart>=0.0.9
+
+# --- Configuration ---
+python-dotenv>=1.0.0
+
+# --- HTTP client (Ollama communication) ---
+requests>=2.31.0
+
+# --- Semantic search / embeddings ---
+fastembed>=0.2.0
+onnxruntime>=1.17.0
+numpy>=1.26.0
+
+# --- Speech to text ---
+faster-whisper>=1.0.0
+
+# --- Text to speech ---
+kokoro-onnx>=0.3.0
+soundfile>=0.12.1

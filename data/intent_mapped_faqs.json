@@ -1,0 +1,103 @@
+{
+  "intent_mappings": [
+    {
+      "intent_id": "INTENT_HOME_DEATH",
+      "user_phrasing_variations": [
+        "What should I do if my loved one passed away at home?",
+        "Someone died at home how do I get a doctor?",
+        "Passed away at home first steps",
+        "Home death procedure Singapore"
+      ],
+      "mapped_data_source": "sensitive_emergency_protocols.json",
+      "core_response_logic": "Retrieve the 'Sudden Home Death' object from sensitive_emergency_protocols.json. Present the 'immediate_first_step' clearly in bold. Follow with the step-by-step 'procedural_flow'. End by executing the 'ai_safety_instruction' (condolences and handoff to Marcus Chen or active consultant)."
+    },
+    {
+      "intent_id": "INTENT_OVERSEAS_DEATH",
+      "user_phrasing_variations": [
+        "What to do if someone passes away overseas?",
+        "How to bring a body back to Singapore?",
+        "Died in another country import permit",
+        "Overseas repatriation guidelines"
+      ],
+      "mapped_data_source": "sensitive_emergency_protocols.json",
+      "core_response_logic": "Retrieve the 'Overseas Repatriation' object from sensitive_emergency_protocols.json. Summarize the coffin import requirements, list the 'required_documents', and outline the 'procedural_flow'. Prompt the user that this requires professional handling, then trigger the 'ai_safety_instruction' to redirect to the repatriation desk."
+    },
+    {
+      "intent_id": "INTENT_TAX_POLICY",
+      "user_phrasing_variations": [
+        "Does the price include GST?",
+        "How much tax will be added to the quote?",
+        "Are government fees taxed?",
+        "Singapore funeral GST rate 2026"
+      ],
+      "mapped_data_source": "company_policies.json",
+      "core_response_logic": "Query company_policies.json -> pricing_and_gst -> tax_application_rule. Inform the user that base prices are exclusive of tax and that the prevailing 9% GST is dynamically calculated at checkout. Emphasize that municipal disbursements (e.g. Mandai Cremation fees of S$315) are passed through at cost with zero tax markup."
+    },
+    {
+      "intent_id": "INTENT_CANCELLATION_POLICY",
+      "user_phrasing_variations": [
+        "Can I cancel a funeral booking?",
+        "What is the refund policy for deposits?",
+        "Are there cancellation fees?",
+        "What happens if we change our mind after signing?"
+      ],
+      "mapped_data_source": "company_policies.json",
+      "core_response_logic": "Query company_policies.json -> cancellation_and_refunds. State the 24-hour cooling-off period and explain that deposits are fully refundable prior to operational dispatch. Provide the stage-by-stage cancellation fee structure based on current progress (Pre-dispatch, Post-dispatch, Post-embalming, Wake setup, Cortege)."
+    },
+    {
+      "intent_id": "INTENT_WAKE_LOCATION",
+      "user_phrasing_variations": [
+        "Where can I hold a funeral wake in Singapore?",
+        "Can I rent a void deck for a wake?",
+        "How much is the air-con parlour rental?",
+        "Void deck vs parlour wake locations"
+      ],
+      "mapped_data_source": "dataset.json & service_standards.json",
+      "core_response_logic": "Query dataset.json -> wakeLocations. Present the options: HDB Void Deck (S$0 setup) and Direct Memorial Hall (Air-Con Parlour at Geylang Bahru, priced at S$1,200/day). Refer to service_standards.json to assure the user that all Town Council permits and SLA TOL applications are managed by SDC coordinators."
+    },
+    {
+      "intent_id": "INTENT_WAKE_DURATION",
+      "user_phrasing_variations": [
+        "How long should a wake be?",
+        "What is the price for a 5-day wake?",
+        "Cost to extend wake duration",
+        "3 days vs 5 days wake duration"
+      ],
+      "mapped_data_source": "dataset.json",
+      "core_response_logic": "Query dataset.json -> wakeDurations. Output the choices: 3-Day Wake (S$0 base addition), 5-Day Wake (S$800 addition), and 7-Day Wake (S$1,500 addition). Summarize what the durations cover (canvas tent, tables, utilities) based on the database descriptions."
+    },
+    {
+      "intent_id": "INTENT_BUTLER_SERVICE",
+      "user_phrasing_variations": [
+        "What does the funeral butler do?",
+        "Is the butler service free?",
+        "Who refills the drinks and cleans the wake?",
+        "Difference between butler and director"
+      ],
+      "mapped_data_source": "service_standards.json",
+      "core_response_logic": "Query service_standards.json -> service_standards -> funeral_butler_responsibilities. Explain that the Funeral Butler is a free signature service. Detail the daily wake duties (site cleaning, replenishing drinks/snacks), vendor coordination (catering, florists, officiants), and problem escalation protocols."
+    },
+    {
+      "intent_id": "INTENT_BABY_FUNERAL",
+      "user_phrasing_variations": [
+        "Do you have baby or infant funeral services?",
+        "Cremation for stillborn baby",
+        "Precious Angel package details",
+        "Child casket options"
+      ],
+      "mapped_data_source": "dataset.json & sensitive_emergency_protocols.json",
+      "core_response_logic": "Retrieve the 'Minor/Infant Death' protocol from sensitive_emergency_protocols.json and lookup 'Baby Funeral Packages' in dataset.json -> allPackagesCatalog (showing S$1,380 for Buddhist/Taoist and S$1,180 for Christian/Catholic/Secular). Explain standard inclusions (pastel casket, romper, booties, toys). Trigger immediate handoff to Marcus Chen."
+    },
+    {
+      "intent_id": "INTENT_ESTATE_SUCCESSION",
+      "user_phrasing_variations": [
+        "What happens if there is no will?",
+        "How do I distribute assets after death?",
+        "Who inherits if next of kin dies?",
+        "Will writing services Singapore"
+      ],
+      "mapped_data_source": "dataset.json & app_and_system_functionality.json",
+      "core_response_logic": "Retrieve Will Writing details from dataset.json -> blogPosts (reference the Intestate Succession Act rules and family complications). Note that SDC offers Will Writing and Estate Planning addons at S$350, integrated directly in the Quote Calculator as documented in app_and_system_functionality.json."
+    }
+  ]
+}

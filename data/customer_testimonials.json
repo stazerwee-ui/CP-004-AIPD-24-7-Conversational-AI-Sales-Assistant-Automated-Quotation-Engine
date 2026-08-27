@@ -1,0 +1,102 @@
+{
+  "testimonials": [
+    {
+      "testimonial_id": "test_buddhist_deluxe",
+      "synthetic_data": true,
+      "service_type": "Deluxe Dignity Service",
+      "religion_or_tradition": "Buddhist",
+      "key_themes": [
+        "Price transparency",
+        "Compassionate butler support",
+        "Serene altar setup",
+        "Seamless monk coordination"
+      ],
+      "customer_experience_summary": "Families frequently praise the professional and clean HDB void deck wake setup. Feedback emphasizes the comfort brought by the Funeral Butler, who kept refreshments stocked and tables cleared, allowing the family to focus on chanting and mourning. The itemized pricing gave them peace of mind, with no unexpected charges at the end.",
+      "ai_usage_guideline": "Synthesize as general customer feedback sentiment only. Do not present as a real living or deceased individual. Chatbot should present this as representative of common family experiences regarding Buddhist setups."
+    },
+    {
+      "testimonial_id": "test_christian_standard",
+      "synthetic_data": true,
+      "service_type": "Standard Service Tier",
+      "religion_or_tradition": "Christian",
+      "key_themes": [
+        "Simple coordination",
+        "Respectful embalming",
+        "Comforting hymn booklets",
+        "Dignified hearse"
+      ],
+      "customer_experience_summary": "Families appreciate the quiet, respectful, and simple arrangement. They note that the casket and altar layout was clean and appropriate for church custom, and coordination with their pastor was handled smoothly. They were highly satisfied with the professional cosmetic work done for the viewing.",
+      "ai_usage_guideline": "Synthesize as general customer feedback sentiment only. Do not present as a real living or deceased individual. Chatbot should present this as representative of common family experiences regarding Christian setups."
+    },
+    {
+      "testimonial_id": "test_taoist_premium",
+      "synthetic_data": true,
+      "service_type": "Premium Heritage Service",
+      "religion_or_tradition": "Taoist",
+      "key_themes": [
+        "Concierge butler support",
+        "Detailed paper effigies",
+        "Impartial vendor advice",
+        "Premium glass hearse"
+      ],
+      "customer_experience_summary": "Feedback for Taoist wakes highlighting the premium coordination of complex dialect rituals (Hokkien, Teochew, etc.). Families valued the full-time presence of 3 managers and a Funeral Butler who managed the daily catering audits and paper house logistics, ensuring no hidden markups on external vendor offerings.",
+      "ai_usage_guideline": "Synthesize as general customer feedback sentiment only. Do not present as a real living or deceased individual. Chatbot should present this as representative of common family experiences regarding Taoist setups."
+    },
+    {
+      "testimonial_id": "test_secular_direct",
+      "synthetic_data": true,
+      "service_type": "Direct Cremation Package",
+      "religion_or_tradition": "Secular",
+      "key_themes": [
+        "Fuss-free logistics",
+        "Immediate transport",
+        "Eco-wood casket",
+        "Private cremation"
+      ],
+      "customer_experience_summary": "Families choose this for direct cremation, praising the simple and swift body transfer from the hospital. The process was described as respectful and stress-free, with the ash collection and subsequent complimentary sea scattering handled professionally by the operations team.",
+      "ai_usage_guideline": "Synthesize as general customer feedback sentiment only. Do not present as a real living or deceased individual. Chatbot should present this as representative of common family experiences regarding Secular setups."
+    },
+    {
+      "testimonial_id": "test_soka_deluxe",
+      "synthetic_data": true,
+      "service_type": "Deluxe Dignity Service",
+      "religion_or_tradition": "Soka",
+      "key_themes": [
+        "White-themed floral backdrop",
+        "Strict ritual compliance",
+        "Daimoku chanting support",
+        "Transparent billing"
+      ],
+      "customer_experience_summary": "Families practiced under Soka Gakkai note the pristine, white-themed floral altar and strict compliance with the 'no joss paper/incense' rule. Cooperation with SSA zone leaders was described as seamless, with the setup team ensuring a peaceful space for Daimoku prayers.",
+      "ai_usage_guideline": "Synthesize as general customer feedback sentiment only. Do not present as a real living or deceased individual. Chatbot should present this as representative of common family experiences regarding Soka setups."
+    },
+    {
+      "testimonial_id": "test_catholic_standard",
+      "synthetic_data": true,
+      "service_type": "Standard Service Tier",
+      "religion_or_tradition": "Catholic",
+      "key_themes": [
+        "Vigil mass coordination",
+        "Crucifix altar",
+        "Mercedes hearse",
+        "No hidden fees"
+      ],
+      "customer_experience_summary": "Families note the dignified and structured Catholic vigil service setup, including crucifix stands and candles. The coordination of the funeral mass and committal rites was managed efficiently, and the final invoice matched the quote exactly, keeping with the price transparency guarantee.",
+      "ai_usage_guideline": "Synthesize as general customer feedback sentiment only. Do not present as a real living or deceased individual. Chatbot should present this as representative of common family experiences regarding Catholic setups."
+    },
+    {
+      "testimonial_id": "test_hindu_premium",
+      "synthetic_data": true,
+      "service_type": "Premium Heritage Service",
+      "religion_or_tradition": "Hindu",
+      "key_themes": [
+        "Priest coordination",
+        "Traditional garlands",
+        "Cremation slot booking",
+        "24/7 support"
+      ],
+      "customer_experience_summary": "Families highlight the careful attention paid to traditional Hindu rites, including priest honorarium setups, garland displays, and assistance booking priority cremation slots at Mandai. The Funeral Butler was praised for keeping the wake area clean and organized during continuous prayers.",
+      "ai_usage_guideline": "Synthesize as general customer feedback sentiment only. Do not present as a real living or deceased individual. Chatbot should present this as representative of common family experiences regarding Hindu setups."
+    }
+  ]
+}

@@ -1,0 +1,2637 @@
+{
+  "packageRules": [
+    {
+      "ruleId": "RULE-PKG-DIRECT-CREMATION-BT",
+      "packageId": "PKG_DIRECT_CREMATION_BT",
+      "packageName": "Direct Cremation Package (Buddhist / Taoist)",
+      "tradition": "Buddhist / Taoist",
+      "tier": "Direct",
+      "venueType": "NO_WAKE",
+      "durationDays": 0,
+      "basePriceSGD": 1500,
+      "gstInclusive": false,
+      "casketIncluded": {
+        "itemId": "CSK_ECO_WOOD_S03",
+        "name": "S03 Eco-Wood Natural Finish Casket",
+        "material": "Biodegradable compressed eco-wood fiber",
+        "cremationApproved": true
+      },
+      "hearseIncluded": {
+        "itemId": "TRS_STANDARD_HEARSE",
+        "name": "Standard Multi-Purpose Hearse",
+        "type": "Direct Transfer Vehicle"
+      },
+      "inclusions": [
+        "24/7 Collection of Deceased from hospital mortuary or private residential address in Singapore",
+        "Professional Sanitization, Makeup & Dressing Service (family provides clothing)",
+        "S03 Eco-Wood Cremation Casket with satin interior lining",
+        "Mandai Crematorium slot booking and digital permit registration service",
+        "Transfer of deceased from holding care centre directly to Mandai Crematorium",
+        "Funeral pallbearer escort team for respectful casket transfer",
+        "Complimentary ash collection from Mandai Crematorium on subsequent day",
+        "Complimentary in-house sea scattering service south of Pulau Semakau or safe urn handover"
+      ],
+      "exclusions": [
+        "Public wake, memorial visitation, or parlour holding venue",
+        "HDB void deck tentage, canvas enclosure, tables, and chairs",
+        "Religious chanting officiants (monks or Taoist priests) and ritual paper items",
+        "Food catering, beverage carton packs, and refreshment supplies",
+        "Statutory NEA Mandai Cremation Booking Fee (S$315.00 SGD pass-through)",
+        "Statutory NEA Permit to Cremate Fee (S$100.00 SGD pass-through)",
+        "Overnight care attendant or security guard services"
+      ],
+      "compatibleAddOnIds": [
+        "ADD-EMBALM-RESTORATIVE-ART",
+        "ADD-EMBALM-COLDROOM-STORAGE",
+        "ADD-EMBALM-HOUSECALL-DOCTOR-CCOD",
+        "ADD-ASH-SEA-SCATTERING-CHARTER-CHANGI",
+        "ADD-ASH-SEA-SCATTERING-BUDDHIST-BOAT",
+        "ADD-ASH-SEA-SCATTERING-LUXURY-YACHT",
+        "ADD-ASH-INLAND-GARDEN-OF-PEACE",
+        "ADD-ASH-INLAND-GARDEN-OF-SERENITY",
+        "ADD-ASH-COLUMBARIUM-GOVT-ASSIST",
+        "ADD-ASH-COLUMBARIUM-PRIVATE-NIRVANA",
+        "ADD-ASH-BIODEGRADABLE-LOTUS-URN",
+        "ADD-ASH-BIODEGRADABLE-SEASHELL-URN",
+        "ADD-ASH-KEEPSAKE-925-PENDANT",
+        "ADD-ASH-PREMIUM-MARBLE-URN",
+        "ADD-ASH-PULVERIZATION-CANISTER",
+        "ADD-FLR-SPH-PRINT-OBITUARY"
+      ],
+      "incompatibleAddOnIds": [
+        "ADD-VENUE-SOLACE-MEMORIAL-HALL",
+        "ADD-VENUE-HDB-PAVILION-SETUP",
+        "ADD-VENUE-LANDED-TENTAGE-SETUP",
+        "ADD-LOG-AIRCON-TENTAGE",
+        "ADD-LOG-MOBILE-AIR-COOLER",
+        "ADD-LOG-MOBILE-CHEMICAL-TOILET",
+        "ADD-LOG-BUFFET-CATERING-50PAX",
+        "ADD-LOG-BEVERAGE-CONSIGNMENT",
+        "ADD-LOG-TABLES-CHAIRS-EXTRA",
+        "ADD-LOG-NIGHT-ATTENDANT",
+        "ADD-LOG-SECURITY-GUARD",
+        "ADD-LOG-PA-SOUND-SYSTEM",
+        "ADD-CASKET-BATESVILLE-GOLD-BRONZE",
+        "ADD-CASKET-BATESVILLE-PURITAN-COPPER"
+      ],
+      "upgradeRules": {
+        "allowCasketUpgrade": true,
+        "casketCreditMethod": "DIFFERENCE_IN_LIST_PRICE",
+        "allowedCasketIds": [
+          "CSK_PEACE_E04",
+          "CSK_HALF_GLASS_CHENGAI",
+          "CSK_HALF_GLASS_BROWN",
+          "CSK_HALF_GLASS_ELEGANT_WHITE",
+          "CSK_DOUBLE_GLASS_LOTUS",
+          "CSK_EIGHT_SIDED_LOTUS",
+          "CSK_POLISHED_OAK",
+          "CSK_SUPREME_TEAK"
+        ],
+        "allowHearseUpgrade": true,
+        "allowedHearseIds": [
+          "TRS_MERCEDES_BENZ_VITO_HEARSE",
+          "TRS_MITSUOKA_GLASS_HEARSE"
+        ],
+        "allowDurationExtension": false,
+        "dailyExtensionRateSGD": 0,
+        "cutoffMilestone": "EMBALMING_COMPLETED",
+        "upgradeTriggerDescription": "If the family decides to hold a public 3-day wake visitation, the entire package transitions to Simplicity 3-Day Buddhist (PKG_BUDDHIST_3D_SIMPLICITY) or Basic 3-Day Taoist (PKG_TAOIST_3D_BASIC)."
+      },
+      "downgradeRules": {
+        "allowed": false,
+        "reason": "Direct Cremation is the base entry-level commercial tier. For destitute or indigent cases, corporate pro bono assistance is coordinated via Solace Dignity Care Life Foundation."
+      }
+    },
+    {
+      "ruleId": "RULE-PKG-DIRECT-CREMATION-CCF",
+      "packageId": "PKG_DIRECT_CREMATION_CCF",
+      "packageName": "Direct Cremation Package (Christian / Catholic / Freethinker)",
+      "tradition": "Christian / Roman Catholic / Freethinker",
+      "tier": "Direct",
+      "venueType": "NO_WAKE",
+      "durationDays": 0,
+      "basePriceSGD": 1500,
+      "gstInclusive": false,
+      "casketIncluded": {
+        "itemId": "CSK_ECO_WOOD_S03",
+        "name": "S03 Eco-Wood Natural Finish Casket",
+        "material": "Biodegradable compressed eco-wood fiber",
+        "cremationApproved": true
+      },
+      "hearseIncluded": {
+        "itemId": "TRS_STANDARD_HEARSE",
+        "name": "Standard Multi-Purpose Hearse",
+        "type": "Direct Transfer Vehicle"
+      },
+      "inclusions": [
+        "24/7 Body Collection from hospital mortuary or private residence",
+        "Professional body preparation, sanitization, and natural facial styling",
+        "S03 Eco-Wood Cremation Casket with interior bedding and pillow",
+        "Mandai Crematorium online slot booking and permit documentation",
+        "Scheduled transfer from holding care centre to Mandai Crematorium",
+        "Pallbearer conveyance team for cortege transfer",
+        "Ash collection and safe handover or complimentary ocean scattering"
+      ],
+      "exclusions": [
+        "Wake holding venue (church hall, parlour, or HDB void deck)",
+        "Pastoral liturgy, Catholic vigil mass, or secular celebrant emcee services",
+        "Tentage, floral altar backdrop, tables, and chairs",
+        "Guest catering and refreshments",
+        "Mandai statutory cremation fee (S$315.00 SGD pass-through)",
+        "NEA statutory cremation permit fee (S$100.00 SGD pass-through)"
+      ],
+      "compatibleAddOnIds": [
+        "ADD-EMBALM-RESTORATIVE-ART",
+        "ADD-EMBALM-COLDROOM-STORAGE",
+        "ADD-EMBALM-HOUSECALL-DOCTOR-CCOD",
+        "ADD-ASH-SEA-SCATTERING-CHARTER-CHANGI",
+        "ADD-ASH-SEA-SCATTERING-LUXURY-YACHT",
+        "ADD-ASH-INLAND-GARDEN-OF-PEACE",
+        "ADD-ASH-INLAND-GARDEN-OF-SERENITY",
+        "ADD-ASH-COLUMBARIUM-GOVT-ASSIST",
+        "ADD-ASH-COLUMBARIUM-PRIVATE-NIRVANA",
+        "ADD-ASH-BIODEGRADABLE-LOTUS-URN",
+        "ADD-ASH-BIODEGRADABLE-SEASHELL-URN",
+        "ADD-ASH-KEEPSAKE-925-PENDANT",
+        "ADD-ASH-PREMIUM-MARBLE-URN",
+        "ADD-ASH-PULVERIZATION-CANISTER",
+        "ADD-FLR-SPH-PRINT-OBITUARY"
+      ],
+      "incompatibleAddOnIds": [
+        "ADD-REL-TAOIST-HOKKIEN-RITES",
+        "ADD-REL-TAOIST-TEOCHEW-RITES",
+        "ADD-REL-TAOIST-CANTONESE-RITES",
+        "ADD-REL-TAOIST-HAINANESE-RITES",
+        "ADD-REL-TAOIST-PAPER-MANSION",
+        "ADD-REL-TAOIST-JOSS-BUNDLE",
+        "ADD-VENUE-SOLACE-MEMORIAL-HALL",
+        "ADD-VENUE-HDB-PAVILION-SETUP",
+        "ADD-LOG-BUFFET-CATERING-50PAX",
+        "ADD-LOG-AIRCON-TENTAGE",
+        "ADD-CASKET-BATESVILLE-GOLD-BRONZE",
+        "ADD-CASKET-BATESVILLE-PURITAN-COPPER"
+      ],
+      "upgradeRules": {
+        "allowCasketUpgrade": true,
+        "casketCreditMethod": "DIFFERENCE_IN_LIST_PRICE",
+        "allowedCasketIds": [
+          "CSK_PEACE_E04",
+          "CSK_FAITH_W30",
+          "CSK_HALF_GLASS_ELEGANT_WHITE",
+          "CSK_HALF_GLASS_CLASSIC_BLACK",
+          "CSK_POLISHED_OAK",
+          "CSK_SUPREME_TEAK"
+        ],
+        "allowHearseUpgrade": true,
+        "allowedHearseIds": [
+          "TRS_MERCEDES_BENZ_VITO_HEARSE",
+          "TRS_MITSUOKA_GLASS_HEARSE"
+        ],
+        "allowDurationExtension": false,
+        "dailyExtensionRateSGD": 0,
+        "cutoffMilestone": "EMBALMING_COMPLETED",
+        "upgradeTriggerDescription": "Transition to Peace 3-Day Christian / Catholic / Freethinker wake package if family requests multi-day memorial visitation."
+      },
+      "downgradeRules": {
+        "allowed": false,
+        "reason": "Base direct cremation package cannot be commercially downgraded."
+      }
+    },
+    {
+      "ruleId": "RULE-PKG-BUDDHIST-3D-SIMPLICITY",
+      "packageId": "PKG_BUDDHIST_3D_SIMPLICITY",
+      "packageName": "Simplicity 3-Day Buddhist Funeral Package",
+      "tradition": "Buddhist",
+      "tier": "Standard",
+      "venueType": "HDB_VOID_DECK",
+      "durationDays": 3,
+      "basePriceSGD": 5888,
+      "gstInclusive": false,
+      "casketIncluded": {
+        "itemId": "CSK_PEACE_E04",
+        "name": "Peace Casket (E04)",
+        "material": "Engineered hardwood with satin walnut finish",
+        "cremationApproved": true
+      },
+      "hearseIncluded": {
+        "itemId": "TRS_DI_ZANG_WANG_HEARSE",
+        "name": "Traditional Di Zang Wang Pu Sa Religious Hearse",
+        "type": "Ceremonial Religious Hearse"
+      },
+      "inclusions": [
+        "24/7 Body collection, professional embalming, sanitization, and natural cosmetology",
+        "Peace Casket (E04) with silk interior and brass-plated handles",
+        "3-day HDB void deck canvas enclosure with side curtains, 10 round tables, 15 square tables, 100 chairs, industrial ceiling fans, and general ambient lighting",
+        "Buddhist Altar setup with traditional Amitabha backdrop, lotus lamps, joss pot, incense, and prayer supplies",
+        "Enlarged 10”x12” portrait photo with wooden frame and 6 passport-size keepsake photos",
+        "Fresh Chrysanthemum Floral Photo Frame Surround",
+        "Coordination of 3 ordained Buddhist Monks for 3 essential chanting sessions: Encoffinment, Final Night Vigil, and Funeral Cremation Send-off",
+        "Daily vegetarian meal offerings and fresh fruit baskets for altar dedication",
+        "Mobile hygienic chemical restroom rental with foot pump and daily sanitization runs",
+        "Di Zang Wang Pu Sa hearse and 45-seater air-conditioned bus for cortege procession to Mandai",
+        "Condolence donation safe box, guest registration book, floral water basins, and souvenir guest towels",
+        "Dedicated on-site Funeral Butler conducting twice-daily site inspections and logistics checks",
+        "Mandai Crematorium booking coordination and next-day ash collection service"
+      ],
+      "exclusions": [
+        "Food catering buffet and consumption-billed beverage carton supplies",
+        "Town Council space rental charges and utility tap metered readings (water & power billed at net cost)",
+        "Statutory NEA Mandai Cremation fee (S$315.00 SGD pass-through)",
+        "Overnight licensed security guard or night service attendant",
+        "Mercedes-Benz or Mitsuoka VIP glass hearse upgrade",
+        "Air-conditioned sealed tentage enclosure"
+      ],
+      "compatibleAddOnIds": [
+        "ADD-HEARSE-MERCEDES-VITO",
+        "ADD-HEARSE-MITSUOKA-GLASS",
+        "ADD-TRANSPORT-VIP-MINIBUS-13PAX",
+        "ADD-TRANSPORT-FAMILY-LIMOUSINE",
+        "ADD-CASKET-8SIDED-LOTUS",
+        "ADD-CASKET-DOUBLE-GLASS-LOTUS",
+        "ADD-CASKET-SUPREME-TEAK",
+        "ADD-REL-BUDDHIST-MONK-1SESSION",
+        "ADD-REL-BUDDHIST-AN-LING-49DAYS",
+        "ADD-REL-BUDDHIST-JI-LING-TEMPLE",
+        "ADD-ASH-SEA-SCATTERING-CHARTER-CHANGI",
+        "ADD-ASH-SEA-SCATTERING-BUDDHIST-BOAT",
+        "ADD-ASH-INLAND-GARDEN-OF-PEACE",
+        "ADD-ASH-COLUMBARIUM-GOVT-ASSIST",
+        "ADD-ASH-COLUMBARIUM-PRIVATE-NIRVANA",
+        "ADD-ASH-BIODEGRADABLE-LOTUS-URN",
+        "ADD-ASH-KEEPSAKE-925-PENDANT",
+        "ADD-FLR-PHOTO-ORCHID-PREMIUM",
+        "ADD-FLR-CASKET-SPRAY-FRESH",
+        "ADD-FLR-CONDOLENCE-STAND-PAIR",
+        "ADD-FLR-CUSTOM-ALTAR-BACKDROP",
+        "ADD-LOG-NIGHT-ATTENDANT",
+        "ADD-LOG-SECURITY-GUARD",
+        "ADD-LOG-AIRCON-TENTAGE",
+        "ADD-LOG-MOBILE-AIR-COOLER",
+        "ADD-LOG-BUFFET-CATERING-50PAX",
+        "ADD-LOG-BEVERAGE-CONSIGNMENT",
+        "ADD-LOG-TABLES-CHAIRS-EXTRA",
+        "ADD-LOG-LIVESTREAM-HD",
+        "ADD-FLR-DIGITAL-OBITUARY-QR",
+        "ADD-FLR-SPH-PRINT-OBITUARY"
+      ],
+      "incompatibleAddOnIds": [
+        "ADD-REL-TAOIST-HOKKIEN-RITES",
+        "ADD-REL-TAOIST-TEOCHEW-RITES",
+        "ADD-REL-TAOIST-PAPER-MANSION",
+        "ADD-REL-CHRISTIAN-PASTOR-LITURGY",
+        "ADD-REL-CATHOLIC-VIGIL-MASS",
+        "ADD-REL-SOKA-DAIMOKU-WHITE-ALTAR",
+        "ADD-REL-HINDU-PRIEST-RITES",
+        "ADD-CASKET-BATESVILLE-GOLD-BRONZE",
+        "ADD-CASKET-BATESVILLE-PURITAN-COPPER"
+      ],
+      "upgradeRules": {
+        "allowCasketUpgrade": true,
+        "casketCreditMethod": "DIFFERENCE_IN_LIST_PRICE",
+        "allowedCasketIds": [
+          "CSK_HALF_GLASS_CHENGAI",
+          "CSK_DOUBLE_GLASS_LOTUS",
+          "CSK_EIGHT_SIDED_LOTUS",
+          "CSK_POLISHED_OAK",
+          "CSK_SUPREME_TEAK"
+        ],
+        "allowHearseUpgrade": true,
+        "allowedHearseIds": [
+          "TRS_MERCEDES_BENZ_VITO_HEARSE",
+          "TRS_MITSUOKA_GLASS_HEARSE"
+        ],
+        "allowDurationExtension": true,
+        "dailyExtensionRateSGD": 350,
+        "cutoffMilestone": "EMBALMING_COMPLETED",
+        "upgradeTriggerDescription": "Upgrade to Value 3-Day Buddhist (PKG_BUDDHIST_3D_VALUE) for 8-sided lotus casket, Mercedes hearse, full white drapery styling, and night attendant."
+      },
+      "downgradeRules": {
+        "allowed": true,
+        "conditions": "Allowed only prior to physical tentage erection or embalming commencement.",
+        "adminFeeSGD": 150,
+        "cutoffMilestone": "PRIOR_TO_DISPATCH",
+        "reason": "Downgrade to Direct Cremation permitted if family decides against a multi-day wake before logistics dispatch."
+      }
+    },
+    {
+      "ruleId": "RULE-PKG-BUDDHIST-3D-VALUE",
+      "packageId": "PKG_BUDDHIST_3D_VALUE",
+      "packageName": "Value 3-Day Buddhist Funeral Package",
+      "tradition": "Buddhist",
+      "tier": "Deluxe",
+      "venueType": "HDB_VOID_DECK",
+      "durationDays": 3,
+      "basePriceSGD": 10999,
+      "gstInclusive": false,
+      "casketIncluded": {
+        "itemId": "CSK_EIGHT_SIDED_LOTUS",
+        "name": "8-Sided Lotus Spiritual Casket (S803)",
+        "material": "Selected solid layered timber with octagonal lotus mouldings",
+        "cremationApproved": true
+      },
+      "hearseIncluded": {
+        "itemId": "TRS_MERCEDES_BENZ_VITO_HEARSE",
+        "name": "Mercedes-Benz Vito Funeral Hearse",
+        "type": "Luxury Modern Hearse"
+      },
+      "inclusions": [
+        "Executive embalming, sanitization, facial reconstruction, and restorative cosmetology",
+        "8-Sided Lotus Spiritual Casket (S803) with deluxe velvet interior",
+        "Mandai Cremation statutory booking fee included in package quotation",
+        "Full luxury white fabric drapery and carpeted void deck setup with modern recessed warm downlights, 12 round tables, 15 square tables, 120 chairs, and large industrial fans",
+        "Deluxe Buddhist Altar setup with illuminated Buddha backdrop, Amitabha tapestry, golden prayer bowls, and premium incense",
+        "Curated Photo Enlargement with artisan wooden frame and 6 passport photos",
+        "Fresh Floral Casablanca Lily & Orchid Photo Frame Surround",
+        "Fresh Floral Casket Spray (Coffin Top Arrangement)",
+        "Coordination of 3 ordained Buddhist Monks for 3 chanting sessions",
+        "Daily deluxe vegetarian food offerings and curated fruit arrangements",
+        "1 Night Service Attendant deployed on final wake vigil night (10:00 PM - 6:00 AM)",
+        "Mercedes-Benz Vito Hearse and 45-seater air-conditioned coach for funeral procession",
+        "1 unit Industrial Evaporative Mobile Air-Cooler included for wake duration",
+        "Luxury mobile chemical restroom unit with regular servicing",
+        "Full bereavement stationery, donation safe box, flower water, and guest souvenirs",
+        "Dedicated Funeral Director and Butler team on-site"
+      ],
+      "exclusions": [
+        "Buffet catering meals for visiting guests",
+        "Consignment beverage carton consumption",
+        "Town Council metered electricity and water billing",
+        "24/7 overnight armed security guard (available as add-on)"
+      ],
+      "compatibleAddOnIds": [
+        "ADD-HEARSE-MITSUOKA-GLASS",
+        "ADD-TRANSPORT-VIP-MINIBUS-13PAX",
+        "ADD-TRANSPORT-FAMILY-LIMOUSINE",
+        "ADD-CASKET-SUPREME-TEAK",
+        "ADD-REL-BUDDHIST-MONK-1SESSION",
+        "ADD-REL-BUDDHIST-AN-LING-49DAYS",
+        "ADD-REL-BUDDHIST-JI-LING-TEMPLE",
+        "ADD-ASH-SEA-SCATTERING-CHARTER-CHANGI",
+        "ADD-ASH-SEA-SCATTERING-BUDDHIST-BOAT",
+        "ADD-ASH-SEA-SCATTERING-LUXURY-YACHT",
+        "ADD-ASH-INLAND-GARDEN-OF-PEACE",
+        "ADD-ASH-COLUMBARIUM-GOVT-ASSIST",
+        "ADD-ASH-COLUMBARIUM-PRIVATE-NIRVANA",
+        "ADD-FLR-CUSTOM-ALTAR-BACKDROP",
+        "ADD-LOG-AIRCON-TENTAGE",
+        "ADD-LOG-SECURITY-GUARD",
+        "ADD-LOG-BUFFET-CATERING-50PAX",
+        "ADD-LOG-BEVERAGE-CONSIGNMENT",
+        "ADD-LOG-LIVESTREAM-HD",
+        "ADD-FLR-DIGITAL-OBITUARY-QR",
+        "ADD-FLR-SPH-PRINT-OBITUARY"
+      ],
+      "incompatibleAddOnIds": [
+        "ADD-REL-TAOIST-HOKKIEN-RITES",
+        "ADD-REL-TAOIST-PAPER-MANSION",
+        "ADD-REL-CHRISTIAN-PASTOR-LITURGY",
+        "ADD-REL-CATHOLIC-VIGIL-MASS",
+        "ADD-CASKET-BATESVILLE-GOLD-BRONZE",
+        "ADD-CASKET-BATESVILLE-PURITAN-COPPER"
+      ],
+      "upgradeRules": {
+        "allowCasketUpgrade": true,
+        "casketCreditMethod": "DIFFERENCE_IN_LIST_PRICE",
+        "allowedCasketIds": [
+          "CSK_DOUBLE_GLASS_LOTUS",
+          "CSK_SUPREME_TEAK"
+        ],
+        "allowHearseUpgrade": true,
+        "allowedHearseIds": [
+          "TRS_MITSUOKA_GLASS_HEARSE"
+        ],
+        "allowDurationExtension": true,
+        "dailyExtensionRateSGD": 350,
+        "cutoffMilestone": "EMBALMING_COMPLETED",
+        "upgradeTriggerDescription": "Upgrade to Mitsuoka VIP Glass hearse or Burmese solid teak casket for bespoke heritage presentation."
+      },
+      "downgradeRules": {
+        "allowed": true,
+        "conditions": "Subject to S$250 restructuring fee if tentage fabric has been cut or prepared.",
+        "adminFeeSGD": 250,
+        "cutoffMilestone": "PRIOR_TO_DISPATCH",
+        "reason": "Downgrades locked once transport and drapery crew arrive on site."
+      }
+    },
+    {
+      "ruleId": "RULE-PKG-TAOIST-3D-BASIC",
+      "packageId": "PKG_TAOIST_3D_BASIC",
+      "packageName": "Basic 3-Day Taoist Funeral Package",
+      "tradition": "Taoist",
+      "tier": "Standard",
+      "venueType": "HDB_VOID_DECK",
+      "durationDays": 3,
+      "basePriceSGD": 7888,
+      "gstInclusive": false,
+      "casketIncluded": {
+        "itemId": "CSK_PEACE_E04",
+        "name": "Peace Casket (E04)",
+        "material": "Engineered hardwood with satin walnut finish",
+        "cremationApproved": true
+      },
+      "hearseIncluded": {
+        "itemId": "TRS_DI_ZANG_WANG_HEARSE",
+        "name": "Traditional Di Zang Wang Pu Sa Hearse",
+        "type": "Ceremonial Religious Hearse"
+      },
+      "inclusions": [
+        "24/7 Body collection, professional embalming, sanitization, and natural cosmetology",
+        "Peace Casket (E04) with traditional interior linings",
+        "3-day HDB void deck canvas enclosure with curtains, traditional paper lanterns, 10 round tables, 15 square tables, 100 chairs, industrial fans, and lighting",
+        "Traditional Taoist Altar setup with San Qing (三清) sacred backdrop, oil lamps, joss pots, and ceremonial ritual supplies",
+        "Enlarged 10”x12” photo with frame and 6 passport photos",
+        "Fresh Floral Chrysanthemum Photo Frame Surround",
+        "Ordained Taoist Priest Troupe chanting rituals tailored to chosen dialect (Hokkien, Teochew, Cantonese, or Hainanese) covering Encoffinment, Poh Tey Gek (Breaking Hell), Kua Kio (Crossing the Bridge), and Funeral Send-off",
+        "Daily ceremonial food offerings (meat & vegetarian sets) and fresh fruit baskets",
+        "Safe metal combustion burn cage / incineration tray for joss paper burning compliance",
+        "Standard joss paper and incense prayer starter kit",
+        "Mobile chemical restroom with regular sanitization runs",
+        "Di Zang Wang hearse and 45-seater air-conditioned coach for funeral procession to Mandai",
+        "Donation safe box, registration book, flower water, and guest bereavement towels",
+        "Mandai Cremation slot booking coordination and next-day ash handover"
+      ],
+      "exclusions": [
+        "Elaborate 2-storey paper mansion effigies and paper luxury car (available as add-on)",
+        "Extra bulk pre-folded joss paper ingots beyond starter kit",
+        "Guest buffet catering and consumed drinks cartons",
+        "Town Council space rental and utility tap charges",
+        "Statutory NEA cremation booking fee (S$315.00 SGD pass-through)",
+        "Night service attendant or overnight security officer"
+      ],
+      "compatibleAddOnIds": [
+        "ADD-HEARSE-MERCEDES-VITO",
+        "ADD-HEARSE-MITSUOKA-GLASS",
+        "ADD-TRANSPORT-VIP-MINIBUS-13PAX",
+        "ADD-TRANSPORT-FAMILY-LIMOUSINE",
+        "ADD-CASKET-HALF-GLASS-CHENGAI",
+        "ADD-CASKET-DOUBLE-GLASS-LOTUS",
+        "ADD-CASKET-DRAGON-BAIFU",
+        "ADD-CASKET-SUPREME-TEAK",
+        "ADD-REL-TAOIST-PAPER-MANSION",
+        "ADD-REL-TAOIST-JOSS-BUNDLE",
+        "ADD-REL-BUDDHIST-AN-LING-49DAYS",
+        "ADD-REL-BUDDHIST-JI-LING-TEMPLE",
+        "ADD-ASH-SEA-SCATTERING-CHARTER-CHANGI",
+        "ADD-ASH-INLAND-GARDEN-OF-PEACE",
+        "ADD-ASH-COLUMBARIUM-GOVT-ASSIST",
+        "ADD-ASH-COLUMBARIUM-PRIVATE-NIRVANA",
+        "ADD-FLR-PHOTO-ORCHID-PREMIUM",
+        "ADD-FLR-CASKET-SPRAY-FRESH",
+        "ADD-FLR-CONDOLENCE-STAND-PAIR",
+        "ADD-LOG-NIGHT-ATTENDANT",
+        "ADD-LOG-SECURITY-GUARD",
+        "ADD-LOG-AIRCON-TENTAGE",
+        "ADD-LOG-BUFFET-CATERING-50PAX",
+        "ADD-LOG-BEVERAGE-CONSIGNMENT",
+        "ADD-LOG-TABLES-CHAIRS-EXTRA",
+        "ADD-LOG-LIVESTREAM-HD",
+        "ADD-FLR-DIGITAL-OBITUARY-QR",
+        "ADD-FLR-SPH-PRINT-OBITUARY"
+      ],
+      "incompatibleAddOnIds": [
+        "ADD-REL-CHRISTIAN-PASTOR-LITURGY",
+        "ADD-REL-CATHOLIC-VIGIL-MASS",
+        "ADD-REL-SOKA-DAIMOKU-WHITE-ALTAR",
+        "ADD-REL-HINDU-PRIEST-RITES",
+        "ADD-CASKET-BATESVILLE-GOLD-BRONZE",
+        "ADD-CASKET-BATESVILLE-PURITAN-COPPER"
+      ],
+      "upgradeRules": {
+        "allowCasketUpgrade": true,
+        "casketCreditMethod": "DIFFERENCE_IN_LIST_PRICE",
+        "allowedCasketIds": [
+          "CSK_HALF_GLASS_CHENGAI",
+          "CSK_DOUBLE_GLASS_LOTUS",
+          "CSK_HANDCRAFTED_DRAGON_BAIFU",
+          "CSK_SUPREME_TEAK"
+        ],
+        "allowHearseUpgrade": true,
+        "allowedHearseIds": [
+          "TRS_MERCEDES_BENZ_VITO_HEARSE",
+          "TRS_MITSUOKA_GLASS_HEARSE"
+        ],
+        "allowDurationExtension": true,
+        "dailyExtensionRateSGD": 350,
+        "cutoffMilestone": "EMBALMING_COMPLETED",
+        "upgradeTriggerDescription": "Upgrade to Value 3-Day Taoist (PKG_TAOIST_3D_VALUE) for Hops high-gloss casket, Mercedes hearse, paper mansion effigies, and dedicated night staffing."
+      },
+      "downgradeRules": {
+        "allowed": true,
+        "conditions": "Cancellation of Taoist priest booking must be made at least 12 hours prior to scheduled wake start to avoid priest honorarium forfeit.",
+        "adminFeeSGD": 300,
+        "cutoffMilestone": "PRIOR_TO_DISPATCH",
+        "reason": "Priest troupe allocations involve dialect-specific ordination scheduling."
+      }
+    },
+    {
+      "ruleId": "RULE-PKG-TAOIST-3D-VALUE",
+      "packageId": "PKG_TAOIST_3D_VALUE",
+      "packageName": "Value 3-Day Taoist Funeral Package",
+      "tradition": "Taoist",
+      "tier": "Deluxe",
+      "venueType": "HDB_VOID_DECK",
+      "durationDays": 3,
+      "basePriceSGD": 12888,
+      "gstInclusive": false,
+      "casketIncluded": {
+        "itemId": "CSK_HOPS_S803",
+        "name": "Hops Casket (S803)",
+        "material": "Solid layered timber with polished high-gloss mahogany finish and golden trim",
+        "cremationApproved": true
+      },
+      "hearseIncluded": {
+        "itemId": "TRS_MERCEDES_BENZ_VITO_HEARSE",
+        "name": "Mercedes-Benz Vito Funeral Hearse",
+        "type": "Luxury Modern Hearse"
+      },
+      "inclusions": [
+        "Executive embalming, sanitization, and specialized restorative cosmetology",
+        "Hops Casket (S803) with high-gloss mahogany finish and golden beveled edge",
+        "Statutory Mandai Cremation booking fee covered in quotation",
+        "Complete deluxe void deck setup with fabric drapery, lanterns, ambient LED fixtures, 12 round tables, 15 square tables, 120 chairs, and industrial fans",
+        "Grand Taoist Altar setup with hand-painted San Qing tapestries, porcelain incense vessels, brass gongs, and premium ritual accoutrements",
+        "Curated Photo Enlargement with frame and 6 passport photos",
+        "Fresh Floral Casablanca Lily Photo Surround",
+        "Fresh Floral Casket Spray",
+        "Full Taoist Priest Troupe (selected dialect) conducting 4 complete ritual chapters including Breaking Hell, Crossing the Bridge, and Night Vigil Chant",
+        "Elaborate 2-Storey Paper Mansion Effigy with paper servants, gold mountain, silver mountain, and luxury vehicle included",
+        "Large bundle of pre-folded gold/silver joss paper ingots and safe combustion burning cage",
+        "1 Night Service Attendant on duty for final wake vigil night (10:00 PM - 6:00 AM)",
+        "Mercedes-Benz Vito Hearse and 45-seater air-conditioned coach for cortege procession",
+        "1 unit Industrial Mobile Air-Cooler and luxury chemical mobile toilet",
+        "Bereavement stationery kit, donation safe box, flower water, and guest souvenirs",
+        "Dedicated Funeral Director and on-site Butler"
+      ],
+      "exclusions": [
+        "Guest buffet catering meals",
+        "Consignment drink cartons consumed",
+        "Town Council utilities tap charges",
+        "Overnight licensed security officer"
+      ],
+      "compatibleAddOnIds": [
+        "ADD-HEARSE-MITSUOKA-GLASS",
+        "ADD-TRANSPORT-VIP-MINIBUS-13PAX",
+        "ADD-TRANSPORT-FAMILY-LIMOUSINE",
+        "ADD-CASKET-DRAGON-BAIFU",
+        "ADD-CASKET-SUPREME-TEAK",
+        "ADD-REL-BUDDHIST-AN-LING-49DAYS",
+        "ADD-REL-BUDDHIST-JI-LING-TEMPLE",
+        "ADD-ASH-SEA-SCATTERING-CHARTER-CHANGI",
+        "ADD-ASH-INLAND-GARDEN-OF-PEACE",
+        "ADD-ASH-COLUMBARIUM-GOVT-ASSIST",
+        "ADD-ASH-COLUMBARIUM-PRIVATE-NIRVANA",
+        "ADD-FLR-CUSTOM-ALTAR-BACKDROP",
+        "ADD-LOG-AIRCON-TENTAGE",
+        "ADD-LOG-SECURITY-GUARD",
+        "ADD-LOG-BUFFET-CATERING-50PAX",
+        "ADD-LOG-BEVERAGE-CONSIGNMENT",
+        "ADD-LOG-LIVESTREAM-HD",
+        "ADD-FLR-DIGITAL-OBITUARY-QR",
+        "ADD-FLR-SPH-PRINT-OBITUARY"
+      ],
+      "incompatibleAddOnIds": [
+        "ADD-REL-CHRISTIAN-PASTOR-LITURGY",
+        "ADD-REL-CATHOLIC-VIGIL-MASS",
+        "ADD-REL-SOKA-DAIMOKU-WHITE-ALTAR",
+        "ADD-CASKET-BATESVILLE-GOLD-BRONZE",
+        "ADD-CASKET-BATESVILLE-PURITAN-COPPER"
+      ],
+      "upgradeRules": {
+        "allowCasketUpgrade": true,
+        "casketCreditMethod": "DIFFERENCE_IN_LIST_PRICE",
+        "allowedCasketIds": [
+          "CSK_HANDCRAFTED_DRAGON_BAIFU",
+          "CSK_SUPREME_TEAK"
+        ],
+        "allowHearseUpgrade": true,
+        "allowedHearseIds": [
+          "TRS_MITSUOKA_GLASS_HEARSE"
+        ],
+        "allowDurationExtension": true,
+        "dailyExtensionRateSGD": 350,
+        "cutoffMilestone": "EMBALMING_COMPLETED",
+        "upgradeTriggerDescription": "Upgrade to handcrafted dragon casket or Mitsuoka VIP glass hearse for supreme traditional prestige."
+      },
+      "downgradeRules": {
+        "allowed": true,
+        "conditions": "Paper mansion effigy orders are non-refundable once paper craftsman commences assembly (typically 24 hours prior to wake setup).",
+        "adminFeeSGD": 400,
+        "cutoffMilestone": "PRIOR_TO_DISPATCH",
+        "reason": "Custom handcrafted paper items cannot be returned to suppliers."
+      }
+    },
+    {
+      "ruleId": "RULE-PKG-CHRISTIAN-3D-PEACE",
+      "packageId": "PKG_CHRISTIAN_3D_PEACE",
+      "packageName": "Peace 3-Day Christian Funeral Package",
+      "tradition": "Christian",
+      "tier": "Standard",
+      "venueType": "HDB_VOID_DECK",
+      "durationDays": 3,
+      "basePriceSGD": 4999,
+      "gstInclusive": false,
+      "casketIncluded": {
+        "itemId": "CSK_PEACE_E04",
+        "name": "Peace Casket with Cross Emblem (E04)",
+        "material": "Engineered hardwood with satin lacquer and gold cross fixture",
+        "cremationApproved": true
+      },
+      "hearseIncluded": {
+        "itemId": "TRS_STANDARD_HEARSE",
+        "name": "Standard Multi-Purpose Hearse",
+        "type": "Standard Hearse"
+      },
+      "inclusions": [
+        "24/7 Body collection, professional embalming, sanitization, dressing, and cosmetological styling",
+        "Peace Casket (E04) with crucifix/cross mount and white satin lining",
+        "3-day HDB void deck canvas enclosure with clean white drapery accents, 10 round tables, 15 square tables, 100 chairs, industrial fans, and lighting",
+        "Christian Altar setup with wooden cross centerpiece, electric candles, and floral podium",
+        "50 Customized Printed Christian Hymn Booklets featuring selected scriptures and hymns",
+        "Enlarged 10”x12” portrait photo with frame and 6 passport photos",
+        "Fresh Floral Chrysanthemum & Lily Photo Frame Surround",
+        "Pastor and church ministry service liaison for nightly memorial services and final send-off liturgy",
+        "Mobile hygienic chemical restroom rental with regular servicing",
+        "Standard Hearse and 45-seater air-conditioned coach for funeral procession to Mandai",
+        "Condolence donation safe box, guest attendance register, and guest memorial souvenir towels",
+        "Dedicated Funeral Butler conducting daily inspections and family assistance",
+        "Mandai Crematorium booking coordination and next-day ash handover"
+      ],
+      "exclusions": [
+        "Food catering buffet for guests and consumption beverage packs",
+        "Town Council space rental and utility tap charges",
+        "Statutory NEA Mandai Cremation fee (S$315.00 SGD pass-through)",
+        "Night service attendant or overnight security officer",
+        "Mercedes-Benz or Mitsuoka glass hearse upgrade",
+        "Air-conditioned tentage enclosure"
+      ],
+      "compatibleAddOnIds": [
+        "ADD-HEARSE-MERCEDES-VITO",
+        "ADD-HEARSE-MITSUOKA-GLASS",
+        "ADD-TRANSPORT-VIP-MINIBUS-13PAX",
+        "ADD-TRANSPORT-FAMILY-LIMOUSINE",
+        "ADD-CASKET-FAITH-W30",
+        "ADD-CASKET-HALF-GLASS-WHITE",
+        "ADD-CASKET-HALF-GLASS-BLACK",
+        "ADD-CASKET-POLISHED-OAK",
+        "ADD-CASKET-SUPREME-TEAK",
+        "ADD-ASH-SEA-SCATTERING-CHARTER-CHANGI",
+        "ADD-ASH-SEA-SCATTERING-LUXURY-YACHT",
+        "ADD-ASH-INLAND-GARDEN-OF-PEACE",
+        "ADD-ASH-INLAND-GARDEN-OF-SERENITY",
+        "ADD-ASH-COLUMBARIUM-GOVT-ASSIST",
+        "ADD-ASH-COLUMBARIUM-PRIVATE-NIRVANA",
+        "ADD-ASH-BIODEGRADABLE-LOTUS-URN",
+        "ADD-ASH-BIODEGRADABLE-SEASHELL-URN",
+        "ADD-ASH-KEEPSAKE-925-PENDANT",
+        "ADD-ASH-PREMIUM-MARBLE-URN",
+        "ADD-FLR-PHOTO-ORCHID-PREMIUM",
+        "ADD-FLR-CASKET-SPRAY-FRESH",
+        "ADD-FLR-CONDOLENCE-STAND-PAIR",
+        "ADD-FLR-CUSTOM-ALTAR-BACKDROP",
+        "ADD-LOG-NIGHT-ATTENDANT",
+        "ADD-LOG-SECURITY-GUARD",
+        "ADD-LOG-AIRCON-TENTAGE",
+        "ADD-LOG-MOBILE-AIR-COOLER",
+        "ADD-LOG-BUFFET-CATERING-50PAX",
+        "ADD-LOG-BEVERAGE-CONSIGNMENT",
+        "ADD-LOG-TABLES-CHAIRS-EXTRA",
+        "ADD-LOG-PA-SOUND-SYSTEM",
+        "ADD-LOG-LIVESTREAM-HD",
+        "ADD-FLR-DIGITAL-OBITUARY-QR",
+        "ADD-FLR-SPH-PRINT-OBITUARY"
+      ],
+      "incompatibleAddOnIds": [
+        "ADD-REL-TAOIST-HOKKIEN-RITES",
+        "ADD-REL-TAOIST-TEOCHEW-RITES",
+        "ADD-REL-TAOIST-CANTONESE-RITES",
+        "ADD-REL-TAOIST-HAINANESE-RITES",
+        "ADD-REL-TAOIST-PAPER-MANSION",
+        "ADD-REL-TAOIST-JOSS-BUNDLE",
+        "ADD-REL-BUDDHIST-MONK-3SESSIONS",
+        "ADD-REL-SOKA-DAIMOKU-WHITE-ALTAR",
+        "ADD-REL-HINDU-PRIEST-RITES",
+        "ADD-CASKET-BATESVILLE-GOLD-BRONZE",
+        "ADD-CASKET-BATESVILLE-PURITAN-COPPER"
+      ],
+      "upgradeRules": {
+        "allowCasketUpgrade": true,
+        "casketCreditMethod": "DIFFERENCE_IN_LIST_PRICE",
+        "allowedCasketIds": [
+          "CSK_FAITH_W30",
+          "CSK_HALF_GLASS_ELEGANT_WHITE",
+          "CSK_HALF_GLASS_CLASSIC_BLACK",
+          "CSK_POLISHED_OAK",
+          "CSK_SUPREME_TEAK"
+        ],
+        "allowHearseUpgrade": true,
+        "allowedHearseIds": [
+          "TRS_MERCEDES_BENZ_VITO_HEARSE",
+          "TRS_MITSUOKA_GLASS_HEARSE"
+        ],
+        "allowDurationExtension": true,
+        "dailyExtensionRateSGD": 350,
+        "cutoffMilestone": "EMBALMING_COMPLETED",
+        "upgradeTriggerDescription": "Upgrade to Faith 3-Day Christian (PKG_CHRISTIAN_3D_FAITH) for pristine white Faith casket, Mercedes hearse, casket floral spray, and sound system."
+      },
+      "downgradeRules": {
+        "allowed": true,
+        "conditions": "Permitted prior to tentage setup.",
+        "adminFeeSGD": 150,
+        "cutoffMilestone": "PRIOR_TO_DISPATCH",
+        "reason": "Downgrade to Direct Cremation available prior to logistics execution."
+      }
+    },
+    {
+      "ruleId": "RULE-PKG-CHRISTIAN-3D-FAITH",
+      "packageId": "PKG_CHRISTIAN_3D_FAITH",
+      "packageName": "Faith 3-Day Christian Funeral Package",
+      "tradition": "Christian",
+      "tier": "Deluxe",
+      "venueType": "HDB_VOID_DECK",
+      "durationDays": 3,
+      "basePriceSGD": 9333,
+      "gstInclusive": false,
+      "casketIncluded": {
+        "itemId": "CSK_FAITH_W30",
+        "name": "Faith Casket (W30)",
+        "material": "Pristine white hardwood with swing-bar handles and white velvet interior",
+        "cremationApproved": true
+      },
+      "hearseIncluded": {
+        "itemId": "TRS_MERCEDES_BENZ_VITO_HEARSE",
+        "name": "Mercedes-Benz Vito Funeral Hearse",
+        "type": "Luxury Modern Hearse"
+      },
+      "inclusions": [
+        "Executive embalming, sanitization, and restorative cosmetology",
+        "Faith Casket (W30) in immaculate white or warm oak finish with velvet interior",
+        "Mandai Cremation booking fee covered in quotation",
+        "Full luxury white fabric drapery and carpeted void deck setup with modern recessed downlights, 12 round tables, 15 square tables, 120 chairs, and fans",
+        "Deluxe Christian Altar setup with cross pedestal, twin candelabras, and floral presentation stands",
+        "70 Customized Printed Christian Hymn Booklets",
+        "Curated Photo Enlargement with frame and 6 passport photos",
+        "Fresh Floral Orchid & Casablanca Lily Photo Frame Surround",
+        "Fresh Floral Casket Spray (Coffin Top Arrangement)",
+        "Professional PA sound system with wireless microphones for pastor sermons and praise worship",
+        "1 unit Industrial Mobile Evaporative Air-Cooler for guest comfort",
+        "1 Night Service Attendant on duty for final wake night (10:00 PM - 6:00 AM)",
+        "Mercedes-Benz Vito Hearse and 45-seater air-conditioned coach for funeral procession",
+        "Luxury chemical mobile restroom unit with daily servicing",
+        "Bereavement stationery kit, donation safe box, flower water, and guest souvenirs",
+        "Dedicated Funeral Director and Butler team"
+      ],
+      "exclusions": [
+        "Food catering buffet for guests",
+        "Consignment beverage cartons consumed",
+        "Town Council utility meter readings",
+        "Overnight licensed security guard"
+      ],
+      "compatibleAddOnIds": [
+        "ADD-HEARSE-MITSUOKA-GLASS",
+        "ADD-TRANSPORT-VIP-MINIBUS-13PAX",
+        "ADD-TRANSPORT-FAMILY-LIMOUSINE",
+        "ADD-CASKET-POLISHED-OAK",
+        "ADD-CASKET-SUPREME-TEAK",
+        "ADD-ASH-SEA-SCATTERING-CHARTER-CHANGI",
+        "ADD-ASH-SEA-SCATTERING-LUXURY-YACHT",
+        "ADD-ASH-INLAND-GARDEN-OF-PEACE",
+        "ADD-ASH-COLUMBARIUM-GOVT-ASSIST",
+        "ADD-ASH-COLUMBARIUM-PRIVATE-NIRVANA",
+        "ADD-FLR-CUSTOM-ALTAR-BACKDROP",
+        "ADD-LOG-AIRCON-TENTAGE",
+        "ADD-LOG-SECURITY-GUARD",
+        "ADD-LOG-BUFFET-CATERING-50PAX",
+        "ADD-LOG-BEVERAGE-CONSIGNMENT",
+        "ADD-LOG-LIVESTREAM-HD",
+        "ADD-FLR-DIGITAL-OBITUARY-QR",
+        "ADD-FLR-SPH-PRINT-OBITUARY"
+      ],
+      "incompatibleAddOnIds": [
+        "ADD-REL-TAOIST-HOKKIEN-RITES",
+        "ADD-REL-TAOIST-PAPER-MANSION",
+        "ADD-REL-BUDDHIST-MONK-3SESSIONS",
+        "ADD-REL-SOKA-DAIMOKU-WHITE-ALTAR",
+        "ADD-CASKET-BATESVILLE-GOLD-BRONZE",
+        "ADD-CASKET-BATESVILLE-PURITAN-COPPER"
+      ],
+      "upgradeRules": {
+        "allowCasketUpgrade": true,
+        "casketCreditMethod": "DIFFERENCE_IN_LIST_PRICE",
+        "allowedCasketIds": [
+          "CSK_POLISHED_OAK",
+          "CSK_SUPREME_TEAK"
+        ],
+        "allowHearseUpgrade": true,
+        "allowedHearseIds": [
+          "TRS_MITSUOKA_GLASS_HEARSE"
+        ],
+        "allowDurationExtension": true,
+        "dailyExtensionRateSGD": 350,
+        "cutoffMilestone": "EMBALMING_COMPLETED",
+        "upgradeTriggerDescription": "Upgrade to solid American Oak or Mitsuoka VIP Glass Hearse for bespoke luxury commemoration."
+      },
+      "downgradeRules": {
+        "allowed": true,
+        "conditions": "Permitted prior to tentage setup with S$200 administration deduction.",
+        "adminFeeSGD": 200,
+        "cutoffMilestone": "PRIOR_TO_DISPATCH",
+        "reason": "Downgrades locked once transport team commences on-site setup."
+      }
+    },
+    {
+      "ruleId": "RULE-PKG-CATHOLIC-3D-PEACE",
+      "packageId": "PKG_CATHOLIC_3D_PEACE",
+      "packageName": "Peace 3-Day Roman Catholic Funeral Package",
+      "tradition": "Roman Catholic",
+      "tier": "Standard",
+      "venueType": "HDB_VOID_DECK",
+      "durationDays": 3,
+      "basePriceSGD": 4999,
+      "gstInclusive": false,
+      "casketIncluded": {
+        "itemId": "CSK_PEACE_E04",
+        "name": "Peace Casket with Crucifix (E04)",
+        "material": "Engineered hardwood with walnut satin finish and Catholic crucifix",
+        "cremationApproved": true
+      },
+      "hearseIncluded": {
+        "itemId": "TRS_STANDARD_HEARSE",
+        "name": "Standard Multi-Purpose Hearse",
+        "type": "Standard Hearse"
+      },
+      "inclusions": [
+        "24/7 Body collection, professional embalming, sanitization, and natural cosmetology",
+        "Peace Casket (E04) with Catholic crucifix emblem and satin bedding",
+        "3-day HDB void deck canvas enclosure with clean drapery, 10 round tables, 15 square tables, 100 chairs, industrial fans, and lighting",
+        "Catholic Altar setup with Holy Crucifix, vigil candles, Holy Water vessel, and prayer kneeler",
+        "Parish priest and ministry coordination for nightly Rosary prayers and Church Funeral Mass liturgy",
+        "50 Customized Catholic Vigil Prayer & Hymn Booklets",
+        "Enlarged 10”x12” photo with frame and 6 passport photos",
+        "Fresh Floral Chrysanthemum Photo Frame Surround",
+        "Mobile hygienic chemical restroom rental with regular servicing",
+        "Standard Hearse and 45-seater air-conditioned coach for funeral procession to Church / Mandai",
+        "Condolence donation safe box, registration book, and guest memorial souvenir towels",
+        "Dedicated Funeral Butler conducting daily inspections and family assistance",
+        "Mandai Crematorium booking coordination and next-day ash handover"
+      ],
+      "exclusions": [
+        "Food catering buffet for guests and consumption beverage packs",
+        "Church hall booking fees (paid directly to parish)",
+        "Town Council space rental and utility tap charges",
+        "Statutory NEA Mandai Cremation fee (S$315.00 SGD pass-through)",
+        "Night service attendant or overnight security officer"
+      ],
+      "compatibleAddOnIds": [
+        "ADD-HEARSE-MERCEDES-VITO",
+        "ADD-HEARSE-MITSUOKA-GLASS",
+        "ADD-TRANSPORT-VIP-MINIBUS-13PAX",
+        "ADD-TRANSPORT-FAMILY-LIMOUSINE",
+        "ADD-CASKET-FAITH-W30",
+        "ADD-CASKET-HALF-GLASS-WHITE",
+        "ADD-CASKET-POLISHED-OAK",
+        "ADD-CASKET-SUPREME-TEAK",
+        "ADD-ASH-SEA-SCATTERING-CHARTER-CHANGI",
+        "ADD-ASH-INLAND-GARDEN-OF-PEACE",
+        "ADD-ASH-COLUMBARIUM-GOVT-ASSIST",
+        "ADD-ASH-COLUMBARIUM-PRIVATE-NIRVANA",
+        "ADD-FLR-PHOTO-ORCHID-PREMIUM",
+        "ADD-FLR-CASKET-SPRAY-FRESH",
+        "ADD-FLR-CONDOLENCE-STAND-PAIR",
+        "ADD-LOG-NIGHT-ATTENDANT",
+        "ADD-LOG-SECURITY-GUARD",
+        "ADD-LOG-AIRCON-TENTAGE",
+        "ADD-LOG-BUFFET-CATERING-50PAX",
+        "ADD-LOG-BEVERAGE-CONSIGNMENT",
+        "ADD-LOG-PA-SOUND-SYSTEM",
+        "ADD-LOG-LIVESTREAM-HD",
+        "ADD-FLR-DIGITAL-OBITUARY-QR",
+        "ADD-FLR-SPH-PRINT-OBITUARY"
+      ],
+      "incompatibleAddOnIds": [
+        "ADD-REL-TAOIST-HOKKIEN-RITES",
+        "ADD-REL-TAOIST-PAPER-MANSION",
+        "ADD-REL-BUDDHIST-MONK-3SESSIONS",
+        "ADD-REL-SOKA-DAIMOKU-WHITE-ALTAR",
+        "ADD-CASKET-BATESVILLE-GOLD-BRONZE",
+        "ADD-CASKET-BATESVILLE-PURITAN-COPPER"
+      ],
+      "upgradeRules": {
+        "allowCasketUpgrade": true,
+        "casketCreditMethod": "DIFFERENCE_IN_LIST_PRICE",
+        "allowedCasketIds": [
+          "CSK_FAITH_W30",
+          "CSK_HALF_GLASS_ELEGANT_WHITE",
+          "CSK_POLISHED_OAK",
+          "CSK_SUPREME_TEAK"
+        ],
+        "allowHearseUpgrade": true,
+        "allowedHearseIds": [
+          "TRS_MERCEDES_BENZ_VITO_HEARSE",
+          "TRS_MITSUOKA_GLASS_HEARSE"
+        ],
+        "allowDurationExtension": true,
+        "dailyExtensionRateSGD": 350,
+        "cutoffMilestone": "EMBALMING_COMPLETED",
+        "upgradeTriggerDescription": "Upgrade to Faith 3-Day Catholic (PKG_CATHOLIC_3D_FAITH) for Faith casket, Mercedes hearse, and night staffing."
+      },
+      "downgradeRules": {
+        "allowed": true,
+        "conditions": "Permitted prior to tentage setup.",
+        "adminFeeSGD": 150,
+        "cutoffMilestone": "PRIOR_TO_DISPATCH",
+        "reason": "Downgrades locked once transport team commences setup."
+      }
+    },
+    {
+      "ruleId": "RULE-PKG-FREETHINKER-3D-PEACE",
+      "packageId": "PKG_FREETHINKER_3D_PEACE",
+      "packageName": "Peace 3-Day Secular / Freethinker Funeral Package",
+      "tradition": "Secular / Freethinker",
+      "tier": "Standard",
+      "venueType": "HDB_VOID_DECK",
+      "durationDays": 3,
+      "basePriceSGD": 4999,
+      "gstInclusive": false,
+      "casketIncluded": {
+        "itemId": "CSK_PEACE_E04",
+        "name": "Peace Casket (E04)",
+        "material": "Engineered hardwood with clean secular profile",
+        "cremationApproved": true
+      },
+      "hearseIncluded": {
+        "itemId": "TRS_STANDARD_HEARSE",
+        "name": "Standard Multi-Purpose Hearse",
+        "type": "Standard Hearse"
+      },
+      "inclusions": [
+        "24/7 Body collection, professional embalming, sanitization, dressing, and natural cosmetological styling",
+        "Peace Casket (E04) with contemporary neutral interior",
+        "3-day HDB void deck canvas enclosure with modern drapery, 10 round tables, 15 square tables, 100 chairs, industrial fans, and lighting",
+        "Minimalist Modern Altar & Memorial Pedestal setup with tribute candle lights (strictly non-religious)",
+        "Professional Master of Ceremonies / Celebrant coordination for family eulogy tribute service",
+        "50 Customized Memorial Tribute Cards for guests to write farewell reflections",
+        "Enlarged 10”x12” photo with frame and 6 passport photos",
+        "Fresh Floral Chrysanthemum Photo Frame Surround",
+        "Mobile hygienic chemical restroom rental with regular servicing",
+        "Standard Hearse and 45-seater air-conditioned coach for funeral procession to Mandai",
+        "Donation safe box, registration book, and guest memorial towels",
+        "Dedicated Funeral Butler conducting daily inspections and family assistance",
+        "Mandai Crematorium booking coordination and next-day ash handover"
+      ],
+      "exclusions": [
+        "Food catering buffet for guests and consumption beverage packs",
+        "Town Council space rental and utility tap charges",
+        "Statutory NEA Mandai Cremation fee (S$315.00 SGD pass-through)",
+        "Night service attendant or overnight security officer",
+        "Mercedes-Benz or Mitsuoka glass hearse upgrade",
+        "Air-conditioned tentage enclosure"
+      ],
+      "compatibleAddOnIds": [
+        "ADD-HEARSE-MERCEDES-VITO",
+        "ADD-HEARSE-MITSUOKA-GLASS",
+        "ADD-TRANSPORT-VIP-MINIBUS-13PAX",
+        "ADD-TRANSPORT-FAMILY-LIMOUSINE",
+        "ADD-CASKET-GRACE-MINIMAL",
+        "ADD-CASKET-FAITH-W30",
+        "ADD-CASKET-HALF-GLASS-WHITE",
+        "ADD-CASKET-POLISHED-OAK",
+        "ADD-CASKET-SUPREME-TEAK",
+        "ADD-ASH-SEA-SCATTERING-CHARTER-CHANGI",
+        "ADD-ASH-SEA-SCATTERING-LUXURY-YACHT",
+        "ADD-ASH-INLAND-GARDEN-OF-PEACE",
+        "ADD-ASH-INLAND-GARDEN-OF-SERENITY",
+        "ADD-ASH-COLUMBARIUM-GOVT-ASSIST",
+        "ADD-ASH-COLUMBARIUM-PRIVATE-NIRVANA",
+        "ADD-ASH-BIODEGRADABLE-LOTUS-URN",
+        "ADD-ASH-BIODEGRADABLE-SEASHELL-URN",
+        "ADD-ASH-KEEPSAKE-925-PENDANT",
+        "ADD-ASH-PREMIUM-MARBLE-URN",
+        "ADD-FLR-PHOTO-ORCHID-PREMIUM",
+        "ADD-FLR-CASKET-SPRAY-FRESH",
+        "ADD-FLR-CONDOLENCE-STAND-PAIR",
+        "ADD-FLR-CUSTOM-ALTAR-BACKDROP",
+        "ADD-LOG-NIGHT-ATTENDANT",
+        "ADD-LOG-SECURITY-GUARD",
+        "ADD-LOG-AIRCON-TENTAGE",
+        "ADD-LOG-MOBILE-AIR-COOLER",
+        "ADD-LOG-BUFFET-CATERING-50PAX",
+        "ADD-LOG-BEVERAGE-CONSIGNMENT",
+        "ADD-LOG-PA-SOUND-SYSTEM",
+        "ADD-LOG-LIVESTREAM-HD",
+        "ADD-FLR-DIGITAL-OBITUARY-QR",
+        "ADD-FLR-SPH-PRINT-OBITUARY"
+      ],
+      "incompatibleAddOnIds": [
+        "ADD-REL-TAOIST-HOKKIEN-RITES",
+        "ADD-REL-TAOIST-PAPER-MANSION",
+        "ADD-REL-BUDDHIST-MONK-3SESSIONS",
+        "ADD-REL-SOKA-DAIMOKU-WHITE-ALTAR",
+        "ADD-REL-HINDU-PRIEST-RITES",
+        "ADD-CASKET-BATESVILLE-GOLD-BRONZE",
+        "ADD-CASKET-BATESVILLE-PURITAN-COPPER"
+      ],
+      "upgradeRules": {
+        "allowCasketUpgrade": true,
+        "casketCreditMethod": "DIFFERENCE_IN_LIST_PRICE",
+        "allowedCasketIds": [
+          "CSK_GRACE_MINIMAL",
+          "CSK_FAITH_W30",
+          "CSK_HALF_GLASS_ELEGANT_WHITE",
+          "CSK_POLISHED_OAK",
+          "CSK_SUPREME_TEAK"
+        ],
+        "allowHearseUpgrade": true,
+        "allowedHearseIds": [
+          "TRS_MERCEDES_BENZ_VITO_HEARSE",
+          "TRS_MITSUOKA_GLASS_HEARSE"
+        ],
+        "allowDurationExtension": true,
+        "dailyExtensionRateSGD": 350,
+        "cutoffMilestone": "EMBALMING_COMPLETED",
+        "upgradeTriggerDescription": "Upgrade to Faith 3-Day Freethinker (PKG_FREETHINKER_3D_FAITH) for Scandinavian or White Faith casket, Mercedes hearse, audio montage, and night staff."
+      },
+      "downgradeRules": {
+        "allowed": true,
+        "conditions": "Permitted prior to tentage setup.",
+        "adminFeeSGD": 150,
+        "cutoffMilestone": "PRIOR_TO_DISPATCH",
+        "reason": "Downgrades locked once transport team commences on-site setup."
+      }
+    },
+    {
+      "ruleId": "RULE-PKG-SOKA-3D-STANDARD",
+      "packageId": "PKG_SOKA_3D_STANDARD",
+      "packageName": "Standard 3-Day Soka Gakkai Funeral Package",
+      "tradition": "Soka Gakkai",
+      "tier": "Standard",
+      "venueType": "HDB_VOID_DECK",
+      "durationDays": 3,
+      "basePriceSGD": 5888,
+      "gstInclusive": false,
+      "casketIncluded": {
+        "itemId": "CSK_PEACE_E04",
+        "name": "Peace Casket (E04)",
+        "material": "Engineered hardwood with satin finish",
+        "cremationApproved": true
+      },
+      "hearseIncluded": {
+        "itemId": "TRS_STANDARD_HEARSE",
+        "name": "Standard Multi-Purpose Hearse",
+        "type": "Standard Hearse"
+      },
+      "inclusions": [
+        "24/7 Body collection, professional embalming, sanitization, dressing, and cosmetology",
+        "Peace Casket (E04) with pure white satin lining",
+        "3-day HDB void deck canvas enclosure with pristine white drapery, 10 round tables, 15 square tables, 100 chairs, industrial fans, and lighting",
+        "Pristine White Floral Altar setup and Gohonzon table arrangement (strictly zero joss paper / incense in compliance with Soka traditions)",
+        "Singapore Soka Association (SSA) Zone Leader liaison for Lotus Sutra & Daimoku chanting coordination",
+        "Enlarged 10”x12” photo with frame and 6 passport photos",
+        "Fresh Floral White Orchid & Lily Photo Frame Surround",
+        "Mobile hygienic chemical restroom rental with regular servicing",
+        "Standard Hearse and 45-seater air-conditioned coach for funeral procession to Mandai",
+        "Donation safe box, registration book, flower water, and guest memorial towels",
+        "Dedicated Funeral Butler conducting daily inspections and family assistance",
+        "Mandai Crematorium booking coordination and next-day ash handover"
+      ],
+      "exclusions": [
+        "Joss paper, effigies, incense, or burning bins (strictly prohibited in Soka custom)",
+        "Food catering buffet for guests and consumption beverage packs",
+        "Town Council space rental and utility tap charges",
+        "Statutory NEA Mandai Cremation fee (S$315.00 SGD pass-through)",
+        "Night service attendant or overnight security officer"
+      ],
+      "compatibleAddOnIds": [
+        "ADD-HEARSE-MERCEDES-VITO",
+        "ADD-HEARSE-MITSUOKA-GLASS",
+        "ADD-TRANSPORT-VIP-MINIBUS-13PAX",
+        "ADD-TRANSPORT-FAMILY-LIMOUSINE",
+        "ADD-CASKET-HALF-GLASS-WHITE",
+        "ADD-CASKET-FAITH-W30",
+        "ADD-CASKET-POLISHED-OAK",
+        "ADD-CASKET-SUPREME-TEAK",
+        "ADD-ASH-SEA-SCATTERING-CHARTER-CHANGI",
+        "ADD-ASH-INLAND-GARDEN-OF-PEACE",
+        "ADD-ASH-COLUMBARIUM-GOVT-ASSIST",
+        "ADD-ASH-COLUMBARIUM-PRIVATE-NIRVANA",
+        "ADD-FLR-PHOTO-ORCHID-PREMIUM",
+        "ADD-FLR-CASKET-SPRAY-FRESH",
+        "ADD-FLR-CONDOLENCE-STAND-PAIR",
+        "ADD-FLR-CUSTOM-ALTAR-BACKDROP",
+        "ADD-LOG-NIGHT-ATTENDANT",
+        "ADD-LOG-SECURITY-GUARD",
+        "ADD-LOG-AIRCON-TENTAGE",
+        "ADD-LOG-BUFFET-CATERING-50PAX",
+        "ADD-LOG-BEVERAGE-CONSIGNMENT",
+        "ADD-LOG-PA-SOUND-SYSTEM",
+        "ADD-LOG-LIVESTREAM-HD",
+        "ADD-FLR-DIGITAL-OBITUARY-QR",
+        "ADD-FLR-SPH-PRINT-OBITUARY"
+      ],
+      "incompatibleAddOnIds": [
+        "ADD-REL-TAOIST-HOKKIEN-RITES",
+        "ADD-REL-TAOIST-PAPER-MANSION",
+        "ADD-REL-TAOIST-JOSS-BUNDLE",
+        "ADD-REL-BUDDHIST-MONK-3SESSIONS",
+        "ADD-REL-CHRISTIAN-PASTOR-LITURGY",
+        "ADD-REL-CATHOLIC-VIGIL-MASS",
+        "ADD-REL-HINDU-PRIEST-RITES",
+        "ADD-CASKET-BATESVILLE-GOLD-BRONZE",
+        "ADD-CASKET-BATESVILLE-PURITAN-COPPER"
+      ],
+      "upgradeRules": {
+        "allowCasketUpgrade": true,
+        "casketCreditMethod": "DIFFERENCE_IN_LIST_PRICE",
+        "allowedCasketIds": [
+          "CSK_HALF_GLASS_ELEGANT_WHITE",
+          "CSK_FAITH_W30",
+          "CSK_POLISHED_OAK",
+          "CSK_SUPREME_TEAK"
+        ],
+        "allowHearseUpgrade": true,
+        "allowedHearseIds": [
+          "TRS_MERCEDES_BENZ_VITO_HEARSE",
+          "TRS_MITSUOKA_GLASS_HEARSE"
+        ],
+        "allowDurationExtension": true,
+        "dailyExtensionRateSGD": 350,
+        "cutoffMilestone": "EMBALMING_COMPLETED",
+        "upgradeTriggerDescription": "Upgrade to Mercedes hearse or pure white Faith casket for enhanced commemorative dignity."
+      },
+      "downgradeRules": {
+        "allowed": true,
+        "conditions": "Permitted prior to tentage setup.",
+        "adminFeeSGD": 150,
+        "cutoffMilestone": "PRIOR_TO_DISPATCH",
+        "reason": "Downgrades locked once transport team commences on-site setup."
+      }
+    },
+    {
+      "ruleId": "RULE-PKG-HINDU-2D-STANDARD",
+      "packageId": "PKG_HINDU_2D_STANDARD",
+      "packageName": "Standard 2-Day Hindu Funeral Package",
+      "tradition": "Hindu",
+      "tier": "Standard",
+      "venueType": "HDB_VOID_DECK",
+      "durationDays": 2,
+      "basePriceSGD": 4688,
+      "gstInclusive": false,
+      "casketIncluded": {
+        "itemId": "CSK_PEACE_E04",
+        "name": "Peace Casket (E04)",
+        "material": "Engineered hardwood with natural finish",
+        "cremationApproved": true
+      },
+      "hearseIncluded": {
+        "itemId": "TRS_STANDARD_HEARSE",
+        "name": "Standard Multi-Purpose Hearse",
+        "type": "Standard Hearse"
+      },
+      "inclusions": [
+        "24/7 Body collection, traditional washing, dressing, sandalwood paste application, and flower garland decoration",
+        "Peace Casket (E04) with traditional red/gold fabric drape",
+        "2-day HDB void deck canvas enclosure with 10 round tables, 15 square tables, 80 chairs, industrial fans, and lighting",
+        "Hindu Deity & Prayer Altar setup with puja supplies, clay pots, holy water, and agarbatti incense",
+        "Hindu Priest coordination for home/wake last rites, Vedic mantras, and cremation hall rituals",
+        "Enlarged 10”x12” photo with frame and fresh flower garland surround",
+        "Mandai Crematorium urgent slot booking liaison (S$315 statutory fee passed through at cost)",
+        "Standard Hearse and 45-seater air-conditioned coach for funeral procession to Mandai",
+        "Donation safe box, registration book, flower water, and guest bereavement towels",
+        "Dedicated Funeral Butler conducting site management and family assistance",
+        "Mandai next-day ash collection and handover or sea scattering coordination"
+      ],
+      "exclusions": [
+        "Specialized Vedic priest honorarium for custom extended ancestral homam rites",
+        "Food catering meals and beverage carton consumption",
+        "Town Council space rental and metered utilities",
+        "Statutory NEA Mandai Cremation fee (S$315.00 SGD pass-through)",
+        "Night service attendant or overnight security officer"
+      ],
+      "compatibleAddOnIds": [
+        "ADD-HEARSE-MERCEDES-VITO",
+        "ADD-HEARSE-MITSUOKA-GLASS",
+        "ADD-TRANSPORT-VIP-MINIBUS-13PAX",
+        "ADD-TRANSPORT-FAMILY-LIMOUSINE",
+        "ADD-CASKET-HALF-GLASS-CHENGAI",
+        "ADD-CASKET-POLISHED-OAK",
+        "ADD-CASKET-SUPREME-TEAK",
+        "ADD-ASH-SEA-SCATTERING-CHARTER-CHANGI",
+        "ADD-ASH-INLAND-GARDEN-OF-PEACE",
+        "ADD-ASH-COLUMBARIUM-GOVT-ASSIST",
+        "ADD-FLR-PHOTO-ORCHID-PREMIUM",
+        "ADD-FLR-CASKET-SPRAY-FRESH",
+        "ADD-LOG-AIRCON-TENTAGE",
+        "ADD-LOG-BUFFET-CATERING-50PAX",
+        "ADD-LOG-BEVERAGE-CONSIGNMENT",
+        "ADD-LOG-LIVESTREAM-HD",
+        "ADD-FLR-SPH-PRINT-OBITUARY"
+      ],
+      "incompatibleAddOnIds": [
+        "ADD-REL-TAOIST-HOKKIEN-RITES",
+        "ADD-REL-TAOIST-PAPER-MANSION",
+        "ADD-REL-BUDDHIST-MONK-3SESSIONS",
+        "ADD-REL-CHRISTIAN-PASTOR-LITURGY",
+        "ADD-REL-CATHOLIC-VIGIL-MASS",
+        "ADD-REL-SOKA-DAIMOKU-WHITE-ALTAR",
+        "ADD-CASKET-BATESVILLE-GOLD-BRONZE",
+        "ADD-CASKET-BATESVILLE-PURITAN-COPPER"
+      ],
+      "upgradeRules": {
+        "allowCasketUpgrade": true,
+        "casketCreditMethod": "DIFFERENCE_IN_LIST_PRICE",
+        "allowedCasketIds": [
+          "CSK_HALF_GLASS_CHENGAI",
+          "CSK_POLISHED_OAK",
+          "CSK_SUPREME_TEAK"
+        ],
+        "allowHearseUpgrade": true,
+        "allowedHearseIds": [
+          "TRS_MERCEDES_BENZ_VITO_HEARSE",
+          "TRS_MITSUOKA_GLASS_HEARSE"
+        ],
+        "allowDurationExtension": true,
+        "dailyExtensionRateSGD": 350,
+        "cutoffMilestone": "EMBALMING_COMPLETED",
+        "upgradeTriggerDescription": "Extend to 3-day wake or upgrade to Mercedes hearse."
+      },
+      "downgradeRules": {
+        "allowed": true,
+        "conditions": "Permitted prior to tentage setup.",
+        "adminFeeSGD": 150,
+        "cutoffMilestone": "PRIOR_TO_DISPATCH",
+        "reason": "Downgrades locked once transport team commences on-site setup."
+      }
+    },
+    {
+      "ruleId": "RULE-PKG-BABY-ANGEL-BT",
+      "packageId": "PKG_BABY_ANGEL_BUDDHIST_TAOIST",
+      "packageName": "Baby Angel Cremation Package (Buddhist / Taoist)",
+      "tradition": "Buddhist / Taoist",
+      "tier": "Infant & Child",
+      "venueType": "NO_WAKE",
+      "durationDays": 0,
+      "basePriceSGD": 1288,
+      "gstInclusive": false,
+      "casketIncluded": {
+        "itemId": "CSK_PASTEL_ANGEL_INFANT",
+        "name": "Curated Pastel Angel Infant Casket",
+        "material": "Soft eco-composite wood with padded cotton lining in baby pastel finish",
+        "cremationApproved": true
+      },
+      "hearseIncluded": {
+        "itemId": "TRS_STANDARD_HEARSE",
+        "name": "Standard Multi-Purpose Hearse",
+        "type": "Direct Transfer Vehicle"
+      },
+      "inclusions": [
+        "24/7 Gentle collection of infant from hospital mortuary with dedicated plush carrier",
+        "Tender washing, organic oil dressing, and soft infant cosmetic preparation",
+        "Curated Pastel Angel Infant Casket (pastel blue, soft pink, or pure white) with soft baby cotton bedding",
+        "Comfort plush teddy bear, baby blanket, and gentle send-off flower blooms",
+        "Buddhist monk or Taoist master chanting blessing ceremony at care centre prior to send-off",
+        "Mandai Crematorium slot booking and digital permit registration",
+        "Dignified transfer to Mandai Crematorium with private escort",
+        "Complimentary ash collection and safe urn handover or ocean scattering"
+      ],
+      "exclusions": [
+        "Multi-day public wake holding tentage",
+        "Statutory NEA Mandai Cremation booking fee (S$315.00 SGD pass-through)",
+        "Statutory NEA Permit to Cremate fee (S$100.00 SGD pass-through)",
+        "Food catering and beverage cartons"
+      ],
+      "compatibleAddOnIds": [
+        "ADD-ASH-SEA-SCATTERING-CHARTER-CHANGI",
+        "ADD-ASH-INLAND-GARDEN-OF-PEACE",
+        "ADD-ASH-COLUMBARIUM-GOVT-ASSIST",
+        "ADD-ASH-BIODEGRADABLE-LOTUS-URN",
+        "ADD-ASH-KEEPSAKE-925-PENDANT",
+        "ADD-FLR-CASKET-SPRAY-FRESH",
+        "ADD-LOG-LIVESTREAM-HD",
+        "ADD-FLR-SPH-PRINT-OBITUARY"
+      ],
+      "incompatibleAddOnIds": [
+        "ADD-VENUE-SOLACE-MEMORIAL-HALL",
+        "ADD-LOG-AIRCON-TENTAGE",
+        "ADD-LOG-BUFFET-CATERING-50PAX",
+        "ADD-CASKET-BATESVILLE-GOLD-BRONZE",
+        "ADD-CASKET-BATESVILLE-PURITAN-COPPER"
+      ],
+      "upgradeRules": {
+        "allowCasketUpgrade": false,
+        "casketCreditMethod": "NONE",
+        "allowedCasketIds": [],
+        "allowHearseUpgrade": true,
+        "allowedHearseIds": [
+          "TRS_MERCEDES_BENZ_VITO_HEARSE"
+        ],
+        "allowDurationExtension": false,
+        "dailyExtensionRateSGD": 0,
+        "cutoffMilestone": "EMBALMING_COMPLETED",
+        "upgradeTriggerDescription": "Upgrade to Mercedes limousine escort or private chartered sea scattering ceremony."
+      },
+      "downgradeRules": {
+        "allowed": false,
+        "reason": "Baby Angel package is heavily subsidized by Solace Dignity Care Life Foundation and represents our most accessible compassionate tier."
+      }
+    },
+    {
+      "ruleId": "RULE-PKG-MEMORIAL-SERVICE-1D",
+      "packageId": "PKG_MEMORIAL_SERVICE_STANDARD",
+      "packageName": "Standard Memorial Service Package (Post-Disposition / Urn Tribute)",
+      "tradition": "Secular / All Traditions",
+      "tier": "Standard",
+      "venueType": "PARLOUR_OR_FUNCTION_HALL",
+      "durationDays": 1,
+      "basePriceSGD": 2888,
+      "gstInclusive": false,
+      "casketIncluded": {
+        "itemId": "N/A",
+        "name": "N/A (Urn Memorial / Portrait Tribute)",
+        "material": "N/A",
+        "cremationApproved": true
+      },
+      "hearseIncluded": {
+        "itemId": "N/A",
+        "name": "N/A",
+        "type": "N/A"
+      },
+      "inclusions": [
+        "1-day memorial coordination at Solace Memorial Hall, void deck, or hotel function room",
+        "Central Urn Pedestal and framed portrait memorial display stand",
+        "Fresh Floral Tribute Centerpiece and side arrangement stands",
+        "Audiovisual setup: projector screen, sound amplifier, wireless microphones, and digital memory photo slideshow montage",
+        "Master of Ceremonies / Celebrant coordination for eulogies and tributes",
+        "Guest condolence memorial register and personalized memorial tribute cards",
+        "Light refreshment staging area setup with hot water dispenser and paper cups",
+        "Dedicated on-site Operations Coordinator throughout event"
+      ],
+      "exclusions": [
+        "Casket, embalming, and body transfer (memorial conducted post-cremation or post-burial)",
+        "Mandai cremation fees",
+        "Hot buffet catering (available as add-on)"
+      ],
+      "compatibleAddOnIds": [
+        "ADD-VENUE-SOLACE-MEMORIAL-HALL",
+        "ADD-ASH-SEA-SCATTERING-CHARTER-CHANGI",
+        "ADD-ASH-SEA-SCATTERING-LUXURY-YACHT",
+        "ADD-ASH-INLAND-GARDEN-OF-PEACE",
+        "ADD-ASH-COLUMBARIUM-GOVT-ASSIST",
+        "ADD-ASH-COLUMBARIUM-PRIVATE-NIRVANA",
+        "ADD-ASH-BIODEGRADABLE-LOTUS-URN",
+        "ADD-ASH-KEEPSAKE-925-PENDANT",
+        "ADD-ASH-PREMIUM-MARBLE-URN",
+        "ADD-FLR-CONDOLENCE-STAND-PAIR",
+        "ADD-FLR-CUSTOM-ALTAR-BACKDROP",
+        "ADD-LOG-BUFFET-CATERING-50PAX",
+        "ADD-LOG-BEVERAGE-CONSIGNMENT",
+        "ADD-LOG-LIVESTREAM-HD",
+        "ADD-FLR-DIGITAL-OBITUARY-QR",
+        "ADD-FLR-SPH-PRINT-OBITUARY"
+      ],
+      "incompatibleAddOnIds": [
+        "ADD-EMBALM-STANDARD-CARE",
+        "ADD-EMBALM-RESTORATIVE-ART",
+        "ADD-HEARSE-MERCEDES-VITO",
+        "ADD-HEARSE-MITSUOKA-GLASS",
+        "ADD-CASKET-BATESVILLE-GOLD-BRONZE",
+        "ADD-CASKET-BATESVILLE-PURITAN-COPPER"
+      ],
+      "upgradeRules": {
+        "allowCasketUpgrade": false,
+        "casketCreditMethod": "NONE",
+        "allowedCasketIds": [],
+        "allowHearseUpgrade": false,
+        "allowedHearseIds": [],
+        "allowDurationExtension": true,
+        "dailyExtensionRateSGD": 500,
+        "cutoffMilestone": "WAKE_DISPATCH",
+        "upgradeTriggerDescription": "Extend to 2-day memorial tribute or add full hot buffet catering."
+      },
+      "downgradeRules": {
+        "allowed": true,
+        "conditions": "Permitted up to 24 hours before memorial event.",
+        "adminFeeSGD": 150,
+        "cutoffMilestone": "PRIOR_TO_DISPATCH",
+        "reason": "Hall reservation cancellation rules apply."
+      }
+    }
+  ],
+  "addOnRules": [
+    {
+      "addOnId": "ADD-HEARSE-MERCEDES-VITO",
+      "name": "Mercedes-Benz Vito Funeral Hearse Upgrade",
+      "category": "Transport & Hearse",
+      "unitPrice": 600.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Sleek, modern Mercedes-Benz Vito black hearse equipped with automated casket deck and chrome interior trim.",
+      "compatiblePackages": [
+        "PKG_DIRECT_CREMATION_BT",
+        "PKG_DIRECT_CREMATION_CCF",
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_CHRISTIAN_3D_PEACE",
+        "PKG_CHRISTIAN_3D_FAITH",
+        "PKG_CATHOLIC_3D_PEACE",
+        "PKG_CATHOLIC_3D_FAITH",
+        "PKG_FREETHINKER_3D_PEACE",
+        "PKG_FREETHINKER_3D_FAITH",
+        "PKG_SOKA_3D_STANDARD",
+        "PKG_HINDU_2D_STANDARD",
+        "PKG_BABY_ANGEL_BUDDHIST_TAOIST",
+        "PKG_BABY_ANGEL_CHRISTIAN_CATHOLIC_FT"
+      ],
+      "incompatibleAddOns": [
+        "ADD-HEARSE-MITSUOKA-GLASS"
+      ],
+      "conflictRules": [
+        {
+          "conflictingAddOnId": "ADD-HEARSE-MITSUOKA-GLASS",
+          "reason": "Only one primary procession hearse vehicle can be assigned per cortege."
+        }
+      ]
+    },
+    {
+      "addOnId": "ADD-HEARSE-MITSUOKA-GLASS",
+      "name": "Exclusive Mitsuoka VIP Panoramic Glass Hearse Upgrade",
+      "category": "Transport & Hearse",
+      "unitPrice": 900.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Imported from Japan. Elongated VIP chassis with panoramic illuminated glass viewing compartments and hand-stitched leather interior.",
+      "compatiblePackages": [
+        "PKG_DIRECT_CREMATION_BT",
+        "PKG_DIRECT_CREMATION_CCF",
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_CHRISTIAN_3D_PEACE",
+        "PKG_CHRISTIAN_3D_FAITH",
+        "PKG_CATHOLIC_3D_PEACE",
+        "PKG_CATHOLIC_3D_FAITH",
+        "PKG_FREETHINKER_3D_PEACE",
+        "PKG_FREETHINKER_3D_FAITH",
+        "PKG_SOKA_3D_STANDARD",
+        "PKG_HINDU_2D_STANDARD"
+      ],
+      "incompatibleAddOns": [
+        "ADD-HEARSE-MERCEDES-VITO"
+      ],
+      "conflictRules": [
+        {
+          "conflictingAddOnId": "ADD-HEARSE-MERCEDES-VITO",
+          "reason": "Mitsuoka VIP Glass Hearse replaces all standard and Vito hearse options."
+        }
+      ]
+    },
+    {
+      "addOnId": "ADD-TRANSPORT-AIRCON-COACH-45PAX",
+      "name": "Additional 45-Seater Air-Conditioned Procession Coach (Return Trip)",
+      "category": "Transport & Hearse",
+      "unitPrice": 350.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Air-conditioned 45-passenger bus transferring extended family and guests from wake venue to crematorium/cemetery and return.",
+      "compatiblePackages": [
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_CHRISTIAN_3D_PEACE",
+        "PKG_CHRISTIAN_3D_FAITH",
+        "PKG_CATHOLIC_3D_PEACE",
+        "PKG_CATHOLIC_3D_FAITH",
+        "PKG_FREETHINKER_3D_PEACE",
+        "PKG_FREETHINKER_3D_FAITH",
+        "PKG_SOKA_3D_STANDARD",
+        "PKG_HINDU_2D_STANDARD"
+      ],
+      "incompatibleAddOns": [],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-TRANSPORT-VIP-MINIBUS-13PAX",
+      "name": "13-Seater VIP Transport Minibus (Return Trip)",
+      "category": "Transport & Hearse",
+      "unitPrice": 220.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Chauffeured 13-seater executive minibus for immediate family members during the cortege procession.",
+      "compatiblePackages": [
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_CHRISTIAN_3D_PEACE",
+        "PKG_CHRISTIAN_3D_FAITH",
+        "PKG_CATHOLIC_3D_PEACE",
+        "PKG_CATHOLIC_3D_FAITH",
+        "PKG_FREETHINKER_3D_PEACE",
+        "PKG_FREETHINKER_3D_FAITH",
+        "PKG_SOKA_3D_STANDARD",
+        "PKG_HINDU_2D_STANDARD"
+      ],
+      "incompatibleAddOns": [],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-TRANSPORT-FAMILY-LIMOUSINE",
+      "name": "Mercedes-Benz Family Escort Limousine",
+      "category": "Transport & Hearse",
+      "unitPrice": 300.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Chauffeured Mercedes-Benz luxury sedan for chief mourners during the funeral cortege procession.",
+      "compatiblePackages": [
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_CHRISTIAN_3D_PEACE",
+        "PKG_CHRISTIAN_3D_FAITH",
+        "PKG_CATHOLIC_3D_PEACE",
+        "PKG_CATHOLIC_3D_FAITH",
+        "PKG_FREETHINKER_3D_PEACE",
+        "PKG_FREETHINKER_3D_FAITH",
+        "PKG_SOKA_3D_STANDARD",
+        "PKG_HINDU_2D_STANDARD"
+      ],
+      "incompatibleAddOns": [],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-CASKET-8SIDED-LOTUS",
+      "name": "8-Sided Lotus Spiritual Casket Upgrade (S803)",
+      "category": "Caskets & Upgrades",
+      "unitPrice": 2600.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Solid selected timber with octagonal geometry symbolizing the Noble Eightfold Path, finished in deep rosewood lacquer with golden lotus carvings.",
+      "compatiblePackages": [
+        "PKG_DIRECT_CREMATION_BT",
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE"
+      ],
+      "incompatibleAddOns": [
+        "ADD-CASKET-HALF-GLASS-CHENGAI",
+        "ADD-CASKET-DOUBLE-GLASS-LOTUS",
+        "ADD-CASKET-DRAGON-BAIFU",
+        "ADD-CASKET-SUPREME-TEAK",
+        "ADD-CASKET-POLISHED-OAK",
+        "ADD-CASKET-BATESVILLE-GOLD-BRONZE",
+        "ADD-CASKET-BATESVILLE-PURITAN-COPPER"
+      ],
+      "conflictRules": [
+        {
+          "conflictingAddOnId": "ADD-CASKET-SUPREME-TEAK",
+          "reason": "Multiple caskets cannot be selected for a single individual."
+        }
+      ]
+    },
+    {
+      "addOnId": "ADD-CASKET-DOUBLE-GLASS-LOTUS",
+      "name": "Double Glass Lotus Viewing Casket Upgrade",
+      "category": "Caskets & Upgrades",
+      "unitPrice": 2400.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Dual-panel tempered glass viewing compartments with delicate lotus engravings for full-length viewing.",
+      "compatiblePackages": [
+        "PKG_DIRECT_CREMATION_BT",
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE"
+      ],
+      "incompatibleAddOns": [
+        "ADD-CASKET-8SIDED-LOTUS",
+        "ADD-CASKET-SUPREME-TEAK"
+      ],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-CASKET-HALF-GLASS-CHENGAI",
+      "name": "Half-Glass Viewing Casket (Chengai Finish)",
+      "category": "Caskets & Upgrades",
+      "unitPrice": 1800.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Airtight tempered half-glass viewing panel allowing visitors to view the departed without opening the lid, finished in Chengai gloss.",
+      "compatiblePackages": [
+        "PKG_DIRECT_CREMATION_BT",
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_HINDU_2D_STANDARD"
+      ],
+      "incompatibleAddOns": [],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-CASKET-HALF-GLASS-WHITE",
+      "name": "Half-Glass Viewing Casket (Elegant White)",
+      "category": "Caskets & Upgrades",
+      "unitPrice": 1800.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Pure white high-gloss finish with half-glass viewing panel and white velvet interior, popular for Christian, Catholic, and secular services.",
+      "compatiblePackages": [
+        "PKG_DIRECT_CREMATION_CCF",
+        "PKG_CHRISTIAN_3D_PEACE",
+        "PKG_CHRISTIAN_3D_FAITH",
+        "PKG_CATHOLIC_3D_PEACE",
+        "PKG_CATHOLIC_3D_FAITH",
+        "PKG_FREETHINKER_3D_PEACE",
+        "PKG_FREETHINKER_3D_FAITH",
+        "PKG_SOKA_3D_STANDARD"
+      ],
+      "incompatibleAddOns": [],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-CASKET-POLISHED-OAK",
+      "name": "Premium Polished American Oak Casket Upgrade",
+      "category": "Caskets & Upgrades",
+      "unitPrice": 2800.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Solid American White Oak construction with polished walnut finish, high-grade solid brass swing handles, and hand-tufted crepe interior.",
+      "compatiblePackages": [
+        "PKG_DIRECT_CREMATION_BT",
+        "PKG_DIRECT_CREMATION_CCF",
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_CHRISTIAN_3D_PEACE",
+        "PKG_CHRISTIAN_3D_FAITH",
+        "PKG_CATHOLIC_3D_PEACE",
+        "PKG_CATHOLIC_3D_FAITH",
+        "PKG_FREETHINKER_3D_PEACE",
+        "PKG_FREETHINKER_3D_FAITH",
+        "PKG_SOKA_3D_STANDARD",
+        "PKG_HINDU_2D_STANDARD"
+      ],
+      "incompatibleAddOns": [
+        "ADD-CASKET-SUPREME-TEAK"
+      ],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-CASKET-DRAGON-BAIFU",
+      "name": "Handcrafted Dragon & Bai Fu (Hundred Blessings) Traditional Casket",
+      "category": "Caskets & Upgrades",
+      "unitPrice": 3800.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Carved heavy hardwood timber featuring handcrafted deep relief imperial dragons and Bai Fu (百福) longevity calligraphy.",
+      "compatiblePackages": [
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_BUDDHIST_3D_VALUE"
+      ],
+      "incompatibleAddOns": [
+        "ADD-CASKET-SUPREME-TEAK"
+      ],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-CASKET-SUPREME-TEAK",
+      "name": "Supreme Solid Burmese Teak Artisan Casket Upgrade",
+      "category": "Caskets & Upgrades",
+      "unitPrice": 4800.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "100% Solid Natural Burmese Teak Wood with hand-rubbed oil satin finish showcasing natural teak wood grain and solid brass fittings.",
+      "compatiblePackages": [
+        "PKG_DIRECT_CREMATION_BT",
+        "PKG_DIRECT_CREMATION_CCF",
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_CHRISTIAN_3D_PEACE",
+        "PKG_CHRISTIAN_3D_FAITH",
+        "PKG_CATHOLIC_3D_PEACE",
+        "PKG_CATHOLIC_3D_FAITH",
+        "PKG_FREETHINKER_3D_PEACE",
+        "PKG_FREETHINKER_3D_FAITH",
+        "PKG_SOKA_3D_STANDARD",
+        "PKG_HINDU_2D_STANDARD"
+      ],
+      "incompatibleAddOns": [],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-CASKET-BATESVILLE-GOLD-BRONZE",
+      "name": "Batesville Classic Gold 24K Bronze Casket (Ground Burial Only)",
+      "category": "Caskets & Upgrades",
+      "unitPrice": 12800.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Imported from USA. Sealed 32oz solid bronze with 24K gold plating and champagne velvet interior. Strictly for Choa Chu Kang Ground Burial.",
+      "compatiblePackages": [],
+      "incompatibleAddOns": [
+        "ADD-ASH-SEA-SCATTERING-CHARTER-CHANGI",
+        "ADD-ASH-INLAND-GARDEN-OF-PEACE",
+        "ADD-ASH-COLUMBARIUM-GOVT-ASSIST"
+      ],
+      "conflictRules": [
+        {
+          "conflictingAddOnId": "ALL_CREMATION_PACKAGES",
+          "reason": "NEA statutory crematorium safety regulations strictly prohibit metal and bronze caskets inside Mandai cremator chambers. Permitted exclusively for ground burial."
+        }
+      ]
+    },
+    {
+      "addOnId": "ADD-CASKET-BATESVILLE-PURITAN-COPPER",
+      "name": "Batesville Puritan Copper Burial Casket (Ground Burial Only)",
+      "category": "Caskets & Upgrades",
+      "unitPrice": 9800.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Solid 32oz seamless copper with gasketed hermetic seal. Strictly for Choa Chu Kang Ground Burial.",
+      "compatiblePackages": [],
+      "incompatibleAddOns": [
+        "ADD-ASH-SEA-SCATTERING-CHARTER-CHANGI",
+        "ADD-ASH-INLAND-GARDEN-OF-PEACE"
+      ],
+      "conflictRules": [
+        {
+          "conflictingAddOnId": "ALL_CREMATION_PACKAGES",
+          "reason": "NEA statutory crematorium regulations prohibit copper and metal caskets inside Mandai cremators."
+        }
+      ]
+    },
+    {
+      "addOnId": "ADD-EMBALM-RESTORATIVE-ART",
+      "name": "Advanced Restorative Art & Facial Trauma Reconstruction",
+      "category": "Embalming & Body Care",
+      "unitPrice": 600.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Specialized restorative cosmetology, cranial restoration, trauma reconstruction, post-autopsy rebuilding, and bespoke hair styling.",
+      "compatiblePackages": [
+        "PKG_DIRECT_CREMATION_BT",
+        "PKG_DIRECT_CREMATION_CCF",
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_CHRISTIAN_3D_PEACE",
+        "PKG_CHRISTIAN_3D_FAITH",
+        "PKG_CATHOLIC_3D_PEACE",
+        "PKG_CATHOLIC_3D_FAITH",
+        "PKG_FREETHINKER_3D_PEACE",
+        "PKG_FREETHINKER_3D_FAITH",
+        "PKG_SOKA_3D_STANDARD",
+        "PKG_HINDU_2D_STANDARD"
+      ],
+      "incompatibleAddOns": [],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-EMBALM-COLDROOM-STORAGE",
+      "name": "Extended Cold Room Preservation Storage (Per 24 Hours)",
+      "category": "Embalming & Body Care",
+      "unitPrice": 80.0,
+      "priceType": "PER_DAY",
+      "gstInclusive": false,
+      "description": "Temperature-controlled holding in private mortuary cold room per 24-hour cycle beyond standard 48-hour buffer.",
+      "compatiblePackages": [
+        "PKG_DIRECT_CREMATION_BT",
+        "PKG_DIRECT_CREMATION_CCF",
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_CHRISTIAN_3D_PEACE",
+        "PKG_CHRISTIAN_3D_FAITH",
+        "PKG_CATHOLIC_3D_PEACE",
+        "PKG_CATHOLIC_3D_FAITH",
+        "PKG_FREETHINKER_3D_PEACE",
+        "PKG_FREETHINKER_3D_FAITH",
+        "PKG_SOKA_3D_STANDARD",
+        "PKG_HINDU_2D_STANDARD"
+      ],
+      "incompatibleAddOns": [],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-EMBALM-HOUSECALL-DOCTOR-CCOD",
+      "name": "24/7 House-Call Certifying Doctor Dispatch (Home Death CCOD)",
+      "category": "Embalming & Body Care",
+      "unitPrice": 280.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Dispatch of certified registered doctor to verify home death, issue electronic CCOD, and upload to ICA registry within 60 minutes.",
+      "compatiblePackages": [
+        "PKG_DIRECT_CREMATION_BT",
+        "PKG_DIRECT_CREMATION_CCF",
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_CHRISTIAN_3D_PEACE",
+        "PKG_CHRISTIAN_3D_FAITH",
+        "PKG_CATHOLIC_3D_PEACE",
+        "PKG_CATHOLIC_3D_FAITH",
+        "PKG_FREETHINKER_3D_PEACE",
+        "PKG_FREETHINKER_3D_FAITH",
+        "PKG_SOKA_3D_STANDARD",
+        "PKG_HINDU_2D_STANDARD",
+        "PKG_BABY_ANGEL_BUDDHIST_TAOIST",
+        "PKG_BABY_ANGEL_CHRISTIAN_CATHOLIC_FT"
+      ],
+      "incompatibleAddOns": [],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-REL-BUDDHIST-MONK-1SESSION",
+      "name": "Additional Buddhist Monk Chanting Session (1 Session)",
+      "category": "Religious Officiants & Rites",
+      "unitPrice": 350.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Single chanting session add-on for intermediate wake days or special merit-making dedication by 1 to 2 Buddhist monks.",
+      "compatiblePackages": [
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE"
+      ],
+      "incompatibleAddOns": [
+        "ADD-REL-TAOIST-HOKKIEN-RITES",
+        "ADD-REL-CHRISTIAN-PASTOR-LITURGY",
+        "ADD-REL-CATHOLIC-VIGIL-MASS",
+        "ADD-REL-SOKA-DAIMOKU-WHITE-ALTAR",
+        "ADD-REL-HINDU-PRIEST-RITES"
+      ],
+      "conflictRules": [
+        {
+          "conflictingAddOnId": "ADD-REL-CHRISTIAN-PASTOR-LITURGY",
+          "reason": "Buddhist monk chanting rituals are incompatible with Christian liturgical protocols."
+        }
+      ]
+    },
+    {
+      "addOnId": "ADD-REL-BUDDHIST-AN-LING-49DAYS",
+      "name": "An Ling (安灵) 49-Day Home Altar Setup & Calculation",
+      "category": "Religious Officiants & Rites",
+      "unitPrice": 450.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Home altar setup for the 49 days of mourning following the funeral, including ancestral tablet placement, joss pot, and prayer date calculation chart.",
+      "compatiblePackages": [
+        "PKG_DIRECT_CREMATION_BT",
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE"
+      ],
+      "incompatibleAddOns": [
+        "ADD-REL-CHRISTIAN-PASTOR-LITURGY",
+        "ADD-REL-CATHOLIC-VIGIL-MASS",
+        "ADD-REL-SOKA-DAIMOKU-WHITE-ALTAR"
+      ],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-REL-BUDDHIST-JI-LING-TEMPLE",
+      "name": "Ji Ling (寄灵) Temple Placement Coordination",
+      "category": "Religious Officiants & Rites",
+      "unitPrice": 680.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Coordination for temporary 49-day tablet placement at a Buddhist temple/monastery where monks perform daily food offerings and prayers.",
+      "compatiblePackages": [
+        "PKG_DIRECT_CREMATION_BT",
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE"
+      ],
+      "incompatibleAddOns": [
+        "ADD-REL-CHRISTIAN-PASTOR-LITURGY",
+        "ADD-REL-CATHOLIC-VIGIL-MASS"
+      ],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-REL-TAOIST-PAPER-MANSION",
+      "name": "Elaborate 2-Storey Paper Mansion Effigy & Ancestral Luxury Car",
+      "category": "Religious Officiants & Rites",
+      "unitPrice": 1200.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Handcrafted 2-storey paper mansion effigy complete with paper servants, gold bridge, silver bridge, household electronic appliances, and luxury vehicle.",
+      "compatiblePackages": [
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE"
+      ],
+      "incompatibleAddOns": [
+        "ADD-REL-CHRISTIAN-PASTOR-LITURGY",
+        "ADD-REL-CATHOLIC-VIGIL-MASS",
+        "ADD-REL-SOKA-DAIMOKU-WHITE-ALTAR"
+      ],
+      "conflictRules": [
+        {
+          "conflictingAddOnId": "ADD-REL-SOKA-DAIMOKU-WHITE-ALTAR",
+          "reason": "Soka Gakkai practices strictly forbid paper effigies and joss paper combustion."
+        },
+        {
+          "conflictingAddOnId": "ADD-REL-CHRISTIAN-PASTOR-LITURGY",
+          "reason": "Christian tenets do not permit Taoist paper effigy rituals."
+        }
+      ]
+    },
+    {
+      "addOnId": "ADD-REL-TAOIST-JOSS-BUNDLE",
+      "name": "Pre-Folded Joss Paper, Gold/Silver Ingots & Safe Burning Tray",
+      "category": "Religious Officiants & Rites",
+      "unitPrice": 380.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Assorted pre-folded gold and silver joss paper ingots, hell bank notes, incense, candles, and safe combustion burning tray.",
+      "compatiblePackages": [
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE"
+      ],
+      "incompatibleAddOns": [
+        "ADD-REL-CHRISTIAN-PASTOR-LITURGY",
+        "ADD-REL-CATHOLIC-VIGIL-MASS",
+        "ADD-REL-SOKA-DAIMOKU-WHITE-ALTAR"
+      ],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-ASH-SEA-SCATTERING-CHARTER-CHANGI",
+      "name": "Chartered Boat Sea Scattering Ceremony (Changi / Marina - 12 Pax)",
+      "category": "Ash Management & Disposition",
+      "unitPrice": 380.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Private chartered passenger launch for up to 12 family members departing Changi Jetty or Marina South Pier. Staff assists with fresh flower petals.",
+      "compatiblePackages": [
+        "PKG_DIRECT_CREMATION_BT",
+        "PKG_DIRECT_CREMATION_CCF",
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_CHRISTIAN_3D_PEACE",
+        "PKG_CHRISTIAN_3D_FAITH",
+        "PKG_CATHOLIC_3D_PEACE",
+        "PKG_CATHOLIC_3D_FAITH",
+        "PKG_FREETHINKER_3D_PEACE",
+        "PKG_FREETHINKER_3D_FAITH",
+        "PKG_SOKA_3D_STANDARD",
+        "PKG_HINDU_2D_STANDARD",
+        "PKG_BABY_ANGEL_BUDDHIST_TAOIST",
+        "PKG_BABY_ANGEL_CHRISTIAN_CATHOLIC_FT",
+        "PKG_MEMORIAL_SERVICE_STANDARD"
+      ],
+      "incompatibleAddOns": [
+        "ADD-ASH-COLUMBARIUM-GOVT-ASSIST",
+        "ADD-ASH-COLUMBARIUM-PRIVATE-NIRVANA",
+        "ADD-ASH-INLAND-GARDEN-OF-PEACE",
+        "ADD-ASH-INLAND-GARDEN-OF-SERENITY"
+      ],
+      "conflictRules": [
+        {
+          "conflictingAddOnId": "ADD-ASH-COLUMBARIUM-GOVT-ASSIST",
+          "reason": "Sea scattering and columbarium permanent niche interments are mutually exclusive primary disposition methods for cremated remains."
+        },
+        {
+          "conflictingAddOnId": "ADD-ASH-INLAND-GARDEN-OF-PEACE",
+          "reason": "Ashes cannot simultaneously undergo complete maritime sea release and land-based inland garden scattering."
+        }
+      ]
+    },
+    {
+      "addOnId": "ADD-ASH-SEA-SCATTERING-BUDDHIST-BOAT",
+      "name": "Buddhist Sea Scattering Ceremony with Chanting Monk",
+      "category": "Ash Management & Disposition",
+      "unitPrice": 480.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Chartered boat sea scattering accompanied by an ordained Buddhist monk to conduct maritime last rites and chanting during ash release.",
+      "compatiblePackages": [
+        "PKG_DIRECT_CREMATION_BT",
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE"
+      ],
+      "incompatibleAddOns": [
+        "ADD-ASH-COLUMBARIUM-GOVT-ASSIST",
+        "ADD-ASH-INLAND-GARDEN-OF-PEACE"
+      ],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-ASH-SEA-SCATTERING-LUXURY-YACHT",
+      "name": "Premium Luxury Yacht Sea Burial Charter (ONE°15 Marina - 25 Pax)",
+      "category": "Ash Management & Disposition",
+      "unitPrice": 850.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Private twin-deck motor yacht charter departing ONE°15 Marina Sentosa Cove for up to 25 family members, with lounge amenities and refreshments.",
+      "compatiblePackages": [
+        "PKG_DIRECT_CREMATION_BT",
+        "PKG_DIRECT_CREMATION_CCF",
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_CHRISTIAN_3D_PEACE",
+        "PKG_CHRISTIAN_3D_FAITH",
+        "PKG_CATHOLIC_3D_PEACE",
+        "PKG_CATHOLIC_3D_FAITH",
+        "PKG_FREETHINKER_3D_PEACE",
+        "PKG_FREETHINKER_3D_FAITH",
+        "PKG_SOKA_3D_STANDARD",
+        "PKG_MEMORIAL_SERVICE_STANDARD"
+      ],
+      "incompatibleAddOns": [
+        "ADD-ASH-COLUMBARIUM-GOVT-ASSIST",
+        "ADD-ASH-INLAND-GARDEN-OF-PEACE"
+      ],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-ASH-INLAND-GARDEN-OF-PEACE",
+      "name": "Inland Ash Scattering Coordination @ Garden of Peace (Choa Chu Kang)",
+      "category": "Ash Management & Disposition",
+      "unitPrice": 350.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Coordination for eco-friendly land scattering at Garden of Peace (CCK Cemetery). Staff provides pulverised ash canister, watering can, and on-site guidance.",
+      "compatiblePackages": [
+        "PKG_DIRECT_CREMATION_BT",
+        "PKG_DIRECT_CREMATION_CCF",
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_CHRISTIAN_3D_PEACE",
+        "PKG_CHRISTIAN_3D_FAITH",
+        "PKG_CATHOLIC_3D_PEACE",
+        "PKG_CATHOLIC_3D_FAITH",
+        "PKG_FREETHINKER_3D_PEACE",
+        "PKG_FREETHINKER_3D_FAITH",
+        "PKG_SOKA_3D_STANDARD",
+        "PKG_HINDU_2D_STANDARD",
+        "PKG_BABY_ANGEL_BUDDHIST_TAOIST",
+        "PKG_BABY_ANGEL_CHRISTIAN_CATHOLIC_FT",
+        "PKG_MEMORIAL_SERVICE_STANDARD"
+      ],
+      "incompatibleAddOns": [
+        "ADD-ASH-SEA-SCATTERING-CHARTER-CHANGI",
+        "ADD-ASH-SEA-SCATTERING-LUXURY-YACHT",
+        "ADD-ASH-COLUMBARIUM-GOVT-ASSIST"
+      ],
+      "conflictRules": [
+        {
+          "conflictingAddOnId": "ADD-ASH-SEA-SCATTERING-CHARTER-CHANGI",
+          "reason": "Inland earth scattering and ocean sea scattering are mutually exclusive disposition choices."
+        }
+      ]
+    },
+    {
+      "addOnId": "ADD-ASH-COLUMBARIUM-GOVT-ASSIST",
+      "name": "Government Columbarium Niche Selection & Placement (Mandai / CCK)",
+      "category": "Ash Management & Disposition",
+      "unitPrice": 300.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Appointment booking, niche marble plaque engraving coordination, and ritual placement service at Mandai or CCK government columbarium.",
+      "compatiblePackages": [
+        "PKG_DIRECT_CREMATION_BT",
+        "PKG_DIRECT_CREMATION_CCF",
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_CHRISTIAN_3D_PEACE",
+        "PKG_CHRISTIAN_3D_FAITH",
+        "PKG_CATHOLIC_3D_PEACE",
+        "PKG_CATHOLIC_3D_FAITH",
+        "PKG_FREETHINKER_3D_PEACE",
+        "PKG_FREETHINKER_3D_FAITH",
+        "PKG_SOKA_3D_STANDARD",
+        "PKG_HINDU_2D_STANDARD",
+        "PKG_BABY_ANGEL_BUDDHIST_TAOIST",
+        "PKG_BABY_ANGEL_CHRISTIAN_CATHOLIC_FT",
+        "PKG_MEMORIAL_SERVICE_STANDARD"
+      ],
+      "incompatibleAddOns": [
+        "ADD-ASH-SEA-SCATTERING-CHARTER-CHANGI",
+        "ADD-ASH-SEA-SCATTERING-LUXURY-YACHT",
+        "ADD-ASH-INLAND-GARDEN-OF-PEACE"
+      ],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-ASH-COLUMBARIUM-PRIVATE-NIRVANA",
+      "name": "Private Columbarium Suite Coordination (Nirvana / Bright Hill)",
+      "category": "Ash Management & Disposition",
+      "unitPrice": 1200.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Liaison and assistance in securing air-conditioned ancestral niche suites at Nirvana Memorial Garden (富贵山庄) or Kong Meng San Monastery.",
+      "compatiblePackages": [
+        "PKG_DIRECT_CREMATION_BT",
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_MEMORIAL_SERVICE_STANDARD"
+      ],
+      "incompatibleAddOns": [
+        "ADD-ASH-SEA-SCATTERING-CHARTER-CHANGI",
+        "ADD-ASH-INLAND-GARDEN-OF-PEACE"
+      ],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-ASH-BIODEGRADABLE-LOTUS-URN",
+      "name": "100% Biodegradable Lotus Sea Burial Urn",
+      "category": "Ash Management & Disposition",
+      "unitPrice": 180.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Handcrafted organic clay and plant fiber lotus urn that floats gracefully for 15-20 minutes before gently dissolving into seawater.",
+      "compatiblePackages": [
+        "PKG_DIRECT_CREMATION_BT",
+        "PKG_DIRECT_CREMATION_CCF",
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_CHRISTIAN_3D_PEACE",
+        "PKG_CHRISTIAN_3D_FAITH",
+        "PKG_CATHOLIC_3D_PEACE",
+        "PKG_CATHOLIC_3D_FAITH",
+        "PKG_FREETHINKER_3D_PEACE",
+        "PKG_FREETHINKER_3D_FAITH",
+        "PKG_SOKA_3D_STANDARD",
+        "PKG_BABY_ANGEL_BUDDHIST_TAOIST",
+        "PKG_BABY_ANGEL_CHRISTIAN_CATHOLIC_FT"
+      ],
+      "incompatibleAddOns": [],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-ASH-KEEPSAKE-925-PENDANT",
+      "name": "Handcrafted 925 Sterling Silver Memorial Ash Keepsake Pendant",
+      "category": "Ash Management & Disposition",
+      "unitPrice": 250.0,
+      "priceType": "PER_UNIT",
+      "gstInclusive": false,
+      "description": "Handcrafted in Australia. Solid 925 sterling silver pendant with secure hex-sealed chamber containing a token pinch of ashes, paired with snake chain.",
+      "compatiblePackages": [
+        "PKG_DIRECT_CREMATION_BT",
+        "PKG_DIRECT_CREMATION_CCF",
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_CHRISTIAN_3D_PEACE",
+        "PKG_CHRISTIAN_3D_FAITH",
+        "PKG_CATHOLIC_3D_PEACE",
+        "PKG_CATHOLIC_3D_FAITH",
+        "PKG_FREETHINKER_3D_PEACE",
+        "PKG_FREETHINKER_3D_FAITH",
+        "PKG_SOKA_3D_STANDARD",
+        "PKG_HINDU_2D_STANDARD",
+        "PKG_BABY_ANGEL_BUDDHIST_TAOIST",
+        "PKG_BABY_ANGEL_CHRISTIAN_CATHOLIC_FT",
+        "PKG_MEMORIAL_SERVICE_STANDARD"
+      ],
+      "incompatibleAddOns": [],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-LOG-NIGHT-ATTENDANT",
+      "name": "Dedicated Night Service Attendant (10:00 PM - 6:00 AM)",
+      "category": "Manpower & Security",
+      "unitPrice": 200.0,
+      "priceType": "PER_NIGHT",
+      "gstInclusive": false,
+      "description": "Dedicated on-site attendant to keep the wake area tidy, replenish snacks/hot water, attend to late visitors, and maintain vigilance.",
+      "compatiblePackages": [
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_CHRISTIAN_3D_PEACE",
+        "PKG_CHRISTIAN_3D_FAITH",
+        "PKG_CATHOLIC_3D_PEACE",
+        "PKG_CATHOLIC_3D_FAITH",
+        "PKG_FREETHINKER_3D_PEACE",
+        "PKG_FREETHINKER_3D_FAITH",
+        "PKG_SOKA_3D_STANDARD"
+      ],
+      "incompatibleAddOns": [],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-LOG-SECURITY-GUARD",
+      "name": "Licensed Overnight Security Guard (10:00 PM - 6:00 AM)",
+      "category": "Manpower & Security",
+      "unitPrice": 250.0,
+      "priceType": "PER_NIGHT",
+      "gstInclusive": false,
+      "description": "Licensed security officer deployed to guard wake perimeter, condolence safe box, and maintain overnight order.",
+      "compatiblePackages": [
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_CHRISTIAN_3D_PEACE",
+        "PKG_CHRISTIAN_3D_FAITH",
+        "PKG_CATHOLIC_3D_PEACE",
+        "PKG_CATHOLIC_3D_FAITH",
+        "PKG_FREETHINKER_3D_PEACE",
+        "PKG_FREETHINKER_3D_FAITH",
+        "PKG_SOKA_3D_STANDARD"
+      ],
+      "incompatibleAddOns": [],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-LOG-AIRCON-TENTAGE",
+      "name": "Air-Conditioned Void Deck Enclosure Upgrade (Dual 50,000 BTU)",
+      "category": "Logistics & Facilities",
+      "unitPrice": 900.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Fully sealed heavy-duty canvas enclosure with insulated wall panels and dual portable commercial air-conditioning units.",
+      "compatiblePackages": [
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_CHRISTIAN_3D_PEACE",
+        "PKG_CHRISTIAN_3D_FAITH",
+        "PKG_CATHOLIC_3D_PEACE",
+        "PKG_CATHOLIC_3D_FAITH",
+        "PKG_FREETHINKER_3D_PEACE",
+        "PKG_FREETHINKER_3D_FAITH",
+        "PKG_SOKA_3D_STANDARD",
+        "PKG_HINDU_2D_STANDARD"
+      ],
+      "incompatibleAddOns": [],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-LOG-MOBILE-AIR-COOLER",
+      "name": "Industrial Evaporative Mobile Air-Cooler Unit (Per Day)",
+      "category": "Logistics & Facilities",
+      "unitPrice": 120.0,
+      "priceType": "PER_DAY",
+      "gstInclusive": false,
+      "description": "Heavy-duty industrial mobile evaporative cooler delivering cool airflow for open outdoor void deck settings.",
+      "compatiblePackages": [
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_CHRISTIAN_3D_PEACE",
+        "PKG_CHRISTIAN_3D_FAITH",
+        "PKG_CATHOLIC_3D_PEACE",
+        "PKG_CATHOLIC_3D_FAITH",
+        "PKG_FREETHINKER_3D_PEACE",
+        "PKG_FREETHINKER_3D_FAITH",
+        "PKG_SOKA_3D_STANDARD",
+        "PKG_HINDU_2D_STANDARD"
+      ],
+      "incompatibleAddOns": [],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-LOG-BUFFET-CATERING-50PAX",
+      "name": "Daily Hot Buffet Dinner Catering (50 Pax - 7 Courses + Drink)",
+      "category": "Catering & Refreshments",
+      "unitPrice": 450.0,
+      "priceType": "PER_DAY",
+      "gstInclusive": false,
+      "description": "Fresh hot buffet dinner for 50 guests (Halal / Vegetarian / Non-Vegetarian options) complete with food warmers and bio-cutlery.",
+      "compatiblePackages": [
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_CHRISTIAN_3D_PEACE",
+        "PKG_CHRISTIAN_3D_FAITH",
+        "PKG_CATHOLIC_3D_PEACE",
+        "PKG_CATHOLIC_3D_FAITH",
+        "PKG_FREETHINKER_3D_PEACE",
+        "PKG_FREETHINKER_3D_FAITH",
+        "PKG_SOKA_3D_STANDARD",
+        "PKG_HINDU_2D_STANDARD",
+        "PKG_MEMORIAL_SERVICE_STANDARD"
+      ],
+      "incompatibleAddOns": [],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-LOG-BEVERAGE-CONSIGNMENT",
+      "name": "Consignment Beverage & Tidbit Starter Pack",
+      "category": "Catering & Refreshments",
+      "unitPrice": 150.0,
+      "priceType": "DEPOSIT_ON_CONSUMPTION",
+      "gstInclusive": false,
+      "description": "Assorted canned drinks, Yeo's packets, bottled water, and tidbits. Only opened cartons billed at final settlement.",
+      "compatiblePackages": [
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_CHRISTIAN_3D_PEACE",
+        "PKG_CHRISTIAN_3D_FAITH",
+        "PKG_CATHOLIC_3D_PEACE",
+        "PKG_CATHOLIC_3D_FAITH",
+        "PKG_FREETHINKER_3D_PEACE",
+        "PKG_FREETHINKER_3D_FAITH",
+        "PKG_SOKA_3D_STANDARD",
+        "PKG_HINDU_2D_STANDARD",
+        "PKG_MEMORIAL_SERVICE_STANDARD"
+      ],
+      "incompatibleAddOns": [],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-LOG-LIVESTREAM-HD",
+      "name": "Multi-Camera High-Definition Private Livestreaming Service",
+      "category": "Media & Technology",
+      "unitPrice": 400.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Dedicated videographer broadcasting memorial and cortege service via password-protected HD link for overseas family.",
+      "compatiblePackages": [
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_CHRISTIAN_3D_PEACE",
+        "PKG_CHRISTIAN_3D_FAITH",
+        "PKG_CATHOLIC_3D_PEACE",
+        "PKG_CATHOLIC_3D_FAITH",
+        "PKG_FREETHINKER_3D_PEACE",
+        "PKG_FREETHINKER_3D_FAITH",
+        "PKG_SOKA_3D_STANDARD",
+        "PKG_HINDU_2D_STANDARD",
+        "PKG_BABY_ANGEL_BUDDHIST_TAOIST",
+        "PKG_BABY_ANGEL_CHRISTIAN_CATHOLIC_FT",
+        "PKG_MEMORIAL_SERVICE_STANDARD"
+      ],
+      "incompatibleAddOns": [],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-FLR-DIGITAL-OBITUARY-QR",
+      "name": "AI Digital Tribute Montage & Interactive Guest QR Portal",
+      "category": "Media & Technology",
+      "unitPrice": 350.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Customized digital tribute page with QR code for guests to upload photos, audio messages, and memories streaming live on-site.",
+      "compatiblePackages": [
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_CHRISTIAN_3D_PEACE",
+        "PKG_CHRISTIAN_3D_FAITH",
+        "PKG_CATHOLIC_3D_PEACE",
+        "PKG_CATHOLIC_3D_FAITH",
+        "PKG_FREETHINKER_3D_PEACE",
+        "PKG_FREETHINKER_3D_FAITH",
+        "PKG_SOKA_3D_STANDARD",
+        "PKG_HINDU_2D_STANDARD",
+        "PKG_MEMORIAL_SERVICE_STANDARD"
+      ],
+      "incompatibleAddOns": [],
+      "conflictRules": []
+    },
+    {
+      "addOnId": "ADD-FLR-SPH-PRINT-OBITUARY",
+      "name": "Straits Times / Lianhe Zaobao Print Obituary Placement Liaison",
+      "category": "Media & Technology",
+      "unitPrice": 120.0,
+      "priceType": "FLAT_FEE",
+      "gstInclusive": false,
+      "description": "Drafting, sizing, proofing, and publication booking liaison with Singapore Press Holdings (SPH space charged at net cost).",
+      "compatiblePackages": [
+        "PKG_DIRECT_CREMATION_BT",
+        "PKG_DIRECT_CREMATION_CCF",
+        "PKG_BUDDHIST_3D_SIMPLICITY",
+        "PKG_BUDDHIST_3D_VALUE",
+        "PKG_TAOIST_3D_BASIC",
+        "PKG_TAOIST_3D_VALUE",
+        "PKG_CHRISTIAN_3D_PEACE",
+        "PKG_CHRISTIAN_3D_FAITH",
+        "PKG_CATHOLIC_3D_PEACE",
+        "PKG_CATHOLIC_3D_FAITH",
+        "PKG_FREETHINKER_3D_PEACE",
+        "PKG_FREETHINKER_3D_FAITH",
+        "PKG_SOKA_3D_STANDARD",
+        "PKG_HINDU_2D_STANDARD",
+        "PKG_MEMORIAL_SERVICE_STANDARD"
+      ],
+      "incompatibleAddOns": [],
+      "conflictRules": []
+    }
+  ],
+  "upgradeDowngradePolicies": {
+    "casketUpgradePolicy": {
+      "method": "DIFFERENCE_IN_LIST_PRICE",
+      "explanation": "When upgrading from a package's default included casket to a higher tier model, the family is credited the full itemized retail value of the default casket against the upgrade selection.",
+      "formula": "upgrade_fee = selected_casket_price_sgd - default_package_casket_price_sgd",
+      "cutoffMilestone": "EMBALMING_COMPLETED",
+      "milestoneRule": "Casket upgrades must be confirmed prior to final body placement and encoffinment. Once encoffinment is sealed, casket changes incur an additional S$300 sanitization and transfer surcharge."
+    },
+    "durationExtensionPolicy": {
+      "dailyExtensionRateSGD": 350.0,
+      "explanation": "Extending a wake duration beyond the baseline package allowance (e.g. extending from 3 days to 5 days) is billed at S$350 per additional calendar day, covering extended canvas rental, additional coordinator shifts, daily restroom sanitization, and town council permit renewals.",
+      "formula": "extension_cost = MAX(0, requested_days - package_included_days) * 350.00"
+    },
+    "hearseUpgradePolicy": {
+      "rules": [
+        {
+          "fromHearse": "TRS_STANDARD_HEARSE",
+          "toHearse": "TRS_MERCEDES_BENZ_VITO_HEARSE",
+          "upgradeFeeSGD": 250.0
+        },
+        {
+          "fromHearse": "TRS_STANDARD_HEARSE",
+          "toHearse": "TRS_MITSUOKA_GLASS_HEARSE",
+          "upgradeFeeSGD": 550.0
+        },
+        {
+          "fromHearse": "TRS_MERCEDES_BENZ_VITO_HEARSE",
+          "toHearse": "TRS_MITSUOKA_GLASS_HEARSE",
+          "upgradeFeeSGD": 300.0
+        }
+      ]
+    },
+    "downgradeRules": {
+      "generalPolicy": "Downgrading an active package to a lower tier or direct disposition is permissible only prior to physical tentage erection or embalming commencement.",
+      "adminFeeSGD": 150.0,
+      "lockoutCondition": "Once transport team is dispatched or void deck canvas is erected, full setup labor and logistics costs are non-refundable."
+    }
+  },
+  "financialPolicies": {
+    "deposit": {
+      "type": "PERCENTAGE",
+      "value": 30,
+      "dueAt": "BOOKING_CONFIRMATION",
+      "explanation": "A mandatory booking deposit of 30% of the taxable quotation subtotal (including GST) is required to lock in the operational schedule, dispatch transport, and reserve mortuary facilities."
+    },
+    "coolingOffPeriod": {
+      "durationHours": 24,
+      "condition": "Full refund of deposit granted if cancellation is requested within 24 hours of booking, provided no operational dispatch or embalming has commenced."
+    },
+    "cancellationAndRefunds": [
+      {
+        "milestone": "PRE_DISPATCH_ADMINISTRATIVE",
+        "description": "Cancellation within cooling-off period before transport or embalming team is dispatched.",
+        "refundPercentage": 100,
+        "adminFeeSGD": 150.0,
+        "netDeduction": "Flat administrative fee of S$150.00 deducted to cover registry file opening and permit queuing."
+      },
+      {
+        "milestone": "POST_DISPATCH_BODY_COLLECTED",
+        "description": "Cancellation after transport team has been dispatched and deceased removed from hospital or residence.",
+        "refundPercentage": 60,
+        "adminFeeSGD": 350.0,
+        "netDeduction": "S$350.00 dedicated removal transport fee deducted."
+      },
+      {
+        "milestone": "POST_EMBALMING_CARE",
+        "description": "Cancellation after professional arterial sanitization, embalming, dressing, and cosmetological styling have been completed.",
+        "refundPercentage": 30,
+        "adminFeeSGD": 800.0,
+        "netDeduction": "S$800.00 clinical labor and consumables fee deducted."
+      },
+      {
+        "milestone": "WAKE_SETUP_COMPLETED",
+        "description": "Cancellation after HDB void deck canvas tentage or parlour has been fully erected and utility meters tapped.",
+        "refundPercentage": 0,
+        "adminFeeSGD": 0.0,
+        "netDeduction": "50% of the total base package price is billed to cover third-party logistics, canvas labor, and municipal permit costs."
+      },
+      {
+        "milestone": "CORTEGE_PROCESSION_DAY",
+        "description": "Cancellation on the final day of the cortege procession to crematorium or cemetery.",
+        "refundPercentage": 0,
+        "adminFeeSGD": 0.0,
+        "netDeduction": "100% non-refundable; full contracted quotation is billed."
+      }
+    ],
+    "paymentTerms": {
+      "finalPaymentDueDays": 7,
+      "balanceSettlementMilestone": "Final balance of 70% plus any signed daily interim variable consumption sheets is payable on the final cortege day prior to crematorium entry or within 7 calendar days of service completion.",
+      "acceptedMethods": [
+        "PAYNOW (UEN: 201300000D)",
+        "FAST_BANK_TRANSFER",
+        "CREDIT_CARD_VISA_MASTERCARD_AMEX",
+        "NETS",
+        "MONTHLY_INSTALLMENT_PLANS_0_PCT"
+      ],
+      "installmentPlanPartners": [
+        {
+          "bank": "DBS / POSB",
+          "tenureMonths": [
+            6,
+            12
+          ],
+          "interestRatePercent": 0.0
+        },
+        {
+          "bank": "OCBC",
+          "tenureMonths": [
+            6,
+            12
+          ],
+          "interestRatePercent": 0.0
+        },
+        {
+          "bank": "UOB",
+          "tenureMonths": [
+            6,
+            12
+          ],
+          "interestRatePercent": 0.0
+        }
+      ],
+      "allowDeferredPayment": true,
+      "deferredPaymentConditions": "Subject to verified Ministry of Social and Family Development (MSF) ComCare Funeral Assistance Scheme application reference or CPF Dependants' Protection Scheme (DPS) payout verification.",
+      "financialAssistanceSchemes": [
+        {
+          "schemeName": "MSF ComCare Funeral Assistance Scheme",
+          "maxGrantSGD": 1800.0,
+          "eligibility": "Low-income Singaporean families with per capita household income below established ComCare thresholds. Solace Dignity Care provides direct filing assistance and deferred invoicing.",
+          "claimProcess": "Family provides MSF case officer reference; invoice balance is frozen pending government disbursement."
+        },
+        {
+          "schemeName": "CPF Dependants' Protection Scheme (DPS) & Deceased Bank Account Settlement",
+          "maxGrantSGD": 70000.0,
+          "eligibility": "Insured CPF members under Great Eastern Life or Singapore Life.",
+          "claimProcess": "Solace Dignity Care provides formal itemized tax invoices and certified death extracts for rapid claim filing."
+        },
+        {
+          "schemeName": "Solace Dignity Care Life Foundation Pro Bono Afterlife Support",
+          "maxGrantSGD": 1500.0,
+          "eligibility": "Elderly individuals with no next-of-kin, destitute cases, or families facing severe financial distress certified by medical social workers.",
+          "claimProcess": "100% pro bono Direct Cremation package coordinated with zero out-of-pocket costs."
+        }
+      ]
+    },
+    "gstAndPricingIntegrity": {
+      "standardTaxRate": 0.09,
+      "pricingTransparencyStandard": "All commercial service items, package base rates, and optional upgrades are quoted net of GST. Singapore 9% GST is calculated transparently on the commercial subtotal. Third-party statutory government disbursements are passed through at net cost with 0% markup and zero GST addition.",
+      "priceValidityPeriodDays": 14,
+      "statutoryDisbursementsGSTExempt": [
+        {
+          "item": "NEA Mandai Cremation Fee (Standard Cremator)",
+          "statutoryFeeSGD": 315.0,
+          "gstApplicable": false
+        },
+        {
+          "item": "NEA Mandai Cremation Fee (Large Cremator)",
+          "statutoryFeeSGD": 500.0,
+          "gstApplicable": false
+        },
+        {
+          "item": "NEA Choa Chu Kang Burial Plot Lease Fee (Muslim/Parsi)",
+          "statutoryFeeSGD": 315.0,
+          "gstApplicable": false
+        },
+        {
+          "item": "NEA Choa Chu Kang Burial Plot Lease Fee (Christian/Chinese)",
+          "statutoryFeeSGD": 940.0,
+          "gstApplicable": false
+        },
+        {
+          "item": "NEA Inland Ash Scattering Fee (Garden of Peace / Garden of Serenity)",
+          "statutoryFeeSGD": 350.0,
+          "gstApplicable": false
+        },
+        {
+          "item": "Town Council Void Deck Space Permit & Metered Tap Deposit",
+          "statutoryFeeSGD": 50.0,
+          "gstApplicable": false
+        },
+        {
+          "item": "SLA Temporary Occupation Licence (TOL) for Landed Estate Verge",
+          "statutoryFeeSGD": 120.0,
+          "gstApplicable": false
+        }
+      ],
+      "dailyInterimAuditProtocol": "Variable consumption items (refreshment beverage cartons, extra food warmer portions, and physical floral stands) are audited and signed off by the next-of-kin and on-site Butler every 24 hours to prevent unexpected final billing surprises."
+    }
+  }
+}

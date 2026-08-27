@@ -1,0 +1,88 @@
+# ==========================================================
+# SECRETS — never commit
+# ==========================================================
+.env
+.env.local
+*.env
+!.env.example
+
+# ==========================================================
+# FAMILY DATA & UPLOADED DOCUMENTS — privacy critical
+# These hold real user records, password hashes, session
+# tokens and uploaded death certificates. They must never
+# leave the machine they were created on.
+# ==========================================================
+solace_secure_docs/
+data/*.db
+data/*.db-journal
+data/*.sqlite
+data/*.sqlite3
+data/consultant_requests.json
+
+# ==========================================================
+# MODEL WEIGHTS — too large for GitHub, downloaded on setup
+# kokoro-v1.0.onnx alone is 311 MB; GitHub rejects any file
+# over 100 MB. install_dependencies.bat fetches these.
+# ==========================================================
+models/
+*.onnx
+*.bin
+
+# ==========================================================
+# VENDORED BINARIES — downloaded by the installer
+# ==========================================================
+tools/*.exe
+
+# ==========================================================
+# PYTHON
+# ==========================================================
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+ENV/
+*.egg-info/
+.pytest_cache/
+
+# ==========================================================
+# CACHES & GENERATED ARTEFACTS
+# ==========================================================
+data/anchor_vectors.json
+data/offline_answers_vectors.json
+scratch/
+*.log
+
+# ==========================================================
+# EDITOR & OS
+# ==========================================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================================
+# ADDITIONAL PRIVACY & HOUSEKEEPING (added after review)
+# ==========================================================
+
+# Consultant escalation tickets — these hold customer_name,
+# phone, email and full conversation transcripts from testing.
+data/consultant_requests.json
+
+# Lead backups and any other captured customer records
+data/leads.json*
+data/*.bak
+
+# Superseded copies of source files. These still contain the
+# hardcoded admin tokens that were removed from the live files,
+# so committing them would republish the credentials.
+*_OLD.py
+*_OLD.js
+*_OLD.html
+*_old.*
+
+# Generated test artefacts
+data/test_tts.wav
+*.wav

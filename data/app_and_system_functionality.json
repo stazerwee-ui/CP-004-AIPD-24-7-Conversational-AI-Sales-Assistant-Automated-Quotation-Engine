@@ -1,0 +1,123 @@
+{
+  "app_functionality": [
+    {
+      "feature_id": "interactive_quote_calculator",
+      "feature_name": "Interactive Package Configurator & Quote Calculator",
+      "purpose": "Enables families and funeral coordinators to dynamically select service components (base tier, religious rites, casket upgrades, wake duration/location, ash management, and addons) and calculate real-time pricing breakdowns with prevailing GST.",
+      "user_workflow_steps": [
+        "Select core service tier (Direct Cremation, Standard, Deluxe, Premium)",
+        "Select religious or secular ceremony rites",
+        "Choose casket upgrades (Standard Eco-wood, Oak, Teak)",
+        "Select wake location (HDB Void Deck or Air-Con Parlour) and duration (3, 5, or 7 days)",
+        "Select ash management preference (Mandai cremation, CCK inland scattering, Changi sea scattering, columbarium niche, keepsake jewellery)",
+        "Select custom logistics and addons (buffet catering, air-cooler tentage, memory video, livestreaming, overnight security guard, premium hearse, floral wreaths, will planning, grief counselling)",
+        "Review real-time itemized pricing subtotal, dynamic 9% GST tax addition, and the total quote sum"
+      ],
+      "required_inputs": [
+        "service_tier_id",
+        "ceremony_id",
+        "casket_upgrade_id",
+        "wake_duration_id",
+        "wake_location_id",
+        "ash_management_id",
+        "selected_addons_object"
+      ],
+      "output_documents": [
+        "Itemized Pricing Subtotal Breakdown",
+        "Dynamic 9% GST Tax Calculation",
+        "Total Projected Quote Statement"
+      ],
+      "family_collaboration_features": "Allows coordinates to save current configurations, share draft quotes via a digital link, or export details to family messaging groups for collective review and consensus."
+    },
+    {
+      "feature_id": "canvas_e_signature_capture",
+      "feature_name": "Local Canvas-based E-Signature Capture",
+      "purpose": "Captures the family representative's electronic signature directly inside the browser using HTML5 Canvas drawing, ensuring legal agreement verification without external third-party dependencies.",
+      "user_workflow_steps": [
+        "Scroll to the authorization section of the generated quote sheet",
+        "Use a mouse, trackpad, or touch screen to draw the signature inside the designated canvas box",
+        "System draws the strokes live and encodes the drawing as a Base64 text string",
+        "Submit the signature to insert the drawing directly into the active quotation document",
+        "Quote status is updated instantly to 'Executed and Verified' with name and timestamp"
+      ],
+      "required_inputs": [
+        "client_representative_name",
+        "canvas_drawing_coordinates_stream",
+        "execution_timestamp"
+      ],
+      "output_documents": [
+        "Base64 Encoded PNG Signature Image",
+        "Signed Agreement metadata (signer, time, status)"
+      ],
+      "family_collaboration_features": "Single signature box for the primary next-of-kin representative, with instant visual confirmation visible to all family members reviewing the screen."
+    },
+    {
+      "feature_id": "pdf_export_and_print_template",
+      "feature_name": "CSS Media Print Document Export",
+      "purpose": "Generates a clean, professional, single-page PDF quote document for the family, stripping out app navigation panels and UI controls using native CSS print styles.",
+      "user_workflow_steps": [
+        "Click the 'Print Quote' button on the verified quotation panel",
+        "System triggers the native browser print dialogue box",
+        "CSS media print styles hide active buttons, sidebars, and input fields",
+        "The document is formatted as a formal billing layout with the company logo, quote ID, client details, itemized lines, totals, and the embedded e-signature",
+        "Save the resulting clean layout directly as a PDF or send it to a local printer"
+      ],
+      "required_inputs": [
+        "active_quote_state_object",
+        "client_e_signature_base64_string",
+        "invoice_metadata"
+      ],
+      "output_documents": [
+        "Solace_Dignity_Care_Quote_[Quote_ID].pdf"
+      ],
+      "family_collaboration_features": "Generates a standardized PDF file that can be immediately emailed, printed, or sent via WhatsApp to all family representatives and executors."
+    },
+    {
+      "feature_id": "consultant_handoff_and_crm_logs",
+      "feature_name": "Consultant Handoff & Intake System",
+      "purpose": "Logs client leads, records chat conversations, captures intake options, and handles seamless escalation from AI chatbot support to a human funeral director.",
+      "user_workflow_steps": [
+        "Client initiates chat or completes the basic configuration flow",
+        "System captures contact details (name, email, phone) and configuration selections in leads.json",
+        "If the customer asks out-of-scope questions (e.g. food delivery) or requests a direct consultation, a human director is notified",
+        "Marcus Chen (or another assigned consultant) joins the live chat, switching the mode from AI to HUMAN",
+        "The intake data and final quote decisions are saved in consultant_requests.json, updating ticket status to IN PROGRESS or RESOLVED"
+      ],
+      "required_inputs": [
+        "customer_name",
+        "phone_number",
+        "email_address",
+        "intake_state_choices",
+        "chat_conversation_history"
+      ],
+      "output_documents": [
+        "leads.json entry",
+        "consultant_requests.json intake history"
+      ],
+      "family_collaboration_features": "Multi-staff visibility allows backend consultants to review draft calculations and previous chat histories to assist the family consistently."
+    },
+    {
+      "feature_id": "life_well_lived_biography_generator",
+      "feature_name": "Deceased Biography & Tribute Page Generator",
+      "purpose": "Uses AI-guided inputs to help families draft a meaningful tribute biography for the deceased, which is then printed and shared at the wake tables.",
+      "user_workflow_steps": [
+        "Open the 'A Life Well Lived' configuration tab",
+        "Complete a short digital questionnaire regarding the deceased's hobbies, achievements, milestones, and favorite memories",
+        "The system processes inputs to compile a flowing, respectful biography draft",
+        "Approve the draft and export it to a printable tribute layout with background imagery",
+        "Place printed cards on wake tables for guests to read and reflect upon"
+      ],
+      "required_inputs": [
+        "deceased_full_name",
+        "key_life_milestones",
+        "hobbies_and_passions",
+        "favorite_family_memories"
+      ],
+      "output_documents": [
+        "Printable Deceased Biography Card",
+        "Digital Obituary & Tribute Page"
+      ],
+      "family_collaboration_features": "Multiple family members can submit answers to the biography questionnaire, combining their favorite memories into a single, cohesive story."
+    }
+  ]
+}

@@ -1,0 +1,1724 @@
+{
+  "category": "Religious & Cultural Funeral Data",
+  "version": "1.1.0",
+  "jurisdiction": "Singapore",
+  "lastUpdated": "2026-08-16",
+  "prototypeMetadata": {
+    "systemName": "Solace Dignity Care AI Funeral Concierge Prototype",
+    "projectCode": "CP-004",
+    "brand": "Solace Dignity Care Singapore",
+    "tagline": "Dignified farewells, compassionate care, transparent pricing & 24/7 butler support in Singapore",
+    "foundedYear": 1980,
+    "founders": [
+      "Daniel Albans",
+      "Lisa Albans"
+    ],
+    "operationsHotline247": "+65 6555 1115",
+    "emergencyHotline": "+65 6252 2777",
+    "whatsappSupport": "+65 9170 9343",
+    "headquartersAddress": "127 Lavender St., Singapore 338735",
+    "primaryParlourAddress": "Direct Memorial Hall, 89 Geylang Bahru, Singapore 339697",
+    "westHubAddress": "5 Soon Lee St, #06-12, Singapore 627607",
+    "csrFoundation": "Solace Dignity Care Life Foundation (Pro Bono Funerals & Indigent Support)",
+    "pricingRulesEngine": {
+      "transparencyGuarantee": "100% Nett Pricing Guarantee (No hidden fees, 9% GST calculated clearly, $0 markup on municipal disbursements)",
+      "baseTiers": {
+        "direct_cremation": 1500,
+        "standard": 3200,
+        "deluxe": 4500,
+        "premium": 6800
+      },
+      "defaultReligionCoordinationFeesSGD": {
+        "buddhist": 1500,
+        "taoist": 2500,
+        "christian": 800,
+        "catholic": 1000,
+        "hindu": 1600,
+        "soka": 1200,
+        "secular": 500,
+        "freethinker": 600
+      }
+    },
+    "supportedTraditionsCount": 8
+  },
+  "traditions": [
+    {
+      "traditionId": "TRAD_BUDDHIST",
+      "displayName": "Buddhist Funeral Rites (佛教丧礼)",
+      "overview": "Rooted in Mahayana, Theravada, and Vajrayana teachings on impermanence (Anicca), karma, and the cycle of rebirth (Samsara). In Singapore, the majority of Buddhist funerals follow Mahayana traditions, centering on sutra recitation by ordained monks or nuns (Sangha) to transfer spiritual merit (Gong De / 功德) to the departed consciousness, aiding its peaceful transition to the Pure Land of Amitabha Buddha (Sukhavati / 西方极乐世界). Under Solace Dignity Care's operational model, the wake is managed with calm solemnity and compassionate care, providing pure vegetarian offerings, continuous Amitabha chant boxes, and dedicated Funeral Butler support for Sangha reception and Town Council permits.",
+      "sdcPrototypeIntegration": {
+        "primaryPackageId": "PKG_BUDDHIST_3D_SIMPLICITY",
+        "supportedTiers": [
+          "Direct Cremation",
+          "Standard 3-Day",
+          "Deluxe 5-Day",
+          "Premium 5-Day Heritage"
+        ],
+        "legacyCeremonyId": "buddhist",
+        "ceremonyCoordinationFeeSGD": 1500,
+        "butlerDuties": [
+          "Coordinate arrival, seating, and tea reception for ordained Sangha monks",
+          "Ensure fresh fruit platters and daily vegetarian meal offerings are arranged before the Buddha altar",
+          "Manage Town Council void deck permit and designated burner bin setup for Rebirth Paper (Wang Sheng Qian)",
+          "Verify the Amitabha Dharani Quilt is properly placed over the deceased during encoffinment",
+          "Guide family through the 49th-day prayer scheduling and columbarium niche transition"
+        ]
+      },
+      "requiredRituals": [
+        {
+          "name": "Encoffinment Chanting & Dharani Covering (入殓诵经与覆盖陀罗尼经被)",
+          "stage": "Pre-Funeral",
+          "description": "Ordained Buddhist monks lead the immediate family in chanting the Amitabha Sutra, Heart Sutra, and Rebirth Mantra as the dressed deceased is reverently placed into the casket. The Solace Dignity Care team assists the Venerable in draping the consecrated Amitabha Dharani Quilt (陀罗尼经被) over the body before the casket lid is partially closed.",
+          "isMandatory": true,
+          "typicalDuration": "45 to 60 minutes"
+        },
+        {
+          "name": "Nightly Merit Transference & Sutra Recitation (晚间诵经回向法事)",
+          "stage": "During Wake",
+          "description": "Monks conduct evening chanting sessions at the wake altar. Recitations include the Amitabha Sutra (佛说阿弥陀经), Universal Door Chapter of Avalokiteshvara Bodhisattva (观世音菩萨普门品), and Heart Sutra (般若波罗蜜多心经). The accrued merits are formally dedicated (Punya-parivarta / 回向) to liberate the deceased from lower realms of rebirth.",
+          "isMandatory": true,
+          "typicalDuration": "60 to 90 minutes per evening session"
+        },
+        {
+          "name": "Repentance & Karmic Cleansing Rite (拜忏发愿法事)",
+          "stage": "During Wake",
+          "description": "Conducted on the final evening of the wake. Monks recite the Eighty-Eight Buddhas Great Repentance Text (八十八佛大忏悔文) or Compassionate Water Repentance (慈悲三昧水忏), guiding the family to repent on behalf of the deceased to eradicate karmic obstacles.",
+          "isMandatory": true,
+          "typicalDuration": "90 to 120 minutes"
+        },
+        {
+          "name": "Final Send-Off & Departure Dharma Assembly (出殡起灵法会)",
+          "stage": "Funeral Day",
+          "description": "Final morning chanting assembly before the casket departs the wake venue. Monks chant the Praise of Amitabha, circumambulate the casket together with family members, and lead the cortege transfer to the hearse.",
+          "isMandatory": true,
+          "typicalDuration": "45 to 60 minutes"
+        },
+        {
+          "name": "Crematorium Service Hall Final Chanting (火化场最后告别诵经)",
+          "stage": "Funeral Day",
+          "description": "Held in the Mandai Crematorium service hall. Monks lead a final 15-minute session of the Rebirth Mantra and Amitabha Buddha name recitation while family members offer final bows before the casket moves into the cremation chamber.",
+          "isMandatory": true,
+          "typicalDuration": "15 to 20 minutes"
+        },
+        {
+          "name": "Bone Retrieval & Temporary Tablet Enshrinement (捡骨与安灵奉安)",
+          "stage": "Post-Funeral",
+          "description": "Conducted the morning following cremation. Family collects cremated bone relics into the chosen urn with assistance from crematorium attendants and SDC funeral coordinators. A temporary ancestral spirit tablet (Ling Wei / 灵位) and framed photo are brought home or enshrined at a Buddhist monastery for 49 days.",
+          "isMandatory": true,
+          "typicalDuration": "30 to 45 minutes"
+        }
+      ],
+      "optionalRituals": [
+        {
+          "name": "Grand Ksitigarbha Deliverance Assembly (地藏菩萨超拔普度法会)",
+          "description": "An extensive chanting of the complete Ksitigarbha Bodhisattva Purvapranidhana Sutra (地藏菩萨本愿经) by 3 to 5 monks to deliver the soul from suffering in the underworld.",
+          "estimatedCostRangeSGD": {
+            "min": 800,
+            "max": 2500
+          }
+        },
+        {
+          "name": "Liberation of Captive Animals / Merit Life-Release (放生积德回向)",
+          "description": "Organized donation or symbolic compassionate release of animals through registered wildlife shelters or temple charitable foundations in the name of the deceased.",
+          "estimatedCostRangeSGD": {
+            "min": 150,
+            "max": 800
+          }
+        },
+        {
+          "name": "Full Vegetarian Feast Catering for Wake Guests (全素筵席餐饮)",
+          "description": "Provision of 100% vegetarian buffet catering for all wake visitors to foster non-violence and cultivate pure merit on behalf of the deceased.",
+          "estimatedCostRangeSGD": {
+            "min": 1200,
+            "max": 4000
+          }
+        },
+        {
+          "name": "Custom Monastery Tablet Enshrinement (寺庙永久/49日延生牌位)",
+          "description": "Placement of ancestral tablet at reputable Buddhist monasteries (e.g. Kong Meng San Phor Kark See Monastery or Lian Shan Shuang Lin Monastery).",
+          "estimatedCostRangeSGD": {
+            "min": 300,
+            "max": 3000
+          }
+        }
+      ],
+      "officiantRequirements": {
+        "title": "Venerable Buddhist Monk / Nun (法师 / 僧伽 / Sangha)",
+        "quantityRequired": "1 to 3 Monks for standard wakes; 5 Monks for grand dharma assemblies",
+        "bookingLeadTime": "4 to 12 hours from confirmation of wake schedule",
+        "etiquetteNotes": "Present honorarium offerings (Gong Yang / 供养) in red packets (Ang Bao) using both hands with a respectful bow. Provide strictly pure vegetarian meals, fresh fruit, and warm tea/water for the Sangha. Footwear must be removed before entering the inner prayer mat perimeter. Refrain from touching monks of the opposite gender."
+      },
+      "chantingAndPrayers": {
+        "required": true,
+        "typicalSessions": "Evening sessions (7:00 PM to 9:00 PM) on wake nights, morning of departure (9:00 AM to 10:30 AM), and 15-minute final rites at Mandai Crematorium.",
+        "languagesAvailable": [
+          "Mandarin (Standard Buddhist Liturgy)",
+          "Hokkien",
+          "Cantonese",
+          "Sanskrit (Mantras & Dharani)",
+          "Pali (Theravada tradition on request)"
+        ]
+      },
+      "offeringsAndItems": {
+        "requiredOfferings": [
+          "Amitabha Buddha / Guan Yin Bodhisattva image or statue",
+          "Fresh floral arrangements (white and yellow chrysanthemums, lotus blooms)",
+          "Fresh fruit platters (apples for peace, oranges for blessing; strictly avoiding pears/peaches)",
+          "Pure vegetarian dishes and clean white rice bowls with chopsticks",
+          "Electric or wax lotus lamps (Lian Hua Deng)",
+          "Sandalwood incense (Tan Xiang) and incense burner",
+          "Dharani Sutra Quilt (Tuoloni Jing Bei)",
+          "Amitabha recitation machine (continuous electronic chant box)"
+        ],
+        "incenseAndJossPaperRules": {
+          "allowed": true,
+          "hdbVoidDeckRestrictions": "Town Council regulations mandate that all joss paper burning take place strictly within the provided galvanized metal burn bins or eco-friendly burners located outside the void deck roofline. Burning inside the enclosed wake tentage is prohibited. In pure orthodox Buddhism, burning paper money is discouraged or kept to a nominal symbolic amount (Wang Sheng Qian / 往生钱), prioritizing sutra merit over material goods.",
+          "commonItemsBurned": [
+            "Rebirth Dharani paper sheets (Wang Sheng Qian / 往生钱)",
+            "Folded paper lotus flowers (symbolizing ascent to Pure Land)",
+            "Standard gold and silver joss paper (in moderate amounts if requested by traditional elders)"
+          ]
+        },
+        "attireForDeceased": "Traditional Buddhist monastic robe (Hai Qing / 海青) or modest high-collared Longevity Robe (Shou Yi / 寿衣), covered with the consecrated Amitabha Dharani Sutra Quilt.",
+        "attireForBereaved": "Plain, solid black or white short-sleeve shirt and dark trousers. Mourning pins (small fabric patches) pinned to the left sleeve (for male deceased) or right sleeve (for female deceased). Strictly no vibrant colors, especially red, pink, or bright orange."
+      },
+      "funeralTimingAndDuration": {
+        "typicalDays": "3-day (most common) or 5-day wake; 1-day direct cremation available for simplified send-offs.",
+        "auspiciousDateConsultationRequired": false,
+        "nightVigilPractices": "Family members take turns keeping quiet vigil through the night (Shou Ling / 守灵) to ensure that altar candles and incense stay lit, and that the electronic Amitabha chanting box plays softly without interruption."
+      },
+      "cremationAndBurial": {
+        "preferredMethod": "Cremation",
+        "specificPostCremationRituals": "Bone-picking ceremony (捡骨) conducted the morning after cremation. Relics and ashes are enshrined in a columbarium urn, scattered in designated ecological inland gardens (Garden of Peace @ CCK / Garden of Serenity @ Mandai), or committed to sea at MPA-approved sea scattering sites with monk/family prayers."
+      },
+      "postFuneralPractices": [
+        {
+          "milestone": "49th Day (七七 / 尾七)",
+          "description": "Crucial milestone marking the completion of the 49-day intermediate state (Bardo / 中阴身) before the consciousness takes final rebirth. Monks are invited for chanting, family observes strict vegetarian diet, and merits are dedicated.",
+          "requiredItems": [
+            "Vegetarian banquet dishes",
+            "Fresh flowers and fruits",
+            "Sutra recitation texts",
+            "Merit transference red packet"
+          ]
+        },
+        {
+          "milestone": "100th Day (百日 / 卒哭)",
+          "description": "Memorial prayers marking the end of the initial intensive mourning period. Family gathers at the columbarium or monastery to offer fresh flowers and fruits.",
+          "requiredItems": [
+            "Fresh flowers",
+            "Fruit basket",
+            "Incense sticks"
+          ]
+        },
+        {
+          "milestone": "1st Year Anniversary (对年 / 小祥)",
+          "description": "First annual death anniversary prayer. The temporary ancestral tablet is formally consecrated and transitioned into the permanent ancestral altar.",
+          "requiredItems": [
+            "Permanent ancestral tablet",
+            "Vegetarian offerings",
+            "Lotus lamps"
+          ]
+        },
+        {
+          "milestone": "Qing Ming Festival (清明节) & Ullambana (中元节/盂兰盆节)",
+          "description": "Annual tomb-sweeping and columbarium visitation. Family performs cleaning, offers fresh flowers, chants the Heart Sutra, and registers for Ullambana merit deliverance tablets at local temples.",
+          "requiredItems": [
+            "Columbarium cleaning cloth",
+            "Fresh chrysanthemums",
+            "Temple prayer registrations"
+          ]
+        }
+      ],
+      "culturalTaboosAndCustoms": [
+        {
+          "taboo": "Offering Meat, Seafood, or Alcoholic Beverages at the Altar",
+          "explanation": "Violates the primary Buddhist precept of non-killing (Ahimsa). Offering animal flesh generates negative karma that burdens the departed soul during its karmic judgment.",
+          "severity": "High"
+        },
+        {
+          "taboo": "Uncontrolled Wailing and Shaking the Deceased within 8 Hours of Passing",
+          "explanation": "According to Buddhist consciousness transition teachings, the eight consciousnesses (Vijnana) take up to 8 hours to leave the body. Agitation, loud crying, or abrupt physical movement disturbs the peaceful transition to the Pure Land.",
+          "severity": "Medium"
+        },
+        {
+          "taboo": "Wearing Red, Pink, or Festive Attire and Jewellery",
+          "explanation": "Red signifies joy and auspicious celebration in Chinese culture, which directly disrespects the solemnity of mourning and the impermanence contemplation of the wake.",
+          "severity": "High"
+        },
+        {
+          "taboo": "Blowing Out Altar Candles or Incense with the Mouth",
+          "explanation": "Human breath is considered impure in sacred spaces; candles and incense should be fanned out gently with the hand or extinguished with an instrument.",
+          "severity": "Advisory"
+        }
+      ],
+      "intentKeywords": [
+        "buddhist funeral",
+        "buddhist wake",
+        "monk chanting",
+        "amitabha sutra",
+        "pure land",
+        "dharani quilt",
+        "tuoloni",
+        "49th day prayer",
+        "wang sheng qian",
+        "vegetarian wake",
+        "buddhist cremation",
+        "kong meng san funeral",
+        "buddhist columbarium",
+        "solace dignity care buddhist"
+      ]
+    },
+    {
+      "traditionId": "TRAD_TAOIST",
+      "displayName": "Taoist Funeral Rites (道教丧礼 / 做功德)",
+      "overview": "Deeply steeped in ancient Chinese cosmological concepts of Yin-Yang balance, the Five Elements, filial piety, and distinct dialect traditions (Hokkien, Teochew, Cantonese, Hakka, Hainanese). Taoist funerals view death as the separation of the Hun (spiritual soul / 魂) and Po (corporeal soul / 魄). The primary focus of the rituals, conducted by Taoist Priests (Tao Shi / 高功法师), is to unbind the soul from earthly sins, shatter the gates of the Ten Courts of Underworld Hell (Po Di Yu / 破地狱), guide the soul safely across the Golden and Silver Bridges, and appease underworld deities so the ancestor may ascend to the Eastern Realm of Eternal Joy (东极妙严宫) or Western Paradise. Solace Dignity Care manages the full coordination of certified dialect priest troupes, auspicious timing (Tong Shu) consultations, and specialized Town Council metal burn enclosures.",
+      "sdcPrototypeIntegration": {
+        "primaryPackageId": "PKG_TAOIST_3D_BASIC",
+        "supportedTiers": [
+          "Direct Cremation",
+          "Standard 3-Day",
+          "Deluxe 5-Day",
+          "Premium 5-Day Heritage"
+        ],
+        "legacyCeremonyId": "taoist",
+        "ceremonyCoordinationFeeSGD": 2500,
+        "butlerDuties": [
+          "Liaise with the certified Taoist Federation priest troupe matching the family's dialect (Hokkien/Teochew/Cantonese/Hakka/Hainanese)",
+          "Coordinate the Tong Shu (Chinese Almanac) calculation for auspicious coffin sealing, departure, and clash avoidance",
+          "Position heavy-duty galvanized burner cages outside the void deck roofline with fire extinguishers on standby",
+          "Ensure safety clearance and fire-safe perimeter for the evening Po Di Yu (Breaking Hell Gates) acrobatics and tile-breaking",
+          "Provide continuous replenishment of oil for the Chang Ming Deng (ever-burning lantern) and rice wine offerings"
+        ]
+      },
+      "requiredRituals": [
+        {
+          "name": "Water Buying & Encoffinment Purification (买水入殓仪式)",
+          "stage": "Pre-Funeral",
+          "description": "The eldest son or primary bereaved, accompanied by the Taoist priest and Solace Dignity Care coordinator, symbolically buys water from the local Earth God (Tu Di Gong) using copper coins. This consecrated water is used to cleanse the face and body of the deceased before dressing in the Longevity Suit and encoffinment.",
+          "isMandatory": true,
+          "typicalDuration": "45 to 60 minutes"
+        },
+        {
+          "name": "Opening Altar & Deity Summoning (开坛请圣发奏)",
+          "stage": "During Wake",
+          "description": "Conducted on the first or second evening. Taoist masters sound the sacred horn, strike gongs, and chant scriptures to summon the Three Pure Ones (San Qing), Heavenly Officials, and the Grand Lord of the Underworld (Tai Yi Jiu Ku Tian Zun) to establish a sanctified ritual boundary.",
+          "isMandatory": true,
+          "typicalDuration": "60 to 90 minutes"
+        },
+        {
+          "name": "Breaking the Gates of Hell & Bridge Crossing (破地狱与过金银桥)",
+          "stage": "During Wake",
+          "description": "The most dramatic and critical Taoist rite, held on the eve of the funeral. The head priest performs martial footwork (Yu Bu / 禹步), sword brandishing, and leaping over flaming ceramic roof tiles to smash open the gates of the underworld hells. Family members are then guided across symbolic Golden and Silver Bridges to lead the cleansed soul to salvation.",
+          "isMandatory": true,
+          "typicalDuration": "90 to 150 minutes"
+        },
+        {
+          "name": "Repentance of Blood Basin & Filial Repayment (拜血盆忏 / 酬还生债)",
+          "stage": "During Wake",
+          "description": "Specifically performed for mothers or departed elders. The ceremony involves drinking sweet water or wine from symbolic bowls to atone for the bodily impurities of childbirth and repay debts owed to the Heavenly Treasury (Shou Sheng Qian / 受生钱).",
+          "isMandatory": true,
+          "typicalDuration": "60 to 90 minutes"
+        },
+        {
+          "name": "Coffin Sealing & Nailing Ceremony (封钉仪式 / 出殡起柩)",
+          "stage": "Funeral Day",
+          "description": "Before the casket leaves the wake, the maternal uncle (Jiu Jiu / 舅舅) or senior male elder oversees the sealing of the coffin. Four wooden or metal pins are driven into the coffin corners while auspicious four-character blessings are chanted, securing prosperity for descendants.",
+          "isMandatory": true,
+          "typicalDuration": "30 to 45 minutes"
+        },
+        {
+          "name": "Mandai Crematorium Liberation Chanting & Merit Paper Dispatch (火化奉送法事)",
+          "stage": "Funeral Day",
+          "description": "Priests lead final invocations at Mandai Crematorium service hall to commend the soul into the care of deities while the coffin enters the cremation chamber.",
+          "isMandatory": true,
+          "typicalDuration": "15 to 20 minutes"
+        },
+        {
+          "name": "Returning of the Soul Night Preparation (回魂夜 / 头七安魂)",
+          "stage": "Post-Funeral",
+          "description": "Calculated by the Taoist master based on the Chinese lunar calendar and deceased's birth/death timing. The family prepares favorite food, spreads a thin layer of baby powder or ash near the doorway to detect ancestral footsteps, and leaves the living quarters during specified hours.",
+          "isMandatory": true,
+          "typicalDuration": "Overnight preparation"
+        }
+      ],
+      "optionalRituals": [
+        {
+          "name": "Paper Mansion & Luxury Artifacts Burning Assembly (大型纸扎灵屋洋楼大典)",
+          "description": "Burning of elaborate handcrafted multi-storey paper mansions (Ling Wu / 灵屋), cars with chauffeurs, paper aircraft, luxury vaults, smartphones, and domestic helpers to provide for the soul in the afterlife.",
+          "estimatedCostRangeSGD": {
+            "min": 1500,
+            "max": 8000
+          }
+        },
+        {
+          "name": "Grand Dialect Troupe Ceremonial Ensemble (福建/潮州/广东大醮功德班)",
+          "description": "Full 5 to 7 priest ensemble with traditional live Chinese orchestra (Suona trumpet, gongs, drums, Yangqin) performing complete dialect-specific chants.",
+          "estimatedCostRangeSGD": {
+            "min": 2800,
+            "max": 7500
+          }
+        },
+        {
+          "name": "Sacrificial Whole Roast Pig and Five Animal Offerings (五牲全猪大祭)",
+          "description": "Elaborate roasted whole suckling pig, whole duck, fish, eggs, and squid presented to deities and ancestors on the final evening.",
+          "estimatedCostRangeSGD": {
+            "min": 600,
+            "max": 1800
+          }
+        },
+        {
+          "name": "Electronic LED Paper Mountain & Gold/Silver Treasury (金山银山与发财树)",
+          "description": "Large-scale illuminated paper gold mountains and silver mountains for ancestor enrichment.",
+          "estimatedCostRangeSGD": {
+            "min": 400,
+            "max": 1200
+          }
+        }
+      ],
+      "officiantRequirements": {
+        "title": "Taoist Priest / High Master (道长 / 高功法师 / Tao Shi)",
+        "quantityRequired": "3 to 5 Priests for standard Gong De; 5 to 7 Priests for grand dialect rites",
+        "bookingLeadTime": "6 to 18 hours (requires dialect troupe synchronization: Hokkien Quan Zhou / Zhang Zhou, Teochew, Cantonese, Hakka, Hainanese)",
+        "etiquetteNotes": "Prepare dedicated deity altar (San Qing & Tai Yi) separate from the ancestor table. Provide red packets (Ang Bao) for the head priest, assistant priests, and musical instrumentalists. Ensure safe clearances for martial sword and tile-breaking rites. Tea, rice wine, and refreshments must be replenished regularly."
+      },
+      "chantingAndPrayers": {
+        "required": true,
+        "typicalSessions": "Major afternoon and evening sessions (2:00 PM – 5:00 PM and 7:00 PM – 10:30 PM) on the eve of the funeral, plus morning departure rites.",
+        "languagesAvailable": [
+          "Hokkien (Quan Zhou / Zhang Zhou dialect traditions)",
+          "Teochew (Chaozhou dialect scriptures)",
+          "Cantonese (Guangfu liturgical chants)",
+          "Hakka",
+          "Hainanese",
+          "Mandarin (Taoist liturgical scriptures)"
+        ]
+      },
+      "offeringsAndItems": {
+        "requiredOfferings": [
+          "San Qing (Three Pure Ones) and Tai Yi Jiu Ku Tian Zun deity scrolls",
+          "Ancestor Spirit Tablet (Ling Wei / 灵位) and framed portrait",
+          "San Sheng (三牲: Roast pork, whole chicken, whole fish) and cooked dishes",
+          "Bowls of white rice, chopsticks, tea cups, and Chinese rice wine cups",
+          "Ever-burning Oil Lamp (Chang Ming Deng / 长明灯) to guide the soul",
+          "Red candles and white mourning candles",
+          "Traditional longevity incense, coil incense, and sandalwood powder",
+          "Sugar canes (Hokkien tradition) and pomelo leaves for purification"
+        ],
+        "incenseAndJossPaperRules": {
+          "allowed": true,
+          "hdbVoidDeckRestrictions": "Burning joss paper, paper houses, and paper cars is strictly prohibited inside the void deck footprint or under permanent shelters. Town Councils require all burning to occur inside designated heavy-duty galvanized burner bins or portable burn cages positioned at least 3 to 5 meters outside the building overhang. Solace Dignity Care coordinates burn bin placement and safety mesh screens.",
+          "commonItemsBurned": [
+            "Gold and Silver joss paper (Jin Yin Zhi / 金银纸)",
+            "Hell Banknotes (Ming Bi / 冥币) and Heavenly Treasury Paper (Shou Sheng Qian)",
+            "Handcrafted Paper Mansions (Ling Wu), luxury cars, credit cards, smartphones",
+            "Gold and Silver Mountains (Jin Shan Yin Shan)",
+            "Paper trunks/suitcases packed with paper clothing and shoes"
+          ]
+        },
+        "attireForDeceased": "Traditional 5, 7, or 9-layer Longevity Suit (Shou Yi / 寿衣) tailored from silk/cotton; traditional fabric shoes without rubber/leather soles (avoiding animal reincarnation karma).",
+        "attireForBereaved": "Traditional generational sackcloth or colored mourning t-shirts with colored fabric mourning badges (Xiao Bu / 孝布): Black/Hemp for sons and daughters; Blue for grandchildren; Light Blue/Green for great-grandchildren; Red/Pink for great-great-grandchildren or deceased aged 80+ (Laughing Funeral / Xi Sang / 喜丧)."
+      },
+      "funeralTimingAndDuration": {
+        "typicalDays": "3-day, 5-day, or 7-day wake (always an odd number of days in Chinese customs).",
+        "auspiciousDateConsultationRequired": true,
+        "nightVigilPractices": "Family members must maintain a continuous 24-hour vigil (Shou Ye / 守夜). The central Chang Ming Deng (oil lamp) and incense coils must never be allowed to extinguish until the cortege departs."
+      },
+      "cremationAndBurial": {
+        "preferredMethod": "Cremation",
+        "specificPostCremationRituals": "Bone-picking ritual (捡骨) the morning following cremation. Remains are sealed into a ceramic, granite, or jade urn and installed at a Taoist temple or columbarium niche, accompanied by ancestral tablet installation and incense offering."
+      },
+      "postFuneralPractices": [
+        {
+          "milestone": "Head Seven / Return of the Soul (头七 / 回魂)",
+          "description": "On the 7th day from passing, the spirit is believed to visit home for the last time. Family prepares the deceased's favorite foods on the table and stays in rooms overnight.",
+          "requiredItems": [
+            "Deceased's favorite meals",
+            "Bowls of rice and wine",
+            "Joss sticks and candles",
+            "Talcum powder near doorway"
+          ]
+        },
+        {
+          "milestone": "Seven Sevens / 49th Day (做七 / 满七)",
+          "description": "Prayers conducted every 7 days up to the 49th day, marking the soul's completion through the under-chambers. The 49th day is the final major transition.",
+          "requiredItems": [
+            "Gold and silver paper",
+            "Vegetarian or meat dishes",
+            "Incense and candles"
+          ]
+        },
+        {
+          "milestone": "100th Day (百日 / 卒哭)",
+          "description": "Family offers food and paper money at the columbarium or home altar, marking the reduction of deep mourning.",
+          "requiredItems": [
+            "Food offerings",
+            "Joss paper packs",
+            "Fresh fruits"
+          ]
+        },
+        {
+          "milestone": "1st Year (对年) & 3rd Year (三年)",
+          "description": "Anniversary rites marking the complete shedding of mourning garments and integration of the spirit tablet into the main ancestral lineage altar.",
+          "requiredItems": [
+            "Permanent ancestral tablet",
+            "Full feast offerings",
+            "Joss paper bundles"
+          ]
+        },
+        {
+          "milestone": "Qing Ming (清明节) & Hungry Ghost Festival (中元节)",
+          "description": "Annual tomb and columbarium visitation with joss paper burning, seasonal delicacies, and ancestor honoring.",
+          "requiredItems": [
+            "Paper clothing and gold ingots",
+            "Fresh flowers and tea/wine",
+            "Cleaning materials"
+          ]
+        }
+      ],
+      "culturalTaboosAndCustoms": [
+        {
+          "taboo": "Zodiac Sign Clash during Coffin Sealing and Lowering (生肖相冲必须回避)",
+          "explanation": "Family members and guests whose Chinese Zodiac signs clash (Chong / 冲) with the calculated hour of coffin sealing or cremation must turn their backs to avoid misfortune.",
+          "severity": "High"
+        },
+        {
+          "taboo": "Allowing the Ever-Burning Oil Lamp (Chang Ming Deng) to Extinguish",
+          "explanation": "The lamp serves as the guiding beacon for the soul in the darkness of the underworld; if extinguished, the spirit loses its way.",
+          "severity": "High"
+        },
+        {
+          "taboo": "Stepping Over or Kicking Joss Paper Ashes and Burners",
+          "explanation": "Disrespects underworld spirits and wandering ghosts, inviting spiritual disturbance and bad luck.",
+          "severity": "High"
+        },
+        {
+          "taboo": "Cats or Animals Jumping Over the Open Casket",
+          "explanation": "Ancient Chinese folklore warns that a cat jumping over a corpse can trigger sudden corpse movement or restless energy (Chi Shi / 尸变).",
+          "severity": "Medium"
+        },
+        {
+          "taboo": "Wearing Red for Standard Deaths (Below Age 80)",
+          "explanation": "Wearing red at a regular funeral is considered deeply offensive as it celebrates happiness rather than honoring grief.",
+          "severity": "High"
+        }
+      ],
+      "intentKeywords": [
+        "taoist funeral",
+        "taoist wake",
+        "gong de",
+        "po di yu",
+        "breaking hell gates",
+        "hokkien funeral",
+        "teochew funeral",
+        "cantonese funeral",
+        "joss paper burning",
+        "paper house",
+        "paper car",
+        "chang ming deng",
+        "feng ding",
+        "head seven",
+        "return of soul",
+        "shou yi",
+        "solace dignity care taoist"
+      ]
+    },
+    {
+      "traditionId": "TRAD_CHRISTIAN",
+      "displayName": "Christian Funeral Services (基督教丧礼)",
+      "overview": "Centered upon the Christian Gospel message of hope, eternal salvation through Jesus Christ, the resurrection of the dead, and divine comfort for grieving families. A Christian funeral wake is characterized by worship through hymns, scripture readings, personal eulogies, and pastoral sermons of encouragement. The service affirms that for believers, death is not a permanent end but a home-going transition to be with the Lord in Heaven ('to be absent from the body is to be present with the Lord'). Under Solace Dignity Care's service standards, we provide sound systems, personalized hymn booklets, Christian cross backdrops, and complete coordination with local church pastors.",
+      "sdcPrototypeIntegration": {
+        "primaryPackageId": "PKG_CHRISTIAN_3D_PEACE",
+        "supportedTiers": [
+          "Direct Cremation",
+          "Standard 3-Day",
+          "Deluxe 5-Day",
+          "Premium 5-Day Heritage"
+        ],
+        "legacyCeremonyId": "christian",
+        "ceremonyCoordinationFeeSGD": 800,
+        "butlerDuties": [
+          "Coordinate directly with the officiating Church Pastor / Reverend on order of service and podium setup",
+          "Provide and test wireless microphones and PA sound system for evening hymn worship",
+          "Print 50 customized memorial hymn booklets and orders of service",
+          "Set up the wooden Christian Cross backdrop and white floral podium surround",
+          "Facilitate cortege arrival and committal booking at Mandai Crematorium or Garden of Remembrance"
+        ]
+      },
+      "requiredRituals": [
+        {
+          "name": "Encoffinment Prayer & Family Blessing (入殓祷告仪式)",
+          "stage": "Pre-Funeral",
+          "description": "Conducted at the mortuary or funeral home prior to the wake. The officiating pastor reads from Psalms or John 11, leads a prayer of comfort, and blesses the family as the deceased is reverently placed in the casket.",
+          "isMandatory": true,
+          "typicalDuration": "20 to 30 minutes"
+        },
+        {
+          "name": "Nightly Memorial & Worship Services (追思礼拜)",
+          "stage": "During Wake",
+          "description": "Held each evening at the wake venue, led by the church pastor, elders, or cell group leaders. Includes an opening prayer, congregational hymn singing, scripture reading (e.g. 1 Thessalonians 4, 1 Corinthians 15, Psalm 23), a message of hope, family tributes, and closing benediction.",
+          "isMandatory": true,
+          "typicalDuration": "60 to 90 minutes per evening"
+        },
+        {
+          "name": "Funeral Departure & Final Thanksgiving Service (出殡追思礼拜)",
+          "stage": "Funeral Day",
+          "description": "Conducted on the morning of the funeral at the wake or church sanctuary. A full thanksgiving service honoring the deceased's walk of faith, featuring musical worship, pastoral sermon, and family thank-you speech.",
+          "isMandatory": true,
+          "typicalDuration": "45 to 60 minutes"
+        },
+        {
+          "name": "Crematorium / Graveside Committal Service (安息礼与火化/安葬仪式)",
+          "stage": "Funeral Day",
+          "description": "Held at Mandai Crematorium service hall or Choa Chu Kang Christian Cemetery. The pastor officiates the Committal ('Earth to earth, ashes to ashes, dust to dust, in sure and certain hope of the resurrection to eternal life through our Lord Jesus Christ'), followed by the Lord's Prayer and pastoral benediction.",
+          "isMandatory": true,
+          "typicalDuration": "15 to 25 minutes"
+        },
+        {
+          "name": "Post-Funeral Thanksgiving & Pastoral Follow-Up (赛后感恩与关怀)",
+          "stage": "Post-Funeral",
+          "description": "Pastoral team visits the bereaved family for follow-up pastoral care and offers thanksgiving prayers during Sunday church service.",
+          "isMandatory": true,
+          "typicalDuration": "30 to 45 minutes"
+        }
+      ],
+      "optionalRituals": [
+        {
+          "name": "Church Main Sanctuary Funeral Service (教堂大堂出殡礼拜)",
+          "description": "Transporting the casket to the deceased's home church sanctuary for a grand formal funeral service with church pipe organ or full worship ensemble.",
+          "estimatedCostRangeSGD": {
+            "min": 500,
+            "max": 2000
+          }
+        },
+        {
+          "name": "Live Acoustic Worship Band / String Ensemble (现场敬拜乐队伴奏)",
+          "description": "Live keyboardist, acoustic guitarist, or vocal worship team leading contemporary Christian praise and hymns during nightly memorial services.",
+          "estimatedCostRangeSGD": {
+            "min": 300,
+            "max": 900
+          }
+        },
+        {
+          "name": "Custom Printed Memorial Hymn & Eulogy Booklets (定制赞美诗纪念册)",
+          "description": "Professionally printed commemorative booklets with order of service, hymn lyrics, scripture verses, and photo retrospective for attendees.",
+          "estimatedCostRangeSGD": {
+            "min": 180,
+            "max": 500
+          }
+        },
+        {
+          "name": "Christian Columbarium Dedication Service (骨灰阁安放奉献礼)",
+          "description": "Pastoral dedication ceremony when placing the urn into a Christian columbarium (e.g., Garden of Remembrance or church columbarium).",
+          "estimatedCostRangeSGD": {
+            "min": 200,
+            "max": 600
+          }
+        }
+      ],
+      "officiantRequirements": {
+        "title": "Pastor / Reverend / Church Elder (牧师 / 传道 / 长老)",
+        "quantityRequired": "1 Officiating Pastor plus church worship leaders / cell group representatives",
+        "bookingLeadTime": "4 to 12 hours from notification",
+        "etiquetteNotes": "Provide a clean speaking podium, reliable sound system with wireless microphones, and hymn lyric sheets/screens. Present a pastoral honorarium (love gift) to the church or pastor in an appreciation envelope. No special dietary restrictions other than standard halal/vegetarian options for guests."
+      },
+      "chantingAndPrayers": {
+        "required": true,
+        "typicalSessions": "Nightly memorial services at 8:00 PM (1 to 4 nights) and morning departure service (usually 9:00 AM – 10:30 AM).",
+        "languagesAvailable": [
+          "English (Standard)",
+          "Mandarin (华语)",
+          "Hokkien",
+          "Cantonese",
+          "Tamil",
+          "Bilingual combinations (English/Mandarin)"
+        ]
+      },
+      "offeringsAndItems": {
+        "requiredOfferings": [
+          "Christian Cross emblem mounted on casket and backdrop banner",
+          "Holy Bible placed on the podium or altar table",
+          "Fresh floral arrangements (white lilies, roses, carnations, floral cross wreaths)",
+          "Memorial photo portrait framed with simple white or gold border",
+          "Guest condolence guestbook and tribute memory box",
+          "Hymn books or digital projection screens"
+        ],
+        "incenseAndJossPaperRules": {
+          "allowed": false,
+          "hdbVoidDeckRestrictions": "Burning of joss paper, incense sticks, and hell money is completely omitted in accordance with Protestant Christian doctrine. HDB metal burner bins are not requested or utilized. The wake area is entirely smoke-free and scented only with fresh flowers.",
+          "commonItemsBurned": []
+        },
+        "attireForDeceased": "Best Sunday church wear, tailored suit, or modest elegant dress. Deceased's personal Bible or small cross is often placed in the casket.",
+        "attireForBereaved": "Modest, dignified, and somber attire in solid white, black, dark grey, or navy blue. Traditional Chinese burlap mourning sacks and colored fabric mourning patches are not used."
+      },
+      "funeralTimingAndDuration": {
+        "typicalDays": "3-day or 5-day wake (flexible based on family scheduling and church availability).",
+        "auspiciousDateConsultationRequired": false,
+        "nightVigilPractices": "Family members or church cell groups may stay to chat and fellowship until 10:30 PM – 11:30 PM. No requirement to maintain overnight burning flames or superstitious night vigils."
+      },
+      "cremationAndBurial": {
+        "preferredMethod": "Either",
+        "specificPostCremationRituals": "Ashes are collected and placed in a columbarium (such as Garden of Remembrance @ Choa Chu Kang, Christian church columbaria, or Mandai Columbarium), or scattered at the Garden of Peace inland scattering facility, accompanied by a pastoral blessing."
+      },
+      "postFuneralPractices": [
+        {
+          "milestone": "Sunday Church Remembrance",
+          "description": "Family attends Sunday church service where the congregation offers collective prayers of thanksgiving and comfort for the bereaved.",
+          "requiredItems": [
+            "Church bulletin announcement",
+            "Thanksgiving offering"
+          ]
+        },
+        {
+          "milestone": "1st Year Death Anniversary (追思纪念)",
+          "description": "Family gathers for a quiet prayer, scripture reading, and flower laying at the columbarium niche or memorial garden.",
+          "requiredItems": [
+            "Fresh flowers",
+            "Holy Bible"
+          ]
+        },
+        {
+          "milestone": "Easter & All Saints' Remembrance",
+          "description": "Visiting the resting place during Easter or year-end holidays to celebrate the hope of the Resurrection.",
+          "requiredItems": [
+            "Fresh floral tribute"
+          ]
+        }
+      ],
+      "culturalTaboosAndCustoms": [
+        {
+          "taboo": "Offering Joss Sticks, Incense, or Food Sacrifices to the Deceased",
+          "explanation": "Violates the biblical commandment against idol worship and invoking spirits. Believers pray directly to God, not to departed ancestors.",
+          "severity": "High"
+        },
+        {
+          "taboo": "Practicing Feng Shui, Astrological Timing, or Zodiac Clash Avoidance",
+          "explanation": "Christian doctrine teaches that every day belongs to the Lord; superstitious divination contradicts faith in divine sovereignty.",
+          "severity": "High"
+        },
+        {
+          "taboo": "Bowing on Knees (Kowtow / 叩头) to the Casket or Photo",
+          "explanation": "Protestant tradition reserves physical kneeling/prostration for God alone; mourners show respect by standing, bowing head, and silent prayer.",
+          "severity": "Medium"
+        },
+        {
+          "taboo": "Playing Secular Gambling Games (e.g. Mahjong/Cards) at the Wake",
+          "explanation": "Disrespects the Christian atmosphere of reverent fellowship, worship, and prayer.",
+          "severity": "Advisory"
+        }
+      ],
+      "intentKeywords": [
+        "christian funeral",
+        "christian wake",
+        "pastor service",
+        "memorial service",
+        "hymn singing",
+        "church funeral",
+        "protestant funeral",
+        "committal service",
+        "garden of remembrance",
+        "psalm 23",
+        "christian cremation",
+        "smoke free wake",
+        "solace dignity care christian"
+      ]
+    },
+    {
+      "traditionId": "TRAD_CATHOLIC",
+      "displayName": "Roman Catholic Funeral Rites (天主教丧礼)",
+      "overview": "Liturgically governed by the Roman Catholic Church's Order of Christian Funerals (OCF) under the Archdiocese of Singapore. Catholic funeral rites are rooted in the Paschal Mystery of Christ's death and resurrection, offering prayers for the purification of the soul in Purgatory, honoring the baptized physical body as a temple of the Holy Spirit, and bringing spiritual solace to the living. Distinctive liturgical milestones include the Vigil Service with the Holy Rosary, the solemn Funeral Mass of the Resurrection (Requiem Mass) featuring the Holy Eucharist, sprinkling with Holy Water (recalling Baptism), and incensation with frankincense. Solace Dignity Care coordinates Mass bookings with parish secretariats, hearse transfers to the church, and sacred church columbarium blessings.",
+      "sdcPrototypeIntegration": {
+        "primaryPackageId": "PKG_CATHOLIC_3D_PEACE",
+        "supportedTiers": [
+          "Direct Cremation",
+          "Standard 3-Day",
+          "Deluxe 5-Day",
+          "Premium 5-Day Heritage"
+        ],
+        "legacyCeremonyId": "catholic",
+        "ceremonyCoordinationFeeSGD": 1000,
+        "butlerDuties": [
+          "Liaise with the deceased's parish church office to secure the Funeral Mass time slot and priest availability",
+          "Set up the Catholic altar with Crucifix (Corpus Christi), Paschal candle stand, and Holy Water font",
+          "Coordinate the nightly Holy Rosary recitation with parish ministries (e.g. Legion of Mary)",
+          "Manage hearse cortege transport from wake venue to parish church, then to Mandai Crematorium",
+          "Advise non-Catholic guests on Holy Communion protocol (arms crossed over chest for blessing)"
+        ]
+      },
+      "requiredRituals": [
+        {
+          "name": "Reception of the Body & Encoffinment Blessing (入殓礼与洒圣水)",
+          "stage": "Pre-Funeral",
+          "description": "Priest, deacon, or appointed lay minister blesses the deceased and casket with Holy Water and leads opening prayers of commendation prior to the opening of the wake.",
+          "isMandatory": true,
+          "typicalDuration": "20 to 30 minutes"
+        },
+        {
+          "name": "Vigil for the Deceased & Holy Rosary Recitation (守夜礼与玫瑰经祈祷)",
+          "stage": "During Wake",
+          "description": "Held nightly at the wake venue, led by parish clergy, religious sisters, or parish groups (e.g., Legion of Mary). Involves reciting the Sorrowful or Glorious Mysteries of the Holy Rosary, reading scripture, singing traditional Catholic hymns, and intercessory prayers for the soul.",
+          "isMandatory": true,
+          "typicalDuration": "45 to 60 minutes per night"
+        },
+        {
+          "name": "Solemn Funeral Mass of the Resurrection (殡葬弥撒 / 安息弥撒)",
+          "stage": "Funeral Day",
+          "description": "Celebrated at the deceased's parish church (e.g. Church of the Holy Spirit, Church of St. Teresa, Cathedral of the Good Shepherd). The priest celebrates the Holy Eucharist, preaches the Homily, and offers the Eucharistic sacrifice for the forgiveness of sins.",
+          "isMandatory": true,
+          "typicalDuration": "60 to 75 minutes"
+        },
+        {
+          "name": "Rite of Final Commendation & Farewell (最后告别礼与熏香)",
+          "stage": "Funeral Day",
+          "description": "At the conclusion of the Funeral Mass, the priest sprinkles the casket with Holy Water and incenses it with fragrant frankincense smoke from the thurible, symbolizing prayers rising to heaven and the sacredness of the body.",
+          "isMandatory": true,
+          "typicalDuration": "15 to 20 minutes"
+        },
+        {
+          "name": "Rite of Committal at Crematorium / Cemetery (火化/安葬委任礼)",
+          "stage": "Funeral Day",
+          "description": "Conducted at Mandai Crematorium service hall or cemetery chapel. The priest or minister conducts final prayers commending the mortal remains back into God's hands.",
+          "isMandatory": true,
+          "typicalDuration": "15 to 20 minutes"
+        },
+        {
+          "name": "Mass of the Dead / 7th Day & 30th Day Mass (满月弥撒 / Month's Mind)",
+          "stage": "Post-Funeral",
+          "description": "Parish Mass offered specifically for the deceased on the 7th day and 30th day (Month's Mind) to continue praying for the soul's speedy entry into the beatific vision.",
+          "isMandatory": true,
+          "typicalDuration": "45 to 60 minutes"
+        }
+      ],
+      "optionalRituals": [
+        {
+          "name": "Parish Church Hall Wake Rental (天主教堂礼堂设灵)",
+          "description": "Holding the multi-day wake in an air-conditioned parish church memorial hall rather than an HDB void deck.",
+          "estimatedCostRangeSGD": {
+            "min": 600,
+            "max": 2500
+          }
+        },
+        {
+          "name": "Parish Choir & Pipe Organist Liturgical Service (圣咏团与管风琴伴奏)",
+          "description": "Parish choir singing sacred Gregorian chants, Latin hymns ('Panis Angelicus', 'In Paradisum'), and liturgical hymns during the Funeral Mass.",
+          "estimatedCostRangeSGD": {
+            "min": 300,
+            "max": 800
+          }
+        },
+        {
+          "name": "Gregorian 30-Day Mass Series (三十台额我略弥撒)",
+          "description": "Arranging a series of 30 consecutive daily Holy Masses offered for the deceased soul through mission societies or religious orders.",
+          "estimatedCostRangeSGD": {
+            "min": 300,
+            "max": 600
+          }
+        },
+        {
+          "name": "Church Columbarium Blessing & Urn Entombment Rite (教会骨灰阁安放祝福礼)",
+          "description": "Priest blessing ceremony during niche sealing at a Catholic church columbarium.",
+          "estimatedCostRangeSGD": {
+            "min": 200,
+            "max": 500
+          }
+        }
+      ],
+      "officiantRequirements": {
+        "title": "Roman Catholic Priest / Parish Priest / Deacon (天主教神父 / 执事)",
+        "quantityRequired": "1 Priest (plus altar servers and sacristan for Mass)",
+        "bookingLeadTime": "6 to 24 hours (Mass slots must be reserved through the parish church secretariat)",
+        "etiquetteNotes": "Coordinate Mass scheduling directly with the parish secretariat. Provide a Mass stipend (stipendium) in an appreciation envelope. Provide clean vestry facilities for priest robing. Non-Catholic attendees should be respectfully informed not to receive Holy Communion (they may cross arms over their chest for a priest blessing instead)."
+      },
+      "chantingAndPrayers": {
+        "required": true,
+        "typicalSessions": "Nightly Holy Rosary at 8:00 PM (1 to 3 nights), morning Funeral Mass at the parish church, and Committal rite at Mandai.",
+        "languagesAvailable": [
+          "English (Standard Liturgical)",
+          "Mandarin (华语天主教经文)",
+          "Latin (Traditional Chants)",
+          "Tamil",
+          "Tagalog"
+        ]
+      },
+      "offeringsAndItems": {
+        "requiredOfferings": [
+          "Crucifix with Corpus Christi mounted on casket and altar",
+          "Paschal Candle (Easter candle) placed near the head of the casket",
+          "Holy Water vessel and Aspergillum sprinkler",
+          "Liturgical frankincense thurible and incense boat",
+          "White Funeral Pall (draped over casket during Mass in church)",
+          "Holy Bible and Rosary beads clasped in deceased's hands",
+          "Fresh white floral arrangements (lilies, white roses)"
+        ],
+        "incenseAndJossPaperRules": {
+          "allowed": true,
+          "hdbVoidDeckRestrictions": "Liturgical church frankincense (thurible burning of pure resin on charcoal) is permitted during priest blessings. Traditional Chinese joss paper, hell money, and paper artifacts are strictly forbidden under Catholic doctrine and are not used.",
+          "commonItemsBurned": [
+            "Natural liturgical frankincense resin and charcoal (strictly inside the church thurible)"
+          ]
+        },
+        "attireForDeceased": "Formal business suit, dignified dress, or favorite Sunday attire. Rosary beads woven through the fingers and a small crucifix placed on the chest.",
+        "attireForBereaved": "Conservative, modest dark, navy, or white clothing. Mourning cross pins optional. No traditional Chinese sackcloth."
+      },
+      "funeralTimingAndDuration": {
+        "typicalDays": "3-day or 5-day wake. Note: Funeral Masses are not permitted on Holy Thursday, Good Friday, Holy Saturday, Easter Sunday, or major Catholic Solemnities.",
+        "auspiciousDateConsultationRequired": false,
+        "nightVigilPractices": "Parish community groups (Legion of Mary, St. Vincent de Paul) gather for evening Rosary vigil. Family maintains quiet fellowship without superstitious overnight flame watching."
+      },
+      "cremationAndBurial": {
+        "preferredMethod": "Either",
+        "specificPostCremationRituals": "In accordance with Vatican instruction *Ad resurgendum cum Christo*, the Catholic Church permits cremation, but strictly mandates that ashes must be entombed in consecrated columbaria or cemeteries. Scattering ashes at sea, inland garden scattering, or keeping urns permanently at home is strictly prohibited for faithful Catholics."
+      },
+      "postFuneralPractices": [
+        {
+          "milestone": "7th Day & 30th Day Mass (Month's Mind)",
+          "description": "Holy Sacrifice of the Mass offered for the soul's repose at the parish church.",
+          "requiredItems": [
+            "Mass intention booking slip",
+            "Mass stipend"
+          ]
+        },
+        {
+          "milestone": "All Souls' Day (2 November / 诸圣亡者节)",
+          "description": "Annual day of prayer for all departed souls in Purgatory. Priests bless church columbaria and cemeteries with Holy Water; families light candles.",
+          "requiredItems": [
+            "Blessed candles",
+            "Fresh flowers",
+            "Rosary beads"
+          ]
+        },
+        {
+          "milestone": "1st Year Death Anniversary Mass (一周年追思弥撒)",
+          "description": "Commemorative parish Mass celebrated with family and friends.",
+          "requiredItems": [
+            "Mass intention booking",
+            "Floral arrangement"
+          ]
+        }
+      ],
+      "culturalTaboosAndCustoms": [
+        {
+          "taboo": "Scattering Cremated Ashes at Sea or in Open Gardens, or Dividing Ashes",
+          "explanation": "Strictly prohibited by the Holy See (Vatican CDF 2016 Instruction). Ashes must be kept intact and entombed in consecrated ground or church columbaria to preserve the dignity of bodily resurrection.",
+          "severity": "High"
+        },
+        {
+          "taboo": "Non-Catholics Receiving Consecrated Holy Communion at Funeral Mass",
+          "explanation": "Catholics believe the Eucharist is the real Body and Blood of Christ. Non-Catholics or Catholics not in a state of grace should cross arms to receive a priest's blessing instead.",
+          "severity": "High"
+        },
+        {
+          "taboo": "Burning Chinese Ghost Money or Sacrificing Food to Spirits",
+          "explanation": "Contradicts Catholic theology of Christ as the sole mediator; prayers must be directed through the Church and saints.",
+          "severity": "High"
+        },
+        {
+          "taboo": "Using Non-Sacred Secular Music during Church Funeral Mass",
+          "explanation": "Music inside the Catholic church sanctuary must be sacred liturgical hymns or approved sacred instrumental music; secular songs are permitted only at the wake.",
+          "severity": "Medium"
+        }
+      ],
+      "intentKeywords": [
+        "catholic funeral",
+        "catholic wake",
+        "funeral mass",
+        "requiem mass",
+        "holy rosary",
+        "priest blessing",
+        "holy water",
+        "ad resurgendum",
+        "catholic columbarium",
+        "church columbarium",
+        "all souls day",
+        "months mind mass",
+        "solace dignity care catholic"
+      ]
+    },
+    {
+      "traditionId": "TRAD_HINDU",
+      "displayName": "Hindu Funeral Rites (Antyesti / அந்தியேஷ்டி)",
+      "overview": "Governed by ancient Vedic scriptures (Antyesti / अंतिम संस्कार / அந்தியேஷ்டி) and rooted in the philosophy of the eternal soul (Atman), karma, and reincarnation (Samsara). Hinduism views the physical body as a temporary vessel composed of the Five Great Cosmic Elements (Pancha Bhoota: Earth, Water, Fire, Air, Space). The cremation fire (Agni) acts as a sacred sacrificial medium that purifies the remains and returns the elements back to nature, severing the soul's earthly attachments to enable its ascent to the ancestral realm (Pitru Loka) or ultimate spiritual liberation (Moksha). Solace Dignity Care coordinates certified Vedic priests (Pandit/Kurukkal), swift 24-48h Mandai Crematorium slots, Kumbha Kriya clay pots, and dedicated boat charters for Asthi Visarjan sea immersion.",
+      "sdcPrototypeIntegration": {
+        "primaryPackageId": "PKG_HINDU_2D_STANDARD",
+        "supportedTiers": [
+          "Direct Cremation",
+          "Standard 1-Day",
+          "Deluxe 3-Day",
+          "Premium Heritage"
+        ],
+        "legacyCeremonyId": "hindu",
+        "ceremonyCoordinationFeeSGD": 1600,
+        "butlerDuties": [
+          "Coordinate certified Hindu Endowments Board (HEB) Vedic priest / Kurukkal",
+          "Procure authentic Vedic puja samagri (Gangajal, Darbha grass, sesame seeds, raw rice, sandalwood, clay Kumbha pot)",
+          "Facilitate urgent Mandai Crematorium booking within 24 to 48 hours in line with Hindu tradition",
+          "Charter dedicated sea vessel departing Changi or Marina South Pier for Asthi Visarjan sea immersion",
+          "Coordinate the Kumbha Kriya pot-breaking protocol and safety perimeter at the wake departure"
+        ]
+      },
+      "requiredRituals": [
+        {
+          "name": "Sacred Body Cleansing & Abhishekam (புனித நீராட்டு / Snana)",
+          "stage": "Pre-Funeral",
+          "description": "The family reverently washes the deceased with consecrated water, Gangajal (holy Ganges water), and rose water. Sandalwood paste (Chandanam), holy ash (Vibhuti), or Kumkum is applied on the forehead. The body is wrapped in a pristine white cotton shroud (Kodi / Vastram) for men/widows or a vibrant colored sari for married women.",
+          "isMandatory": true,
+          "typicalDuration": "45 to 60 minutes"
+        },
+        {
+          "name": "Darshan & Vedic Scripture Chanting (அஞ்சலி மற்றும் வேத பாராயணம்)",
+          "stage": "During Wake",
+          "description": "Family and community gather around the open casket. A Hindu Brahmin priest (Pandit / Kurukkal) chants Vedic hymns, the Garuda Purana, Sri Rudram, and chapters 2 & 15 of the Bhagavad Gita to illuminate the soul's path.",
+          "isMandatory": true,
+          "typicalDuration": "60 to 120 minutes"
+        },
+        {
+          "name": "Pinda Pradanam Rice Ball Offerings (பிண்ட பிரதானம்)",
+          "stage": "During Wake",
+          "description": "The Karta (chief mourner) prepares and offers symbolic rice balls mixed with black sesame seeds (Kala Til), water, and Darbha grass to nourish and satisfy the departed spirit on its journey.",
+          "isMandatory": true,
+          "typicalDuration": "30 to 45 minutes"
+        },
+        {
+          "name": "Kumbha Kriya Clay Water Pot Breaking Rite (குட உடைப்பு)",
+          "stage": "Funeral Day",
+          "description": "Before the casket is moved to the hearse, the Karta carries a water-filled earthen clay pot on his left shoulder and circumambulates the casket three times while the priest pierces the pot with small holes. At the end of the third round, the Karta drops the pot behind him to shatter on the ground without looking back, symbolizing the permanent severing of physical attachment.",
+          "isMandatory": true,
+          "typicalDuration": "20 to 30 minutes"
+        },
+        {
+          "name": "Mukhagni Final Fire Sacrificial Committal (முகாக்னி / இறுதிச் சடங்கு)",
+          "stage": "Funeral Day",
+          "description": "Held in the Mandai Crematorium service hall. The Karta touches consecrated ghee and holy flame to the deceased's lips/pyre button while Vedic fire mantras are chanted, initiating the cremation sacrifice to Agni Deva.",
+          "isMandatory": true,
+          "typicalDuration": "20 to 25 minutes"
+        },
+        {
+          "name": "Asthi Sanchayana & Sacred Ash Immersion (அஸ்தி கரைப்பு / Sea Immersion)",
+          "stage": "Post-Funeral",
+          "description": "Conducted the morning after cremation. The Karta collects bone fragments and ashes from Mandai Crematorium. Accompanied by the priest on a chartered boat off the MPA-designated sea scattering zone (Pulau Semakau / Changi), the ashes, milk, and flowers are ritually immersed into the sea.",
+          "isMandatory": true,
+          "typicalDuration": "2 to 3 hours"
+        }
+      ],
+      "optionalRituals": [
+        {
+          "name": "Full 13-Day Vedic Shraddha & Karumathi Ceremony (13 நாள் காரியம்)",
+          "description": "Daily priest-led rituals concluding on the 13th day (Karumathi / Sapindikarana) marking the end of ritual impurity (Sutak) and the soul's union with ancestors, accompanied by a grand vegetarian community feast.",
+          "estimatedCostRangeSGD": {
+            "min": 1500,
+            "max": 3800
+          }
+        },
+        {
+          "name": "Ritual Head Tonsure Ceremony for Chief Mourner (முடி எடுத்தல் / Mottai)",
+          "description": "The Karta and immediate sons undergo ceremonial head shaving by a traditional barber as a supreme act of filial humility, sacrifice, and spiritual cleansing.",
+          "estimatedCostRangeSGD": {
+            "min": 100,
+            "max": 300
+          }
+        },
+        {
+          "name": "Temple Annadhanam Food Sponsorship (கோவில் அன்னதானம்)",
+          "description": "Sponsoring sacred vegetarian meals for devotees and underprivileged communities at a local Singapore Hindu temple (e.g. Sri Mariamman or Sri Srinivasa Perumal Temple) in the deceased's name.",
+          "estimatedCostRangeSGD": {
+            "min": 500,
+            "max": 2000
+          }
+        },
+        {
+          "name": "Vedic Cow Feeding & Go Dhanam Donation (கோ தானம்)",
+          "description": "Symbolic offering and charitable donation to dairy farm shelters in honor of Kamadhenu to ease the soul's transit across the Vaitarna River.",
+          "estimatedCostRangeSGD": {
+            "min": 250,
+            "max": 750
+          }
+        }
+      ],
+      "officiantRequirements": {
+        "title": "Hindu Vedic Priest (Pandit / Kurukkal / வாத்தியார்)",
+        "quantityRequired": "1 to 2 Vedic Priests",
+        "bookingLeadTime": "2 to 6 hours (Hindu customs favor swift cremation within 24 to 48 hours)",
+        "etiquetteNotes": "Provide required Vedic puja items (Samagri): Darbha grass, sesame seeds, raw rice, sandalwood, camphor, and earthen clay pots. Present traditional Dakshina honorarium on betel leaves with areca nuts. Footwear must be removed within the wake carpet perimeter. All food served must be strictly vegetarian without onions/garlic if requested by the priest."
+      },
+      "chantingAndPrayers": {
+        "required": true,
+        "typicalSessions": "Continuous prayers during the home or void deck wake, departure procession, and crematorium committal.",
+        "languagesAvailable": [
+          "Sanskrit (Vedic Mantras, Upanishads, Garuda Purana)",
+          "Tamil (Thevaram, Thiruvasagam)",
+          "Hindi",
+          "Telugu",
+          "Malayalam"
+        ]
+      },
+      "offeringsAndItems": {
+        "requiredOfferings": [
+          "Gangajal (holy Ganges water) and rose water",
+          "Tulsi (sacred holy basil) leaves and Darbha grass (Kusha grass)",
+          "Vibhuti (sacred ash), Chandanam (sandalwood paste), and Kumkum",
+          "Earthen clay water pot (Kumbha)",
+          "Black sesame seeds (Kala Til), raw rice, and Pinda ingredients",
+          "Fresh marigold and jasmine flower garlands",
+          "Pure cow ghee and camphor tablets for Aarti",
+          "Betel leaves and areca nuts"
+        ],
+        "incenseAndJossPaperRules": {
+          "allowed": true,
+          "hdbVoidDeckRestrictions": "Burning of traditional Indian Agarbatti (incense sticks), Dhoop cones, Sambrani (benzoin resin cups), and Camphor Aarti is practiced. Chinese joss paper / hell money is NOT used. Sambrani and camphor burning must be conducted in heavy-duty brass plates or fire-safe metal containers under supervision.",
+          "commonItemsBurned": [
+            "Sambrani resin cups (for ritual purification)",
+            "Camphor tablets (Aarti fire)",
+            "Dhoop and Agarbatti incense sticks"
+          ]
+        },
+        "attireForDeceased": "Men and widows: Unstitched pure white cotton shroud (Kodi / Vastram). Married women predeceasing their husbands: Bright red, yellow, or orange silk sari adorned with auspicious turmeric, kumkum, and fresh floral garlands.",
+        "attireForBereaved": "Simple, unstitched or loose white traditional clothing (Veshti / Kurta / plain white sari). Chief mourner avoids wearing footwear during rites and removes shirts during Vedic rituals."
+      },
+      "funeralTimingAndDuration": {
+        "typicalDays": "1-day or 2-day wake (swift cremation within 24–48 hours is strongly preferred by Hindu tradition; wakes rarely exceed 2 days).",
+        "auspiciousDateConsultationRequired": true,
+        "nightVigilPractices": "Family members maintain continuous vigil around the clock. A single-wick oil lamp (Kuthu Vilakku) is kept lit near the deceased's head continuously until departure."
+      },
+      "cremationAndBurial": {
+        "preferredMethod": "Cremation",
+        "specificPostCremationRituals": "Asthi Visarjan (submerging cremated bone relics and ashes into living water/sea) is mandatory. In Singapore, this is conducted via chartered boat off the MPA-designated sea scattering zone near Pulau Semakau or Changi, accompanied by priest mantras."
+      },
+      "postFuneralPractices": [
+        {
+          "milestone": "3rd Day / 5th Day Milk Offering (பால் தெளித்தல்)",
+          "description": "Family and priest pour fresh milk and holy water over the cremation site or remaining ashes to cool the departed spirit.",
+          "requiredItems": [
+            "Fresh cow's milk",
+            "Rose water",
+            "Flower petals"
+          ]
+        },
+        {
+          "milestone": "13th Day Karumathi (13-Day Purification & Feast)",
+          "description": "Crucial ceremony marking the end of ritual death pollution (Sutak / Asaucha). Home is purified by priest with Punyahavachanam, family resumes normal life, and a grand vegetarian feast is shared.",
+          "requiredItems": [
+            "Puja samagri",
+            "Purification water",
+            "Vegetarian feast"
+          ]
+        },
+        {
+          "milestone": "30th Day / 1st Year Annual Shraddha (Barsi / திதி)",
+          "description": "Annual ancestral rites offering Pinda and feeding Brahmins and needy individuals to honor the ancestor in Pitru Loka.",
+          "requiredItems": [
+            "Pinda rice balls",
+            "Sesame seeds",
+            "Charitable gifts"
+          ]
+        }
+      ],
+      "culturalTaboosAndCustoms": [
+        {
+          "taboo": "Consumption of Non-Vegetarian Food or Alcohol during Mourning Period (13 Days)",
+          "explanation": "Immediate family members must maintain strict lacto-vegetarian diet throughout the 13-day Sutak period to avoid generating negative karmic vibrations.",
+          "severity": "High"
+        },
+        {
+          "taboo": "Visiting Hindu Temples or Attending Celebrations during Sutak (Asaucha)",
+          "explanation": "The family carries ritual death pollution (Asaucha) for 13 to 30 days and is prohibited from entering Hindu temples or attending weddings/auspicious functions.",
+          "severity": "High"
+        },
+        {
+          "taboo": "Looking Back When the Clay Pot is Broken (Kumbha Kriya)",
+          "explanation": "The Karta must walk forward without glancing back after shattering the pot, symbolizing complete release of emotional and worldly attachment to the physical body.",
+          "severity": "High"
+        },
+        {
+          "taboo": "Allowing the Head Oil Lamp (Kuthu Vilakku) to Extinguish before Departure",
+          "explanation": "The light guides the departing soul; an extinguished flame brings inauspicious darkness to the transit.",
+          "severity": "Medium"
+        }
+      ],
+      "intentKeywords": [
+        "hindu funeral",
+        "hindu wake",
+        "antyesti",
+        "karta",
+        "garuda purana",
+        "pinda danam",
+        "kumbha kriya",
+        "clay pot breaking",
+        "mukhagni",
+        "asthi visarjan",
+        "sea immersion hindu",
+        "karumathi",
+        "13th day prayers",
+        "tamil funeral",
+        "sutak",
+        "solace dignity care hindu"
+      ]
+    },
+    {
+      "traditionId": "TRAD_SOKA_GAKKAI",
+      "displayName": "Soka Gakkai Funeral Services (创价学会葬礼 / 友谊葬)",
+      "overview": "Organized and conducted by the Singapore Soka Association (SSA / 新加坡创价学会) in accordance with the Mahayana Buddhist philosophy of Nichiren Daishonin. Referred to as a 'Friendship Funeral' (友谊葬 / Yugi-so), the service emphasizes that every individual possesses inherent Buddha nature (Buddhahood) and that life and death are continuous phases of eternal life. The ceremony centers on the recitation of the Lotus Sutra (Gongyo) and the energetic chanting of 'Nam-myoho-renge-kyo' (Daimoku / 南无妙法莲华经) by fellow SGI members and family to direct boundless life force to the deceased. The ceremony is modern, egalitarian, entirely volunteer-conducted without paid priests, and strictly free of superstition or joss paper burning. Solace Dignity Care provides a pristine white-themed setup, Butsudan altar support, and seamless SSA leader coordination with zero officiant surcharges.",
+      "sdcPrototypeIntegration": {
+        "primaryPackageId": "PKG_SOKA_3D_STANDARD",
+        "supportedTiers": [
+          "Direct Cremation",
+          "Standard 3-Day",
+          "Deluxe 5-Day",
+          "Premium Heritage"
+        ],
+        "legacyCeremonyId": "soka",
+        "ceremonyCoordinationFeeSGD": 1200,
+        "butlerDuties": [
+          "Set up the signature pristine white-themed memorial layout with white floral runners and drapes",
+          "Assist the family in enshrining their Gohonzon safely into the Butsudan altar with evergreen Shikimi branches",
+          "Liaise with the Singapore Soka Association (SSA) District and Zone Leaders for nightly chanting sessions",
+          "Ensure no joss paper burning bins or superstitious talismans are placed at the void deck / parlour",
+          "Provide Gongyo prayer booklets and Juzu prayer bead placement for the ceremony"
+        ]
+      },
+      "requiredRituals": [
+        {
+          "name": "Soka Altar Setup & Gohonzon Enshrinement (创价佛坛与御本尊奉安)",
+          "stage": "Pre-Funeral",
+          "description": "SSA funeral coordinators assist the family in setting up the signature Soka white-themed memorial altar, enshrining the family's Gohonzon (sacred calligraphic mandala) inside the Butsudan altar, and placing fresh evergreen Shikimi branches before the open casket.",
+          "isMandatory": true,
+          "typicalDuration": "30 to 45 minutes"
+        },
+        {
+          "name": "Nightly Gongyo & Daimoku Chanting Assemblies (晚间勤行与唱题法会)",
+          "stage": "During Wake",
+          "description": "Led by SSA District Leaders and fellow Gakkai members. The assembly recites the 'Expedient Means' (Hoben) and 'Life Span' (Juryo) chapters of the Lotus Sutra, followed by synchronized rhythmic chanting of Nam-myoho-renge-kyo to transfer merit to the deceased's eternal life.",
+          "isMandatory": true,
+          "typicalDuration": "45 to 60 minutes per session"
+        },
+        {
+          "name": "Soka Friendship Funeral Memorial Service (创价友谊告别仪式)",
+          "stage": "Funeral Day",
+          "description": "The formal farewell service held on the morning of the funeral. Includes opening Gongyo recitation, Daimoku chanting, memorial addresses by SSA chapter leaders, a tribute/eulogy by the family, and flower-laying by all attendees directly into the casket.",
+          "isMandatory": true,
+          "typicalDuration": "60 to 75 minutes"
+        },
+        {
+          "name": "Crematorium Final Chanting (火化场最后唱题告别)",
+          "stage": "Funeral Day",
+          "description": "Conducted in the Mandai Crematorium service hall. SSA leaders lead a final 15-minute Daimoku chanting session as family members bid their last farewell before cremation.",
+          "isMandatory": true,
+          "typicalDuration": "15 to 20 minutes"
+        },
+        {
+          "name": "Gohonzon Safekeeping & Home Gongyo (御本尊恭请还家与追善勤行)",
+          "stage": "Post-Funeral",
+          "description": "The Gohonzon is reverently escorted back to the family residence, where family members continue daily Gongyo and Daimoku practice for the deceased's rapid attainment of enlightenment.",
+          "isMandatory": true,
+          "typicalDuration": "30 minutes"
+        }
+      ],
+      "optionalRituals": [
+        {
+          "name": "Modern Pristine White Floral Styling Upgrade (白兰花与白百合主题花艺)",
+          "description": "Upgraded white floral arrangements, white carpet runner, and elegant white satin drapes reflecting Soka purity and dignity.",
+          "estimatedCostRangeSGD": {
+            "min": 600,
+            "max": 1800
+          }
+        },
+        {
+          "name": "SGI Member Life Retrospective Video Presentation (创价人生回顾视频)",
+          "description": "Curated digital slideshow highlighting the deceased's contributions to peace, culture, education, family life, and SSA community activities.",
+          "estimatedCostRangeSGD": {
+            "min": 250,
+            "max": 600
+          }
+        },
+        {
+          "name": "SSA Memorial Niche Enshrinement Consultation (创价骨灰龛位咨询)",
+          "description": "Assistance in reserving a columbarium niche at government or approved private columbaria for Soka practitioners.",
+          "estimatedCostRangeSGD": {
+            "min": 0,
+            "max": 500
+          }
+        }
+      ],
+      "officiantRequirements": {
+        "title": "Singapore Soka Association (SSA) Leader / Funeral Conductor (创价学会干事 / 领导人)",
+        "quantityRequired": "2 to 4 Volunteer SSA Leaders (Conductor, MC, Gongyo Leader)",
+        "bookingLeadTime": "4 to 8 hours (contact local SSA District Leader or Headquarters)",
+        "etiquetteNotes": "SSA leaders and members perform funeral conducting as pure voluntary community service. Red packets (Ang Bao), monetary remuneration, or tips are STRICTLY PROHIBITED and will be politely declined. Refreshments (tea/water/snacks) are appreciated. Provide a clean, bright, white-themed environment."
+      },
+      "chantingAndPrayers": {
+        "required": true,
+        "typicalSessions": "Nightly sessions at 8:00 PM (1 to 3 nights) and morning funeral service (9:00 AM – 10:30 AM).",
+        "languagesAvailable": [
+          "Sino-Japanese Liturgical (Lotus Sutra Gongyo pronunciation)",
+          "Mandarin (Speeches and Eulogies)",
+          "English (Speeches and Eulogies)"
+        ]
+      },
+      "offeringsAndItems": {
+        "requiredOfferings": [
+          "Soka Butsudan altar enshrining the family Gohonzon",
+          "Fresh evergreen Shikimi branches or fresh white orchid/lotus flowers",
+          "Clean pure water cup in dedicated Soka water stand",
+          "Fresh fruit offerings (apples, oranges) placed before the Gohonzon",
+          "Soka prayer beads (Juzu) placed in deceased's hands",
+          "Lotus Sutra Gongyo prayer books for attendees",
+          "Horizontal incense burner with incense laid flat",
+          "White candles and ceremonial Soka brass bell (Rin bell)"
+        ],
+        "incenseAndJossPaperRules": {
+          "allowed": true,
+          "hdbVoidDeckRestrictions": "A single incense stick is laid flat horizontally in the incense burner (traditional Nichiren method). Burning of Chinese joss paper, hell money, paper houses, or paper cars is STRICTLY FORBIDDEN as it violates Nichiren Buddhist principles. HDB burner bins are not used.",
+          "commonItemsBurned": [
+            "Single stick of fine sandalwood incense laid flat in altar burner"
+          ]
+        },
+        "attireForDeceased": "Smart business attire, suit, modern dress, or favorite clean clothing. Soka Juzu prayer beads clasped in hands. No traditional Chinese longevity suits (Shou Yi) needed.",
+        "attireForBereaved": "Neat, modern dark or white clothing (black suit, white shirt, dark pants/skirt). Traditional Chinese burlap mourning sacks and colored fabric mourning pins are not used."
+      },
+      "funeralTimingAndDuration": {
+        "typicalDays": "3-day (most popular) or 5-day wake.",
+        "auspiciousDateConsultationRequired": false,
+        "nightVigilPractices": "Family members may chant Daimoku at their own pace; no superstitious overnight lamp watching is required."
+      },
+      "cremationAndBurial": {
+        "preferredMethod": "Cremation",
+        "specificPostCremationRituals": "Ashes are collected the next day and entombed in a columbarium (Mandai Columbarium, Nirvana Memorial Garden, or Kong Meng San) or scattered at the Garden of Peace inland scattering facility, accompanied by Daimoku chanting."
+      },
+      "postFuneralPractices": [
+        {
+          "milestone": "49th Day Memorial (四十九日追善勤行)",
+          "description": "Family and SSA members gather at home or district meeting to chant Gongyo and Daimoku for the deceased's eternal peace.",
+          "requiredItems": [
+            "Fresh flowers and fruit offerings",
+            "Gongyo prayer books"
+          ]
+        },
+        {
+          "milestone": "1st Year (一周忌) & 3rd Year (三回忌) Memorial",
+          "description": "Commemorative Gongyo assemblies held on the death anniversary.",
+          "requiredItems": [
+            "Altar offerings",
+            "Memorial prayer"
+          ]
+        },
+        {
+          "milestone": "Monthly Memorial Chanting (追善供养)",
+          "description": "Dedication of daily morning and evening Gongyo for the deceased ancestor.",
+          "requiredItems": [
+            "Daily Gongyo practice"
+          ]
+        }
+      ],
+      "culturalTaboosAndCustoms": [
+        {
+          "taboo": "Burning Joss Paper, Hell Money, or Paper Mansions",
+          "explanation": "Strictly rejected by Nichiren Daishonin's Buddhism as meaningless superstition that distracts from the pure spiritual merit of the Mystic Law (Myoho-renge-kyo).",
+          "severity": "High"
+        },
+        {
+          "taboo": "Offering Red Packets (Ang Bao) or Money to SSA Officiants",
+          "explanation": "Violates Soka Gakkai's foundational principle of volunteer-driven lay Buddhist practice; leaders do not accept financial compensation.",
+          "severity": "High"
+        },
+        {
+          "taboo": "Placing Incense Sticks Vertically in the Burner",
+          "explanation": "In Nichiren Buddhist tradition, incense must be laid flat horizontally in the burner over a bed of ash, symbolizing equal distribution of fragrance.",
+          "severity": "Medium"
+        },
+        {
+          "taboo": "Consulting Feng Shui Masters or Astrological Zodiac Clashes",
+          "explanation": "Nichiren Buddhism teaches that all days are auspicious and that human destiny is governed by personal life condition and karma, not external superstitions.",
+          "severity": "Advisory"
+        }
+      ],
+      "intentKeywords": [
+        "soka funeral",
+        "soka wake",
+        "soka gakkai",
+        "ssa funeral",
+        "singapore soka association",
+        "nam myoho renge kyo",
+        "daimoku",
+        "gongyo",
+        "gohonzon",
+        "friendship funeral",
+        "yugi-so",
+        "nichiren funeral",
+        "smoke free buddhist wake",
+        "solace dignity care soka"
+      ]
+    },
+    {
+      "traditionId": "TRAD_SECULAR",
+      "displayName": "Secular & Modern Life Celebration (非宗教/现代生命礼赞)",
+      "overview": "A humanistic, non-religious celebration of life tailored for individuals who adhere to secular, scientific, or personal life philosophies. Completely free of religious dogma, clergy, scriptures, and supernatural rituals, a secular funeral is uniquely customized around the deceased's individuality, achievements, passions, values, and human relationships. The focus is on meaningful storytelling, curated music, digital multimedia retrospectives, personal eulogies, and creating a warm, comfortable space for friends and family to express genuine love, gratitude, and remembrance. Solace Dignity Care provides accredited civil celebrants, acoustic sound systems, barista coffee carts, and eco-friendly inland scattering arrangements at the Garden of Peace or Garden of Serenity.",
+      "sdcPrototypeIntegration": {
+        "primaryPackageId": "PKG_MEMORIAL_SERVICE_STANDARD",
+        "supportedTiers": [
+          "Direct Cremation",
+          "Standard 1-Day",
+          "Deluxe 3-Day",
+          "Premium 5-Day Heritage"
+        ],
+        "legacyCeremonyId": "secular",
+        "ceremonyCoordinationFeeSGD": 500,
+        "butlerDuties": [
+          "Engage an accredited Civil Funeral Celebrant to interview the family and draft a personalized life story biography",
+          "Curate high-definition digital photo/video retrospectives for LED display screens",
+          "Set up the memory table featuring personal memorabilia, awards, sports gear, and interactive memory wish trees",
+          "Coordinate the ambient background acoustic/jazz playlist and guest microphone setup",
+          "Arrange the inland scattering walk at the Garden of Peace @ CCK or Garden of Serenity @ Mandai"
+        ]
+      },
+      "requiredRituals": [
+        {
+          "name": "Personalized Styling & Casketing Consultation (个性化遗体更衣与入殓)",
+          "stage": "Pre-Funeral",
+          "description": "Family and funeral directors select the deceased's favorite everyday clothing, signature accessories, and curated musical playlist. The deceased is prepared with natural cosmetology reflecting their living appearance.",
+          "isMandatory": true,
+          "typicalDuration": "30 to 45 minutes"
+        },
+        {
+          "name": "Celebration of Life Memorial Evening (生命追思与故事分享会)",
+          "stage": "During Wake",
+          "description": "Hosted by a certified Civil Funeral Celebrant or family representative. Features an opening welcome, curated video documentary of life milestones, open microphone for colleagues and friends to share humorous and touching stories, and a moment of silent reflection.",
+          "isMandatory": true,
+          "typicalDuration": "60 to 90 minutes"
+        },
+        {
+          "name": "Secular Commendation & Farewell Ceremony (世俗告别礼)",
+          "stage": "Funeral Day",
+          "description": "Conducted on the final morning at the wake venue. The celebrant delivers the formal life tribute, a signature farewell song is played, and guests place fresh flower stalks directly into the casket.",
+          "isMandatory": true,
+          "typicalDuration": "45 to 60 minutes"
+        },
+        {
+          "name": "Crematorium Final Send-Off & Toast (火化场最后告别与致敬)",
+          "stage": "Funeral Day",
+          "description": "Held in the Mandai Crematorium service hall. A 15-minute secular send-off featuring a final personal poem, closing words of gratitude, and a final bow as the casket moves into the committal area.",
+          "isMandatory": true,
+          "typicalDuration": "15 to 20 minutes"
+        },
+        {
+          "name": "Living Legacy & Memorial Gathering (遗志传承与茶会)",
+          "stage": "Post-Funeral",
+          "description": "Family and friends gather for an informal post-funeral meal, toast, or launch of a charity initiative / memorial tree planting in memory of the deceased.",
+          "isMandatory": true,
+          "typicalDuration": "60 to 90 minutes"
+        }
+      ],
+      "optionalRituals": [
+        {
+          "name": "Certified Civil Funeral Celebrant Service (专业礼仪司仪服务)",
+          "description": "Engagement of an accredited professional celebrant to interview family, script a bespoke eulogy biography, and emcee all ceremonies.",
+          "estimatedCostRangeSGD": {
+            "min": 400,
+            "max": 1000
+          }
+        },
+        {
+          "name": "Live Acoustic Music Ensemble / Jazz Duo (现场原声乐队/爵士乐队伴奏)",
+          "description": "Live musicians performing the deceased's favorite classic, jazz, pop, or acoustic songs during the memorial evening.",
+          "estimatedCostRangeSGD": {
+            "min": 500,
+            "max": 1500
+          }
+        },
+        {
+          "name": "Artisan Barista Coffee Cart & Memory Cocktail Bar (移动精品咖啡吧)",
+          "description": "On-site specialty coffee barista and curated refreshment bar for wake visitors.",
+          "estimatedCostRangeSGD": {
+            "min": 450,
+            "max": 1200
+          }
+        },
+        {
+          "name": "Memorial Keepsake Diamond / Memorial Glass Urn (纪念钻石/艺术骨灰琉璃)",
+          "description": "Extracting a portion of cremated ashes to create a certified laboratory memorial diamond or custom hand-blown glass memorial sculpture.",
+          "estimatedCostRangeSGD": {
+            "min": 1200,
+            "max": 8000
+          }
+        }
+      ],
+      "officiantRequirements": {
+        "title": "Civil Funeral Celebrant / Professional Emcee / Family Representative (世俗礼仪师 / 专业主持人)",
+        "quantityRequired": "1 Celebrant / Master of Ceremonies",
+        "bookingLeadTime": "6 to 18 hours (allows time to interview family and draft personalized script)",
+        "etiquetteNotes": "Provide detailed biographical highlights, humorous anecdotes, favorite quotes, and preferred musical playlists. Coordinate the exact tone with the celebrant (uplifting, celebratory, understated, or poetic). Celebrants are paid professional fees via invoice."
+      },
+      "chantingAndPrayers": {
+        "required": false,
+        "typicalSessions": "No chanting or religious prayers. Replaced with curated ambient instrumental music, poetry readings, eulogies, and a 1-minute silent reflection.",
+        "languagesAvailable": [
+          "English (Primary)",
+          "Mandarin",
+          "Malay",
+          "Multilingual custom scripts"
+        ]
+      },
+      "offeringsAndItems": {
+        "requiredOfferings": [
+          "Modern bespoke botanical floral displays (e.g. wild foliage, sunflowers, white roses)",
+          "High-definition LED display screen for video/photo retrospectives",
+          "Memory table displaying personal treasures (e.g. books, sports medals, guitar, artwork)",
+          "Interactive guest memory message box or tree with handwritten cards",
+          "Professional sound system for acoustic music and speech microphones",
+          "Framed life portrait in contemporary minimalist wood/metal frame"
+        ],
+        "incenseAndJossPaperRules": {
+          "allowed": false,
+          "hdbVoidDeckRestrictions": "Strictly smoke-free environment. No incense, joss paper, or combustible religious offerings are used. HDB burning bins are not requested.",
+          "commonItemsBurned": []
+        },
+        "attireForDeceased": "The deceased's favorite everyday outfit, casual chic apparel, tailored suit, golf attire, or signature designer clothing.",
+        "attireForBereaved": "Smart casual attire in comfortable neutral or colorful tones (often avoiding strict black if the deceased requested a cheerful celebration of life)."
+      },
+      "funeralTimingAndDuration": {
+        "typicalDays": "1-day, 2-day, or 3-day wake; or Direct Cremation followed by a standalone memorial event.",
+        "auspiciousDateConsultationRequired": false,
+        "nightVigilPractices": "No religious night vigil. Wake operations comfortably conclude around 10:00 PM – 11:00 PM for family rest."
+      },
+      "cremationAndBurial": {
+        "preferredMethod": "Cremation",
+        "specificPostCremationRituals": "Ecological disposal: Inland garden ash scattering at the Garden of Peace (Chua Chu Kang) or Garden of Serenity (Mandai), sea scattering via private yacht, or conversion of ashes into keepsake jewellery."
+      },
+      "postFuneralPractices": [
+        {
+          "milestone": "Annual Birthday Toast / Life Celebration",
+          "description": "Family and friends gather at the deceased's favorite restaurant on their birthday to celebrate their enduring memory.",
+          "requiredItems": [
+            "Toast drinks",
+            "Favorite meal"
+          ]
+        },
+        {
+          "milestone": "Charitable Memorial Contribution",
+          "description": "Disbursing donations to a cause or charity championed by the deceased.",
+          "requiredItems": [
+            "Donation allocation"
+          ]
+        },
+        {
+          "milestone": "Garden of Peace Memorial Walk",
+          "description": "Quiet stroll through the inland scattering gardens to reflect and reminisce.",
+          "requiredItems": [
+            "Fresh flowers"
+          ]
+        }
+      ],
+      "culturalTaboosAndCustoms": [
+        {
+          "taboo": "Imposing Religious Preaching, Proselytization, or Forced Prayers",
+          "explanation": "Strictly violates the deceased's expressed wishes for a secular farewell; the space must remain entirely neutral and inclusive.",
+          "severity": "High"
+        },
+        {
+          "taboo": "Forcing Rigid Mourning Etiquette or Mandatory Black Attire",
+          "explanation": "Contradicts the celebratory philosophy if the family and deceased explicitly requested vibrant colors and cheerful storytelling.",
+          "severity": "Advisory"
+        }
+      ],
+      "intentKeywords": [
+        "secular funeral",
+        "secular wake",
+        "celebration of life",
+        "non religious funeral",
+        "civil celebrant",
+        "funeral emcee",
+        "modern funeral",
+        "smoke free funeral",
+        "custom memorial",
+        "eulogy wake",
+        "garden of peace secular",
+        "solace dignity care secular"
+      ]
+    },
+    {
+      "traditionId": "TRAD_FREETHINKER",
+      "displayName": "Free-Thinker Funeral Services (自由信仰/无宗教丧礼)",
+      "overview": "Tailored for individuals with no specific religious allegiance, as well as multi-faith Singaporean families where different generations or siblings hold diverse religious backgrounds (e.g. Buddhist elders, Christian children, freethinker deceased). A Free-Thinker funeral offers a respectful, highly flexible, and dignified send-off that avoids dogmatic religious procedures while allowing optional customary cultural gestures (such as simple single-incense bowing or quiet prayer) so all family members feel included and comforted. Solace Dignity Care's Funeral Butlers act as neutral coordinators, managing bilingual tributes, guest hospitality, and flexible memorial options.",
+      "sdcPrototypeIntegration": {
+        "primaryPackageId": "PKG_FREETHINKER_3D_PEACE",
+        "supportedTiers": [
+          "Direct Cremation",
+          "Standard 3-Day",
+          "Deluxe 5-Day",
+          "Premium 5-Day Heritage"
+        ],
+        "legacyCeremonyId": "freethinker",
+        "ceremonyCoordinationFeeSGD": 600,
+        "butlerDuties": [
+          "Host an open, neutral, and inclusive visitation environment where all family members feel respected",
+          "Provide optional small single-incense burner station for traditional elders desiring customary 3-bow respect",
+          "Coordinate the digital photo montage, slideshow equipment, and ambient acoustic background music",
+          "Orchestrate the departure ceremony with a dignified three-bow salute and pallbearer cortege escort",
+          "Coordinate inland ash scattering at Mandai / CCK or sea scattering charter as requested"
+        ]
+      },
+      "requiredRituals": [
+        {
+          "name": "Professional Body Care & Dressing (更衣与入殓仪式)",
+          "stage": "Pre-Funeral",
+          "description": "Professional sanitization, makeup, and dressing in the deceased's favorite clothes, followed by placement in a modern, elegant cremation casket.",
+          "isMandatory": true,
+          "typicalDuration": "30 to 45 minutes"
+        },
+        {
+          "name": "Open Visitation & Respects Paying (自由吊唁与瞻仰遗容)",
+          "stage": "During Wake",
+          "description": "Family and guests pay respects according to their individual comfort levels—either through silent contemplation, a gentle three-bow salute, or private silent prayer.",
+          "isMandatory": true,
+          "typicalDuration": "Flexible across wake hours"
+        },
+        {
+          "name": "Family Memorial Sharing & Tribute Hour (追思分享与家属致辞)",
+          "stage": "During Wake",
+          "description": "An organized evening session where the family gathers to play a photo montage, deliver short eulogies, and express gratitude to visiting friends and relatives.",
+          "isMandatory": true,
+          "typicalDuration": "45 to 60 minutes"
+        },
+        {
+          "name": "Final Farewell & Cortege Send-Off (出殡起灵告别仪式)",
+          "stage": "Funeral Day",
+          "description": "Conducted by the Solace Dignity Care funeral director / emcee. Includes a collective final three-bow salute, final viewing of remains, casket sealing, and pallbearer cortege escort.",
+          "isMandatory": true,
+          "typicalDuration": "30 to 45 minutes"
+        },
+        {
+          "name": "Mandai Crematorium Committal (火化场告别式)",
+          "stage": "Funeral Day",
+          "description": "A dignified 15-minute farewell at Mandai Crematorium service hall with final tribute words, floral placement, and a respectful collective bow.",
+          "isMandatory": true,
+          "typicalDuration": "15 minutes"
+        },
+        {
+          "name": "Urn Handover & Ash Disposition (骨灰交接与安置)",
+          "stage": "Post-Funeral",
+          "description": "Collection of urn the following day, followed by columbarium enurnment, inland garden scattering, or sea burial.",
+          "isMandatory": true,
+          "typicalDuration": "30 to 60 minutes"
+        }
+      ],
+      "optionalRituals": [
+        {
+          "name": "Hybrid Cultural Accommodation Setup (传统亲友敬香角落)",
+          "description": "Setting up a dedicated single-incense bowl and small candle stand to allow elderly traditional relatives to pay traditional Chinese respects, while keeping the main hall chanting-free.",
+          "estimatedCostRangeSGD": {
+            "min": 100,
+            "max": 300
+          }
+        },
+        {
+          "name": "Professional Bilingual Funeral Emcee (双语专业丧礼司仪)",
+          "description": "Bilingual (English/Mandarin) master of ceremonies to coordinate the memorial evening and departure flow.",
+          "estimatedCostRangeSGD": {
+            "min": 350,
+            "max": 750
+          }
+        },
+        {
+          "name": "LED Digital Backdrop & Curated Photo Retrospective (LED高清追思屏幕)",
+          "description": "High-definition screen displaying curated family photo albums, life milestones, and soft background instrumental music.",
+          "estimatedCostRangeSGD": {
+            "min": 300,
+            "max": 650
+          }
+        },
+        {
+          "name": "Sea Scattering Charter Boat Service (海上骨灰撒海游艇服务)",
+          "description": "Private boat charter departing Changi or Marina South Pier for sea scattering at MPA-designated coordinates.",
+          "estimatedCostRangeSGD": {
+            "min": 450,
+            "max": 1400
+          }
+        }
+      ],
+      "officiantRequirements": {
+        "title": "Funeral Director / Bilingual Emcee / Family Representative (丧礼总监 / 司仪)",
+        "quantityRequired": "1 Funeral Coordinator / Butler",
+        "bookingLeadTime": "2 to 6 hours",
+        "etiquetteNotes": "No religious clergy required. The funeral director acts as ceremonial guide, orchestrating the order of service and ensuring that both religious and non-religious attendees feel comfortable and respected."
+      },
+      "chantingAndPrayers": {
+        "required": false,
+        "typicalSessions": "No mandatory prayers or chanting. Background acoustic guitar, soft piano, or classical instrumental music is played through the sound system.",
+        "languagesAvailable": [
+          "English",
+          "Mandarin",
+          "Dialects (Hokkien, Teochew, Cantonese for eulogies)"
+        ]
+      },
+      "offeringsAndItems": {
+        "requiredOfferings": [
+          "Fresh floral casket spray and backdrop floral towers (white, champagne, pastel tones)",
+          "Framed portrait photo of deceased",
+          "Condolence book and guest registration station",
+          "LED memory candles (safe and flameless)",
+          "Beverage and refreshment consignment setup"
+        ],
+        "incenseAndJossPaperRules": {
+          "allowed": true,
+          "hdbVoidDeckRestrictions": "Highly flexible. Most Free-Thinker wakes choose to be 100% smoke-free with no joss paper burning. However, if extended traditional relatives request symbolic burning, Solace Dignity Care can arrange standard Town Council metal burning bins outside the void deck perimeter for small symbolic offerings.",
+          "commonItemsBurned": [
+            "Optional minimal gold/silver joss paper (only if requested by extended family)"
+          ]
+        },
+        "attireForDeceased": "Modern business suit, smart casual clothes, polo shirt, or favorite dress selected by the family.",
+        "attireForBereaved": "Plain white, black, grey, or dark navy clothing. Smart casual without traditional burlap sackcloth or generational color-coded pins."
+      },
+      "funeralTimingAndDuration": {
+        "typicalDays": "3-day (most popular), 5-day, or Direct Cremation (1-day).",
+        "auspiciousDateConsultationRequired": false,
+        "nightVigilPractices": "Optional family night stay; wake reception typically winds down by 10:30 PM."
+      },
+      "cremationAndBurial": {
+        "preferredMethod": "Cremation",
+        "specificPostCremationRituals": "Inland ash scattering at the Garden of Peace (CCK) / Garden of Serenity (Mandai), sea burial, or enurnment at Mandai / private columbarium."
+      },
+      "postFuneralPractices": [
+        {
+          "milestone": "100th Day / 1st Year Remembrance",
+          "description": "Informal family dinner and columbarium/garden visitation to remember and reflect.",
+          "requiredItems": [
+            "Fresh flowers",
+            "Family gathering"
+          ]
+        },
+        {
+          "milestone": "Annual Qing Ming or Holiday Visit",
+          "description": "Cleaning the niche or visiting the scattering garden.",
+          "requiredItems": [
+            "Cleaning cloth",
+            "Flower bouquet"
+          ]
+        }
+      ],
+      "culturalTaboosAndCustoms": [
+        {
+          "taboo": "Imposing Rigid Religious Rituals against Deceased's Expressed Wishes",
+          "explanation": "If the deceased preferred a simple send-off, forcing elaborate chanting sessions disrespects their memory and creates family friction.",
+          "severity": "High"
+        },
+        {
+          "taboo": "Disrespecting Different Faith Expressions among Family Members",
+          "explanation": "A Free-Thinker funeral is designed for harmony; family members of all faiths should be free to pay respects in their own meaningful way without judgment.",
+          "severity": "Medium"
+        }
+      ],
+      "intentKeywords": [
+        "freethinker funeral",
+        "free thinker wake",
+        "no religion funeral",
+        "simple funeral",
+        "non religious wake",
+        "hybrid funeral",
+        "neutral funeral",
+        "void deck freethinker",
+        "modern send off",
+        "direct cremation freethinker",
+        "garden of serenity freethinker",
+        "solace dignity care freethinker"
+      ]
+    }
+  ]
+}

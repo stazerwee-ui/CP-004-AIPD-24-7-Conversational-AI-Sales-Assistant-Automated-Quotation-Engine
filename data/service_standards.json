@@ -1,0 +1,45 @@
+{
+  "service_standards": {
+    "response_times": {
+      "emergency_hotline_seconds": 30,
+      "onsite_arrival_time_urban_minutes": 60,
+      "non_urgent_enquiry_hours": 2
+    },
+    "funeral_director_code_of_conduct": [
+      "Maintain a dignified, respectful, and compassionate demeanor at all times in the presence of families.",
+      "Wear clean, professional attire consisting of a dark suit, white collared shirt, and dark tie during all family meetings, wakes, and cortege processions.",
+      "Provide complete transparency regarding all package items, pricing, and potential variable costs without pressure or upselling.",
+      "Obtain explicit written consent from the family prior to ordering any additional services, logistics, or supplies.",
+      "Fully coordinate and confirm all municipal wake permits (HDB Town Council, LTA road notices, SLA TOLs) prior to wake setup.",
+      "Arrive at least 30 minutes before the scheduled casket arrival on the first day and cortege departure on the final day.",
+      "Verify the identities of deceased and family details carefully against official digital death certificates before any transport or embalming takes place."
+    ],
+    "funeral_butler_responsibilities": {
+      "daily_wake_duties": [
+        "Perform a thorough site inspection twice daily to ensure the canvas tent or parlour space is clean, sanitary, and functional.",
+        "Keep guest tables and seating areas organized, wiped down, and clear of empty containers or trash.",
+        "Regularly replenish refreshments, including packet drinks, snacks, peanuts, and paper cups in the guest service area.",
+        "Monitor on-site sanitation facilities, coordinate emptying of waste bins, and keep hand sanitizer stations topped up.",
+        "Verify that ambient lighting, fans, air coolers, and sound equipment are working and adjusted appropriately for the weather."
+      ],
+      "vendor_coordination": [
+        "Liaise with catering staff to ensure food warmers, buffet setup, and dietary requests are delivered on schedule.",
+        "Coordinate floral delivery schedules, ensuring wreaths and portrait frames are styled and positioned correctly.",
+        "Confirm the arrival times of religious officiants (monks, priests, pastors, celebrants) and assist them in setting up required ritual items.",
+        "Coordinate with transport coordinators, bus drivers, and police/traffic escorts for cortege assembly and departure times."
+      ],
+      "problem_escalation_protocol": [
+        "Address minor logistics challenges (e.g., additional tables/chairs needed, minor spills) immediately on-site.",
+        "Report electrical or water supply failures from HDB Town Council DB boxes to the operations manager and local town council hotline within 10 minutes of occurrence.",
+        "Escalate safety hazards, structural tentage concerns, or vendor delivery delays exceeding 30 minutes to the Operations Director immediately.",
+        "Coordinate a formal handoff to the night security team if the family has booked overnight guard services, briefing them on emergency contacts."
+      ]
+    },
+    "transparency_guarantees": [
+      "100% Price Transparency Guarantee: The price listed in the package quote is the price you pay, with no hidden administration, processing, or fuel surcharges.",
+      "Zero markup on third-party government disbursements: All municipal permits, cremation bookings, and cemetery fees are passed through to the client at cost with original receipts provided.",
+      "No verbal commitments: Every agreement for extra services, flowers, or catering must be documented on an interim billing sheet and signed by both the Funeral Butler and the family representative.",
+      "Price Match Promise: We promise to match the price of the exact same package from the same provider if found at a lower price elsewhere."
+    ]
+  }
+}

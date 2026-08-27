@@ -1,0 +1,1542 @@
+{
+  "procedures": [
+    {
+      "procedure_id": "PROC_DEATH_HOME",
+      "category": "Death at Home",
+      "title": "Natural Death at Home Certification and Handover Protocol",
+      "summary": "Mandatory statutory and medical workflow for natural, expected deaths occurring at a private residence in Singapore. Requires clinical verification by a registered medical practitioner, digital CCOD submission, and licensed funeral director conveyance.",
+      "trigger_conditions": [
+        "Deceased passed away at a private residential home due to known, terminal, or natural medical causes.",
+        "A registered family doctor, home hospice/palliative physician, or 24/7 house-call doctor is available to conduct physical death certification.",
+        "There are no signs of trauma, foul play, violence, poisoning, or sudden unexplainable cessation of life."
+      ],
+      "immediate_actions": [
+        {
+          "step_number": 1,
+          "action": "Remain calm and verify the absence of vital signs (breathing, pulse, responsiveness). Do not panic or disturb the immediate room arrangement.",
+          "responsible_party": "Next-of-Kin / Informant",
+          "critical_warning": "DO NOT move the body to another room, wash the body, or alter clothing before the certifying doctor completes the physical examination."
+        },
+        {
+          "step_number": 2,
+          "action": "Contact the deceased's regular attending physician, home hospice team (e.g., HCA Hospice, Dover Park Home Care), or Solace Dignity Care's 24-hour doctor house-call dispatch service (+65 6555 1115) to perform on-site death certification.",
+          "responsible_party": "Next-of-Kin / Family",
+          "critical_warning": "If no doctor is willing or able to certify the cause of death based on recent medical history, the case must legally be reported to the Singapore Police Force (999)."
+        },
+        {
+          "step_number": 3,
+          "action": "Gather the deceased's original identification document (NRIC, FIN, or Passport), recent hospital discharge summaries, specialist outpatient memos, and the informant's original NRIC.",
+          "responsible_party": "Next-of-Kin / Family",
+          "critical_warning": "Original physical identity cards are strictly required by the certifying doctor; photocopies or digital screenshots are not accepted for physical verification."
+        },
+        {
+          "step_number": 4,
+          "action": "Upon completion of clinical examination and digital CCOD submission by the doctor, call Solace Dignity Care (+65 6555 1115) for transfer of remains, embalming, and wake logistics.",
+          "responsible_party": "Next-of-Kin / Solace Dignity Care"
+        }
+      ],
+      "documentation_required": [
+        {
+          "document_name": "Deceased's Original Identification (NRIC / FIN / Passport)",
+          "issued_by": "Immigration & Checkpoints Authority (ICA) / Foreign Government",
+          "purpose": "Mandatory identity verification by the certifying medical practitioner."
+        },
+        {
+          "document_name": "Informant's Original Identification (NRIC / FIN / Passport)",
+          "issued_by": "Immigration & Checkpoints Authority (ICA)",
+          "purpose": "Establishes legal next-of-kin status and enters informant record in the National Registry."
+        },
+        {
+          "document_name": "Recent Medical History / Discharge Summary / Specialist Memos",
+          "issued_by": "Attending Hospital / Specialist Medical Centre / Hospice",
+          "purpose": "Provides clinical substantiation enabling the doctor to certify natural cause of death without referring to the State Coroner."
+        },
+        {
+          "document_name": "Digital Cause of Death Certificate (CCOD)",
+          "issued_by": "Certifying Registered Medical Practitioner (via MOH / ICA Portal)",
+          "purpose": "Statutory medical document registering the cause of death electronically into the national death registry."
+        },
+        {
+          "document_name": "Digital Death Certificate",
+          "issued_by": "Registry of Births and Deaths / ICA (via My Legacy Portal)",
+          "purpose": "Official legal proof of death required to book wake venues, crematorium/burial slots, and permit body transport."
+        }
+      ],
+      "workflow_steps": [
+        {
+          "step": 1,
+          "phase": "Initial Verification & Doctor Summoning",
+          "description": "Family confirms passing and contacts regular attending GP, palliative care team, or SDC 24-hour house-call doctor hotline (+65 6555 1115).",
+          "next_dependency": "Physical arrival of the registered medical practitioner at the residence."
+        },
+        {
+          "step": 2,
+          "phase": "Clinical Examination & Cause Determination",
+          "description": "Doctor conducts clinical assessment, reviews past medical records, confirms natural cause of death, and verifies identity against original NRIC.",
+          "next_dependency": "Successful determination that death is natural and non-coronial."
+        },
+        {
+          "step": 3,
+          "phase": "Electronic CCOD Submission",
+          "description": "Doctor uploads the electronic Cause of Death Certificate (CCOD) directly to the ICA Registry of Births and Deaths portal.",
+          "next_dependency": "Instantaneous generation of Digital Death Certificate by ICA."
+        },
+        {
+          "step": 4,
+          "phase": "Digital Death Certificate Retrieval",
+          "description": "Next-of-Kin receives SMS notification and logs into My Legacy portal (mylegacy.life.gov.sg) using Singpass to download official Digital Death Certificate PDF.",
+          "next_dependency": "Handover of Digital Death Certificate to Solace Dignity Care."
+        },
+        {
+          "step": 5,
+          "phase": "Conveyance & Wake Coordination",
+          "description": "Solace Dignity Care transfer team arrives at the residence, secures the body in a specialized body bag, conveys remains to the embalming care centre, and initiates town council / parlour wake setup.",
+          "next_dependency": "Embalming sanitization, dressing, and casket placement for wake."
+        }
+      ],
+      "emergency_contacts": [
+        {
+          "agency": "Solace Dignity Care 24/7 Emergency Hotline & Doctor Dispatch",
+          "contact_number": "+65 6555 1115",
+          "operating_hours": "24 Hours / 7 Days a week"
+        },
+        {
+          "agency": "HCA Hospice Care 24/7 Hotline",
+          "contact_number": "+65 6251 2561",
+          "operating_hours": "24 Hours / 7 Days a week (For registered palliative patients)"
+        },
+        {
+          "agency": "Singapore Police Force (Emergency - if doctor cannot certify)",
+          "contact_number": "999",
+          "operating_hours": "24 Hours / 7 Days a week"
+        }
+      ],
+      "special_handling": {
+        "is_coroner_case": false,
+        "autopsy_possible": false,
+        "embalming_permitted": true,
+        "notes": "Embalming and dressing may proceed immediately once the Digital Death Certificate is downloaded from My Legacy. Solace Dignity Care transfer crew provides respectful transfer within 60 minutes of call activation."
+      }
+    },
+    {
+      "procedure_id": "PROC_DEATH_HOSPITAL",
+      "category": "Death in Hospital",
+      "title": "Inpatient Hospital Passing and Mortuary Clearance Protocol",
+      "summary": "Structured protocol for deaths occurring within restructured or private hospital inpatient wards, intensive care units (ICU), or emergency departments where the attending doctor certifies cause of death.",
+      "trigger_conditions": [
+        "Patient certified deceased while admitted to a Singapore restructured hospital (e.g., SGH, NUH, TTSH, CGH, KTPH, SKH, NTFGH) or private hospital (e.g., Mount Elizabeth, Gleneagles, Parkway East, Raffles Hospital, Mount Alvernia).",
+        "Ward doctor or attending consultant confirms natural cause of death linked to diagnosed illness.",
+        "Body transferred from ward to the hospital's internal mortuary pending family collection."
+      ],
+      "immediate_actions": [
+        {
+          "step_number": 1,
+          "action": "Ward nursing staff perform preliminary post-mortem care (nursing last offices) and prepare the deceased for internal transfer to the hospital mortuary holding room.",
+          "responsible_party": "Hospital Ward Nursing Staff",
+          "critical_warning": "Personal valuables and jewellery on the deceased are inventoried; family must verify and sign the property release form."
+        },
+        {
+          "step_number": 2,
+          "action": "Attending ward doctor enters the electronic CCOD directly into the national registry, triggering the generation of the Digital Death Certificate via My Legacy.",
+          "responsible_party": "Attending Medical Officer / Hospital Registrar",
+          "critical_warning": "If death occurs during surgery, within 24 hours of admission, or under unexplained circumstances, the hospital is legally mandated to refer the case to the State Coroner."
+        },
+        {
+          "step_number": 3,
+          "action": "Next-of-Kin receives hospital death memo, settles administrative ward discharge, and downloads Digital Death Certificate via Singpass on My Legacy portal.",
+          "responsible_party": "Next-of-Kin / Family"
+        },
+        {
+          "step_number": 4,
+          "action": "Contact Solace Dignity Care (+65 6555 1115) and provide the Digital Death Certificate and signed Letter of Authorization for hospital mortuary collection.",
+          "responsible_party": "Next-of-Kin / Solace Dignity Care"
+        }
+      ],
+      "documentation_required": [
+        {
+          "document_name": "Hospital Death Memo / Discharge Summary",
+          "issued_by": "Attending Hospital Ward Administration",
+          "purpose": "Authorizes administrative release of the body from the hospital ward/mortuary."
+        },
+        {
+          "document_name": "Digital Death Certificate",
+          "issued_by": "Registry of Births and Deaths / ICA (via My Legacy Portal)",
+          "purpose": "Legal verification of death and mandatory prerequisite for funeral director body collection."
+        },
+        {
+          "document_name": "Deceased's Original Identification (NRIC / FIN / Passport)",
+          "issued_by": "Immigration & Checkpoints Authority (ICA)",
+          "purpose": "Mortuary security clearance and identity cross-matching."
+        },
+        {
+          "document_name": "Informant's Original Identification (NRIC / FIN / Passport)",
+          "issued_by": "Immigration & Checkpoints Authority (ICA)",
+          "purpose": "Verification of next-of-kin identity for releasing body and personal effects."
+        },
+        {
+          "document_name": "Funeral Director Authorization Letter for Body Release",
+          "issued_by": "Solace Dignity Care / Next-of-Kin",
+          "purpose": "Statutory power of attorney empowering Solace Dignity Care transport staff to collect remains from hospital mortuary."
+        }
+      ],
+      "workflow_steps": [
+        {
+          "step": 1,
+          "phase": "Ward Verification & Last Offices",
+          "description": "Medical officer confirms time of death. Nurses perform last offices, tag the body, and arrange porterage to the hospital mortuary cold room.",
+          "next_dependency": "Submission of electronic CCOD by ward doctor."
+        },
+        {
+          "step": 2,
+          "phase": "Digital Certification & Notification",
+          "description": "Hospital electronic CCOD uploads to ICA. Informant receives automated SMS alert to download Digital Death Certificate via My Legacy.",
+          "next_dependency": "Next-of-Kin Singpass login and document download."
+        },
+        {
+          "step": 3,
+          "phase": "Funeral Director Activation",
+          "description": "Family provides Digital Death Certificate and signs authorization letter for Solace Dignity Care.",
+          "next_dependency": "SDC logistics dispatch to hospital mortuary."
+        },
+        {
+          "step": 4,
+          "phase": "Hospital Mortuary Clearance & Handover",
+          "description": "SDC collection crew attends hospital mortuary counter, presents required documents, verifies body tag with mortuary technician, and conveys body to embalming facility.",
+          "next_dependency": "Sanitization, embalming, and wake setup."
+        }
+      ],
+      "emergency_contacts": [
+        {
+          "agency": "Solace Dignity Care 24/7 Hospital Transfer Division",
+          "contact_number": "+65 6555 1115",
+          "operating_hours": "24 Hours / 7 Days a week"
+        },
+        {
+          "agency": "Singapore General Hospital (SGH) Mortuary",
+          "contact_number": "+65 6321 4321",
+          "operating_hours": "08:00 - 20:00 Daily"
+        },
+        {
+          "agency": "National University Hospital (NUH) Mortuary",
+          "contact_number": "+65 6779 5555",
+          "operating_hours": "08:00 - 20:00 Daily"
+        },
+        {
+          "agency": "Tan Tock Seng Hospital (TTSH) Mortuary",
+          "contact_number": "+65 6357 7000",
+          "operating_hours": "08:00 - 20:00 Daily"
+        }
+      ],
+      "special_handling": {
+        "is_coroner_case": false,
+        "autopsy_possible": false,
+        "embalming_permitted": true,
+        "notes": "Hospital mortuaries provide complimentary storage up to 24-48 hours. SDC arranges immediate collection within 60 to 90 minutes of receiving family authorization."
+      }
+    },
+    {
+      "procedure_id": "PROC_DEATH_NURSING_HOME",
+      "category": "Death in Nursing Home",
+      "title": "Nursing Home and Residential Care Facility Passing Protocol",
+      "summary": "Operational protocol for residents passing away in institutional aged care, nursing homes, or hospices in Singapore, including attending doctor verification and direct facility handover.",
+      "trigger_conditions": [
+        "Resident passes away at an MOH-licensed nursing home (e.g., Ren Ci, St. Andrew's, Econ Healthcare, Orange Valley, All Saints Home, NTUC Health) or community care facility.",
+        "Facility's panel physician, visiting medical officer, or home-care doctor certifies natural death."
+      ],
+      "immediate_actions": [
+        {
+          "step_number": 1,
+          "action": "Nursing supervisor on duty contacts the appointed primary Next-of-Kin (NOK) and alerts the facility's attending panel doctor.",
+          "responsible_party": "Nursing Home Duty Supervisor",
+          "critical_warning": "Nursing homes have strictly limited holding space and no long-term cold refrigeration. Body retrieval must occur within 2 to 4 hours of certification."
+        },
+        {
+          "step_number": 2,
+          "action": "Attending doctor conducts physical examination at the facility, certifies cause of death, and submits CCOD electronically to ICA.",
+          "responsible_party": "Attending Panel Physician / Visiting Medical Officer"
+        },
+        {
+          "step_number": 3,
+          "action": "Next-of-Kin downloads Digital Death Certificate from My Legacy (mylegacy.life.gov.sg) using Singpass and contacts Solace Dignity Care (+65 6555 1115) for immediate collection.",
+          "responsible_party": "Next-of-Kin / Solace Dignity Care"
+        },
+        {
+          "step_number": 4,
+          "action": "Informant and SDC transfer team reconcile and sign the nursing home's resident personal effects inventory register and handover log.",
+          "responsible_party": "Next-of-Kin / SDC Funeral Crew / Facility Staff"
+        }
+      ],
+      "documentation_required": [
+        {
+          "document_name": "Deceased's Original Identification (NRIC / FIN)",
+          "issued_by": "Immigration & Checkpoints Authority (ICA)",
+          "purpose": "Identity verification by visiting doctor and funeral director."
+        },
+        {
+          "document_name": "Nursing Home Death Notification Memo",
+          "issued_by": "Nursing Home Administration",
+          "purpose": "Confirms passing of resident and authorizes release of body and property."
+        },
+        {
+          "document_name": "Digital Death Certificate",
+          "issued_by": "Registry of Births and Deaths / ICA (via My Legacy Portal)",
+          "purpose": "Statutory requirement for conveyance, embalming, and booking wake/cremation venues."
+        },
+        {
+          "document_name": "Facility Body Release & Property Handover Form",
+          "issued_by": "Nursing Home Administration",
+          "purpose": "Legal indemnification and formal release of resident remains to authorized funeral director."
+        }
+      ],
+      "workflow_steps": [
+        {
+          "step": 1,
+          "phase": "Staff Identification & Doctor Activation",
+          "description": "Duty nurses identify cessation of life, contact family, and request visiting panel physician to certify death.",
+          "next_dependency": "Arrival and clinical assessment by doctor."
+        },
+        {
+          "step": 2,
+          "phase": "Digital CCOD Upload & Certificate Generation",
+          "description": "Doctor uploads electronic CCOD to ICA. Digital Death Certificate becomes accessible on My Legacy portal.",
+          "next_dependency": "Singpass retrieval of PDF Death Certificate."
+        },
+        {
+          "step": 3,
+          "phase": "Rapid Funeral Director Dispatch",
+          "description": "Solace Dignity Care dispatches dedicated transfer vehicle and crew to the nursing home within 45-60 minutes.",
+          "next_dependency": "Verification of body tag and clearance by nursing home supervisor."
+        },
+        {
+          "step": 4,
+          "phase": "Handover & Transfer to Care Facility",
+          "description": "SDC crew secures remains, collects belongings, signs facility registers, and transfers deceased to SDC embalming facility or cold holding.",
+          "next_dependency": "Family wake planning and permit applications."
+        }
+      ],
+      "emergency_contacts": [
+        {
+          "agency": "Solace Dignity Care Rapid Dispatch Unit",
+          "contact_number": "+65 6555 1115",
+          "operating_hours": "24 Hours / 7 Days a week"
+        },
+        {
+          "agency": "Agency for Integrated Care (AIC) Healthcare Hotline",
+          "contact_number": "+65 6838 8833",
+          "operating_hours": "Mon - Fri 08:30 - 17:30"
+        }
+      ],
+      "special_handling": {
+        "is_coroner_case": false,
+        "autopsy_possible": false,
+        "embalming_permitted": true,
+        "notes": "Because nursing home holding facilities are unrefrigerated, SDC prioritizes urgent transfer to our centralized temperature-controlled holding facility to preserve dignified condition."
+      }
+    },
+    {
+      "procedure_id": "PROC_SUDDEN_DEATH",
+      "category": "Sudden/Unexpected Death",
+      "title": "Sudden, Unattended, or Unnatural Death Emergency Police Protocol",
+      "summary": "Legal and emergency procedures triggered when a person dies suddenly, unexpectedly, without recent medical supervision, or under unnatural/suspicious circumstances in Singapore.",
+      "trigger_conditions": [
+        "Death occurs suddenly at a residence or public location with no prior diagnosed terminal illness.",
+        "No registered doctor is willing or legally able to certify the cause of death.",
+        "Suspected suicide, unnatural death, traffic/industrial fatal accident, fall from height, drowning, poisoning, or violence."
+      ],
+      "immediate_actions": [
+        {
+          "step_number": 1,
+          "action": "Immediately dial 999 for the Singapore Police Force (SPF). If resuscitation is remotely possible or uncertain, dial 995 for SCDF Emergency Ambulance.",
+          "responsible_party": "Informant / First Responder",
+          "critical_warning": "DO NOT touch, move, wash, change clothing, or disturb the deceased or surrounding objects, notes, medications, or furniture."
+        },
+        {
+          "step_number": 2,
+          "action": "Secure the premises and preserve the physical scene intact until Police Land Division officers and Crime Scene Specialists arrive.",
+          "responsible_party": "Informant / Next-of-Kin",
+          "critical_warning": "Tampering with a death scene or attempting unauthorized transport is a serious criminal offense under Singapore law."
+        },
+        {
+          "step_number": 3,
+          "action": "Cooperate fully with the attending Police Investigation Officer (IO), provide witness statements, and furnish all known past medical records, prescriptions, and clinic appointments.",
+          "responsible_party": "Next-of-Kin / Witnesses"
+        },
+        {
+          "step_number": 4,
+          "action": "Receive the Police Investigation Slip / Case Information Card from the attending IO upon completion of on-site forensics.",
+          "responsible_party": "Next-of-Kin / SPF Investigation Officer"
+        },
+        {
+          "step_number": 5,
+          "action": "Police Hearse conveys the deceased directly to Mortuary@HSA (Block 9, Singapore General Hospital Complex). Family is instructed to report to Mortuary@HSA the following morning at 08:00 AM.",
+          "responsible_party": "SPF Transport / Mortuary@HSA / Next-of-Kin"
+        }
+      ],
+      "documentation_required": [
+        {
+          "document_name": "Deceased's Original Identification (NRIC / FIN / Passport)",
+          "issued_by": "Immigration & Checkpoints Authority (ICA) / Foreign Government",
+          "purpose": "Formal identification by Police Investigation Officer and Mortuary@HSA."
+        },
+        {
+          "document_name": "Informant / Witness Identification (NRIC / Passport)",
+          "issued_by": "Immigration & Checkpoints Authority (ICA)",
+          "purpose": "Recording official police witness statement and next-of-kin particulars."
+        },
+        {
+          "document_name": "Police Investigation Slip / Case Reference Card",
+          "issued_by": "Singapore Police Force (Attending IO)",
+          "purpose": "Case reference required for entry and registration at Mortuary@HSA the next morning."
+        },
+        {
+          "document_name": "Historical Medical Records & Prescriptions",
+          "issued_by": "Hospitals / Polyclinics / Private Specialists",
+          "purpose": "Assists the State Coroner and Forensic Pathologist in determining whether an autopsy is mandatory."
+        }
+      ],
+      "workflow_steps": [
+        {
+          "step": 1,
+          "phase": "Emergency Police Alert (999)",
+          "description": "Informant calls SPF 999. Police dispatch fast-response patrol cars, investigation officers, and forensics to the location.",
+          "next_dependency": "Arrival of Police Land Division officers."
+        },
+        {
+          "step": 2,
+          "phase": "Scene Investigation & Forensic Preservation",
+          "description": "Officers cordon the area, photograph the scene, interview informants, and inspect medication bottles and personal belongings.",
+          "next_dependency": "Completion of preliminary police investigation."
+        },
+        {
+          "step": 3,
+          "phase": "Police Hearse Conveyance to Mortuary@HSA",
+          "description": "Official Police Hearse transfers the deceased to Mortuary@HSA (Block 9, SGH Complex). Private funeral hearses are legally prohibited from transporting the body at this stage.",
+          "next_dependency": "Admission of remains into Mortuary@HSA forensic cold storage."
+        },
+        {
+          "step": 4,
+          "phase": "Next-of-Kin Briefing & Case Assignment",
+          "description": "Attending IO briefs family, issues case card, and provides reporting instructions for Mortuary@HSA attendance at 08:00 AM the next day.",
+          "next_dependency": "Next-of-Kin attendance at Mortuary@HSA."
+        }
+      ],
+      "emergency_contacts": [
+        {
+          "agency": "Singapore Police Force (Emergency)",
+          "contact_number": "999",
+          "operating_hours": "24 Hours / 7 Days a week"
+        },
+        {
+          "agency": "Singapore Civil Defence Force (Paramedic Emergency)",
+          "contact_number": "995",
+          "operating_hours": "24 Hours / 7 Days a week"
+        },
+        {
+          "agency": "Singapore Police Force (Non-Emergency Hotline)",
+          "contact_number": "1800-255-0000",
+          "operating_hours": "24 Hours / 7 Days a week"
+        },
+        {
+          "agency": "Solace Dignity Care Crisis Support Liaison",
+          "contact_number": "+65 6555 1115",
+          "operating_hours": "24 Hours / 7 Days a week"
+        }
+      ],
+      "special_handling": {
+        "is_coroner_case": true,
+        "autopsy_possible": true,
+        "embalming_permitted": false,
+        "notes": "STRICT STATUTORY WARNING: Embalming, cleaning, or unauthorized conveyance is strictly prohibited by law until the State Coroner issues the formal Digital Death Certificate and Burial/Cremation Permit."
+      }
+    },
+    {
+      "procedure_id": "PROC_CORONER_CASES",
+      "category": "Coroner Cases",
+      "title": "State Coroner Inquiry and Judicial Review Protocol",
+      "summary": "Formal legal framework governing deaths falling under the jurisdiction of the Coroners Act 2010 (Cap. 63A) in Singapore, managed by the State Courts and Police Division Investigation Officers.",
+      "trigger_conditions": [
+        "Death is violent, unnatural, sudden with cause unknown, or occurring in official custody (prison, police lockup, detention centre).",
+        "Death resulting from surgical, medical, or anaesthetic misadventure.",
+        "Medical practitioner files a mandatory Form 1 notification under Section 14 of the Coroners Act."
+      ],
+      "immediate_actions": [
+        {
+          "step_number": 1,
+          "action": "Police Division Investigation Officer (IO) takes statutory custody of the case file and decedent under the direction of the State Coroner.",
+          "responsible_party": "Singapore Police Force / State Courts",
+          "critical_warning": "No individual, doctor, or family member can override Coroner jurisdiction once triggered."
+        },
+        {
+          "step_number": 2,
+          "action": "Duty State Coroner reviews the preliminary police report, circumstances of death, and past medical history to decide if a full post-mortem autopsy, external examination, or toxicology is ordered under Section 24.",
+          "responsible_party": "Duty State Coroner (State Courts of Singapore)"
+        },
+        {
+          "step_number": 3,
+          "action": "Next-of-Kin attends the Coroner's briefing at Mortuary@HSA / Police Cantonment Complex, submits any written representations, and assists in establishing medical history.",
+          "responsible_party": "Next-of-Kin / Informant"
+        },
+        {
+          "step_number": 4,
+          "action": "Upon conclusion of the post-mortem assessment, the State Coroner signs off on the cause of death, releases the body, and issues the Digital Death Certificate and Permit to Bury/Cremate.",
+          "responsible_party": "State Coroner / HSA Forensic Medicine Division"
+        }
+      ],
+      "documentation_required": [
+        {
+          "document_name": "Coroner's Order for Post-Mortem Examination",
+          "issued_by": "State Courts of Singapore (State Coroner)",
+          "purpose": "Judicial warrant authorizing forensic pathologists at HSA to conduct external or invasive post-mortem examination."
+        },
+        {
+          "document_name": "Coroner's Certificate of Cause of Death (Form 4)",
+          "issued_by": "State Courts of Singapore / HSA",
+          "purpose": "Official judicial determination of cause of death."
+        },
+        {
+          "document_name": "State Coroner's Permit to Bury or Cremate",
+          "issued_by": "State Courts of Singapore",
+          "purpose": "Mandatory legal clearance permitting Solace Dignity Care to collect remains and book Mandai Crematorium or cemetery."
+        },
+        {
+          "document_name": "Formal Identification Witness Statement",
+          "issued_by": "Singapore Police Force / State Courts",
+          "purpose": "Legal affidavit confirming the physical identity of the deceased by primary next-of-kin."
+        }
+      ],
+      "workflow_steps": [
+        {
+          "step": 1,
+          "phase": "Judicial Jurisdiction Ingestion",
+          "description": "Case transferred to the State Courts Coroners Court docket. IO compiles police investigation dossier and transmits to the Duty Coroner.",
+          "next_dependency": "Coroner's initial case directions."
+        },
+        {
+          "step": 2,
+          "phase": "Pathology Directive Issuance",
+          "description": "State Coroner issues formal direction to HSA Forensic Medicine Division regarding post-mortem scope (Full Autopsy vs. External Inspection vs. Post-Mortem CT Virtopsy).",
+          "next_dependency": "Execution of pathology examination at Block 9 HSA."
+        },
+        {
+          "step": 3,
+          "phase": "Judicial Finding & Document Execution",
+          "description": "Coroner evaluates pathologist findings, establishes cause of death, and electronically approves the Digital Death Certificate and Burial/Cremation Permit.",
+          "next_dependency": "Release notification to Next-of-Kin."
+        },
+        {
+          "step": 4,
+          "phase": "Body Release to Authorized Funeral Director",
+          "description": "Coroner's office releases body claim authorization to Solace Dignity Care upon verification of family Letter of Authorization.",
+          "next_dependency": "Conveyance of body by SDC hearse team."
+        }
+      ],
+      "emergency_contacts": [
+        {
+          "agency": "State Courts - Coroners Court Registry",
+          "contact_number": "+65 6587 8423",
+          "operating_hours": "Mon - Fri 08:30 - 17:30"
+        },
+        {
+          "agency": "Police Cantonment Complex (CID Investigation Desk)",
+          "contact_number": "+65 6435 0000",
+          "operating_hours": "24 Hours / 7 Days a week"
+        },
+        {
+          "agency": "Solace Dignity Care Legal & Police Liaison Desk",
+          "contact_number": "+65 6555 1115",
+          "operating_hours": "24 Hours / 7 Days a week"
+        }
+      ],
+      "special_handling": {
+        "is_coroner_case": true,
+        "autopsy_possible": true,
+        "embalming_permitted": false,
+        "notes": "The State Coroner has exclusive judicial authority. Neither family members nor private lawyers can bypass post-mortem orders if criminal suspicion exists. SDC provides specialized family guidance throughout the inquiry process."
+      }
+    },
+    {
+      "procedure_id": "PROC_POST_MORTEM",
+      "category": "Post-Mortem",
+      "title": "Forensic and Clinical Post-Mortem Examination Protocol",
+      "summary": "Comprehensive guidelines detailing mandatory forensic autopsies ordered by the State Coroner versus non-coroner clinical autopsies requested by physicians or families in Singapore.",
+      "trigger_conditions": [
+        "State Coroner issues an order for post-mortem examination under Section 24 of the Coroners Act to establish the medical cause of death.",
+        "Clinical/Pathological autopsy requested by hospital attending consultant with next-of-kin informed consent for academic or medical research review."
+      ],
+      "immediate_actions": [
+        {
+          "step_number": 1,
+          "action": "Health Sciences Authority (HSA) Forensic Medicine Division admits decedent into the post-mortem suite at Block 9, SGH Complex.",
+          "responsible_party": "HSA Forensic Pathologists & Mortuary Technicians",
+          "critical_warning": "Family members are not permitted inside the autopsy dissection theater."
+        },
+        {
+          "step_number": 2,
+          "action": "Next-of-Kin may submit medical history or religious representations regarding invasive post-mortems to the Coroner's Officer during morning interview.",
+          "responsible_party": "Next-of-Kin / Coroner's Police Officer",
+          "critical_warning": "While religious sensitivities are respected where possible, statutory Coroner autopsies override family refusal if foul play or public interest is involved."
+        },
+        {
+          "step_number": 3,
+          "action": "Forensic Pathologist performs comprehensive examination (external inspection, post-mortem CT Virtopsy scan, toxicological sampling, and/or internal organ dissection).",
+          "responsible_party": "Duty Forensic Pathologist (HSA)"
+        },
+        {
+          "step_number": 4,
+          "action": "Pathologist formulates interim cause of death, performs anatomical reconstruction and hygienic suture closure of the body, and submits findings to the State Coroner.",
+          "responsible_party": "HSA Forensic Pathologist / State Courts"
+        }
+      ],
+      "documentation_required": [
+        {
+          "document_name": "Coroner's Warrant for Post-Mortem Examination",
+          "issued_by": "State Courts of Singapore",
+          "purpose": "Legal authorization for forensic examination."
+        },
+        {
+          "document_name": "Forensic Pathology Autopsy Report (Interim / Final)",
+          "issued_by": "Health Sciences Authority (HSA)",
+          "purpose": "Clinical and anatomical findings outlining primary, secondary, and contributory causes of death."
+        },
+        {
+          "document_name": "Toxicology & Histopathology Screening Memos",
+          "issued_by": "HSA Applied Sciences Group / Laboratories",
+          "purpose": "Chemical and microscopic analysis (standard processing takes 6 to 12 weeks, but body release is granted promptly on interim findings)."
+        },
+        {
+          "document_name": "Post-Mortem Body Clearance & Release Slip",
+          "issued_by": "Mortuary@HSA",
+          "purpose": "Confirms completion of post-mortem and authorizes release to funeral director."
+        }
+      ],
+      "workflow_steps": [
+        {
+          "step": 1,
+          "phase": "Intake & Non-Invasive Imaging",
+          "description": "Remains undergo barcode registration and post-mortem Computed Tomography (Virtopsy) scan to assess skeletal fractures and internal hemorrhages non-invasively.",
+          "next_dependency": "Pathologist assessment of imaging results."
+        },
+        {
+          "step": 2,
+          "phase": "Forensic Autopsy Dissection",
+          "description": "Pathologist performs internal examination and collects blood, vitreous, and tissue specimens for toxicology where required.",
+          "next_dependency": "Completion of surgical reconstruction and suturing."
+        },
+        {
+          "step": 3,
+          "phase": "Reconstruction & Mortuary Sanitization",
+          "description": "Mortuary technicians reconstruct, wash, and suture remains with high dignity and aesthetic care to allow open-casket viewing during subsequent wake.",
+          "next_dependency": "Coroner's formal release sign-off."
+        },
+        {
+          "step": 4,
+          "phase": "Release Clearance to Solace Dignity Care",
+          "description": "Mortuary counter clears the case for claim. SDC licensed embalmers collect body for restorative makeup and wake preparation.",
+          "next_dependency": "SDC vehicle transfer to care facility."
+        }
+      ],
+      "emergency_contacts": [
+        {
+          "agency": "HSA Forensic Medicine Division General Counter",
+          "contact_number": "+65 6213 0660",
+          "operating_hours": "Mon - Fri 08:30 - 17:00, Sat 08:30 - 13:00"
+        },
+        {
+          "agency": "Mortuary@HSA Case Status Information Line",
+          "contact_number": "+65 6213 0661",
+          "operating_hours": "Daily 08:00 - 16:30"
+        },
+        {
+          "agency": "Solace Dignity Care Forensic Support Team",
+          "contact_number": "+65 6555 1115",
+          "operating_hours": "24 Hours / 7 Days a week"
+        }
+      ],
+      "special_handling": {
+        "is_coroner_case": true,
+        "autopsy_possible": true,
+        "embalming_permitted": true,
+        "notes": "Post-mortem examinations generally take 12 to 24 hours. Once released by HSA, embalming is fully permitted. Solace Dignity Care employs certified restorative embalmers experienced in post-autopsy restorative cosmetology for open-casket viewings."
+      }
+    },
+    {
+      "procedure_id": "PROC_HSA_MORTUARY",
+      "category": "HSA Mortuary",
+      "title": "Mortuary@HSA (Block 9) Physical Identification and Body Claim Protocol",
+      "summary": "Step-by-step procedural manual for next-of-kin navigating physical identification, coroner interview, and body claim at the Mortuary@HSA located at Block 9, Outram Road.",
+      "trigger_conditions": [
+        "Body of the deceased was conveyed to the Health Sciences Authority Mortuary (Mortuary@HSA) by police hearse.",
+        "Next-of-kin notified by SPF Investigation Officer to report to Mortuary@HSA the following morning."
+      ],
+      "immediate_actions": [
+        {
+          "step_number": 1,
+          "action": "Up to two immediate family members (Next-of-Kin) arrive at Mortuary@HSA, Block 9, SGH Complex (11 Outram Road, Singapore 169078) by 08:00 AM.",
+          "responsible_party": "Next-of-Kin / Primary Informant",
+          "critical_warning": "Arriving late (after 09:30 AM) may cause administrative deferral of the autopsy review to the next working day."
+        },
+        {
+          "step_number": 2,
+          "action": "Register at the Mortuary@HSA security counter with original identification documents, the Police Case Slip, and medical history documents.",
+          "responsible_party": "Next-of-Kin / Informant"
+        },
+        {
+          "step_number": 3,
+          "action": "Enter the designated witness viewing gallery to perform visual identification of the deceased through the glass partition / high-resolution digital display.",
+          "responsible_party": "Next-of-Kin / HSA Mortuary Officer",
+          "critical_warning": "Only immediate family members over 18 years of age are permitted in the formal identification room."
+        },
+        {
+          "step_number": 4,
+          "action": "Attend the formal interview with the Coroner's Police Officer and Forensic Pathologist to review medical history and discuss autopsy requirements.",
+          "responsible_party": "Next-of-Kin / Coroner's Police Officer / Pathologist"
+        },
+        {
+          "step_number": 5,
+          "action": "Sign the release register, receive the Digital Death Certificate reference, and hand over the Body Claim Slip to the waiting Solace Dignity Care coordinator.",
+          "responsible_party": "Next-of-Kin / Solace Dignity Care"
+        }
+      ],
+      "documentation_required": [
+        {
+          "document_name": "Deceased's Original Identification (NRIC / FIN / Passport)",
+          "issued_by": "Immigration & Checkpoints Authority (ICA) / Foreign Government",
+          "purpose": "Mandatory identity cross-matching against Mortuary intake tags."
+        },
+        {
+          "document_name": "Informant / Next-of-Kin Original Identification (NRIC / Passport)",
+          "issued_by": "Immigration & Checkpoints Authority (ICA)",
+          "purpose": "Establishes legal authority to claim human remains."
+        },
+        {
+          "document_name": "Police Investigation Slip / Case Information Card",
+          "issued_by": "Singapore Police Force (Attending IO)",
+          "purpose": "Official reference admitting family to the Mortuary@HSA processing queue."
+        },
+        {
+          "document_name": "Deceased's Historical Medical Reports & Medication Lists",
+          "issued_by": "Hospitals / Polyclinics / Specialist Clinics",
+          "purpose": "Crucial evidence for the Pathologist to determine if an invasive autopsy can be avoided."
+        },
+        {
+          "document_name": "SDC Letter of Authorization for Body Claim",
+          "issued_by": "Solace Dignity Care / Next-of-Kin",
+          "purpose": "Authorizes SDC licensed hearse drivers to receive the casketed body from the mortuary loading bay."
+        }
+      ],
+      "workflow_steps": [
+        {
+          "step": 1,
+          "phase": "Arrival & Queue Registration (08:00 AM)",
+          "description": "Next-of-Kin meets SDC on-site liaison outside Block 9 Mortuary@HSA, registers at main counter, and receives queue token.",
+          "next_dependency": "Queue call by Coroner's Police Officer."
+        },
+        {
+          "step": 2,
+          "phase": "Formal Visual Identification",
+          "description": "Family enters viewing gallery, views the deceased via secure glass partition, and confirms identity under formal caution.",
+          "next_dependency": "Signing of identification statement."
+        },
+        {
+          "step": 3,
+          "phase": "Pathologist & Coroner Consultation",
+          "description": "Forensic Pathologist interviews family regarding recent health symptoms, hospital visits, and medications to finalize cause of death.",
+          "next_dependency": "Completion of examination/autopsy and Coroner sign-off."
+        },
+        {
+          "step": 4,
+          "phase": "Digital Death Certificate & Permit Issuance",
+          "description": "Coroner's office uploads CCOD. Family downloads Digital Death Certificate via My Legacy and receives physical/digital Burial/Cremation Permit.",
+          "next_dependency": "Handover to funeral director."
+        },
+        {
+          "step": 5,
+          "phase": "Mortuary Loading Bay Release to SDC Hearse",
+          "description": "SDC transfer crew presents claim documents at loading bay, receives remains, places body in casket/transfer pouch, and transports to embalming centre.",
+          "next_dependency": "Wake commencement."
+        }
+      ],
+      "emergency_contacts": [
+        {
+          "agency": "Mortuary@HSA Main Reception Desk",
+          "contact_number": "+65 6213 0661",
+          "operating_hours": "Daily 08:00 - 16:30"
+        },
+        {
+          "agency": "Mortuary@HSA Secondary Helpline",
+          "contact_number": "+65 6213 0662",
+          "operating_hours": "Daily 08:00 - 16:30"
+        },
+        {
+          "agency": "Solace Dignity Care On-Site HSA Liaison Team",
+          "contact_number": "+65 6555 1115",
+          "operating_hours": "24 Hours / 7 Days a week"
+        }
+      ],
+      "special_handling": {
+        "is_coroner_case": true,
+        "autopsy_possible": true,
+        "embalming_permitted": true,
+        "notes": "Solace Dignity Care stations a dedicated on-site funeral director at Block 9 HSA from 07:45 AM daily to guide families through the registration, emotional identification, and document handover."
+      }
+    },
+    {
+      "procedure_id": "PROC_DEATH_CERTIFICATION",
+      "category": "Death Certification",
+      "title": "National Digital Death Certification and ICA Registration Protocol (CCOD / My Legacy)",
+      "summary": "Official technical and administrative workflow for digital Certificate of Cause of Death (CCOD) registration under the Births and Deaths Registration Act 2021 and My Legacy retrieval.",
+      "trigger_conditions": [
+        "Clinical verification of death by a qualified registered medical practitioner or State Coroner.",
+        "Need to obtain official legal proof of death for funeral logistics, banking, insurance, CPF payouts, and probate execution in Singapore."
+      ],
+      "immediate_actions": [
+        {
+          "step_number": 1,
+          "action": "Attending doctor or State Coroner accesses the MOH/ICA National Death Registration Portal and inputs the electronic Cause of Death Certificate (CCOD).",
+          "responsible_party": "Registered Medical Practitioner / Hospital Doctor / State Coroner",
+          "critical_warning": "Doctors must legally register the CCOD within 24 hours of verifying death under the Births and Deaths Registration Act 2021."
+        },
+        {
+          "step_number": 2,
+          "action": "The ICA Registry of Births and Deaths automatically registers the death within seconds and generates the official Digital Death Certificate PDF.",
+          "responsible_party": "Immigration & Checkpoints Authority (ICA) / GovTech"
+        },
+        {
+          "step_number": 3,
+          "action": "An automated system SMS / email notification with the retrieval reference is dispatched to the informant's Singapore mobile number.",
+          "responsible_party": "My Legacy (LifeSG) Notification Engine"
+        },
+        {
+          "step_number": 4,
+          "action": "Informant logs into the My Legacy portal (mylegacy.life.gov.sg) using Singpass credentials.",
+          "responsible_party": "Informant / Next-of-Kin"
+        },
+        {
+          "step_number": 5,
+          "action": "Download and save the official Digital Death Certificate PDF (secured with government digital signature and QR verification code), and share with Solace Dignity Care.",
+          "responsible_party": "Informant / Solace Dignity Care",
+          "critical_warning": "The Digital Death Certificate must be downloaded and stored securely within 30 days of issuance."
+        }
+      ],
+      "documentation_required": [
+        {
+          "document_name": "Doctor's Electronic CCOD Submission",
+          "issued_by": "Ministry of Health (MOH) / Certifying Doctor",
+          "purpose": "Underlying clinical submission containing primary, antecedent, and contributory medical causes of death."
+        },
+        {
+          "document_name": "Informant Singpass Digital ID",
+          "issued_by": "GovTech Singapore",
+          "purpose": "Secure authentication to access the My Legacy portal."
+        },
+        {
+          "document_name": "Official Digital Death Certificate PDF",
+          "issued_by": "Registry of Births and Deaths / ICA",
+          "purpose": "Primary legal document replacing traditional physical paper death certificates for all legal, estate, and funeral purposes."
+        }
+      ],
+      "workflow_steps": [
+        {
+          "step": 1,
+          "phase": "Clinical CCOD Data Entry",
+          "description": "Doctor completes medical cause of death input on national portal, matching deceased's NRIC/FIN with ICA registry records.",
+          "next_dependency": "Automated ICA system validation."
+        },
+        {
+          "step": 2,
+          "phase": "Instantaneous Registry Ingestion",
+          "description": "ICA system automatically registers death, cancels identity card in national registry, and compiles official digital certificate.",
+          "next_dependency": "Dispatch of automated SMS to next-of-kin."
+        },
+        {
+          "step": 3,
+          "phase": "LifeSG / My Legacy SMS Notification",
+          "description": "Informant receives SMS alert with secure link to mylegacy.life.gov.sg.",
+          "next_dependency": "Singpass two-factor authentication login."
+        },
+        {
+          "step": 4,
+          "phase": "Singpass Authentication & PDF Download",
+          "description": "Family downloads the signed digital PDF certificate and forwards it to Solace Dignity Care via WhatsApp / email.",
+          "next_dependency": "Funeral director verification of QR code and watermark."
+        },
+        {
+          "step": 5,
+          "phase": "Permit Applications & Municipal Filings",
+          "description": "Solace Dignity Care uses the digital certificate to book Mandai Crematorium, obtain Town Council wake permits, and file NEA clearances.",
+          "next_dependency": "Execution of funeral services."
+        }
+      ],
+      "emergency_contacts": [
+        {
+          "agency": "ICA Registry of Births & Deaths Helpdesk",
+          "contact_number": "+65 6391 6100",
+          "operating_hours": "Mon - Fri 08:00 - 17:00, Sat 08:00 - 13:00"
+        },
+        {
+          "agency": "My Legacy LifeSG Technical Support",
+          "contact_number": "+65 6391 6100",
+          "operating_hours": "Mon - Fri 08:30 - 18:00"
+        },
+        {
+          "agency": "Solace Dignity Care Document Assistance Desk",
+          "contact_number": "+65 6555 1115",
+          "operating_hours": "24 Hours / 7 Days a week"
+        }
+      ],
+      "special_handling": {
+        "is_coroner_case": false,
+        "autopsy_possible": false,
+        "embalming_permitted": true,
+        "notes": "Physical paper death certificates are permanently obsolete in Singapore as of 29 May 2022. The PDF downloaded from My Legacy is the definitive legal original. Solace Dignity Care verifies all digital watermarks to ensure instant permit approvals."
+      }
+    },
+    {
+      "procedure_id": "PROC_IMMEDIATE_ACTIONS_0_4_HOURS",
+      "category": "Immediate Actions Post-Death",
+      "title": "Critical 0-4 Hour Emergency Protocol and First Responder Action Checklist",
+      "summary": "Time-critical decision matrix and chronological action plan covering the first 240 minutes following a bereavement in Singapore across all operational scenarios.",
+      "trigger_conditions": [
+        "Initial 0 to 4 hours following the passing of a family member anywhere in Singapore.",
+        "Family requires immediate, unambiguous guidance on legal compliance, preservation, religious rites, and logistical coordination."
+      ],
+      "immediate_actions": [
+        {
+          "step_number": 1,
+          "action": "Hour 0-1: Confirm cessation of life and do not move the body. Identify pathway: if hospital, alert ward nurse; if home natural, contact SDC 24/7 doctor dispatch (+65 6555 1115); if sudden/unnatural, dial SPF 999.",
+          "responsible_party": "Next-of-Kin / First Responder",
+          "critical_warning": "DO NOT attempt to wash, dress, or move the deceased before clinical death certification is completed."
+        },
+        {
+          "step_number": 2,
+          "action": "Hour 1-2: Locate essential physical identification documents: Deceased's Original NRIC/Passport, Informant's NRIC, medical memos, and any pre-planned funeral / ACP wishes.",
+          "responsible_party": "Next-of-Kin / Family"
+        },
+        {
+          "step_number": 3,
+          "action": "Hour 2-3: Facilitate CCOD submission by attending doctor/coroner, log into My Legacy with Singpass, and download the Digital Death Certificate.",
+          "responsible_party": "Doctor / Informant / Solace Dignity Care"
+        },
+        {
+          "step_number": 4,
+          "action": "Hour 3-4: Engage Solace Dignity Care (+65 6555 1115) to activate transportation crew, select wake venue (HDB Void Deck, Private Parlour, Landed Home, or Church/Temple Hall), and schedule embalming/casketing.",
+          "responsible_party": "Next-of-Kin / Solace Dignity Care"
+        },
+        {
+          "step_number": 5,
+          "action": "Hour 3-4: SDC funeral director files Town Council / Parlour permits, reserves Mandai Crematorium or cemetery slots, and coordinates wake tentage and utility hookups.",
+          "responsible_party": "Solace Dignity Care Funeral Director"
+        }
+      ],
+      "documentation_required": [
+        {
+          "document_name": "Deceased's Original NRIC / FIN / Passport",
+          "issued_by": "Immigration & Checkpoints Authority (ICA)",
+          "purpose": "Primary verification of decedent identity."
+        },
+        {
+          "document_name": "Informant's Original NRIC / FIN / Passport",
+          "issued_by": "Immigration & Checkpoints Authority (ICA)",
+          "purpose": "Verification of informant authority."
+        },
+        {
+          "document_name": "Digital Death Certificate",
+          "issued_by": "Registry of Births and Deaths / ICA (via My Legacy)",
+          "purpose": "Prerequisite for booking wake venues, crematorium/burial slots, and body transport."
+        },
+        {
+          "document_name": "Town Council / HDB Void Deck Permit Application",
+          "issued_by": "Relevant Municipal Town Council",
+          "purpose": "Authorizes holding a wake at an HDB void deck and enables temporary power/water tapping."
+        }
+      ],
+      "workflow_steps": [
+        {
+          "step": 1,
+          "phase": "0-60 Mins: Verification & Certification Activation",
+          "description": "Establish medical vs. police pathway; summon attending GP, hospice doctor, or SDC 24-hour house-call doctor.",
+          "next_dependency": "Doctor's arrival on site."
+        },
+        {
+          "step": 2,
+          "phase": "60-120 Mins: Medical Certification & Digital Ingestion",
+          "description": "Doctor completes examination and submits CCOD. Informant accesses My Legacy via Singpass and downloads Digital Death Certificate.",
+          "next_dependency": "Document transmission to funeral director."
+        },
+        {
+          "step": 3,
+          "phase": "120-180 Mins: Funeral Director Handover & Logistics Briefing",
+          "description": "Solace Dignity Care transfer team collects remains. Family meets funeral coordinator to finalize wake venue, religious rites, casket selection, and cortege timings.",
+          "next_dependency": "Permit bookings and embalming preparation."
+        },
+        {
+          "step": 4,
+          "phase": "180-240 Mins: Municipal Filings & Service Setup",
+          "description": "SDC secures Town Council void deck permits, books SP Services utility hookup, reserves Mandai Cremation slot, and erects wake enclosure.",
+          "next_dependency": "Commencement of wake."
+        }
+      ],
+      "emergency_contacts": [
+        {
+          "agency": "Solace Dignity Care 24/7 Rapid Emergency Response",
+          "contact_number": "+65 6555 1115",
+          "operating_hours": "24 Hours / 7 Days a week"
+        },
+        {
+          "agency": "Police Emergency (SPF)",
+          "contact_number": "999",
+          "operating_hours": "24 Hours / 7 Days a week"
+        },
+        {
+          "agency": "SCDF Emergency Ambulance",
+          "contact_number": "995",
+          "operating_hours": "24 Hours / 7 Days a week"
+        },
+        {
+          "agency": "NEA Mandai Crematorium Booking Office",
+          "contact_number": "+65 6554 5655",
+          "operating_hours": "Daily 08:30 - 17:30"
+        }
+      ],
+      "special_handling": {
+        "is_coroner_case": false,
+        "autopsy_possible": false,
+        "embalming_permitted": true,
+        "notes": "Decisions made in the first 4 hours determine overall wake timing and logistics. Private parlour rooms (e.g. Sin Ming, Mount Vernon, Woodland Memorial) have strict booking cutoffs; SDC immediately locks in venue reservations upon activation."
+      }
+    },
+    {
+      "procedure_id": "PROC_DEATH_OVERSEAS",
+      "category": "Overseas Death",
+      "title": "Singapore Citizen / PR Death Abroad and Cross-Border Air Repatriation to SG",
+      "summary": "Statutory and consular protocol for managing the death of a Singapore Citizen or Permanent Resident overseas, foreign death certification, NEA Port Health import permitting, and air repatriation to Singapore.",
+      "trigger_conditions": [
+        "Singapore Citizen (SC) or Permanent Resident (PR) passes away outside Singapore (e.g., Malaysia, Indonesia, Thailand, China, Australia, UK, USA, Europe).",
+        "Family desires to repatriate the physical body or cremated ashes back to Singapore for wake, funeral, or local niche placement."
+      ],
+      "immediate_actions": [
+        {
+          "step_number": 1,
+          "action": "Contact the nearest Singapore Overseas Mission (Embassy, High Commission, or Consulate-General) or MFA Consular 24-hour Duty Office in Singapore (+65 6379 8800 / +65 6379 8855).",
+          "responsible_party": "Next-of-Kin / Ministry of Foreign Affairs (MFA)",
+          "critical_warning": "MFA provides consular assistance, facilitates communications, and advises on local procedures, but statutory foreign funeral costs must be covered by travel insurance or the family."
+        },
+        {
+          "step_number": 2,
+          "action": "Register the death with the local civil authorities in the foreign country and obtain the official foreign Death Certificate (with certified English translation and apostille / embassy legalization).",
+          "responsible_party": "Next-of-Kin / Local Foreign Funeral Provider / MFA"
+        },
+        {
+          "step_number": 3,
+          "action": "Appoint an international funeral director in the foreign jurisdiction to perform IATA-standard embalming, secure a hermetically soldered zinc-lined casket, and obtain local export clearances.",
+          "responsible_party": "Foreign Funeral Director / SDC Global Partner Network"
+        },
+        {
+          "step_number": 4,
+          "action": "Contact Solace Dignity Care (+65 6555 1115) to apply for the NEA Coffin Import Permit / Port Health Clearance and coordinate air cargo retrieval at Singapore Changi Airport (Changi Airfreight Centre).",
+          "responsible_party": "Solace Dignity Care / NEA Port Health"
+        },
+        {
+          "step_number": 5,
+          "action": "SDC receives the casketed remains at Changi Airfreight Centre (CAC), completes ICA border clearance, and conveys the deceased to the Singapore funeral wake venue.",
+          "responsible_party": "Solace Dignity Care Logistics Team"
+        }
+      ],
+      "documentation_required": [
+        {
+          "document_name": "Official Foreign Death Certificate (with Certified English Translation)",
+          "issued_by": "Foreign Civil Registry / Municipal Health Department",
+          "purpose": "Primary proof of passing in the foreign jurisdiction."
+        },
+        {
+          "document_name": "Certificate of Embalming (International)",
+          "issued_by": "Licensed Foreign Embalmer / Mortuary Facility",
+          "purpose": "Mandatory for airline cargo carriage under IATA Human Remains (HUM) rules."
+        },
+        {
+          "document_name": "Coffin Sealing & Hermetic Zinc Soldering Certificate",
+          "issued_by": "Foreign Funeral Director / Port Health Authority",
+          "purpose": "Verifies airtight sealing of zinc inner liner."
+        },
+        {
+          "document_name": "Foreign Government Export / Transit Permit",
+          "issued_by": "Foreign Ministry of Health / Police / Customs",
+          "purpose": "Permits export of human remains out of the host country."
+        },
+        {
+          "document_name": "NEA Coffin Import Permit / Port Health Clearance",
+          "issued_by": "National Environment Agency (NEA) Singapore - Port Health",
+          "purpose": "Mandatory statutory permit allowing entry of human remains into Singapore territory."
+        },
+        {
+          "document_name": "Air Waybill (AWB)",
+          "issued_by": "Commercial Airline Cargo Operator (IATA HUM)",
+          "purpose": "Freight documentation for air transport."
+        },
+        {
+          "document_name": "Deceased's Original Singapore NRIC / Passport",
+          "issued_by": "Immigration & Checkpoints Authority (ICA)",
+          "purpose": "Identity verification and post-arrival death reporting on My Legacy portal."
+        }
+      ],
+      "workflow_steps": [
+        {
+          "step": 1,
+          "phase": "Overseas Consular & Civil Registration",
+          "description": "Family notifies Singapore Embassy/MFA and foreign police/hospital. Foreign death certificate and medical memos obtained.",
+          "next_dependency": "Appointment of licensed foreign embalmer."
+        },
+        {
+          "step": 2,
+          "phase": "Embalming, Sealing & Foreign Clearance",
+          "description": "Remains are embalmed, sealed in zinc liner, inspected by foreign health authority, and issued export permit.",
+          "next_dependency": "Air cargo flight booking."
+        },
+        {
+          "step": 3,
+          "phase": "Singapore NEA Port Health Import Permitting",
+          "description": "Solace Dignity Care submits overseas documents to NEA Port Health to obtain the official Coffin Import Permit.",
+          "next_dependency": "Flight departure and arrival at Changi Airport."
+        },
+        {
+          "step": 4,
+          "phase": "Changi Airfreight Centre Clearance & Conveyance",
+          "description": "SDC airside logistics team clears customs, receives casket at cargo terminal, and transports deceased to Singapore funeral parlour or home wake.",
+          "next_dependency": "Reporting death to ICA Registry on My Legacy."
+        },
+        {
+          "step": 5,
+          "phase": "Post-Arrival ICA Death Registration",
+          "description": "Informant reports overseas death online via My Legacy portal with foreign death certificate to update Singapore national records.",
+          "next_dependency": "Estate administration and funeral rites."
+        }
+      ],
+      "emergency_contacts": [
+        {
+          "agency": "Ministry of Foreign Affairs (MFA) Consular 24/7 Duty Office",
+          "contact_number": "+65 6379 8800",
+          "operating_hours": "24 Hours / 7 Days a week"
+        },
+        {
+          "agency": "MFA Consular Secondary Emergency Line",
+          "contact_number": "+65 6379 8855",
+          "operating_hours": "24 Hours / 7 Days a week"
+        },
+        {
+          "agency": "Solace Dignity Care Global Repatriation Desk",
+          "contact_number": "+65 6555 1115",
+          "operating_hours": "24 Hours / 7 Days a week"
+        },
+        {
+          "agency": "NEA Port Health Office (Changi Airfreight Centre)",
+          "contact_number": "+65 6542 5555",
+          "operating_hours": "24 Hours / 7 Days a week"
+        }
+      ],
+      "special_handling": {
+        "is_coroner_case": false,
+        "autopsy_possible": false,
+        "embalming_permitted": true,
+        "notes": "An NEA Coffin Import Permit is mandatory for physical remains. If death was caused by an infectious disease (e.g. Cholera, Plague, Ebola), strict quarantine protocols apply. Cremated ashes do not require an NEA import permit but require foreign cremation certificate and air waybill."
+      }
+    },
+    {
+      "procedure_id": "PROC_FOREIGNER_DEATH_SG",
+      "category": "Foreigner Death in SG",
+      "title": "Death of a Foreign National in Singapore and Consular Clearance Protocol",
+      "summary": "Legal and diplomatic procedure for foreign tourists, expatriates, work pass holders, and diplomats who pass away in Singapore, covering embassy notification, police clearance, and local disposition vs. outbound repatriation.",
+      "trigger_conditions": [
+        "A foreign citizen (tourist, Employment Pass, S-Pass, Work Permit, student pass, dependent pass, or diplomat) passes away within Singapore territory.",
+        "Next-of-kin resides overseas or locally and needs to determine whether to cremate/bury locally in Singapore or repatriate the body back to the home country."
+      ],
+      "immediate_actions": [
+        {
+          "step_number": 1,
+          "action": "Attending doctor or State Coroner certifies death and submits CCOD, generating a Singapore Digital Death Certificate referenced to the deceased's foreign passport and FIN number.",
+          "responsible_party": "Certifying Doctor / State Coroner / ICA"
+        },
+        {
+          "step_number": 2,
+          "action": "Notify the deceased's home country Embassy / High Commission / Consulate-General in Singapore immediately.",
+          "responsible_party": "Next-of-Kin / Employer / Solace Dignity Care",
+          "critical_warning": "Foreign embassies require formal consular registration before issuing mortuary clearance or Letters of No Objection."
+        },
+        {
+          "step_number": 3,
+          "action": "Family or overseas legal representative appoints Solace Dignity Care (+65 6555 1115) through a notarized Letter of Authorization / Power of Attorney.",
+          "responsible_party": "Next-of-Kin / Solace Dignity Care"
+        },
+        {
+          "step_number": 4,
+          "action": "Determine pathway: If local cremation/burial is chosen, procure Embassy Letter of No Objection (NOC) and NEA Cremation Permit; if outbound repatriation is chosen, activate SDC international repatriation team.",
+          "responsible_party": "Next-of-Kin / Foreign Embassy / Solace Dignity Care"
+        },
+        {
+          "step_number": 5,
+          "action": "If deceased was an employment/work pass holder, notify the Ministry of Manpower (MOM) and respective insurance providers to process statutory workmen compensation / repatriation insurance claims.",
+          "responsible_party": "Employer / Solace Dignity Care"
+        }
+      ],
+      "documentation_required": [
+        {
+          "document_name": "Deceased's Original Foreign Passport",
+          "issued_by": "Home Country Government / Embassy",
+          "purpose": "Primary identity verification and consular cancellation."
+        },
+        {
+          "document_name": "Singapore Digital Death Certificate",
+          "issued_by": "Registry of Births and Deaths / ICA",
+          "purpose": "Official Singapore death record required for consular clearances and NEA permits."
+        },
+        {
+          "document_name": "Embassy Letter of No Objection (NOC) / Consular Mortuary Permit",
+          "issued_by": "Respective Foreign Embassy / High Commission in Singapore",
+          "purpose": "Diplomatic consent authorizing local burial/cremation or international repatriation."
+        },
+        {
+          "document_name": "Next-of-Kin Power of Attorney / Authorization Letter",
+          "issued_by": "Overseas Next-of-Kin (Notarized / Consular Endorsed)",
+          "purpose": "Authorizes Solace Dignity Care to act as legal proxy for body release and disposition."
+        },
+        {
+          "document_name": "Ministry of Manpower (MOM) Work Pass Cancellation Slip",
+          "issued_by": "Ministry of Manpower (MOM)",
+          "purpose": "Statutory labor cancellation for deceased foreign workers/professionals."
+        }
+      ],
+      "workflow_steps": [
+        {
+          "step": 1,
+          "phase": "Death Certification & Foreign Record Tagging",
+          "description": "Doctor or Coroner issues digital certificate with foreign passport number. Body moved to hospital, HSA, or SDC holding facility.",
+          "next_dependency": "Consular notification and family appointment."
+        },
+        {
+          "step": 2,
+          "phase": "Diplomatic Mission Filing",
+          "description": "SDC submits death certificate and passport to the foreign embassy to secure consular clearance and Letter of No Objection.",
+          "next_dependency": "Family decision on local vs. outbound disposition."
+        },
+        {
+          "step": 3,
+          "phase": "Option A: Local Cremation & Ash Repatriation",
+          "description": "SDC arranges local service and cremation at Mandai Crematorium, places ashes in sealed urn, and coordinates international hand-carry or courier.",
+          "next_dependency": "Ash export clearance."
+        },
+        {
+          "step": 4,
+          "phase": "Option B: Full Body International Repatriation",
+          "description": "SDC performs arterial embalming, seals body in zinc-lined casket, obtains NEA export permit, and secures IATA HUM cargo flight booking.",
+          "next_dependency": "Flight handover at Changi Cargo."
+        }
+      ],
+      "emergency_contacts": [
+        {
+          "agency": "Solace Dignity Care Diplomatic & Foreign Citizen Division",
+          "contact_number": "+65 6555 1115",
+          "operating_hours": "24 Hours / 7 Days a week"
+        },
+        {
+          "agency": "Ministry of Foreign Affairs Singapore (Protocol Directorate)",
+          "contact_number": "+65 6379 8000",
+          "operating_hours": "Mon - Fri 08:30 - 17:30"
+        },
+        {
+          "agency": "Ministry of Manpower (MOM) Emergency Contact",
+          "contact_number": "+65 6438 5122",
+          "operating_hours": "Mon - Fri 08:30 - 17:30"
+        }
+      ],
+      "special_handling": {
+        "is_coroner_case": false,
+        "autopsy_possible": false,
+        "embalming_permitted": true,
+        "notes": "If family cannot travel to Singapore, SDC acts as full legal proxy under a notarized power of attorney, handling hospital/HSA body claim, consular interviews, Mandai cremation, and insured ash repatriation back to the home country."
+      }
+    },
+    {
+      "procedure_id": "PROC_REPATRIATION_OUTBOUND",
+      "category": "Repatriation",
+      "title": "Outbound International Body Repatriation from Singapore Protocol",
+      "summary": "End-to-end technical, regulatory, and aviation protocol for preparing, embalming, sealing, and air-freighting human remains from Singapore to any international destination worldwide.",
+      "trigger_conditions": [
+        "Family, estate, or home government of a deceased person in Singapore requests outbound repatriation of physical remains to their country of origin for final rites and burial."
+      ],
+      "immediate_actions": [
+        {
+          "step_number": 1,
+          "action": "Obtain official Singapore Digital Death Certificate and State Coroner / Police clearance (if case was coronial).",
+          "responsible_party": "Solace Dignity Care / Next-of-Kin"
+        },
+        {
+          "step_number": 2,
+          "action": "Perform advanced arterial embalming and restorative cosmetology in a licensed care facility by an internationally certified embalmer.",
+          "responsible_party": "Solace Dignity Care Certified Embalming Staff",
+          "critical_warning": "Embalming is legally mandatory for international commercial air transport under IATA cargo regulations."
+        },
+        {
+          "step_number": 3,
+          "action": "Encase the remains in an airtight, hermetically soldered zinc inner liner, place into an approved solid timber export casket, and fit with an outer protective wooden crate/canvas.",
+          "responsible_party": "Solace Dignity Care Technical Crew"
+        },
+        {
+          "step_number": 4,
+          "action": "Coordinate with destination country's Embassy / Consular Officer and NEA Port Health for physical casket inspection and consular wax sealing (if required by destination country).",
+          "responsible_party": "Foreign Embassy / NEA Port Health / Solace Dignity Care"
+        },
+        {
+          "step_number": 5,
+          "action": "Apply for and secure the NEA Coffin Export Permit and Port Health Clearance Certificate.",
+          "responsible_party": "Solace Dignity Care / NEA Port Health"
+        },
+        {
+          "step_number": 6,
+          "action": "Book IATA HUM (Human Remains) air cargo space with commercial airline, clear cargo security at Changi Airfreight Centre, and dispatch flight airway bill to overseas receiving funeral director.",
+          "responsible_party": "Solace Dignity Care Air Cargo Logistics Division"
+        }
+      ],
+      "documentation_required": [
+        {
+          "document_name": "Singapore Digital Death Certificate",
+          "issued_by": "Registry of Births and Deaths / ICA",
+          "purpose": "Primary proof of death for export clearance."
+        },
+        {
+          "document_name": "Certificate of Embalming",
+          "issued_by": "Solace Dignity Care / Licensed Embalmer",
+          "purpose": "Affidavit confirming full arterial preservation and non-infectious condition."
+        },
+        {
+          "document_name": "Coffin Sealing & Hermetic Soldering Certificate",
+          "issued_by": "Solace Dignity Care / Licensed Mortician",
+          "purpose": "Certifies airtight zinc lining soldered in accordance with IATA and Port Health standards."
+        },
+        {
+          "document_name": "NEA Coffin Export Permit",
+          "issued_by": "National Environment Agency (NEA) - Port Health",
+          "purpose": "Statutory export authorization under the Environmental Public Health Act."
+        },
+        {
+          "document_name": "Consular Mortuary Certificate / Embassy Seal Certificate",
+          "issued_by": "Destination Country Embassy / High Commission",
+          "purpose": "Consular entry visa for human remains entering destination sovereign airspace."
+        },
+        {
+          "document_name": "Destination Country Import & Landing Permit",
+          "issued_by": "Destination Health / Customs Authority",
+          "purpose": "Authorizes receiving funeral home to claim remains at destination airport."
+        },
+        {
+          "document_name": "Air Waybill (AWB - IATA HUM)",
+          "issued_by": "Airline Cargo Operator (e.g., Singapore Airlines Cargo, Emirates SkyCargo, Cathay Cargo)",
+          "purpose": "Official international air freight manifest."
+        }
+      ],
+      "workflow_steps": [
+        {
+          "step": 1,
+          "phase": "Legal Clearances & Consular Filing",
+          "description": "SDC compiles death certificates, passport documents, and consular application forms for the destination embassy.",
+          "next_dependency": "Consular approval and embalming authorization."
+        },
+        {
+          "step": 2,
+          "phase": "Arterial Embalming & Aesthetic Preservation",
+          "description": "Certified embalmers perform complete arterial chemical preservation and restorative care.",
+          "next_dependency": "Zinc casket hermetic soldering."
+        },
+        {
+          "step": 3,
+          "phase": "Hermetic Zinc Sealing & Casket Crating",
+          "description": "Remains placed in zinc liner, soldered airtight, inspected with leak-detection protocols, and secured in outer shipping case.",
+          "next_dependency": "Consular / Port Health visual sealing inspection."
+        },
+        {
+          "step": 4,
+          "phase": "NEA Export Permit & Flight Booking",
+          "description": "NEA Port Health issues export clearance. SDC books direct flight routing with temperature-controlled cargo hold.",
+          "next_dependency": "Changi Airfreight Centre customs delivery."
+        },
+        {
+          "step": 5,
+          "phase": "Changi Airport Cargo Handover & Flight Departure",
+          "description": "SDC delivers casketed crate to SATS/dnata cargo terminal 4-6 hours before flight departure, completes security X-ray, and monitors tarmac loading.",
+          "next_dependency": "Confirmation of wheels-up and arrival handover to overseas receiving director."
+        }
+      ],
+      "emergency_contacts": [
+        {
+          "agency": "Solace Dignity Care Global Repatriation Command Center",
+          "contact_number": "+65 6555 1115",
+          "operating_hours": "24 Hours / 7 Days a week"
+        },
+        {
+          "agency": "NEA Port Health (Export Permitting Office)",
+          "contact_number": "+65 6542 5555",
+          "operating_hours": "24 Hours / 7 Days a week"
+        },
+        {
+          "agency": "SATS Cargo Special Cargo (HUM) Desk",
+          "contact_number": "+65 6541 3888",
+          "operating_hours": "24 Hours / 7 Days a week"
+        },
+        {
+          "agency": "dnata Cargo Singapore Special Handling Desk",
+          "contact_number": "+65 6511 0110",
+          "operating_hours": "24 Hours / 7 Days a week"
+        }
+      ],
+      "special_handling": {
+        "is_coroner_case": false,
+        "autopsy_possible": false,
+        "embalming_permitted": true,
+        "notes": "Solace Dignity Care maintains a 100% compliance record with IATA Human Remains (HUM) protocols and specific destination requirements (e.g. zinc solder witness ceremonies for Philippines, India, China, UK, and Australia)."
+      }
+    },
+    {
+      "procedure_id": "PROC_EMBASSY_INVOLVEMENT",
+      "category": "Embassy Involvement",
+      "title": "Diplomatic Mission, Consular Seal, and Mortuary Clearance Protocol",
+      "summary": "Diplomatic engagement and consular assistance guidelines for authenticating identity, obtaining consular seals, issuing mortuary passports, and coordinating cross-border funeral logistics with foreign embassies and high commissions in Singapore.",
+      "trigger_conditions": [
+        "Deceased is a foreign national who passed away in Singapore, or remains/ashes are being transported across international borders requiring diplomatic validation.",
+        "Destination country mandates an official Consular Mortuary Seal, Consular Officer presence during casket sealing, or a formal Consular Mortuary Certificate."
+      ],
+      "immediate_actions": [
+        {
+          "step_number": 1,
+          "action": "Establish direct contact with the Consular Section of the relevant Foreign Embassy / High Commission in Singapore.",
+          "responsible_party": "Solace Dignity Care Consular Liaison / Next-of-Kin"
+        },
+        {
+          "step_number": 2,
+          "action": "Submit complete consular documentation package: Singapore Digital Death Certificate, Embalming Certificate, Sealing Affidavit, Deceased's Original Passport, and Consular Application forms.",
+          "responsible_party": "Solace Dignity Care / Next-of-Kin",
+          "critical_warning": "Incomplete documentation or lack of certified English translation will result in immediate consular processing delays."
+        },
+        {
+          "step_number": 3,
+          "action": "Schedule the physical Consular Sealing Inspection at Solace Dignity Care's care facility, where the Consular Officer verifies identity, inspects the zinc solder, and applies the official diplomatic wax seal and consular ribbon.",
+          "responsible_party": "Foreign Consular Officer / SDC Licensed Embalmer"
+        },
+        {
+          "step_number": 4,
+          "action": "Consular Section cancels the deceased's foreign passport, affixes official consular stamps, and issues the Consular Mortuary Certificate / Mortuary Passport / Letter of No Objection.",
+          "responsible_party": "Foreign Embassy / High Commission"
+        },
+        {
+          "step_number": 5,
+          "action": "Affix all original consular documents to the exterior shipping crate in an airtight document pouch for customs clearance at destination port of entry.",
+          "responsible_party": "Solace Dignity Care Logistics Team",
+          "critical_warning": "Tampering with, breaking, or removing diplomatic seals during transit voids import authorization and results in quarantine confiscation at destination."
+        }
+      ],
+      "documentation_required": [
+        {
+          "document_name": "Original Passport of Deceased",
+          "issued_by": "Foreign Ministry of Foreign Affairs / Embassy",
+          "purpose": "Consular identity verification, physical perforation, and official cancellation."
+        },
+        {
+          "document_name": "Certified True Copy of Singapore Digital Death Certificate",
+          "issued_by": "Registry of Births and Deaths / ICA (Apostilled by Singapore Academy of Law if required)",
+          "purpose": "Diplomatic validation of official Singapore death record."
+        },
+        {
+          "document_name": "Embalmer's Declaration & Sanitary Affidavit",
+          "issued_by": "Solace Dignity Care / Licensed Embalmer",
+          "purpose": "Affirms arterial preservation and certifies freedom from infectious disease."
+        },
+        {
+          "document_name": "Zinc Coffin Hermetic Soldering Affidavit",
+          "issued_by": "Solace Dignity Care Technical Division",
+          "purpose": "Technical certification of airtight zinc encapsulation."
+        },
+        {
+          "document_name": "Consular Mortuary Certificate / Mortuary Passport",
+          "issued_by": "Respective Foreign Embassy / High Commission in Singapore",
+          "purpose": "Sovereign diplomatic clearance authorizing transit and importation into destination country."
+        },
+        {
+          "document_name": "Next-of-Kin Passport & Proof of Kinship",
+          "issued_by": "Civil Registry Authorities of Home Country",
+          "purpose": "Verifies family consent and legal authorization."
+        }
+      ],
+      "workflow_steps": [
+        {
+          "step": 1,
+          "phase": "Consular Dossier Preparation",
+          "description": "SDC compiles all legal and medical documents, procures apostilles from Singapore Academy of Law (SAL) where required, and schedules consular appointment.",
+          "next_dependency": "Consular interview and fee payment."
+        },
+        {
+          "step": 2,
+          "phase": "Consular Physical Sealing Ceremony",
+          "description": "Consular officer attends SDC care suite, inspects decedent and zinc solder, closes outer wooden lid, and presses diplomatic wax seal across ribbon bands.",
+          "next_dependency": "Issuance of diplomatic mortuary certificate."
+        },
+        {
+          "step": 3,
+          "phase": "Passport Cancellation & Clearance Issuance",
+          "description": "Embassy cancels deceased's passport, issues Mortuary Passport and NOC, and returns finalized dossier to SDC.",
+          "next_dependency": "NEA Port Health export filing."
+        },
+        {
+          "step": 4,
+          "phase": "Air Cargo Freight Handover",
+          "description": "Sealed casket and diplomatic dossier transferred to Changi Airfreight Centre under secure diplomatic chain of custody.",
+          "next_dependency": "Final customs clearance at destination airport."
+        }
+      ],
+      "emergency_contacts": [
+        {
+          "agency": "Solace Dignity Care Consular Affairs Liaison",
+          "contact_number": "+65 6555 1115",
+          "operating_hours": "24 Hours / 7 Days a week"
+        },
+        {
+          "agency": "Embassy of the Philippines (Consular Section - Singapore)",
+          "contact_number": "+65 6737 3977",
+          "operating_hours": "Emergency Hotline: +65 9059 8382 (24 Hours)"
+        },
+        {
+          "agency": "High Commission of India (Consular Wing - Singapore)",
+          "contact_number": "+65 6737 6777",
+          "operating_hours": "Emergency Hotline: +65 9739 1034 (24 Hours)"
+        },
+        {
+          "agency": "Embassy of the People's Republic of China in Singapore",
+          "contact_number": "+65 6471 2117",
+          "operating_hours": "Consular Protection: +65 9297 1517 (24 Hours)"
+        },
+        {
+          "agency": "Embassy of the Republic of Indonesia (KBRI Singapura)",
+          "contact_number": "+65 6737 7422",
+          "operating_hours": "Consular Protection: +65 9295 3964 (24 Hours)"
+        },
+        {
+          "agency": "High Commission of Malaysia in Singapore",
+          "contact_number": "+65 6235 0111",
+          "operating_hours": "Emergency Duty Officer: +65 9818 0145 (24 Hours)"
+        },
+        {
+          "agency": "British High Commission Singapore (Consular Section)",
+          "contact_number": "+65 6424 4200",
+          "operating_hours": "24 Hours / 7 Days a week"
+        },
+        {
+          "agency": "US Embassy Singapore (American Citizen Services)",
+          "contact_number": "+65 6476 9100",
+          "operating_hours": "Emergency After-Hours: +65 6476 9100 (24 Hours)"
+        }
+      ],
+      "special_handling": {
+        "is_coroner_case": false,
+        "autopsy_possible": false,
+        "embalming_permitted": true,
+        "notes": "Diplomatic requirements differ strictly by sovereign nation. SDC consular specialists maintain direct protocol relationships with all major embassies in Singapore, ensuring prompt document clearances without flight delays."
+      }
+    }
+  ]
+}

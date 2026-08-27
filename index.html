@@ -1,0 +1,2515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Project CP-004: Solace Dignity Care Portal</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="style.css?v=96">
+
+  <!-- PDF Generation Libraries (html2canvas, jsPDF, html2pdf.js)
+       `defer` matters more than it looks: these are only needed when a family
+       exports a quotation, but without it the browser blocks the entire page
+       on three round trips to Cloudflare before painting anything. On a phone
+       with weak or no internet that meant a blank screen for as long as the
+       requests took to time out, even though the app itself is served from
+       the laptop on the local network. -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bgPure: '#FFFDFB',
+            fillColor: '#F6EEE9',
+            primary: '#9C5A42',
+            primaryHover: '#834A36',
+            secondary: '#BF8069',
+            highlight: '#DCBFAE',
+            textDark: '#2A211C',
+            textMuted: '#7B6A61',
+            borderLight: '#EBE1DA',
+            successColor: '#6E8F79',
+            night: '#181310',
+            nightPanel: '#221A16',
+            nightCard: '#2A1F1A',
+            nightLine: '#3D2E26',
+            copper: '#BF7A54',
+            copperSoft: '#DDAE8F',
+            cream: '#F2E9E3',
+            creamMuted: '#AD9C91',
+            ember: '#B85340',
+            brass: '#B58A4E',
+            sage: '#8FAE99',
+            sageSoft: '#B6CBBC',
+            sageTint: '#EDF2EE',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-sans bg-[#FAF5F2] text-textDark antialiased">
+
+  <!-- Desktop Presentation Frame -->
+  <div class="device-container">
+    <div class="device-island"></div>
+
+    <!-- Screen View -->
+    <div class="device-screen flex flex-col justify-between">
+
+      <!-- Top Status Bar Simulation -->
+      <div class="status-bar">
+        <span id="device-clock" class="font-sans font-semibold">09:41</span>
+        <div class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <path d="M2 22h20V2z" />
+          </svg>
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <path d="M12 21l-12-18h24z" />
+          </svg>
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <path d="M17 5H3a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zM21 9h2v6h-2V9z" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- App Notification Banner -->
+      <div id="sim-notification"
+        class="absolute top-12 left-4 right-4 bg-textDark/95 text-white p-4 rounded-xl flex gap-3 items-center shadow-xl z-[1000] opacity-0 pointer-events-none transition-all duration-500 transform -translate-y-4">
+        <div class="bg-primary w-9 h-9 rounded-full flex items-center justify-center text-white flex-shrink-0">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h-2v-2h4v8zm0-10h-2V5h2v2z" />
+          </svg>
+        </div>
+        <div class="flex-1">
+          <div class="text-xs font-semibold text-highlight" data-i18n="misc_director_notified">Director Notified</div>
+          <div id="sim-notification-text" class="text-xs leading-normal">On-call director Marcus Chen is responding to
+            your arrangement.</div>
+        </div>
+      </div>
+
+      <!-- Unified Header (visible on screens 2, 3, 4, 5)
+           Laid out like the head of a memorial card: the house name in serif,
+           a hairline rule beneath it, and everything operational reduced to
+           quiet letterspaced small caps. The quote reference used to be the
+           loudest thing on the screen, which is the wrong priority for a
+           family who has just lost someone. -->
+      <header id="app-header"
+        class="app-header-plate hidden px-5 pt-3 pb-2.5 border-b border-borderLight flex items-center justify-between gap-3 z-40">
+        <div class="flex items-center gap-3 min-w-0">
+          <div class="relative w-10 h-10 shrink-0">
+            <div
+              class="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center ring-1 ring-highlight/50">
+              <img src="assets/logo.png" alt="Solace Dignity Care Logo" class="w-full h-full object-cover">
+            </div>
+            <div id="header-status-dot"
+              class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-successColor border-2 border-bgPure rounded-full status-dot-active">
+            </div>
+          </div>
+          <div class="min-w-0">
+            <h1 class="header-house-name font-serif font-bold text-[15px] leading-none text-textDark whitespace-nowrap" data-i18n="house_name">
+              Solace Dignity Care
+            </h1>
+            <p class="header-eyebrow mt-1 whitespace-nowrap" data-i18n="header_tagline">
+              Here with you, at any hour
+            </p>
+          </div>
+        </div>
+        <div class="flex items-center gap-2.5 shrink-0">
+          <div class="flex flex-col items-end gap-0.5">
+            <span id="ai-mode-badge" title="Checking AI status..." class="header-eyebrow cursor-default select-none">
+              AI &middot;&middot;&middot;
+            </span>
+            <span id="header-quote-badge" class="header-quote-ref">
+              QT-2026-9812A
+            </span>
+          </div>
+        </div>
+      </header>
+
+
+      <!-- Screens Viewport Wrapper -->
+      <main class="flex-1 relative overflow-hidden bg-bgPure">
+
+        <!-- ========================================== -->
+        <!-- SCREEN 1: ACCOUNTS & WELCOME GATEWAY       -->
+        <!-- ========================================== -->
+        <section id="screen-1" class="app-screen px-4 sm:px-6 py-3 sm:py-5 flex flex-col overflow-y-auto">
+
+          <!-- Top Language Switcher Bar on Front Page / Auth -->
+          <div class="flex justify-end w-full max-w-sm mx-auto mb-2 pt-1">
+            <div class="lang-selector-group" role="group" data-i18n-aria="s1_aria_select_language" aria-label="Select Language">
+              <button type="button" class="lang-pill-btn active" data-lang="en">EN</button>
+              <button type="button" class="lang-pill-btn" data-lang="zh">中文</button>
+              <button type="button" class="lang-pill-btn" data-lang="ms">BM</button>
+              <button type="button" class="lang-pill-btn" data-lang="ta">தமிழ்</button>
+            </div>
+          </div>
+
+          <!-- 1A: LOGIN VIEW (DEFAULT) -->
+          <div id="auth-view-login" class="auth-view flex-1 flex flex-col justify-between min-h-full w-full max-w-sm mx-auto">
+            <div class="flex-1 flex flex-col justify-center py-1 sm:py-2 min-h-fit">
+              <!-- Hero Section -->
+              <div class="text-center">
+                <div class="hero-mark-halo mx-auto mb-2.5 sm:mb-3.5 flex items-center justify-center">
+                  <img src="assets/logo.png" alt="Solace Dignity Care Logo" class="w-[112px] h-[112px] sm:w-[136px] sm:h-[136px] object-contain drop-shadow-sm">
+                </div>
+
+                <div class="space-y-1 sm:space-y-1.5">
+                  <div class="hero-rule mx-auto"></div>
+                  <p class="hero-eyebrow" data-i18n="hero_eyebrow">Solace Dignity Care &middot; Singapore</p>
+                  <h2 class="font-serif font-bold text-[22px] sm:text-[26px] leading-[1.2] tracking-tight text-textDark max-w-[19rem] mx-auto" data-i18n="welcome_back">
+                    Welcome back.
+                  </h2>
+                  <p class="font-sans text-[13px] sm:text-[14px] text-textMuted leading-relaxed max-w-[17rem] mx-auto" data-i18n="signin_subtitle">
+                    Sign in to continue your arrangement.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Login Form Fields -->
+              <div class="mt-3.5 sm:mt-5 space-y-2.5 sm:space-y-3.5 w-full">
+                <!-- General Error Line -->
+                <div id="login-general-error" role="alert" class="hidden p-2.5 sm:p-3 rounded-xl bg-fillColor border border-primary/25 text-primary text-[13px] leading-snug font-sans"></div>
+
+                <div>
+                  <label for="login-username-input" class="block text-[10.5px] sm:text-[11px] font-semibold uppercase tracking-[0.08em] text-textMuted mb-1" data-i18n="username_label">
+                    Username, Email, or Phone
+                  </label>
+                  <input type="text" id="login-username-input" autocomplete="username email tel" autocapitalize="none" spellcheck="false"
+                    class="w-full h-11 sm:h-12 px-3.5 sm:px-4 rounded-xl border border-highlight bg-bgPure font-sans text-[14.5px] sm:text-[15px] text-textDark outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all placeholder:text-textMuted/60"
+                    placeholder="e.g. kelvin.tan or kelvin@example.sg" data-i18n-placeholder="username_placeholder" aria-describedby="login-username-error">
+                  <span id="login-username-error" role="alert" class="hidden block text-[11.5px] text-primary mt-1 font-sans"></span>
+                </div>
+
+                <div>
+                  <label for="login-password-input" class="block text-[10.5px] sm:text-[11px] font-semibold uppercase tracking-[0.08em] text-textMuted mb-1" data-i18n="password_label">
+                    Password
+                  </label>
+                  <div class="relative">
+                    <input type="password" id="login-password-input" autocomplete="current-password"
+                      class="w-full h-11 sm:h-12 pl-3.5 sm:pl-4 pr-11 sm:pr-12 rounded-xl border border-highlight bg-bgPure font-sans text-[14.5px] sm:text-[15px] text-textDark outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all placeholder:text-textMuted/60"
+                      placeholder="Enter your password" data-i18n-placeholder="password_placeholder" aria-describedby="login-password-error">
+                    <button type="button" id="btn-toggle-login-password" data-i18n-aria="s1_aria_show_password" aria-label="Show password"
+                      class="absolute right-0 top-0 w-11 sm:w-12 h-11 sm:h-12 flex items-center justify-center text-textMuted hover:text-textDark transition-colors cursor-pointer outline-none">
+                      <svg class="w-4 h-4 sm:w-5 sm:h-5 fill-none stroke-current stroke-2 eye-icon-show" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                      </svg>
+                      <svg class="w-4 h-4 sm:w-5 sm:h-5 fill-none stroke-current stroke-2 eye-icon-hide hidden" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l18 18" />
+                      </svg>
+                    </button>
+                  </div>
+                  <span id="login-password-error" role="alert" class="hidden block text-[11.5px] text-primary mt-1 font-sans"></span>
+                </div>
+
+                <button type="button" id="btn-submit-login"
+                  class="w-full min-h-[44px] sm:min-h-[48px] py-2.5 sm:py-3 px-4 bg-primary hover:bg-primaryHover text-white font-serif font-semibold text-[clamp(13px,3.6vw,15px)] leading-snug rounded-xl transition-all shadow-md shadow-primary/15 flex items-center justify-center gap-2 text-center cursor-pointer">
+                  <span class="btn-text" data-i18n="signin_btn">Sign in</span>
+                  <svg class="w-4 h-4 fill-current flex-shrink-0 btn-arrow" viewBox="0 0 24 24">
+                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+                  </svg>
+                  <svg class="w-4 h-4 animate-spin text-white hidden btn-spinner" viewBox="0 0 24 24" fill="none">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+                  </svg>
+                </button>
+
+                <div class="text-center pt-1">
+                  <button type="button" id="btn-switch-to-signup" class="text-xs sm:text-sm font-semibold text-primary hover:underline outline-none cursor-pointer leading-tight" data-i18n="need_account">
+                    Need an account? Create one to keep your arrangement private
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Urgent Guest Access & Director Shortcut -->
+            <div class="text-center mt-3 sm:mt-5 pt-2.5 sm:pt-3 pb-1 space-y-1.5 sm:space-y-2 flex-shrink-0 border-t border-borderLight/80">
+              <div>
+                <button type="button" id="btn-continue-guest" class="text-xs sm:text-sm font-semibold text-primary hover:underline outline-none cursor-pointer" data-i18n="continue_guest">
+                  Continue without an account
+                </button>
+                <p class="text-[11px] sm:text-[11.5px] text-textMuted mt-0.5 font-sans" data-i18n="guest_subtitle">
+                  You can create one later to save your arrangement.
+                </p>
+              </div>
+              <div class="pt-0.5 flex items-center justify-center gap-2.5 sm:gap-3 text-[11px] sm:text-xs text-textMuted/80 font-sans">
+                <button type="button" class="btn-open-terms-modal hover:text-textDark transition-colors outline-none cursor-pointer" data-i18n="terms_privacy_link">
+                  Terms &amp; Privacy Notice
+                </button>
+                <span>&middot;</span>
+                <button type="button" class="btn-open-admin-login hover:text-textDark transition-colors outline-none cursor-pointer flex items-center gap-1">
+                  <span data-i18n="director_staff_link">🔐 Director &amp; Staff Portal</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 1B: SIGN-UP VIEW -->
+          <div id="auth-view-signup" class="auth-view hidden flex-1 flex flex-col justify-between min-h-full w-full max-w-sm mx-auto">
+            <div class="flex-1 flex flex-col justify-center py-1 sm:py-2 min-h-fit">
+              <!-- Hero Section -->
+              <div class="text-center">
+                <div class="hero-mark-halo mx-auto mb-2.5 sm:mb-3.5 flex items-center justify-center">
+                  <img src="assets/logo.png" alt="Solace Dignity Care Logo" class="w-[112px] h-[112px] sm:w-[136px] sm:h-[136px] object-contain drop-shadow-sm">
+                </div>
+
+                <div class="space-y-1 sm:space-y-1.5">
+                  <div class="hero-rule mx-auto"></div>
+                  <p class="hero-eyebrow" data-i18n="hero_eyebrow">Solace Dignity Care &middot; Singapore</p>
+                  <h2 class="font-serif font-bold text-[22px] sm:text-[26px] leading-[1.2] tracking-tight text-textDark max-w-[19rem] mx-auto" data-i18n="signup_title">
+                    Let us keep this safe for you.
+                  </h2>
+                  <p class="font-sans text-[13px] sm:text-[14px] text-textMuted leading-relaxed max-w-[17rem] mx-auto" data-i18n="signup_subtitle">
+                    An account keeps your arrangement private and lets you return to it.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Sign-up Form Fields -->
+              <div class="mt-3.5 sm:mt-5 space-y-2.5 sm:space-y-3 w-full">
+                <!-- General Error Line -->
+                <div id="signup-general-error" role="alert" class="hidden p-2.5 sm:p-3 rounded-xl bg-fillColor border border-primary/25 text-primary text-[13px] leading-snug font-sans"></div>
+
+                <div>
+                  <label for="signup-fullname-input" class="block text-[10.5px] sm:text-[11px] font-semibold uppercase tracking-[0.08em] text-textMuted mb-1" data-i18n="fullname_label">
+                    Your Full Name
+                  </label>
+                  <input type="text" id="signup-fullname-input" autocomplete="name" maxlength="60"
+                    class="w-full h-11 px-3.5 sm:px-4 rounded-xl border border-highlight bg-bgPure font-sans text-[14.5px] sm:text-[15px] text-textDark outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all placeholder:text-textMuted/60"
+                    placeholder="e.g. Kelvin Tan" data-i18n-placeholder="fullname_placeholder" aria-describedby="signup-fullname-error">
+                  <span id="signup-fullname-error" role="alert" class="hidden block text-[11.5px] text-primary mt-1 font-sans"></span>
+                </div>
+
+                <div>
+                  <label for="signup-username-input" class="block text-[10.5px] sm:text-[11px] font-semibold uppercase tracking-[0.08em] text-textMuted mb-1" data-i18n="username_label">
+                    Username
+                  </label>
+                  <input type="text" id="signup-username-input" autocomplete="username" autocapitalize="none" spellcheck="false" maxlength="30"
+                    class="w-full h-11 px-3.5 sm:px-4 rounded-xl border border-highlight bg-bgPure font-sans text-[14.5px] sm:text-[15px] text-textDark outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all placeholder:text-textMuted/60"
+                    placeholder="e.g. kelvin.tan" data-i18n-placeholder="username_placeholder_short" aria-describedby="signup-username-status">
+                  <span id="signup-username-status" role="alert" class="hidden block text-[11.5px] mt-1 font-sans"></span>
+                </div>
+
+                <div>
+                  <label for="signup-contact-input" class="block text-[10.5px] sm:text-[11px] font-semibold uppercase tracking-[0.08em] text-textMuted mb-1" data-i18n="contact_label">
+                    Email or Phone Number
+                  </label>
+                  <input type="text" id="signup-contact-input" autocomplete="email tel"
+                    class="w-full h-11 px-3.5 sm:px-4 rounded-xl border border-highlight bg-bgPure font-sans text-[14.5px] sm:text-[15px] text-textDark outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all placeholder:text-textMuted/60"
+                    placeholder="e.g. kelvin@example.com or 9123 4567" data-i18n-placeholder="contact_placeholder" aria-describedby="signup-contact-error">
+                  <span id="signup-contact-error" role="alert" class="hidden block text-[11.5px] text-primary mt-1 font-sans"></span>
+                </div>
+
+                <div>
+                  <label for="signup-password-input" class="block text-[10.5px] sm:text-[11px] font-semibold uppercase tracking-[0.08em] text-textMuted mb-1" data-i18n="password_label">
+                    Password
+                  </label>
+                  <div class="relative">
+                    <input type="password" id="signup-password-input" autocomplete="new-password"
+                      class="w-full h-11 pl-3.5 sm:pl-4 pr-11 sm:pr-12 rounded-xl border border-highlight bg-bgPure font-sans text-[14.5px] sm:text-[15px] text-textDark outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all placeholder:text-textMuted/60"
+                      placeholder="At least 8 characters" data-i18n-placeholder="password_hint" aria-describedby="signup-password-hint signup-password-error">
+                    <button type="button" id="btn-toggle-signup-password" data-i18n-aria="s1_aria_show_password" aria-label="Show password"
+                      class="absolute right-0 top-0 w-11 h-11 flex items-center justify-center text-textMuted hover:text-textDark transition-colors cursor-pointer outline-none">
+                      <svg class="w-4 h-4 sm:w-5 sm:h-5 fill-none stroke-current stroke-2 eye-icon-show" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                      </svg>
+                      <svg class="w-4 h-4 sm:w-5 sm:h-5 fill-none stroke-current stroke-2 eye-icon-hide hidden" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l18 18" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="flex justify-between items-center mt-1">
+                    <span id="signup-password-hint" class="text-[11px] text-textMuted font-sans" data-i18n="password_hint">At least 8 characters</span>
+                    <span id="signup-password-error" role="alert" class="hidden text-[11px] text-primary font-sans"></span>
+                  </div>
+                </div>
+
+                <div id="signup-confirm-container">
+                  <label for="signup-confirm-password-input" class="block text-[10.5px] sm:text-[11px] font-semibold uppercase tracking-[0.08em] text-textMuted mb-1" data-i18n="confirm_password_label">
+                    Confirm Password
+                  </label>
+                  <input type="password" id="signup-confirm-password-input" autocomplete="new-password"
+                    class="w-full h-11 px-3.5 sm:px-4 rounded-xl border border-highlight bg-bgPure font-sans text-[14.5px] sm:text-[15px] text-textDark outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all placeholder:text-textMuted/60"
+                    placeholder="Re-enter your password" data-i18n-placeholder="confirm_password_placeholder" aria-describedby="signup-confirm-error">
+                  <span id="signup-confirm-error" role="alert" class="hidden block text-[11.5px] text-primary mt-1 font-sans"></span>
+                </div>
+
+                <div class="flex items-start gap-2 pt-0.5">
+                  <input type="checkbox" id="signup-agree-checkbox" checked
+                    class="w-4 h-4 mt-0.5 rounded border-highlight text-primary focus:ring-primary/20 cursor-pointer">
+                  <label for="signup-agree-checkbox" class="text-[11.5px] sm:text-[12px] text-textDark/90 leading-snug cursor-pointer select-none">
+                    <span data-i18n="agree_prefix">I agree to the</span> <button type="button" class="btn-open-terms-modal text-primary font-semibold hover:underline outline-none" data-i18n="terms_privacy_link">Terms &amp; Privacy Notice</button>
+                  </label>
+                </div>
+
+                <button type="button" id="btn-proceed-to-consent"
+                  class="w-full min-h-[44px] sm:min-h-[48px] py-2.5 sm:py-3 px-4 bg-primary hover:bg-primaryHover text-white font-serif font-semibold text-[clamp(13px,3.6vw,15px)] leading-snug rounded-xl transition-all shadow-md shadow-primary/15 flex items-center justify-center gap-2 text-center cursor-pointer">
+                  <span class="btn-text" data-i18n="create_account_btn">Create Account</span>
+                  <svg class="w-4 h-4 fill-current flex-shrink-0 btn-arrow" viewBox="0 0 24 24">
+                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+                  </svg>
+                  <svg class="w-4 h-4 animate-spin text-white hidden btn-spinner" viewBox="0 0 24 24" fill="none">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+                  </svg>
+                </button>
+
+                <div class="text-center pt-1">
+                  <button type="button" id="btn-switch-to-login" class="text-xs sm:text-sm font-semibold text-primary hover:underline outline-none cursor-pointer leading-tight" data-i18n="already_have_account">
+                    Already have an account? Sign in
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Guest Link -->
+            <div class="text-center mt-3 sm:mt-5 pt-2.5 sm:pt-3 pb-1 flex-shrink-0 border-t border-borderLight/80">
+              <button type="button" id="btn-continue-guest-2" class="text-xs sm:text-sm font-semibold text-primary hover:underline outline-none cursor-pointer" data-i18n="continue_guest">
+                Continue without an account
+              </button>
+            </div>
+          </div>
+
+          <!-- 1C: CONSENT & TERMS STEP -->
+          <div id="auth-view-consent" class="auth-view hidden flex-1 flex flex-col justify-between min-h-full w-full max-w-sm mx-auto">
+            <div class="flex-1 flex flex-col py-1 sm:py-2 min-h-fit">
+              <!-- Hero Section -->
+              <div class="text-center mb-2.5 sm:mb-3">
+                <div class="space-y-1 sm:space-y-1.5">
+                  <div class="hero-rule mx-auto"></div>
+                  <p class="hero-eyebrow" data-i18n="hero_eyebrow">Solace Dignity Care &middot; Singapore</p>
+                  <h2 class="font-serif font-bold text-[22px] sm:text-[26px] leading-[1.2] tracking-tight text-textDark max-w-[19rem] mx-auto">
+                    Before we begin.
+                  </h2>
+                  <p class="font-sans text-[13px] sm:text-[13.5px] text-textMuted leading-relaxed max-w-[19rem] mx-auto">
+                    How we handle what you share with us.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Scrollable Terms Box -->
+              <div class="flex-1 min-h-[160px] max-h-[38vh] bg-fillColor border border-borderLight rounded-xl p-3.5 sm:p-4 overflow-y-auto text-textDark/90 font-sans shadow-2xs space-y-3" id="consent-terms-panel">
+                <div class="text-[10.5px] sm:text-[11px] font-mono text-textMuted bg-bgPure/80 px-2.5 py-1 rounded border border-borderLight/80 mb-2">
+                  PDPA Singapore Compliance Notice &middot; Secure Sanctuary
+                </div>
+                
+                <!-- Dynamic Terms Injected Here -->
+                <div id="consent-terms-content" class="space-y-3 text-[12.5px] sm:text-[13px] leading-relaxed">
+                  <div>
+                    <h4 class="font-serif font-bold text-[14px] sm:text-[14.5px] text-textDark mb-1" data-i18n="s1_1_what_we_collect">1. What We Collect</h4>
+                    <p class="text-textDark/85" data-i18n="s1_account_details_name_username_email_or">Account details (name, username, email or phone), arrangement selections, deceased loved one's details entered during consultation, messages with our assistant, and digital signature image.</p>
+                  </div>
+                  <div>
+                    <h4 class="font-serif font-bold text-[14px] sm:text-[14.5px] text-textDark mb-1" data-i18n="s1_2_why_we_collect_this_information">2. Why We Collect This Information</h4>
+                    <p class="text-textDark/85" data-i18n="s1_to_prepare_transparent_quotations_with_guaranteed">To prepare transparent quotations with guaranteed pricing, to allow our funeral directors to follow up and assist in emergencies, and to let your family resume saved arrangements securely.</p>
+                  </div>
+                  <div>
+                    <h4 class="font-serif font-bold text-[14px] sm:text-[14.5px] text-textDark mb-1" data-i18n="s1_3_conversational_assistant_amp_ai_safety">3. Conversational Assistant &amp; AI Safety</h4>
+                    <p class="text-textDark/85" data-i18n="s1_messages_are_processed_by_an_assistant">Messages are processed by an assistant to guide intake step-by-step. Authorized human directors may review conversations to assist. Sensitive identifiers like NRIC/FIN and payment card numbers are masked automatically and are never required.</p>
+                  </div>
+                  <div>
+                    <h4 class="font-serif font-bold text-[14px] sm:text-[14.5px] text-textDark mb-1" data-i18n="s1_4_data_retention_amp_deletion">4. Data Retention &amp; Deletion</h4>
+                    <p class="text-textDark/85" data-i18n="s1_records_are_retained_only_for_as">Records are retained only for as long as required for memorial coordination and Singapore statutory obligations. You may request account closure and draft deletion at any time.</p>
+                  </div>
+                  <div>
+                    <h4 class="font-serif font-bold text-[14px] sm:text-[14.5px] text-textDark mb-1" data-i18n="s1_5_who_sees_your_information">5. Who Sees Your Information</h4>
+                    <p class="text-textDark/85" data-i18n="s1_restricted_strictly_to_authorized_solace_director">Restricted strictly to authorized Solace directors and care coordinators. Bereavement data is never sold, rented, or shared with third-party advertisers.</p>
+                  </div>
+                  <div>
+                    <h4 class="font-serif font-bold text-[14px] sm:text-[14.5px] text-textDark mb-1" data-i18n="s1_6_your_rights_under_the_pdpa">6. Your Rights Under the PDPA</h4>
+                    <p class="text-textDark/85" data-i18n="s1_you_have_the_right_to_request">You have the right to request access, correction, or withdrawal of consent under the Singapore Personal Data Protection Act.</p>
+                  </div>
+                  <div>
+                    <h4 class="font-serif font-bold text-[14px] sm:text-[14.5px] text-textDark mb-1" data-i18n="s1_7_contact">7. Contact</h4>
+                    <p class="text-textDark/85" data-i18n="s1_data_protection_officer_privacy_solace_sg">Data Protection Officer: privacy@solace.sg.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Scroll indicator & Consent Checkbox Controls -->
+              <div class="mt-3 sm:mt-4 space-y-2 sm:space-y-2.5 max-w-sm mx-auto w-full">
+                <div id="consent-scroll-hint" class="text-center text-[11.5px] sm:text-[12px] text-textMuted font-sans">
+                  Please scroll to the end of the notice above
+                </div>
+
+                <div class="flex items-start gap-2.5 p-2.5 sm:p-3 rounded-xl bg-bgPure border border-highlight/80 transition-all">
+                  <div class="flex items-center h-5 mt-0.5">
+                    <input type="checkbox" id="consent-checkbox" disabled
+                      class="w-4 h-4 sm:w-5 sm:h-5 rounded border-highlight text-primary focus:ring-primary/20 cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed">
+                  </div>
+                  <label for="consent-checkbox" class="text-[12px] sm:text-[13px] text-textDark leading-snug cursor-pointer select-none">
+                    I have read and agree to how my information will be used.
+                  </label>
+                </div>
+
+                <div class="text-center text-[10.5px] sm:text-[11px] text-textMuted font-sans">
+                  Version 1.0 &middot; Updated 14 Aug 2026
+                </div>
+
+                <!-- Create Account Submit Button -->
+                <button type="button" id="btn-submit-signup" disabled
+                  class="w-full min-h-[44px] sm:min-h-[48px] py-2.5 sm:py-3 px-4 bg-primary disabled:opacity-45 disabled:cursor-not-allowed hover:bg-primaryHover text-white font-serif font-semibold text-[clamp(13px,3.6vw,15px)] leading-snug rounded-xl transition-all shadow-md shadow-primary/15 flex items-center justify-center gap-2 text-center cursor-pointer">
+                  <span class="btn-text" data-i18n="s1_create_account_amp_begin">Create Account &amp; Begin</span>
+                  <svg class="w-4 h-4 fill-current flex-shrink-0 btn-arrow" viewBox="0 0 24 24">
+                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+                  </svg>
+                  <svg class="w-4 h-4 animate-spin text-white hidden btn-spinner" viewBox="0 0 24 24" fill="none">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+                  </svg>
+                </button>
+
+                <div class="text-center pt-0.5 sm:pt-1">
+                  <button type="button" id="btn-back-to-signup-details" class="text-xs font-semibold text-textMuted hover:text-textDark outline-none cursor-pointer">
+                    &larr; Back to account details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SCREEN 2: CENTRAL FAMILY HUB (DASHBOARD) -->
+        <!-- ========================================== -->
+        <section id="screen-2" class="app-screen p-6 overflow-y-auto overflow-x-hidden">
+
+          <!-- Reassuring Message Card -->
+          <div class="bg-fillColor rounded-2xl p-6 border border-highlight mb-6 shadow-2xs">
+            <h3 id="hub-greeting-title" class="font-serif text-xl font-bold text-textDark mb-2" data-i18n="hub_holding_space">We are holding space for you.</h3>
+            <p id="hub-greeting-sub" class="font-sans text-base text-textMuted leading-relaxed" data-i18n="hub_holding_space_sub">
+              How can we assist your family today? Please select a pathway below to get started or return to a configuration.
+            </p>
+          </div>
+
+          <!-- Coordination Details Card (populated once the AI Assistant collects logistics info) -->
+          <div id="coordination-summary-card" class="hidden bg-bgPure rounded-2xl p-5 border border-highlight mb-6">
+            <h3 class="font-serif text-base font-bold text-textDark mb-3 flex items-center gap-2">
+              <svg class="w-4 h-4 fill-current text-primary" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
+              </svg>
+              <span data-i18n="coordination_details">Coordination Details</span>
+            </h3>
+            <div id="coordination-summary-list" class="space-y-2">
+              <!-- Injected dynamically -->
+            </div>
+          </div>
+
+          <!-- Entry tiles: four calm ways in -->
+          <div class="grid grid-cols-2 gap-3 mb-6">
+            <button id="tile-immediate" data-text="My loved one has just passed away. What do I need to do first?"
+              class="hub-tile group">
+              <span class="hub-tile-icon">
+                <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+              </span>
+              <span class="hub-tile-title" data-i18n="tile_immediate_title">Immediate need</span>
+              <span class="hub-tile-sub" data-i18n="tile_immediate_sub">Someone has just passed</span>
+            </button>
+
+            <button id="tile-costs" data-text="What service packages and pricing do you offer?" class="hub-tile group">
+              <span class="hub-tile-icon">
+                <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                  <path
+                    d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" />
+                </svg>
+              </span>
+              <span class="hub-tile-title" data-i18n="tile_costs_title">Costs</span>
+              <span class="hub-tile-sub" data-i18n="tile_costs_sub">Packages &amp; pricing</span>
+            </button>
+
+            <button id="tile-plan" data-text="I would like to start the step-by-step guided setup"
+              class="hub-tile group">
+              <span class="hub-tile-icon">
+                <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                  <path
+                    d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
+                </svg>
+              </span>
+              <span class="hub-tile-title" data-i18n="tile_plan_title">Plan ahead</span>
+              <span class="hub-tile-sub" data-i18n="tile_plan_sub">Guided step-by-step</span>
+            </button>
+
+            <button type="button" class="btn-open-consultant-modal hub-tile hub-tile-accent group">
+              <span class="hub-tile-icon">
+                <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                  <path
+                    d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                </svg>
+              </span>
+              <span class="hub-tile-title" data-i18n="tile_consultant_title">Speak to someone</span>
+              <span class="hub-tile-sub" data-i18n="tile_consultant_sub">A funeral consultant</span>
+            </button>
+          </div>
+
+          <!-- Saved Configurations -->
+          <div class="space-y-3">
+            <h3 class="font-serif font-semibold text-lg text-textDark border-b border-borderLight pb-2" data-i18n="hub_saved_configs">Saved
+              Configurations</h3>
+
+            <div class="space-y-2" id="dashboard-saved-list">
+              <!-- Saved draft items are injected here dynamically -->
+            </div>
+          </div>
+
+          <!-- Preview Obituary Trigger Button -->
+          <div class="pt-4">
+            <button id="btn-open-obituary"
+              class="w-full h-11 bg-fillColor border border-highlight hover:border-primary text-primary font-sans font-semibold text-xs rounded-xl flex items-center justify-center gap-1.5 transition-all">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
+              </svg>
+              <span data-i18n="preview_obituary_btn">Preview AI Obituary Draft</span>
+            </button>
+          </div>
+
+
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SCREEN 3: EMPATHETIC AI CHAT INTAKE -->
+        <!-- ========================================== -->
+        <section id="screen-3" class="app-screen justify-between">
+
+          <!-- Human Consultant Mode Banner (Shown when human staff takes over) -->
+          <div id="human-mode-banner"
+            class="hidden px-3 sm:px-4 py-2 bg-sage-tint border-b border-sage/30 text-textDark text-xs font-semibold flex items-center justify-between transition-all gap-2">
+            <div class="flex items-center gap-2 min-w-0">
+              <span class="relative flex h-2.5 w-2.5 shrink-0">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-successColor opacity-60"></span>
+                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-successColor"></span>
+              </span>
+              <span class="text-[11.5px] sm:text-xs font-medium text-textDark truncate">Consultant Connected: <strong id="human-consultant-name" class="font-serif text-textDark font-bold">Marcus Chen</strong></span>
+            </div>
+            <button id="btn-customer-exit-human-chat" type="button"
+              class="px-2.5 py-1 rounded-lg bg-bgPure hover:bg-fillColor border border-borderLight text-textMuted hover:text-textDark text-[11px] font-sans font-semibold transition-all cursor-pointer shadow-2xs shrink-0 flex items-center gap-1">
+              <span data-i18n="s3_exit_to_ai">✕ Exit to AI</span>
+            </button>
+          </div>
+
+          <!-- Chat Feed Scroll Container -->
+          <div class="flex-1 overflow-y-auto p-5 space-y-4" id="chat-container" role="log" aria-live="polite"
+            aria-relevant="additions" data-i18n-aria="s3_aria_conversation_with_hannah" aria-label="Conversation with Hannah">
+            <!-- Bubbles injected dynamically -->
+
+            <!-- Typing Indicator (Hidden by default, toggled by JS) -->
+            <div id="typing-indicator"
+              class="hidden flex gap-2 w-fit bg-bgPure border border-borderLight p-4 rounded-2xl rounded-tl-none shadow-sm items-center">
+              <div class="w-1.5 h-1.5 bg-primary rounded-full typing-dot" style="animation-delay: 0s;"></div>
+              <div class="w-1.5 h-1.5 bg-primary rounded-full typing-dot" style="animation-delay: 0.2s;"></div>
+              <div class="w-1.5 h-1.5 bg-primary rounded-full typing-dot" style="animation-delay: 0.4s;"></div>
+            </div>
+          </div>
+
+          <!-- Chat Input Controls -->
+          <div class="p-4 border-t border-borderLight bg-bgPure space-y-2.5">
+
+            <!-- Quick actions tray with smooth slide & fade animation -->
+            <div id="chat-quick-actions" class="flex flex-wrap gap-2 text-xs">
+              <button id="btn-request-consultant" type="button" data-i18n="chip_speak_consultant"
+                class="quick-chip whitespace-nowrap px-3 py-1.5 rounded-xl bg-bgPure hover:bg-fillColor text-primary border border-primary/70 font-semibold transition-all shadow-2xs cursor-pointer shrink-0">
+                Speak to a consultant
+              </button>
+              <button type="button"
+                class="quick-chip whitespace-nowrap px-3 py-1.5 rounded-xl bg-fillColor hover:bg-highlight/40 text-textDark border border-highlight/60 font-semibold transition-all shadow-2xs cursor-pointer shrink-0"
+                data-text="I would like to start the step-by-step guided setup" data-i18n="chip_step_by_step">
+                Start Step-by-Step Setup
+              </button>
+              <button type="button"
+                class="quick-chip whitespace-nowrap px-3 py-1.5 rounded-xl bg-fillColor hover:bg-highlight/40 text-textDark border border-highlight/60 font-semibold transition-all shadow-2xs cursor-pointer shrink-0"
+                data-text="What service packages and pricing do you offer?" data-i18n="chip_packages_pricing">
+                View Packages & Pricing
+              </button>
+              <button type="button"
+                class="quick-chip whitespace-nowrap px-3 py-1.5 rounded-xl bg-fillColor hover:bg-highlight/40 text-textDark border border-highlight/60 font-semibold transition-all shadow-2xs cursor-pointer shrink-0"
+                data-text="What are the planning stages?" data-i18n="chip_stages_short">
+                What are the stages?
+              </button>
+              <button type="button"
+                class="quick-chip whitespace-nowrap px-3 py-1.5 rounded-xl bg-fillColor hover:bg-highlight/40 text-textDark border border-highlight/60 font-semibold transition-all shadow-2xs cursor-pointer shrink-0"
+                data-nav="4">
+                Go to Planner
+              </button>
+            </div>
+
+            <!-- Free-text input bar: + reveals quick actions, wide input with integrated mic, send button -->
+            <div id="chat-input-bar" class="relative flex items-end gap-2">
+              <button id="chat-actions-toggle" type="button" data-i18n-aria="s3_aria_more_actions" aria-label="More actions" aria-expanded="false"
+                class="w-11 h-11 shrink-0 rounded-full bg-fillColor hover:bg-highlight/40 text-primary border border-highlight/60 flex items-center justify-center transition-all">
+                <svg id="chat-actions-icon" class="w-5 h-5 fill-current transition-transform" viewBox="0 0 24 24">
+                  <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                </svg>
+              </button>
+
+              <!-- Spacious Text Input Container with Integrated Mic Button -->
+              <div class="relative flex-1 flex items-end">
+                <textarea id="chat-text-input" rows="1"
+                  class="w-full py-2.5 pl-3.5 pr-10 rounded-2xl border border-highlight bg-fillColor font-sans text-sm text-textDark outline-none focus:bg-bgPure focus:border-primary transition-all placeholder:text-textMuted/60 resize-none leading-normal max-h-32 min-h-[44px]"
+                  data-i18n-placeholder="chat_placeholder" placeholder="Type your message..." autocomplete="off" maxlength="300"
+                  data-i18n-aria="s3_aria_type_your_message_to_the_assistant" aria-label="Type your message to the assistant"></textarea>
+
+                <!-- Voice Dictation (Speech-to-Text) Button (Integrated) -->
+                <button id="chat-mic-btn" type="button" data-i18n-aria="s3_aria_speak_your_message" aria-label="Speak your message" title="Voice Input"
+                  class="absolute right-1.5 bottom-1.5 w-8 h-8 rounded-full text-primary hover:bg-highlight/40 flex items-center justify-center transition-all cursor-pointer">
+                  <svg id="chat-mic-icon" class="w-4.5 h-4.5 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.91-3c-.49 0-.9.36-.98.85C16.52 14.2 14.47 16 12 16s-4.52-1.8-4.93-4.15c-.08-.49-.49-.85-.98-.85-.61 0-1.09.54-1 1.14.49 3 2.89 5.35 5.91 5.78V20c0 .55.45 1 1 1s1-.45 1-1v-2.08c3.02-.43 5.42-2.78 5.91-5.78.1-.6-.39-1.14-1-1.14z"/>
+                  </svg>
+                </button>
+              </div>
+
+              <span id="chat-char-count" class="hidden absolute right-16 -top-5 text-[10px] font-semibold"
+                aria-live="polite"></span>
+              <button id="chat-send-btn" data-i18n-aria="s3_aria_send_message" aria-label="Send message"
+                class="w-11 h-11 shrink-0 rounded-full bg-primary hover:bg-primaryHover text-white flex items-center justify-center transition-all shadow-sm">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                  <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                </svg>
+              </button>
+            </div>
+
+          </div>
+        </section>
+        <!-- ========================================== -->
+        <!-- SCREEN 4: SERVICE & COST PLANNER -->
+        <!-- ========================================== -->
+        <section id="screen-4" class="app-screen justify-between">
+          <div id="planner-scroll-area" class="flex-1 overflow-y-auto overflow-x-hidden p-6 space-y-6">
+
+            <div>
+              <h2 class="font-serif text-2xl font-bold text-textDark" data-i18n="planner_title">Service & Cost Planner</h2>
+              <p class="text-sm text-textMuted leading-relaxed" data-i18n="planner_subtitle">Fully transparent rates. Custom configurations lock in immediately.</p>
+            </div>
+
+            <!-- Selector 1: Service Tier -->
+            <div class="space-y-3">
+              <label class="planner-section-label" data-i18n="section_tier">Service Arrangement Tier</label>
+              <div class="grid grid-cols-2 gap-3" id="tier-selector-container">
+                <!-- Injected dynamically -->
+              </div>
+            </div>
+            <!-- Selector 1.5: Religious Rites -->
+            <div class="space-y-3">
+              <label class="planner-section-label" data-i18n="section_religion">Religious Ceremony Rites</label>
+              <div class="grid grid-cols-2 gap-2.5" id="religion-selector-container">
+                <!-- Injected dynamically -->
+              </div>
+            </div>
+
+            <!-- Selector 1.8: Wake Location -->
+            <div class="space-y-3">
+              <label class="planner-section-label" data-i18n="section_location">Wake Location & Setup</label>
+              <div class="grid grid-cols-2 gap-2.5" id="location-selector-container">
+                <!-- Injected dynamically -->
+              </div>
+            </div>
+
+            <!-- Selector 2: Wake Duration -->
+            <div class="space-y-3">
+              <label class="planner-section-label" data-i18n="section_duration">Wake Duration</label>
+              <div class="grid grid-cols-3 gap-2" id="duration-selector-container">
+                <!-- Injected dynamically -->
+              </div>
+            </div>
+
+            <!-- Selector 3: Caskets Selection -->
+            <div class="space-y-3">
+              <label class="planner-section-label" data-i18n="section_casket">Casket Selection & Finish</label>
+              <div class="space-y-2.5" id="casket-selector-container">
+                <!-- Injected dynamically -->
+              </div>
+            </div>
+
+            <!-- Selector 3.5: Ash Management & Final Disposition -->
+            <div class="space-y-3">
+              <label class="planner-section-label" data-i18n="section_ash">Ash Management & Final Disposition</label>
+              <div class="space-y-2.5" id="ash-selector-container">
+                <!-- Injected dynamically -->
+              </div>
+            </div>
+
+            <!-- Selector 4: Logistical Add-ons -->
+            <div class="space-y-3">
+              <label class="planner-section-label" data-i18n="section_addons">Additional Logistics & Services</label>
+              <div class="space-y-2.5" id="addons-selector-container">
+                <!-- Injected dynamically -->
+              </div>
+            </div>
+
+            <!-- Bottom clearance is set from JS to match the cost panel's real height -->
+          </div>
+
+          <!-- Persistent Dynamic Cost Panel -->
+          <div id="builder-cost-panel"
+            class="absolute bottom-0 left-0 right-0 max-h-[78%] bg-bgPure border-t border-borderLight shadow-[0_-8px_20px_-6px_rgba(45,26,18,0.1)] p-5 z-40 space-y-3">
+
+            <!-- Collapsible breakdown details drawer -->
+            <div id="builder-breakdown-drawer"
+              class="overflow-y-auto overscroll-contain transition-all duration-300 ease-in-out flex flex-col gap-2 border-b border-borderLight pb-3"
+              style="max-height: 0;">
+              <!-- Itemized breakdown injected here -->
+            </div>
+
+            <!-- Budget Visualizer -->
+            <div class="space-y-1.5 mb-1">
+              <div class="flex justify-between text-[8px] text-textMuted font-bold uppercase tracking-wider">
+                <span data-i18n="budget_bar_tier">Tier Setup</span>
+                <span data-i18n="budget_bar_wake">Wake Days</span>
+                <span data-i18n="budget_bar_addons">Caskets & Addons</span>
+              </div>
+              <div class="h-2 w-full bg-fillColor rounded-full overflow-hidden flex" id="budget-progress-bar">
+                <div id="budget-bar-tier" class="bg-primary h-full transition-all duration-300" style="width: 50%;">
+                </div>
+                <div id="budget-bar-duration" class="bg-secondary h-full transition-all duration-300"
+                  style="width: 20%;"></div>
+                <div id="budget-bar-other" class="bg-highlight h-full transition-all duration-300" style="width: 30%;">
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <div>
+                <span class="text-[10px] font-semibold uppercase tracking-wider text-textMuted" data-i18n="total_dynamic_estimate">Total Dynamic Estimate</span>
+                <div id="builder-price-total" class="font-serif text-2xl font-bold text-primary whitespace-nowrap">$0</div>
+              </div>
+              <button id="btn-toggle-builder-drawer"
+                class="text-xs font-semibold text-primary hover:underline flex items-center gap-1">
+                <span data-i18n="view_details_btn">View Details</span>
+                <svg id="arrow-drawer-icon" class="w-4 h-4 fill-current transform transition-transform duration-300"
+                  viewBox="0 0 24 24">
+                  <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
+                </svg>
+              </button>
+            </div>
+
+            <button id="btn-builder-to-sign" type="button"
+              class="w-full h-12 bg-primary hover:bg-primaryHover text-white font-serif font-semibold text-base rounded-xl transition-all shadow-md shadow-primary/10 flex items-center justify-center gap-2 cursor-pointer">
+              <span data-i18n="generate_quote_btn">Generate & Review Quote</span>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+              </svg>
+            </button>
+          </div>
+
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SCREEN 5: SUMMARY PREVIEW & E-SIGN -->
+        <!-- ========================================== -->
+        <section id="screen-5" class="app-screen overflow-y-auto overflow-x-hidden p-6 space-y-6">
+
+          <div>
+            <h2 class="font-serif text-2xl font-bold text-textDark" data-i18n="summary_title">Summary & Authorization</h2>
+            <p class="text-sm text-textMuted leading-relaxed" data-i18n="summary_subtitle">Review the official layout and authorize to dispatch immediate support.</p>
+          </div>
+
+          <!-- Stylized PDF Quote Document Mock -->
+          <div class="border border-highlight rounded-2xl p-5 shadow-sm space-y-4 relative bg-bgPure">
+
+            <div
+              class="absolute inset-0 flex items-center justify-center rotate-[-25deg] pointer-events-none opacity-[0.03]">
+              <span class="font-serif text-4xl font-bold text-primary tracking-wider uppercase">Project CP-004</span>
+            </div>
+
+            <!-- PDF Header -->
+            <div class="flex justify-between items-start border-b-2 border-primary pb-3">
+              <div class="flex items-center gap-2 text-primary font-serif font-bold text-sm">
+                <div class="w-7 h-7 rounded-full overflow-hidden flex items-center justify-center shrink-0">
+                  <img src="assets/logo.png" alt="Solace Dignity Care Logo" class="w-full h-full object-cover">
+                </div>
+                <span data-i18n="house_name">Solace Dignity Care</span>
+              </div>
+              <div class="text-right">
+                <div class="text-[10px] font-bold tracking-wider text-textDark" data-i18n="pdf_official_quote">OFFICIAL ARRANGEMENT QUOTE</div>
+                <div class="text-[9px] font-mono text-textMuted" id="pdf-quote-id">QT-9812A</div>
+                <div class="text-[9px] text-textMuted" id="pdf-quote-date">15 Jul 2026 11:44</div>
+              </div>
+            </div>
+
+            <!-- Client Metadata -->
+            <div>
+              <div
+                class="text-[9px] uppercase font-bold tracking-wider text-textMuted border-b border-borderLight pb-1 mb-1.5" data-i18n="pdf_family_coordinator">
+                Family Coordinator</div>
+              <div class="text-xs text-textDark">
+                <strong id="pdf-client-name" class="font-serif text-sm">Jane Doe</strong>
+                <div id="pdf-client-phone" class="text-textMuted">+65 9123 4567</div>
+              </div>
+            </div>
+
+            <!-- Items list -->
+            <div>
+              <div
+                class="text-[9px] uppercase font-bold tracking-wider text-textMuted border-b border-borderLight pb-1 mb-1.5" data-i18n="pdf_selected_package">
+                Selected Arrangement Package</div>
+              <table class="w-full text-xs text-left">
+                <tbody id="pdf-items-tbody" class="divide-y divide-borderLight/40">
+                  <!-- Injected dynamically -->
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Database compliance code -->
+            <div id="pdf-db-compliance-container"
+              class="hidden bg-fillColor border border-highlight/50 rounded-lg p-2.5 text-[9px] leading-relaxed text-textMuted font-mono break-all">
+              <strong data-i18n="s5_database_compliance_signature">Database Compliance Signature:</strong><br>
+              META: [postgresql-uuid: <span id="pdf-db-uuid">...</span> // SHA256-SIGN: <span
+                id="pdf-db-hash">...</span>]
+            </div>
+
+            <!-- Authorized Client E-Signature -->
+            <div class="border-t border-borderLight/80 pt-3 mt-1">
+              <div
+                class="text-[9px] uppercase font-bold tracking-wider text-textMuted mb-1.5 flex justify-between items-center">
+                <span data-i18n="pdf_client_esignature">Authorized Client E-Signature</span>
+                <span id="pdf-signature-status"
+                  class="text-[8px] font-semibold px-2 py-0.5 rounded bg-fillColor text-textMuted border border-borderLight" data-i18n="pdf_pending_signature">PENDING SIGNATURE</span>
+              </div>
+              <div
+                class="flex items-center justify-between bg-fillColor/30 rounded-lg p-2.5 border border-borderLight/60">
+                <div
+                  class="h-14 w-44 flex items-center justify-center relative bg-bgPure border border-dashed border-borderLight rounded overflow-hidden p-1">
+                  <img id="pdf-signature-image" class="max-h-full max-w-full object-contain hidden"
+                    alt="Client Signature">
+                  <span id="pdf-signature-placeholder"
+                    class="text-[10px] text-textMuted/60 italic text-center leading-tight" data-i18n="pdf_awaiting_signature">Awaiting signature below...</span>
+                </div>
+                <div class="text-right text-[9px] text-textMuted space-y-0.5">
+                  <div><span data-i18n="pdf_signer_label">Signer</span>: <strong id="pdf-signer-name" class="text-textDark font-semibold">Jane Doe</strong></div>
+                  <div><span data-i18n="pdf_timestamp_label">Timestamp</span>: <span id="pdf-signer-date" data-i18n="s5_pending">Pending</span></div>
+                  <div id="pdf-signer-verification" class="text-[8px] font-mono text-primary font-bold hidden" data-i18n="pdf_executed_badge">✓ Cryptographically Executed</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Digital Signature Box -->
+          <div class="space-y-2">
+            <label class="planner-section-label" data-i18n="digital_signature_pad">Digital Signature Pad</label>
+            <div
+              class="relative w-full h-32 border border-highlight rounded-xl overflow-hidden bg-fillColor/40 cursor-crosshair"
+              id="canvas-container">
+              <span id="canvas-label-hint"
+                class="absolute inset-0 flex items-center justify-center text-sm text-textMuted/50 pointer-events-none" data-i18n="canvas_hint">Sign with pointer or finger inside this area</span>
+              <canvas id="signature-canvas" class="w-full h-full block"></canvas>
+            </div>
+            <div class="flex justify-between items-center text-xs">
+              <button id="btn-clear-canvas" class="text-primary font-semibold hover:underline outline-none" data-i18n="clear_signature_btn">Clear Signature</button>
+              <span class="text-textMuted" data-i18n="touch_canvas_label">Touch-sensitive canvas</span>
+            </div>
+          </div>
+
+          <!-- Submits -->
+          <button id="btn-confirm-quote"
+            class="w-full h-12 bg-primary hover:bg-primaryHover text-white font-serif font-semibold text-base rounded-xl transition-all shadow-md shadow-primary/10 flex items-center justify-center gap-2">
+            <span data-i18n="confirm_arrangements_btn">Confirm Arrangements & Notify Director</span>
+          </button>
+
+          <button id="btn-print-quote"
+            class="w-full h-11 bg-bgPure border border-highlight hover:border-primary text-primary font-serif font-semibold text-sm rounded-xl transition-all flex items-center justify-center gap-2">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z" />
+            </svg>
+            <span data-i18n="print_quote_btn">Print / Export Quote as PDF</span>
+          </button>
+
+          <div class="h-10"></div>
+
+          <!-- SUCCESS STATE OVERLAY (POST-SIGN CONFIRMATION) -->
+          <div id="success-overlay"
+            class="absolute inset-0 bg-bgPure z-[90] p-6 flex flex-col justify-center items-center text-center opacity-0 pointer-events-none transition-all duration-500 space-y-4 overflow-y-auto">
+
+            <!-- Bouncing Green Tick Icon -->
+            <div
+              class="w-16 h-16 rounded-full bg-[#2E7D32]/15 border border-[#2E7D32]/35 flex items-center justify-center text-[#2E7D32] mx-auto bouncing-tick shadow-sm">
+              <svg class="w-9 h-9 fill-current" viewBox="0 0 24 24">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+              </svg>
+            </div>
+
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-textDark mb-2" data-i18n="arrangements_confirmed_title">Arrangements Confirmed</h3>
+              <p class="text-sm text-textMuted leading-relaxed" data-i18n="arrangements_confirmed_sub">
+                Your arrangement is securely registered. Your dedicated Funeral Director is ready to assist your family directly in the chat.
+              </p>
+            </div>
+
+            <!-- Primary Action: Open Chat with Funeral Director -->
+            <button id="btn-open-director-chat"
+              class="w-full h-12 bg-primary hover:bg-primaryHover text-white font-serif font-semibold text-sm rounded-xl transition-all shadow-md shadow-primary/10 flex items-center justify-center gap-2">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+              </svg>
+              <span data-i18n="open_director_chat_btn">Open Chat with Funeral Director</span>
+            </button>
+
+            <!-- 1-Tap WhatsApp Family Share Button -->
+            <div class="w-full bg-fillColor border border-highlight rounded-2xl p-3.5 text-left space-y-2 shadow-2xs">
+              <div class="flex items-center justify-between">
+                <div class="font-serif font-bold text-xs text-textDark flex items-center gap-1.5">
+                  <svg class="w-4 h-4 text-[#128C7E] fill-current" viewBox="0 0 24 24">
+                    <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/>
+                  </svg>
+                  <span data-i18n="family_group_update_title">Family Group Update</span>
+                </div>
+                <span class="text-[10px] text-textMuted">1-Tap</span>
+              </div>
+              <button id="btn-whatsapp-share" class="w-full h-11 bg-[#128C7E] hover:bg-[#075E54] text-white font-sans font-semibold text-xs rounded-xl flex items-center justify-center gap-2 transition-all shadow-xs">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                  <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/>
+                </svg>
+                <span data-i18n="share_whatsapp_btn">Share Summary to WhatsApp</span>
+              </button>
+            </div>
+
+            <!-- Return Action -->
+            <button id="btn-success-close"
+              class="w-full h-10 bg-bgPure border border-borderLight hover:border-primary text-textMuted hover:text-textDark font-sans font-medium text-xs rounded-xl transition-all shadow-2xs" data-i18n="return_to_hub_btn">
+              Return to Family Hub
+            </button>
+          </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- SCREEN 6: ACCOUNT & SETTINGS -->
+        <!-- ========================================== -->
+        <section id="screen-6" class="app-screen overflow-y-auto overflow-x-hidden p-6 space-y-4 font-sans text-xs text-textDark">
+
+          <!-- Page Header -->
+          <div class="flex items-center justify-between pb-1 border-b border-borderLight/60">
+            <div class="flex items-center gap-2">
+              <div class="w-2.5 h-2.5 rounded-full bg-successColor"></div>
+              <h2 class="font-serif font-bold text-2xl text-textDark tracking-tight" data-i18n="account_settings_title">Account &amp; Settings</h2>
+            </div>
+          </div>
+          <p class="text-xs text-textMuted font-sans -mt-2 mb-2" data-i18n="account_settings_sub">Manage your profile, active session security, language preferences, and data privacy vault.</p>
+
+          <!-- 1. Profile Monogram Banner -->
+          <div class="p-4 rounded-2xl bg-fillColor/60 border border-highlight/80 flex items-center gap-3.5 shadow-2xs">
+            <div class="relative w-12 h-12 rounded-full bg-gradient-to-tr from-primary via-primaryHover to-secondary text-white flex items-center justify-center font-serif font-bold text-base shadow-sm ring-2 ring-highlight/50 shrink-0">
+              <span id="account-modal-avatar">SD</span>
+            </div>
+            <div class="min-w-0 flex-1">
+              <div class="flex items-center gap-2">
+                <h4 id="account-modal-name" class="font-serif font-bold text-base text-textDark truncate leading-tight">Jane Doe</h4>
+                <span id="account-modal-badge" class="px-1.5 py-0.5 rounded bg-successColor/15 text-successColor text-[9.5px] font-semibold" data-i18n="account_active_badge">Active</span>
+              </div>
+              <p id="account-modal-handle" class="text-[11.5px] text-textMuted font-sans truncate mt-0.5">@user</p>
+              <p id="account-modal-id" class="text-[10px] text-textMuted/80 font-mono mt-0.5">ID: USR-20260825-007</p>
+            </div>
+          </div>
+
+          <!-- 1.5. Dedicated Language Preferences Card -->
+          <div class="space-y-1.5">
+            <p class="text-[10px] uppercase font-bold tracking-wider text-textMuted/90 px-1" data-i18n="account_lang_title">Language &amp; Regional Preferences</p>
+            <div class="p-3.5 rounded-xl bg-bgPure border border-borderLight space-y-2.5 shadow-2xs">
+              <div class="flex items-center justify-between">
+                <span class="text-textMuted" data-i18n="account_active_lang">Active Language</span>
+                <span id="account-current-lang-label" class="font-semibold text-primary text-[11.5px]">English (EN)</span>
+              </div>
+              <div class="pt-1">
+                <div class="grid grid-cols-2 gap-2" role="group" data-i18n-aria="s6_aria_select_language" aria-label="Select Language">
+                  <button type="button" class="lang-pill-btn active flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl border border-borderLight hover:border-primary text-[11px] font-semibold text-textDark cursor-pointer transition-all" data-lang="en">
+                    <span>🇬🇧</span>
+                    <span>English (EN)</span>
+                  </button>
+                  <button type="button" class="lang-pill-btn flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl border border-borderLight hover:border-primary text-[11px] font-semibold text-textDark cursor-pointer transition-all" data-lang="zh">
+                    <span>🇸🇬</span>
+                    <span>简体中文 (ZH)</span>
+                  </button>
+                  <button type="button" class="lang-pill-btn flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl border border-borderLight hover:border-primary text-[11px] font-semibold text-textDark cursor-pointer transition-all" data-lang="ms">
+                    <span>🇲🇾</span>
+                    <span>Bahasa Melayu</span>
+                  </button>
+                  <button type="button" class="lang-pill-btn flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl border border-borderLight hover:border-primary text-[11px] font-semibold text-textDark cursor-pointer transition-all" data-lang="ta">
+                    <span>🇮🇳</span>
+                    <span>தமிழ் (Tamil)</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Contact Information Group -->
+          <div class="space-y-1.5">
+            <p class="text-[10px] uppercase font-bold tracking-wider text-textMuted/90 px-1" data-i18n="account_contact_profile">Contact &amp; Profile</p>
+            <div class="p-3.5 rounded-xl bg-bgPure border border-borderLight space-y-2.5 shadow-2xs">
+              <div class="flex items-center justify-between">
+                <span class="text-textMuted" data-i18n="account_email">Email</span>
+                <div class="flex items-center gap-1.5">
+                  <span id="account-modal-email" class="font-medium text-textDark text-[11.5px]" data-i18n="s6_none">None</span>
+                  <span id="account-modal-email-verified" class="text-[9.5px] text-successColor bg-successColor/10 px-1.5 py-0.2 rounded font-medium" data-i18n="account_verified">Verified</span>
+                </div>
+              </div>
+              <div class="h-px bg-borderLight/50"></div>
+              <div class="flex items-center justify-between">
+                <span class="text-textMuted" data-i18n="account_phone">Phone Number</span>
+                <span id="account-modal-phone" class="font-medium text-textDark text-[11.5px]" data-i18n="s6_not_linked">Not linked</span>
+              </div>
+              <div class="h-px bg-borderLight/50"></div>
+              <div class="flex items-center justify-between">
+                <span class="text-textMuted" data-i18n="account_legal_name">Legal Name</span>
+                <span id="account-modal-fullname" class="font-medium text-textDark text-[11.5px]">Jane Doe</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Security & Cryptography -->
+          <div class="space-y-1.5">
+            <p class="text-[10px] uppercase font-bold tracking-wider text-textMuted/90 px-1" data-i18n="account_sec_enc">Security &amp; Encryption</p>
+            <div class="p-3.5 rounded-xl bg-bgPure border border-borderLight space-y-2 shadow-2xs">
+              <div class="flex items-center justify-between">
+                <span class="text-textMuted" data-i18n="account_password_prot">Password Protection</span>
+                <span class="font-mono text-textDark text-[11px]">••••••••••••</span>
+              </div>
+              <div class="flex items-center justify-between text-[10.5px]">
+                <span class="text-textMuted/80" data-i18n="account_hashing_std">Hashing Standard</span>
+                <span class="text-primary font-mono text-[10px] bg-primary/10 px-1.5 py-0.5 rounded">PBKDF2-SHA256 (260k)</span>
+              </div>
+              <div class="flex items-center justify-between text-[10.5px]">
+                <span class="text-textMuted/80" data-i18n="account_session_sec">Session Security</span>
+                <span class="text-textDark font-sans" data-i18n="account_session_val">30-Day Encrypted Token</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Data Isolation & Privacy Vault -->
+          <div class="space-y-1.5">
+            <p class="text-[10px] uppercase font-bold tracking-wider text-textMuted/90 px-1" data-i18n="account_data_pdpa">Data Separation &amp; PDPA</p>
+            <div class="p-3.5 rounded-xl bg-fillColor/50 border border-highlight/80 space-y-1.5 text-[11.5px]">
+              <div class="flex items-center justify-between">
+                <span class="text-textMuted" data-i18n="account_vault_iso">Vault Isolation</span>
+                <span class="font-semibold text-successColor flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-successColor"></span> <span data-i18n="account_scoped_badge">Scoped To Account</span>
+                </span>
+              </div>
+              <div class="flex items-center justify-between text-[10.5px]">
+                <span class="text-textMuted" data-i18n="account_consent_status">Consent Status</span>
+                <span class="text-textDark font-medium">PDPA Singapore v1.0</span>
+              </div>
+              <p class="text-[10.5px] text-textMuted leading-relaxed pt-1 border-t border-borderLight/50" data-i18n="account_pdpa_note">
+                Your memorial files and quotes are strictly partitioned. No other family can view your arrangement.
+              </p>
+            </div>
+          </div>
+
+          <!-- 5. Actions & Preferences -->
+          <div class="space-y-2 pt-1">
+            <button type="button" class="btn-open-terms-modal w-full py-2.5 px-3 rounded-xl bg-fillColor hover:bg-highlight/40 border border-highlight text-xs font-semibold text-textDark transition-all cursor-pointer flex items-center justify-between">
+              <span class="flex items-center gap-2">
+                <span>📄</span>
+                <span data-i18n="terms_privacy_link">Terms of Service &amp; Privacy Notice</span>
+              </span>
+              <span class="text-textMuted">&rarr;</span>
+            </button>
+
+            <button type="button" id="btn-clear-cache"
+              class="w-full py-2 px-3 rounded-xl bg-bgPure hover:bg-fillColor border border-borderLight text-[11px] font-medium text-textMuted hover:text-textDark transition-all cursor-pointer flex items-center justify-between">
+              <span data-i18n="reset_draft_btn">🧹 Reset Local Arrangement Draft</span>
+              <span class="text-[10px] text-textMuted" data-i18n="clear_wip_btn">Clear WIP</span>
+            </button>
+          </div>
+
+          <!-- Sign Out Button -->
+          <div class="pt-2 pb-4">
+            <button type="button" id="btn-do-logout"
+              class="w-full py-3 px-4 rounded-xl bg-primary/10 hover:bg-primary/20 border border-primary/30 text-xs font-serif font-bold text-primary transition-all cursor-pointer flex items-center justify-center gap-2">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+              </svg>
+              <span id="account-modal-logout-text" data-i18n="sign_out_btn">Sign Out</span>
+            </button>
+          </div>
+
+        </section>
+
+
+    </div>
+
+    <!-- Bottom Navigation Bar (Visible once login is completed) -->
+    <nav id="app-nav"
+      class="hidden bg-[#FAF5F2] border-t border-highlight/70 px-4 pt-2.5 pb-6 flex items-center justify-between z-50 relative flex-shrink-0">
+
+      <button data-tab="hub"
+        class="nav-tab flex-1 flex flex-col items-center justify-center text-primary transition-all">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+        </svg>
+        <span class="text-[9px] font-semibold mt-0.5 tracking-wide" data-i18n="nav_hub">Family Hub</span>
+      </button>
+
+      <button data-tab="chat"
+        class="nav-tab flex-1 flex flex-col items-center justify-center text-textMuted hover:text-primary transition-all">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+          <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+        </svg>
+        <span class="text-[9px] font-semibold mt-0.5 tracking-wide" data-i18n="nav_chat">AI Assistant</span>
+      </button>
+
+      <button data-tab="planner"
+        class="nav-tab flex-1 flex flex-col items-center justify-center text-textMuted hover:text-primary transition-all">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+          <path
+            d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" />
+        </svg>
+        <span class="text-[9px] font-semibold mt-0.5 tracking-wide" data-i18n="nav_planner">Planner</span>
+      </button>
+
+      <button data-tab="esign"
+        class="nav-tab flex-1 flex flex-col items-center justify-center text-textMuted hover:text-primary transition-all">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+          <path d="M11.3 22.6l-8.6-8.6 1.4-1.4 7.2 7.2 12-12 1.4 1.4z" />
+        </svg>
+        <span class="text-[9px] font-semibold mt-0.5 tracking-wide" data-i18n="nav_esign">E-Sign</span>
+      </button>
+
+      <button data-tab="account" id="nav-tab-account"
+        class="nav-tab flex-1 flex flex-col items-center justify-center text-textMuted hover:text-primary transition-all cursor-pointer">
+        <svg class="w-5 h-5 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+        </svg>
+        <span class="text-[9px] font-semibold mt-0.5 tracking-wide" data-i18n="nav_account">Account</span>
+      </button>
+
+    </nav>
+
+
+    <!-- Obituary Modal (absolute, pinned inside the device frame so it does
+         not scroll with the screen and does not spill outside the phone) -->
+    <div id="obituary-modal"
+      class="absolute inset-0 bg-textDark/75 z-[9999] flex flex-col justify-end opacity-0 pointer-events-none transition-all duration-300">
+      <!-- Modal Drawer Sheet -->
+      <div
+        class="bg-bgPure rounded-t-[28px] p-6 space-y-4 border-t border-highlight/50 transform translate-y-full transition-transform duration-300 ease-out isolate"
+        id="obituary-modal-sheet">
+
+        <div class="flex justify-between items-center">
+          <div>
+            <h4 class="font-serif font-bold text-base text-textDark" data-i18n="obituary_modal_title">Draft Obituary Writer</h4>
+            <span class="text-[9px] bg-primary/10 text-primary px-2 py-0.5 rounded-full font-semibold">AI
+              Generated</span>
+          </div>
+          <button id="btn-close-obituary"
+            class="w-8 h-8 rounded-full bg-fillColor flex items-center justify-center text-textMuted hover:text-textDark transition-all outline-none">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+            </svg>
+          </button>
+        </div>
+
+        <p class="text-xs text-textMuted leading-relaxed" data-i18n="obituary_modal_sub">Here is a respectful memorial notice generated using your current arrangement configurations.</p>
+
+        <div id="obituary-preview-box"
+          class="bg-fillColor/30 border border-borderLight rounded-xl p-3 text-xs leading-relaxed text-textDark font-serif italic max-h-48 overflow-y-auto whitespace-pre-wrap select-all">
+          <!-- Injected dynamically -->
+        </div>
+
+        <button id="btn-copy-obituary"
+          class="w-full h-11 bg-primary hover:bg-primaryHover text-white font-sans font-semibold text-sm rounded-xl flex items-center justify-center gap-1.5 transition-all shadow-md shadow-primary/10">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <path
+              d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+          </svg>
+          <span data-i18n="obituary_copy_btn">Copy Obituary Text</span>
+        </button>
+
+        <div class="h-4"></div>
+      </div>
+    </div>
+
+    <!-- Product Details & Photo Showcase Modal (Clean Luxury Architecture) -->
+    <div id="product-preview-modal"
+      class="absolute inset-0 bg-textDark/80 z-[9999] flex flex-col justify-end opacity-0 pointer-events-none transition-opacity duration-300">
+      <!-- Modal Drawer Sheet -->
+      <div
+        class="bg-bgPure rounded-t-[28px] p-5 space-y-3.5 border-t border-highlight/60 transform translate-y-full transition-transform duration-300 ease-out max-h-[85dvh] flex flex-col overflow-hidden shadow-2xl will-change-transform"
+        id="product-preview-sheet">
+
+        <!-- Top Header & Close -->
+        <div class="flex justify-between items-center shrink-0">
+          <div class="flex items-center gap-2">
+            <span id="preview-category-badge"
+              class="text-[9px] uppercase tracking-wider font-semibold px-2.5 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20">
+              Service Tier
+            </span>
+            <span id="preview-price-badge"
+              class="font-sans font-bold text-xs text-textDark bg-fillColor px-2.5 py-0.5 rounded-full border border-borderLight">
+              $4,500
+            </span>
+          </div>
+          <button id="btn-close-product-preview" type="button"
+            class="w-7 h-7 rounded-full bg-fillColor hover:bg-highlight/30 flex items-center justify-center text-textMuted hover:text-textDark transition-all outline-none cursor-pointer">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Scrollable Content Area -->
+        <div class="overflow-y-auto space-y-3.5 pr-1 text-left flex-1" id="preview-scroll-body">
+          <!-- Photographic Image Banner -->
+          <div class="relative w-full h-44 rounded-2xl overflow-hidden bg-nightCard border border-borderLight shadow-sm">
+            <img id="preview-image" src="" alt="Product Photo"
+              class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-textDark/70 via-transparent to-transparent pointer-events-none">
+            </div>
+            <div class="absolute bottom-2.5 left-3 right-3 flex justify-between items-end text-white">
+              <div>
+                <h3 id="preview-title" class="font-serif font-bold text-base tracking-wide leading-tight drop-shadow-sm">
+                  Deluxe Dignity Service</h3>
+                <p id="preview-subtitle" class="text-[10px] text-white/80 font-sans mt-0.5">Mercedes-Benz Hearse & Floral
+                  Styling</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <p id="preview-desc" class="text-xs text-textMuted leading-relaxed font-sans"></p>
+
+          <!-- Specifications Grid -->
+          <div class="bg-fillColor/40 border border-borderLight/60 rounded-xl p-3 space-y-2">
+            <div
+              class="text-[10px] uppercase font-bold text-textDark tracking-wider border-b border-borderLight/40 pb-1 flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18" />
+              </svg>
+              <span data-i18n="tier_modal_specs">Specifications & Details</span>
+            </div>
+            <div id="preview-specs-grid" class="grid grid-cols-2 gap-2 text-[11px]">
+              <!-- Injected dynamically -->
+            </div>
+          </div>
+
+          <!-- Inclusions List -->
+          <div class="space-y-1.5">
+            <div class="text-[10px] uppercase font-bold text-textDark tracking-wider flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5 text-secondary" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+              <span data-i18n="tier_modal_inclusions">Inclusions & Features</span>
+            </div>
+            <ul id="preview-inclusions-list" class="space-y-1.5 text-xs text-textDark font-sans">
+              <!-- Injected dynamically -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Action Selection Button -->
+        <button id="btn-select-preview-product" type="button"
+          class="w-full h-11 bg-primary hover:bg-primaryHover text-white font-serif font-bold text-xs rounded-xl flex items-center justify-center gap-2 transition-all shadow-md shadow-primary/10 cursor-pointer shrink-0">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="20 6 9 17 4 12" />
+          </svg>
+          <span id="preview-select-btn-text" data-i18n="tier_modal_select_btn">Select This Option</span>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- MODAL: TERMS & PRIVACY NOTICE (IN-PHONE)   -->
+    <!-- ========================================== -->
+    <div id="terms-modal"
+      class="absolute inset-0 bg-textDark/80 z-[9999] flex flex-col justify-end opacity-0 pointer-events-none transition-opacity duration-300">
+      <div id="terms-modal-sheet"
+        class="bg-[#FFFDFB] rounded-t-[28px] p-5 space-y-3.5 border-t border-highlight/80 max-h-[85%] flex flex-col overflow-hidden shadow-2xl transform translate-y-full transition-transform duration-300 ease-out isolate will-change-transform">
+        
+        <!-- Drag Handle -->
+        <div class="w-10 h-1 rounded-full bg-borderLight/90 mx-auto shrink-0 -mt-1"></div>
+
+        <!-- Header -->
+        <div class="flex items-center justify-between pb-2 border-b border-borderLight/60 shrink-0">
+          <div>
+            <h3 class="font-serif font-bold text-[16px] text-textDark leading-tight" data-i18n="terms_terms_amp_privacy_notice">Terms &amp; Privacy Notice</h3>
+            <p class="text-[11px] text-textMuted font-sans" data-i18n="terms_singapore_pdpa_compliance">Singapore PDPA Compliance</p>
+          </div>
+          <button id="btn-close-terms-modal" type="button" data-i18n-aria="btn_close_terms_aria_close_terms" aria-label="Close Terms"
+            class="w-7 h-7 rounded-full bg-fillColor hover:bg-highlight/40 border border-borderLight text-textMuted hover:text-textDark flex items-center justify-center transition-colors cursor-pointer outline-none">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Scrollable Terms Body -->
+        <div class="overflow-y-auto space-y-3.5 pr-1 font-sans text-xs leading-relaxed text-textDark flex-1 text-left" id="terms-modal-body">
+          <!-- Dynamic terms injected via API -->
+        </div>
+
+        <!-- Footer -->
+        <div class="pt-2 border-t border-borderLight/60 flex items-center justify-between shrink-0">
+          <span class="text-[10px] text-textMuted font-sans">v1.0 &middot; 14 Aug 2026</span>
+          <button type="button" id="btn-dismiss-terms-modal"
+            class="px-4 py-2 rounded-xl bg-primary hover:bg-primaryHover text-white font-serif font-semibold text-xs transition-colors cursor-pointer">
+            Close Notice
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- MODAL: REQUEST A FUNERAL CONSULTANT FORM   -->
+    <!-- ========================================== -->
+    <div id="consultant-modal"
+      class="absolute inset-0 bg-[#1A1614]/85 z-[9999] flex items-center justify-center p-3 opacity-0 pointer-events-none transition-all duration-300">
+      <div
+        class="relative bg-[#FFFDFB] rounded-[24px] shadow-2xl border border-highlight/80 w-full max-w-[360px] overflow-hidden flex flex-col max-h-[92%] transition-all duration-300 transform scale-100 isolate">
+        
+        <!-- Top Decorative Ambient Glow -->
+        <div class="absolute top-0 left-0 right-0 h-28 pointer-events-none bg-gradient-to-b from-highlight/25 via-fillColor/20 to-transparent"></div>
+
+        <!-- Header -->
+        <div class="relative px-5 pt-5 pb-2 text-center shrink-0">
+          <!-- Close Button -->
+          <button id="btn-close-consultant-modal" type="button" data-i18n-aria="btn_close_consultant_aria_close_modal" aria-label="Close modal"
+            class="absolute top-4 right-4 w-7 h-7 rounded-full bg-fillColor/70 hover:bg-fillColor border border-borderLight text-textMuted hover:text-textDark flex items-center justify-center transition-all cursor-pointer text-xs shadow-2xs">
+            ✕
+          </button>
+
+          <!-- Brand Icon Halo -->
+          <div class="w-12 h-12 rounded-full bg-radial from-highlight/40 via-fillColor/60 to-transparent border border-highlight/50 flex items-center justify-center mx-auto mb-2 shadow-xs">
+            <svg class="w-6 h-6 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+
+          <div class="space-y-0.5">
+            <p class="hero-eyebrow text-[10px]" data-i18n="btn_close_consultant_personal_care_assistance">Personal Care Assistance</p>
+            <h3 class="font-serif font-bold text-[18px] tracking-tight text-textDark leading-tight" data-i18n="consultant_modal_title">Request a Funeral Consultant</h3>
+            <p class="font-sans text-[11.5px] text-textMuted leading-relaxed max-w-[17rem] mx-auto pt-0.5" data-i18n="consultant_modal_sub">Our on-call director will reach out to guide your family with compassion and clarity.</p>
+          </div>
+        </div>
+
+        <!-- Form Body -->
+        <form id="consultant-request-form" class="relative px-5 pb-5 pt-1 space-y-3 overflow-y-auto flex-1 font-sans text-xs">
+          
+          <!-- Name Field -->
+          <div>
+            <label for="consultant-form-name"
+              class="block text-[10.5px] font-semibold uppercase tracking-[0.08em] text-textMuted mb-1 flex items-center justify-between">
+              <span data-i18n="consultant_field_name">Your Name</span>
+              <span class="text-primary font-serif font-bold text-[12px]">*</span>
+            </label>
+            <div class="relative flex items-center">
+              <span class="absolute left-3 text-textMuted/70 pointer-events-none">
+                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </span>
+              <input type="text" id="consultant-form-name" required maxlength="60"
+                class="w-full h-10 pl-9 pr-3 rounded-xl border border-highlight bg-bgPure font-sans text-[13px] text-textDark outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all placeholder:text-textMuted/50 shadow-2xs"
+                data-i18n-placeholder="btn_close_consultant_ph_e_g_kelvin_tan" placeholder="e.g. Kelvin Tan" autocomplete="name">
+            </div>
+          </div>
+
+          <!-- Phone Field -->
+          <div>
+            <label for="consultant-form-phone"
+              class="block text-[10.5px] font-semibold uppercase tracking-[0.08em] text-textMuted mb-1 flex items-center justify-between">
+              <span data-i18n="consultant_field_phone">Phone Number</span>
+              <span class="text-primary font-serif font-bold text-[12px]">*</span>
+            </label>
+            <div class="relative flex items-center">
+              <span class="absolute left-3 text-textMuted/70 pointer-events-none">
+                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </span>
+              <input type="tel" id="consultant-form-phone" required maxlength="25"
+                class="w-full h-10 pl-9 pr-3 rounded-xl border border-highlight bg-bgPure font-sans text-[13px] text-textDark outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all placeholder:text-textMuted/50 shadow-2xs"
+                placeholder="e.g. +65 9123 4567" autocomplete="tel">
+            </div>
+          </div>
+
+          <!-- Email Field -->
+          <div>
+            <label for="consultant-form-email"
+              class="block text-[10.5px] font-semibold uppercase tracking-[0.08em] text-textMuted mb-1 flex items-center justify-between">
+              <span data-i18n="consultant_field_email">Email Address</span>
+              <span class="text-[9.5px] text-textMuted/70 font-normal font-sans tracking-normal capitalize" data-i18n="btn_close_consultant_optional">(Optional)</span>
+            </label>
+            <div class="relative flex items-center">
+              <span class="absolute left-3 text-textMuted/70 pointer-events-none">
+                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </span>
+              <input type="email" id="consultant-form-email" maxlength="80"
+                class="w-full h-10 pl-9 pr-3 rounded-xl border border-highlight bg-bgPure font-sans text-[13px] text-textDark outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all placeholder:text-textMuted/50 shadow-2xs"
+                data-i18n-placeholder="btn_close_consultant_ph_e_g_kelvin_example_sg" placeholder="e.g. kelvin@example.sg" autocomplete="email">
+            </div>
+          </div>
+
+          <!-- Reason Field -->
+          <div>
+            <label for="consultant-form-reason"
+              class="block text-[10.5px] font-semibold uppercase tracking-[0.08em] text-textMuted mb-1 flex items-center justify-between">
+              <span data-i18n="btn_close_consultant_reason_for_request">Reason for Request</span>
+              <span class="text-[9.5px] text-textMuted/70 font-normal font-sans tracking-normal capitalize" data-i18n="btn_close_consultant_optional_2">(Optional)</span>
+            </label>
+            <textarea id="consultant-form-reason" rows="2" maxlength="300"
+              class="w-full p-2.5 rounded-xl border border-highlight bg-bgPure font-sans text-[12.5px] text-textDark outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all placeholder:text-textMuted/50 shadow-2xs leading-relaxed resize-none"
+              data-i18n-placeholder="btn_close_consultant_ph_e_g_inquiring_about_buddhist" placeholder="e.g. Inquiring about Buddhist 3-day coordination..."></textarea>
+          </div>
+
+          <!-- Sage Context Handoff Card -->
+          <div class="p-2.5 bg-sage-tint/80 rounded-xl border border-sage-soft/60 text-textDark/90 text-[11px] leading-relaxed flex items-start gap-2.5 shadow-2xs">
+            <div class="w-5 h-5 rounded-md bg-white border border-sage-soft text-successColor flex items-center justify-center shrink-0 mt-0.5 shadow-2xs">
+              <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 12 11 14 15 10"></polyline>
+              </svg>
+            </div>
+            <div class="flex-1">
+              <span class="font-semibold text-textDark block text-[11px] mb-0.5" data-i18n="btn_close_consultant_ai_conversation_handoff">AI Conversation Handoff</span>
+              <span class="text-textMuted text-[10px] leading-normal block">
+                Active chat log &amp; selections attached automatically for director review.
+              </span>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="pt-1">
+            <button type="submit" id="btn-submit-consultant-form"
+              class="w-full min-h-[44px] py-3 px-4 bg-primary hover:bg-primaryHover text-white font-serif font-semibold text-[14px] leading-snug rounded-xl transition-all shadow-md shadow-primary/20 flex items-center justify-center gap-2 text-center cursor-pointer">
+              <span data-i18n="consultant_submit_btn">Submit & Connect with Director</span>
+              <svg class="w-3.5 h-3.5 fill-current flex-shrink-0" viewBox="0 0 24 24">
+                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- FAMILY PORTAL LOADING SCREEN (CANDLE)      -->
+    <!-- ========================================== -->
+    <div id="family-loading-overlay" aria-hidden="true">
+      <div class="candle-sanctuary">
+        <!-- Ambient Breathing Aura -->
+        <div class="candle-halo"></div>
+        
+        <!-- Serene Candle Flame & Body -->
+        <div class="candle-stage">
+          <div class="candle-wick"></div>
+          <div class="candle-flame">
+            <div class="flame-glow-core"></div>
+          </div>
+          <div class="candle-body">
+            <div class="candle-wax-highlight"></div>
+          </div>
+          <div class="candle-base"></div>
+        </div>
+        
+        <!-- Gentle Floating Embers -->
+        <div class="candle-ember ember-1"></div>
+        <div class="candle-ember ember-2"></div>
+        <div class="candle-ember ember-3"></div>
+      </div>
+
+      <!-- Reassuring Message & Progress -->
+      <div class="family-loading-text-wrap">
+        <p id="family-loading-title" class="family-loading-title" data-i18n="loading_family_title">Take a quiet breath...</p>
+        <p id="family-loading-sub" class="family-loading-sub" data-i18n="hero_eyebrow">Solace Dignity Care &middot; Singapore</p>
+        <div class="family-loading-bar-track">
+          <div class="family-loading-bar-fill"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- QUOTE GENERATION LOADING SCREEN (QUILL)    -->
+    <!-- ========================================== -->
+    <div id="quote-loading-overlay" aria-hidden="true">
+      <div class="quill-sanctuary">
+        <div class="quill-card">
+          <svg class="quill-svg" viewBox="0 0 180 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Ambient Glow under Document -->
+            <rect x="18" y="14" width="144" height="102" rx="12" fill="#1B1410" stroke="#8C4E36" stroke-width="1.5" opacity="0.95" />
+            <rect x="23" y="19" width="134" height="92" rx="8" fill="#241B16" stroke="#DDAE8F" stroke-width="1" stroke-dasharray="3 3" opacity="0.8" />
+            
+            <!-- Document Header & Lines -->
+            <circle cx="36" cy="34" r="4" fill="#BF7A54" opacity="0.8" />
+            <line x1="46" y1="34" x2="96" y2="34" stroke="#DDAE8F" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+            <line x1="34" y1="48" x2="144" y2="48" stroke="#AD9C91" stroke-width="1.5" stroke-linecap="round" opacity="0.35" />
+            <line x1="34" y1="62" x2="130" y2="62" stroke="#AD9C91" stroke-width="1.5" stroke-linecap="round" opacity="0.35" />
+            
+            <!-- Official Quotation Seal Stamp on Paper -->
+            <circle cx="136" cy="34" r="7" fill="none" stroke="#DDAE8F" stroke-width="1" opacity="0.5" />
+            <text x="136" y="37" font-family="'Playfair Display', serif" font-size="8" font-weight="bold" fill="#DDAE8F" text-anchor="middle" opacity="0.7">S</text>
+
+            <!-- Animated Golden Signature Stroke (pathLength=100 for exact percentage sync) -->
+            <path class="quill-stroke" d="M 34 88 C 48 72, 60 102, 74 84 C 88 66, 104 98, 120 80 C 130 72, 138 78, 146 76" stroke="#F4D399" stroke-width="2.5" stroke-linecap="round" fill="none" pathLength="100" />
+            
+            <!-- Moving Pen & Quill Assembly (Anchored at Tip 0,0) -->
+            <g class="quill-pen-mover">
+              <!-- Feather Quill Body -->
+              <path d="M 0 -8 C 6 -24, 22 -44, 18 -52 C 12 -54, -2 -38, -1 -8 Z" fill="url(#quillFeatherGrad)" opacity="0.95" />
+              <!-- Feather Spine -->
+              <line x1="0" y1="-8" x2="16" y2="-50" stroke="#FFFDFB" stroke-width="1.2" stroke-linecap="round" opacity="0.85" />
+              <!-- Gold Metallic Nib Collar -->
+              <polygon points="-3,-5 3,-5 2,-8 -2,-8" fill="#F4D399" stroke="#BF7A54" stroke-width="0.7" />
+              <!-- Metallic Gold Nib Tip touching (0, 0) -->
+              <polygon points="0,0 -2.5,-5 2.5,-5" fill="#FFFDFB" stroke="#F4D399" stroke-width="0.8" />
+            </g>
+
+            <!-- Ink Glint Sparkle at the end -->
+            <circle class="quill-sparkle" cx="146" cy="76" r="3" fill="#FFFDFB" />
+
+            <defs>
+              <linearGradient id="quillFeatherGrad" x1="0" y1="0" x2="18" y2="-52" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#DDAE8F" />
+                <stop offset="60%" stop-color="#BF7A54" />
+                <stop offset="100%" stop-color="#8C4E36" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Reassuring Message & Progress -->
+      <div class="family-loading-text-wrap">
+        <p id="quote-loading-title" class="family-loading-title" data-i18n="loading_quote_title">Assembling personalized quotation...</p>
+        <p id="quote-loading-sub" class="family-loading-sub" data-i18n="hero_eyebrow">Solace Dignity Care &middot; Singapore</p>
+        <div class="family-loading-bar-track">
+          <div class="quote-loading-bar-fill"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Simulated Bottom Home Bar Notch -->
+    <div class="home-indicator"></div>
+
+  </div>
+  </div>
+
+  <!-- Formal PDF Viewer & Export Modal -->
+  <div id="pdf-viewer-modal"
+    class="fixed inset-0 bg-textDark/80 backdrop-blur-md z-50 flex items-center justify-center p-2 sm:p-4 md:p-6 opacity-0 pointer-events-none transition-all duration-300">
+    <div
+      class="bg-cardBg rounded-2xl sm:rounded-3xl shadow-2xl border border-highlight/50 w-full max-w-2xl max-h-[96vh] sm:max-h-[90vh] flex flex-col overflow-hidden">
+      <!-- Modal Header Bar -->
+      <div class="px-4 sm:px-6 py-3 sm:py-3.5 bg-fillColor border-b border-borderLight flex items-center justify-between">
+        <div class="flex items-center gap-2.5 sm:gap-3 min-w-0">
+          <div class="w-8 h-8 rounded-full bg-primary/10 flex-shrink-0 flex items-center justify-center text-primary font-bold">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
+            </svg>
+          </div>
+          <div class="min-w-0">
+            <h3 class="font-serif font-bold text-sm sm:text-base text-textDark truncate" data-i18n="pdf_modal_title">Official Formal PDF Document</h3>
+            <p class="text-[10px] sm:text-xs text-textMuted font-mono truncate" data-i18n="pdf_modal_sub">QT-2026-SOLACE-PDF • Executed &amp; Digitally Sealed</p>
+          </div>
+        </div>
+        <button id="btn-close-pdf-modal" type="button"
+          class="w-8 h-8 rounded-full bg-fillColor hover:bg-highlight/30 text-textMuted hover:text-textDark flex-shrink-0 flex items-center justify-center transition-all cursor-pointer ml-2">
+          ✕
+        </button>
+      </div>
+
+      <!-- PDF Document Viewer Scroll Area -->
+      <div class="flex-1 overflow-y-auto p-2 sm:p-5 md:p-6 bg-stone-100/90 font-sans" id="pdf-modal-document-body">
+        <!-- Rendered Formal Document Sheet -->
+        <div id="formal-pdf-sheet" class="doc-sheet mx-auto relative">
+
+          <!-- Masthead -->
+          <div class="doc-masthead">
+            <img src="assets/logo.png" alt="Solace Dignity Care" class="doc-mark">
+            <h2 class="doc-house" data-i18n="house_name">Solace Dignity Care</h2>
+            <p class="doc-eyebrow" data-i18n="hero_eyebrow">Singapore Funeral Coordination &amp; Care</p>
+            <div class="doc-rule-full"></div>
+            <p class="doc-doctype" data-i18n="pdf_doc_type">Quotation &amp; Authorisation</p>
+          </div>
+
+          <!-- Reference line -->
+          <div class="doc-refline">
+            <div>
+              <span class="doc-fieldlabel" data-i18n="pdf_ref_label">Reference</span>
+              <span class="doc-mono" id="modal-pdf-quote-id">QT-9812A</span>
+            </div>
+            <div class="text-right">
+              <span class="doc-fieldlabel" data-i18n="pdf_issued_label">Issued</span>
+              <span class="doc-mono" id="modal-pdf-quote-date">29 Jul 2026</span>
+            </div>
+          </div>
+
+          <!-- Parties -->
+          <div class="doc-parties">
+            <div>
+              <span class="doc-fieldlabel" data-i18n="pdf_family_rep_label">Family Representative</span>
+              <strong id="modal-pdf-client-name" class="doc-value">Jane Doe</strong>
+              <span id="modal-pdf-client-phone" class="doc-mono block mt-0.5">+65 9123 4567</span>
+            </div>
+            <div>
+              <span class="doc-fieldlabel" data-i18n="pdf_assigned_coord_label">Assigned Care Coordinator</span>
+              <strong class="doc-value">Hannah</strong>
+              <span class="doc-subtle block mt-0.5" data-i18n="pdf_coord_avail">Available 24 hours</span>
+            </div>
+          </div>
+
+          <!-- Itemised breakdown -->
+          <div class="doc-section">
+            <div class="doc-sectionhead">
+              <span data-i18n="pdf_itemised_breakdown">Itemised Breakdown</span>
+              <span class="doc-rule-inline"></span>
+            </div>
+            <table class="doc-table">
+              <thead>
+                <tr>
+                  <th data-i18n="pdf_th_desc">Description</th>
+                  <th class="text-right" data-i18n="pdf_th_amount">Amount (SGD)</th>
+                </tr>
+              </thead>
+              <tbody id="modal-pdf-items-tbody">
+                <!-- Injected dynamically -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Guarantee -->
+          <div class="doc-note">
+            <span class="doc-fieldlabel" data-i18n="pdf_guarantee_title">Price Transparency Guarantee</span>
+            <span data-i18n="pdf_guarantee_text">Every figure above is taken directly from our published catalogue. No additional or hidden fees will be added without your written authorisation.</span>
+          </div>
+
+          <!-- Signature block -->
+          <div class="doc-signblock">
+            <div class="doc-signline">
+              <div class="doc-sigbox">
+                <img id="modal-pdf-sig-img" src="" alt="Client Signature">
+              </div>
+              <div class="doc-rule-thin"></div>
+              <span class="doc-fieldlabel" data-i18n="pdf_signed_by_rep">Signed by the Family Representative</span>
+              <span class="doc-mono doc-subtle" id="modal-pdf-timestamp" data-i18n="pdf_pending_sig_label">Pending signature</span>
+            </div>
+            <div class="doc-signline">
+              <div class="doc-sigbox doc-sigbox-seal">
+                <span class="doc-seal">SOLACE<br>DIGNITY<br>CARE</span>
+              </div>
+              <div class="doc-rule-thin"></div>
+              <span class="doc-fieldlabel" data-i18n="pdf_behalf_solace">For and on behalf of Solace Dignity Care</span>
+              <span class="doc-subtle" data-i18n="singapore_label">Singapore</span>
+            </div>
+          </div>
+
+          <div class="doc-foot" data-i18n="pdf_doc_foot">
+            Solace Dignity Care &middot; Singapore &middot; This document is a quotation, not an invoice.
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Footer -->
+      <div class="px-4 sm:px-6 py-3 bg-fillColor border-t border-borderLight flex items-center justify-between gap-2">
+        <button id="btn-modal-print-native" type="button"
+          class="px-3.5 sm:px-4 py-2.5 rounded-xl bg-fillColor hover:bg-highlight/30 text-textDark border border-borderLight text-xs sm:text-sm font-semibold flex items-center gap-1.5 transition-all cursor-pointer">
+          <svg class="w-4 h-4 fill-current flex-shrink-0" viewBox="0 0 24 24">
+            <path
+              d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z" />
+          </svg>
+          <span data-i18n="pdf_print_doc_btn">Print Document</span>
+        </button>
+        <button id="btn-modal-download-pdf" type="button"
+          class="px-4 sm:px-5 py-2.5 rounded-xl bg-primary hover:bg-primaryHover text-white text-xs sm:text-sm font-bold shadow-sm flex items-center gap-2 transition-all cursor-pointer">
+          <svg class="w-4 h-4 fill-current flex-shrink-0" viewBox="0 0 24 24">
+            <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+          </svg>
+          <span data-i18n="pdf_download_doc_btn">Download Formal PDF</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- MODAL: ADMIN / DIRECTOR LOGIN GATEWAY      -->
+  <!-- ========================================== -->
+  <div id="admin-login-modal"
+    class="fixed inset-0 bg-night/85 backdrop-blur-xl z-[10000] flex items-center justify-center p-4 opacity-0 pointer-events-none transition-all duration-300">
+    
+    <!-- Outer Card with Ambient Top Glow & Copper Border -->
+    <div
+      class="relative w-full max-w-[420px] rounded-[28px] bg-gradient-to-b from-[#241B17] via-[#1D1613] to-[#15100E] text-cream border border-copper/30 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.85),0_0_35px_rgba(191,122,84,0.15)] overflow-hidden transition-all">
+      
+      <!-- Top Luxury Metallic Accent Line -->
+      <div class="absolute top-0 inset-x-0 h-[2px] bg-gradient-to-r from-transparent via-copper to-transparent"></div>
+
+      <!-- Ambient Glow Behind Brand Crest -->
+      <div class="absolute -top-20 left-1/2 -translate-x-1/2 w-56 h-56 rounded-full bg-gradient-to-b from-copper/20 to-transparent blur-3xl pointer-events-none"></div>
+
+      <!-- Close Button -->
+      <button id="btn-close-admin-login" type="button" aria-label="Close modal"
+        class="absolute top-4 right-4 z-20 w-8 h-8 rounded-full bg-white/5 hover:bg-white/15 border border-white/10 text-creamMuted hover:text-cream flex items-center justify-center transition-all duration-200 cursor-pointer group">
+        <svg class="w-3.5 h-3.5 group-hover:rotate-90 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <div class="relative px-7 pt-8 pb-7 space-y-6">
+        <!-- Top Crest & Brand Header -->
+        <div class="text-center space-y-3">
+          <!-- Dynamic Crest Badge -->
+          <div class="relative mx-auto w-16 h-16 flex items-center justify-center">
+            <div class="absolute inset-0 rounded-2xl bg-copper/20 animate-pulse blur-md"></div>
+            <div class="relative w-14 h-14 rounded-2xl bg-gradient-to-b from-nightCard to-night border border-copper/40 p-2 shadow-inner shadow-copper/25 flex items-center justify-center">
+              <img src="assets/logo.png" alt="Solace Dignity Care" class="w-full h-full object-contain filter drop-shadow-[0_2px_8px_rgba(191,122,84,0.4)]">
+            </div>
+          </div>
+
+          <div class="space-y-1">
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-copper/10 border border-copper/30 text-copperSoft text-[10px] font-mono font-semibold tracking-wider uppercase">
+              <svg class="w-3 h-3 text-copperSoft" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+              <span>Director Operations Gateway</span>
+            </div>
+            <h3 class="font-serif font-bold text-[20px] text-cream tracking-tight">Executive Console</h3>
+            <p class="text-[11.5px] text-creamMuted font-sans">Authorized bereavement triage &amp; live escalation command</p>
+          </div>
+        </div>
+
+        <!-- Login Form -->
+        <form id="admin-login-form" class="space-y-4 font-sans">
+          <!-- Error Alert Banner -->
+          <div id="admin-login-error"
+            class="hidden px-3.5 py-2.5 rounded-xl bg-ember/15 border border-ember/40 text-[11.5px] leading-relaxed text-copperSoft flex items-center gap-2">
+            <svg class="w-4 h-4 text-ember shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span>Staff ID or password didn't match. Please verify credentials.</span>
+          </div>
+
+          <!-- Staff ID Field -->
+          <div class="space-y-1.5">
+            <label for="admin-input-id" class="block text-[10px] font-mono font-semibold uppercase tracking-wider text-creamMuted">Staff ID / Secure Identity</label>
+            <div class="relative group">
+              <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-creamMuted/70 group-focus-within:text-copperSoft transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+              </div>
+              <input type="text" id="admin-input-id" value="admin@solace.sg" autocomplete="off" required
+                class="w-full h-11 pl-10 pr-4 bg-night/90 border border-white/[0.08] rounded-xl text-[13px] text-cream placeholder:text-creamMuted/40 outline-none focus:border-copper/70 focus:ring-1 focus:ring-copper/40 transition-all font-sans"
+                placeholder="director@solace.sg">
+            </div>
+          </div>
+
+          <!-- Password Field with Toggle -->
+          <div class="space-y-1.5">
+            <label for="admin-input-password" class="block text-[10px] font-mono font-semibold uppercase tracking-wider text-creamMuted">Console Passcode</label>
+            <div class="relative group">
+              <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-creamMuted/70 group-focus-within:text-copperSoft transition-colors">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+              </div>
+              <input type="password" id="admin-input-password" placeholder="Enter admin token" autocomplete="off" required
+                class="w-full h-11 pl-10 pr-11 bg-night/90 border border-white/[0.08] rounded-xl text-[13px] text-cream placeholder:text-creamMuted/40 outline-none focus:border-copper/70 focus:ring-1 focus:ring-copper/40 transition-all font-sans"
+                placeholder="••••••••">
+              <button type="button" id="btn-toggle-admin-password" class="absolute inset-y-0 right-0 pr-3.5 flex items-center text-creamMuted/70 hover:text-cream text-xs cursor-pointer transition-colors" title="Toggle password visibility">
+                <svg id="admin-pw-eye-open" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                <svg id="admin-pw-eye-closed" class="w-4 h-4 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l18 18"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit"
+            class="w-full h-11 mt-1 rounded-xl bg-gradient-to-r from-copper via-copperSoft to-copper text-night font-serif font-bold text-[13px] tracking-wider uppercase shadow-lg shadow-copper/25 hover:shadow-copper/40 hover:brightness-105 active:scale-[0.99] transition-all cursor-pointer flex items-center justify-center gap-2">
+            <span>Authenticate &amp; Enter Console</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+        </form>
+
+        <!-- Fast Demo Access Chips -->
+        <div class="pt-4 border-t border-white/[0.08] space-y-2.5">
+          <div class="flex items-center justify-between text-[9.5px] font-mono uppercase tracking-wider text-creamMuted/70">
+            <span>Fast Director Sign-In</span>
+            <span class="text-copperSoft">1-Click Test Access</span>
+          </div>
+
+          <div class="grid grid-cols-2 gap-2 font-sans">
+            <button type="button" id="btn-quick-admin-login"
+              class="group px-3 py-2 rounded-xl bg-white/[0.04] hover:bg-copper/15 border border-white/[0.08] hover:border-copper/40 transition-all text-left cursor-pointer">
+              <div class="flex items-center gap-2">
+                <div class="w-5 h-5 rounded-md bg-copper/20 text-copperSoft font-mono font-bold text-[10px] flex items-center justify-center shrink-0">MC</div>
+                <div class="truncate">
+                  <div class="text-[11.5px] font-semibold text-cream group-hover:text-copperSoft transition-colors">Marcus Chen</div>
+                  <div class="text-[9px] text-creamMuted">Director On-Call</div>
+                </div>
+              </div>
+            </button>
+
+            <button type="button" id="btn-quick-admin-login-sarah"
+              class="group px-3 py-2 rounded-xl bg-white/[0.04] hover:bg-copper/15 border border-white/[0.08] hover:border-copper/40 transition-all text-left cursor-pointer">
+              <div class="flex items-center gap-2">
+                <div class="w-5 h-5 rounded-md bg-white/10 text-cream font-mono font-bold text-[10px] flex items-center justify-center shrink-0">ST</div>
+                <div class="truncate">
+                  <div class="text-[11.5px] font-semibold text-cream group-hover:text-copperSoft transition-colors">Sarah Tan</div>
+                  <div class="text-[9px] text-creamMuted">Senior Intake</div>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- FULL-SCREEN STAFF OPERATIONS DASHBOARD     -->
+  <!-- ========================================== -->
+  <div id="staff-dashboard-modal"
+    class="fixed inset-0 w-screen h-screen z-[99999] bg-[#120E0C] text-cream flex flex-col overflow-hidden opacity-0 pointer-events-none transition-all duration-300">
+
+    <!-- Atmospheric Deep Mesh Backdrop -->
+    <div class="console-ambient-bg" aria-hidden="true"></div>
+
+    <!-- Enterprise Command Navigation Bar -->
+    <header class="console-layer px-3 sm:px-6 py-2 sm:py-2.5 bg-[#181310]/95 backdrop-blur-xl border-b border-white/[0.08] flex justify-between items-center shrink-0 z-30 gap-2">
+      <!-- Brand & Console Title -->
+      <div class="flex items-center gap-2 sm:gap-3 min-w-0">
+        <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-[#231A15] border border-copper/30 p-1 shadow-inner flex items-center justify-center shrink-0">
+          <img src="assets/logo.png" alt="Solace Dignity Care" class="w-full h-full object-contain filter drop-shadow">
+        </div>
+        <div class="min-w-0">
+          <h2 class="font-serif font-bold text-sm sm:text-[16px] text-cream tracking-tight leading-tight truncate">
+            Executive Operations Console
+          </h2>
+          <p class="text-[9.5px] sm:text-[10px] text-creamMuted/80 font-sans hidden sm:block truncate">
+            24/7 Bereavement Intake &amp; Live Escalation Command
+          </p>
+        </div>
+      </div>
+
+      <!-- Live Heartbeat & Controls -->
+      <div class="flex items-center gap-1.5 sm:gap-3 shrink-0">
+        <!-- Live SLA heartbeat indicator -->
+        <div class="hidden md:flex items-center gap-2 px-2.5 py-1 rounded-lg bg-night/80 border border-white/[0.08] text-[11px] text-creamMuted">
+          <span id="console-live-dot" class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span class="font-medium text-cream font-sans">SLA Active</span>
+          <span class="text-white/20">&bull;</span>
+          <span id="console-last-sync" class="text-copperSoft font-mono text-[10.5px]">synced</span>
+        </div>
+
+        <!-- Director Profile Badge -->
+        <div class="hidden sm:flex items-center gap-2 px-2 py-1 rounded-xl bg-night/60 border border-white/[0.08]">
+          <div class="w-6 h-6 rounded-md bg-copper/20 border border-copper/30 text-copperSoft flex items-center justify-center font-bold text-[11px] font-mono">
+            MC
+          </div>
+          <div class="text-left text-[11px] font-semibold text-cream pr-1">
+            Marcus Chen
+            <span class="block text-[8.5px] font-normal text-creamMuted font-sans">Director On-Call</span>
+          </div>
+        </div>
+
+        <!-- View Switcher Tabs (Escalations vs AI Health) -->
+        <div class="flex items-center gap-0.5 sm:gap-1 p-0.5 rounded-lg bg-night border border-white/[0.08]" id="console-view-tabs">
+          <button data-view="escalations" type="button"
+            class="console-view-tab active px-2.5 sm:px-3 py-1 rounded text-[11px] sm:text-[11.5px] font-semibold bg-copper/25 text-copperSoft border border-copper/40 transition-all cursor-pointer" data-i18n="admin_tab_escalations">
+            Escalations
+          </button>
+          <button data-view="health" type="button"
+            class="console-view-tab px-2.5 sm:px-3 py-1 rounded text-[11px] sm:text-[11.5px] font-semibold text-creamMuted hover:text-cream transition-all cursor-pointer" data-i18n="admin_tab_health">
+            AI Health
+          </button>
+        </div>
+
+        <!-- Admin dashboard is always English — no language selector here -->
+
+
+        <!-- Settings dropdown menu (Sound / Desktop alerts) -->
+        <div class="relative">
+          <button id="btn-console-settings" type="button" class="setting-btn !w-7 !h-7 sm:!w-8 sm:!h-8" aria-haspopup="true" aria-expanded="false" title="Notification preferences">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar1"></div>
+          </button>
+
+          <div id="console-settings-menu" role="menu" aria-labelledby="btn-console-settings">
+            <div class="settings-heading">Notification Controls</div>
+            <button id="btn-toggle-sound" type="button" role="menuitem" aria-pressed="false" class="settings-row">
+              <span class="flex items-center gap-2">
+                <svg class="w-3.5 h-3.5 text-copperSoft" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
+                <span>Audio Alert Chime</span>
+              </span>
+              <span class="settings-state" id="sound-state">Off</span>
+            </button>
+            <button id="btn-enable-alerts" type="button" role="menuitem" class="settings-row">
+              <span class="flex items-center gap-2">
+                <svg class="w-3.5 h-3.5 text-copperSoft" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
+                <span>Desktop Dispatch Alerts</span>
+              </span>
+              <span class="settings-state" id="alerts-state">Off</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Exit Console Button (Return to App) -->
+        <button id="btn-close-staff-dashboard" type="button" title="Exit Operations Console"
+          class="px-2.5 sm:px-3 py-1.5 rounded-xl border border-copper/35 bg-copper/15 hover:bg-copper/25 text-copperSoft text-xs font-semibold transition-all cursor-pointer flex items-center gap-1">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+          <span class="hidden xs:inline sm:inline">Exit</span>
+        </button>
+
+        <!-- Secure Console Sign Out -->
+        <button id="btn-admin-logout" title="Lock console and sign out"
+          class="px-2.5 sm:px-3 py-1.5 rounded-xl border border-white/[0.1] bg-night/80 hover:bg-ember/20 hover:border-ember/60 text-creamMuted hover:text-rose-200 text-xs font-semibold transition-all cursor-pointer flex items-center gap-1">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" /></svg>
+          <span class="hidden sm:inline">Sign Out</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Master-Detail Split-Screen Workspace (Escalations View) -->
+    <div id="console-escalations-view" class="console-layer flex-1 flex flex-col lg:flex-row overflow-hidden min-h-0">
+      
+      <!-- Mobile Sub-Navigation Bar (Visible only on mobile screens < lg) -->
+      <div class="lg:hidden px-3 py-1.5 bg-[#181310] border-b border-white/[0.08] flex items-center justify-between shrink-0" id="mobile-console-subnav">
+        <div class="flex items-center gap-1 p-0.5 rounded-lg bg-night border border-white/[0.08] w-full">
+          <button id="btn-mobile-tab-queue" type="button" class="flex-1 py-1 px-2 rounded text-xs font-semibold bg-copper/25 text-copperSoft border border-copper/40 text-center transition-all cursor-pointer">
+            Triage Queue (<span id="mobile-queue-count">0</span>)
+          </button>
+          <button id="btn-mobile-tab-telemetry" type="button" class="flex-1 py-1 px-2 rounded text-xs font-semibold text-creamMuted hover:text-cream text-center transition-all cursor-pointer">
+            Shift Telemetry
+          </button>
+        </div>
+      </div>
+
+      <!-- LEFT PANE: Active Bereavement Triage Feed (Flexible Width) -->
+      <section id="console-left-pane" class="flex-1 flex flex-col min-w-0 border-b lg:border-b-0 overflow-hidden bg-black/20">
+        
+        <!-- Sticky Sub-Header: Triage Queue Filters & Search -->
+        <div class="px-3 sm:px-6 py-2 sm:py-2.5 border-b border-white/[0.08] bg-[#140F0D]/90 backdrop-blur-md flex flex-wrap items-center justify-between gap-2 sm:gap-3 shrink-0">
+          
+          <!-- Filter Tabs -->
+          <div class="flex items-center gap-1 p-0.5 rounded-lg bg-night border border-white/[0.08] overflow-x-auto max-w-full" id="staff-filter-tabs">
+            <button data-filter="all"
+              class="staff-tab active px-2.5 sm:px-3 py-1 rounded text-[11px] sm:text-[11.5px] font-semibold bg-copper/25 text-copperSoft border border-copper/40 transition-all cursor-pointer whitespace-nowrap">
+              All
+            </button>
+            <button data-filter="WAITING"
+              class="staff-tab px-2.5 sm:px-3 py-1 rounded text-[11px] sm:text-[11.5px] font-semibold text-creamMuted hover:text-cream transition-all cursor-pointer flex items-center gap-1.5 whitespace-nowrap">
+              <span class="w-1.5 h-1.5 rounded-full bg-rose-400"></span>
+              Waiting
+            </button>
+            <button data-filter="IN PROGRESS"
+              class="staff-tab px-2.5 sm:px-3 py-1 rounded text-[11px] sm:text-[11.5px] font-semibold text-creamMuted hover:text-cream transition-all cursor-pointer flex items-center gap-1.5 whitespace-nowrap">
+              <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+              In Progress
+            </button>
+            <button data-filter="RESOLVED"
+              class="staff-tab px-2.5 sm:px-3 py-1 rounded text-[11px] sm:text-[11.5px] font-semibold text-creamMuted hover:text-cream transition-all cursor-pointer flex items-center gap-1.5 whitespace-nowrap">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+              Resolved
+            </button>
+          </div>
+
+          <!-- Instant Search & Refresh -->
+          <div class="flex items-center gap-2 w-full sm:w-auto">
+            <div class="relative flex-1 sm:min-w-[200px]">
+              <div class="absolute inset-y-0 left-0 pl-2.5 flex items-center pointer-events-none text-creamMuted/60">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              </div>
+              <input type="text" id="staff-search-input"
+                class="w-full h-8 pl-8 pr-3 bg-night/90 border border-white/[0.1] rounded-lg text-xs text-cream placeholder:text-creamMuted/50 outline-none focus:border-copper/70 transition-all font-sans"
+                placeholder="Filter family, phone or quote...">
+            </div>
+
+            <button id="btn-refresh-staff-list" type="button"
+              class="h-8 px-2.5 sm:px-3 rounded-lg border border-white/[0.1] bg-night/60 hover:bg-copper/15 hover:border-copper/40 text-creamMuted hover:text-copperSoft flex items-center gap-1.5 transition-all text-xs font-semibold cursor-pointer shrink-0">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+              <span class="hidden sm:inline">Sync</span>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Dossier Cards Scrollable Feed -->
+        <div id="staff-requests-list" class="flex-1 overflow-y-auto p-3 sm:p-5 space-y-3 font-sans custom-console-scroll">
+          <!-- Injected dynamically by app.js -->
+        </div>
+
+      </section>
+
+      <!-- DRAGGABLE SPLITTER RESIZER (Desktop) -->
+      <div id="console-drag-handle" class="console-resizer hidden lg:block" title="Drag to resize panel"></div>
+
+      <!-- RIGHT PANE: Resizable Dual-View Panel (Telemetry & WhatsApp Live Chat) -->
+      <aside id="console-right-panel" class="hidden lg:flex w-full lg:w-[420px] min-w-[320px] max-w-[850px] shrink-0 bg-[#16110E]/95 backdrop-blur-md flex-col overflow-hidden font-sans border-t lg:border-t-0 border-white/[0.08] min-h-0 flex-1 lg:flex-initial h-full">
+        
+        <!-- SUB-VIEW 1: Pinned Telemetry & Shift Overview -->
+        <div id="telemetry-view-container" class="flex-1 overflow-y-auto p-3.5 sm:p-5 space-y-3.5 custom-console-scroll min-h-0">
+          
+          <!-- Section 1: Escalation Queue Telemetry Cards (Interactive KPI Triggers) -->
+          <div class="space-y-2.5">
+            <div class="flex items-center justify-between text-[10px] font-mono uppercase tracking-wider text-creamMuted">
+              <span>Escalation Queue Telemetry</span>
+              <span class="text-emerald-400 font-bold flex items-center gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                Live
+              </span>
+            </div>
+
+            <!-- Waiting Triage Card -->
+            <div id="stat-card-waiting" class="stat-kpi-card group cursor-pointer relative overflow-hidden rounded-xl p-3 sm:p-3.5 bg-[#1C1512]/85 border border-white/[0.08] hover:border-rose-500/50 shadow-md transition-all duration-200 hover:-translate-y-0.5">
+              <div class="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-transparent via-rose-500/50 to-transparent"></div>
+              <div class="flex justify-between items-start">
+                <div>
+                  <span class="block font-mono text-[9px] uppercase font-bold tracking-wider text-rose-300/80">Immediate Action</span>
+                  <div class="text-[11.5px] font-semibold text-cream/90 font-sans mt-0.5">Awaiting Director Takeover</div>
+                </div>
+                <div class="w-7 h-7 rounded-lg bg-rose-500/10 border border-rose-500/30 text-rose-300 flex items-center justify-center">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+                </div>
+              </div>
+              <div class="mt-2 flex items-baseline justify-between">
+                <div id="staff-count-waiting" class="text-[24px] sm:text-[26px] font-mono font-bold text-white tracking-tight leading-none">0</div>
+                <span class="text-[9px] sm:text-[9.5px] font-mono font-semibold px-2 py-0.5 rounded bg-rose-500/15 text-rose-300 border border-rose-500/30">Action Required</span>
+              </div>
+            </div>
+
+            <!-- Active Sessions Card -->
+            <div id="stat-card-progress" class="stat-kpi-card group cursor-pointer relative overflow-hidden rounded-xl p-3 sm:p-3.5 bg-[#1C1512]/85 border border-white/[0.08] hover:border-amber-500/50 shadow-md transition-all duration-200 hover:-translate-y-0.5">
+              <div class="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-transparent via-amber-500/50 to-transparent"></div>
+              <div class="flex justify-between items-start">
+                <div>
+                  <span class="block font-mono text-[9px] uppercase font-bold tracking-wider text-amber-300/80">Active Sessions</span>
+                  <div class="text-[11.5px] font-semibold text-cream/90 font-sans mt-0.5">In Live Consultation</div>
+                </div>
+                <div class="w-7 h-7 rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-300 flex items-center justify-center">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+                </div>
+              </div>
+              <div class="mt-2 flex items-baseline justify-between">
+                <div id="staff-count-in-progress" class="text-[24px] sm:text-[26px] font-mono font-bold text-white tracking-tight leading-none">0</div>
+                <span class="text-[9px] sm:text-[9.5px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500/15 text-amber-300 border border-amber-500/30">In Progress</span>
+              </div>
+            </div>
+
+            <!-- Completed Cases Card -->
+            <div id="stat-card-resolved" class="stat-kpi-card group cursor-pointer relative overflow-hidden rounded-xl p-3 sm:p-3.5 bg-[#1C1512]/85 border border-white/[0.08] hover:border-emerald-500/50 shadow-md transition-all duration-200 hover:-translate-y-0.5">
+              <div class="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-transparent via-emerald-500/50 to-transparent"></div>
+              <div class="flex justify-between items-start">
+                <div>
+                  <span class="block font-mono text-[9px] uppercase font-bold tracking-wider text-emerald-300/80">Completed Cases</span>
+                  <div class="text-[11.5px] font-semibold text-cream/90 font-sans mt-0.5">Arranged &amp; Closed</div>
+                </div>
+                <div class="w-7 h-7 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 flex items-center justify-center">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                </div>
+              </div>
+              <div class="mt-2 flex items-baseline justify-between">
+                <div id="staff-count-resolved" class="text-[24px] sm:text-[26px] font-mono font-bold text-white tracking-tight leading-none">0</div>
+                <span class="text-[9px] sm:text-[9.5px] font-mono font-semibold px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">100% Handled</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: 24/7 Bereavement Dispatch & Shift Monitor -->
+          <div class="rounded-xl bg-[#1C1512]/80 border border-white/[0.08] p-3.5 sm:p-4 space-y-2.5 sm:space-y-3 shadow-md">
+            <div class="flex items-center justify-between pb-2 border-b border-white/[0.06]">
+              <div class="font-mono text-[10px] font-bold uppercase tracking-wider text-cream/90">24/7 Dispatch &amp; Shift Monitor</div>
+              <span class="px-2 py-0.5 rounded text-[9px] font-mono font-semibold bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 uppercase">Shift Active</span>
+            </div>
+
+            <div class="space-y-2 font-sans text-xs">
+              <div class="flex justify-between items-center">
+                <span class="text-creamMuted text-[11px]">Director On-Call</span>
+                <span class="font-semibold text-cream">Marcus Chen (L1)</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-creamMuted text-[11px]">SLA Response Health</span>
+                <span class="font-mono font-semibold text-emerald-400 text-[11.5px]">98.6% &bull; Optimal</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-creamMuted text-[11px]">Emergency Hotline</span>
+                <span class="font-semibold text-copperSoft font-mono text-[11.5px]">+65 6789 0000</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-creamMuted text-[11px]">Intake Engine</span>
+                <span class="font-mono text-[11px] text-cream/80">FastAPI SSE v2.4</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- SUB-VIEW 2: WhatsApp-Style Live Takeover Terminal (Directly Embedded) -->
+        <div id="whatsapp-chat-container" class="flex-1 flex flex-col overflow-hidden hidden bg-[#100B09] min-h-0 h-full">
+          
+          <!-- WhatsApp Top Header Bar -->
+          <div class="px-3 sm:px-4 py-2.5 sm:py-3 bg-[#1B1411] border-b border-white/[0.1] flex items-center justify-between gap-2.5 sm:gap-3 shrink-0">
+            <div class="flex items-center gap-2.5 sm:gap-3 min-w-0">
+              <!-- Back to Telemetry / Queue button -->
+              <button id="btn-back-to-telemetry" type="button" title="Back to Queue"
+                class="p-1.5 sm:p-2 rounded-xl bg-white/5 hover:bg-copper/20 hover:border-copper/40 border border-white/10 text-creamMuted hover:text-copperSoft transition-all cursor-pointer shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
+              </button>
+
+              <!-- WhatsApp Avatar with Online Indicator -->
+              <div class="relative shrink-0">
+                <div id="staff-chat-avatar"
+                  class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-[#2A1E18] border border-copper/50 text-copperSoft font-mono font-bold text-xs shadow-inner flex items-center justify-center">
+                  GF
+                </div>
+                <span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-400 border-2 border-[#1B1411]"></span>
+              </div>
+
+              <!-- Contact Identity -->
+              <div class="min-w-0 flex-1">
+                <div class="flex items-center gap-1.5 sm:gap-2">
+                  <h4 id="staff-chat-customer-name" class="font-serif font-bold text-sm sm:text-[15px] text-cream truncate leading-tight">Family Intake</h4>
+                  <span id="staff-chat-ticket-id" class="font-mono text-[9.5px] sm:text-[10px] text-copperSoft bg-black/60 border border-copper/30 px-1.5 sm:px-2 py-0.5 rounded font-semibold shrink-0">FR-2026</span>
+                </div>
+                <div class="flex items-center gap-1.5 text-[10.5px] sm:text-[11px] text-emerald-400 font-sans leading-none mt-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span id="staff-chat-status-text" class="font-medium">Active Now</span>
+                  <span class="text-white/20">&bull;</span>
+                  <span id="staff-chat-customer-phone" class="font-mono text-creamMuted/90 truncate">+65 ---- ----</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action: End Consultation / Resolve Button -->
+            <div class="flex items-center gap-1.5 shrink-0">
+              <button id="btn-staff-end-consultation" type="button" title="Resolve consultation"
+                class="px-2.5 sm:px-3 py-1.5 rounded-xl border border-emerald-500/40 bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-300 text-[11px] sm:text-[11.5px] font-mono font-semibold transition-all cursor-pointer flex items-center gap-1 shadow-sm">
+                <svg class="w-3.5 h-3.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                <span>Resolve</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- AI Handover Dossier Mini-Ribbon -->
+          <div id="staff-chat-ai-dossier" class="px-4 py-2 bg-black/50 border-b border-white/[0.08] text-[11.5px] font-sans flex items-center justify-between gap-2.5 shrink-0">
+            <div class="flex items-center gap-2 min-w-0">
+              <span class="px-2 py-0.5 rounded bg-copper/25 border border-copper/30 text-copperSoft text-[9px] font-mono uppercase font-bold shrink-0">AI Dossier</span>
+              <p id="staff-chat-ai-summary" class="text-creamMuted/90 text-[11px] truncate leading-tight">Family requested director consultation.</p>
+            </div>
+            <span id="staff-chat-package-badge" class="px-2 py-0.5 rounded bg-white/[0.06] border border-white/[0.1] text-[9.5px] font-mono text-copperSoft shrink-0 font-medium">Standard</span>
+          </div>
+
+          <!-- Secure Death Certificate Attachment Row -->
+          <div id="staff-chat-doc-row" class="hidden px-4 py-2 bg-[#1E1612] border-b border-copper/25 text-[11.5px] font-sans flex items-center justify-between gap-2.5 shrink-0">
+            <div class="flex items-center gap-2 min-w-0">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 shrink-0"></span>
+              <span id="staff-chat-doc-status" class="text-cream text-[11px] font-medium truncate">Death certificate &middot; uploaded</span>
+            </div>
+            <button id="btn-view-death-cert" type="button" class="px-2.5 py-1 rounded-lg bg-copper/20 hover:bg-copper/35 border border-copper/40 text-copperSoft hover:text-cream text-[10.5px] font-mono font-semibold transition-all cursor-pointer flex items-center gap-1 shrink-0">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+              <span>View</span>
+            </button>
+          </div>
+
+          <!-- WhatsApp Messages Scrollable Thread -->
+          <div id="staff-chat-messages" class="flex-1 overflow-y-auto p-3.5 space-y-2 text-[12px] font-sans whatsapp-wallpaper custom-console-scroll min-h-0">
+            <!-- Messages injected dynamically by app.js -->
+          </div>
+
+          <!-- Quick Canned Command Directives for Directors -->
+          <div class="px-4 py-2.5 bg-[#17110E] border-t border-white/[0.08] flex items-center gap-2 overflow-x-auto custom-console-scroll shrink-0">
+            <span class="text-[10px] font-mono uppercase tracking-wider text-copperSoft shrink-0 font-bold flex items-center gap-1">
+              <svg class="w-3.5 h-3.5 text-copper" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              <span>Quick Directives:</span>
+            </span>
+            <button type="button" class="directive-chip text-[11px] py-1 px-3 rounded-full font-medium shadow-sm transition-all" data-msg="Good day, I am Marcus Chen, Director on-call with Solace Dignity Care. I am reviewing your arrangement and here to assist you.">
+              👋 Executive Intro
+            </button>
+            <button type="button" class="directive-chip text-[11px] py-1 px-3 rounded-full font-medium shadow-sm transition-all" data-msg="I am placing a direct call to your contact number right now. Please keep your line available.">
+              📞 Direct Call
+            </button>
+            <button type="button" class="directive-chip text-[11px] py-1 px-3 rounded-full font-medium shadow-sm transition-all" data-msg="I have reviewed your custom package quotation and confirmed the allocation. Everything is locked in.">
+              📋 Confirm Quote
+            </button>
+            <button type="button" class="directive-chip text-[11px] py-1 px-3 rounded-full font-medium shadow-sm transition-all" data-msg="Our senior transport and transfer team is placed on standby. We are ready upon your confirmation.">
+              🚑 Standby Transport
+            </button>
+          </div>
+
+          <!-- WhatsApp Bottom Input Bar (Spacious & Clean) -->
+          <div class="p-3.5 sm:p-4 bg-[#1C1410] border-t border-white/[0.08] flex items-center gap-3 shrink-0">
+            <div class="flex-1 relative">
+              <input type="text" id="staff-chat-text-input"
+                placeholder="Type a message to family (Enter to send)..."
+                maxlength="400"
+                class="w-full h-11 px-4 bg-[#110C09] border border-white/[0.12] focus:border-copper/70 focus:ring-1 focus:ring-copper/30 rounded-2xl text-xs sm:text-[13px] text-cream placeholder:text-creamMuted/45 outline-none transition-all shadow-inner font-sans" />
+            </div>
+            <button id="staff-chat-send-btn" type="button" aria-label="Send message" title="Send Message"
+              class="w-11 h-11 rounded-full bg-gradient-to-tr from-copper via-amber-600 to-copperSoft hover:from-copperSoft hover:to-copper text-white shadow-lg shadow-copper/30 flex items-center justify-center transition-all cursor-pointer shrink-0 hover:scale-105 active:scale-95 border border-copper/40 group">
+              <svg class="w-5 h-5 text-white translate-x-[1px] group-hover:translate-x-[2px] transition-transform" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3 21l18-9L3 3l3 9zm0 0h9" />
+              </svg>
+            </button>
+          </div>
+
+        </div>
+
+      </aside>
+    </div>
+
+    <!-- AI Health & Diagnostics View (Toggled via header tab) -->
+    <div id="console-health-view"
+      class="console-layer flex-1 overflow-y-auto px-8 py-6 space-y-6 font-sans max-w-5xl mx-auto w-full hidden custom-console-scroll">
+      
+      <!-- Top banner & freshness header -->
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        <div id="health-survives-badge" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-[11px] font-semibold bg-sage/15 text-sage border border-sage/40 transition-colors">
+          <span class="w-2 h-2 rounded-full bg-sage status-dot-active"></span>
+          <span id="health-survives-text">Survives Ollama outage · In-process FastEmbed active</span>
+        </div>
+        <div class="flex items-center gap-2 text-[11px] text-creamMuted">
+          <span id="console-health-live-dot" class="w-1.5 h-1.5 rounded-full bg-sage status-dot-active"></span>
+          <span class="font-semibold">Diagnostics live</span>
+          <span class="text-creamMuted/60">·</span>
+          <span id="console-health-last-sync" class="text-creamMuted/70 tabular-nums">connecting</span>
+        </div>
+      </div>
+
+      <!-- Fetch Failure Inline Alert (Hidden by default) -->
+      <div id="console-health-error" class="hidden p-4 rounded-xl bg-ember/15 border border-ember/40 text-cream flex items-center justify-between">
+        <div class="text-xs text-ember font-medium">Couldn't reach the backend diagnostics.</div>
+        <button type="button" id="btn-retry-health-fetch" class="px-3 py-1 bg-ember text-cream text-xs rounded-lg font-semibold hover:bg-ember/80 cursor-pointer">Retry</button>
+      </div>
+
+      <!-- SECTION 1: Status Tiles (4-col grid) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- Tile 1: Generation Model -->
+        <div class="bg-nightCard/80 backdrop-blur-sm border border-nightLine rounded-2xl px-5 py-4 flex flex-col justify-between">
+          <div class="flex items-center gap-2">
+            <span id="health-gen-dot" class="w-1.5 h-1.5 rounded-full bg-sage"></span>
+            <span class="text-[10px] uppercase tracking-[0.1em] font-semibold text-creamMuted">Generation model</span>
+          </div>
+          <div id="health-gen-model" class="text-[24px] font-serif font-bold text-cream mt-2 leading-tight truncate">Checking...</div>
+          <div id="health-gen-sub" class="text-[11px] text-creamMuted/80 mt-1">Local Ollama instance</div>
+        </div>
+
+        <!-- Tile 2: Embeddings Subsystem -->
+        <div class="bg-nightCard/80 backdrop-blur-sm border border-nightLine rounded-2xl px-5 py-4 flex flex-col justify-between">
+          <div class="flex items-center gap-2">
+            <span id="health-embed-dot" class="w-1.5 h-1.5 rounded-full bg-sage"></span>
+            <span class="text-[10px] uppercase tracking-[0.1em] font-semibold text-creamMuted">Embeddings</span>
+          </div>
+          <div id="health-embed-model" class="text-[20px] font-serif font-bold text-cream mt-2 leading-tight truncate">FastEmbed</div>
+          <div id="health-embed-sub" class="text-[11px] text-creamMuted/80 mt-1 truncate">BAAI/bge-small-en-v1.5 (384d)</div>
+        </div>
+
+        <!-- Tile 3: Indexed Knowledge Base -->
+        <div class="bg-nightCard/80 backdrop-blur-sm border border-nightLine rounded-2xl px-5 py-4 flex flex-col justify-between">
+          <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-sage"></span>
+            <span class="text-[10px] uppercase tracking-[0.1em] font-semibold text-creamMuted">Answers indexed</span>
+          </div>
+          <div id="health-answers-count" class="text-[30px] font-serif font-bold text-cream mt-1.5 leading-none">0</div>
+          <div id="health-answers-sub" class="text-[11px] text-creamMuted/80 mt-1">100 faq · 49 blog entries</div>
+        </div>
+
+        <!-- Tile 4: Guardrail Anchors -->
+        <div class="bg-nightCard/80 backdrop-blur-sm border border-nightLine rounded-2xl px-5 py-4 flex flex-col justify-between">
+          <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-sage"></span>
+            <span class="text-[10px] uppercase tracking-[0.1em] font-semibold text-creamMuted">Anchors</span>
+          </div>
+          <div id="health-anchors-count" class="text-[30px] font-serif font-bold text-cream mt-1.5 leading-none">35</div>
+          <div id="health-anchors-sub" class="text-[11px] text-creamMuted/80 mt-1">7 intent routes</div>
+        </div>
+      </div>
+
+      <!-- SECTION 2: Route Probe -->
+      <div class="bg-nightCard/80 backdrop-blur-sm border border-nightLine rounded-2xl p-6 space-y-5">
+        <div>
+          <div class="flex items-center justify-between">
+            <h3 class="font-serif font-bold text-[15px] text-cream">Intent Router Live Probe</h3>
+            <span class="text-[11px] text-creamMuted">Threshold 0.65 · Fallback below</span>
+          </div>
+          <p class="text-[12px] text-creamMuted mt-0.5">Test real-time cosine similarity scores against intent anchors without opening a chat session.</p>
+        </div>
+
+        <form id="route-probe-form" class="space-y-3">
+          <div class="flex gap-3">
+            <div class="flex-1 relative">
+              <input type="text" id="route-probe-input"
+                placeholder="Paste customer message (e.g. 'what is the cancellation policy' or 'i don't know what to choose')"
+                class="w-full h-11 px-4 bg-nightPanel border border-nightLine rounded-xl text-xs text-cream outline-none focus:border-copper transition-colors placeholder:text-creamMuted/40" />
+            </div>
+            <button type="submit" id="btn-route-probe"
+              class="h-11 px-6 bg-copper hover:bg-copperSoft text-night font-serif font-bold text-xs rounded-xl transition-all flex items-center justify-center gap-2 cursor-pointer shrink-0">
+              <span>Score</span>
+            </button>
+          </div>
+          <div id="route-probe-error" class="hidden text-[11px] text-ember font-medium pl-1">Enter a message to score</div>
+        </form>
+
+        <!-- Route Results List -->
+        <div id="route-probe-results" class="space-y-3 pt-2 hidden">
+          <div class="flex items-center justify-between text-[10px] font-semibold uppercase tracking-wider text-creamMuted pb-1 border-b border-nightLine">
+            <span class="w-36">Intent route</span>
+            <span class="flex-1 px-4">Similarity vs threshold</span>
+            <span class="w-16 text-right">Score</span>
+          </div>
+          <div id="route-probe-rows" class="space-y-2.5">
+            <!-- Injected rows -->
+          </div>
+          <div id="route-probe-gates" class="pt-3 border-t border-nightLine/60 flex flex-wrap items-center gap-4 text-xs text-creamMuted">
+            <!-- Injected gate indicators -->
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 3: Safety Events -->
+      <div class="bg-nightCard/80 backdrop-blur-sm border border-nightLine rounded-2xl p-6 space-y-4">
+        <div class="flex items-center justify-between">
+          <div>
+            <h3 class="font-serif font-bold text-[15px] text-cream">Safety &amp; guardrail audit events</h3>
+            <p class="text-[12px] text-creamMuted mt-0.5">Audit log of intercepted crises, near-misses, PDPA redactions, and prompt attacks (no raw text stored).</p>
+          </div>
+          <button type="button" id="btn-refresh-events" class="text-xs text-copper hover:underline cursor-pointer">Refresh</button>
+        </div>
+
+        <div id="safety-events-list" class="space-y-2.5 max-h-80 overflow-y-auto pr-1 custom-console-scroll">
+          <!-- Injected safety events -->
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Fallback alert stack -->
+    <div id="console-toast-stack"></div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- MODAL: SECURE DEATH CERTIFICATE VIEWER     -->
+  <!-- ========================================== -->
+  <div id="secure-doc-overlay"
+    class="fixed inset-0 bg-black/85 backdrop-blur-md z-[100002] hidden flex items-center justify-center p-3 sm:p-5 transition-all duration-300">
+    <div id="secure-doc-modal"
+      class="relative bg-[#251A14] text-[#F3E7E0] rounded-2xl shadow-2xl border border-[#3A2820] w-full max-w-3xl max-h-[92vh] flex flex-col overflow-hidden">
+      
+      <!-- Top Header Bar -->
+      <div class="px-4 py-3 bg-[#1D140F] border-b border-[#3A2820] flex items-center justify-between gap-3 shrink-0">
+        <div class="flex items-center gap-2 min-w-0">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 shrink-0"></span>
+          <h3 class="font-serif font-bold text-sm sm:text-base text-[#F3E7E0] truncate">Death Certificate Record</h3>
+          <span class="px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/25 text-emerald-300 text-[10px] font-mono font-semibold shrink-0">Encrypted In-Memory</span>
+        </div>
+        <button id="btn-close-doc-overlay" type="button" aria-label="Close document viewer"
+          class="w-8 h-8 rounded-xl bg-white/5 hover:bg-white/10 text-[#F3E7E0] flex items-center justify-center transition-all cursor-pointer border border-[#3A2820]">
+          ✕
+        </button>
+      </div>
+
+      <!-- Viewer Content Area -->
+      <div id="secure-doc-content" class="flex-1 overflow-auto p-4 flex items-center justify-center bg-black/40 min-h-[300px]">
+        <div id="secure-doc-spinner" class="text-center py-12 text-[#F3E7E0]/70 space-y-2">
+          <div class="w-8 h-8 border-2 border-copper border-t-transparent rounded-full animate-spin mx-auto"></div>
+          <p class="text-xs font-mono">Fetching secure document stream...</p>
+        </div>
+        <img id="secure-doc-img" class="hidden max-h-[70vh] max-w-full object-contain rounded-lg shadow-lg" alt="Deceased Death Certificate">
+        <iframe id="secure-doc-iframe" class="hidden w-full h-[70vh] rounded-lg border border-[#3A2820]" title="Deceased Death Certificate PDF"></iframe>
+        <div id="secure-doc-error" class="hidden text-center py-8 text-rose-300 text-xs font-mono space-y-1">
+          <p>Failed to load secure document.</p>
+        </div>
+      </div>
+
+      <!-- Footer Bar -->
+      <div class="px-4 py-2.5 bg-[#1D140F] border-t border-[#3A2820] flex items-center justify-between text-[11px] font-mono text-creamMuted shrink-0">
+        <span>Confidential &middot; PDPA Protected</span>
+        <button id="btn-dismiss-doc-overlay" type="button" class="px-3 py-1 rounded-lg bg-white/5 hover:bg-white/10 text-[#F3E7E0] border border-[#3A2820] text-xs font-sans transition-all cursor-pointer">
+          Close Viewer
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- MODAL: END CONSULTATION CONFIRMATION       -->
+  <!-- ========================================== -->
+  <div id="end-consultation-modal"
+    class="fixed inset-0 bg-night/90 backdrop-blur-md z-[100001] flex items-center justify-center p-4 opacity-0 pointer-events-none transition-all duration-300">
+    <div class="relative bg-gradient-to-b from-[#241B17] to-[#15100E] text-cream rounded-2xl shadow-2xl border border-copper/30 w-full max-w-sm p-6 space-y-4">
+      <div class="w-10 h-10 rounded-xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 flex items-center justify-center">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      </div>
+      <div>
+        <h3 class="font-serif font-bold text-[18px] text-cream">Mark Consultation Resolved?</h3>
+        <p class="text-[12px] text-creamMuted leading-relaxed mt-1 font-sans">
+          This case will be updated to <span class="text-emerald-300 font-mono font-semibold">RESOLVED</span> and the live consultation session closed. The family will be notified of the completion.
+        </p>
+      </div>
+      <div class="flex gap-3 pt-2">
+        <button id="btn-cancel-end-consultation" type="button"
+          class="flex-1 py-2.5 rounded-xl border border-white/[0.1] hover:bg-white/5 text-creamMuted hover:text-cream text-xs font-semibold transition-all cursor-pointer">
+          Cancel
+        </button>
+        <button id="btn-confirm-end-consultation" type="button"
+          class="flex-1 py-2.5 rounded-xl bg-gradient-to-r from-copper to-primary hover:from-copperSoft hover:to-copper text-white text-xs font-bold font-mono tracking-wide uppercase transition-all shadow-md shadow-copper/25 cursor-pointer">
+          Resolve Case
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================== -->
+  <!-- ADMIN CONSOLE LOADING GATE                 -->
+  <!-- ========================================== -->
+  <div id="admin-loading-overlay" aria-hidden="true">
+    <div class="loading-container">
+      <div class="skeleton">
+        <div class="head">
+          <div class="eye left"></div>
+          <div class="eye right"></div>
+          <div class="mouth"></div>
+        </div>
+        <div class="arm left">
+          <div class="briefcase"></div>
+        </div>
+        <div class="arm right"></div>
+        <div class="body"></div>
+        <div class="blazer"></div>
+        <div class="tie-knot"></div>
+        <div class="tie"></div>
+        <div class="leg left"></div>
+        <div class="leg right"></div>
+      </div>
+      <div class="ground"></div>
+    </div>
+    <p class="loading-caption">Opening console</p>
+  </div>
+
+  <script src="app.js?v=96"></script>
+  <!-- Auto-translation safety net for JavaScript-rendered content. Must load
+       AFTER app.js so it can see I18N_TRANSLATIONS, state and setLanguage. -->
+  <script src="i18n_auto.js?v=96"></script>
+</body>
+
+
+</html>

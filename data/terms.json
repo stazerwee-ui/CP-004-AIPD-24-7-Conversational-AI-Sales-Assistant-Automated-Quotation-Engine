@@ -1,0 +1,198 @@
+{
+  "_note": "TODO: review by a qualified person before real use — this app handles bereavement data in Singapore under the PDPA, and this placeholder text must be reviewed by legal counsel.",
+  "version": "1.0",
+  "updated_at": "14 Aug 2026",
+  "title": {
+    "en": "Solace Dignity Care — Privacy Notice & Terms of Service",
+    "zh": "Solace 关怀殡仪 — 隐私声明与服务条款",
+    "ms": "Solace Dignity Care — Notis Privasi & Terma Perkhidmatan",
+    "ta": "Solace Dignity Care — தனியுரிமை அறிவிப்பு & சேவை விதிமுறைகள்"
+  },
+  "sections_by_lang": {
+    "en": [
+      {
+        "id": "collection",
+        "heading": "1. What We Collect",
+        "body": "When you use Solace Dignity Care, we collect only the information needed to guide your family through memorial arrangements. This includes:\n\n• Your contact details (full name, username, email address, or Singapore telephone number).\n• Arrangement preferences (service tier, religious or secular rite, wake location, duration, casket selection, and optional add-ons).\n• Intake details provided during consultation, including the departed loved one's name, current location, and documentation status.\n• Messages exchanged with our care assistant or funeral consultants.\n• Digital signature image, if you choose to sign and execute a formal funeral quotation."
+      },
+      {
+        "id": "purpose",
+        "heading": "2. Why We Collect This Information",
+        "body": "Your information is used solely for the following purposes:\n\n• Preparing transparent, itemized funeral quotations with guaranteed pricing.\n• Enabling you to safely save and resume your family's arrangement across devices.\n• Allowing our licensed funeral directors and on-call consultants to provide timely, compassionate assistance when requested or in urgent situations.\n• Fulfilling regulatory and administrative obligations associated with funeral care and transfer in Singapore."
+      },
+      {
+        "id": "ai_handling",
+        "heading": "3. Conversational Assistant & AI Safety",
+        "body": "Our conversational care assistant helps you explore packages and organize logistics step-by-step. To safeguard your privacy:\n\n• Sensitive identifiers such as NRIC, FIN, and payment card numbers are automatically masked and are never required during intake.\n• Conversational logs may be reviewed by human funeral consultants to ensure care standards and assist you seamlessly during escalations.\n• All pricing calculations are determined by fixed, deterministic rate tables, not generated estimates."
+      },
+      {
+        "id": "retention",
+        "heading": "4. Data Retention & Deletion",
+        "body": "We retain arrangement records only as long as necessary to coordinate services and meet Singapore statutory record-keeping requirements.\n\nIf you create an account, your saved arrangements remain accessible until you request account closure. Upon request, non-statutory records and draft arrangements will be permanently deleted from our active database."
+      },
+      {
+        "id": "access_sharing",
+        "heading": "5. Who Sees Your Information",
+        "body": "Access to your data is restricted strictly to authorized Solace Dignity Care directors, care coordinators, and essential operational staff.\n\nWe do not sell, rent, or monetize your personal information, and we never share bereavement records with third-party advertisers or commercial marketing networks."
+      },
+      {
+        "id": "rights",
+        "heading": "6. Your Rights Under the PDPA",
+        "body": "Under the Singapore Personal Data Protection Act (PDPA), you have the right to request access to the personal data we hold about you, request corrections to inaccurate information, or withdraw your consent at any time.\n\nWithdrawing consent may prevent us from retrieving saved arrangements or completing coordinated logistics on your family's behalf."
+      },
+      {
+        "id": "contact",
+        "heading": "7. Contact & Data Protection Officer",
+        "body": "If you have questions regarding this notice, wish to exercise your data rights, or need assistance regarding personal data handling, please contact our Data Protection Officer:\n\n• Email: privacy@solace.sg [TODO: insert official verified DPO email]\n• Registered Address: [TODO: insert official company registered address, Singapore]\n• Care Line: +65 6789 0123 (Available 24/7)"
+      }
+    ],
+    "zh": [
+      {
+        "id": "collection",
+        "heading": "1. 我们收集的信息",
+        "body": "当您使用 Solace 关怀殡仪时，我们仅收集协助您家庭统筹后事所需的信息。这包括：\n\n• 您的联络方式（姓名、用户名、电子邮箱或新加坡电话号码）。\n• 统筹意向（服务等级配套、宗教仪式、守夜地点、治丧天数、棺木选择及可选额外服务）。\n• 咨询过程中提供的逝者信息，包括往生亲属姓名、目前安息地点及死亡证书取得情况。\n• 与我们的智能助理或殡仪顾问交流的咨询记录。\n• 若您选择签署并确认正式殡仪报价单，则包括电子签名图片。"
+      },
+      {
+        "id": "purpose",
+        "heading": "2. 我们为何收集这些信息",
+        "body": "您的信息仅用于以下用途：\n\n• 编制价格锁定、透明细化的正式殡仪报价单。\n• 使您能够在不同设备间安全保存并随时恢复家庭的治丧规划。\n• 允许我们持有执照的殡仪总监与值班顾问在您需要或发生紧急情况时提供及时、温暖的协助。\n• 履行新加坡殡葬关怀与遗体接运相关的法定及行政合规义务。"
+      },
+      {
+        "id": "ai_handling",
+        "heading": "3. 对话助手与 AI 安全保障",
+        "body": "我们的对话关怀助理协助您逐步探索配套并规划流程。为保护您的隐私：\n\n• 敏感身份证件号（如 NRIC、FIN）及支付卡号将被自动掩码脱敏，在向导阶段绝不需要提供。\n• 对话记录可能会由人工殡仪顾问审核，以确保关怀水准并在人工转接时无缝交接。\n• 所有价格计算均由固定、确定性的标准价目表生成，绝非随意估算。"
+      },
+      {
+        "id": "retention",
+        "heading": "4. 数据留存与删除",
+        "body": "我们仅在协调服务及满足新加坡法定记录保存要求所需的时间内保留统筹档案。\n\n若您创建了账户，保存的方案将在您注销账户前保持可访问状态。一经申请，非法定记录及草稿方案将从我们的活动数据库中永久删除。"
+      },
+      {
+        "id": "access_sharing",
+        "heading": "5. 谁可以查阅您的信息",
+        "body": "查阅您数据的权限严格限制于经过授权的 Solace 关怀殡仪总监、统筹协调员及必要运营团队。\n\n我们绝不出售、出租或利用您的个人信息牟利，也绝不向第三方广告商或商业营销网络共享丧葬档案。"
+      },
+      {
+        "id": "rights",
+        "heading": "6. 您在新加坡 PDPA 下的权利",
+        "body": "根据新加坡《个人数据保护法》(PDPA)，您有权随时申请查阅我们所持有的关于您的个人数据、更正不准确信息，或撤回您的同意。\n\n撤回同意可能会使我们无法代表您的家庭调取已存方案或完成统筹接运工作。"
+      },
+      {
+        "id": "contact",
+        "heading": "7. 联络方式与数据保护官 (DPO)",
+        "body": "若您对本声明有任何疑问、希望行使数据权利，或在个人数据处理方面需要协助，请联系我们的数据保护官：\n\n• 邮箱：privacy@solace.sg\n• 注册地址：Singapore\n• 关怀热线：+65 6789 0123（24/7 全天候服务）"
+      }
+    ],
+    "ms": [
+      {
+        "id": "collection",
+        "heading": "1. Maklumat yang Kami Kumpul",
+        "body": "Apabila anda menggunakan Solace Dignity Care, kami hanya mengumpul maklumat yang diperlukan untuk membimbing keluarga anda melalui urusan pengebumian. Ini termasuk:\n\n• Butiran hubungan anda (nama penuh, nama pengguna, alamat e-mel, atau nombor telefon Singapura).\n• Pilihan susunan (tahap perkhidmatan, upacara keagamaan atau sekular, lokasi upacara, tempoh, pilihan keranda, dan tambahan pilihan).\n• Butiran yang diberikan semasa perundingan, termasuk nama arwah, lokasi semasa, dan status sijil kematian.\n• Mesej yang ditukar dengan pembantu penjagaan atau perunding kami.\n• Imej tandatangan digital sekiranya anda menandatangani sebut harga rasmi."
+      },
+      {
+        "id": "purpose",
+        "heading": "2. Mengapa Kami Mengumpul Maklumat Ini",
+        "body": "Maklumat anda digunakan semata-mata untuk tujuan berikut:\n\n• Menyediakan sebut harga telus dengan harga yang dijamin.\n• Membolehkan anda menyimpan dan meneruskan perancangan keluarga pada bila-bila masa.\n• Membolehkan pengarah berlesen kami memberikan bantuan yang segera dan prihatin.\n• Memenuhi kewajipan undang-undang dan pentadbiran di Singapura."
+      },
+      {
+        "id": "ai_handling",
+        "heading": "3. Pembantu Perbualan & Keselamatan AI",
+        "body": "Pembantu kami membantu anda meneroka pakej langkah demi langkah. Untuk melindungi privasi anda:\n\n• Pengenalan sensitif seperti NRIC, FIN, dan nombor kad ditapis secara automatik.\n• Log perbualan boleh disemak oleh perunding manusia bagi mengekalkan standard perkhidmatan.\n• Semua pengiraan harga ditentukan oleh jadual harga rasmi yang tetap."
+      },
+      {
+        "id": "retention",
+        "heading": "4. Pengekalan & Pemadaman Data",
+        "body": "Kami menyimpan rekod hanya selama yang diperlukan untuk menyelaras perkhidmatan dan mematuhi undang-undang Singapura.\n\nJika anda membuat akaun, susunan yang disimpan kekal boleh diakses sehingga penutupan akaun diminta."
+      },
+      {
+        "id": "access_sharing",
+        "heading": "5. Siapa yang Melihat Maklumat Anda",
+        "body": "Akses kepada data anda terhad kepada pengarah dan kakitangan operasi Solace Dignity Care yang diberi kuasa sahaja.\n\nKami tidak sekali-kali menjual atau berkongsi maklumat anda dengan pengiklan pihak ketiga."
+      },
+      {
+        "id": "rights",
+        "heading": "6. Hak Anda di Bawah PDPA Singapura",
+        "body": "Di bawah Akta Perlindungan Data Peribadi (PDPA) Singapura, anda mempunyai hak untuk meminta akses kepada data peribadi anda, membetulkan maklumat, atau menarik balik persetujuan anda pada bila-bila masa."
+      },
+      {
+        "id": "contact",
+        "heading": "7. Hubungi Pegawai Perlindungan Data (DPO)",
+        "body": "Sekiranya anda mempunyai sebarang pertanyaan atau ingin melaksanakan hak data anda, sila hubungi Pegawai Perlindungan Data kami:\n\n• E-mel: privacy@solace.sg\n• Alamat Berdaftar: Singapura\n• Talian Khidmat: +65 6789 0123 (24/7)"
+      }
+    ],
+    "ta": [
+      {
+        "id": "collection",
+        "heading": "1. நாங்கள் சேகரிக்கும் தகவல்கள்",
+        "body": "Solace Dignity Care ஐ நீங்கள் பயன்படுத்தும்போது, உங்கள் குடும்பத்திற்கு வழிகாட்ட தேவையான தகவல்களை மட்டுமே நாங்கள் சேகரிக்கிறோம்:\n\n• உங்கள் தொடர்பு விவரங்கள் (முழு பெயர், பயனர்பெயர், மின்னஞ்சல் அல்லது சிங்கப்பூர் தொலைபேசி எண்).\n• இறுதிச்சடங்கு விருப்பங்கள் (சேவை அடுக்கு, மதச் சடங்கு, இடம், காலம், சவப்பெட்டி தேர்வு மற்றும் கூடுதல் சேவைகள்).\n• மறைந்த அன்புக்குரியவரின் பெயர், தற்போதைய இடம் மற்றும் இறப்புச் சான்றிதழ் நிலை உள்ளிட்ட விவரங்கள்.\n• எங்கள் பராமரிப்பு உதவியாளருடன் பரிமாறப்பட்ட செய்திகள்.\n• முறையான மேற்கோளில் கையொப்பமிட்டால் டிஜிட்டல் கையொப்பப் படம்."
+      },
+      {
+        "id": "purpose",
+        "heading": "2. இந்தத் தகவலை நாங்கள் ஏன் சேகரிக்கிறோம்",
+        "body": "உங்கள் தகவல்கள் பின்வரும் நோக்கங்களுக்காக மட்டுமே பயன்படுத்தப்படுகின்றன:\n\n• உத்தரவாத விலையுடன் வெளிப்படையான மேற்கோள்களைத் தயாரித்தல்.\n• உங்கள் குடும்பத்தின் ஏற்பாடுகளைப் பாதுகாப்பாகச் சேமித்து மீண்டும் தொடர உதவுதல்.\n• அவசர தேவைகளில் எங்கள் உரிமம் பெற்ற இயக்குனர்கள் உடனடியாக உதவ அனுமதித்தல்.\n• சிங்கப்பூரின் சட்ட மற்றும் நிர்வாகக் கடமைகளை நிறைவேற்றுதல்."
+      },
+      {
+        "id": "ai_handling",
+        "heading": "3. உரையாடல் உதவியாளர் & AI பாதுகாப்பு",
+        "body": "எங்கள் உரையாடல் உதவியாளர் உங்களுக்கு படிப்படியாக வழிகாட்டுகிறது. உங்கள் தனியுரிமையைப் பாதுகாக்க:\n\n• NRIC, FIN போன்ற முக்கியமான தகவல்கள் தானாகவே மறைக்கப்படுகின்றன.\n• சேவையின் தரத்தை உறுதிப்படுத்த உரையாடல் பதிவுகள் மனித ஆலோசகர்களால் மதிப்பாய்வு செய்யப்படலாம்.\n• அனைத்து விலைக் கணக்கீடுகளும் நிலையான விலைப்பட்டியல் மூலம் தீர்மானிக்கப்படுகின்றன."
+      },
+      {
+        "id": "retention",
+        "heading": "4. தரவு வைத்திருத்தல் மற்றும் நீக்குதல்",
+        "body": "சிங்கப்பூர் சட்டத் தேவைகளைப் பூர்த்தி செய்ய தேவையான காலம் மட்டுமே நாங்கள் பதிவுகளை வைத்திருக்கிறோம்.\n\nநீங்கள் கணக்கை மூடுமாறு கோரும் வரை உங்கள் ஏற்பாடுகள் அணுகக்கூடியதாக இருக்கும்."
+      },
+      {
+        "id": "access_sharing",
+        "heading": "5. உங்கள் தகவலை யார் பார்க்கிறார்கள்",
+        "body": "அங்கீகரிக்கப்பட்ட Solace Dignity Care இயக்குநர்கள் மற்றும் அத்தியாவசிய ஊழியர்களுக்கு மட்டுமே உங்கள் தரவுக்கான அணுகல் உள்ளது.\n\nநாங்கள் உங்கள் தனிப்பட்ட தகவல்களை மூன்றாம் தரப்பு விளம்பரதாரர்களுடன் ஒருபோதும் பகிர்வதில்லை."
+      },
+      {
+        "id": "rights",
+        "heading": "6. சிங்கப்பூர் PDPA இன் கீழ் உங்கள் உரிமைகள்",
+        "body": "சிங்கப்பூர் தனிநபர் தரவு பாதுகாப்புச் சட்டத்தின் (PDPA) கீழ், உங்கள் தனிப்பட்ட தரவை அணுகவும், திருத்தவும் அல்லது எந்த நேரத்திலும் உங்கள் ஒப்புதலைத் திரும்பப் பெறவும் உங்களுக்கு உரிமை உண்டு."
+      },
+      {
+        "id": "contact",
+        "heading": "7. தொடர்பு & தரவு பாதுகாப்பு அதிகாரி (DPO)",
+        "body": "உங்களுக்கு ஏதேனும் கேள்விகள் இருந்தால், எங்கள் தரவு பாதுகாப்பு அதிகாரியைத் தொடர்பு கொள்ளவும்:\n\n• மின்னஞ்சல்: privacy@solace.sg\n• பதிவு செய்யப்பட்ட முகவரி: சிங்கப்பூர்\n• பராமரிப்பு எண்: +65 6789 0123 (24/7)"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "collection",
+      "heading": "1. What We Collect",
+      "body": "When you use Solace Dignity Care, we collect only the information needed to guide your family through memorial arrangements. This includes:\n\n• Your contact details (full name, username, email address, or Singapore telephone number).\n• Arrangement preferences (service tier, religious or secular rite, wake location, duration, casket selection, and optional add-ons).\n• Intake details provided during consultation, including the departed loved one's name, current location, and documentation status.\n• Messages exchanged with our care assistant or funeral consultants.\n• Digital signature image, if you choose to sign and execute a formal funeral quotation."
+    },
+    {
+      "id": "purpose",
+      "heading": "2. Why We Collect This Information",
+      "body": "Your information is used solely for the following purposes:\n\n• Preparing transparent, itemized funeral quotations with guaranteed pricing.\n• Enabling you to safely save and resume your family's arrangement across devices.\n• Allowing our licensed funeral directors and on-call consultants to provide timely, compassionate assistance when requested or in urgent situations.\n• Fulfilling regulatory and administrative obligations associated with funeral care and transfer in Singapore."
+    },
+    {
+      "id": "ai_handling",
+      "heading": "3. Conversational Assistant & AI Safety",
+      "body": "Our conversational care assistant helps you explore packages and organize logistics step-by-step. To safeguard your privacy:\n\n• Sensitive identifiers such as NRIC, FIN, and payment card numbers are automatically masked and are never required during intake.\n• Conversational logs may be reviewed by human funeral consultants to ensure care standards and assist you seamlessly during escalations.\n• All pricing calculations are determined by fixed, deterministic rate tables, not generated estimates."
+    },
+    {
+      "id": "retention",
+      "heading": "4. Data Retention & Deletion",
+      "body": "We retain arrangement records only as long as necessary to coordinate services and meet Singapore statutory record-keeping requirements.\n\nIf you create an account, your saved arrangements remain accessible until you request account closure. Upon request, non-statutory records and draft arrangements will be permanently deleted from our active database."
+    },
+    {
+      "id": "access_sharing",
+      "heading": "5. Who Sees Your Information",
+      "body": "Access to your data is restricted strictly to authorized Solace Dignity Care directors, care coordinators, and essential operational staff.\n\nWe do not sell, rent, or monetize your personal information, and we never share bereavement records with third-party advertisers or commercial marketing networks."
+    },
+    {
+      "id": "rights",
+      "heading": "6. Your Rights Under the PDPA",
+      "body": "Under the Singapore Personal Data Protection Act (PDPA), you have the right to request access to the personal data we hold about you, request corrections to inaccurate information, or withdraw your consent at any time.\n\nWithdrawing consent may prevent us from retrieving saved arrangements or completing coordinated logistics on your family's behalf."
+    },
+    {
+      "id": "contact",
+      "heading": "7. Contact & Data Protection Officer",
+      "body": "If you have questions regarding this notice, wish to exercise your data rights, or need assistance regarding personal data handling, please contact our Data Protection Officer:\n\n• Email: privacy@solace.sg [TODO: insert official verified DPO email]\n• Registered Address: [TODO: insert official company registered address, Singapore]\n• Care Line: +65 6789 0123 (Available 24/7)"
+    }
+  ]
+}

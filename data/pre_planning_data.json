@@ -1,0 +1,1008 @@
+{
+  "pre_planning_concepts": [
+    {
+      "concept_id": "CONCEPT_PRENEED_VS_ATNEED",
+      "name": "Pre-Need Funeral Planning vs. At-Need Funeral Arrangements",
+      "summary": "Pre-need planning involves making comprehensive funeral, logistical, and financial arrangements in advance while mentally sound and composed, whereas at-need arrangements occur under acute emotional distress within 24-48 hours immediately following a death.",
+      "key_benefits": [
+        {
+          "benefit": "Emotional Relief for Next-of-Kin",
+          "description": "Removes the heavy psychological burden and guesswork from grieving family members, sparing them from making complex logistical and financial decisions during peak bereavement."
+        },
+        {
+          "benefit": "Inflation Protection & Cost Lock",
+          "description": "Fixes funeral service costs at current-day prices, completely immunizing the planner and family against Singapore's historical 3.5% to 5.0% annual funeral inflation rate."
+        },
+        {
+          "benefit": "Prevention of Family Disputes",
+          "description": "Formally documents explicit personal preferences (e.g., religious vs secular rites, cremation vs burial, wake duration, casket choice), preventing misunderstandings or conflicting opinions among surviving relatives."
+        },
+        {
+          "benefit": "Personal Dignity and Autonomy",
+          "description": "Ensures that personal identity, spiritual convictions, musical choices, and eco-friendly preferences (e.g. green sea scattering or inland ash dispersal) are faithfully honored."
+        },
+        {
+          "benefit": "Financial Transparency and Zero Surprise Billing",
+          "description": "Full itemization of every item, elimination of rushed upsells during vulnerable moments, and ring-fenced escrow protection."
+        }
+      ],
+      "cultural_considerations_singapore": {
+        "pantang_taboo_demystification": "While older generations historically viewed discussing death as 'pantang' (inauspicious/taboo), contemporary Singaporean society increasingly views pre-planning as an act of profound filial responsibility, mindfulness, and love that protects the family from chaos.",
+        "multicultural_adaptability": "Customizable frameworks respecting Chinese traditions (Buddhist, Taoist dialect-specific rites for Hokkien, Teochew, Cantonese, Hakka, Hainanese), Christian & Catholic denominational requirements, Soka Gakkai, and Modern Freethinker/Secular memorials."
+      },
+      "pre_planning_lifecycle_steps": [
+        {
+          "step_number": 1,
+          "step_name": "Consultation & Needs Assessment",
+          "action": "Meet with a dedicated Solace Dignity Care Pre-Planning Consultant in-person (at Lavender HQ, Geylang Bahru Memorial Hall, or at home) or via private digital video call to discuss values, traditions, and budget.",
+          "responsible_party": "Planner & SDC Pre-Planning Consultant"
+        },
+        {
+          "step_number": 2,
+          "step_name": "Customization of Funeral Wishes",
+          "action": "Complete the Solace Funeral Wishes Checklist, selecting religious/secular rite, casket model, wake venue (HDB void deck vs air-conditioned parlour), duration (direct cremation, 3-day, or 5-day), hearse type, and final ash resting method.",
+          "responsible_party": "Planner"
+        },
+        {
+          "step_number": 3,
+          "step_name": "Financial Structuring & Lock-In",
+          "action": "Select payment structure (Lump sum upfront with 5% rebate or 0% interest-free monthly installment plan over 6 to 36 months). Funds are safeguarded in an independent client trust account.",
+          "responsible_party": "Planner & Trust Administrator"
+        },
+        {
+          "step_number": 4,
+          "step_name": "Contract Execution & Nominee Designation",
+          "action": "Sign the Pre-Need Funeral Agreement. Appoint a Primary Funeral Nominee (Next-of-Kin / Executor) who holds authority to notify SDC and initiate fulfillment upon passing.",
+          "responsible_party": "Planner, Nominated Next-of-Kin & SDC Operations Director"
+        },
+        {
+          "step_number": 5,
+          "step_name": "Digital Vault Storage & Emergency Card Issuance",
+          "action": "Upload verified pre-plan contract to Singapore GovTech's My Legacy Vault via Singpass, and receive the physical SDC Emergency Memorial Card with 24/7 activation hotline and encrypted QR record.",
+          "responsible_party": "Planner & SDC Digital Systems"
+        },
+        {
+          "step_number": 6,
+          "step_name": "Point-of-Need Seamless Activation",
+          "action": "Upon passing, family calls +65 6555 1115 (24/7). SDC dispatches the care team within 45-60 minutes, handles digital CCOD verification, and executes the pre-contracted funeral with $0 unexpected baseline charges.",
+          "responsible_party": "Nominated Next-of-Kin & SDC Funeral Butler Team"
+        }
+      ]
+    },
+    {
+      "concept_id": "CONCEPT_LEGAL_INSTRUMENTS_COMPARISON",
+      "name": "Legal Estate Planning Instruments vs. Funeral Pre-Planning",
+      "summary": "Comprehensive distinction between statutory legal instruments (LPA, Will, ACP, AMD, CPF Nomination) and Funeral Pre-Planning contracts in Singapore jurisdiction.",
+      "legal_comparison_matrix": [
+        {
+          "instrument_name": "Funeral Pre-Planning Contract (Pre-Need Agreement)",
+          "governing_body_or_statute": "Contract Law / Consumers Association of Singapore (CASE) / SDC Escrow Trust",
+          "active_period": "Executes immediately at time of death (Hours 0 to 72+)",
+          "primary_scope": "Comprehensive funeral logistics, body collection, embalming, casket, wake venue permits, religious chanting, hearse cortege, cremation booking, and final ash dispersal.",
+          "can_dictate_funeral": true,
+          "critical_notes_and_limitations": "Dedicated exclusively to funeral execution. Guarantees locked-in prices, prevents family conflict, and takes effect immediately without waiting for court probate."
+        },
+        {
+          "instrument_name": "Lasting Power of Attorney (LPA Form 1 / Form 2)",
+          "governing_body_or_statute": "Mental Capacity Act 2008 / Office of the Public Guardian (OPG) / Ministry of Social and Family Development (MSF)",
+          "active_period": "Active strictly while donor is ALIVE but lacks mental capacity",
+          "primary_scope": "Empowers appointed Donee(s) to make decisions regarding Personal Welfare and/or Property & Affairs when the donor loses mental capacity (e.g. severe dementia, coma, stroke).",
+          "can_dictate_funeral": false,
+          "critical_notes_and_limitations": "CRITICAL LEGAL RULE: LPA automatically REVOKES and LOSES ALL LEGAL EFFECT immediately upon the donor's death. A Donee has NO legal authority to make funeral decisions or access deceased bank accounts using an LPA after death."
+        },
+        {
+          "instrument_name": "Advance Care Planning (ACP)",
+          "governing_body_or_statute": "Agency for Integrated Care (AIC) / Ministry of Health (MOH)",
+          "active_period": "Active while patient is ALIVE and navigating serious or terminal illness",
+          "primary_scope": "Voluntary, non-legally binding clinical discussions articulating personal values, medical treatment goals, preferred care settings (home vs hospital vs hospice), and nominated healthcare spokesperson.",
+          "can_dictate_funeral": false,
+          "critical_notes_and_limitations": "Addresses end-of-life healthcare preferences prior to passing. Seamlessly transitions into SDC's pre-plan once clinical death occurs."
+        },
+        {
+          "instrument_name": "Advance Medical Directive (AMD)",
+          "governing_body_or_statute": "Advance Medical Directive Act 1996 / Ministry of Health (MOH)",
+          "active_period": "Active while patient is ALIVE, terminally ill, unconscious, and death is imminent",
+          "primary_scope": "Legally binding statutory document registered with the Registrar of AMDs, instructing doctors NOT to apply extraordinary life-sustaining treatment (e.g. mechanical ventilation, artificial resuscitation) if terminally ill.",
+          "can_dictate_funeral": false,
+          "critical_notes_and_limitations": "Strict medical scope; signed with a doctor and two independent witnesses. Terminates upon death."
+        },
+        {
+          "instrument_name": "Will & Testament (Probate)",
+          "governing_body_or_statute": "Wills Act 1838 / Probate and Administration Act 1934 / Family Justice Courts",
+          "active_period": "Active post-death, following Grant of Probate (typically 2 to 6 months after death)",
+          "primary_scope": "Distribution of real estate, bank accounts, investments, and personal assets; appointment of legal Executors and legal guardians for minor children.",
+          "can_dictate_funeral": false,
+          "critical_notes_and_limitations": "Wills are read and probated weeks or months AFTER the funeral is already completed. Relying solely on a Will for funeral instructions frequently leads to wishes being discovered too late. Funeral wishes must be documented in a pre-plan."
+        },
+        {
+          "instrument_name": "CPF Nomination",
+          "governing_body_or_statute": "Central Provident Fund Act 1953 / CPF Board",
+          "active_period": "Active post-death (distribution within 2 to 5 weeks)",
+          "primary_scope": "Direct statutory distribution of CPF Ordinary, Special, Medisave, and Retirement Account savings and unused CPF LIFE premiums to nominated beneficiaries in cash/PayNow.",
+          "can_dictate_funeral": false,
+          "critical_notes_and_limitations": "CPF savings DO NOT form part of the deceased estate and cannot be distributed via a Will. Beneficiaries receive funds post-death which can reimburse pre-planning or estate costs."
+        }
+      ]
+    }
+  ],
+  "digital_planning_integrations": [
+    {
+      "platform_id": "DIGITAL_MY_LEGACY_SG",
+      "platform_name": "My Legacy LifeSG Portal (Singapore Government)",
+      "governing_agency": "Open Government Products (OGP) / GovTech / Ministry of Health (MOH) / ICA",
+      "portal_url": "https://mylegacy.life.gov.sg",
+      "integration_capabilities": [
+        {
+          "module": "My Legacy Vault (Digital Document Locker)",
+          "description": "Secure encrypted Singpass-authenticated vault where citizens can store critical estate information, including the location of their Will, LPA details, and their Solace Dignity Care Pre-Planning Policy Reference Number.",
+          "access_protocol": "Planner grants designated Trusted Persons (Family / Next-of-Kin) access permissions. Trusted Persons automatically receive access to stored records upon registration of the planner's digital death certificate by ICA."
+        },
+        {
+          "module": "Funeral Wishes Planner Tool",
+          "description": "Government-provided digital questionnaire allowing citizens to state preferences for burial vs cremation, wake type, and preferred funeral director.",
+          "sdc_alignment": "Solace Dignity Care provides pre-formatted digital JSON/PDF summaries that planners can upload directly into their My Legacy vault in one click."
+        },
+        {
+          "module": "Automated Death Registration Linkage",
+          "description": "Since 29 May 2022, deaths certified via electronic CCOD are instantly registered in the national registry. Next-of-kin downloads the official Digital Death Certificate via My Legacy using Singpass and shares it with SDC 24/7 operations."
+        }
+      ],
+      "citizen_action_guide": "1. Log into mylegacy.life.gov.sg using Singpass -> 2. Navigate to 'Plan My Legacy' -> 3. Select 'My Legacy Vault' -> 4. Add 'Funeral Pre-Plan' record under Services and input SDC Policy Number (e.g. SDC-PRE-2026-XXXX) -> 5. Appoint Trusted Persons to view upon passing."
+    },
+    {
+      "platform_id": "DIGITAL_OPG_ONLINE",
+      "platform_name": "Office of the Public Guardian Online (OPGO)",
+      "governing_agency": "Ministry of Social and Family Development (MSF)",
+      "portal_url": "https://opgo.msf.gov.sg",
+      "integration_capabilities": [
+        {
+          "module": "Digital LPA Application (LPA Form 1 / Form 2)",
+          "description": "Enables Singapore citizens and permanent residents aged 21 and above to digitally draft an LPA, appoint Donees, and obtain certification from an accredited LPA Certificate Issuer (Doctor, Psychiatrist, or Lawyer) via Singpass.",
+          "sdc_coordination": "SDC works closely with appointed Personal Welfare Donees during pre-planning consultations to align funeral preferences with broader long-term welfare directives."
+        }
+      ]
+    },
+    {
+      "platform_id": "DIGITAL_SDC_SMART_VAULT",
+      "platform_name": "Solace Dignity Care Digital Client Vault & Emergency Smart Card",
+      "governing_agency": "Solace Dignity Care Singapore / PDPA-Compliant ISO-27001 Cloud",
+      "portal_url": "https://vault.solacedignitycare.com.sg",
+      "integration_capabilities": [
+        {
+          "module": "Emergency Memorial Wallet Card",
+          "description": "Physical, tamper-proof titanium alloy card issued to every pre-planner with laser-engraved Policy ID, 24/7 Emergency Dispatch Hotline (+65 6555 1115), and secure QR verification for emergency responders.",
+          "emergency_utility": "Enables paramedics, hospital medical social workers, or police to instantly contact SDC operations if the planner passes away alone or unexpectedly."
+        },
+        {
+          "module": "Encrypted Cloud Repository",
+          "description": "Stores high-resolution portrait photos for funeral enlargement, chosen obituary write-ups, custom music playlists, biometric authorization records, and signed trust agreements."
+        }
+      ]
+    }
+  ],
+  "plans_and_pricing": {
+    "inflation_protection_benchmarks": {
+      "singapore_funeral_cpi_trend": "Funeral services in Singapore have averaged a 3.8% compound annual growth rate (CAGR) over the past decade due to rising labour, tentage logistics, and raw material costs.",
+      "cost_projection_comparison_table": [
+        {
+          "tier_name": "Direct Cremation (No Wake)",
+          "current_2026_locked_price_sgd": 1500,
+          "projected_2036_market_price_sgd": 2220,
+          "projected_2046_market_price_sgd": 3280,
+          "guaranteed_savings_10yr_sgd": 720,
+          "guaranteed_savings_20yr_sgd": 1780
+        },
+        {
+          "tier_name": "Standard HDB Void Deck 3-Day Wake (Buddhist / Christian / Freethinker)",
+          "current_2026_locked_price_sgd": 5888,
+          "projected_2036_market_price_sgd": 8720,
+          "projected_2046_market_price_sgd": 12890,
+          "guaranteed_savings_10yr_sgd": 2832,
+          "guaranteed_savings_20yr_sgd": 7002
+        },
+        {
+          "tier_name": "Traditional HDB Void Deck 3-Day Wake (Taoist with Priest Chanting & Paper House)",
+          "current_2026_locked_price_sgd": 8288,
+          "projected_2036_market_price_sgd": 12280,
+          "projected_2046_market_price_sgd": 18150,
+          "guaranteed_savings_10yr_sgd": 3992,
+          "guaranteed_savings_20yr_sgd": 9862
+        },
+        {
+          "tier_name": "Premium Air-Conditioned Memorial Parlour 3-Day (Direct Memorial Hall)",
+          "current_2026_locked_price_sgd": 12888,
+          "projected_2036_market_price_sgd": 19100,
+          "projected_2046_market_price_sgd": 28240,
+          "guaranteed_savings_10yr_sgd": 6212,
+          "guaranteed_savings_20yr_sgd": 15352
+        }
+      ]
+    },
+    "packages": [
+      {
+        "plan_id": "PRE_PKG_DIRECT_CREMATION_UNIV",
+        "plan_name": "Simple Direct Cremation Pre-Plan (Universal / All Traditions)",
+        "tradition": "Universal / Buddhist / Christian / Catholic / Freethinker / Taoist",
+        "tier": "Direct Cremation (No Wake)",
+        "venue_type": "NO_WAKE",
+        "duration_days": 0,
+        "base_price_locked_sgd": 1500,
+        "gst_rate": 0.09,
+        "base_price_with_gst_sgd": 1635.0,
+        "price_guarantee_terms": "100% price lock guaranteed for life. $0 top-up required for baseline contracted items regardless of future economic inflation.",
+        "target_profile": "Individuals seeking an understated, quiet, dignified send-off without public wake ceremonies, or those wishing to spare their family all logistical complexities.",
+        "casket_specifications": {
+          "model_code": "CSK_ECO_WOOD_S03",
+          "name": "S03 Eco-Wood Natural Finish Cremation Casket",
+          "material": "Biodegradable compressed natural eco-wood fiber",
+          "lining": "White satin interior with pillow and quilted mattress",
+          "cremation_approved": true,
+          "standard_dimensions_cm": "198 (L) x 58 (W) x 42 (H)"
+        },
+        "transportation_and_hearse": {
+          "transfer_vehicle": "Standard Multi-Purpose Hearse",
+          "collection_service": "24/7 dedicated transfer from hospital mortuary, hospice, or private residential address in Singapore",
+          "crematorium_transfer": "Direct transfer from holding care facility to Mandai Crematorium"
+        },
+        "inclusions": [
+          "24/7 Collection of Deceased from hospital, hospice, or home by professional care team",
+          "Professional sanitization, preservative care, cosmetic makeup, and dressing (family supplies clothing)",
+          "S03 Eco-Wood Cremation Casket with satin interior lining",
+          "Mandai Crematorium slot booking and digital permit registration service with NEA",
+          "Conveyance to Mandai Crematorium in standard multi-purpose hearse",
+          "Funeral director and pallbearer escort crew for respectful encoffining and send-off",
+          "Complimentary ash collection from Mandai Crematorium on subsequent working day",
+          "Complimentary in-house sea scattering service south of Pulau Semakau OR safe handover of ash urn to next-of-kin",
+          "Digital certificate of completion and archival of pre-plan fulfillment"
+        ],
+        "exclusions_and_pass_through": [
+          "Statutory NEA Mandai Cremation Booking Fee (S$315.00 SGD pass-through at cost, zero markup)",
+          "NEA Permit to Cremate Fee (S$100.00 SGD pass-through if applicable)",
+          "Public wake setup, tentage, parlour rental, or religious chanting ceremonies"
+        ],
+        "customizable_addons": [
+          {
+            "addon_id": "PRE_ADD_EMBALM_COLD",
+            "name": "Advanced Embalming & Cold Room Holding Care (per day)",
+            "locked_price_sgd": 150
+          },
+          {
+            "addon_id": "PRE_ADD_ASH_GARDEN_OF_PEACE",
+            "name": "Inland Natural Ash Scattering at Garden of Peace (Mandai)",
+            "locked_price_sgd": 350
+          },
+          {
+            "addon_id": "PRE_ADD_ASH_SEA_CHARTER",
+            "name": "Private Sea Scattering Yacht Charter (Marina South Pier, up to 12 pax)",
+            "locked_price_sgd": 550
+          }
+        ]
+      },
+      {
+        "plan_id": "PRE_PKG_HDB_3D_BUDDHIST",
+        "plan_name": "Dignity 3-Day Buddhist Funeral Pre-Plan",
+        "tradition": "Buddhist",
+        "tier": "Standard HDB Void Deck",
+        "venue_type": "HDB_VOID_DECK",
+        "duration_days": 3,
+        "base_price_locked_sgd": 5888,
+        "gst_rate": 0.09,
+        "base_price_with_gst_sgd": 6417.92,
+        "price_guarantee_terms": "Full price lock for life on all baseline tentage, casket, chanting, and logistics.",
+        "target_profile": "Individuals and families desiring a complete, traditional Buddhist wake conducted with solemnity and full scriptural chanting rites.",
+        "casket_specifications": {
+          "model_code": "CSK_PEACE_E04",
+          "name": "Peace Premium Hardwood Casket (E04)",
+          "material": "Polished premium solid engineered wood with elegant brass-finish handles",
+          "lining": "Deluxe embroidered Lotus silk interior with Buddhist coverlet",
+          "cremation_approved": true,
+          "standard_dimensions_cm": "202 (L) x 62 (W) x 48 (H)"
+        },
+        "transportation_and_hearse": {
+          "hearse_type": "Modern Mercedes-Benz Glass Hearse / High-Top Dignity Hearse",
+          "bus_transfer": "1x 40-seater air-conditioned luxury coach for family and guests (2-way: Wake to Mandai to Wake)",
+          "collection_service": "24/7 dedicated transfer team with specialized stretcher and concealment cover"
+        },
+        "inclusions": [
+          "24/7 Body Collection from hospital mortuary or private residence",
+          "Professional embalming, sanitization, restorative cosmetological care, and dressing",
+          "Peace Premium Hardwood Casket (E04) with deluxe Lotus silk lining",
+          "HDB Void Deck 3-Day full tentage setup: privacy curtain backdrop, carpeted interior, general lighting, ceiling fans",
+          "10x round tables (4-ft), 100x plastic chairs, 2x square condolence registration tables",
+          "1x mobile chemical toilet with deodorizing solution (regularly serviced)",
+          "Traditional Buddhist Altar setup with Shakyamuni Buddha / Amitabha Buddha sacred image",
+          "Altar offerings: daily fresh fruits, floral arrangements, oil lamps, joss sticks, incense burner",
+          "3x sessions of Venerable Buddhist Monk chanting (Encoffining Service, Final Night Memorial Prayer, Funeral Day Send-off)",
+          "Enlargement of portrait photo (10x12 inch) with designer wooden frame and 6x passport-size memorial prints",
+          "Deluxe 3-layer fresh floral photo wreath / casket spray",
+          "Condolence registration box, guest recording book, safe donation safe-deposit box, and digital PayNow QR stand",
+          "Wake refreshments consignment: 1x carton pack beverages, titbits, disposable cups/plates (pay-on-consumption)",
+          "Mandai Crematorium slot booking, Town Council wake permit filing, and NEA paperwork",
+          "Professional Funeral Director & Butler team coordinating all daily ceremonies and cortege procession"
+        ],
+        "exclusions_and_pass_through": [
+          "Town Council utility (water & electricity) tapping fees (typically S$50-S$150 billed direct by TC)",
+          "Town Council void deck space rental fee (S$12 to S$20 per day pass-through)",
+          "Statutory NEA Mandai Cremation Fee (S$315 pass-through)",
+          "Guest food buffet catering (available via SDC zero-commission catering partners)"
+        ],
+        "customizable_addons": [
+          {
+            "addon_id": "PRE_ADD_WAKE_DAY_EXT",
+            "name": "Extension to 5-Day Wake Duration",
+            "locked_price_sgd": 900
+          },
+          {
+            "addon_id": "PRE_ADD_VEGAN_CATERING_VOUCHER",
+            "name": "Vegetarian Monk & Guest Bento Catering Credit (50 pax)",
+            "locked_price_sgd": 650
+          }
+        ]
+      },
+      {
+        "plan_id": "PRE_PKG_HDB_3D_TAOIST",
+        "plan_name": "Traditional 3-Day Taoist Funeral Pre-Plan",
+        "tradition": "Taoist (Dialect-Specific: Hokkien, Teochew, Cantonese, Hakka, Hainanese)",
+        "tier": "Standard HDB Void Deck",
+        "venue_type": "HDB_VOID_DECK",
+        "duration_days": 3,
+        "base_price_locked_sgd": 8288,
+        "gst_rate": 0.09,
+        "base_price_with_gst_sgd": 9033.92,
+        "price_guarantee_terms": "Full price lock for life covering Taoist Priest chanting troupe, paper house effigies, and sacred altar setup.",
+        "target_profile": "Individuals desiring authentic ancestral Taoist rites tailored to their specific Chinese dialect heritage with full rituals.",
+        "casket_specifications": {
+          "model_code": "CSK_TAOIST_HERITAGE_T01",
+          "name": "Heritage Hardwood Taoist Longevity Casket (T01)",
+          "material": "High-grade polished mahogany-finish wood with traditional motifs",
+          "lining": "Yellow / gold brocade silk lining with Longevity embroidery",
+          "cremation_approved": true,
+          "standard_dimensions_cm": "205 (L) x 64 (W) x 50 (H)"
+        },
+        "transportation_and_hearse": {
+          "hearse_type": "Modern Mercedes-Benz Glass Hearse with Traditional Taoist Dragon Canopy",
+          "bus_transfer": "1x 40-seater air-conditioned luxury coach for family and cortege",
+          "collection_service": "24/7 dedicated transfer team"
+        },
+        "inclusions": [
+          "24/7 Body Collection and conveyance to modern preparation suite",
+          "Complete professional embalming, preservation, cosmetological makeup, and dressing in longevity robes (Shou Yi)",
+          "Heritage Hardwood Taoist Casket with gold silk interior",
+          "3-Day HDB Void Deck full tentage setup with dialect-specific altar backdrops and ancestral curtains",
+          "10x round tables, 100x chairs, 2x registration tables, fans, and general lighting",
+          "1x mobile chemical toilet",
+          "Taoist Sacred Altar with Deity statues, Lord Taiyi Tianzun image, soul tablet (Ling Wei), and incense burners",
+          "Dialect-Specific Taoist Priest Chanting Troupe (3 sessions: Opening Altar Rites, Final Night Chanting with crossing the Golden/Silver Bridge, Funeral Day Crossing Rites)",
+          "Traditional Taoist Musical Instruments Troupe (drums, cymbals, suona, gongs)",
+          "Curated Paper Effigy Package: 6-ft Deluxe Paper Mansion House, Golden & Silver Mountains, Paper Mercedes Car with Driver, Paper Servants, and Hell Bank Notes",
+          "Town Council burning permit application and provision of high-capacity wire burning cage",
+          "Portrait photo enlargement (10x12) with deluxe frame and fresh floral surround",
+          "40-seater air-conditioned bus for cortege transfer",
+          "Full Mandai cremation slot booking, logistics, and dedicated funeral coordinator"
+        ],
+        "exclusions_and_pass_through": [
+          "Town Council void deck space rental and utility tapping fees",
+          "Statutory NEA Mandai Cremation Fee (S$315 pass-through)",
+          "Additional paper house effigies exceeding standard package inclusions"
+        ],
+        "customizable_addons": [
+          {
+            "addon_id": "PRE_ADD_TAOIST_BRIDGE_EXPANSION",
+            "name": "Grand 9-Priest High Taoist Ritual with Hell Gate Breaking Ceremony",
+            "locked_price_sgd": 1800
+          }
+        ]
+      },
+      {
+        "plan_id": "PRE_PKG_HDB_3D_CHRISTIAN_CATHOLIC",
+        "plan_name": "Peace 3-Day Christian / Catholic Funeral Pre-Plan",
+        "tradition": "Christian / Roman Catholic",
+        "tier": "Standard HDB Void Deck",
+        "venue_type": "HDB_VOID_DECK",
+        "duration_days": 3,
+        "base_price_locked_sgd": 5688,
+        "gst_rate": 0.09,
+        "base_price_with_gst_sgd": 6199.92,
+        "price_guarantee_terms": "Full price lock for life covering Christian/Catholic backdrop, PA system, and memorial service coordination.",
+        "target_profile": "Believers seeking a serene, Christ-centred memorial service with praise and worship music, pastor/priest eulogy coordination, and peaceful ambience.",
+        "casket_specifications": {
+          "model_code": "CSK_GRACE_WHITE_C02",
+          "name": "Grace Pure White Casket with Gold Crucifix / Cross (C02)",
+          "material": "Engineered hardwood with pristine pearl white satin finish",
+          "lining": "Pure white quilted velvet interior with lace trim and Scripture embroidery",
+          "cremation_approved": true,
+          "standard_dimensions_cm": "200 (L) x 60 (W) x 45 (H)"
+        },
+        "transportation_and_hearse": {
+          "hearse_type": "Modern Mercedes-Benz White Glass Hearse",
+          "bus_transfer": "1x 40-seater luxury air-conditioned coach",
+          "collection_service": "24/7 dedicated transfer care team"
+        },
+        "inclusions": [
+          "24/7 Body Collection and transfer from hospital or home",
+          "Professional embalming, sanitization, cosmetological makeup, and dressing",
+          "Grace Pure White Casket (C02) with premium velvet lining and Cross fitting",
+          "3-Day HDB Void Deck tentage setup with pristine white fabric drapes and privacy curtains",
+          "10x round tables, 100x chairs, registration counters, lighting, and heavy-duty fans",
+          "Contemporary Christian Memorial Backdrop with lighted Cross / Catholic Crucifix",
+          "Professional PA Sound System with 2x wireless microphones and Bluetooth audio receiver for praise & worship music and eulogies",
+          "Vigil Service coordination with church pastor, choir, or Catholic parish priest (Requiem Mass / Rosary prayer coordination)",
+          "Portrait photo enlargement (10x12) with elegant white wooden frame and fresh floral casket spray",
+          "Guest register book, condolence donation safe box, and digital bereavement QR stand",
+          "40-seater air-conditioned bus for Mandai Crematorium cortege",
+          "All statutory NEA cremation booking and Town Council permit administrative filings",
+          "Experienced Funeral Director on-site for all vigil nights and final cortege"
+        ],
+        "exclusions_and_pass_through": [
+          "Town Council utility and void deck rental charges",
+          "Statutory NEA Mandai Cremation Fee (S$315 pass-through)",
+          "Church honorarium for presiding pastor / choir / priest"
+        ],
+        "customizable_addons": [
+          {
+            "addon_id": "PRE_ADD_CHURCH_TRANSFER_MASS",
+            "name": "Cortege Detour & Church Funeral Mass Service Coordination",
+            "locked_price_sgd": 450
+          }
+        ]
+      },
+      {
+        "plan_id": "PRE_PKG_HDB_3D_FREETHINKER",
+        "plan_name": "Serenity 3-Day Freethinker / Secular Memorial Pre-Plan",
+        "tradition": "Freethinker / Non-Religious / Modern Secular",
+        "tier": "Standard HDB Void Deck",
+        "venue_type": "HDB_VOID_DECK",
+        "duration_days": 3,
+        "base_price_locked_sgd": 5388,
+        "gst_rate": 0.09,
+        "base_price_with_gst_sgd": 5872.92,
+        "price_guarantee_terms": "Full price lock for life on all contemporary secular memorial elements.",
+        "target_profile": "Individuals seeking a dignified, warm celebration of life focused on personal memories, family tributes, and heartfelt storytelling without religious rituals.",
+        "casket_specifications": {
+          "model_code": "CSK_MODERN_OAK_F01",
+          "name": "Modern Oak Minimalist Casket (F01)",
+          "material": "Contemporary light oak veneer with brushed aluminum handles",
+          "lining": "Soft grey linen interior with hypoallergenic mattress",
+          "cremation_approved": true,
+          "standard_dimensions_cm": "200 (L) x 60 (W) x 44 (H)"
+        },
+        "transportation_and_hearse": {
+          "hearse_type": "Modern Mercedes-Benz Glass Hearse",
+          "bus_transfer": "1x 40-seater luxury air-conditioned coach",
+          "collection_service": "24/7 dedicated transfer care team"
+        },
+        "inclusions": [
+          "24/7 Body Collection and conveyance to preparation centre",
+          "Complete embalming, cosmetological makeup, and family-provided styling",
+          "Modern Oak Minimalist Casket (F01)",
+          "3-Day HDB Void Deck modern aesthetic setup (choice of champagne, pearl white, or charcoal draping)",
+          "10x round tables, 100x chairs, registration counters, lighting, and fans",
+          "Minimalist Memorial Stage with ambient warm LED spotlighting",
+          "High-Definition 55-inch Digital Smart TV Display on floor stand for photo slideshows and video eulogies",
+          "Bluetooth sound system for customized background music playlists",
+          "Celebration of Life memory corner with memory cards, guest pens, and memory drop box",
+          "Portrait photo enlargement (10x12) in sleek modern frame with customized designer flower wreath",
+          "40-seater air-conditioned coach for funeral cortege",
+          "Mandai Crematorium booking and digital permit registration",
+          "Professional Funeral Butler coordinating family sharing sessions and eulogies"
+        ],
+        "exclusions_and_pass_through": [
+          "Town Council utility and void deck rental charges",
+          "Statutory NEA Mandai Cremation Fee (S$315 pass-through)"
+        ],
+        "customizable_addons": [
+          {
+            "addon_id": "PRE_ADD_CELEBRANT_MC",
+            "name": "Professional Secular Celebrant / Master of Ceremonies for Memorial Service",
+            "locked_price_sgd": 500
+          }
+        ]
+      },
+      {
+        "plan_id": "PRE_PKG_PARLOUR_3D_PREMIUM",
+        "plan_name": "Elegance 3-Day Air-Conditioned Memorial Parlour Pre-Plan",
+        "tradition": "Universal / All Traditions (Buddhist, Taoist, Christian, Catholic, Freethinker)",
+        "tier": "Premium Memorial Parlour",
+        "venue_type": "AIRCON_PARLOUR",
+        "duration_days": 3,
+        "base_price_locked_sgd": 12888,
+        "gst_rate": 0.09,
+        "base_price_with_gst_sgd": 14047.92,
+        "price_guarantee_terms": "Full price lock for life including private parlour suite rental and VIP amenities.",
+        "target_profile": "Families and individuals requiring a fully air-conditioned, private, and exclusive memorial environment with private family rest suites and hospitality services.",
+        "casket_specifications": {
+          "model_code": "CSK_EXECUTIVE_MAHOGANY_P01",
+          "name": "Executive Handcrafted Solid Mahogany Casket (P01)",
+          "material": "Solid plantation-grown mahogany with high-gloss piano lacquer finish",
+          "lining": "Ultra-plush memory foam bedding with Italian hand-stitched silk lining",
+          "cremation_approved": true,
+          "standard_dimensions_cm": "208 (L) x 66 (W) x 52 (H)"
+        },
+        "transportation_and_hearse": {
+          "hearse_type": "VIP Presidential Mercedes-Benz E-Class Hearse with Chauffeur",
+          "family_limousine": "1x 7-Seater Luxury Toyota Alphard VIP Limousine for immediate family",
+          "bus_transfer": "1x 45-seater luxury coach for cortege guests",
+          "collection_service": "24/7 dedicated transfer team"
+        },
+        "inclusions": [
+          "24/7 Priority Body Collection with discreet VIP conveyance vehicle",
+          "Master embalming, restorative art therapy, and premium cosmetological styling",
+          "Executive Handcrafted Solid Mahogany Casket (P01)",
+          "3-Day Exclusive Rental of Direct Memorial Hall Air-Conditioned Parlour (89 Geylang Bahru)",
+          "Private En-Suite Family Rest Room (equipped with sofa bed, private bathroom/shower, smart TV, Wi-Fi)",
+          "Bespoke floral styling: Grand floral photo arch, cascading casket spray, and altar fresh flowers",
+          "Professional Nespresso Barista coffee machine station with unlimited premium capsules and gourmet tea bar",
+          "Digital interactive guest register kiosk and digital donation PayNow display",
+          "Premium PA sound system and wireless audio visual setup",
+          "Full religious or secular rites coordination (Buddhist monk, Taoist priest, pastor, or celebrant)",
+          "Dedicated Senior Funeral Butler stationed on-site throughout the wake duration",
+          "Presidential Hearse and Alphard Limousine cortege transfer to Mandai Crematorium",
+          "Private ash collection and personalized urn handover ceremony"
+        ],
+        "exclusions_and_pass_through": [
+          "Statutory NEA Mandai Cremation Fee (S$315 pass-through)",
+          "Guest buffet catering meals (itemized on separate catering menu)"
+        ],
+        "customizable_addons": [
+          {
+            "addon_id": "PRE_ADD_LIVE_STREAMING_BROADCAST",
+            "name": "Multi-Camera High-Definition Global Live Streaming Broadcast for Overseas Relatives",
+            "locked_price_sgd": 650
+          }
+        ]
+      }
+    ]
+  },
+  "financial_and_payment_framework": {
+    "payment_structures": [
+      {
+        "structure_id": "PAY_LUMP_SUM_UPFRONT",
+        "name": "Option A: 100% Upfront Lump Sum Settlement",
+        "description": "Full payment of the contracted package at point of signing.",
+        "incentives_and_rebates": "Entitles planner to a 5% instant price discount OR S$300 worth of complimentary floral/add-on upgrade credits.",
+        "accepted_payment_modes": [
+          "PayNow Corporate (Instant clearance via UEN)",
+          "Bank Transfer / FAST",
+          "Credit Card (Visa, Mastercard, American Express with 0% merchant surcharge)",
+          "Cheque payable to Solace Dignity Care Escrow Account"
+        ],
+        "escrow_protection": "100% of funds deposited directly into an independent client trust account managed by a MAS-licensed trust custodian."
+      },
+      {
+        "structure_id": "PAY_INSTALLMENTS_INTEREST_FREE",
+        "name": "Option B: 0% Interest-Free Monthly Installment Plans",
+        "description": "Flexible recurring monthly payments structured over fixed tenures without interest, finance charges, or compounding fees.",
+        "available_tenures": [
+          {
+            "tenure_months": 6,
+            "interest_rate_percent": 0.0,
+            "example_monthly_installment_sgd": {
+              "direct_cremation_package_1500": 250.0,
+              "standard_buddhist_package_5888": 981.33
+            }
+          },
+          {
+            "tenure_months": 12,
+            "interest_rate_percent": 0.0,
+            "example_monthly_installment_sgd": {
+              "direct_cremation_package_1500": 125.0,
+              "standard_buddhist_package_5888": 490.67
+            }
+          },
+          {
+            "tenure_months": 24,
+            "interest_rate_percent": 0.0,
+            "example_monthly_installment_sgd": {
+              "direct_cremation_package_1500": 62.5,
+              "standard_buddhist_package_5888": 245.33
+            }
+          },
+          {
+            "tenure_months": 36,
+            "interest_rate_percent": 0.0,
+            "example_monthly_installment_sgd": {
+              "direct_cremation_package_1500": 41.67,
+              "standard_buddhist_package_5888": 163.56
+            }
+          }
+        ],
+        "payment_collection_methods": [
+          "Interbank GIRO (Automated monthly deduction)",
+          "Recurring Credit/Debit Card billing",
+          "Automated monthly PayNow schedule"
+        ],
+        "grace_period_and_default_policy": "In the event of a temporary financial hardship, planners receive a 60-day penalty-free grace period. If installments remain unpaid after 90 days, the plan can be paused, converted to a reduced-paid-up plan, or refunded according to standard refund policies without penalty."
+      },
+      {
+        "structure_id": "PAY_TRUST_ESCROW_ARRANGEMENT",
+        "name": "Option C: Segregated Client Trust Account Protection",
+        "description": "All pre-planning client funds are legally ring-fenced in a segregated custodian trust account separate from Solace Dignity Care operational capital.",
+        "trustee_institution": "MAS-Regulated Independent Custodian / Public Trustee Partner",
+        "disbursement_condition": "Trustee releases funds to Solace Dignity Care STRICTLY upon submission of the official Digital Death Certificate issued by ICA and a service completion sign-off signed by the appointed Next-of-Kin nominee.",
+        "insolvency_protection": "In the impossible event of corporate restructuring or cessation, client funds remain 100% protected and are fully refundable or transferable to an alternative accredited funeral director."
+      }
+    ],
+    "price_lock_guarantee_rules": {
+      "inflation_immunity": "The agreed base package price is permanently locked upon signing. Solace Dignity Care guarantees zero inflation markups or baseline price increases at point of need.",
+      "gst_handling": "Prevailing 9% GST is applied based on statutory Singapore tax regulations at the time of contract execution. Future statutory GST increments mandated by IRAS are absorbed by SDC for all fully paid-up contracts.",
+      "disbursements_pass_through": "Government mandatory disbursements (such as NEA Mandai Cremation fees of S$315, NEA permit fees, and Town Council space rental) are passed through at official government gazetted rates at the time of need with 0% markup."
+    }
+  },
+  "terms_and_policies": {
+    "cooling_off": {
+      "duration_calendar_days": 30,
+      "policy_summary": "Every Solace Dignity Care pre-planning client is entitled to a 30-day unconditional 100% money-back cooling-off period from the date of contract execution (exceeding the standard 14-day statutory guideline).",
+      "refund_percentage": 100.0,
+      "administrative_deduction_sgd": 0.0,
+      "cancellation_method": "Submit a simple written cancellation request via email to preplan@solacedignitycare.com.sg or through the Singpass-integrated Client Portal. No reason required.",
+      "refund_payout_timeline": "100% of all paid monies are credited back to the planner's original payment method / PayNow within 7 to 14 business days."
+    },
+    "cancellations_and_refunds": {
+      "post_cooling_off_refund_schedule": [
+        {
+          "tenure_elapsed": "Day 31 to 1 Year (12 Months)",
+          "refund_percentage_of_principal": 90.0,
+          "retained_administrative_charge_percent": 10.0,
+          "description": "90% of all principal paid is refunded. 10% is retained to cover trust custodian onboarding, digital vault setup, and administrative expenses."
+        },
+        {
+          "tenure_elapsed": "Year 1 to Year 3 (13 to 36 Months)",
+          "refund_percentage_of_principal": 85.0,
+          "retained_administrative_charge_percent": 15.0,
+          "description": "85% of total paid principal is refunded; 15% covers multi-year trust maintenance and account administration."
+        },
+        {
+          "tenure_elapsed": "Year 3 to Year 5 (37 to 60 Months)",
+          "refund_percentage_of_principal": 80.0,
+          "retained_administrative_charge_percent": 20.0,
+          "description": "80% of total paid principal is refunded."
+        },
+        {
+          "tenure_elapsed": "Beyond Year 5 (>60 Months)",
+          "refund_percentage_of_principal": 75.0,
+          "retained_administrative_charge_percent": 25.0,
+          "description": "75% of total paid principal is refunded."
+        }
+      ],
+      "unforeseen_circumstances_waivers": {
+        "overseas_death_relocation": "If the planner permanently emigrates from Singapore or passes away overseas where repatriation to Singapore is not desired, the contract value can be 100% transferred to an immediate family member in Singapore OR refunded at 90% of principal regardless of tenure upon proof of overseas residency/death.",
+        "pro_bono_conversion": "Planners can elect to donate their pre-plan value to the Solace Dignity Care Life Foundation to sponsor a pro bono funeral for an indigent elder in Singapore."
+      }
+    },
+    "modifications_and_transfers": {
+      "policy_modifications": {
+        "flexibility_guarantee": "Planners or their authorized legal representatives can modify funeral preferences at any time prior to point-of-need activation without penalty.",
+        "upgrade_rules": "If upgrading to a higher-tier package (e.g. from HDB Void Deck to Memorial Parlour, or standard casket to solid mahogany), the planner only pays the exact difference in price based on the original locked catalog price.",
+        "downgrade_rules": "If downsizing a package (e.g. from 5-day wake to direct cremation), the excess funds are credited towards additional services (e.g., columbarium niche selection, floral tributes) or refunded to the planner/estate.",
+        "religious_rites_change": "Changing spiritual or cultural traditions (e.g. from Buddhist to Freethinker, or Taoist to Christian) incurs $0 administrative penalty. The package value is fully reapplied to the equivalent tier in the new tradition."
+      },
+      "plan_transferability": {
+        "transfer_rights": "All Solace Dignity Care pre-planning packages are 100% transferable to any living person in Singapore prior to service activation.",
+        "eligible_transferees": [
+          "Spouse / Legal Partner",
+          "Children / Legal Dependents",
+          "Parents / Parents-in-Law",
+          "Siblings",
+          "Relatives or Designated Friends",
+          "Nominated Third Parties"
+        ],
+        "transfer_fee_structure": {
+          "immediate_family_transfer": "S$0.00 (100% Free transfer for spouse, children, parents, and siblings)",
+          "third_party_transfer": "S$50.00 nominal trust re-registration fee for non-family third parties"
+        },
+        "transfer_procedure": "Submit a completed Transfer of Pre-Plan Beneficiary Form signed by the original planner and the new designated beneficiary (verified via Singpass). A revised Certificate of Entitlement is issued within 3 working days."
+      }
+    }
+  },
+  "required_documents": [
+    {
+      "stage": "Pre-Plan Setup & Registration",
+      "documents": [
+        {
+          "document_name": "Planner's Identification Document (NRIC / FIN / Passport)",
+          "issuing_authority": "Immigration & Checkpoints Authority (ICA)",
+          "purpose": "Mandatory identity and age verification (planner must be at least 21 years old). Verified instantly via Singpass.",
+          "mandatory": true
+        },
+        {
+          "document_name": "Designated Primary Nominee / Next-of-Kin Contact Details",
+          "issuing_authority": "Self-Declared (NRIC copy / Singpass detail)",
+          "purpose": "Establishes the primary point of contact authorized to initiate funeral dispatch and make on-the-ground operational decisions upon planner's passing.",
+          "mandatory": true
+        },
+        {
+          "document_name": "Completed Solace Funeral Wishes & Cultural Preference Questionnaire",
+          "issuing_authority": "Solace Dignity Care",
+          "purpose": "Formally records selected package, casket, hearse, venue, religious rites, and ash resting preferences.",
+          "mandatory": true
+        },
+        {
+          "document_name": "Signed Pre-Need Funeral Agreement & Trust Authorization",
+          "issuing_authority": "Solace Dignity Care & Custodian Trustee",
+          "purpose": "Legal binding agreement establishing locked-in price, installment terms, and escrow protections.",
+          "mandatory": true
+        },
+        {
+          "document_name": "LPA / Will Registration Reference (Optional)",
+          "issuing_authority": "OPG / Private Law Firm",
+          "purpose": "Allows SDC systems to record the identity of the legal Donee or Executor for coordinated estate communication.",
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "stage": "Point-of-Need Emergency Activation (Upon Passing)",
+      "documents": [
+        {
+          "document_name": "Digital Death Certificate (PDF)",
+          "issuing_authority": "ICA / My Legacy Portal",
+          "purpose": "Statutory legal proof of death required to apply for Mandai Crematorium permits, Town Council void deck permits, and cortege clearance. Downloaded via Singpass.",
+          "mandatory": true
+        },
+        {
+          "document_name": "Solace Pre-Plan Policy Certificate / Emergency Card ID",
+          "issuing_authority": "Solace Dignity Care",
+          "purpose": "Instant identification of pre-contracted deliverables, unlocking $0 baseline billing.",
+          "mandatory": true
+        },
+        {
+          "document_name": "Deceased's Original NRIC (Physical Card)",
+          "issuing_authority": "ICA",
+          "purpose": "Required by certifying doctors and mortuary officers during physical handover.",
+          "mandatory": true
+        },
+        {
+          "document_name": "Primary Nominee / Informant Original NRIC",
+          "issuing_authority": "ICA",
+          "purpose": "Verifies identity of informant signing the operational handover and cortege authorization.",
+          "mandatory": true
+        }
+      ]
+    }
+  ],
+  "intents_and_query_mappings": [
+    {
+      "intent_id": "INTENT_PREPLAN_OVERVIEW",
+      "topic": "Pre-Planning Overview",
+      "user_phrasing_variations": [
+        "Can I plan my own funeral in advance?",
+        "How do I pre-plan a funeral in Singapore?",
+        "Why should I plan my funeral before I die?",
+        "What is funeral pre-planning?",
+        "Is it possible to book a funeral package early?",
+        "Can I choose my own casket and wake location before I pass away?",
+        "How does pre-need funeral planning work?"
+      ],
+      "mapped_data_source": "pre_planning_data.json -> pre_planning_concepts -> CONCEPT_PRENEED_VS_ATNEED",
+      "core_response_logic": "Explain the concept of pre-need funeral planning in Singapore. Highlight key benefits: removing emotional stress from family members, locking in current prices against inflation, preventing family disputes, and ensuring personal religious/cultural wishes are respected. Outline the simple 6-step lifecycle from consultation to My Legacy vault storage.",
+      "recommended_action": "Invite the user to explore available packages or book a free, no-obligation pre-planning consultation."
+    },
+    {
+      "intent_id": "INTENT_PREPLAN_COST_LOCK",
+      "topic": "Inflation Protection & Price Lock",
+      "user_phrasing_variations": [
+        "How to lock in funeral costs now?",
+        "Will funeral prices increase in future?",
+        "How does inflation protection work for pre-planned funerals?",
+        "Can I buy a funeral now to avoid price increase later?",
+        "If I buy a package now, will my family have to pay extra when I die in 20 years?",
+        "What is the locked-in price guarantee?"
+      ],
+      "mapped_data_source": "pre_planning_data.json -> plans_and_pricing -> inflation_protection_benchmarks",
+      "core_response_logic": "Explain that funeral costs in Singapore rise by 3.5% to 5.0% annually. Reassure the user that with Solace Dignity Care's Pre-Plan, the contracted base price is 100% locked for life with a $0 extra charge guarantee for baseline items, regardless of whether fulfillment occurs 5, 15, or 30 years later. Provide sample inflation savings comparisons (e.g. saving ~S$2,800 on a Standard 3-Day Wake over 10 years).",
+      "recommended_action": "Present the cost projection comparison table."
+    },
+    {
+      "intent_id": "INTENT_MY_LEGACY_INTEGRATION",
+      "topic": "My Legacy Portal Integration",
+      "user_phrasing_variations": [
+        "How does My Legacy portal connect to funeral planning?",
+        "Can I put my funeral wishes in My Legacy?",
+        "How to upload funeral plan to Singapore My Legacy vault?",
+        "Does GovTech My Legacy handle funerals?",
+        "Can my family see my funeral plan on Singpass when I die?"
+      ],
+      "mapped_data_source": "pre_planning_data.json -> digital_planning_integrations -> DIGITAL_MY_LEGACY_SG",
+      "core_response_logic": "Detail Singapore's official My Legacy portal (mylegacy.life.gov.sg). Explain how planners can upload their SDC Pre-Planning Policy Reference and wishes into the My Legacy Vault. Explain that upon death, ICA automatically registers the passing, and designated Trusted Persons gain access via Singpass to retrieve the pre-plan and digital death certificate.",
+      "recommended_action": "Provide the 5-step Singpass My Legacy vault upload instructions."
+    },
+    {
+      "intent_id": "INTENT_LPA_VS_FUNERAL_PLAN",
+      "topic": "LPA vs Funeral Pre-Plan",
+      "user_phrasing_variations": [
+        "Does LPA cover funeral arrangements?",
+        "What is the difference between LPA and a funeral pre-plan?",
+        "Can my LPA Donee decide my funeral?",
+        "I already have an LPA, do I still need a funeral pre-plan?",
+        "Can my Donee use my bank account to pay for my funeral using LPA?"
+      ],
+      "mapped_data_source": "pre_planning_data.json -> pre_planning_concepts -> CONCEPT_LEGAL_INSTRUMENTS_COMPARISON",
+      "core_response_logic": "Emphasize the CRITICAL LEGAL RULE: Under the Mental Capacity Act, an LPA is active ONLY while the donor is alive. The moment death occurs, the LPA is automatically REVOKED and ceases to have any legal power. Donees CANNOT manage funeral arrangements or access bank accounts using an LPA after death. Therefore, a separate Funeral Pre-Planning Agreement is essential to ensure funeral wishes and funds are locked in.",
+      "recommended_action": "Clarify the legal boundary and recommend setting up both an LPA for living care and a Funeral Pre-Plan for post-death care."
+    },
+    {
+      "intent_id": "INTENT_WILL_VS_PREPLAN",
+      "topic": "Will vs Funeral Pre-Plan",
+      "user_phrasing_variations": [
+        "Can I just write my funeral wishes in my Will?",
+        "Why is a Will not enough for funeral planning?",
+        "Can my executor arrange my funeral using my Will?",
+        "Will probate delay funeral planning?"
+      ],
+      "mapped_data_source": "pre_planning_data.json -> pre_planning_concepts -> CONCEPT_LEGAL_INSTRUMENTS_COMPARISON",
+      "core_response_logic": "Explain that a Will governs asset distribution and requires a court Grant of Probate, which typically takes 2 to 6 months after death. Funeral decisions must happen within hours of passing. If funeral wishes are only written in a Will, they are almost always discovered after the burial or cremation has already taken place. A pre-need funeral agreement takes effect immediately at hour zero.",
+      "recommended_action": "Encourage documenting funeral wishes directly with SDC and uploading the reference to My Legacy Vault."
+    },
+    {
+      "intent_id": "INTENT_ACP_AMD_DIFFERENCE",
+      "topic": "ACP and AMD vs Funeral Pre-Plan",
+      "user_phrasing_variations": [
+        "What is the difference between ACP, AMD, and funeral pre-planning?",
+        "Advance care planning vs funeral planning",
+        "Does AMD cover what happens after death?"
+      ],
+      "mapped_data_source": "pre_planning_data.json -> pre_planning_concepts -> CONCEPT_LEGAL_INSTRUMENTS_COMPARISON",
+      "core_response_logic": "Clarify that ACP (Advance Care Planning) articulates medical care preferences during illness, and AMD (Advance Medical Directive) is a statutory directive instructing doctors not to use extraordinary life support if terminally ill. Both apply strictly while ALIVE. Funeral pre-planning applies after death to handle the funeral and final resting rites.",
+      "recommended_action": "Provide a quick comparison summary."
+    },
+    {
+      "intent_id": "INTENT_PREPLAN_PACKAGES_PRICING",
+      "topic": "Packages & Pricing",
+      "user_phrasing_variations": [
+        "What pre-planning packages are available?",
+        "How much does a pre-planned funeral cost in Singapore?",
+        "What are the fixed prices for funeral pre-plans?",
+        "Pre-planning funeral packages Buddhist Taoist Christian Freethinker",
+        "How much is direct cremation pre-plan?"
+      ],
+      "mapped_data_source": "pre_planning_data.json -> plans_and_pricing -> packages",
+      "core_response_logic": "Present the full suite of fixed-price pre-planning packages: Simple Direct Cremation (S$1,500), Dignity 3-Day Buddhist (S$5,888), Traditional 3-Day Taoist (S$8,288), Peace 3-Day Christian/Catholic (S$5,688), Serenity 3-Day Freethinker (S$5,388), and Premium 3-Day Memorial Parlour (S$12,888). Mention 9% GST and that prices are locked for life.",
+      "recommended_action": "Guide user to choose their preferred tradition and tier for a detailed itemized breakdown."
+    },
+    {
+      "intent_id": "INTENT_PREPLAN_INSTALLMENT_PAYMENT",
+      "topic": "Installment Plans & Payment Options",
+      "user_phrasing_variations": [
+        "Can I pay for my funeral in monthly installments?",
+        "Are there 0% interest installment plans for funeral pre-planning?",
+        "How much per month for a pre-planned funeral?",
+        "Can I pay via GIRO for funeral pre-plan?",
+        "Can I pay using credit card installments?"
+      ],
+      "mapped_data_source": "pre_planning_data.json -> financial_and_payment_framework -> payment_structures -> PAY_INSTALLMENTS_INTEREST_FREE",
+      "core_response_logic": "Detail the 0% interest-free monthly installment options available across 6, 12, 24, and 36-month tenures via GIRO or recurring card. Provide concrete monthly examples (e.g. S$41.67/month for Direct Cremation over 36 months, or S$163.56/month for a Standard 3-Day Buddhist package over 36 months). Mention the 60-day penalty-free grace period.",
+      "recommended_action": "Offer to calculate a customized monthly payment schedule based on the user's selected package."
+    },
+    {
+      "intent_id": "INTENT_TRUST_ESCROW_SAFETY",
+      "topic": "Fund Safety & Trust Account Protection",
+      "user_phrasing_variations": [
+        "Is my money safe if the funeral company closes down?",
+        "What happens to my pre-paid funeral money before I die?",
+        "Are pre-need funeral funds held in a trust in Singapore?",
+        "What if Solace Dignity Care goes bankrupt?",
+        "How are pre-planning funds protected?"
+      ],
+      "mapped_data_source": "pre_planning_data.json -> financial_and_payment_framework -> payment_structures -> PAY_TRUST_ESCROW_ARRANGEMENT",
+      "core_response_logic": "Reassure the user that 100% of pre-planning funds are held in a segregated client trust account managed by a MAS-licensed independent trustee. The funds are legally ring-fenced from company operating capital. Funds are released strictly upon submission of the ICA Digital Death Certificate and service sign-off. In the event of company insolvency, funds remain 100% protected and refundable.",
+      "recommended_action": "Highlight Solace Dignity Care's institutional escrow governance and consumer protections."
+    },
+    {
+      "intent_id": "INTENT_COOLING_OFF_PERIOD",
+      "topic": "Cooling-Off Period",
+      "user_phrasing_variations": [
+        "Is there a cooling-off period if I sign a funeral pre-plan?",
+        "Can I change my mind after buying a pre-plan?",
+        "What is the 30-day money-back guarantee for funeral pre-planning?",
+        "Can I get a full refund if I cancel within 30 days?"
+      ],
+      "mapped_data_source": "pre_planning_data.json -> terms_and_policies -> cooling_off",
+      "core_response_logic": "Explain that SDC provides an industry-leading 30-day unconditional 100% money-back cooling-off period (exceeding standard 14-day statutory guidelines). If the planner decides to cancel within 30 days, 100% of monies paid are refunded via PayNow/bank transfer within 7-14 business days with $0 administrative fee.",
+      "recommended_action": "Assure the user that signing up carries zero financial risk during the cooling-off window."
+    },
+    {
+      "intent_id": "INTENT_CANCEL_PREPLAN_REFUND",
+      "topic": "Cancellation & Partial Refund Schedule",
+      "user_phrasing_variations": [
+        "How to cancel a pre-planned funeral package after 1 year?",
+        "What is the refund policy if I cancel my pre-plan after the cooling-off period?",
+        "Can I get my money back if I don't want the plan anymore after 3 years?",
+        "What are the cancellation penalties for pre-paid funerals?"
+      ],
+      "mapped_data_source": "pre_planning_data.json -> terms_and_policies -> cancellations_and_refunds",
+      "core_response_logic": "Provide the transparent tiered refund schedule: Year 1 (Days 31-365) = 90% refund (10% retained for admin/trust setup); Year 1-3 = 85% refund; Year 3-5 = 80% refund; Beyond 5 years = 75% refund. Mention special waivers for overseas emigration.",
+      "recommended_action": "Explain that plans can alternatively be transferred to a family member for free instead of taking a cancellation loss."
+    },
+    {
+      "intent_id": "INTENT_MODIFY_FUNERAL_WISHES",
+      "topic": "Modifying Preferences & Upgrades",
+      "user_phrasing_variations": [
+        "Can I change my funeral wishes after signing the pre-plan?",
+        "What if I want to upgrade my casket later?",
+        "Can I change my funeral package from Buddhist to Christian later?",
+        "Can I change wake venue from HDB void deck to parlour after pre-planning?",
+        "Is there a fee to update my funeral preferences?"
+      ],
+      "mapped_data_source": "pre_planning_data.json -> terms_and_policies -> modifications_and_transfers -> policy_modifications",
+      "core_response_logic": "State clearly that funeral preferences can be modified at any time prior to point-of-need with $0 amendment fee. If upgrading items, the planner only pays the price difference at original locked rates. If switching religion (e.g. Taoist to Christian), package value is 100% transferred to the new tradition.",
+      "recommended_action": "Explain how easy it is to update wishes via the digital client portal or a quick call."
+    },
+    {
+      "intent_id": "INTENT_TRANSFER_PREPLAN",
+      "topic": "Transferring Plan to Family or Others",
+      "user_phrasing_variations": [
+        "Can I transfer my pre-planned funeral to my parents or spouse?",
+        "Is a funeral pre-plan transferable in Singapore?",
+        "What happens if my mother passes away first, can she use my pre-plan?",
+        "How much is the transfer fee for a funeral package?"
+      ],
+      "mapped_data_source": "pre_planning_data.json -> terms_and_policies -> modifications_and_transfers -> plan_transferability",
+      "core_response_logic": "Explain that all SDC pre-plans are 100% transferable. Immediate family transfers (spouse, children, parents, siblings) are 100% FREE (S$0 transfer fee). If transferring to a non-family third party, a nominal S$50 trust re-registration fee applies. The transfer requires a simple signed form.",
+      "recommended_action": "Reassure user of the complete flexibility and peace of mind this transferability provides."
+    },
+    {
+      "intent_id": "INTENT_DOCUMENTS_NEEDED_PREPLAN",
+      "topic": "Required Documents",
+      "user_phrasing_variations": [
+        "What documents do I need to buy a pre-plan funeral?",
+        "Do I need NRIC for funeral pre-planning?",
+        "What paperwork is required to register a funeral pre-plan in Singapore?"
+      ],
+      "mapped_data_source": "pre_planning_data.json -> required_documents",
+      "core_response_logic": "List the required documents: Planner's NRIC (verified via Singpass), Nominated Primary Contact/Next-of-Kin details, completed Funeral Wishes Questionnaire, and signed Agreement. Optional: LPA or Will reference.",
+      "recommended_action": "Provide Singpass digital onboarding link or consultation booking."
+    },
+    {
+      "intent_id": "INTENT_EMERGENCY_ACTIVATION_PROTOCOL",
+      "topic": "Emergency Activation at Point of Need",
+      "user_phrasing_variations": [
+        "What should my family do when I pass away after pre-planning?",
+        "How does my family activate my pre-planned funeral package?",
+        "What is the phone number to call when a pre-planner dies?",
+        "How does the funeral director know I have a pre-plan?"
+      ],
+      "mapped_data_source": "pre_planning_data.json -> pre_planning_concepts -> CONCEPT_PRENEED_VS_ATNEED -> pre_planning_lifecycle_steps",
+      "core_response_logic": "Instruct that when passing occurs, the family simply calls the 24/7 SDC Emergency Helpline (+65 6555 1115) and quotes the Policy ID from the Emergency Wallet Card. SDC dispatches the care team within 45-60 minutes, verifies the digital death certificate via Singpass, and executes the exact contracted plan with $0 baseline surprise bills.",
+      "recommended_action": "Remind planners to keep their Emergency Memorial Card in their wallet and inform their nominated next-of-kin."
+    },
+    {
+      "intent_id": "INTENT_ASH_DISPOSAL_PREPLAN",
+      "topic": "Ash Disposal Options in Pre-Planning",
+      "user_phrasing_variations": [
+        "Can I pre-plan green burial or sea scattering in Singapore?",
+        "Can I choose inland ash scattering at Garden of Peace in advance?",
+        "How to pre-plan Mandai columbarium niche?",
+        "Can I pre-book sea scattering south of Pulau Semakau?"
+      ],
+      "mapped_data_source": "pre_planning_data.json -> plans_and_pricing -> packages -> customizable_addons",
+      "core_response_logic": "Explain that pre-planners can pre-select all major ash disposal methods in Singapore: Government Mandai Columbarium niche guidance, Inland Ash Scattering at Garden of Peace (Mandai) / Garden of Serenity (Choa Chu Kang), Private Yacht Sea Scattering at Marina South Pier / Changi, or complimentary in-house sea scattering south of Pulau Semakau.",
+      "recommended_action": "Link to ash disposal details and add-on pricing."
+    },
+    {
+      "intent_id": "INTENT_CULTURAL_TABOO_SENIORS",
+      "topic": "Cultural Taboos & Talking to Elderly Parents",
+      "user_phrasing_variations": [
+        "Is pre-planning funeral considered pantang or bad luck?",
+        "How do I talk to my elderly Chinese parents about pre-planning their funeral?",
+        "How to overcome taboo of death when discussing funeral planning?",
+        "Is it respectful to plan a funeral for living parents?"
+      ],
+      "mapped_data_source": "pre_planning_data.json -> pre_planning_concepts -> CONCEPT_PRENEED_VS_ATNEED -> cultural_considerations_singapore",
+      "core_response_logic": "Acknowledge traditional 'pantang' sensitivities empathetically. Share compassionate framing techniques: present pre-planning not as anticipating death, but as an act of profound filial love, family protection, and financial wisdom. Explain that in modern Singapore, many seniors actually find immense relief in expressing their wishes so their children will not quarrel or struggle when the time comes.",
+      "recommended_action": "Offer our compassionate 'Family Legacy Conversation Guide' or an informal tea chat with an experienced senior consultant."
+    },
+    {
+      "intent_id": "INTENT_INDIGENT_CSR_PREPLAN",
+      "topic": "Pro Bono & Low-Income Pre-Planning",
+      "user_phrasing_variations": [
+        "What if I have no money or family to plan a funeral?",
+        "Are there pro bono funeral pre-planning services for needy elders in Singapore?",
+        "Can low-income seniors get free funeral assistance from Solace Dignity Care?",
+        "Solace Dignity Care Life Foundation pro bono"
+      ],
+      "mapped_data_source": "pre_planning_data.json -> metadata -> brand",
+      "core_response_logic": "Highlight Solace Dignity Care's founding mission (Roland Tay & Jenny Tay legacy) of providing dignified pro bono funerals for destitute, indigent, or isolated seniors through the Solace Dignity Care Life Foundation. Explain that seniors without financial means or next-of-kin can register for pro bono end-of-life care with $0 charge.",
+      "recommended_action": "Connect user with the SDC Life Foundation CSR desk at +65 6555 1115."
+    }
+  ]
+}

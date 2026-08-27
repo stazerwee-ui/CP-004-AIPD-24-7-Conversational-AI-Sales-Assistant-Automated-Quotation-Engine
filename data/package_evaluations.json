@@ -1,0 +1,123 @@
+{
+  "package_evaluations": [
+    {
+      "package_id": "direct_cremation",
+      "package_name": "Direct Cremation Package",
+      "base_price_sgd_excl_gst": 1500,
+      "tier": "Direct",
+      "target_family_profile": "Small families, estranged relatives, or those facing severe budget constraints who desire a simple, private send-off without a public wake or visitation service.",
+      "core_value_proposition": "A highly cost-effective, dignified, and direct afterlife arrangement focusing on essential logistics, body care, and cremation without additional ceremonial overhead.",
+      "key_advantages": [
+        "Lowest base cost in the portfolio (S$1,500 excl. GST)",
+        "Zero logistics for venue, catering, and visitor coordination",
+        "Includes essential preparation (washing, dressing, cosmetology)",
+        "Complimentary sea scattering or ash handover included"
+      ],
+      "key_limitations_and_disadvantages": [
+        "No public wake, visitation, or memorial service allowed under this package",
+        "Does not include religious officiants or rites in the base price",
+        "No dedicated on-site Funeral Butler support (only transport/pallbearer team)"
+      ],
+      "best_suited_for": [
+        "Deceased who explicitly requested no wake/fuss",
+        "Families with minimal local social circles",
+        "Urgent or pro bono cases where immediate cremation is necessary"
+      ],
+      "not_recommended_for": [
+        "Families wanting multi-day community or relative gatherings",
+        "Situations requiring complex dialect or traditional religious rites at a wake"
+      ],
+      "upgrade_triggers": "Upgrade to Standard Service Tier if the family decides they require at least a 3-day wake for close relatives to pay their respects.",
+      "downgrade_triggers": "N/A (this is the entry-level package; downgrade to pro bono assistance is coordinated separately via corporate CSR channels).",
+      "value_justification": "Covers essential transport from hospital or home, standard eco-wood casket, professional embalming/styling, Mandai Crematorium fees, and ash collection. All necessary logistics for a basic, legal, and respectful send-off are covered under one flat fee."
+    },
+    {
+      "package_id": "standard",
+      "package_name": "Standard Service Tier",
+      "base_price_sgd_excl_gst": 3200,
+      "tier": "Standard",
+      "target_family_profile": "Families seeking a quiet, simple, and respectful wake arrangement on a manageable budget, without decorative additions or extensive custom styling.",
+      "core_value_proposition": "Essential wake coordination and standard amenities for a traditional multi-day service, offering dignified setups without premium price points.",
+      "key_advantages": [
+        "Covers essential 3-day wake canvas setup and coordination with town councils",
+        "Professional embalming and casket included in the base rate",
+        "Affordable entry point for a public wake (S$3,200 excl. GST)"
+      ],
+      "key_limitations_and_disadvantages": [
+        "Basic eco-wood casket with natural finish (no premium timber options)",
+        "Standard multi-purpose hearse for procession (no Mercedes-Benz or glass vehicle)",
+        "Only 1 dedicated operations coordinator on-site for wake setup, rather than full-time presence"
+      ],
+      "best_suited_for": [
+        "Quiet wakes with low to moderate guest numbers",
+        "Families looking to focus on religious customs rather than custom floral styles"
+      ],
+      "not_recommended_for": [
+        "High-profile funerals expecting hundreds of guests",
+        "Families desiring customized decorative themes or premium transport vehicles"
+      ],
+      "upgrade_triggers": "Upgrade to Deluxe Dignity Service if the family wants upgraded floral styling, a custom photo frame, more staff support, or a premium Mercedes hearse.",
+      "downgrade_triggers": "Downgrade to Direct Cremation if a wake is no longer requested or budget becomes extremely limited.",
+      "value_justification": "Pays for professional embalming, local regulatory coordination, essential 3-day logistics (tables, chairs, utilities), casket, hearse, and a dedicated coordinator for setup. Offers full ceremony capability on a budget."
+    },
+    {
+      "package_id": "deluxe",
+      "package_name": "Deluxe Dignity Service",
+      "base_price_sgd_excl_gst": 4500,
+      "tier": "Deluxe",
+      "target_family_profile": "Families who want a complete, polished, and aesthetically pleasing memorial setup to host relatives, friends, and colleagues comfortably.",
+      "core_value_proposition": "The most popular package choice, combining elegant wake styling, upgraded transport, and dedicated coordination for a highly professional and memorable service.",
+      "key_advantages": [
+        "Upgraded Mercedes-Benz black hearse for procession day",
+        "Custom floral surround for the departed portrait and detailed backdrop styling",
+        "2 dedicated operations staff on-site throughout the wake",
+        "Complimentary digital obituary setup included"
+      ],
+      "key_limitations_and_disadvantages": [
+        "Casket is standard eco-wood (upgrades to solid timber caskets require additional fees)",
+        "Does not include full 24/7 concierge Butler service (requires premium upgrade)"
+      ],
+      "best_suited_for": [
+        "Standard HDB void deck or parlour setups requiring a clean, modern aesthetic",
+        "Families anticipating moderate to high guest counts over 3 to 5 days"
+      ],
+      "not_recommended_for": [
+        "Families on an extremely tight budget",
+        "VIP or very large funerals requiring comprehensive 24/7 event management"
+      ],
+      "upgrade_triggers": "Upgrade to Premium Heritage Service if solid wood caskets, custom high-end floral installations, VIP lounge setups, and a 24/7 Funeral Butler are desired.",
+      "downgrade_triggers": "Downgrade to Standard if the family prefers a minimalist setup and wants to reduce cost by S$1,300.",
+      "value_justification": "Delivers superior value by bundling upgraded floral layouts, a Mercedes-Benz hearse, premium embalming/cosmetic work, and 2 operations staff to assist. Eliminates coordination stress for families."
+    },
+    {
+      "package_id": "premium",
+      "package_name": "Premium Heritage Service",
+      "base_price_sgd_excl_gst": 6800,
+      "tier": "Premium",
+      "target_family_profile": "Families expecting large guest numbers, high-profile visitors, or seeking comprehensive VIP management, premium caskets, and bespoke styling.",
+      "core_value_proposition": "The ultimate concierge-level afterlife service, offering bespoke floral designs, premium transport, solid wood casket options, and dedicated 24/7 Butler support.",
+      "key_advantages": [
+        "Includes a solid polished oak/teak casket option in comparison highlights",
+        "Premium glass hearse for a grand and dignified procession",
+        "Bespoke high-end floral installations and custom altar styling",
+        "3 dedicated operations managers available 24/7, plus a 24/7 Funeral Butler",
+        "Complimentary livestreaming of services for overseas relatives"
+      ],
+      "key_limitations_and_disadvantages": [
+        "Highest base price in the standard product line (S$6,800 excl. GST)",
+        "May feel overly elaborate for small, private family gatherings"
+      ],
+      "best_suited_for": [
+        "Large community funerals with extensive guest lists",
+        "Families desiring the highest standard of care, transport, and materials",
+        "Overseas family members needing high-definition livestream coordination"
+      ],
+      "not_recommended_for": [
+        "Quiet, private, or budget-conscious send-offs"
+      ],
+      "upgrade_triggers": "N/A (this is the highest standard tier; custom luxury options can be tailored on request)",
+      "downgrade_triggers": "Downgrade to Deluxe Dignity Service if the family wants to maintain standard professional coordination but does not require a 24/7 butler, glass hearse, or solid wood caskets.",
+      "value_justification": "Pays for premium materials (solid oak/teak caskets), high-end custom florist artistry, top-tier procession hearse, livestreaming capabilities, and absolute peace-of-mind with a dedicated 24/7 Funeral Butler handling all on-site and behind-the-scenes needs."
+    }
+  ]
+}

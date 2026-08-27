@@ -1,0 +1,130 @@
+{
+  "repatriationData": {
+    "moduleInfo": {
+      "moduleId": "MODULE_14_REPATRIATION",
+      "moduleName": "Singapore International Repatriation Data",
+      "jurisdiction": "Singapore (NEA, ICA, HSA, MOH Port Health)",
+      "description": "Executive overview of statutory regulations, logistical procedures, required permits, and price benchmarks for Inbound and Outbound Repatriation in Singapore."
+    },
+    "inbound": {
+      "description": "Procedures and guidelines for bringing deceased remains into Singapore",
+      "regulatoryOverview": "Regulated by NEA and MOH Port Health. Inbound remains must receive Port Health clearance at Changi Air Cargo Complex before release for local wake, burial, or cremation.",
+      "requiredPermits": [
+        {
+          "permitName": "Coffin Import Permit",
+          "issuingAuthority": "NEA (National Environment Agency)",
+          "costSGD": 0,
+          "requiredDocuments": [
+            "Death Certificate issued by local authority of death country",
+            "Cause of Death Certificate",
+            "Embalming Certificate",
+            "Sealing Certificate / Coffin Certificate",
+            "Export Permit / Health Certificate from country of origin",
+            "Air Waybill (AWB) or Flight details"
+          ],
+          "processingTime": "1 - 2 working days"
+        }
+      ],
+      "embassyRequirements": {
+        "consularAttestation": "Authentication/legalisation of documents by Singapore overseas mission if required",
+        "translationRequirements": "All foreign language documents must be officially translated into English by a certified translator or embassy"
+      },
+      "airlineRequirements": [
+        "Hermetically sealed zinc-lined coffin or wooden outer casket",
+        "Advance cargo booking with airline human remains protocol (HUM)",
+        "Minimum weight and dimensions check",
+        "Sanitary transit clearance / non-infectious disease certificate from country of origin"
+      ],
+      "foreignDeceasedProcedures": {
+        "clearanceAtChangi": "Port Health clearance upon arrival at Changi Air Cargo Complex (SATS / dnata)",
+        "transportation": "Authorized hearse transfer directly to mortuary, funeral parlor, or cremation/burial site"
+      },
+      "estimatedCostRangeSGD": {
+        "min": 3500,
+        "max": 12000,
+        "notes": "Covers local Port Health clearance, cargo terminal handling, specialized hearse transport, mortuary holding, and local cremation/burial coordination. Excludes international inbound air freight."
+      },
+      "expectedTimelineDays": "3 to 7 working days"
+    },
+    "outbound": {
+      "description": "Procedures and guidelines for sending deceased remains from Singapore overseas",
+      "regulatoryOverview": "Regulated by NEA, ICA, and destination embassies. Requires full arterial embalming, a zinc-lined hermetically sealed export casket, MOH non-contagious clearance, and NEA Coffin Export Permit.",
+      "requiredPermits": [
+        {
+          "permitName": "Coffin Export Permit",
+          "issuingAuthority": "NEA (National Environment Agency)",
+          "costSGD": 0,
+          "requiredDocuments": [
+            "Digital Death Certificate (issued by ICA)",
+            "Cause of Death Certificate (CCOD)",
+            "Embalming Certificate issued by licensed embalmer in Singapore",
+            "Sealing Certificate",
+            "Import approval/permit from destination country",
+            "Consular clearance from foreign embassy in Singapore"
+          ],
+          "processingTime": "Within 24-48 hours upon document completion"
+        }
+      ],
+      "embassyRequirements": {
+        "consularVerification": "Varies by destination embassy in Singapore (e.g., China, India, Malaysia, Indonesia, UK)",
+        "translationRequirements": "Translation required if destination country official language is not English"
+      },
+      "airlineRequirements": [
+        "Zinc-lined hermetically sealed casket (soldered gas-tight)",
+        "Air waybill documentation with IATA 'HUM' handling code",
+        "Non-contagious disease certificate issued by Singapore health authorities"
+      ],
+      "overlandRepatriationMalaysia": {
+        "description": "Cross-border ground transfer of deceased remains to Peninsular Malaysia via Woodlands Causeway or Tuas Second Link.",
+        "requiredPermits": "NEA Coffin Export Permit, Singapore CCOD, Embalming Certificate, Malaysian Port Health Checkpoint Approval, and Malaysian Police transport permit.",
+        "costSGD": "S$2,800 to S$6,500 (depending on destination state)",
+        "expectedTimeline": "12 to 24 hours"
+      },
+      "estimatedCostRangeSGD": {
+        "min": 4500,
+        "max": 15000,
+        "notes": "Includes full arterial embalming, zinc-lined export casket, destination embassy clearance, local logistics, and airport cargo lodgement. Excludes outbound air freight."
+      },
+      "expectedTimelineDays": "2 to 5 working days"
+    },
+    "humanRemainsVsAshes": {
+      "ashRepatriation": {
+        "inboundRequirements": "Declaration to Port Health and Customs upon arrival at Changi Airport; original Foreign Death Certificate and Cremation Certificate required.",
+        "outboundRequirements": "NEA export permit for ashes not strictly required, but airline and destination country entry permits apply. Requires ICA Death Certificate, NEA Cremation Certificate, and Urn Sealing Certificate.",
+        "costSGD": "S$150 - S$2,500 (significantly lower than full body repatriation)"
+      },
+      "keyDifferences": {
+        "packaging": "Full body requires hermetically sealed zinc liner inside a wooden outer crate; ashes require a sealed urn in cabin carry-on or cargo parcel.",
+        "transportMode": "Full body must travel via dedicated IATA HUM air cargo or overland hearse; ashes can be hand-carried in passenger aircraft cabin.",
+        "preservation": "Full body requires full arterial chemical embalming; ashes require no embalming."
+      }
+    },
+    "botIntentTriggersAndFaqs": [
+      {
+        "intentId": "INTENT_REPATRIATION_OVERVIEW",
+        "sampleQuestion": "How does international funeral repatriation work in Singapore?",
+        "quickAnswer": "International repatriation involves bringing deceased remains into Singapore (Inbound) or sending them overseas (Outbound). It requires specialized embalming, an airtight zinc-lined casket, NEA Coffin Import/Export Permits, airline cargo booking (IATA HUM protocol), and consular clearance. Ash repatriation is simpler and requires only the death certificate, cremation certificate, and customs declaration."
+      },
+      {
+        "intentId": "INTENT_REPATRIATION_COST",
+        "sampleQuestion": "How much does it cost to repatriate a deceased person to or from Singapore?",
+        "quickAnswer": "Full body outbound repatriation coordination typically ranges from S$4,500 to S$15,000 (excluding air freight). Inbound coordination ranges from S$3,500 to S$12,000. Overland hearse transfer to West Malaysia is S$2,800 to S$6,500. Ash repatriation is significantly more affordable, typically between S$150 and S$2,500."
+      },
+      {
+        "intentId": "INTENT_REPATRIATION_MALAYSIA",
+        "sampleQuestion": "Can a deceased body be transported to Malaysia by road?",
+        "quickAnswer": "Yes. Overland hearse transfer via the Woodlands Causeway or Tuas Second Link is the standard method to West Malaysia. It requires an NEA Coffin Export Permit, Singapore CCOD, Embalming Certificate, Malaysian Port Health approval at the checkpoint, and Malaysian Police transport permit. It typically takes 12 to 24 hours."
+      },
+      {
+        "intentId": "INTENT_ASH_REPATRIATION_AIRPORT",
+        "sampleQuestion": "Can I bring cremated ashes on a plane as hand luggage?",
+        "quickAnswer": "Yes. Most airlines allow cremated ashes to be hand-carried as cabin baggage. You will need the Death Certificate, Cremation Certificate, and an Urn Sealing Certificate. Ensure the urn is made of an X-ray scannable material (such as marble, ceramic, porcelain, or wood) rather than dense metal or lead."
+      },
+      {
+        "intentId": "INTENT_REPATRIATION_TIMELINE",
+        "sampleQuestion": "How many days does international funeral repatriation take?",
+        "quickAnswer": "Outbound air repatriation typically takes 2 to 5 working days from death registration to flight departure. Inbound repatriation takes 3 to 7 working days. Overland transfer to Malaysia can be completed within 12 to 24 hours."
+      }
+    ]
+  }
+}

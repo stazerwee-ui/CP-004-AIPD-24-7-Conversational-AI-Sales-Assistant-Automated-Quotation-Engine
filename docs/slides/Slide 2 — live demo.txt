@@ -1,0 +1,45 @@
+Slide 2 — live demo
+
+As you switch to the app:
+
+"Rather than talk through this one, let me just show you."
+
+While you draw the signature:
+
+"So the family's picked their package, and this is where they sign their signature. I'll just sign here with the mouse — and you can see it drawing live as I go."
+
+As the status flips:
+
+"And then it will dropped into the quote above. Name, timestamp, and the status changed to Executed and Verified."
+
+Then hit Print:
+
+"Then I hit print, and..." (let the PDF appear) "...that's the finished quote. Signature, itemized pricing, totals — one page, ready to send."
+
+Wrap up:
+
+"That's the whole feature. The next slide shows what's actually happening underneath."
+
+
+
+
+
+slide 3 — Requirements
+
+Opening:
+
+"So what does it actually take to run this? Not much, on either side."
+
+Hardware (gesture left):
+
+"Hardware — any touch-enabled client device. Right now we've tested it on PC and laptop, signing with a mouse or trackpad. iPad and smartphone are next on our list
+
+Software (gesture right):
+
+"Software — four native web technologies, all built into the browser."
+
+""HTML5 Canvas gives us the drawing surface, so we can draw the strokes live as the client signs.". JavaScript handles the mouse and touch events and does the Base64 encoding — that's writing the image as plain text, so it can sit directly inside the document instead of being saved as a file. CSS media print strips out the app interface so only the document prints. And the browser runs everything locally and turns it into a PDF."
+
+The line to land on:
+
+"The thing we'd point out here — no external libraries, no paid e-signature service, nothing hosted in the cloud. Everything runs on the machine in front of you. That was a deliberate choice, and it matches our project constraint of keeping it local and simple."

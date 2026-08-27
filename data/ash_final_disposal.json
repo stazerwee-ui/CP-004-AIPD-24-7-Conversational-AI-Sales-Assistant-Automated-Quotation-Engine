@@ -1,0 +1,1112 @@
+{
+  "disposal_methods": {
+    "government_columbarium": [
+      {
+        "facility_id": "GOV_COL_MANDAI",
+        "name": "Mandai Columbarium Complex",
+        "governing_body": "National Environment Agency (NEA)",
+        "address": "300 Mandai Road, Singapore 779393",
+        "description": "Singapore's largest government-managed columbarium complex, integrated alongside Mandai Crematorium. Features both open-air landscaped blocks and multi-storey modern complexes (Mandai North and Mandai South).",
+        "blocks_and_zones": [
+          "Mandai North Columbarium Complex (Blocks A to G)",
+          "Mandai South Columbarium Complex",
+          "Avenue 1 to 8 Landscaped Pavilions",
+          "New Multi-Storey Extension Wings"
+        ],
+        "operating_hours": {
+          "visiting_hours": "07:00 to 18:30 daily (including Sundays and Public Holidays)",
+          "administrative_office": "08:30 to 16:30 (Monday to Friday), 08:30 to 12:30 (Saturday)"
+        },
+        "niche_types": [
+          {
+            "type": "Single Niche",
+            "capacity": 1,
+            "dimensions_cm": {
+              "height": 30.0,
+              "width": 30.0,
+              "depth": 30.0
+            },
+            "standard_fee_sgd": 500.0,
+            "selection_fee_sgd": 250.0,
+            "total_with_selection_sgd": 750.0,
+            "suitable_urn_dimensions_cm": "Max 25cm (H) x 20cm (W) x 20cm (D)"
+          },
+          {
+            "type": "Double Niche",
+            "capacity": 2,
+            "dimensions_cm": {
+              "height": 30.0,
+              "width": 60.0,
+              "depth": 30.0
+            },
+            "standard_fee_sgd": 900.0,
+            "selection_fee_sgd": 250.0,
+            "total_with_selection_sgd": 1150.0,
+            "suitable_urn_dimensions_cm": "Holds 2 standard urns up to 25cm (H) x 20cm (W) x 20cm (D) each"
+          }
+        ],
+        "pricing_and_lease": {
+          "standard_single_niche_sgd": 500.0,
+          "standard_double_niche_sgd": 900.0,
+          "niche_location_selection_fee_sgd": 250.0,
+          "plaque_and_inscription_services": {
+            "average_contractor_cost_min_sgd": 1000.0,
+            "average_contractor_cost_max_sgd": 1600.0,
+            "inclusions": [
+              "Approved granite or marble face plaque",
+              "Standard gold or white painted inscription lettering",
+              "Oval / rectangular porcelain photographic medallion",
+              "Brass or stainless steel side mounting brackets"
+            ]
+          },
+          "lease_tenure_years": 30,
+          "lease_commencement": "Date of niche registration and urn entombment",
+          "lease_renewal_rules": "Lease is valid for 30 years. Near expiry, NEA will notify the registered next-of-kin. Subject to prevailing national land and after-death facility policies, leases may be renewed or remains consolidated into smaller niches / scattered at inland gardens or sea.",
+          "unclaimed_niche_policy": "If uncontacted after a 6-month statutory notice period in national gazettes and daily newspapers, NEA will exhume the niche, respectfully cremate the remains (if not already), and scatter them in an approved sea or inland memorial area."
+        },
+        "booking_process": {
+          "portal_name": "NEA e-Portal (After-Death Services) / My Legacy LifeSG",
+          "portal_url": "https://www.nea.gov.sg/our-services/after-death-services/columbaria",
+          "eligibility": "Singapore Citizens, Permanent Residents, and deceased foreigners whose immediate next-of-kin is a Singapore Citizen or PR.",
+          "required_documents": [
+            "Deceased's official Digital Death Certificate",
+            "Cremation Certificate (issued by Mandai Crematorium or NEA-licensed private crematoria)",
+            "Applicant / Next-of-Kin's NRIC or Passport",
+            "Proof of relationship to the deceased",
+            "Letter of Authorisation (if booking is coordinated by an appointed funeral director)"
+          ],
+          "allocation_rules": {
+            "sequential_system_allocation": "Default booking allocates the next sequentially available niche number at zero additional cost (S$500 single / S$900 double).",
+            "niche_selection_option": "Families wishing to select a specific niche number, row tier (e.g. eye-level row), or block location must pay an additional statutory selection fee of S$250.00 SGD."
+          },
+          "step_by_step_workflow": [
+            {
+              "step": 1,
+              "action": "Next-of-kin or authorized funeral director logs into the NEA After-Death Services Portal using Singpass.",
+              "responsible_party": "Applicant / Funeral Director"
+            },
+            {
+              "step": 2,
+              "action": "Enter deceased details, Digital Death Certificate reference, and Cremation Certificate serial number.",
+              "responsible_party": "Applicant"
+            },
+            {
+              "step": 3,
+              "action": "Select columbarium venue (Mandai Columbarium Complex), choose niche type (Single or Double), and decide between sequential allocation or manual niche selection (+S$250).",
+              "responsible_party": "Applicant"
+            },
+            {
+              "step": 4,
+              "action": "Complete online payment via PayNow or Credit Card; system generates official Niche Allocation Confirmation Letter with niche address (e.g. Block C, Level 3, Niche #03-142).",
+              "responsible_party": "NEA System / Applicant"
+            },
+            {
+              "step": 5,
+              "action": "Appoint an NEA-accredited plaque contractor to fabricate the inscribed marble/granite plaque and porcelain photograph.",
+              "responsible_party": "Applicant / Contractor"
+            },
+            {
+              "step": 6,
+              "action": "On the installation day, family/funeral director presents confirmation letter at the Columbarium Service Office, deposits the urn into the niche, and contractor seals the plaque.",
+              "responsible_party": "Family / Contractor / NEA Operations"
+            }
+          ]
+        }
+      },
+      {
+        "facility_id": "GOV_COL_CCK",
+        "name": "Choa Chu Kang Columbarium",
+        "governing_body": "National Environment Agency (NEA)",
+        "address": "Jalan Bahar / Cemetery South Street, Singapore",
+        "description": "Government columbarium complex situated in western Singapore within the Choa Chu Kang Cemetery master complex. Comprises 24 landscaped multi-storey columbarium blocks with natural ventilation and extensive parking facilities.",
+        "blocks_and_zones": [
+          "Blocks 1 to 24",
+          "Choa Chu Kang Columbarium Extension",
+          "Central Memorial Plaza"
+        ],
+        "operating_hours": {
+          "visiting_hours": "07:00 to 18:30 daily",
+          "administrative_office": "08:30 to 16:30 (Monday to Friday), 08:30 to 12:30 (Saturday)"
+        },
+        "niche_types": [
+          {
+            "type": "Single Niche",
+            "capacity": 1,
+            "dimensions_cm": {
+              "height": 30.0,
+              "width": 30.0,
+              "depth": 30.0
+            },
+            "standard_fee_sgd": 500.0,
+            "selection_fee_sgd": 250.0,
+            "total_with_selection_sgd": 750.0,
+            "suitable_urn_dimensions_cm": "Max 25cm (H) x 20cm (W) x 20cm (D)"
+          },
+          {
+            "type": "Double Niche",
+            "capacity": 2,
+            "dimensions_cm": {
+              "height": 30.0,
+              "width": 60.0,
+              "depth": 30.0
+            },
+            "standard_fee_sgd": 900.0,
+            "selection_fee_sgd": 250.0,
+            "total_with_selection_sgd": 1150.0,
+            "suitable_urn_dimensions_cm": "Holds 2 standard urns up to 25cm (H) x 20cm (W) x 20cm (D) each"
+          }
+        ],
+        "pricing_and_lease": {
+          "standard_single_niche_sgd": 500.0,
+          "standard_double_niche_sgd": 900.0,
+          "niche_location_selection_fee_sgd": 250.0,
+          "plaque_and_inscription_services": {
+            "average_contractor_cost_min_sgd": 1000.0,
+            "average_contractor_cost_max_sgd": 1600.0,
+            "inclusions": [
+              "Granite or marble face plaque",
+              "Gold leaf / weatherproof engraved inscription",
+              "Ceramic photographic medallion",
+              "Installation and sealing"
+            ]
+          },
+          "lease_tenure_years": 30,
+          "lease_commencement": "Date of niche registration",
+          "lease_renewal_rules": "30-year leasehold subject to NEA policy reviews upon expiration."
+        },
+        "booking_process": {
+          "portal_name": "NEA e-Portal (After-Death Services)",
+          "portal_url": "https://www.nea.gov.sg/our-services/after-death-services/columbaria",
+          "eligibility": "Singapore Citizens, PRs, and approved dependants.",
+          "required_documents": [
+            "Digital Death Certificate",
+            "Cremation Certificate",
+            "Applicant NRIC / Passport",
+            "Relationship proof documents"
+          ],
+          "allocation_rules": {
+            "sequential_system_allocation": "Sequential allocation at S$500 (single) / S$900 (double).",
+            "niche_selection_option": "Optional S$250 fee for row/block selection."
+          }
+        }
+      },
+      {
+        "facility_id": "GOV_COL_YISHUN",
+        "name": "Yishun Columbarium (Legacy Reference)",
+        "governing_body": "National Environment Agency (NEA)",
+        "address": "Yishun Ring Road, Singapore",
+        "description": "Legacy municipal columbarium in northern Singapore. Currently fully occupied; active for existing lease administration, visits, maintenance, and inter-niche transfer operations.",
+        "status": "Fully Occupied / Maintenance Only (No new direct allocations)"
+      }
+    ],
+    "private_columbarium": [
+      {
+        "facility_id": "PVT_COL_NIRVANA",
+        "name": "Nirvana Memorial Garden (富贵山庄)",
+        "operator": "Nirvana Memorial Garden Pte Ltd",
+        "address": "950 Old Choa Chu Kang Road, Singapore 699816",
+        "religious_orientation": [
+          "Buddhist",
+          "Taoist",
+          "Freethinker",
+          "Secular"
+        ],
+        "facility_overview": "Singapore's premier 6-star luxury privatised memorial garden and columbarium. Fully air-conditioned complex featuring traditional Chinese architectural mastery, Grand Buddha statues, master Feng Shui orientation, electronic LED illumination, automated sutra chanting, and VIP private prayer suites.",
+        "features_and_amenities": [
+          "100% Fully air-conditioned suites with temperature and humidity control",
+          "Certified Feng Shui spatial alignment designed by Master Feng Shui consultants",
+          "Automated smart card / biometric suite access",
+          "Grand prayer halls with daily morning and evening monk/nun sutra chanting",
+          "Cafeteria, VIP private lounge rooms, and complimentary weekend shuttle bus from Boon Lay MRT",
+          "Dedicated Ancestral Tablets (牌位) pavilion with eternal LED light fixtures",
+          "Professional ceremonial butlers for installation and death anniversary remembrance"
+        ],
+        "niche_types_and_tiers": [
+          {
+            "tier_name": "Eye-Level Auspicious Tiers (Tiers 4 & 5)",
+            "description": "Direct eye-level positioning (1.4m - 1.6m high). Most sought-after for direct veneration, unobstructed viewing, and premium Feng Shui energy flow.",
+            "single_niche_price_range_sgd": {
+              "min": 15888.0,
+              "max": 28888.0
+            },
+            "double_niche_price_range_sgd": {
+              "min": 28888.0,
+              "max": 58888.0
+            }
+          },
+          {
+            "tier_name": "Mid-Upper / Mid-Lower Tiers (Tiers 3 & 6)",
+            "description": "Comfortable viewing height with excellent aesthetic appeal and premium suite finishes.",
+            "single_niche_price_range_sgd": {
+              "min": 10888.0,
+              "max": 18888.0
+            },
+            "double_niche_price_range_sgd": {
+              "min": 20888.0,
+              "max": 38888.0
+            }
+          },
+          {
+            "tier_name": "Top & Bottom Value Tiers (Tiers 1, 2, 7, 8 & 9)",
+            "description": "Economical options offering full access to Nirvana's air-conditioned facilities, daily chanting, and perpetual maintenance at accessible price points.",
+            "single_niche_price_range_sgd": {
+              "min": 6888.0,
+              "max": 12888.0
+            },
+            "double_niche_price_range_sgd": {
+              "min": 13888.0,
+              "max": 24888.0
+            }
+          },
+          {
+            "tier_name": "Royal Family & VIP Private Suites",
+            "description": "Private dedicated multi-urn chambers accommodating 4 to 8 urns, customized wood carvings, private tea tables, and gold-leaf doors.",
+            "family_suite_price_range_sgd": {
+              "min": 68888.0,
+              "max": 188888.0
+            }
+          }
+        ],
+        "ancestral_tablets_shen_zhu_pai": {
+          "description": "Sacred ancestral tablets (牌位) dedicated to honouring family lineage and departed forebears in perpetuity.",
+          "types": [
+            "Individual Ancestral Tablet",
+            "Couple / Companion Ancestral Tablet",
+            "Family Lineage Heritage Tablet"
+          ],
+          "price_range_sgd": {
+            "min": 3888.0,
+            "max": 38888.0
+          },
+          "services_included": [
+            "Daily morning and evening monastic chanting and food/tea offerings",
+            "Eternal LED light illumination behind the ancestral name",
+            "Spring / Autumn ancestral worship ceremonies (Qingming & Zhongyuan Festival prayers)"
+          ]
+        },
+        "financials_and_payment_terms": {
+          "maintenance_fee": {
+            "type": "One-time perpetual maintenance fee",
+            "cost_range_sgd": {
+              "min": 1000.0,
+              "max": 3500.0
+            },
+            "coverage": "Covers perpetual air-conditioning, building security, facility cleaning, and temple maintenance."
+          },
+          "installment_plans": {
+            "interest_rate": "0% interest in-house installment plan",
+            "tenures_available_months": [
+              12,
+              24,
+              36,
+              48
+            ],
+            "downpayment_percentage": "10% to 20% downpayment upon contract signing"
+          },
+          "pre_planning_options": {
+            "as_need_vs_pre_need": "Pre-need purchases (buying in advance while healthy) receive promotional discounts of 10% to 25% off list price and guarantee locked-in pricing against inflation.",
+            "casetrust_accreditation": true,
+            "cooling_off_period": "Statutory 4-day cooling-off period with 100% refund guarantee under CaseTrust funeral accreditation framework."
+          }
+        }
+      },
+      {
+        "facility_id": "PVT_COL_KMS_BRIGHTHILL",
+        "name": "Kong Meng San Phor Kark See Monastery (Bright Hill Temple)",
+        "operator": "Kong Meng San Phor Kark See Monastery",
+        "address": "88 Bright Hill Road, Singapore 574117",
+        "religious_orientation": [
+          "Buddhist"
+        ],
+        "facility_overview": "Singapore's largest and most venerated Buddhist monastery, established in 1921. Houses the Pagoda of Compassion, Hall of Great Compassion, and sacred columbarium corridors immersed in perpetual chanting, dharma talks, and monastic merit dedication.",
+        "features_and_amenities": [
+          "Spiritual ambiance with continuous monastic chanting and daily Buddhist offerings",
+          "Open-air natural ventilation and modern air-cooled pavilion sections",
+          "Pagoda of Great Compassion and Medicine Buddha hall",
+          "Ancestral tablet halls with daily monk prayers",
+          "Vegetarian dining hall, spacious gardens, and tranquil koi ponds"
+        ],
+        "niche_types_and_tiers": [
+          {
+            "type": "Single Niche",
+            "price_range_sgd": {
+              "min": 4800.0,
+              "max": 18000.0
+            },
+            "description": "Single urn niche in pagoda corridors or new memorial wings."
+          },
+          {
+            "type": "Double Niche",
+            "price_range_sgd": {
+              "min": 9800.0,
+              "max": 35000.0
+            },
+            "description": "Companion niche for husband and wife."
+          }
+        ],
+        "ancestral_tablets_shen_zhu_pai": {
+          "price_range_sgd": {
+            "min": 2800.0,
+            "max": 16888.0
+          },
+          "services_included": [
+            "Monastic daily chanting",
+            "Merit dedication during Ullambana and Qingming festivals"
+          ]
+        },
+        "financials_and_payment_terms": {
+          "maintenance_fee": "One-time administration and maintenance donation.",
+          "pre_planning_options": "Subject to temple application quotas and Buddhist devotee eligibility."
+        }
+      },
+      {
+        "facility_id": "PVT_COL_GARDEN_REMEMBRANCE",
+        "name": "The Garden of Remembrance",
+        "operator": "The Garden of Remembrance Pte Ltd (Christian Memorial Columbarium)",
+        "address": "920 Old Choa Chu Kang Road, Singapore 699815",
+        "religious_orientation": [
+          "Christian",
+          "Roman Catholic",
+          "Freethinker",
+          "Secular"
+        ],
+        "facility_overview": "Singapore's premier Christian columbarium and memorial complex. Features a modern air-conditioned memorial chapel, floor-to-ceiling stained glass artwork, water fountains, and scripture-inscribed memorial corridors.",
+        "features_and_amenities": [
+          "Dedicated Christian & Roman Catholic sanctuary with cross emblems and scripture engravings",
+          "Air-conditioned and naturally ventilated memorial wings",
+          "On-site chapel for memorial services, wake visitations, and prayer dedications",
+          "Wheelchair-friendly elevators and accessible rest areas",
+          "Landscaped garden courtyards and water features"
+        ],
+        "niche_types_and_tiers": [
+          {
+            "type": "Single Niche",
+            "price_range_sgd": {
+              "min": 3800.0,
+              "max": 16800.0
+            },
+            "description": "Single niche with Christian motif faceplate and cross inscription."
+          },
+          {
+            "type": "Double Niche",
+            "price_range_sgd": {
+              "min": 7500.0,
+              "max": 32000.0
+            },
+            "description": "Double companion niche with scripture engravings."
+          },
+          {
+            "type": "Family Crypt Chamber",
+            "price_range_sgd": {
+              "min": 25000.0,
+              "max": 65000.0
+            },
+            "description": "Multi-niche family chamber holding 4 to 6 urns."
+          }
+        ],
+        "financials_and_payment_terms": {
+          "maintenance_fee": "One-time perpetual maintenance fee included in package or structured as a single upfront levy.",
+          "installment_plans": "12 to 24-month interest-free payment options available.",
+          "pre_planning_options": "Pre-need purchase options with locked-in rates and CaseTrust contract protections."
+        }
+      },
+      {
+        "facility_id": "PVT_COL_TSE_THO_AUM",
+        "name": "Tse Tho Aum Temple Columbarium",
+        "operator": "Tse Tho Aum Temple Management",
+        "address": "601 Sin Ming Drive, Singapore 575719",
+        "religious_orientation": [
+          "Buddhist",
+          "Taoist"
+        ],
+        "facility_overview": "Centrally located Buddhist temple and columbarium facility near Bishan / Sin Ming. Offers traditional pagoda niche galleries, monk prayer halls, and ancestral tablet veneration.",
+        "niche_types_and_tiers": [
+          {
+            "type": "Single Niche",
+            "price_range_sgd": {
+              "min": 3500.0,
+              "max": 15000.0
+            }
+          },
+          {
+            "type": "Double Niche",
+            "price_range_sgd": {
+              "min": 7000.0,
+              "max": 28000.0
+            }
+          }
+        ],
+        "financials_and_payment_terms": {
+          "maintenance_fee": "One-time temple donation and maintenance charge.",
+          "installment_plans": "Direct payment upon registration."
+        }
+      },
+      {
+        "facility_id": "PVT_COL_ALL_SAINTS",
+        "name": "All Saints Memorial Chapel Columbarium",
+        "operator": "All Saints Memorial Chapel Management",
+        "address": "Poh Huat Road, Singapore",
+        "religious_orientation": [
+          "Christian",
+          "Anglican",
+          "Ecumenical"
+        ],
+        "facility_overview": "Serene Christian columbarium situated within private chapel grounds in northeastern Singapore, catering to Christian and Anglican families."
+      }
+    ],
+    "temporary_ash_storage": {
+      "overview": "Temporary ash storage solutions for families awaiting columbarium niche renovation, Feng Shui installation dates, overseas transport, or the completion of traditional 49-day/100-day mourning rituals.",
+      "storage_options": [
+        {
+          "storage_type": "Funeral Parlour / Care Centre Holding Room",
+          "description": "Secure, climate-controlled, restricted-access holding facilities managed by licensed funeral service providers.",
+          "daily_fee_sgd": 20.0,
+          "monthly_fee_sgd": 150.0,
+          "complimentary_period": "Typically complimentary for first 7 to 14 days post-cremation under standard funeral packages.",
+          "security_protocols": [
+            "24/7 CCTV video surveillance",
+            "Biometric restricted door access",
+            "Dual-tag tamper-evident seal matching deceased identification code",
+            "Visitor logging upon every viewing"
+          ]
+        },
+        {
+          "storage_type": "Columbarium Temporary Holding Lockers",
+          "description": "Temporary lockers provided at private columbaria (such as Nirvana or Bright Hill) while permanent niches are being engraved or customized.",
+          "daily_fee_sgd": 0.0,
+          "monthly_fee_sgd": 100.0,
+          "complimentary_period": "Free for up to 3 to 6 months upon confirmation of permanent niche booking at the same facility."
+        },
+        {
+          "storage_type": "Home Storage",
+          "description": "Keeping the cremated urn at the family residence.",
+          "legal_status": "Fully legal in Singapore. Under NEA environmental public health regulations, families are legally permitted to keep cremated ashes in an urn at home without requiring any municipal permit, license, or registration.",
+          "cultural_and_mourning_practices": [
+            "An Ling (安灵): Traditional Buddhist/Taoist practice of keeping the spirit tablet and urn at home for 49 days with daily offerings of incense, fresh tea, and vegetarian food.",
+            "Secular / Modern Memorial: Urn placed inside an elegant glass cabinet or elevated shelf alongside family portraits and keepsakes."
+          ],
+          "guidelines_and_etiquette": [
+            "Ensure the urn is completely sealed with a silicone gasket or screw-thread sealant to prevent moisture absorption in Singapore's humid tropical climate.",
+            "Place the urn in a tranquil, elevated, and respectful position (e.g. altar table or display shelf at chest level or above).",
+            "Avoid placing the urn in direct sunlight, under dripping air-conditioner fan coils, or in high-humidity areas (kitchens or near bathrooms).",
+            "Keep in a secure location away from pet access or active children's play areas."
+          ]
+        }
+      ],
+      "collection_logistics_post_cremation": {
+        "ash_collection_centres": [
+          {
+            "name": "Mandai Ash Collection Centre (ACC)",
+            "address": "Mandai Crematorium, 300 Mandai Road, Singapore 779393",
+            "operating_hours": "08:30 to 16:30 daily (including weekends and Public Holidays)"
+          },
+          {
+            "name": "Choa Chu Kang Ash Collection Centre",
+            "address": "Choa Chu Kang Cemetery Complex, Singapore",
+            "operating_hours": "08:30 to 16:30 daily"
+          }
+        ],
+        "collection_timeline": "Ashes are ready for collection on the day following cremation (Day + 1) by 09:00 AM, or within 3 to 4 hours on the same day if express processing was arranged during booking.",
+        "documents_required_for_collection": [
+          "Original Cremation Permit / Receipt issued by NEA",
+          "Digital Death Certificate copy",
+          "Collector's original NRIC / Passport",
+          "Letter of Authorisation (if collected by appointed Funeral Director on behalf of next-of-kin)"
+        ],
+        "collection_process_steps": [
+          {
+            "step": 1,
+            "action": "Collector reports to the Ash Collection Centre counter and presents the Cremation Receipt and NRIC.",
+            "responsible_party": "Next-of-Kin / Funeral Director"
+          },
+          {
+            "step": 2,
+            "action": "Duty NEA officer retrieves the calcined bone fragments and cross-verifies the heat-resistant identification metal tag number against the registry log.",
+            "responsible_party": "NEA Officer"
+          },
+          {
+            "step": 3,
+            "action": "Next-of-kin verifies the metal tag number and visually inspects the calcined bone fragments.",
+            "responsible_party": "Next-of-Kin"
+          },
+          {
+            "step": 4,
+            "action": "Officer transfers ashes into the family's selected urn, pulverizer canister (if inland scattering is booked), or temporary satin/canvas container.",
+            "responsible_party": "NEA Officer"
+          },
+          {
+            "step": 5,
+            "action": "Collector signs the official ash collection register and receives the handover certificate.",
+            "responsible_party": "Collector / NEA Officer"
+          }
+        ]
+      }
+    },
+    "inland_ash_scattering": {
+      "overview": "Inland Ash Scattering (IAS) is a government-managed, eco-friendly post-cremation disposition method in Singapore where cremated remains are pulverised into fine powder and gently introduced into designated landscaped garden pebble beds.",
+      "locations": [
+        {
+          "facility_id": "IAS_CCK_PEACE",
+          "name": "Garden of Peace (Choa Chu Kang)",
+          "address": "Choa Chu Kang Cemetery Complex, Old Choa Chu Kang Road, Singapore",
+          "opened_year": 2021,
+          "size_sqm": 9500,
+          "layout_and_features": "Landscaped memorial park featuring 4 dedicated ash scattering lanes bordered by lush hedges, rain trees, private prayer pavilions, and wheelchair-accessible pathways.",
+          "entrances": [
+            "North Gate: Along Old Choa Chu Kang Road, next to bus stop 31139",
+            "South Gate: Along Cemetery South Street 18, junction with Muslim Cemetery Path 11"
+          ]
+        },
+        {
+          "facility_id": "IAS_MANDAI_SERENITY",
+          "name": "Garden of Serenity (Mandai)",
+          "address": "Mandai Crematorium and Columbarium Complex, Mandai Road, Singapore",
+          "opened_year": 2024,
+          "size_sqm": 11000,
+          "layout_and_features": "Hillside landscaped sanctuary integrating zen rock gardens, flowing water features, quiet reflection pavilions, elevated platforms, and dedicated scattering pebble beds."
+        }
+      ],
+      "booking_and_permits": {
+        "portal_name": "NEA e-Portal (e-Services for Inland Ash Scattering) / My Legacy LifeSG",
+        "portal_url": "https://www.nea.gov.sg/our-services/after-death-services/inland-ash-scattering",
+        "statutory_fee_sgd": 350.0,
+        "fee_coverage": "Includes full 2-hour garden session usage, facility maintenance, and mandatory NEA ash pulverization.",
+        "operating_hours": "09:00 to 17:00 daily (including weekends and Public Holidays)",
+        "session_slots": [
+          "09:00 - 11:00",
+          "11:00 - 13:00",
+          "13:00 - 15:00",
+          "15:00 - 17:00"
+        ],
+        "daily_slot_limits": "Strictly limited to 8 to 12 family slots per garden per day to maintain solemnity, dignity, and private family space.",
+        "advance_booking_window": "Can be booked up to 14 calendar days in advance via Singpass."
+      },
+      "rules_and_etiquette": {
+        "sanctuary_nature": "Strictly non-denominational, eco-friendly memorial space.",
+        "prohibited_items_and_actions": [
+          "Strictly NO burning of joss paper, incense sticks, spiral coils, or candles",
+          "Strictly NO food offerings, beverages, wine, or confectionery left in the garden",
+          "Strictly NO scattering of coins, talismans, plastic materials, or non-biodegradable items",
+          "Strictly NO burying of physical urns, metal canisters, or ceramic containers in the soil",
+          "Strictly NO erection of private memorial plaques, headstones, or permanent signboards",
+          "Strictly NO planting of private flora, shrubs, or trees",
+          "Strictly NO musical instruments, gongs, drums, or electronic sound amplification equipment"
+        ],
+        "permitted_items_and_actions": [
+          "Scattering of 100% fine pulverised cremated ashes only",
+          "Sprinkling of fresh, natural loose flower petals (biodegradable roses, chrysanthemums, jasmine)",
+          "Use of NEA-provided watering cans filled with clean water to gently wash ashes into the pebble bed",
+          "Quiet spoken eulogies, secular poetry readings, silent reflection, or soft religious prayers inside private pavilions"
+        ]
+      },
+      "ceremony_walkthrough_step_by_step": [
+        {
+          "step_number": 1,
+          "step_name": "Arrival & Check-In",
+          "description": "Family and funeral coordinator arrive 15 minutes before the allocated 2-hour session at the Garden Reception Office. The next-of-kin presents the NEA booking confirmation slip and physical NRIC for verification."
+        },
+        {
+          "step_number": 2,
+          "step_name": "Canister Handover",
+          "description": "NEA duty officer hands over the designated, secure Inland Scattering Canister containing the deceased's finely pulverised ashes (pulverised earlier at the Ash Collection Centre)."
+        },
+        {
+          "step_number": 3,
+          "step_name": "Pavilion Gathering & Prayers",
+          "description": "The family gathers inside the private prayer pavilion adjacent to the assigned scattering lane for final farewell blessings, quiet eulogies, or brief silent prayers."
+        },
+        {
+          "step_number": 4,
+          "step_name": "Procession to Scattering Lane",
+          "description": "Family members walk down the private lane to the assigned pebble bed bordered by lush shrubs and flowering plants."
+        },
+        {
+          "step_number": 5,
+          "step_name": "Ash Scattering",
+          "description": "Family members take turns uncapping the canister and gently pouring the pulverised ashes onto the river pebbles along the lane."
+        },
+        {
+          "step_number": 6,
+          "step_name": "Flower Petal Tribute",
+          "description": "Family sprinkles fresh loose flower petals over the scattered ashes as a final gesture of love, honor, and remembrance."
+        },
+        {
+          "step_number": 7,
+          "step_name": "Watering & Natural Dispersion",
+          "description": "Using provided watering cans filled with clean water, the family gently washes the ashes through the pebbles into the nutrient-rich soil beneath."
+        },
+        {
+          "step_number": 8,
+          "step_name": "Reflection & Departure",
+          "description": "Family spends quiet moments of reflection before handing back the empty canister to the reception desk and exiting the garden."
+        }
+      ]
+    },
+    "sea_ash_scattering": {
+      "overview": "Maritime ash scattering in Singapore waters is governed under the Maritime and Port Authority of Singapore (MPA) regulations to safeguard international shipping corridors, marine ecology, and maritime safety.",
+      "approved_zones": [
+        {
+          "zone_name": "MPA Designated Sea Burial Ground (South of Pulau Semakau)",
+          "coordinates": "01°11.0'N, 103°46.0'E (approx. 1.5 nautical miles / 2.8 km south of Pulau Semakau)",
+          "description": "Primary designated maritime scattering site approved by the Singapore Government, positioned away from commercial shipping fairways and marine nature reserves."
+        },
+        {
+          "zone_name": "Changi / East Johor Strait Designated Waters",
+          "description": "Approved eastern maritime zone for localized vessel departures departing from Changi Point Ferry Terminal."
+        }
+      ],
+      "embarkation_piers": [
+        {
+          "name": "Marina South Pier (MSP)",
+          "address": "31 Marina Coastal Drive, Singapore 018988",
+          "features": "Primary embarkation terminal with sheltered ferry berths, direct MRT connection (Marina South Pier MRT), air-conditioned terminal lounge, and parking."
+        },
+        {
+          "name": "Changi Point Ferry Terminal",
+          "address": "51 Lorong Bekukong, Singapore 499172",
+          "features": "Eastern embarkation jetty servicing eastern scattering routes."
+        },
+        {
+          "name": "ONE°15 Marina Sentosa Cove & Marina at Keppel Bay",
+          "address": "Sentosa Cove / Keppel Bay, Singapore",
+          "features": "Private marina berths for chartered luxury catamarans and private motor yachts."
+        }
+      ],
+      "vessel_options_and_logistics": [
+        {
+          "vessel_tier": "Standard Passenger Launch",
+          "passenger_capacity": "10 to 18 passengers",
+          "duration_hours": "1.5 to 2.0 hours return",
+          "price_range_sgd": {
+            "min": 400.0,
+            "max": 650.0
+          },
+          "amenities": "Covered sheltered seating, life vests, PA sound system, basic restroom."
+        },
+        {
+          "vessel_tier": "Twin-Engine Air-Conditioned Vessel",
+          "passenger_capacity": "20 to 45 passengers",
+          "duration_hours": "2.0 to 2.5 hours return",
+          "price_range_sgd": {
+            "min": 750.0,
+            "max": 1400.0
+          },
+          "amenities": "Enclosed air-conditioned saloon, open stern viewing deck, floral dispersal tables, prayer area, sick bay."
+        },
+        {
+          "vessel_tier": "Luxury Motor Yacht / Catamaran",
+          "passenger_capacity": "15 to 30 passengers",
+          "duration_hours": "2.5 to 3.5 hours return",
+          "price_range_sgd": {
+            "min": 1800.0,
+            "max": 3800.0
+          },
+          "amenities": "Luxury lounge, outdoor sun deck, steward service, memorial audio system, catering setup, full air-conditioning."
+        }
+      ],
+      "requirements_and_mpa_guidelines": {
+        "statutory_permit_fees_sgd": 0.0,
+        "fee_note": "MPA charges S$0 permit fee for sea scattering; costs consist entirely of private boat charter and biodegradable urns.",
+        "operating_hours": "07:00 to 19:00 daily (Daylight hours only; sea scattering after dark is strictly prohibited for marine navigation safety).",
+        "environmental_compliance": {
+          "governing_law": "Prevention of Pollution of the Sea Act 1990",
+          "rules": "Strictly NO casting of plastic bags, styrofoam boxes, metal frames, synthetic ropes, or non-biodegradable containers into the ocean. Violators face criminal prosecution and fines up to S$10,000.",
+          "biodegradable_urn_specifications": "Urns must be 100% biodegradable, crafted from natural salt, pressed sand, unbaked clay, gelatin, recycled paper, or vegetable starch. Urns float for 5 to 20 minutes before absorbing water, gently sinking to the seabed, and dissolving completely within 2 to 4 hours."
+        },
+        "passenger_manifest": "All passenger full names and NRIC/Passport numbers must be logged by the vessel skipper and submitted electronically to MPA Port Marine Operations Centre (PMOC) prior to casting off."
+      },
+      "ceremony_procedure_steps": [
+        {
+          "step_number": 1,
+          "action": "Family boards the chartered vessel at Marina South Pier or Changi Ferry Terminal; skipper conducts marine safety briefing."
+        },
+        {
+          "step_number": 2,
+          "action": "Vessel navigates outside shipping lanes to the MPA Designated Sea Burial Ground south of Pulau Semakau (approx. 30-45 minutes voyage)."
+        },
+        {
+          "step_number": 3,
+          "action": "Skipper idles vessel engines in calm waters; religious officiant or family leads farewell prayers, scripture readings, or Buddhist chanting."
+        },
+        {
+          "step_number": 4,
+          "action": "Biodegradable urn is lowered into the sea using biodegradable cotton cords, or loose pulverised ashes are gently scattered at the leeward stern."
+        },
+        {
+          "step_number": 5,
+          "action": "Family casts fresh loose flower petals (chrysanthemums, roses, jasmine) over the water in tribute."
+        },
+        {
+          "step_number": 6,
+          "action": "Vessel circles the scattering site once in tribute (sounding the boat horn in final salute if requested) before returning to pier."
+        }
+      ]
+    },
+    "ash_processing": {
+      "overview": "Technical standards, operational equipment, volume metrics, and chain-of-custody protocols for handling and pulverising human cremated remains in Singapore.",
+      "services_and_workflows": [
+        {
+          "service_name": "Post-Cremation Bone Processing & Magnetic Extraction",
+          "description": "Upon completion of cremation, calcined bone fragments are transferred to a sterile cooling station. Industrial rare-earth magnets extract surgical metal implants (e.g. titanium hip joints, surgical pins, dental alloys, casket screws).",
+          "timing": "30 to 45 minutes post-cremation"
+        },
+        {
+          "service_name": "Mechanical Ash Pulverization",
+          "description": "Calcined bone fragments are placed in a high-speed rotary cremulator with tungsten carbide blades, reducing fragments into a smooth, sand-like powder suitable for inland/sea scattering or keepsake crafting.",
+          "timing": "15 to 30 minutes at Ash Collection Centre"
+        },
+        {
+          "service_name": "Standard Urn Transfer & Hermetic Sealing",
+          "description": "Ashes are transferred into a family-selected urn, accompanied by the permanent heat-resistant metal identity tag, and hermetically sealed with silicone gasket."
+        }
+      ],
+      "processing_costs": {
+        "standard_crematorium_pulverization_sgd": 0.0,
+        "cost_note": "Included in standard NEA cremation fee (S$315) and Inland Ash Scattering fee (S$350).",
+        "private_fine_milling_for_keepsakes_sgd": {
+          "min": 50.0,
+          "max": 150.0
+        }
+      },
+      "specifications_and_metrics": {
+        "average_adult_ash_volume": "2.0 to 3.5 Liters (approx. 2.0 to 3.0 kg depending on skeletal height and bone density)",
+        "granularity_options": [
+          {
+            "grade": "Standard Granular (Coarse)",
+            "particle_size_range_mm": "2.0 to 5.0 mm",
+            "recommended_use": "Traditional columbarium niche entombment and standard ceramic/marble urns."
+          },
+          {
+            "grade": "Fine Pulverized Powder",
+            "particle_size_range_mm": "0.5 to 1.0 mm",
+            "recommended_use": "Inland Ash Scattering (Garden of Peace & Garden of Serenity) and Sea Scattering."
+          },
+          {
+            "grade": "Micro-Milled Powder",
+            "particle_size_range_mm": "< 0.1 mm",
+            "recommended_use": "Memorial synthetic diamonds, crystal fusion, and resin keepsake jewelry."
+          }
+        ]
+      },
+      "safety_and_chain_of_custody_procedures": [
+        "HEPA-filtered negative pressure dust extraction systems prevent airborne particulate escape during pulverization.",
+        "Stainless steel pulverizer chambers are thoroughly swept and sanitized between every individual processing cycle.",
+        "100% Individual processing with single-tray isolation, ensuring zero commingling or cross-contamination.",
+        "Permanent stamped metal identity disc accompanies the remains from cremator to final urn sealing."
+      ]
+    },
+    "keepsakes_and_memorials": [
+      {
+        "category_id": "KP_JEWELRY",
+        "product_type": "Keepsake Jewelry",
+        "description": "Handcrafted memorial jewelry containing a micro-chamber for a token amount of cremated ashes or hair, allowing family members to keep loved ones close.",
+        "sub_categories": [
+          "Ash Pendants & Lockets",
+          "Memorial Rings",
+          "Glass Ash Beads (Murano glass fused with ash)",
+          "Resin Memorial Necklaces & Bracelets"
+        ],
+        "materials": [
+          "925 Sterling Silver",
+          "14K / 18K White Gold",
+          "18K Rose Gold",
+          "18K Yellow Gold",
+          "316L Surgical Stainless Steel",
+          "Hand-blown Murano Glass"
+        ],
+        "required_ash_volume": "1/2 to 2 teaspoons (approx. 2.0 to 10.0 grams)",
+        "price_range_sgd": {
+          "min": 150.0,
+          "max": 1200.0
+        },
+        "production_lead_time": "2 to 4 weeks",
+        "sealing_mechanism": "Tungsten countersunk threaded screw sealed with waterproof industrial resin or hermetic glass fusion."
+      },
+      {
+        "category_id": "KP_DIAMONDS",
+        "product_type": "Memorial Diamonds",
+        "description": "Certified synthetic diamonds grown in high-tech laboratories by extracting pure elemental carbon from cremated ashes or hair, transforming it into a genuine diamond.",
+        "process_overview": "Cremated ashes or hair undergo high-temperature vacuum heating to extract elemental carbon -> carbon is graphitized -> placed inside a High Pressure High Temperature (HPHT) press at 2,000°C and 60,000 atmospheres -> diamond crystallises around a natural diamond seed crystal -> precision master cutting, faceting, and independent gemological grading (GIA/IGI).",
+        "required_ash_volume": "100 to 500 grams of cremated ashes (or 5 to 10 grams of hair)",
+        "pricing_tiers": [
+          {
+            "carat_size": "0.25 Carat",
+            "price_min_sgd": 3500.0,
+            "price_max_sgd": 5500.0,
+            "popular_cuts": [
+              "Brilliant Round",
+              "Princess",
+              "Heart"
+            ]
+          },
+          {
+            "carat_size": "0.50 Carat",
+            "price_min_sgd": 6000.0,
+            "price_max_sgd": 9500.0,
+            "popular_cuts": [
+              "Brilliant Round",
+              "Princess",
+              "Emerald",
+              "Heart"
+            ]
+          },
+          {
+            "carat_size": "1.00 Carat",
+            "price_min_sgd": 14000.0,
+            "price_max_sgd": 22000.0,
+            "popular_cuts": [
+              "Brilliant Round",
+              "Cushion",
+              "Radiant",
+              "Princess"
+            ]
+          },
+          {
+            "carat_size": "2.00+ Carats",
+            "price_min_sgd": 30000.0,
+            "price_max_sgd": 55000.0,
+            "popular_cuts": [
+              "Custom Bespoke Cuts"
+            ]
+          }
+        ],
+        "available_colors": [
+          "Pure Clear (White)",
+          "Ocean Blue (Boron trace)",
+          "Amber / Canary Yellow (Nitrogen trace)",
+          "Ruby Red",
+          "Emerald Green"
+        ],
+        "production_lead_time": "6 to 10 months",
+        "gemological_certification": "Delivered with international certificate of authenticity (IGI or GIA) and microscopic laser serial inscription on the diamond girdle."
+      },
+      {
+        "category_id": "KP_CRYSTALS",
+        "product_type": "Memorial Ash Crystals & Glass Touchstones",
+        "description": "Ashes fused at 1,600°C with premium borosilicate optical crystal, creating unique swirling memory globes, paperweights, or pocket touchstones.",
+        "required_ash_volume": "1 to 3 tablespoons (15 to 30 grams)",
+        "price_range_sgd": {
+          "min": 450.0,
+          "max": 2200.0
+        },
+        "production_lead_time": "4 to 6 weeks"
+      },
+      {
+        "category_id": "KP_MINI_URNS",
+        "product_type": "Mini Urns & Keepsake Vessels",
+        "description": "Miniature decorative urns designed to hold a small portion of ashes for sharing among siblings or family members.",
+        "types_and_designs": [
+          "Companion Keepsake Mini Urns",
+          "Tea-Light Candle Keepsake Urns",
+          "Pocket Palm Hug Stones",
+          "Miniature Cloisonné & Brass Vessels"
+        ],
+        "capacity_ml": "50ml to 250ml",
+        "materials": [
+          "Italian Carrara White Marble",
+          "Shanxi Black Granite",
+          "Solid Cast Brass & Bronze",
+          "Fine Porcelain / Celadon",
+          "Sandalwood / Teak"
+        ],
+        "price_range_sgd": {
+          "min": 80.0,
+          "max": 450.0
+        },
+        "production_lead_time": "Off-the-shelf to 3 days for custom personalized laser engraving."
+      }
+    ],
+    "crypt_burial": {
+      "overview": "Singapore statutory framework governing land-based cemetery burials at Choa Chu Kang Cemetery, plot allocation policies, and the 15-year statutory tenure leasehold.",
+      "fifteen_year_burial_lease_policy": {
+        "governing_statute": "Environmental Public Health Act 1987 (15-Year Burial Policy effective 1 November 1998)",
+        "policy_rationale": "Severe national land scarcity in Singapore. All earth burials at Choa Chu Kang Cemetery since 1 November 1998 are subject to a strict 15-year leasehold. Upon lease expiry, graves are exhumed.",
+        "crypt_burial_system_cbss": "Choa Chu Kang Cemetery utilizes the Crypt Burial System (CBSS) — an engineered grid of pre-cast concrete in-ground crypts with permeable bases, gravel beds, and subsoil drainage. CBSS ensures hygienic decomposition, soil stability, and orderly eventual exhumation."
+      },
+      "plot_allocation_and_statutory_fees": [
+        {
+          "cemetery_section": "Muslim Cemetery",
+          "religion": "Islam",
+          "statutory_fee_sgd": 315.0,
+          "citizenship_eligibility": "Singapore Citizens and Permanent Residents"
+        },
+        {
+          "cemetery_section": "Jewish / Parsi / Ahmadiyya Jam'aat Cemetery",
+          "religion": "Judaism / Parsi / Ahmadiyya",
+          "statutory_fee_sgd": 315.0,
+          "citizenship_eligibility": "Singapore Citizens and Permanent Residents"
+        },
+        {
+          "cemetery_section": "Christian / Chinese / General Cemetery",
+          "religion": "Christian / Roman Catholic / Chinese / Freethinker",
+          "statutory_fee_sgd": 940.0,
+          "citizenship_eligibility": "Singapore Citizens and Permanent Residents"
+        },
+        {
+          "cemetery_section": "Foreigner / Non-Resident Burial Plot",
+          "religion": "All Religions (Subject to NEA Approval)",
+          "statutory_fee_sgd": 1880.0,
+          "citizenship_eligibility": "Non-citizens permitted only if immediate next-of-kin (spouse, parent, child) is a Singapore Citizen or PR, subject to written NEA approval."
+        }
+      ],
+      "guidelines_and_regulations": {
+        "burial_permit": "Mandatory NEA Permit to Bury obtained via NEA ePortal / LifeSG prior to cortege dispatch.",
+        "maximum_casket_dimensions": {
+          "length_m": 2.1,
+          "width_m": 0.7,
+          "height_m": 0.6
+        },
+        "casket_specifications": "Standard wooden burial caskets, biodegradable coffins, or non-combustible gold/bronze burial caskets (such as Batesville 24K gold-plated bronze) are permitted for earth burials.",
+        "ceremony_and_grave_rules": [
+          "Burial operations take place between 09:00 and 17:00 daily.",
+          "Traditional shovel ceremony and grave-side religious officiant prayers are coordinated by the family's appointed undertaker.",
+          "Temporary grave markers are permitted immediately; permanent headstones must conform to NEA monumental mason dimensional guidelines."
+        ]
+      }
+    },
+    "exhumation": {
+      "overview": "Statutory exhumation framework governing graves reaching their 15-year lease expiration at Choa Chu Kang Cemetery and private heritage cemetery relocations.",
+      "exhumation_protocols": {
+        "fifteen_year_lease_expiry_process": [
+          {
+            "step": 1,
+            "action": "NEA gazettes cemetery blocks reaching 15 years in the Government Gazette and publishes notices in local daily newspapers (The Straits Times, Lianhe Zaobao, Berita Harian, Tamil Murasu).",
+            "responsible_party": "National Environment Agency (NEA)"
+          },
+          {
+            "step": 2,
+            "action": "NEA issues individual written notice letters to the registered next-of-kin on record.",
+            "responsible_party": "NEA Memorial Services Section"
+          },
+          {
+            "step": 3,
+            "action": "Next-of-kin has a 6-month statutory registration window to claim the grave and elect their preferred post-exhumation option.",
+            "responsible_party": "Next-of-Kin"
+          },
+          {
+            "step": 4,
+            "action": "Exhumation is executed by either the NEA Government Contractor Scheme or a private licensed undertaker appointed by the family.",
+            "responsible_party": "NEA / Private Undertaker"
+          }
+        ],
+        "government_vs_private_exhumation": {
+          "government_mass_scheme": {
+            "description": "NEA-appointed contractor conducts systematic mass block exhumations during designated operational windows.",
+            "cost_sgd": {
+              "min": 315.0,
+              "max": 500.0
+            },
+            "features": "Subsidised rates, standard schedule, standardized ossuary transfer."
+          },
+          "private_contractor_exhumation": {
+            "description": "Family appoints a licensed private funeral director (e.g. SDC, Direct Funeral, Singapore Casket) for a customized exhumation on a chosen auspicious date and time.",
+            "cost_sgd": {
+              "min": 1200.0,
+              "max": 3500.0
+            },
+            "features": [
+              "Selection of auspicious exhumation date and hour (Feng Shui alignment)",
+              "Private religious officiant on-site (Taoist priest, Buddhist monk, Catholic priest, or Christian pastor)",
+              "Meticulous traditional bone cleansing (Jian Jin / 捡金) using rice wine and sterile wash",
+              "Sun-drying and purification ritual before placement into a premium ossuary urn",
+              "Dedicated transport to Mandai Crematorium or private columbarium"
+            ]
+          }
+        }
+      },
+      "post_exhumation_options": [
+        {
+          "option_id": "POST_EXH_CREMATION",
+          "name": "Cremation of Skeletal Remains & Columbarium Entombment / Scattering",
+          "description": "Skeletal remains are cremated at Mandai Crematorium (S$315 standard fee). The resulting ashes are placed into an urn for government/private columbarium entombment or scattered at Inland Ash Scattering gardens / sea.",
+          "eligibility": "Permitted for Buddhist, Taoist, Christian, Catholic, and Freethinker remains."
+        },
+        {
+          "option_id": "POST_EXH_REINTERMENT",
+          "name": "Re-interment in Consolidated Individual Crypts",
+          "description": "For religions prohibiting cremation (Islam, Judaism, Parsi), skeletal remains are respectfully placed into smaller individual consolidated burial crypts at Choa Chu Kang Cemetery.",
+          "eligibility": "Mandatory for Muslim, Jewish, and Parsi remains."
+        },
+        {
+          "option_id": "POST_EXH_OVERSEAS_EXPORT",
+          "name": "Repatriation / Overseas Export of Skeletal Remains",
+          "description": "Bones are cleaned, packed into an export-certified hermetically sealed ossuary crate, inspected and certified by NEA, and repatriated overseas for ancestral burial.",
+          "eligibility": "All families with valid foreign consular permits."
+        },
+        {
+          "option_id": "POST_EXH_UNCLAIMED",
+          "name": "State Management of Unclaimed Remains",
+          "description": "Graves that remain unclaimed after the gazette notice period are exhumed by NEA, cremated en masse, and scattered in approved deep sea burial grounds.",
+          "eligibility": "Unclaimed graves."
+        }
+      ],
+      "logistics_and_permits": {
+        "nea_exhumation_permit_fee_sgd": 100.0,
+        "required_documents": [
+          "Original Burial Permit / Grave Registration Receipt",
+          "Applicant NRIC and proof of relationship",
+          "Exhumation Option Declaration Form"
+        ]
+      }
+    },
+    "ash_relocation": {
+      "overview": "Procedures, statutory approvals, and operational steps for moving cremated remains between columbaria, from columbaria to scattering grounds, or overseas across international borders.",
+      "inter_niche_transfer_scenarios": [
+        {
+          "scenario": "Government to Private Columbarium",
+          "description": "Moving ashes from Mandai or Choa Chu Kang Columbarium to a private columbarium (such as Nirvana Memorial Garden or Bright Hill) for enhanced family comfort, air-conditioned suites, or perpetual Feng Shui benefits."
+        },
+        {
+          "scenario": "Private to Government Columbarium",
+          "description": "Moving ashes from private columbarium to government columbarium."
+        },
+        {
+          "scenario": "Columbarium Niche to Inland Ash Scattering or Sea Scattering",
+          "description": "Decanting urn remains from a columbarium niche for permanent scattering at Garden of Peace / Serenity or sea burial south of Pulau Semakau."
+        },
+        {
+          "scenario": "Intra-Columbarium Upgrade / Transfer",
+          "description": "Moving from a single niche to a double companion or family suite within the same columbarium facility."
+        },
+        {
+          "scenario": "International Repatriation / Export of Ashes",
+          "description": "Transporting cremated remains overseas to ancestral home countries or family overseas residences."
+        }
+      ],
+      "administrative_and_operational_procedures": [
+        {
+          "phase": "Phase 1: Approvals & Statutory Permits",
+          "steps": [
+            "Submit online application for 'Permit to Remove Remains / De-register Niche' via the NEA e-Portal / LifeSG.",
+            "Obtain Letter of Acceptance / Niche Booking Confirmation from the receiving columbarium (if transferring locally).",
+            "Pay statutory NEA administrative fee if applicable."
+          ]
+        },
+        {
+          "phase": "Phase 2: Plaque Unsealing & Urn Extraction",
+          "steps": [
+            "Engage an accredited monumental mason to carefully unseal the granite/marble niche plaque.",
+            "Inspect urn condition for hairline cracks, moisture, or seal degradation.",
+            "Transfer urn into a padded transport carrier.",
+            "Mason cleans the niche cavity and reseals / surrenders the empty niche back to the governing management."
+          ]
+        },
+        {
+          "phase": "Phase 3: Urn Replacement & Repackaging (If Required)",
+          "steps": [
+            "If the existing urn is brittle or incompatible with travel regulations, remains are transferred in sterile conditions into a new marble, bronze, or airline-approved poly-seal urn.",
+            "Verify presence of the permanent metal identification tag inside the urn."
+          ]
+        },
+        {
+          "phase": "Phase 4: International Air Travel Compliance (Overseas Repatriation)",
+          "steps": [
+            "IATA Guidelines: Cremated remains may be carried onboard as cabin carry-on baggage or checked manifested cargo.",
+            "X-Ray Security Compliance: Urn must be made of materials that allow airport security X-ray scanners to pass through (e.g. marble, ceramic, wood, glass, or plastic resin). Metal urns must allow visual inspection if required.",
+            "Mandatory International Documents: (1) Certified Digital Death Certificate, (2) Cremation Certificate issued by crematorium, (3) NEA Certificate of Sealing / Export Permit, (4) Consular Clearance / Transit Permit from destination country embassy."
+          ]
+        }
+      ]
+    }
+  }
+}
