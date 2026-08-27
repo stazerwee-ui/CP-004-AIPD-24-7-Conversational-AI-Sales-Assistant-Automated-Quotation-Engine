@@ -171,16 +171,38 @@ http://127.0.0.1:8000
 
 ### Running it on your phone (optional)
 
-Start the server bound to all interfaces:
+**Option A — same Wi-Fi (quick).** Start the server bound to all interfaces:
 
 ```
 uvicorn main:app --host 0.0.0.0 --port 8000
 ```
 
+
 Find your computer's local IP with `ipconfig`, then open `http://YOUR-IP:8000` on a phone
 connected to the same Wi-Fi.
 
+Note that the **microphone will not work** over a LAN IP. Browsers only grant microphone
+access on `https://` or `localhost`, so voice input is unavailable this way. Use Option B
+to demonstrate the voice features.
+
+**Option B — HTTPS tunnel (needed for voice).** Run:
+
+```
+start_live_demo.bat
+```
+
+
+This starts the backend if it is not already running, then opens a Cloudflare tunnel and
+prints an `https://...` address. Open that address on the phone. Because it is HTTPS, the
+microphone and speech-to-text work normally.
+
+The tunnel exposes the local server publicly for the duration of the demo, so close the
+window when finished. It is a demonstration convenience only — the AI models, the database
+and all family data still stay on the host machine.
+
 ---
+---
+
 
 ## 4. Trying it out
 
