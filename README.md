@@ -3,10 +3,30 @@
 **Project CP-004 · KLASS Engineering problem statement**
 Higher Nitec in AI Applications · ITE College Central
 
-A locally-hosted funeral-services assistant that helps bereaved families arrange a service
-at any hour, produces an exact quotation, and hands over to a human consultant when needed.
+A locally-hosted funeral-services assistant that helps bereaved families arrange a service at
+any hour, produces an exact quotation, and hands over to a human consultant when needed.
 
 Everything runs on your own machine. No family data is sent to any external service.
+
+<!-- TODO: add one screenshot here — the Planner or the Director Console. A single image
+     near the top does more than any amount of prose. Put it in assets/images/ and
+     reference it as: ![Planner](assets/images/screenshot-planner.png) -->
+
+---
+
+## Why this project is interesting
+
+**Prices can never be hallucinated.** Every figure comes from deterministic Python arithmetic
+reading `data/dataset.json`. The language model is never asked to produce a number. A wrong
+price shown to a grieving family is a real harm, so the boundary is enforced in code rather
+than by prompting.
+
+**It still works when the AI is offline.** If Ollama is unavailable, the assistant falls back
+to a curated vector index of **134 verified answers** with a similarity threshold and a margin
+gate — it answers only when confident, rather than guessing.
+
+**Nothing leaves the machine.** The language model, speech recognition and speech synthesis
+all run locally. No API keys, no subscriptions, no third-party inference.
 
 ---
 
@@ -16,9 +36,12 @@ Everything runs on your own machine. No family data is sent to any external serv
 2. [Setup — step by step](#2-setup--step-by-step)
 3. [Running the application](#3-running-the-application)
 4. [Trying it out](#4-trying-it-out)
-5. [Project structure](#5-project-structure)
-6. [Configuration reference](#6-configuration-reference)
-7. [Troubleshooting](#7-troubleshooting)
+5. [Testing](#5-testing)
+6. [How it works](#6-how-it-works)
+7. [Project structure](#7-project-structure)
+8. [Configuration reference](#8-configuration-reference)
+9. [Troubleshooting](#9-troubleshooting)
+10. [Privacy and security](#10-privacy-and-security)
 
 ---
 
@@ -27,11 +50,11 @@ Everything runs on your own machine. No family data is sent to any external serv
 | Requirement | Minimum | Notes |
 |---|---|---|
 | **Operating system** | Windows 10 or 11 | Instructions below are for Windows |
-| **Python** | 3.9 or newer | Tick **"Add Python to PATH"** during install |
+| **Python** | 3.10 or newer | Tick **"Add Python to PATH"** during install |
 | **Ollama** | Latest | Runs the local language model |
 | **RAM** | 8 GB (16 GB recommended) | The model runs on CPU |
 | **Free disk space** | ~10 GB | Model weights are large |
-| **Internet** | First-time setup only | Needed to download packages and models. The app itself runs offline afterwards |
+| **Internet** | First-time setup only | Needed to download packages and models. The app runs offline afterwards |
 
 **Downloads:**
 - Python — https://www.python.org/downloads/
@@ -44,7 +67,7 @@ Check Python is installed by opening **Command Prompt** and running:
 python --version
 ```
 
-You should see `Python 3.9.x` or higher.
+You should see `Python 3.10.x` or higher.
 
 ---
 
@@ -56,8 +79,6 @@ You should see `Python 3.9.x` or higher.
 git clone https://github.com/stazerwee-ui/CP-004-AIPD-24-7-Conversational-AI-Sales-Assistant-Automated-Quotation-Engine.git
 cd CP-004-AIPD-24-7-Conversational-AI-Sales-Assistant-Automated-Quotation-Engine
 ```
-
-
 
 ### Step 2 — Create a virtual environment
 
@@ -77,78 +98,86 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-This takes a few minutes. It installs FastAPI, the speech models' runtimes, and the
-embedding libraries.
+This takes a few minutes. It installs FastAPI, `faster-whisper` for speech recognition,
+`kokoro-onnx` for speech synthesis, and `fastembed` for the offline answer index.
 
 ### Step 4 — Create your `.env` file
 
-The project reads its configuration from a `.env` file, which is **not** included in the
-repository because it holds credentials.
+The project reads its configuration from a `.env` file, which is **not** committed to the
+repository because it holds a credential.
 
 ```
 copy .env.example .env
 ```
 
-Now open `.env` in Notepad and set an admin token. Generate a strong one with:
+Open `.env` in Notepad. The template ships with a placeholder:
+
+```
+SOLACE_ADMIN_TOKEN=change_me_before_running
+```
+
+Replace it with a strong token of your own. Generate one with:
 
 ```
 python -c "import secrets; print(secrets.token_urlsafe(32))"
 ```
 
-Paste the result after `SOLACE_ADMIN_TOKEN=`. For example:
+Paste the result after `SOLACE_ADMIN_TOKEN=`, so the line looks like:
 
 ```
-SOLACE_ADMIN_TOKEN=kJ8mN2pQ7rS4tU9vW1xY3zA5bC6dE0fG
+SOLACE_ADMIN_TOKEN=<your-generated-token-here>
 ```
 
-> **Remember this value.** You will type it into the Director & Staff Portal to reach the
-> staff console. Without it, the admin routes return `503`.
+> **Remember this value.** You will type it into the Director & Staff Portal login prompt.
+> If the variable is missing entirely, the admin routes return `503`. If the token you type
+> does not match, they return `401`.
 
-### Step 5 — Install and start Ollama, then pull the model
+### Step 5 — Install Ollama and pull the model
 
 Install Ollama from the link above. It starts automatically as a background service on
 Windows — you do **not** need to run `ollama serve`.
 
-Pull the language model:
-
 ```
 ollama pull qwen3.5:4b
-```
-
-Confirm it is available:
-
-```
 ollama list
 ```
 
 You should see `qwen3.5:4b` listed.
 
-### Step 6 — Download the speech and embedding models
+> **Weaker machine?** The backend probes Ollama for an available model and falls back
+> automatically through `qwen2.5:3b`, `qwen2.5:1.5b`, `llama3.2:3b`, `llama3.2:1b` and
+> `phi3:mini`. Any one of these will work; `qwen3.5:4b` gives the best answers.
 
-These files are too large for GitHub (one is 311 MB), so they are downloaded here instead.
+### Step 6 — Download the speech models and support tools
+
+These files are too large for GitHub, so they are downloaded here instead.
 
 ```
 install_dependencies.bat
 ```
 
 This fetches:
-- `models/kokoro-v1.0.onnx` — neural text-to-speech (311 MB)
-- `models/voices-v1.0.bin` — voice pack (27 MB)
-- `tools/cloudflared.exe` — optional tunnel for remote demos
+- `models/kokoro-v1.0.onnx` — neural text-to-speech weights (~311 MB)
+- `models/voices-v1.0.bin` — voice pack (~27 MB)
+- `tools/cloudflared.exe` — tunnel for the mobile demo
 
-Then download the embedding model used for offline answers:
+**Verify the download actually completed** — the script does not report failures:
+
+```
+dir models
+```
+
+Both files must be present and full size. If they are missing, voice output will silently
+fall back to your browser's built-in speech instead of Kokoro.
+
+### Step 7 — Build and verify the offline answer bundle
 
 ```
 python scripts\prepare_offline_bundle.py --download
-```
-
-### Step 7 — Verify the setup
-
-```
 python scripts\prepare_offline_bundle.py --verify
 ```
 
-This confirms the offline answer engine works with no network access.
+The verify step confirms the 134-entry offline answer engine works with no network access.
 
 ---
 
@@ -161,48 +190,45 @@ venv\Scripts\activate
 uvicorn main:app --host 127.0.0.1 --port 8000
 ```
 
-Then open your browser at:
-
-```
-http://127.0.0.1:8000
-```
+Then open your browser at **http://127.0.0.1:8000**
 
 **To stop the server:** press `Ctrl + C` in the Command Prompt.
 
+> `python main.py` also works, but note that it binds to `0.0.0.0` — reachable from anyone
+> on your network. Use the `uvicorn` command above with `--host 127.0.0.1` if you want the
+> server restricted to this machine only.
+
 ### Running it on your phone (optional)
 
-**Option A — same Wi-Fi (quick).** Start the server bound to all interfaces:
+**Option A — same Wi-Fi (quick, no voice).**
 
 ```
 uvicorn main:app --host 0.0.0.0 --port 8000
 ```
 
-
 Find your computer's local IP with `ipconfig`, then open `http://YOUR-IP:8000` on a phone
-connected to the same Wi-Fi.
+on the same Wi-Fi.
 
-Note that the **microphone will not work** over a LAN IP. Browsers only grant microphone
-access on `https://` or `localhost`, so voice input is unavailable this way. Use Option B
-to demonstrate the voice features.
+The **microphone will not work** this way. Browsers only grant microphone access over
+`https://` or `localhost`, so voice input is unavailable over a LAN IP. Use Option B for
+the voice features.
 
-**Option B — HTTPS tunnel (needed for voice).** Run:
+**Option B — HTTPS tunnel (needed for voice).**
 
 ```
 start_live_demo.bat
 ```
 
+This starts the backend if it is not already running, opens a Cloudflare tunnel, and prints
+an `https://...` address. Open that on the phone — because it is HTTPS, the microphone and
+speech-to-text work normally.
 
-This starts the backend if it is not already running, then opens a Cloudflare tunnel and
-prints an `https://...` address. Open that address on the phone. Because it is HTTPS, the
-microphone and speech-to-text work normally.
-
-The tunnel exposes the local server publicly for the duration of the demo, so close the
-window when finished. It is a demonstration convenience only — the AI models, the database
-and all family data still stay on the host machine.
+> While the tunnel is open, the address is reachable by anyone who has it, and the admin
+> token is the only thing protecting the staff console. Close the window when finished.
+> The tunnel exposes the local server; it does not send data anywhere else — the models,
+> the database and all family data stay on the host machine.
 
 ---
----
-
 
 ## 4. Trying it out
 
@@ -216,110 +242,207 @@ and all family data still stay on the host machine.
 
 **Things worth trying:**
 - Ask *"how much is a Buddhist 3-day funeral?"* — the price comes from deterministic Python, never the language model
-- Tap the microphone and speak — transcription runs locally via Whisper
-- Tap the speaker icon on any reply — the voice is generated locally via Kokoro
-- Switch language using the selector — English, 中文, Bahasa Melayu, தமிழ்
+- Tap the microphone and speak — transcription runs locally via `faster-whisper` (`base.en`)
+- Tap the speaker icon on an English reply — the voice is generated locally by Kokoro-82M
+- Switch language — English, 中文, Bahasa Melayu, தமிழ்
 - Say *"I want to speak to a human"* — this escalates to a consultant
 
 ### As a director
 
-1. On the entry screen, click **Director & Staff Portal**
+1. On the entry screen, click **🔐 Director & Staff Portal** (bottom of the guest access panel)
 2. Enter the `SOLACE_ADMIN_TOKEN` value from your `.env`
-3. View escalated tickets, take over a conversation, and reply to the family live
+3. Review escalated tickets, take over a conversation, reply to the family live, and inspect
+   uploaded documents
 
 ---
 
-## 5. Project structure
+## 5. Testing
 
 ```
-codes25aug2026/
-├── main.py                     FastAPI backend — all API endpoints
-├── app.js                      Frontend logic (vanilla JavaScript)
-├── index.html                  Single-page interface
-├── style.css                   Styling
-├── semantic_router.py          Intent classification across 7 routes
-├── offline_answers.py          Vector search fallback when Ollama is unavailable
-├── i18n_auto.js                Dynamic translation of runtime-rendered content
-├── requirements.txt            Python dependencies
-├── .env.example                Configuration template (copy to .env)
-├── install_dependencies.bat    Downloads model weights
-├── data/                       Catalogue, FAQs, pricing rules (19 JSON datasets)
-├── scripts/                    Offline bundle preparation and verification
-├── models/                     Downloaded model weights (not in the repository)
-└── docs/                       Feature documentation
+python scripts\test_bereavement_documents.py
+python scripts\test_optimizations.py
+python scripts\test_challenging.py
 ```
 
-### How the pricing guarantee works
-
-Prices are calculated by deterministic Python arithmetic in `/api/calculate`, using values
-read from `data/dataset.json`. The language model is never asked to produce a number. A
-wrong price shown to a grieving family is a real harm, so this boundary is enforced in code
-rather than by prompting.
-
-### How offline operation works
-
-If Ollama is unavailable, the assistant falls back to `offline_answers.py`, which does
-vector search across 134 curated FAQs and articles with a similarity threshold and a margin
-gate. It answers only when confident, rather than guessing.
+- `test_bereavement_documents.py` — secure document isolation and token-gated access
+- `test_optimizations.py` — intent routing and response caching
+- `test_challenging.py` — intake edge cases and objection handling
 
 ---
 
-## 6. Configuration reference
+## 6. How it works
 
-All settings live in `.env`. Copy `.env.example` and edit.
+```text
+┌─────────────────────────────────────────────────────────────────┐
+│                        Web frontend                             │
+│        HTML5 · vanilla JS · CSS · 4-language i18n runtime       │
+└────────────────────────────────┬────────────────────────────────┘
+                                 │ REST
+┌────────────────────────────────▼────────────────────────────────┐
+│                     FastAPI backend (main.py)                   │
+├─────────────────────────────────────────────────────────────────┤
+│   Semantic router & intent classifier                           │
+│        ├── Mode A: Ollama local LLM (qwen3.5:4b, with fallback) │
+│        └── Mode B: offline answer index (134 curated entries)   │
+│                                                                 │
+│   Deterministic pricing · safety guard · admin auth             │
+├─────────────────────────────────────────────────────────────────┤
+│   SQLite · Kokoro-82M TTS · faster-whisper STT                  │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+**Pricing.** Calculated in `/api/calculate` from values in `data/dataset.json` and rules in
+`data/funeral_package_rules.json`. The model never produces a number.
+
+**Offline mode.** `offline_answers.py` builds an index from `dataset.json`: 85 FAQ entries
+that pass a length and quality filter, plus 49 blog articles with any priced content
+excluded — 134 total. Queries are matched by cosine similarity with a confidence threshold.
+
+**Voice.** Speech-to-text is `faster-whisper` (`base.en`) via `/api/transcribe`. Speech
+synthesis is Kokoro-82M via `/api/speak`, with generated audio cached and the opening
+greeting pre-rendered at startup so the first reply plays instantly.
+
+> **Voice output is Kokoro for English only.** Chinese, Malay and Tamil replies use the
+> browser's built-in speech synthesis, because the bundled Kokoro voice pack is English.
+> If the Kokoro weights are missing from `models/`, English also falls back to the browser
+> voice — see Troubleshooting.
+
+---
+
+## 7. Project structure
+
+```text
+├── main.py                      FastAPI backend — all API endpoints
+├── app.js                       Frontend logic (vanilla JavaScript)
+├── index.html                   Single-page interface
+├── style.css                    Styling
+├── semantic_router.py           Intent classification and embedding provider
+├── offline_answers.py           Vector search fallback when Ollama is unavailable
+├── i18n_auto.js                 Runtime translation of dynamically rendered content
+├── i18n_extract.py              Extracts static HTML strings to i18n_worksheet.csv
+├── i18n_merge.py                Merges translated worksheets back into app.js
+├── requirements.txt             Python dependencies
+├── .env.example                 Configuration template (copy to .env)
+├── .gitignore                   Excludes secrets, family data and model weights
+├── install_dependencies.bat     Downloads speech weights and cloudflared
+├── start_live_demo.bat          One-click HTTPS mobile demo
+│
+├── data/                        22 datasets — catalogue, pricing, FAQs, procedures
+│   ├── dataset.json             Catalogue, packages, pricing, FAQs and articles
+│   ├── funeral_package_rules.json   Pricing and upgrade rules
+│   └── ...                      Religious, legal, emergency and policy datasets
+│
+├── scripts/                     Offline bundle preparation and test suite
+├── assets/images/               Product and package imagery
+├── models/                      Speech weights (downloaded, not committed)
+├── tools/                       cloudflared.exe (downloaded, not committed)
+└── docs/                        Project documentation and showcase
+```
+
+---
+
+## 8. Configuration reference
+
+Copy `.env.example` to `.env` and edit.
+
+**Read by the application:**
 
 | Variable | Default | Purpose |
 |---|---|---|
-| `SOLACE_ADMIN_TOKEN` | *(none — required)* | Token for the director console and secure document access |
-| `OLLAMA_HOST` | `http://127.0.0.1:11434` | Where Ollama is listening |
-| `OLLAMA_MODEL` | `qwen3.5:4b` | Model used for conversation |
-| `APP_HOST` | `127.0.0.1` | Use `0.0.0.0` to allow phone access |
-| `APP_PORT` | `8000` | Server port |
+| `SOLACE_ADMIN_TOKEN` | *(required)* | Token for the Director & Staff Portal and secure document endpoints. No default — the admin routes return `503` without it |
+| `SOLACE_EMBED_PROVIDER` | `auto` | Embedding backend for the offline index: `fastembed`, or leave unset to auto-detect |
+| `SOLACE_MODEL_PATH` | `./models` | Directory holding the local model weights |
 
-**`.env` is excluded from version control by `.gitignore`.** No credential appears anywhere
-in the source code.
+**Present in `.env.example` but not currently read by the code** — the Ollama endpoint and
+the server binding are set in `main.py`. Listed here for transparency:
+
+| Variable | Value in code |
+|---|---|
+| `OLLAMA_HOST` | `http://127.0.0.1:11434` (hardcoded) |
+| `OLLAMA_MODEL` | `qwen3.5:4b`, with automatic fallback (hardcoded list) |
+| `APP_HOST` / `APP_PORT` | `0.0.0.0:8000` when run via `python main.py` |
+
+**`.env` is excluded by `.gitignore`, and no credential appears anywhere in the source.**
+The admin check reads the token from the environment and uses `secrets.compare_digest` for
+constant-time comparison.
 
 ---
 
-## 7. Troubleshooting
+## 9. Troubleshooting
 
 **`'python' is not recognised`**
-Python is not on your PATH. Reinstall Python and tick *"Add Python to PATH"*.
+Python is not on your PATH. Reinstall and tick *"Add Python to PATH"*.
 
 **`'uvicorn' is not recognised`**
 The virtual environment is not active. Run `venv\Scripts\activate` first.
 
-**Admin console returns `503`**
+**Director Portal returns `503`**
 `SOLACE_ADMIN_TOKEN` is missing from `.env`. Complete Step 4.
 
-**Admin console returns `401`**
+**Director Portal returns `401`**
 The token you typed does not match the one in `.env`. They must be identical.
 
-**Chat replies are slow or say the AI is offline**
-Check Ollama is running with `ollama list`. If the model is missing, run
-`ollama pull qwen3.5:4b`. Replies take a few seconds on CPU — this is normal.
+**Voice output sounds like a generic Windows voice, not Kokoro**
+Two possible causes.
+
+1. You are using a non-English language. Chinese, Malay and Tamil use the browser voice by
+   design — only English uses Kokoro.
+2. The Kokoro weights are missing. Run `dir models` and confirm `kokoro-v1.0.onnx` (~311 MB)
+   and `voices-v1.0.bin` are both present and full size. If not, re-run
+   `install_dependencies.bat`. Also confirm the package is installed with
+   `pip show kokoro-onnx`.
+
+The fallback is silent by design, so check the server console for `[Kokoro TTS]` messages
+when you tap the speaker icon.
+
+**Microphone does not work**
+Browsers only allow microphone access over `https://` or `localhost`. Use
+`http://127.0.0.1:8000` on a computer, or `start_live_demo.bat` for a phone. A LAN IP will
+not work.
+
+**Chat replies are slow, or the app reports the AI is offline**
+Check Ollama with `ollama list`. If no model is listed, run `ollama pull qwen3.5:4b`.
+Replies take a few seconds on CPU — this is normal. With no model at all, the app still
+answers from the 134-entry offline index.
 
 **`Error: listen tcp 127.0.0.1:11434: bind: Only one usage of each socket address`**
-Ollama is already running as a Windows service. This message is harmless — you do not need
-to run `ollama serve` at all.
-
-**Microphone or voice playback does not work**
-Browsers only allow microphone access over `https://` or `localhost`. Use
-`http://127.0.0.1:8000` rather than your LAN IP when testing voice on a computer.
+Ollama is already running as a Windows service. Harmless — do not run `ollama serve`.
 
 **Port 8000 already in use**
 Run on a different port: `uvicorn main:app --port 8001`
 
 ---
 
-## Notes on privacy
+## 10. Privacy and security
 
 This project handles bereavement information, so several things are deliberate:
 
-- **Nothing leaves the machine.** The language model, speech recognition and voice synthesis
-  all run locally.
-- **Uploaded documents** (such as death certificates) are stored outside the public web
-  directory under opaque filenames, and are reachable only with a valid admin token.
+- **Nothing leaves the machine.** Language model, speech recognition and speech synthesis
+  all run locally. No external AI APIs.
+- **The admin token is never committed.** It is read from `.env` at runtime and compared
+  with `secrets.compare_digest`. The admin routes refuse to serve rather than fall back to
+  a known default.
+- **Passwords** are hashed with PBKDF2-HMAC-SHA256 and a per-user salt.
 - **NRIC and FIN numbers** are masked before any text reaches the model or the logs.
-- **The database and uploaded documents are excluded from this repository** — they contain
-  real records from testing and must not be published.
+- **Uploaded documents** (such as death certificates) are stored in `solace_secure_docs/`,
+  outside the public web directory, and are reachable only with a valid admin token.
+- **The database, uploaded documents and consultant tickets are excluded from this
+  repository** — they contain records from testing and must not be published.
+
+---
+
+## Credits
+
+- **Ollama** — local LLM runtime · https://ollama.com/
+- **Kokoro-82M / kokoro-onnx** — neural text-to-speech · https://github.com/thewh1teagle/kokoro-onnx
+- **faster-whisper** — speech recognition · https://github.com/SYSTRAN/faster-whisper
+- **FastEmbed** — embeddings · https://github.com/qdrant/fastembed
+- **FastAPI** — backend framework · https://fastapi.tiangolo.com/
+- **Cloudflare Tunnel** — HTTPS mobile demo
+
+Developed for ITE College Central · Higher Nitec in AI Applications
+Project CP-004 · KLASS Engineering
+
+<!-- TODO: the repository has no LICENSE file. Either add one (MIT is the usual choice for
+     a student project) and restore a licence line here, or leave this out. Do not claim a
+     licence that isn't in the repo. -->
