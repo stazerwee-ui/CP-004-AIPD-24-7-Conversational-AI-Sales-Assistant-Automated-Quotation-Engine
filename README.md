@@ -8,7 +8,7 @@ any hour, produces an exact quotation, and hands over to a human consultant when
 
 Everything runs on your own machine. No family data is sent to any external service.
 
-<!--  ![Solace Dignity Care](assets/images/poster.png) -->
+![Solace Dignity Care](assets/images/poster.png)
 
 ---
 
