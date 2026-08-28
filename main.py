@@ -10,6 +10,30 @@ try:
 except ImportError:
     print("[config] python-dotenv not installed; relying on system environment variables.")
 
+# ----------------------------------------------------------------------------
+# Runtime configuration, read from .env (see .env.example).
+# These have working defaults, so the app runs with no .env at all — apart from
+# SOLACE_ADMIN_TOKEN, which is deliberately left with no default so the admin
+# routes refuse to serve rather than fall back to a known credential.
+# ----------------------------------------------------------------------------
+OLLAMA_HOST = os.environ.get("OLLAMA_HOST", "http://127.0.0.1:11434").rstrip("/")
+OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "qwen3.5:4b")
+
+# Candidate models in order of preference. The configured model is tried first,
+# then progressively smaller ones, so the app still works on a weaker machine
+# that cannot run the 4B model.
+MODEL_PREFERENCE = [
+    OLLAMA_MODEL, "qwen3.5:4b", "qwen3.5", "qwen2.5:3b", "qwen2.5:1.5b",
+    "qwen2.5:0.5b", "qwen2.5", "llama3.2:3b", "llama3.2:1b", "llama3.2:latest",
+    "llama3.2", "llama3.1:latest", "llama3.1", "phi3:mini", "phi3:latest", "phi3",
+]
+
+# Base URLs to probe for Ollama. The configured host is tried first; localhost is
+# kept as a fallback because some Windows setups resolve only one of the two.
+OLLAMA_BASE_URLS = [OLLAMA_HOST]
+if "http://localhost:11434" not in OLLAMA_BASE_URLS:
+    OLLAMA_BASE_URLS.append("http://localhost:11434")
+
 # Ensure UTF-8 output on Windows terminal so non-English characters (Chinese, Malay, Tamil) never crash stdout
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 os.environ["PYTHONIOENCODING"] = "utf-8"
@@ -78,13 +102,13 @@ def check_ollama_status() -> Dict[str, Any]:
     frontend via /api/status so the chat header can show ONLINE vs OFFLINE mode at a
     glance, instead of this only being visible in the server terminal.
     """
-    for base_url in ["http://127.0.0.1:11434", "http://localhost:11434"]:
+    for base_url in OLLAMA_BASE_URLS:
         try:
             response = requests.get(f"{base_url}/api/tags", timeout=3.0)
             if response.status_code == 200:
                 models = [m["name"] for m in response.json().get("models", [])]
                 if models:
-                    preferred_order = ["qwen3.5:4b", "qwen3.5", "qwen2.5:3b", "qwen2.5:1.5b", "qwen2.5:0.5b", "qwen2.5", "llama3.2:3b", "llama3.2:1b", "llama3.2:latest", "llama3.2", "llama3.1:latest", "llama3.1", "phi3:mini", "phi3:latest", "phi3"]
+                    preferred_order = MODEL_PREFERENCE
                     chosen = next((m for pref in preferred_order for m in models if m == pref or m.startswith(pref)), models[0])
                     return {"online": True, "model": chosen,
                             "detail": f"Connected to {chosen}"}
@@ -93,7 +117,7 @@ def check_ollama_status() -> Dict[str, Any]:
         except Exception:
             continue
     return {"online": False, "model": None,
-            "detail": "Ollama not reachable on port 11434. Start it with: ollama serve"}
+            "detail": f"Ollama not reachable at {OLLAMA_HOST}. Start it, or run: ollama serve"}
 
 
 # ----------------------------------------------------
@@ -4252,7 +4276,7 @@ def chat_with_assistant(request: ChatRequest):
             }
             
             try:
-                response = _ollama_session.post("http://127.0.0.1:11434/api/chat", json=payload, timeout=120.0)
+                response = _ollama_session.post(f"{OLLAMA_HOST}/api/chat", json=payload, timeout=120.0)
             except Exception:
                 response = _ollama_session.post("http://localhost:11434/api/chat", json=payload, timeout=120.0)
             response.raise_for_status()
@@ -4429,13 +4453,13 @@ def get_available_ollama_model() -> Optional[str]:
         return _cached_ollama_model
 
     _last_ollama_check_time = now
-    for base_url in ["http://127.0.0.1:11434"]:
+    for base_url in OLLAMA_BASE_URLS:
         try:
             response = requests.get(f"{base_url}/api/tags", timeout=1.5)
             if response.status_code == 200:
                 models = [m["name"] for m in response.json().get("models", [])]
                 if models:
-                    preferred_order = ["qwen3.5:4b", "qwen3.5", "qwen2.5:3b", "qwen2.5:1.5b", "qwen2.5:0.5b", "qwen2.5", "llama3.2:3b", "llama3.2:1b", "llama3.2:latest", "llama3.2", "llama3.1:latest", "llama3.1", "phi3:mini", "phi3:latest", "phi3"]
+                    preferred_order = MODEL_PREFERENCE
                     _cached_ollama_model = next((m for pref in preferred_order for m in models if m == pref or m.startswith(pref)), models[0])
                     return _cached_ollama_model
         except Exception:
@@ -4796,7 +4820,7 @@ def check_field_with_llm(field_type: str, text: str) -> bool:
         }
     }
     
-    for base_url in ["http://127.0.0.1:11434"]:
+    for base_url in OLLAMA_BASE_URLS:
         try:
             response = _ollama_session.post(f"{base_url}/api/chat", json=payload, timeout=1.5)
             if response.status_code == 200:
@@ -6616,7 +6640,7 @@ def summarise_reason(raw_reason: str) -> str:
                 "stream": False,
                 "options": {"temperature": 0.2},
             }
-            resp = requests.post("http://127.0.0.1:11434/api/chat", json=payload, timeout=12.0)
+            resp = requests.post(f"{OLLAMA_HOST}/api/chat", json=payload, timeout=12.0)
             if resp.status_code == 200:
                 text = (resp.json().get("message") or {}).get("content", "").strip()
                 text = re.sub(r"\s+", " ", text).strip().strip('"').strip()
@@ -7826,6 +7850,19 @@ def get_kokoro_model():
                 sf.write(buf, samples, sr, format="WAV")
                 _tts_audio_cache[f"af_heart_0.92_{clean_greeting}"] = buf.getvalue()
                 print("[Kokoro TTS] Initialized and pre-rendered default greeting audio.")
+            else:
+                # The weights are downloaded by install_dependencies.bat and are too
+                # large to commit. Without this warning the failure is invisible: the
+                # frontend silently falls back to the browser voice and the only
+                # symptom is that the assistant sounds wrong.
+                missing = [p for p in (model_path, voices_path) if not os.path.exists(p)]
+                print("[Kokoro TTS] Voice weights not found - "
+                      f"missing: {', '.join(missing)}")
+                print("[Kokoro TTS] Run install_dependencies.bat to download them. "
+                      "Until then, voice output falls back to browser speech synthesis.")
+        except ImportError as e:
+            print(f"[Kokoro TTS] kokoro-onnx is not installed ({e}). "
+                  "Run: pip install -r requirements.txt")
         except Exception as e:
             print(f"[Kokoro TTS] Failed to load model: {e}")
     return _kokoro_model
@@ -7891,4 +7928,13 @@ app.mount("/", StaticFiles(directory=os.path.dirname(__file__), html=True), name
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+
+    # Defaults to localhost so the server is not exposed to the whole network
+    # unless that is asked for. Set APP_HOST=0.0.0.0 in .env to allow a phone on
+    # the same Wi-Fi to connect.
+    host = os.environ.get("APP_HOST", "127.0.0.1")
+    port = int(os.environ.get("APP_PORT", "8000"))
+    if host == "0.0.0.0":
+        print(f"[server] Listening on all interfaces (port {port}). "
+              "The app is reachable by anyone on this network.")
+    uvicorn.run(app, host=host, port=port)
