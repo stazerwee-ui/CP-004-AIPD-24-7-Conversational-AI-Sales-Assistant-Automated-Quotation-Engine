@@ -159,7 +159,7 @@ This fetches:
 - `models/voices-v1.0.bin` — voice pack (~27 MB)
 - `tools/cloudflared.exe` — tunnel for the mobile demo
 
-**Verify the download actually completed** — the script does not report failures:
+**Verify the download completed:**
 
 ```
 dir models
