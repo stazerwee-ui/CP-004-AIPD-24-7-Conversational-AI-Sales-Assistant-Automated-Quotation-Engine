@@ -7,45 +7,57 @@ echo   SOLACE DIGNITY CARE - ONE-CLICK INSTALLER
 echo =========================================================
 echo.
 
-:: 1. Install Python Packages
+:: 1. Install Python packages
 echo [1/3] Installing Python packages...
-pip install fastapi uvicorn requests pydantic numpy soundfile python-multipart faster-whisper kokoro-onnx onnxruntime fastembed
-echo.
-
-:: 2. Download Cloudflared for instant HTTPS tunnels
-if not exist "tools\cloudflared.exe" if not exist "cloudflared.exe" (
-    echo [2/3] Downloading Cloudflare Tunnel (tools\cloudflared.exe)...
-    if not exist "tools" mkdir "tools"
-    python -c "import urllib.request; urllib.request.urlretrieve('https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-windows-amd64.exe', 'tools/cloudflared.exe')"
-) else (
-    echo [2/3] cloudflared.exe already exists.
+pip install -r requirements.txt
+if errorlevel 1 (
+    echo.
+    echo   ERROR: pip install failed. Check your internet connection,
+    echo   and that the virtual environment is active ^(venv\Scripts\activate^).
+    pause
+    exit /b 1
 )
 echo.
 
-:: 3. Download Kokoro-82M Voice AI Model Weights
-echo [3/3] Downloading Kokoro Neural Voice models (~110MB)...
-python -c "
-import os, urllib.request
-
-os.makedirs('models', exist_ok=True)
-m_onnx = 'models/kokoro-v1.0.onnx' if not os.path.exists('kokoro-v1.0.onnx') else 'kokoro-v1.0.onnx'
-m_bin = 'models/voices-v1.0.bin' if not os.path.exists('voices-v1.0.bin') else 'voices-v1.0.bin'
-
-if not os.path.exists('models/kokoro-v1.0.onnx') and not os.path.exists('kokoro-v1.0.onnx'):
-    print('Downloading kokoro-v1.0.onnx into models/... ')
-    urllib.request.urlretrieve('https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx', 'models/kokoro-v1.0.onnx')
-
-if not os.path.exists('models/voices-v1.0.bin') and not os.path.exists('voices-v1.0.bin'):
-    print('Downloading voices-v1.0.bin into models/... ')
-    urllib.request.urlretrieve('https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin', 'models/voices-v1.0.bin')
-
-print('Kokoro-82M model ready!')
-"
+:: 2. Download cloudflared for the HTTPS mobile demo
+if exist "tools\cloudflared.exe" (
+    echo [2/3] cloudflared.exe already present.
+) else (
+    echo [2/3] Downloading Cloudflare Tunnel...
+    if not exist "tools" mkdir "tools"
+    python -c "import urllib.request; urllib.request.urlretrieve('https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-windows-amd64.exe', 'tools/cloudflared.exe')"
+    if errorlevel 1 echo   WARNING: cloudflared download failed. The phone demo will not work.
+)
 echo.
 
+:: 3. Download the Kokoro voice model weights
+::
+:: This calls a separate Python file rather than embedding the code here. A
+:: multi-line "python -c" does not work inside a batch script - cmd treats each
+:: line after the first as its own command, so the download silently never runs
+:: while the installer still reports success.
+echo [3/3] Downloading Kokoro voice models ^(~338 MB, this takes a few minutes^)...
+echo.
+python scripts\download_models.py
+if errorlevel 1 (
+    echo.
+    echo =========================================================
+    echo   SETUP INCOMPLETE - the voice models did not download.
+    echo   Everything else works; only spoken replies are affected.
+    echo   Re-run this script when you have a stable connection.
+    echo =========================================================
+    pause
+    exit /b 1
+)
+
+echo.
 echo =========================================================
-echo   ALL DEPENDENCIES INSTALLED SUCCESSFULLY!
-echo   You can now run start_live_demo.bat to start the app.
+echo   ALL DEPENDENCIES INSTALLED SUCCESSFULLY
+echo.
+echo   Next steps:
+echo     1. copy .env.example .env
+echo     2. Set SOLACE_ADMIN_TOKEN inside .env
+echo     3. uvicorn main:app --host 127.0.0.1 --port 8000
 echo =========================================================
 echo.
 pause
