@@ -8,9 +8,7 @@ any hour, produces an exact quotation, and hands over to a human consultant when
 
 Everything runs on your own machine. No family data is sent to any external service.
 
-<!-- TODO: add one screenshot here — the Planner or the Director Console. A single image
-     near the top does more than any amount of prose. Put it in assets/images/ and
-     reference it as: ![Planner](assets/images/screenshot-planner.png) -->
+<!--  ![Solace Dignity Care](assets/images/poster.png) -->
 
 ---
 
