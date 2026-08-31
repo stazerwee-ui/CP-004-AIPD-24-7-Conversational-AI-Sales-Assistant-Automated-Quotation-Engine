@@ -4271,7 +4271,7 @@ def chat_with_assistant(request: ChatRequest):
                     "temperature": 0.1,
                     "num_predict": 350,
                     "num_thread": 4,
-                    "num_ctx": 4096,
+                    "num_ctx": 8192,
                 },
             }
             
