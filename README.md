@@ -440,11 +440,11 @@ Run on a different port: `uvicorn main:app --port 8001`
 
 This project handles bereavement information, so several things are deliberate:
 
-- **Nothing leaves the machine.** Language model, speech recognition and speech synthesis
-  all run locally. No external AI APIs.
+- **Nothing leaves the machine.** Language model, speech recognition and speech synthesis all run locally. No external AI APIs.
+
 - **The admin token is never committed.** It is read from `.env` at runtime and compared
-  with `secrets.compare_digest`. The admin routes refuse to serve rather than fall back to
-  a known default.
+  with `secrets.compare_digest`. The admin routes refuse to serve rather than fall back to a known default.
+  
 - **Passwords** are hashed with PBKDF2-HMAC-SHA256 and a per-user salt.
 - **NRIC and FIN numbers** are masked before any text reaches the model or the logs.
 - **Uploaded documents** (such as death certificates) are stored in `solace_secure_docs/`,
