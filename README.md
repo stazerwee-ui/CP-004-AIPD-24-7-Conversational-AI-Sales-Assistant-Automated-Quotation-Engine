@@ -1,5 +1,5 @@
 # Solace Dignity Care — 24/7 Conversational AI Sales Assistant & Automated Quotation Engine
-
+ 
 **Project CP-004 · KLASS Engineering problem statement**
 Higher Nitec in AI Applications · ITE College Central
  
