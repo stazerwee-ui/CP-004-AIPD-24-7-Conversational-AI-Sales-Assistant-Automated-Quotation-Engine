@@ -28,6 +28,31 @@ all run locally. No API keys, no subscriptions, no third-party inference.
 
 ---
 
+## Features
+
+### Core — from the KLASS problem statement
+
+| Feature | What it does |
+| ------- | ------------ |
+| **24/7 conversational intake** | Guided 17-step arrangement flow, asking one question at a time so a grieving family is never faced with a form |
+| **Deterministic quotation** | Itemised pricing computed in Python — service tier, religious rites, casket, wake duration, venue, ash management, add-ons and 9% GST |
+| **PDF quotation with e-signature** | Generated in-browser, signed on-screen, and downloadable for the family to keep |
+
+### Additional — beyond the brief
+
+| Feature | What it does |
+| ------- | ------------ |
+| **Human consultant handoff** | The family can escalate to a director, who takes over the same conversation live from the staff portal |
+| **Secure document upload** | Death certificates validated by magic bytes rather than file extension, size-capped during streaming, stored outside the web root and reachable only with a valid admin token |
+| **Four-language interface** | English, 中文, Bahasa Melayu and தமிழ், including Singapore-specific funeral vocabulary and correct handling of SGD prices |
+| **Local speech-to-text** | `faster-whisper` (`base.en`) transcribes on-device, so audio never leaves the machine |
+| **Local text-to-speech** | Kokoro-82M generates English replies locally; other languages use the browser voice |
+| **Offline answer engine** | 134 curated entries behind a confidence threshold and a margin gate — the assistant keeps working with Ollama down, rather than showing an error |
+| **Safety routing** | Crisis detection and prompt-injection guards classify every message *before* it reaches the language model |
+| **Accounts with saved arrangements** | Log out part-way through and resume later, because families rarely complete this in one sitting |
+
+---
+
 ## Table of contents
 
 1. [What you need before starting](#1-what-you-need-before-starting)
