@@ -28,15 +28,17 @@ all run locally. No API keys, no subscriptions, no third-party inference.
 
 ---
 
+
 ## Features
 
 ### Core — from the KLASS problem statement
 
 | Feature | What it does |
 | ------- | ------------ |
-| **24/7 conversational intake** | Guided 17-step arrangement flow, asking one question at a time so a grieving family is never faced with a form |
-| **Deterministic quotation** | Itemised pricing computed in Python — service tier, religious rites, casket, wake duration, venue, ash management, add-ons and 9% GST |
-| **PDF quotation with e-signature** | Generated in-browser, signed on-screen, and downloadable for the family to keep |
+| **24/7 empathetic conversational intake** | Guided 17-step arrangement flow with a bereavement-appropriate tone, capturing late-night leads that would otherwise be lost |
+| **Dynamic package & add-on Q&A** | Answers grounded in the company's own service catalogue, spanning religious rites, casket options and logistics |
+| **Real-time dynamic pricing engine** | Deterministic Python arithmetic recalculates an itemised quote as tiers, wake durations, venues and add-ons change — the language model never produces a number |
+| **Automated quotation & e-sign pipeline** | Compiles the final configuration into an institutional itemised PDF and captures a binding digital signature in the same session |
 
 ### Additional — beyond the brief
 
