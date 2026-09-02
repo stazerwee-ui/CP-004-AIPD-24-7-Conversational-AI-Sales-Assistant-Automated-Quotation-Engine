@@ -1,7 +1,7 @@
 # Solace Dignity Care — 24/7 Conversational AI Sales Assistant & Automated Quotation Engine
 
 **Project CP-004 · KLASS Engineering problem statement**
-Higher Nitec in AI Applications · ITE College Central
+Higher Nitec in AI Applications · ITE College Central 
  
 A locally-hosted funeral-services assistant that helps bereaved families arrange a service at
 any hour, produces an exact quotation, and hands over to a human consultant when needed.
